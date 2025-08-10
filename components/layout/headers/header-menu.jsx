@@ -1,0 +1,233 @@
+// components/layout/MainMenu.jsx
+import Link from 'next/link';
+import { useState, useRef, useEffect } from 'react';
+
+// Mega menu items for Services
+const megaItems = [
+  {
+    heading: 'Digital Transformation',
+    icon: 'fas fa-sync-alt main-clr',
+    links: [
+      { label: 'Digital Strategy', href: '/services/digital-strategy' },
+      { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
+      { label: 'Change Management & Adoption', href: '/services/change-management' },
+      { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
+      { label: 'Data Audit', href: '/services/data-audit' },
+      { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
+      { label: 'Sustainability Manager', href: '/services/sustainability-manager' },
+    ],
+  },
+  {
+    heading: 'Data & AI',
+    icon: 'fas fa-robot main-clr',
+    links: [
+      { label: 'Power BI / Reporting Consulting', href: '/services/power-bi' },
+      { label: 'Data Warehouse', href: '/services/data-warehouse' },
+      { label: 'Artificial Intelligence and IoT', href: '/services/artificial-intelligence-iot' },
+      { label: 'Azure Data Foundry', href: '/services/azure' },
+    ],
+  },
+  {
+    heading: 'Business Applications',
+    icon: 'fas fa-briefcase main-clr',
+    links: [
+      { label: 'Microsoft Dynamics 365', href: '/services/dynamics-365' },
+      { label: 'Modern Work (Microsoft 365/Copilot)', href: '/services/modern-work' },
+    ],
+  },
+  {
+    heading: 'Software & Engineering',
+    icon: 'fas fa-code main-clr',
+    links: [
+      { label: 'SI (System integration)', href: '/services/system-integration' },
+      { label: 'Azure (Cloud Adoption)', href: '/services/cloud-adoption' },
+      { label: 'Custom Application Dev', href: '/services/custom-dev' },
+      { label: 'Copilot Studio / Agents', href: '/services/copilot-studio' },
+      { label: 'Automations', href: '/services/automations' },
+    ],
+  },
+  {
+    heading: 'Engagements',
+    icon: 'fas fa-handshake main-clr',
+    links: [
+      { label: 'Consulting & Advisory Services', href: '/services/consulting-advisory' },
+      { label: 'Professional Services', href: '/services/professional-services' },
+      { label: 'Managed Services', href: '/services/managed-services' },
+    ],
+  },
+];
+
+// Mega menu items for Products
+const productItems = [
+  {
+    heading: 'Products ISV',
+    icon: 'fas fa-building main-clr',
+    links: [
+      { label: 'Airport Turnaround Solution', href: '/products/turnaround' },
+      { label: 'NES (Novum Entrance System)', href: '/products/nes' },
+      { label: 'OCR Certification Directory', href: '/products/ocr-directory' },
+      { label: 'Face Recognition & Detection', href: '/products/face-recognition' },
+      { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding' },
+      { label: 'D365 Automations', href: '/products/d365-automations' },
+      { label: 'ESS - Employee Self Service', href: '/products/ess' },
+    ],
+  },
+  {
+    heading: 'By Industry or Business Function',
+    icon: 'fas fa-users main-clr',
+    links: [
+      { label: 'Healthcare & Pharma', href: '/products/industry/healthcare' },
+      { label: 'Retail & Distribution', href: '/products/industry/retail' },
+      { label: 'Manufacturing & Agriculture', href: '/products/industry/manufacturing' },
+      { label: 'Government & Public Sector', href: '/products/industry/government' },
+      { label: 'Oil & Gas / Energy', href: '/products/industry/oil-gas' },
+      { label: 'Transportation & Aviation', href: '/products/industry/transportation' },
+    ],
+  },
+  {
+    // CTA column at index 2 stays as a special card
+    heading: null,
+    icon: null,
+    links: null,
+  },
+  
+];
+
+const MainMenu = () => {
+  const [openMenu, setOpenMenu] = useState(null);
+  const servicesRef = useRef(null);
+  const productsRef = useRef(null);
+
+  const serviceCols = megaItems.length;
+  const productCols = productItems.length;
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (
+        servicesRef.current && !servicesRef.current.contains(e.target) &&
+        productsRef.current && !productsRef.current.contains(e.target)
+      ) {
+        setOpenMenu(null);
+      }
+    }
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  return (
+    <ul className="main-menu">
+      <li><Link href="/">Home</Link></li>
+
+      {/* Services Mega Menu */}
+      <li className="menu-item-has-children mega-menu" ref={servicesRef}>
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault();
+            setOpenMenu(openMenu === 'services' ? null : 'services');
+          }}
+        >
+          Services <i className="fas fa-angle-down"></i>
+        </a>
+        <div className={`mega-dropdown ${openMenu === 'services' ? 'open' : ''}`}>
+          <div
+            className="mega-content"
+            style={{ gridTemplateColumns: `repeat(${serviceCols}, 1fr)` }}
+          >
+            {megaItems.map((col, i) => (
+              <div key={i} className="mega-col">
+                <h4><i className={`${col.icon} me-2`}></i>{col.heading}</h4>
+                <ul>
+                  {col.links.map((link, j) => (
+                    <li key={j}>
+                      <Link href={link.href}>{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </li>
+
+      {/* Products Mega Menu */}
+      <li className="menu-item-has-children mega-menu" ref={productsRef}>
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault();
+            setOpenMenu(openMenu === 'products' ? null : 'products');
+          }}
+        >
+          Products <i className="fas fa-angle-down"></i>
+        </a>
+        <div className={`mega-dropdown ${openMenu === 'products' ? 'open' : ''}`}>
+          <div
+            className="mega-content"
+            style={{ gridTemplateColumns: `repeat(${productCols}, 1fr)` }}
+          >
+            {productItems.map((col, i) => {
+              if (i === 2) {
+                return (
+                  <div key={i} className="mega-col">
+                    <div className="cta-card-img position-relative overflow-hidden rounded-4 h-100 text-white">
+                      <img
+                        src="https://novum-ae.netlify.app//.netlify/images?url=/images/services/powerbi.jpg"
+                        alt="CTA Background"
+                        className="w-100 h-100 object-fit-cover"
+                        data-no-retina=""
+                      />
+                      <div className="cta-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-8">
+                        <div>
+                          <h5 className="fw-semibold mb-2">Need help choosing?</h5>
+                          <p className="small mb-4 mt-4">
+                            Our team can guide you to the right service based on your business needs. Let’s talk today.
+                          </p>
+                        </div>
+                        <button
+                          type="button"
+                          className="btn btn-yellow btn-sm rounded-pill mt-auto w-100"
+                          onClick={() => window.location.href = '/contact'}
+                        >
+                          Talk to an Expert
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              return (
+                <div key={i} className="mega-col">
+                  <h4><i className={`${col.icon} me-2`} />{col.heading}</h4>
+                  <ul>
+                    {col.links.map((link, j) => (
+                      <li key={j}>
+                        <Link href={link.href}>{link.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </li>
+
+      {/* Resources */}
+      <li className="menu-item-has-children">
+        <Link href="#">
+          Resource <i className="fas fa-angle-down"></i>
+        </Link>
+        <ul className="sub-menu">
+          <li><Link href="/industries">Industries</Link></li>
+          <li><Link href="/case-studies">Case Studies</Link></li>
+          <li><Link href="/blog">Blogs/News</Link></li>
+        </ul>
+      </li>
+
+      <li><Link href="/about">About</Link></li>
+    </ul>
+  );
+};
+
+export default MainMenu;

@@ -1,0 +1,99 @@
+import React from 'react';
+
+const features = [
+  {
+    icon: 'bi-cloud-check-fill',
+    title: 'Microsoft Cloud Partner',
+    text: 'Leverage our certified Microsoft partnership for cutting-edge solutions.',
+  },
+  {
+    icon: 'bi-briefcase-fill',
+    title: 'Cross-industry Expertise',
+    text: 'Experience across finance, healthcare, retail, and more industries.',
+  },
+  {
+    icon: 'bi-shield-lock-fill',
+    title: 'Agile & Secure Development',
+    text: 'Solutions built to scale with agility and robust security.',
+  },
+  {
+    icon: 'bi-chat-dots-fill',
+    title: 'Transparent Communication',
+    text: 'We work closely with you with full visibility and accountability.',
+  },
+  {
+    icon: 'bi-bar-chart-line-fill',
+    title: 'Proven Results',
+    text: 'Trusted by global and regional enterprises to deliver performance.',
+  },
+  {
+    icon: 'bi-person-check-fill',
+    title: 'Long-term Support',
+    text: 'Ongoing partnership and support post-deployment and beyond.',
+  },
+];
+
+export default function WhyChoose() {
+  return (
+    <section className="why-choose bg-white py-5">
+      <div className="container">
+        <div className="row justify-content-center mb-3">
+          <div className="col-xl-7 col-lg-8 text-center">
+            <h2 className="mb-5">Why Choose Novum?</h2>
+          </div>
+        </div>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-4">
+          {features.map((f, i) => (
+            <div key={i} className="col icon-with-text-style-01 mb-50px sm-mb-40px">
+              <div className="feature-box feature-box-left-icon last-paragraph-no-margin d-flex align-items-start">
+                <div className="feature-box-icon me-3">
+                  <i className={`bi ${f.icon}`} />
+                </div>
+                <div className="feature-box-content">
+                  <span className="feature-title">{f.title}</span>
+                  <p className="feature-text">{f.text}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <style jsx>{`
+        .why-choose .section-title {
+          font-size: 42px;
+          font-weight: 700;
+          letter-spacing: -1px;
+          color: var(--text-heading-color);
+        }
+        .why-choose .feature-box-icon i {
+          font-size: 42px;
+          color: var(--primary-color-1);
+          line-height: 1;
+        }
+        .why-choose .feature-title {
+          display: block;
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: var(--text-heading-color);
+        }
+        .why-choose .feature-text {
+          margin: 0;
+          max-width: 80%;
+          color: var(--medium-gray);
+        }
+        .why-choose .mb-50px {
+          margin-bottom: 50px !important;
+        }
+        .why-choose .sm-mb-40px {
+          /* hide on small, override via your responsive CSS */
+        }
+        @media (max-width: 576px) {
+          .why-choose .sm-mb-40px {
+            margin-bottom: 40px !important;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}
