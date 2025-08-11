@@ -31,14 +31,13 @@ const ResponsiveMenu = () => {
                         <li><Link href="/services/corporate-trainings">Corporate Trainings</Link></li>
                         <li><Link href="/services/data-audit">Data Audit</Link></li>
                         <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
-                        <li><Link href="/services/sustainability-manager">Sustainability Manager</Link></li>
+                        <li><Link href="/services/microsoft-sustainability">Sustainability Manager</Link></li>
 
                         {/* Data & AI */}
                         <li className="menu-group-heading">
                             <i className="fas fa-robot main-clr" /> Data &amp; AI
                         </li>
-                        <li><Link href="/services/power-bi">Power BI / Reporting</Link></li>
-                        <li><Link href="/services/consulting">Consulting</Link></li>
+                        <li><Link href="/services/power-bi">Power BI / Reporting Consulting</Link></li>
                         <li><Link href="/services/data-warehouse">Data Warehouse</Link></li>
                         <li><Link href="/services/artificial-intelligence-iot">Artificial Intelligence & IoT</Link></li>
                         <li><Link href="/services/azure">Azure Data Foundry</Link></li>

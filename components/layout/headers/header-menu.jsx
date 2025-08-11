@@ -14,7 +14,7 @@ const megaItems = [
       { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
       { label: 'Data Audit', href: '/services/data-audit' },
       { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
-      { label: 'Sustainability Manager', href: '/services/sustainability-manager' },
+      { label: 'Sustainability Manager', href: '/services/microsoft-sustainability' },
     ],
   },
   {
