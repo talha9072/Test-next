@@ -31,7 +31,7 @@ const megaItems = [
     heading: 'Business Applications',
     icon: 'fas fa-briefcase main-clr',
     links: [
-      { label: 'Microsoft Dynamics 365', href: '/services/dynamics-365' },
+      { label: 'Microsoft Dynamics 365', href: '/services/microsoft-dynamics-365' },
       { label: 'Modern Work (Microsoft 365/Copilot)', href: '/services/modern-work' },
     ],
   },

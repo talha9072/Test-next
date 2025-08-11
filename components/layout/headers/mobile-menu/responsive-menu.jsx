@@ -46,7 +46,7 @@ const ResponsiveMenu = () => {
                         <li className="menu-group-heading">
                             <i className="fas fa-briefcase main-clr" /> Business Applications
                         </li>
-                        <li><Link href="/services/dynamics-365">Microsoft Dynamics 365</Link></li>
+                        <li><Link href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</Link></li>
                         <li><Link href="/services/modern-work">Modern Work (Microsoft 365/Copilot)</Link></li>
 
                         {/* Software & Engineering */}
