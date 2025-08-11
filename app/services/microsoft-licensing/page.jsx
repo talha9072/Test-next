@@ -1,5 +1,5 @@
 // app/page.jsx
-import Licensing from "@/components/pages/main-services/microsoft-licensing/index.jsx";
+import Licensing from "@/components/pages/main-services/licensing";
 
 export const metadata = {
   title: 'Get a License – Novum Solutions',
