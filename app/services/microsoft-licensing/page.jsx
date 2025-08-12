@@ -2,60 +2,52 @@
 import Licensing from "@/components/pages/main-services/licensing/";
 
 export const metadata = {
-  title: 'Get a License – Novum Solutions',
-  description: 'Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.',
+  title: "Get a License – Novum Solutions",
+  description:
+    "Request a license for Novum’s AI products and platforms. Fill in the form to receive access and pricing details.",
   keywords: [
-    'Digital transformation UAE',
-    'AI solutions',
-    'Microsoft Partner',
-    'custom software development',
-    'Power BI consulting',
-    'data warehouse',
-    'Azure services',
-    'smart digital products'
+    "get a license",
+    "license request",
+    "Novum product license",
+    "request license form"
   ],
-  authors: [{ name: 'ThemeZaa' }],
-  viewport: 'width=device-width,initial-scale=1.0',
-  metadataBase: new URL('https://novum.tech'),
+  authors: [{ name: "Novum" }],
+  viewport: "width=device-width,initial-scale=1.0",
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: '/en/home'
+    canonical: "/get-a-license"
   },
-  icons: {
-    icon: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-    shortcut: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-    apple: [
-      'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-      {
-        url: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-        sizes: '72x72'
-      },
-      {
-        url: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-        sizes: '114x114'
-      }
-    ]
-  },
+
   openGraph: {
-    title: 'Novum | Digital Solutions Powered by Innovation and AI',
-    description: 'Discover how Novum helps organizations grow with AI, cloud, and smart digital platforms. Trusted across industries for software, Microsoft solutions, and more.',
-    url: 'https://novum.tech/en/home',
-    type: 'website',
+    title: "Get a License – Novum Solutions",
+    description:
+      "Request a license for Novum’s AI products and platforms. Fill in the form to receive access and pricing details.",
+    url: "https://talha-nextjs.netlify.app/get-a-license",
+    type: "website",
     images: [
       {
-        url: 'https://novum-ae.netlify.app/images/novum-graph-img.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Novum OG Image'
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Get a License OG Image"
       }
     ]
   },
+
   twitter: {
-    card: 'summary_large_image',
-    title: 'Novum | Digital Solutions Powered by Innovation and AI',
-    description: 'AI, cloud, software, and Microsoft technologies that streamline operations and fuel growth. Explore digital solutions by Novum.',
-    images: ['https://novum-ae.netlify.app/images/novum-graph-img.webp']
+    card: "summary_large_image",
+    title: "Get a License – Novum Solutions",
+    description:
+      "Request a license for Novum’s AI products and platforms. Fill in the form to receive access and pricing details.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
   }
 };
+
 
 export default function Home() {
   return <Licensing />;

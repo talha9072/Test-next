@@ -2,47 +2,54 @@
 import StrategicResourcing from "@/components/pages/main-services/strategic-resourcing";
 
 export const metadata = {
-  title: "Strategic Resourcing Services – Scale with Certified Technology Experts",
+  title:
+    "Strategic Resourcing Services – Scale with Certified Technology Experts",
   description:
-    "Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.",
+    "Extend your digital capabilities with NOVUM’s strategic resourcing. Access certified professionals in cloud, development, cybersecurity, and analytics on demand.",
   keywords: [
-    "Digital transformation UAE",
-    "AI solutions",
-    "Microsoft Partner",
-    "custom software development",
-    "Power BI consulting",
-    "data warehouse",
-    "Azure services",
-    "smart digital products",
+    "strategic resourcing services",
+    "tech talent resourcing",
+    "IT staff augmentation",
+    "cloud experts on demand",
+    "digital workforce solutions"
   ],
-  authors: [{ name: "ThemeZaa" }],
+  authors: [{ name: "Novum" }],
   viewport: "width=device-width,initial-scale=1.0",
-  metadataBase: new URL("https://novum.tech"),
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: "/services/strategic-resourcing", // match this route
+    canonical: "/services/strategic-resourcing"
   },
+
   openGraph: {
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title:
+      "Strategic Resourcing Services – Scale with Certified Technology Experts",
     description:
-      "Discover how Novum helps organizations grow with AI, cloud, and smart digital platforms. Trusted across industries for software, Microsoft solutions, and more.",
-    url: "https://novum.tech/services/strategic-resourcing",
+      "Extend your digital capabilities with NOVUM’s strategic resourcing. Access certified professionals in cloud, development, cybersecurity, and analytics on demand.",
+    url: "https://talha-nextjs.netlify.app/services/strategic-resourcing",
     type: "website",
     images: [
       {
-        url: "https://novum-ae.netlify.app/images/novum-graph-img.webp",
-        width: 1200,
-        height: 630,
-        alt: "Novum OG Image",
-      },
-    ],
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Strategic Resourcing OG Image"
+      }
+    ]
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title:
+      "Strategic Resourcing Services – Scale with Certified Technology Experts",
     description:
-      "AI, cloud, software, and Microsoft technologies that streamline operations and fuel growth. Explore digital solutions by Novum.",
-    images: ["https://novum-ae.netlify.app/images/novum-graph-img.webp"],
-  },
+      "Extend your digital capabilities with NOVUM’s strategic resourcing. Access certified professionals in cloud, development, cybersecurity, and analytics on demand.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
+  }
 };
 
 export default function Page() {

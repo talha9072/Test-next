@@ -2,51 +2,54 @@
 import Azure from "@/components/pages/main-services/azure/";
 
 export const metadata = {
-  title: 'Microsoft Azure Cloud Solutions & Migration Services | Novum',
-  description: 'Migrate your business to Microsoft Azure with Novum certified cloud solutions. Secure, scalable, and cost-effective cloud infrastructure services.',
+  title:
+    "Microsoft Azure Services – Secure, Scalable, Intelligent Cloud Platform",
+  description:
+    "Prepare for AI-driven innovation with Microsoft Azure. Secure, scalable, and hybrid ready, Azure delivers cloud infrastructure and services to support your digital transformation journey.",
   keywords: [
-    'Microsoft Azure','Cloud Migration','Azure Cloud Solutions','Cloud Infrastructure','Azure IaaS','Azure PaaS','Cloud Security','Business Agility'
+    "Microsoft Azure services",
+    "cloud migration to Azure",
+    "Azure AI infrastructure",
+    "hybrid cloud solutions",
+    "Azure for developers",
+    "secure cloud platform"
   ],
-  authors: [{ name: 'Oasis Digital' }],
-  viewport: 'width=device-width,initial-scale=1.0',
-  metadataBase: new URL('https://novum.tech'),
+  authors: [{ name: "Novum" }],
+  viewport: "width=device-width,initial-scale=1.0",
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: '/'
+    canonical: "/services/azure"
   },
-  icons: {
-    icon: '/assets/img/Novum-logo-05.ico',
-    shortcut: '/assets/img/Novum-logo-05.ico',
-    apple: [
-      '/assets/img/Novum-logo-05.ico',
-      {
-        url: '/assets/img/Novum-logo-05.ico',
-        sizes: '72x72'
-      },
-      {
-        url: '/assets/img/Novum-logo-05.ico',
-        sizes: '114x114'
-      }
-    ]
-  },
+
   openGraph: {
-    title: 'Microsoft Azure Cloud Solutions & Migration Services | Novum',
-    description: 'Migrate your business to Microsoft Azure with Novum certified cloud solutions. Secure, scalable, and cost-effective cloud infrastructure services.',
-    url: 'https://novum.tech',
-    type: 'website',
+    title:
+      "Microsoft Azure Services – Secure, Scalable, Intelligent Cloud Platform",
+    description:
+      "Prepare for AI-driven innovation with Microsoft Azure. Secure, scalable, and hybrid ready, Azure delivers cloud infrastructure and services to support your digital transformation journey.",
+    url: "https://talha-nextjs.netlify.app/services/microsoft-azure",
+    type: "website",
     images: [
       {
-        url: '/assets/img/novum-graph-img.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Novum OG Image'
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Microsoft Azure OG Image"
       }
     ]
   },
+
   twitter: {
-    card: 'Microsoft Azure Cloud Solutions & Migration Services | Novum',
-    title: 'Novum | Digital Solutions Powered by Innovation and AI',
-    description: 'Migrate your business to Microsoft Azure with Novum certified cloud solutions. Secure, scalable, and cost-effective cloud infrastructure services.',
-    images: ['/assets/img/novum-graph-img.webp']
+    card: "summary_large_image",
+    title:
+      "Microsoft Azure Services – Secure, Scalable, Intelligent Cloud Platform",
+    description:
+      "Prepare for AI-driven innovation with Microsoft Azure. Secure, scalable, and hybrid ready, Azure delivers cloud infrastructure and services to support your digital transformation journey.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
   }
 };
 

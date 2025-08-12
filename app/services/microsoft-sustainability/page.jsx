@@ -2,58 +2,54 @@
 import Sustainability from "@/components/pages/main-services/Sustainability-Manager";
 
 export const metadata = {
-  title: 'Microsoft Sustainability Solutions – Track, Manage, and Accelerate ESG Progress',
-  description: 'Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.',
+  title:
+    "Microsoft Sustainability Solutions – Track, Manage, and Accelerate ESG Progress",
+  description:
+    "Advance your ESG goals with Microsoft Sustainability Solutions. Monitor, report, and reduce your environmental impact using automated data and intelligent insights.",
   keywords: [
-    'Digital transformation UAE',
-    'AI solutions',
-    'Microsoft Partner',
-    'custom software development',
-    'Power BI consulting',
-    'data warehouse',
-    'Azure services',
-    'smart digital products'
+    "Microsoft sustainability solutions",
+    "ESG management tools",
+    "Microsoft Sustainability Manager",
+    "environmental impact reporting",
+    "sustainability transformation",
+    "digital sustainability tools"
   ],
-  authors: [{ name: 'ThemeZaa' }],
-  viewport: 'width=device-width,initial-scale=1.0',
-  metadataBase: new URL('https://novum.tech'),
+  authors: [{ name: "Novum" }],
+  viewport: "width=device-width,initial-scale=1.0",
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: '/en/home'
+    canonical: "/services/microsoft-sustainability"
   },
-  icons: {
-    icon: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-    shortcut: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-    apple: [
-      'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-      {
-        url: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-        sizes: '72x72'
-      },
-      {
-        url: 'https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico',
-        sizes: '114x114'
-      }
-    ]
-  },
+
   openGraph: {
-    title: 'Novum | Digital Solutions Powered by Innovation and AI',
-    description: 'Discover how Novum helps organizations grow with AI, cloud, and smart digital platforms. Trusted across industries for software, Microsoft solutions, and more.',
-    url: 'https://novum.tech/en/home',
-    type: 'website',
+    title:
+      "Microsoft Sustainability Solutions – Track, Manage, and Accelerate ESG Progress",
+    description:
+      "Advance your ESG goals with Microsoft Sustainability Solutions. Monitor, report, and reduce your environmental impact using automated data and intelligent insights.",
+    url: "https://talha-nextjs.netlify.app/services/microsoft-sustainability",
+    type: "website",
     images: [
       {
-        url: 'https://novum-ae.netlify.app/images/novum-graph-img.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Novum OG Image'
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Microsoft Sustainability OG Image"
       }
     ]
   },
+
   twitter: {
-    card: 'summary_large_image',
-    title: 'Novum | Digital Solutions Powered by Innovation and AI',
-    description: 'AI, cloud, software, and Microsoft technologies that streamline operations and fuel growth. Explore digital solutions by Novum.',
-    images: ['https://novum-ae.netlify.app/images/novum-graph-img.webp']
+    card: "summary_large_image",
+    title:
+      "Microsoft Sustainability Solutions – Track, Manage, and Accelerate ESG Progress",
+    description:
+      "Advance your ESG goals with Microsoft Sustainability Solutions. Monitor, report, and reduce your environmental impact using automated data and intelligent insights.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
   }
 };
 

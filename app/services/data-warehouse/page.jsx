@@ -2,37 +2,53 @@
 import Datawarehouse from "@/components/pages/main-services/datawarehouse/";
 
 export const metadata = {
-  title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-  description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
+  title:
+    "Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data",
+  description:
+    "Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.",
   keywords: [
-    'data warehouse solutions', 'enterprise data warehouse', 'business intelligence architecture', 'centralized reporting', 'analytics infrastructure'
+    "data warehouse solutions",
+    "enterprise data warehouse",
+    "business intelligence architecture",
+    "centralized reporting",
+    "analytics infrastructure"
   ],
-  authors: [{ name: 'Oasis Digital' }],
-  viewport: 'width=device-width,initial-scale=1.0',
-  metadataBase: new URL('https://novum.tech'),
+  authors: [{ name: "Novum" }],
+  viewport: "width=device-width,initial-scale=1.0",
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: '/en/home'
+    canonical: "/services/data-warehouse"
   },
-  
+
   openGraph: {
-    title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-    description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
-    url: 'https://novum.tech/en/home',
-    type: 'website',
+    title:
+      "Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data",
+    description:
+      "Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.",
+    url: "https://talha-nextjs.netlify.app/services/data-warehouse",
+    type: "website",
     images: [
       {
-        url: '/assets/img/novum-graph-img.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Novum OG Image'
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Data Warehouse OG Image"
       }
     ]
   },
+
   twitter: {
-    card: 'summary_large_image',
-    title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-    description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
-    images: ['/assets/img/novum-graph-img.webp']
+    card: "summary_large_image",
+    title:
+      "Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data",
+    description:
+      "Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
   }
 };
 

@@ -2,37 +2,54 @@
 import Corporate from "@/components/pages/main-services/corporate-trainings/";
 
 export const metadata = {
-  title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-  description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
+  title:
+    "Corporate Trainings – Expert Microsoft and Analytics Programs by Novum",
+  description:
+    "Develop your team’s skills with Novum’s expert-led corporate training programs in Microsoft tools, analytics, and instructor certification.",
   keywords: [
-    'data warehouse solutions', 'enterprise data warehouse', 'business intelligence architecture', 'centralized reporting', 'analytics infrastructure'
+    "corporate trainings",
+    "Microsoft training programs",
+    "Power BI training",
+    "Train the Trainer",
+    "MCT certification",
+    "analytics workshops"
   ],
-  authors: [{ name: 'Oasis Digital' }],
-  viewport: 'width=device-width,initial-scale=1.0',
-  metadataBase: new URL('https://novum.tech'),
+  authors: [{ name: "Novum" }],
+  viewport: "width=device-width,initial-scale=1.0",
+
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+
   alternates: {
-    canonical: '/en/home'
+    canonical: "/services/corporate-trainings"
   },
-  
+
   openGraph: {
-    title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-    description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
-    url: 'https://novum.tech/en/home',
-    type: 'website',
+    title:
+      "Corporate Trainings – Expert Microsoft and Analytics Programs by Novum",
+    description:
+      "Develop your team’s skills with Novum’s expert-led corporate training programs in Microsoft tools, analytics, and instructor certification.",
+    url: "https://talha-nextjs.netlify.app/services/corporate-trainings",
+    type: "website",
     images: [
       {
-        url: '/assets/img/novum-graph-img.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Novum OG Image'
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Corporate Trainings OG Image"
       }
     ]
   },
+
   twitter: {
-    card: 'summary_large_image',
-    title: 'Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data',
-    description: 'Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.',
-    images: ['/assets/img/novum-graph-img.webp']
+    card: "summary_large_image",
+    title:
+      "Corporate Trainings – Expert Microsoft and Analytics Programs by Novum",
+    description:
+      "Develop your team’s skills with Novum’s expert-led corporate training programs in Microsoft tools, analytics, and instructor certification.",
+    images: [
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+    ]
   }
 };
 
