@@ -7,7 +7,6 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-
 const Licensing = () => {
   return (
     <div>

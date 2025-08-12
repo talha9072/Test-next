@@ -1,8 +1,8 @@
 // app/page.jsx
-import Licensing from "@/components/pages/main-services/licensing/";
+import DigitalStrategy from "@/components/pages/main-services/digital-strategy/";
 
 export const metadata = {
-  title: 'Get a License – Novum Solutions',
+  title: 'Digital Strategy Consulting – Future-Ready Roadmaps for Business Innovation',
   description: 'Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.',
   keywords: [
     'Digital transformation UAE',
@@ -58,5 +58,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <Licensing />;
+  return <DigitalStrategy />;
 }
