@@ -10,7 +10,7 @@ const megaItems = [
     links: [
       { label: 'Digital Strategy', href: '/services/digital-strategy' },
       { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
-      { label: 'Change Management & Adoption', href: '/services/change-management' },
+      { label: 'Change Management & Adoption', href: '/services/change-management-adoption' },
       { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
       { label: 'Data Audit', href: '/services/data-audit' },
       { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },

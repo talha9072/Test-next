@@ -11103,3 +11103,12 @@ footer .logo img {
   width: 4px; border-radius: 4px;
   background: linear-gradient(180deg, #C9DA28 0%, #37B34A 50%, #20c997 100%) !important;
 }
+
+
+.changemanagement .feature-rule::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px; border-radius: 4px;
+  background: linear-gradient(180deg, #F9B817 0%, #EB5B3B 50%, #EB5B3B 100%) !important;
+}
