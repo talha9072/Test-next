@@ -2,73 +2,51 @@
 import PowerBI from "@/components/pages/main-services/power-bi/";
 
 export const metadata = {
-  title: "Power BI | Novum",
+  title: "Power BI Consulting Services | NOVUM",
   description:
-    "Expert Power BI consulting: dashboards, data modeling, and governance that turn your data into actionable insights. Delivered with Microsoft cloud expertise.",
+    "Unlock the power of your data with expert Power BI consulting services from NOVUM. Build dashboards, models, and reports that drive business decisions.",
   keywords: [
     "Power BI consulting",
-    "Power BI dashboards",
-    "business intelligence",
-    "data analytics",
-    "Azure services",
-    "custom BI solutions",
-    "report automation",
-    "digital transformation UAE"
+    "Power BI dashboard development",
+    "Microsoft Power BI services",
+    "Business intelligence solutions",
+    "Data visualization consulting",
+    "Power BI data modeling",
+    "Power BI integration"
   ],
   authors: [{ name: "Novum" }],
   viewport: "width=device-width,initial-scale=1.0",
 
-  // Use your live site base URL here
-  metadataBase: new URL("https://talha-nextjs.netlify.app"),
+  // Staging base URL
+  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/power-bi"
   },
 
-  icons: {
-    icon:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    shortcut:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    apple: [
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "72x72"
-      },
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "114x114"
-      }
-    ]
-  },
-
   openGraph: {
-    title: "Power BI | Novum",
+    title: "Power BI Consulting Services | NOVUM",
     description:
-      "From interactive dashboards to enterprise-wide BI rollout—Novum’s Power BI consulting transforms data into strategy.",
+      "Transform your business with custom Power BI dashboards and expert data modeling by NOVUM. Tailored BI solutions for smarter decisions.",
     url: "https://talha-nextjs.netlify.app/services/power-bi",
     type: "website",
     images: [
       {
-        url:
-          "https://novum-ae.netlify.app/images/og/og-power-bi.webp?v=1",
-        width: 1200,
-        height: 630,
-        alt: "Power BI analytics dashboard by Novum"
+        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        width: 1080,
+        height: 1920,
+        alt: "Power BI OG Image"
       }
     ]
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Power BI | Novum",
+    title: "Power BI Consulting Services | NOVUM",
     description:
-      "Transform your business intelligence with Novum’s Power BI dashboards, governance, and Azure integration.",
+      "Turn your data into insights with NOVUM's expert Power BI consulting services. Build rich dashboards, reports, and analytics tools tailored to your goals.",
     images: [
-      "https://novum-ae.netlify.app/images/og/og-power-bi.webp?v=1"
+      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };
