@@ -10781,6 +10781,7 @@ footer .logo img {
   padding-left: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .big-section .list-style-03 li {
   counter-increment: section;
@@ -10917,6 +10918,42 @@ footer .logo img {
   color: var(--primary-color-1);
   font-size: 18px;
 }
+ .why-choose .section-title {
+          font-size: 42px;
+          font-weight: 700;
+          letter-spacing: -1px;
+          color: var(--text-heading-color);
+        }
+        .why-choose .feature-box-icon i {
+          font-size: 42px;
+          color: var(--primary-color-1);
+          line-height: 1;
+        }
+        .why-choose .feature-title {
+          display: block;
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: var(--text-heading-color);
+        }
+        .why-choose .feature-text {
+          margin: 0;
+          max-width: 80%;
+          color: var(--medium-gray);
+        }
+        .why-choose .mb-50px {
+          margin-bottom: 50px !important;
+        }
+        /* Ensures the grid itself is centered within the section */
+        .why-choose .features-grid {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1250px;
+        }
+        @media (max-width: 576px) {
+          .why-choose .sm-mb-40px {
+            margin-bottom: 40px !important;
+          }
+        }
 
 
 /* core capabilities section */
@@ -11112,3 +11149,7 @@ footer .logo img {
   width: 4px; border-radius: 4px;
   background: linear-gradient(180deg, #F9B817 0%, #EB5B3B 50%, #EB5B3B 100%) !important;
 }
+
+
+
+/* Industries pages */

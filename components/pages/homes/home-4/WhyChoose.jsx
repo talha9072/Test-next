@@ -61,44 +61,7 @@ export default function WhyChoose() {
         </div>
       </div>
 
-      <style jsx>{`
-        .why-choose .section-title {
-          font-size: 42px;
-          font-weight: 700;
-          letter-spacing: -1px;
-          color: var(--text-heading-color);
-        }
-        .why-choose .feature-box-icon i {
-          font-size: 42px;
-          color: var(--primary-color-1);
-          line-height: 1;
-        }
-        .why-choose .feature-title {
-          display: block;
-          font-weight: 600;
-          margin-bottom: 5px;
-          color: var(--text-heading-color);
-        }
-        .why-choose .feature-text {
-          margin: 0;
-          max-width: 80%;
-          color: var(--medium-gray);
-        }
-        .why-choose .mb-50px {
-          margin-bottom: 50px !important;
-        }
-        /* Ensures the grid itself is centered within the section */
-        .why-choose .features-grid {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1250px;
-        }
-        @media (max-width: 576px) {
-          .why-choose .sm-mb-40px {
-            margin-bottom: 40px !important;
-          }
-        }
-      `}</style>
+      
     </section>
   );
 }

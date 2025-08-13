@@ -122,7 +122,7 @@ const Footer = () => (
         <div className="order-0 order-md-1 w-100 text-start text-md-end">
           <div className="text-muted">© 2025 Novum. All Rights Reserved</div>
           <div className="text-muted">
-            Created by{' '}
+            Crafted by{' '}
             <a
               href="https://oasis-digital.ae/"
               target="_blank"
