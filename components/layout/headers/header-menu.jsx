@@ -76,12 +76,12 @@ const productItems = [
     heading: 'By Industry or Business Function',
     icon: 'fas fa-users main-clr',
     links: [
-      { label: 'Healthcare & Pharma', href: '/products/industry/healthcare' },
-      { label: 'Retail & Distribution', href: '/products/industry/retail' },
-      { label: 'Manufacturing & Agriculture', href: '/products/industry/manufacturing' },
-      { label: 'Government & Public Sector', href: '/products/industry/government' },
-      { label: 'Oil & Gas / Energy', href: '/products/industry/oil-gas' },
-      { label: 'Transportation & Aviation', href: '/products/industry/transportation' },
+      { label: 'Healthcare & Pharma', href: '/industries/pharmaceutical-industry' },
+      { label: 'Retail & Distribution', href: '/industries/food-retail-distribution' },
+      { label: 'Manufacturing & Agriculture', href: '/industries/agriculture' },
+      { label: 'Government & Public Sector', href: '/industries/government' },
+      { label: 'Oil & Gas / Energy', href: '/industries/natural-resources' },
+      { label: 'Transportation & Aviation', href: '/industries/aerospace-transportation' },
     ],
   },
   {
@@ -216,7 +216,7 @@ const MainMenu = () => {
       {/* Resources */}
       <li className="menu-item-has-children">
         <Link href="#">
-          Resource <i className="fas fa-angle-down"></i>
+          Resources <i className="fas fa-angle-down"></i>
         </Link>
         <ul className="sub-menu">
           <li><Link href="/industries">Industries</Link></li>

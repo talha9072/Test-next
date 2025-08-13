@@ -92,12 +92,12 @@ const ResponsiveMenu = () => {
                     <li className="menu-group-heading">
                     <i className="fas fa-users main-clr" /> By Industry or Business Function
                     </li>
-                    <li><Link href="/products/healthcare-pharma">Healthcare & Pharma</Link></li>
-                    <li><Link href="/products/retail-distribution">Retail & Distribution</Link></li>
-                    <li><Link href="/products/manufacturing-agriculture">Manufacturing & Agriculture</Link></li>
-                    <li><Link href="/products/government-public-sector">Government & Public Sector</Link></li>
-                    <li><Link href="/products/oil-gas-energy">Oil & Gas / Energy</Link></li>
-                    <li><Link href="/products/transportation-aviation">Transportation & Aviation</Link></li>
+                    <li><Link href="/industries/pharmaceutical-industry">Healthcare & Pharma</Link></li>
+                    <li><Link href="/industries/food-retail-distribution">Retail & Distribution</Link></li>
+                    <li><Link href="/industries/agriculture">Manufacturing & Agriculture</Link></li>
+                    <li><Link href="/industries/government">Government & Public Sector</Link></li>
+                    <li><Link href="/industries/natural-resources">Oil & Gas / Energy</Link></li>
+                    <li><Link href="/industries/aerospace-transportation">Transportation & Aviation</Link></li>
                 </ul>
                 <a
                     className={`mean-expand ${activeIcon("products")}`}
