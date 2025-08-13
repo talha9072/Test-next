@@ -42,10 +42,12 @@ export default function WhyChoose() {
             <h2 className="mb-5">Why Choose Novum?</h2>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-4">
+
+        {/* Center the whole grid, keep items left-aligned */}
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center features-grid">
           {features.map((f, i) => (
-            <div key={i} className="col icon-with-text-style-01 mb-50px sm-mb-40px">
-              <div className="feature-box feature-box-left-icon last-paragraph-no-margin d-flex align-items-start">
+            <div key={i} className="col col-md-6 col-lg-4 icon-with-text-style-01 mb-50px sm-mb-40px">
+              <div className="feature-box feature-box-left-icon last-paragraph-no-margin d-flex align-items-start text-start">
                 <div className="feature-box-icon me-3">
                   <i className={`bi ${f.icon}`} />
                 </div>
@@ -85,8 +87,11 @@ export default function WhyChoose() {
         .why-choose .mb-50px {
           margin-bottom: 50px !important;
         }
-        .why-choose .sm-mb-40px {
-          /* hide on small, override via your responsive CSS */
+        /* Ensures the grid itself is centered within the section */
+        .why-choose .features-grid {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1250px;
         }
         @media (max-width: 576px) {
           .why-choose .sm-mb-40px {

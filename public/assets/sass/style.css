@@ -10722,9 +10722,9 @@ footer .logo img {
 
 /* 3rd section */
 .service-btn{
-  color: var(--text-white);
+  color: var(--text-white) !important;
   background-color: var(--primary-color-1);
-  border-radius: 8px; 
+  border-radius: 3px; 
   margin-right: 20px;
   padding: 15px 25px;
 }
