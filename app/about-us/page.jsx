@@ -2,18 +2,16 @@
 import Aboutus from "@/components/pages/about/index";
 
 export const metadata = {
-  title: "Novum | Digital Solutions Powered by Innovation and AI",
+  title: "About Novum – Data Analytics & Software Development Experts",
   description:
-    "Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.",
+    "Discover Novum’s journey as a trusted data analytics and software development company, empowering digital transformation since 2017.",
   keywords: [
-    "Digital transformation UAE",
-    "AI solutions",
-    "Microsoft Partner",
-    "custom software development",
-    "Power BI consulting",
-    "data warehouse",
-    "Azure services",
-    "smart digital products"
+    "about Novum",
+    "data analytics company",
+    "software development company",
+    "Microsoft partner",
+    "ERP implementation",
+    "digital transformation"
   ],
   authors: [{ name: "Novum" }],
   viewport: "width=device-width,initial-scale=1.0",
@@ -22,50 +20,30 @@ export const metadata = {
   metadataBase: new URL("https://talha-nextjs.netlify.app/"),
 
   alternates: {
-    canonical: "/"
-  },
-
-  icons: {
-    icon:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    shortcut:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    apple: [
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "72x72"
-      },
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "114x114"
-      }
-    ]
+    canonical: "/about-us"
   },
 
   openGraph: {
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title: "About Novum – Data Analytics & Software Development Experts",
     description:
-      "Discover how Novum helps organizations grow with AI, cloud, and smart digital platforms. Trusted across industries for software, Microsoft solutions, and more.",
-    url: "https://talha-nextjs.netlify.app/",
+      "Discover Novum’s journey as a trusted data analytics and software development company, empowering digital transformation since 2017.",
+    url: "https://talha-nextjs.netlify.app/about-us",
     type: "website",
     images: [
       {
         url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
-        alt: "Novum OG Image"
+        alt: "About Novum OG Image"
       }
     ]
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title: "About Novum – Data Analytics & Software Development Experts",
     description:
-      "AI, cloud, software, and Microsoft technologies that streamline operations and fuel growth. Explore digital solutions by Novum.",
+      "Discover Novum’s journey as a trusted data analytics and software development company, empowering digital transformation since 2017.",
     images: [
       "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]

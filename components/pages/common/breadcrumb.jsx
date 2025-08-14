@@ -12,7 +12,7 @@ const BreadCrumb = ({title, innerTitle}) => {
                 <div className="row justify-content-between align-items-center">
                     <div className="col-xl-7 col-lg-7">
                         <div className="page__banner-content">
-                            <h2>{title}</h2>
+                            <h1>{title}</h1>
                             
                         </div>
                     </div>

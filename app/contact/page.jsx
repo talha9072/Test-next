@@ -1,18 +1,15 @@
 // app/page.jsx
-import HomeFour from "@/components/pages/contacts/contact";
+import Contact from "@/components/pages/contacts/contact";
 export const metadata = {
-  title: "Novum | Digital Solutions Powered by Innovation and AI",
+  title: "Contact Novum – Get in Touch for Data and Software Solutions",
   description:
-    "Explore Novum’s AI-driven digital solutions, Microsoft cloud services, and custom software that simplify complex operations and fuel business growth.",
+    "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
   keywords: [
-    "Digital transformation UAE",
-    "AI solutions",
-    "Microsoft Partner",
-    "custom software development",
-    "Power BI consulting",
-    "data warehouse",
-    "Azure services",
-    "smart digital products"
+    "contact Novum",
+    "contact data analytics provider",
+    "software development contact",
+    "Microsoft solutions contact",
+    "digital transformation inquiry"
   ],
   authors: [{ name: "Novum" }],
   viewport: "width=device-width,initial-scale=1.0",
@@ -21,50 +18,30 @@ export const metadata = {
   metadataBase: new URL("https://talha-nextjs.netlify.app/"),
 
   alternates: {
-    canonical: "/"
-  },
-
-  icons: {
-    icon:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    shortcut:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    apple: [
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "72x72"
-      },
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "114x114"
-      }
-    ]
+    canonical: "/contact"
   },
 
   openGraph: {
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title: "Contact Novum – Get in Touch for Data and Software Solutions",
     description:
-      "Discover how Novum helps organizations grow with AI, cloud, and smart digital platforms. Trusted across industries for software, Microsoft solutions, and more.",
-    url: "https://talha-nextjs.netlify.app/",
+      "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
+    url: "https://talha-nextjs.netlify.app/contact",
     type: "website",
     images: [
       {
         url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
-        alt: "Novum OG Image"
+        alt: "Contact Novum OG Image"
       }
     ]
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Novum | Digital Solutions Powered by Innovation and AI",
+    title: "Contact Novum – Get in Touch for Data and Software Solutions",
     description:
-      "AI, cloud, software, and Microsoft technologies that streamline operations and fuel growth. Explore digital solutions by Novum.",
+      "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
     images: [
       "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
@@ -72,5 +49,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <HomeFour />;
+  return <Contact />;
 }
