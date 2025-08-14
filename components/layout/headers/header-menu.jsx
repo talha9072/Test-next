@@ -225,7 +225,7 @@ const MainMenu = () => {
         </ul>
       </li>
 
-      <li><Link href="/about">About</Link></li>
+      <li><Link href="/about-us">About</Link></li>
     </ul>
   );
 };

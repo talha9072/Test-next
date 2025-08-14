@@ -4742,7 +4742,7 @@ Responsive Menu Css
 * Page Banner CSS
 ==========================================================================*/
 .page__banner {
-  background-color: var(--bg-heading-color);
+  background-color: var(--primary-color-1);
   position: relative;
   overflow: hidden;
 }
