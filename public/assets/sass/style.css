@@ -5333,7 +5333,7 @@ Responsive Menu Css
 .services .card-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3B4A9E;
+    color: var(--primary-color-1);
     
 }
 .services .card-text {
@@ -10331,7 +10331,7 @@ Responsive Menu Css
 * Footer One CSS
 ==========================================================================*/
 footer .logo img {
-  width: 170px;
+  width: 160px;
 }
 /*==========================================================================
 * 404 CSS
