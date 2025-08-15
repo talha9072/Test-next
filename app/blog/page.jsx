@@ -1,15 +1,15 @@
 // app/page.jsx
 import Contact from "@/components/pages/blogs/blog/index";
 export const metadata = {
-  title: "Contact Novum – Get in Touch for Data and Software Solutions",
+  title: "Novum Blog – Insights on Data, AI, and Digital Transformation",
   description:
-    "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
+    "Read Novum’s latest blog posts on data analytics, AI, Microsoft solutions, and digital transformation strategies to help your business innovate and grow.",
   keywords: [
-    "contact Novum",
-    "contact data analytics provider",
-    "software development contact",
-    "Microsoft solutions contact",
-    "digital transformation inquiry"
+    "Novum blog",
+    "data analytics articles",
+    "AI insights",
+    "Microsoft solutions blog",
+    "digital transformation tips"
   ],
   authors: [{ name: "Novum" }],
   viewport: "width=device-width,initial-scale=1.0",
@@ -18,30 +18,30 @@ export const metadata = {
   metadataBase: new URL("https://talha-nextjs.netlify.app/"),
 
   alternates: {
-    canonical: "/contact"
+    canonical: "/blog"
   },
 
   openGraph: {
-    title: "Contact Novum – Get in Touch for Data and Software Solutions",
+    title: "Novum Blog – Insights on Data, AI, and Digital Transformation",
     description:
-      "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
-    url: "https://talha-nextjs.netlify.app/contact",
+      "Explore Novum’s blog for expert insights into data analytics, AI, Microsoft Azure, and software innovation.",
+    url: "https://talha-nextjs.netlify.app/blog",
     type: "website",
     images: [
       {
         url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
-        alt: "Contact Novum OG Image"
+        alt: "Novum Blog OG Image"
       }
     ]
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact Novum – Get in Touch for Data and Software Solutions",
+    title: "Novum Blog – Insights on Data, AI, and Digital Transformation",
     description:
-      "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
+      "Stay informed with Novum’s expert blog covering data analytics, AI, Microsoft solutions, and the latest in digital transformation.",
     images: [
       "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]

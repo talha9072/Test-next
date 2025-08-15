@@ -3,7 +3,7 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
-import { posts as rawPosts } from "@/components/data/blogs";
+import { posts as rawPosts } from "@/components/data/case-studies";
 
 export default function FeaturedPost() {
   // newest post with date <= today (ISO-string safe; no timezone bugs)
