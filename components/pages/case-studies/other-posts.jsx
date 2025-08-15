@@ -93,8 +93,8 @@ export default function OtherPosts() {
                     )}
 
                     {/* Author + Read more at bottom */}
-                    <div className="mt-auto">
-                      <div className="d-flex align-items-center gap-2 mb-3">
+                    <div className="mt-auto d-flex justify-content-between align-items-center flex-wrap">
+                      <div className="d-flex align-items-center gap-2">
                         <span
                           className="rounded-circle d-inline-flex align-items-center justify-content-center bg-light border"
                           style={{ width: 28, height: 28 }}
