@@ -11151,3 +11151,93 @@ footer .logo img {
 
 
 /* Industries pages */
+
+
+
+
+/* Blogs */
+ .fp-img-wrap {
+          position: relative;
+        }
+        .fp-cover {
+          object-fit: cover;
+        }
+        /* Absolutely position the chip; keep it tiny and auto-sized */
+        .fp-date-chip {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          z-index: 2;
+          display: inline-flex;
+          width: auto;
+          height: auto;
+          pointer-events: none; /* don't block clicks on the image */
+        }
+        /* Keep the chip compact on all screens */
+        .fp-date-chip :global(.display-5) {
+          font-size: 1rem; /* ~16px */
+          line-height: 1;
+        }
+        .fp-date-chip sup {
+          font-size: 0.65rem;
+          line-height: 1;
+          top: -0.25rem;
+        }
+        .fp-date-chip :global(.small) {
+          font-size: 0.72rem;
+        }
+        @media (max-width: 576px) {
+          .fp-date-chip {
+            gap: 0.5rem;
+            padding: 6px 8px;
+          }
+        }
+
+        
+      .other-cover {
+          object-fit: cover;
+        }
+        .date-chip {
+          position: absolute;
+          top: 18px;
+          left: 18px;
+          z-index: 2;
+          display: inline-flex;
+          width: auto;
+          height: auto;
+          pointer-events: none;
+        }
+        .chip-day {
+          font-size: 0.95rem;
+          line-height: 1;
+        }
+        .date-chip sup {
+          font-size: 0.6rem;
+          line-height: 1;
+          top: -0.25rem;
+        }
+        /* Tighter on small screens */
+        @media (max-width: 576px) {
+          .date-chip {
+            gap: 0.35rem;
+            padding: 4px 6px;
+          }
+          .chip-day {
+            font-size: 0.9rem;
+          }
+        }
+        /* Ensure Read more isn't full-width in this section */
+        #other-blogs :global(.btn-two) {
+          width: auto !important;
+          display: inline-flex !important; /* keep pill shape tight */
+        }
+        /* Pagination buttons look like Bootstrap but ensure pointer cursor for <button> */
+        #other-blogs .pagination .page-link {
+          cursor: pointer;
+          color: var(--primary-color-1);
+        }
+          #other-blogs .pagination .page-item.active .page-link {
+          background-color: var(--primary-color-1) !important;
+          color: #fff !important;
+          border-color: var(--primary-color-1) !important;
+          }
