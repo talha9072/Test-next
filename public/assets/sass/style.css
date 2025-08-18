@@ -95,12 +95,29 @@ Contact Location Map
 /*==========================================================================
 * Google Fonts
 ==========================================================================*/
+/* 1) Fast subset (latin only, WOFF2) */
+/* Noto Sans — prefer WOFF2, fallback WOFF. No TTF. */
+/* Small latin-only subset (fast) */
 @font-face {
   font-family: 'Noto Sans';
-  src: url('/assets/webfonts/noto-sans/NotoSans-Regular.ttf') format('truetype');
+  src: url('/assets/webfonts/noto-sans/subset-NotoSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153,
+                 U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+                 U+2000-206F, U+2074, U+20AC, U+2122,
+                 U+2212, U+2215;
+}
+
+/* (Optional fallback — only if you ever expect extended Latin or non-English) */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/webfonts/noto-sans/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+1E00-1EFF;
 }
 /*==========================================================================
 * Common CSS
