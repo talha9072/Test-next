@@ -177,6 +177,29 @@ width: 80%;
 .w-70{
   width: 70%;
 }
+/* Accordion collapsed & expanded content */
+#faqAccordion .accordion-collapse {
+  background-color: var(--primary-color-1) !important;
+  color: #fff; /* text white for contrast */
+  transition: background-color 0.3s ease;
+}
+
+/* Accordion header button (default state) */
+#faqAccordion .accordion-button {
+  background-color: #fff !important; /* white header */
+  color: #212529 !important; /* dark text */
+  font-weight: 500;
+  box-shadow: none !important;
+}
+
+/* Accordion header when active (expanded) */
+#faqAccordion .accordion-button:not(.collapsed) {
+  background-color: var(--primary-color-1) !important;
+  color: #fff !important;
+}
+#faqAccordion .accordion-button:not(.collapsed) ::after {
+  color: #fff !important;
+}
 .explore-btn {
   display: inline-flex;
   align-items: center;

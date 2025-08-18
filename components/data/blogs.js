@@ -46,7 +46,7 @@ export const posts = [
     excerpt:
       "Kickstart governance with a minimal but effective framework: catalog, lineage, quality SLAs, and access controls—so teams can trust the data they use every day.",
     categories: ["Data Strategy", "Governance", "Security"],
-    link: "/blogs/data-governance-starter-kit",
+    link: "/blog/data-governance-starter-kit",
   },
   {
     id: "5",
