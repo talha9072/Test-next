@@ -80,7 +80,7 @@ const ResponsiveMenu = () => {
                     <li className="menu-group-heading">
                     <i className="fas fa-building main-clr" /> Products ISV
                     </li>
-                    <li><Link href="/products/airport-turnaround-solution">Airport Turnaround Solution</Link></li>
+                    <li><Link href="/products/airports-turnaround-solution">Airport Turnaround Solution</Link></li>
                     <li><Link href="/products/nes-novum-entrance-system">NES (Novum Entrance System)</Link></li>
                     <li><Link href="/products/ocr-certification-directory">OCR Certification Directory</Link></li>
                     <li><Link href="/products/face-recognition-detection">Face Recognition & Detection</Link></li>
@@ -108,8 +108,8 @@ const ResponsiveMenu = () => {
                     <Link href='#'>Resources</Link>
                     <ul className='sub-menu' style={activeSubMenu("project")}>
                         <li><Link href="/industries">Industries</Link></li>
-                        <li><Link href="#">Case Studies</Link></li>
-                        <li><Link href="#">Blogs/News</Link></li>
+                        <li><Link href="/case-studies">Case Studies</Link></li>
+                        <li><Link href="/blog">Blogs/News</Link></li>
                     </ul>
                     <a className={`mean-expand ${activeIcon("project")}`} onClick={() => active("project")}></a>
                 </li>
