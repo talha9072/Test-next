@@ -9,12 +9,12 @@ const megaItems = [
     icon: 'fas fa-sync-alt main-clr',
     links: [
       { label: 'Digital Strategy', href: '/services/digital-strategy' },
-      { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
-      { label: 'Change Management & Adoption', href: '/services/change-management-adoption' },
-      { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
-      { label: 'Data Audit', href: '/services/data-audit' },
-      { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
       { label: 'Sustainability Manager', href: '/services/microsoft-sustainability' },
+      { label: 'Data Audit', href: '/services/data-audit' },
+      { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
+      { label: 'Change Management & Adoption', href: '/services/change-management-adoption' },
+      
+      
     ],
   },
   {
@@ -32,27 +32,17 @@ const megaItems = [
     icon: 'fas fa-briefcase main-clr',
     links: [
       { label: 'Microsoft Dynamics 365', href: '/services/microsoft-dynamics-365' },
-      { label: 'Modern Work (Microsoft 365/Copilot)', href: '/services/modern-work' },
+      { label: 'Microsoft 365 Deployment', href: '#' },
+      { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
     ],
   },
+  
   {
     heading: 'Software & Engineering',
-    icon: 'fas fa-code main-clr',
-    links: [
-      { label: 'SI (System integration)', href: '/services/system-integration' },
-      { label: 'Azure (Cloud Adoption)', href: '/services/cloud-adoption' },
-      { label: 'Custom Application Dev', href: '/services/custom-dev' },
-      { label: 'Copilot Studio / Agents', href: '/services/copilot-studio' },
-      { label: 'Automations', href: '/services/automations' },
-    ],
-  },
-  {
-    heading: 'Engagements',
     icon: 'fas fa-handshake main-clr',
     links: [
-      { label: 'Consulting & Advisory Services', href: '/services/consulting-advisory' },
-      { label: 'Professional Services', href: '/services/professional-services' },
-      { label: 'Managed Services', href: '/services/managed-services' },
+      { label: 'Software Development', href: '#' },
+      { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
     ],
   },
 ];
@@ -64,12 +54,10 @@ const productItems = [
     icon: 'fas fa-building main-clr',
     links: [
       { label: 'Airport Turnaround Solution', href: '/products/airports-turnaround-solution' },
-      { label: 'NES (Novum Entrance System)', href: '/products/nes' },
-      { label: 'OCR Certification Directory', href: '/products/ocr-directory' },
-      { label: 'Face Recognition & Detection', href: '/products/face-recognition' },
-      { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding' },
-      { label: 'D365 Automations', href: '/products/d365-automations' },
-      { label: 'ESS - Employee Self Service', href: '/products/ess' },
+      { label: 'NES (Novum Entrance System)', href: '/products/nes-novum-entrance-system' },
+      { label: 'OCR Certification Directory', href: '/products/ocr-certification-directory' },
+      { label: 'Face Recognition & Detection', href: '/products/face-recognition-and-detection' },
+      { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding-platform' },
     ],
   },
   {

@@ -26,12 +26,12 @@ const ResponsiveMenu = () => {
                             <i className="fas fa-sync-alt main-clr" /> Digital Transformation
                         </li>
                         <li><Link href="/services/digital-strategy">Digital Strategy</Link></li>
-                        <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
-                        <li><Link href="/services/change-management-adoption">Change Management & Adoption</Link></li>
-                        <li><Link href="/services/corporate-trainings">Corporate Trainings</Link></li>
-                        <li><Link href="/services/data-audit">Data Audit</Link></li>
-                        <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
                         <li><Link href="/services/microsoft-sustainability">Sustainability Manager</Link></li>
+                        <li><Link href="/services/data-audit">Data Audit</Link></li>
+                        <li><Link href="/services/corporate-trainings">Corporate Trainings</Link></li>
+                        <li><Link href="/services/change-management-adoption">Change Management & Adoption</Link></li>
+                        
+                        
 
                         {/* Data & AI */}
                         <li className="menu-group-heading">
@@ -47,25 +47,15 @@ const ResponsiveMenu = () => {
                             <i className="fas fa-briefcase main-clr" /> Business Applications
                         </li>
                         <li><Link href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</Link></li>
-                        <li><Link href="/services/modern-work">Modern Work (Microsoft 365/Copilot)</Link></li>
-
-                        {/* Software & Engineering */}
-                        <li className="menu-group-heading">
-                            <i className="fas fa-code main-clr" /> Software &amp; Engineering
-                        </li>
-                        <li><Link href="/services/si-system-integration">SI (System integration)</Link></li>
-                        <li><Link href="/services/azure-cloud-adoption">Azure (Cloud Adoption)</Link></li>
-                        <li><Link href="/services/custom-application-dev">Custom Application Dev</Link></li>
-                        <li><Link href="/services/copilot-studio-agents">Copilot Studio / Agents</Link></li>
-                        <li><Link href="/services/automations">Automations</Link></li>
+                        <li><Link href="#">Microsoft 365 Deployment</Link></li>
+                        <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
 
                         {/* Engagements */}
                         <li className="menu-group-heading">
-                            <i className="fas fa-handshake main-clr" /> Engagements
+                            <i className="fas fa-handshake main-clr" /> Software & Engineering
                         </li>
-                        <li><Link href="/services/consulting-advisory">Consulting &amp; Advisory Services</Link></li>
-                        <li><Link href="/services/professional-services">Professional Services</Link></li>
-                        <li><Link href="/services/managed-services">Managed Services</Link></li>
+                        <li><Link href="#">Software Development</Link></li>
+                        <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
                     </ul>
                     <a
                         className={`mean-expand ${activeIcon("services")}`}
@@ -85,8 +75,6 @@ const ResponsiveMenu = () => {
                     <li><Link href="/products/ocr-certification-directory">OCR Certification Directory</Link></li>
                     <li><Link href="/products/face-recognition-detection">Face Recognition & Detection</Link></li>
                     <li><Link href="/products/commodity-bidding-platform">Commodity Bidding Platform</Link></li>
-                    <li><Link href="/products/d365-automations">D365 Automations</Link></li>
-                    <li><Link href="/products/ess-employee-self-service">ESS - Employee Self Service</Link></li>
 
                     {/* By Industry or Business Function */}
                     <li className="menu-group-heading">

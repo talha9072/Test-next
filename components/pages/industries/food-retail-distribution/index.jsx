@@ -54,7 +54,7 @@ const Health = () => {
   heading={(
     <>Measurable Impact Delivered <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500">
         <span className="z-index-minus-1">
-          <img src="images/demo-digital-agency-highlight-separator.png" alt="" />
+          
         </span>
       </span></>
   )}
