@@ -32,7 +32,7 @@ const megaItems = [
     icon: 'fas fa-briefcase main-clr',
     links: [
       { label: 'Microsoft Dynamics 365', href: '/services/microsoft-dynamics-365' },
-      { label: 'Microsoft 365 Deployment', href: '#' },
+      { label: 'Microsoft 365 Deployment', href: '/services/microsoft-365-deployment' },
       { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
     ],
   },

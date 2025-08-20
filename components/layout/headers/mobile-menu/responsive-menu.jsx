@@ -47,7 +47,7 @@ const ResponsiveMenu = () => {
                             <i className="fas fa-briefcase main-clr" /> Business Applications
                         </li>
                         <li><Link href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</Link></li>
-                        <li><Link href="#">Microsoft 365 Deployment</Link></li>
+                        <li><Link href="/services/microsoft-365-deployment">Microsoft 365 Deployment</Link></li>
                         <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
 
                         {/* Engagements */}
