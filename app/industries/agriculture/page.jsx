@@ -17,7 +17,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/industries/agriculture"
@@ -27,11 +27,11 @@ export const metadata = {
     title: "Digital Solutions for Agriculture and Agribusiness | Novum",
     description:
       "Modernize agricultural operations with data platforms, Azure infrastructure, and AI analytics. Novum empowers agribusinesses with real-time visibility and smarter planning.",
-    url: "https://talha-nextjs.netlify.app/industries/agriculture",
+    url: "https://novum-nextjs.netlify.app/industries/agriculture",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Agriculture and Agribusiness OG Image"
@@ -45,7 +45,7 @@ export const metadata = {
     description:
       "Modernize agricultural operations with data platforms, Azure infrastructure, and AI analytics. Novum empowers agribusinesses with real-time visibility and smarter planning.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

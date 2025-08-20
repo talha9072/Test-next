@@ -16,7 +16,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/industries/food-retail-distribution"
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Food Retail and Distribution Technology Solutions | Novum",
     description:
       "Streamline food retail and distribution with cloud infrastructure, Power BI analytics, and AI forecasting. Novum helps you gain real-time visibility and efficiency.",
-    url: "https://talha-nextjs.netlify.app/industries/food-retail-distribution",
+    url: "https://novum-nextjs.netlify.app/industries/food-retail-distribution",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Food Retail and Distribution OG Image"
@@ -44,7 +44,7 @@ export const metadata = {
     description:
       "Streamline food retail and distribution with cloud infrastructure, Power BI analytics, and AI forecasting. Novum helps you gain real-time visibility and efficiency.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

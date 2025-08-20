@@ -16,7 +16,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/industries/government"
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Digital Solutions for Government and Public Sector | Novum",
     description:
       "Empower public sector organizations with cloud-based infrastructure, secure data platforms, and AI analytics. Novum supports digital transformation across government services.",
-    url: "https://talha-nextjs.netlify.app/industries/government",
+    url: "https://novum-nextjs.netlify.app/industries/government",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Government and Public Sector OG Image"
@@ -44,7 +44,7 @@ export const metadata = {
     description:
       "Empower public sector organizations with cloud-based infrastructure, secure data platforms, and AI analytics. Novum supports digital transformation across government services.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

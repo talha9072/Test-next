@@ -18,7 +18,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/power-bi"
@@ -28,11 +28,11 @@ export const metadata = {
     title: "Power BI Consulting Services | NOVUM",
     description:
       "Transform your business with custom Power BI dashboards and expert data modeling by NOVUM. Tailored BI solutions for smarter decisions.",
-    url: "https://talha-nextjs.netlify.app/services/power-bi",
+    url: "https://novum-nextjs.netlify.app/services/power-bi",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Power BI OG Image"
@@ -46,7 +46,7 @@ export const metadata = {
     description:
       "Turn your data into insights with NOVUM's expert Power BI consulting services. Build rich dashboards, reports, and analytics tools tailored to your goals.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

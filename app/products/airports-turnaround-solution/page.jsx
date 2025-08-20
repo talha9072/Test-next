@@ -16,7 +16,7 @@ export const metadata = {
   authors: [{ name: "Novum Team" }],
   viewport: "width=device-width,initial-scale=1.0",
 
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/products/airports-turnaround-solution"
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Airports Turnaround Solution – Novum",
     description:
       "Optimize airport turnaround times with AI-driven real-time monitoring, vendor tracking, and a centralized control dashboard from Novum.",
-    url: "https://talha-nextjs.netlify.app/en/products/airports-turnaround-solution",
+    url: "https://novum-nextjs.netlify.app/en/products/airports-turnaround-solution",
     type: "website", 
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1200,
         height: 630,
         alt: "Airports Turnaround Solution by Novum"
@@ -46,7 +46,7 @@ export const metadata = {
     description:
       "Boost airport efficiency and reduce delays with Novum’s Airports Turnaround Solution. Real-time data, performance tracking, and automation.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

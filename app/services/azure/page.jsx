@@ -18,7 +18,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/azure"
@@ -29,11 +29,11 @@ export const metadata = {
       "Microsoft Azure Services – Secure, Scalable, Intelligent Cloud Platform",
     description:
       "Prepare for AI-driven innovation with Microsoft Azure. Secure, scalable, and hybrid ready, Azure delivers cloud infrastructure and services to support your digital transformation journey.",
-    url: "https://talha-nextjs.netlify.app/services/microsoft-azure",
+    url: "https://novum-nextjs.netlify.app/services/microsoft-azure",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Microsoft Azure OG Image"
@@ -48,7 +48,7 @@ export const metadata = {
     description:
       "Prepare for AI-driven innovation with Microsoft Azure. Secure, scalable, and hybrid ready, Azure delivers cloud infrastructure and services to support your digital transformation journey.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

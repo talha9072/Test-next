@@ -15,7 +15,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/contact"
@@ -25,11 +25,11 @@ export const metadata = {
     title: "Contact Novum – Get in Touch for Data and Software Solutions",
     description:
       "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
-    url: "https://talha-nextjs.netlify.app/contact",
+    url: "https://novum-nextjs.netlify.app/contact",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Contact Novum OG Image"
@@ -43,7 +43,7 @@ export const metadata = {
     description:
       "Reach out to Novum for inquiries about data analytics, AI, software development, Microsoft services, or to request a consultation.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

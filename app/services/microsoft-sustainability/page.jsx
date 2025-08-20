@@ -18,7 +18,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/microsoft-sustainability"
@@ -29,11 +29,11 @@ export const metadata = {
       "Microsoft Sustainability Solutions – Track, Manage, and Accelerate ESG Progress",
     description:
       "Advance your ESG goals with Microsoft Sustainability Solutions. Monitor, report, and reduce your environmental impact using automated data and intelligent insights.",
-    url: "https://talha-nextjs.netlify.app/services/microsoft-sustainability",
+    url: "https://novum-nextjs.netlify.app/services/microsoft-sustainability",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Microsoft Sustainability OG Image"
@@ -48,7 +48,7 @@ export const metadata = {
     description:
       "Advance your ESG goals with Microsoft Sustainability Solutions. Monitor, report, and reduce your environmental impact using automated data and intelligent insights.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

@@ -18,7 +18,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/artificial-intelligence-iot"
@@ -29,11 +29,11 @@ export const metadata = {
       "AI and IoT Solutions – Intelligent Automation for Modern Enterprises",
     description:
       "Discover how NOVUM uses AI and IoT technologies to automate operations, improve customer experiences, and deliver real-time business insights.",
-    url: "https://talha-nextjs.netlify.app/services/artificial-intelligence-iot",
+    url: "https://novum-nextjs.netlify.app/services/artificial-intelligence-iot",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "AI and IoT OG Image"
@@ -48,7 +48,7 @@ export const metadata = {
     description:
       "Discover how NOVUM uses AI and IoT technologies to automate operations, improve customer experiences, and deliver real-time business insights.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

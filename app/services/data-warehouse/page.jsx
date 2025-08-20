@@ -17,7 +17,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/services/data-warehouse"
@@ -28,11 +28,11 @@ export const metadata = {
       "Enterprise Data Warehouse Solutions – Centralize and Optimize Your Data",
     description:
       "Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.",
-    url: "https://talha-nextjs.netlify.app/services/data-warehouse",
+    url: "https://novum-nextjs.netlify.app/services/data-warehouse",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Data Warehouse OG Image"
@@ -47,7 +47,7 @@ export const metadata = {
     description:
       "Build a scalable data warehouse with NOVUM to unify your data, streamline reporting, and enable data-driven decision-making across your organization.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

@@ -17,7 +17,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/industries"
@@ -27,11 +27,11 @@ export const metadata = {
     title: "Industries We Serve | Novum Digital Transformation Solutions",
     description:
       "Discover Novum’s AI, cloud, and data expertise across multiple industries—driving growth, efficiency, and innovation worldwide.",
-    url: "https://talha-nextjs.netlify.app/industries",
+    url: "https://novum-nextjs.netlify.app/industries",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Industries Novum OG Image"
@@ -45,7 +45,7 @@ export const metadata = {
     description:
       "AI, cloud, and data solutions for healthcare, retail, manufacturing, government, energy, and transportation. Powered by Novum.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };

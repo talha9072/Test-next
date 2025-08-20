@@ -15,7 +15,7 @@ export const metadata = {
   viewport: "width=device-width,initial-scale=1.0",
 
   // Staging base URL
-  metadataBase: new URL("https://talha-nextjs.netlify.app/"),
+  metadataBase: new URL("https://novum-nextjs.netlify.app/"),
 
   alternates: {
     canonical: "/get-a-license"
@@ -25,11 +25,11 @@ export const metadata = {
     title: "Get a License – Novum Solutions",
     description:
       "Request a license for Novum’s AI products and platforms. Fill in the form to receive access and pricing details.",
-    url: "https://talha-nextjs.netlify.app/get-a-license",
+    url: "https://novum-nextjs.netlify.app/get-a-license",
     type: "website",
     images: [
       {
-        url: "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp",
+        url: "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp",
         width: 1080,
         height: 1920,
         alt: "Get a License OG Image"
@@ -43,7 +43,7 @@ export const metadata = {
     description:
       "Request a license for Novum’s AI products and platforms. Fill in the form to receive access and pricing details.",
     images: [
-      "https://talha-nextjs.netlify.app/assets/img/novum-graph-img.webp"
+      "https://novum-nextjs.netlify.app/assets/img/novum-graph-img.webp"
     ]
   }
 };
