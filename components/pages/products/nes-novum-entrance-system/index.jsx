@@ -275,11 +275,7 @@ const Nes = () => {
             <p className="mb-4">
               Entry point scans face or ID and checks against the authorized database.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -300,11 +296,7 @@ const Nes = () => {
             <p className="mb-4">
               Validates identity, evaluates rules, and grants/denies access in milliseconds.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -325,11 +317,7 @@ const Nes = () => {
             <p className="mb-4">
               Supervisors can see real-time access status, logs, and alerts from a central panel.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -350,11 +338,7 @@ const Nes = () => {
             <p className="mb-4">
               Generate entry/exit reports and integrate with HR or building management systems.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>

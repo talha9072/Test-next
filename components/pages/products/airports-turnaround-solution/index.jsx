@@ -276,11 +276,7 @@ const Aerospace = () => {
             <p className="mb-4">
               Feed real-time task and equipment data into the central system.
             </p>
-            <div className="mt-auto">
-              <a href="#" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -301,11 +297,7 @@ const Aerospace = () => {
             <p className="mb-4">
               Analyze timelines, detect anomalies, and forecast task durations.
             </p>
-            <div className="mt-auto">
-              <a href="#" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -326,11 +318,7 @@ const Aerospace = () => {
             <p className="mb-4">
               Track progress, monitor status, and manage operations in real time.
             </p>
-            <div className="mt-auto">
-              <a href="#" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -351,11 +339,7 @@ const Aerospace = () => {
             <p className="mb-4">
               Automatically generate reports, billing, and performance summaries.
             </p>
-            <div className="mt-auto">
-              <a href="#" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>

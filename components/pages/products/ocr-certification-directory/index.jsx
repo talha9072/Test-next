@@ -227,9 +227,7 @@ const Ocr = () => {
           <div className="p-3 p-md-4 d-flex flex-column flex-grow-1">
             <h3 className="h4 fw-bold mb-2">Scan & Upload</h3>
             <p className="mb-4">Upload documents—even handwritten or low-res files—through batch scanning or drag-and-drop.</p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">Learn more <i className="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -243,9 +241,7 @@ const Ocr = () => {
           <div className="p-3 p-md-4 d-flex flex-column flex-grow-1">
             <h3 className="h4 fw-bold mb-2">Intelligent OCR Processing</h3>
             <p className="mb-4">Advanced text recognition engine detects content, layout structure, logos, and annotations.</p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">Learn more <i className="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -259,9 +255,7 @@ const Ocr = () => {
           <div className="p-3 p-md-4 d-flex flex-column flex-grow-1">
             <h3 className="h4 fw-bold mb-2">Indexing & Search</h3>
             <p className="mb-4">Convert scanned files into searchable formats with metadata tagging and fast document retrieval.</p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">Learn more <i className="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -275,9 +269,7 @@ const Ocr = () => {
           <div className="p-3 p-md-4 d-flex flex-column flex-grow-1">
             <h3 className="h4 fw-bold mb-2">Compliance & Archiving</h3>
             <p className="mb-4">Meet compliance needs with long-term digital archives, role-based access, and full audit trails.</p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">Learn more <i className="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
+            
           </div>
         </article>
       </div>

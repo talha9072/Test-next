@@ -248,11 +248,7 @@ const Face = () => {
             <p className="mb-4">
               The system auto-detects human faces in live video or static images with high accuracy—even in low light or busy backgrounds.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -273,11 +269,7 @@ const Face = () => {
             <p className="mb-4">
               Advanced neural networks map facial features against your secure database to instantly identify or verify a person.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -298,11 +290,7 @@ const Face = () => {
             <p className="mb-4">
               Detects abnormal movement, loitering, or tailgating attempts using behavioral analytics for extra security.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
@@ -323,11 +311,7 @@ const Face = () => {
             <p className="mb-4">
               Every match, mismatch, or attempt is logged with timestamped metadata for audit, compliance, and trend analysis.
             </p>
-            <div className="mt-auto">
-              <a href="/about" className="btn-two">
-                Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
-            </div>
+            
           </div>
         </article>
       </div>
