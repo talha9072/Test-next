@@ -41,7 +41,7 @@ const megaItems = [
     heading: 'Software & Engineering',
     icon: 'fas fa-handshake main-clr',
     links: [
-      { label: 'Software Development', href: '#' },
+      { label: 'Software Development', href: '/services/software-development' },
       { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
     ],
   },

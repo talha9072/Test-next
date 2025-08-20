@@ -54,7 +54,7 @@ const ResponsiveMenu = () => {
                         <li className="menu-group-heading">
                             <i className="fas fa-handshake main-clr" /> Software & Engineering
                         </li>
-                        <li><Link href="#">Software Development</Link></li>
+                        <li><Link href="/services/software-development">Software Development</Link></li>
                         <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
                     </ul>
                     <a
