@@ -43,7 +43,7 @@ const HeaderFour = ({variant}) => {
 						</div>
                         
                         <div className="header__area-menubar-right-responsive-menu menu__bar">
-                            <i className="flaticon-menu-1" onClick={() => setMenuSidebar(true)}></i>
+                            <i className="bi bi-grid-3x3-gap" onClick={() => setMenuSidebar(true)}></i>
                         </div>
                     </div>
                 </div>
