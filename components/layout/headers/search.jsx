@@ -9,7 +9,7 @@ const Search = ({ isOpen, setIsOpen, addClass }) => {
                     <input type="search" placeholder="Search Here....." />
                     <button type="submit"><i className="fal fa-search"></i></button>
                 </form> 
-                <span className="header__area-menubar-right-box-search-box-icon" onClick={() => setIsOpen(false)}><i className="fal fa-times"></i></span>
+                <span className="header__area-menubar-right-box-search-box-icon" onClick={() => setIsOpen(false)}><i className="bi bi-x"></i></span>
             </div>
 
         </>

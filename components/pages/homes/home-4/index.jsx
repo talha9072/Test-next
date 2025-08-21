@@ -10,7 +10,7 @@ import Tab1 from "./tab-1";
 import Testimonials from "./testimonials";
 import QuickLinks from "./quicklinks";
 import CTA from '@/components/data/cta';
-import ScrollToTop from "../../common/scroll/scroll-to-top";
+// import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const HomeFour = () => {
     return (
@@ -32,7 +32,7 @@ const HomeFour = () => {
                 buttonHref="/contact"
             />
             <Footer />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
         </div>
     );
 };

@@ -5,7 +5,7 @@ import Footer from "@/components/layout/footers/footer";
 import FeaturedPost from "./featured";
 import Otherpost from "./other-posts";
 import CTA from '@/components/data/cta';
-import ScrollToTop from "../common/scroll/scroll-to-top";
+// import ScrollToTop from "../common/scroll/scroll-to-top";
 
 
 const BlogGrid = () => {
@@ -24,7 +24,7 @@ const BlogGrid = () => {
                                     buttonHref="/contact"
                                 />
             <Footer />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
 
         </>
     );

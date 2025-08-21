@@ -3481,7 +3481,6 @@ p {
 }
 .header__area-menubar-center-menu ul li.menu-item-has-children > a {
   display: flex;
-  align-items: end;
 }
 .header__area-menubar-center-menu ul li.menu-item-has-children > a i {
   font-size: 14px;
@@ -3828,9 +3827,9 @@ Responsive Menu Css
   height: 52px;
 }
 .mean-container .mean-nav ul li a.mean-expand::before {
-  content: "\f067";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+  content: "+";   /* fallback if you insist pseudo-element */
+  font-family: inherit;
+  font-weight: bold;
   position: absolute;
   color: var(--text-white);
   left: 50%;
@@ -3839,7 +3838,7 @@ Responsive Menu Css
   transform: translate(-50%, -50%);
 }
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked::before {
-  content: "\f068";
+  content: "-";
 }
 .mean-container .mean-nav ul li a.mean-expand:hover {
   background: var(--primary-color-1);
@@ -11282,3 +11281,6 @@ footer .logo img {
           color: #fff !important;
           border-color: var(--primary-color-1) !important;
           }
+
+
+          

@@ -115,7 +115,7 @@ const MainMenu = () => {
             setOpenMenu(openMenu === 'services' ? null : 'services');
           }}
         >
-          Services <i className="fas fa-angle-down"></i>
+          Services <i className="bi bi-chevron-down"></i>
         </a>
         <div className={`mega-dropdown ${openMenu === 'services' ? 'open' : ''}`}>
           <div
@@ -147,7 +147,7 @@ const MainMenu = () => {
             setOpenMenu(openMenu === 'products' ? null : 'products');
           }}
         >
-          Products <i className="fas fa-angle-down"></i>
+          Products <i className="bi bi-chevron-down"></i>
         </a>
         <div className={`mega-dropdown ${openMenu === 'products' ? 'open' : ''}`}>
           <div
@@ -204,7 +204,7 @@ const MainMenu = () => {
       {/* Resources */}
       <li className="menu-item-has-children">
         <Link href="#">
-          Resources <i className="fas fa-angle-down"></i>
+          Resources <i className="bi bi-chevron-down"></i>
         </Link>
         <ul className="sub-menu">
           <li><Link href="/industries">Industries</Link></li>

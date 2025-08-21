@@ -9,7 +9,7 @@ const MobileMenuPopup = ({ isOpen, setIsOpen, popupLogo }) => {
                     <Link href="/"><img src={popupLogo?.src} alt='logo' /></Link>
                 </div>
                 <div className="close" onClick={() => setIsOpen(false)}>
-                    <i className="fal fa-times"></i>
+                    <i className="bi bi-x"></i>
                 </div>
             </div>
             <div className="responsive-menu mean-container">
