@@ -4,7 +4,7 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import Footer from "@/components/layout/footers/footer";
 import RecentPosts from "@/components/data/recent-posts";
 import CTA from "@/components/data/cta";
-import ScrollToTop from "@/components/pages/common/scroll/scroll-to-top";
+// import ScrollToTop from "@/components/pages/common/scroll/scroll-to-top";
 
 export default function BlogSingle() {
   return (
@@ -219,7 +219,7 @@ export default function BlogSingle() {
       />
 
       <Footer />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </>
   );
 }

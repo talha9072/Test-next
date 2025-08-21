@@ -2,7 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import BreadCrumb from "../common/breadcrumb";
 import Footer from "@/components/layout/footers/footer";
-import ScrollToTop from "../common/scroll/scroll-to-top";
+// import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const ContactUs = () => {
   return (
@@ -197,7 +197,7 @@ const ContactUs = () => {
 </section>
 
       <Footer />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </>
   );
 };
