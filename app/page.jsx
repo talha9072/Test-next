@@ -24,27 +24,6 @@ export const metadata = {
   alternates: {
     canonical: "/"
   },
-
-  icons: {
-    icon:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    shortcut:
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-    apple: [
-      "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "72x72"
-      },
-      {
-        url:
-          "https://novum-ae.netlify.app/.netlify/images?url=/images/logo/Novum-logo-05.ico",
-        sizes: "114x114"
-      }
-    ]
-  },
-
   openGraph: {
     title: "Novum | Digital Solutions Powered by Innovation and AI",
     description:

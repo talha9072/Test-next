@@ -36,7 +36,7 @@ export default function CoreCapabilitiesSection({ heading, tabs }) {
                         src={tab.content.imageSrc}
                         alt={tab.content.imageAlt}
                         className="img-fluid rounded shadow"
-                      />
+                      loading='lazy'/>
                     </div>
                     <div className="col-md-6">
                       <h3 className="fw-bold text-dark-gray mb-3">

@@ -49,57 +49,6 @@ const tabsData = [
   },
 ];
 
-const coreTabs = [
-  {
-    id: 'tab_architecture',
-    label: 'Unified Data Architecture',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-unified.png',
-      imageAlt: 'Unified Data Architecture',
-      title: 'Unified Data Architecture',
-      paragraphs: [
-        'We design flexible architectures that bring together data from ERPs, CRMs, legacy systems, files, IoT devices, and cloud applications. Our solutions offer complete organizational visibility and are built to evolve as your business grows.'
-      ]
-    }
-  },
-  {
-    id: 'tab_reporting',
-    label: 'Advanced Reporting',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-reporting.png',
-      imageAlt: 'Advanced Reporting',
-      title: 'Advanced Reporting and KPIs',
-      paragraphs: [
-        'Centralized data enables consistent reporting and insight generation. We help your teams build performance dashboards and custom KPIs across departments such as finance, sales, supply chain, and operations.'
-      ]
-    }
-  },
-  {
-    id: 'tab_integration',
-    label: 'Seamless Integration',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-integration.png',
-      imageAlt: 'Seamless Source Integration',
-      title: 'Seamless Source Integration',
-      paragraphs: [
-        'Our solutions work with your ecosystem. We offer native compatibility with Microsoft Dynamics 365, Azure Synapse, Power BI, SQL Server, and more. This ensures smooth data flow between your systems and analytics platforms.'
-      ]
-    }
-  },
-  {
-    id: 'tab_quality',
-    label: 'Data Insight',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-source.png',
-      imageAlt: 'Data Quality and Real-Time Access',
-      title: 'From Raw Data to Business Insight',
-      paragraphs: [
-        'Data Quality and Consistency: Using automated cleansing and transformation methods, we standardize your incoming data to remove duplication, fill gaps, and align formats. This creates a reliable foundation for analytics across your business.',
-        'Real-Time Access and Agility: We support near real-time updates to keep your analytics fresh and your operations responsive. With fast data delivery and high visibility, teams can shift from reactive to strategic planning.'
-      ]
-    }
-  },
-];
 
 const PowerBI = () => {
   return (
@@ -192,10 +141,7 @@ const PowerBI = () => {
         ]}
         />
 
-        <CoreCapabilitiesSection
-      heading="Our Core Capabilities"
-      tabs={coreTabs}
-    />
+       
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"

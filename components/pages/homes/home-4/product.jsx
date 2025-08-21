@@ -6,35 +6,35 @@ import 'swiper/css/pagination';
 
 const products = [
   {
-    href: '#',
+    href: '/products/airports-turnaround-solution',
     title: 'Airports Turnaround Solution',
     description:
       'AI-powered platform that tracks every step of aircraft turnaround. Improve efficiency, monitor vendor performance, and automate invoicing.',
     img: '/assets/img/products/airport-turnaround.webp',
   },
   {
-    href: '#',
+    href: '/products/nes-novum-entrance-system',
     title: 'Novum Entrance System (NES)',
     description:
       'Cloud-based visitor management system for busy business centers. Supports guest pre-registration, access control, and secure check-ins.',
     img: '/assets/img/products/entrance-system.webp',
   },
   {
-    href: '#',
+    href: '/products/ocr-certification-directory',
     title: 'OCR Certification Directory',
     description:
       'Convert paper records into searchable digital documents. Ideal for storing certificates, contracts, reports, and regulatory files.',
     img: '/assets/img/products/ocr.webp',
   },
   {
-    href: '#',
+    href: '/products/face-recognition-and-detection',
     title: 'Face Recognition & Detection',
     description:
       'Identify and count people in real time using video analytics. Perfect for secure access, event tracking, and smart surveillance.',
     img: '/assets/img/products/face-recognition.webp',
   },
   {
-    href: '#',
+    href: '/products/commodity-bidding-platform',
     title: 'Commodity Bidding Platform',
     description:
       'Flexible SaaS platform for digital trading. Create product listings, set approval flows, monitor activity, and access real-time analytics.',
