@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+// import BannerSection from "@/components/data/services/banner";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
 import TechStackTabs from "@/components/data/services/TechStack";
@@ -54,21 +54,58 @@ const PowerBI = () => {
   return (
     <div>
         <HeaderFour />
+        <section
+  className="top-space-margin page-title-big-typography cover-background d-flex align-items-center position-relative"
+  style={{
+    height: '60vh',
+    backgroundImage: `url('https://novum.tech/assets_v2/images/bg.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  {/* Dark Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundColor: '#312a9188',
+      zIndex: 1,
+    }}
+  />
 
-        <BannerSection
+  {/* Content */}
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <div className="row justify-content-start align-items-center h-100">
+      <div className="col-lg-8 col-sm-10">
+        <div className="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start mb-3 gap-lg-4">
+          <img
+            src="https://novum-ae.netlify.app/images/service-cards/powerbi.svg"
+            alt="Power BI"
+            style={{ width: '140px', height: '140px' }}
+            className="me-sm-4 mb-3 mb-sm-0"
+          />
+          <h1 className="text-white text-shadow-medium fw-bold mb-0">
+            Power BI Consulting Services
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        {/* <BannerSection
             bgImage="https://novum-ae.netlify.app/images/power-bi-hero.jpg"
             icon="https://novum-ae.netlify.app/images/service-cards/powerbi.svg"
             title="Power BI Consulting Services"
             borderColorStart="#F7E078"
             borderColorEnd="#DA9B0E"
-        />
+        /> */}
         <SoftwareSolutionsSection
             title={`Empower Smarter Decisions\nwith Data-Driven Intelligence`}
             paragraphs={[
             "At NOVUM, we specialize in Power BI consulting services that help businesses transform raw data into actionable insights. Using Microsoft’s industry-leading Power BI platform, we design, build, and optimize reporting systems that improve visibility, enhance strategic decision-making, and support digital transformation.",
             "Our consultants work closely with your team to implement scalable dashboards, create dynamic data models, and streamline integration with systems like Microsoft Dynamics 365, SQL, Azure, and more. Whether you're building your BI from the ground up or refining an existing solution, we deliver results that align with your business goals."
             ]}
-            imageSrc="https://novum-ae.netlify.app/images/power-bi/power-bi1.jpg"
+            imageSrc="/assets/img/power-bi/power-bi1.png"
             altText="Power BI Consulting"
         />
         <SoftwareDetailSection

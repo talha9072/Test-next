@@ -6,7 +6,6 @@ export default function SoftwareSolutionsSection({
   paragraphs,
   imageSrc,
   altText = '',
-  bgLogoClass = 'novum-bg-logo',
   sectionClass = 'position-relative overflow-hidden py-5'
 }) {
   return (
@@ -15,7 +14,7 @@ export default function SoftwareSolutionsSection({
         <div className="row align-items-center g-5">
 
           {/* Left Text */}
-          <div className={`col-lg-7 position-relative ${bgLogoClass}`}>  
+          <div className={`col-lg-7 position-relative`}>  
             <h2 className="fw-700 text-dark-gray mb-4">
               {title.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>
@@ -33,7 +32,7 @@ export default function SoftwareSolutionsSection({
 
           {/* Right Image */}
           <div className="col-lg-5 text-center">
-            <img src={imageSrc} alt={altText} className="img-fluid rounded shadow" />
+            <img src={imageSrc} alt={altText} className="img-fluid rounded shadow" width="100%" height="auto" />
           </div>
 
         </div>
