@@ -34,27 +34,27 @@ export default function CTA({
         <div className="row d-flex flex-column align-items-start justify-content-center">
           {/* Text Column */}
           <div className="col-xl-6 text-left text-xl-start">
-            <h3
-              className="mb-3 fw-500 ls-minus-1px"
+            <h2
+              className="mb-4"
               style={{ color: 'white' }}
             >
               {heading}
-            </h3>
-            <span
-              style={{ color: 'white', fontSize: '1.1875rem', opacity: 0.5 }}
+            </h2>
+            <p
+              style={{ color: 'white',opacity: 0.8 }}
             >
               {subText}
-            </span>
+            </p>
           </div>
 
           {/* Button Column */}
-          <div className="col-xl-6 text-left text-xl-start pt-3">
+          <div className="col-xl-6 text-left text-xl-start mt-4">
             <a
               href={buttonHref}
               className="btn left-icon btn-box-shadow text-transform-none fw-600 ls-0px d-inline-block align-middle me-15px xs-m-10px"
               style={{
-                padding: '14px 18px',
-                borderRadius: '6px',
+                padding: '7px 14px',
+                borderRadius: '3px',
                 position: 'relative',
                 zIndex: 10,
                 isolation: 'isolate',
@@ -63,7 +63,6 @@ export default function CTA({
                 color: 'var(--base-color)',
               }}
             >
-              <i className="feather icon-feather-mail me-2" />
               {buttonText}
             </a>
           </div>

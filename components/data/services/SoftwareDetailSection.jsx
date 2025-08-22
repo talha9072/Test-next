@@ -22,7 +22,7 @@ export default function SoftwareDetailSection({
           {/* Image & Overlay Badge */}
           <div className="col-lg-6 position-relative md-mb-50px sm-mb-30px">
             <figure className="position-relative mb-0 overflow-hidden">
-              <img src={imageSrc} className="w-100" alt={imageAlt} />
+              <img src={imageSrc} className="w-100 rounded" alt={imageAlt} />
               <figcaption className="position-absolute text-center left-0 bottom-0 bg-white">
                 <span className="text-dark-gray ls-minus-2px position-relative mb-5px d-block alt-font figheading">
                   {numberMain}

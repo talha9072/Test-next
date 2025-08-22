@@ -13,16 +13,16 @@ export default function WhySection({
       <div className="container">
 
         {/* Top Section */}
-        <div className="row align-items-center mb-3">
+        <div className="row align-items-center mb-5">
           <div className="col-lg-7 mb-lg-0">
-            <h2 className="fw-bold text-dark-gray mb-3">{heading}</h2>
+            <h2 className="fw-bold text-dark-gray mb-4">{heading}</h2>
             {subheadingLines.map((line, idx) => (
               <p
                 key={idx}
                 className={
                   idx === subheadingLines.length - 1 
-                    ? 'fs-16 text-muted mb-0' 
-                    : 'text-muted mb-3'
+                    ? 'mb-0' 
+                    : 'mb-2'
                 }
               >
                 <span dangerouslySetInnerHTML={{ __html: line }} />

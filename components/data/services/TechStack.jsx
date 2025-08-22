@@ -6,13 +6,13 @@ export default function TechStackTabs({ title, highlight, description, tabs }) {
   return (
     <section className="py-5 tech-stack-tabs">
       <div className="container text-center">
-        <h2 className="mb-3 fw-bold text-dark-gray">
+        <h2 className="mb-4 fw-bold text-dark-gray">
           {title} <span style={{ color: '#0D2B75' }}>{highlight}</span>
         </h2>
-        <p className="mb-4 text-muted">{description}</p>
+        <p className="mb-2">{description}</p>
 
         {/* Tab Navigation */}
-        <div className="tab-nav-wrapper border-bottom mb-4 position-relative">
+        <div className="tab-nav-wrapper border-bottom mb-5 position-relative">
           <ul
             className="nav nav-tabs justify-content-center border-0 tech-tab-nav"
             id="techStackTab"
@@ -44,7 +44,7 @@ export default function TechStackTabs({ title, highlight, description, tabs }) {
               role="tabpanel"
               key={tab.id}
             >
-              <div className="row g-4 justify-content-center">
+              <div className="row g-4 mt-5 justify-content-center">
                 {tab.items.map((item, j) => (
                   <div className="col-6 col-sm-4 col-md-3 text-center" key={j}>
                     <img

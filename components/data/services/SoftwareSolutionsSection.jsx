@@ -11,7 +11,7 @@ export default function SoftwareSolutionsSection({
   return (
     <section className={sectionClass}>
       <div className="container">
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center g-5 mt-lg-3">
 
           {/* Left Text */}
           <div className={`col-lg-7 position-relative`}>  
@@ -24,7 +24,7 @@ export default function SoftwareSolutionsSection({
               ))}
             </h2>
             {paragraphs.map((text, i) => (
-              <p key={i} className={i < paragraphs.length - 1 ? 'mb-4' : 'mb-0'}>
+              <p key={i} className={i < paragraphs.length - 1 ? 'mb-2' : 'mb-0'}>
                 {text}
               </p>
             ))}

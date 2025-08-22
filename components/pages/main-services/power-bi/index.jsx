@@ -55,42 +55,41 @@ const PowerBI = () => {
     <div>
         <HeaderFour />
         <section
-  className="top-space-margin page-title-big-typography cover-background d-flex align-items-center position-relative"
-  style={{
-    height: '60vh',
-    backgroundImage: `url('https://novum.tech/assets_v2/images/bg.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  {/* Dark Overlay */}
-  <div
-    className="position-absolute top-0 start-0 w-100 h-100"
-    style={{
-      backgroundColor: '#312a9188',
-      zIndex: 1,
-    }}
-  />
+        className="top-space-margin page-title-big-typography cover-background d-flex align-items-center position-relative"
+        style={{
+          height: '60vh',
+          backgroundImage: `url('https://novum.tech/assets_v2/images/bg.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Dark Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            backgroundColor: '#312a9188',
+            zIndex: 1,
+          }}
+        />
 
-  {/* Content */}
-  <div className="container position-relative" style={{ zIndex: 2 }}>
-    <div className="row justify-content-start align-items-center h-100">
-      <div className="col-lg-8 col-sm-10">
-        <div className="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start mb-3 gap-lg-4">
-          <img
-            src="https://novum-ae.netlify.app/images/service-cards/powerbi.svg"
-            alt="Power BI"
-            style={{ width: '140px', height: '140px' }}
-            className="me-sm-4 mb-3 mb-sm-0"
-          />
-          <h1 className="text-white text-shadow-medium fw-bold mb-0">
-            Power BI Consulting Services
-          </h1>
+        {/* Content */}
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <div className="row justify-content-start align-items-center h-100">
+            <div className="col-lg-8 col-sm-10">
+              <div className="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start mb-3 gap-lg-4">
+                <img
+                  src="https://novum-ae.netlify.app/images/service-cards/powerbi.svg"
+                  alt="Power BI"
+                  className="me-sm-4 mb-3 mb-sm-0 service-hero-icon"
+                />
+                <h1 className="text-white text-shadow-medium fw-bold mb-0">
+                  Power BI Consulting Services
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
         {/* <BannerSection
             bgImage="https://novum-ae.netlify.app/images/power-bi-hero.jpg"
