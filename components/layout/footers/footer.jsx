@@ -32,53 +32,41 @@ const Footer = () => (
           <div className="row">
             {/* Line 1 */}
             <div className="col-6 col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-end flex-wrap gap-3 mb-2">
-              <a href="#" className="text-decoration-none text-muted">
+              <a href="/about" className="text-decoration-none text-muted">
                 About
               </a>
-              <a href="#" className="text-decoration-none text-muted">
-                Careers
+              <a href="/case-studies" className="text-decoration-none text-muted">
+                Case Studies
               </a>
-              <a href="#" className="text-decoration-none text-muted">
-                Locations
+              <a href="/" className="text-decoration-none text-muted">
+                Services
               </a>
-              <a href="#" className="text-decoration-none text-muted">
-                Help Center
+              <a href="/" className="text-decoration-none text-muted">
+                Get a Quote
               </a>
-              <a href="#" className="text-decoration-none text-muted">
-                Sustainability
+              <a href="/services/microsoft-licensing" className="text-decoration-none text-muted">
+                Microsoft licenses
               </a>
             </div>
             {/* Line 2 */}
             <div className="col-6 col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-end flex-wrap gap-3 mb-2">
-              <a href="#" className="text-decoration-none text-muted">
-                Blog
+              <a href="https://novum.tech/files/novum/NOVUM%20Brochure.pdf" className="text-decoration-none text-muted">
+                Our brochure
               </a>
-              <a href="#" className="text-decoration-none text-muted">
+              <a href="/blog" className="text-decoration-none text-muted">
                 News
               </a>
-              <a href="#" className="text-decoration-none text-muted">
-                Press Kit
-              </a>
-              <a href="#" className="text-decoration-none text-muted">
+              <a href="/contact" className="text-decoration-none text-muted">
                 Contact Us
               </a>
             </div>
             {/* Icons Row */}
             <div className="col-12 d-flex justify-content-start justify-content-md-end gap-3">
-              <a href="#" className="text-muted" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/novum" className="text-muted" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in" />
               </a>
-              <a href="#" className="text-muted" aria-label="Twitter">
-                <i className="fab fa-x-twitter" />
-              </a>
-              <a href="#" className="text-muted" aria-label="Facebook">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a href="#" className="text-muted" aria-label="YouTube">
+              <a href="https://www.youtube.com/c/NovumLearnX" className="text-muted" aria-label="YouTube">
                 <i className="fab fa-youtube" />
-              </a>
-              <a href="#" className="text-muted" aria-label="Instagram">
-                <i className="fab fa-instagram" />
               </a>
             </div>
           </div>
@@ -97,22 +85,12 @@ const Footer = () => (
             </li>
             <li className="list-inline-item">
               <a href="#" className="text-muted text-decoration-none">
-                Acceptable Use Policy
+                Code of Conduct
               </a>
             </li>
             <li className="list-inline-item">
               <a href="#" className="text-muted text-decoration-none">
-                Information Security
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-muted text-decoration-none">
-                Accessibility
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-muted text-decoration-none">
-                Cookies
+                Anti-Bribery and Corruption Policy
               </a>
             </li>
           </ul>
@@ -120,7 +98,7 @@ const Footer = () => (
 
         {/* Copyright */}
         <div className="order-0 order-md-1 w-100 text-start text-md-end">
-          <div className="text-muted">© 2025 Novum. All Rights Reserved</div>
+          <div className="text-muted">Copyright © 2025 Novum LLC. All Rights Reserved</div>
           <div className="text-muted">
             Crafted by{' '}
             <a
