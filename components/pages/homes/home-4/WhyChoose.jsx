@@ -39,7 +39,7 @@ export default function WhyChoose() {
       <div className="container">
         <div className="row justify-content-center mb-3">
           <div className="col-xl-7 col-lg-8 text-center">
-            <h2 className="mb-5">Why Choose Novum?</h2>
+            <h2 className="mb-4">Why Choose Novum?</h2>
           </div>
         </div>
 

@@ -1,79 +1,81 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 import Link from "next/link";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const slides = [
+  {
+    id: 1,
+    image: "/assets/img/home/novum-hero-4.jpg",
+    heading: "Transform Data Into Strategic Growth",
+    text: "Empower your business with advanced Power BI consulting and data analytics.NOVUM turns complex information into clarity that fuels smarter decisions.",
+    link: "/contact",
+    linkText: "Learn more",
+  },
+  {
+    id: 2,
+    image: "/assets/img/home/novum-hero-5.jpg",
+    heading: "Intelligent Solutions for a Digital Future",
+    text: "Accelerate transformation with AI-driven analytics and Azure migration expertise.NOVUM helps organizations stay agile, efficient, and future-ready.",
+    link: "/contact",
+    linkText: "Learn more",
+  },
+  {
+    id: 3,
+    image: "/assets/img/home/novum-hero-6.jpg",
+    heading: "Driving Innovation Across Every Industry",
+    text: "Unlock potential with Microsoft data analytics and cloud solutions tailored to your needs.NOVUM delivers platforms that help businesses thrive in a changing world.",
+    link: "/contact",
+    linkText: "Learn more",
+  },
+];
 
 const Banner = () => {
   return (
-    <div className="banner__four position-relative overflow-hidden vh-100">
-      {/* Background image */}
-      <div
-        className="position-absolute top-0 start-0 w-100 h-100"
-        style={{
-          backgroundImage:
-            "url('/assets/img/home/novum-hero-1.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          willChange: "transform",
-          transform: "translateZ(0)",
-          zIndex: -3,
-        }}
-      />
-
-      {/* Dark overlay */}
-      <div
-        className="position-absolute top-0 start-0 w-100 h-100"
-        style={{
-          backgroundColor: "rgba(0,0,0,0.5)",
-          willChange: "opacity",
-          transform: "translateZ(0)",
-          zIndex: -2,
-        }}
-      />
-
-      {/* Microsoft badge */}
-      <div
-        className="floating-badge-container"
+    <div className="relative">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
+        speed={1000}
+        loop={true}
+        className="banner-slider"
       >
-        <div className="badge-wrapper">
-          <img
-            src="/assets/img/home/microsoft-banner.svg"
-            alt="microsoft-badge"
-            width="250"
-            height="auto"
-            className="floating-badge"
-          />
-        </div>
-      </div>
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div className="banner-slide">
+              <Image
+                src={slide.image}
+                alt={slide.heading}
+                fill
+                priority
+                className="object-cover"
+              />
 
-      <div className="container h-100">
-        <div className="row align-items-center h-100 justify-content-start gy-4 bannercon">
-          {/* Text column */}
-          <div className="col-xl-6 col-lg-6 text-start">
-            <div className="banner__four-content">
-              <span className="banner-top">THE WAY TO ADVANCE</span>
-              <h1>Microsoft, AI & Digital Solutions to <span className="shine-text">Power Your Growth</span></h1>
-              <p className="w-70 md-w-80">
-                We help businesses worldwide scale smarter, innovate faster, and lead in the digital era.
-              </p>
-              <div className="banner__four-content-bottom">
-                <Link href="/contact" className="explore-btn">
-                  <span className="explore-btn__icon">
-                    <i className="fas fa-arrow-right" />
-                  </span>
-                  <span className="explore-btn__label">Explore Our Services</span>
-                </Link>
-                {/* <div className="banner__four-content-call">
-                  <i className="flaticon-telephone-call"></i>
-                  <div className="banner__four-content-call-right">
-                    <span>Make a call</span>
-                    <Link href="tel:(307)%20555-0133">(307) 555-0133</Link>
+              <div className="carousel__gradientOverlay"></div>
+              <div className="dark-overlay"></div>
+
+              <div className="banner-content">
+                <div className="container">
+                  <div className="text-box">
+                    <h1 className="mb-4">{slide.heading}</h1>
+                    <p className="mb-4">{slide.text}</p>
+                    <Link href={slide.link} className="banner-btn">
+                      {slide.linkText}
+                    </Link>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
-          </div>
-          {/* Image column removed */}
-        </div>
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

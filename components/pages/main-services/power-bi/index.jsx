@@ -106,7 +106,17 @@ const PowerBI = () => {
             ]}
             imageSrc="/assets/img/power-bi/power-bi1.png"
             altText="Power BI Consulting"
+            sectionClass="position-relative overflow-hidden py-7"
         />
+        
+
+        <TechStackTabs
+        title="Supported Data Sources &"
+        highlight="Power BI Integration"
+        description="Power BI integrates with 200+ data sources—ranging from cloud services to IoT streams—to unify data and deliver intelligent insights across your enterprise."
+        tabs={tabsData}
+        />
+
         <SoftwareDetailSection
             imageSrc="https://novum-ae.netlify.app/images/power-bi/power-bi-2.jpg"
             imageAlt="On-Demand Power BI Services"
@@ -130,13 +140,6 @@ const PowerBI = () => {
             ctaHref="#contact"
             phoneText="971 56 192 06 16"
             phoneHref="tel:971561920616"
-        />
-
-        <TechStackTabs
-        title="Supported Data Sources &"
-        highlight="Power BI Integration"
-        description="Power BI integrates with 200+ data sources—ranging from cloud services to IoT streams—to unify data and deliver intelligent insights across your enterprise."
-        tabs={tabsData}
         />
 
         <WhySection

@@ -36,7 +36,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="row justify-content-center mb-4">
           <div className="col-lg-8 text-center">
-            <h2 className="fw-700 text-dark-gray ls-minus-1px">
+            <h2 className="fw-700 text-dark-gray mb-4">
               What Clients Say About Working With Novum
             </h2>
           </div>

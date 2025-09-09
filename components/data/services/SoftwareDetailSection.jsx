@@ -17,10 +17,10 @@ export default function SoftwareDetailSection({
   return (
     <section className="big-section py-5">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center pt-0 pt-lg-5">
 
           {/* Image & Overlay Badge */}
-          <div className="col-lg-6 position-relative md-mb-50px sm-mb-30px">
+          <div className="col-lg-6">
             <figure className="position-relative mb-0 overflow-hidden">
               <img src={imageSrc} className="w-100 rounded" alt={imageAlt} />
               <figcaption className="position-absolute text-center left-0 bottom-0 bg-white">
@@ -36,20 +36,18 @@ export default function SoftwareDetailSection({
           </div>
 
           {/* Text Content */}
-          <div className="col-xl-5 col-lg-6 offset-xl-1 lg-ps-40px md-ps-15px">
-            <h2 className="text-dark-gray fw-600 highlight-separator-small">
+          <div className="col-lg-6">
+            <h2 className="fw-700 text-dark-gray mb-4">
               {heading}
             </h2>
             <ul className="p-0 m-0 list-style-03 fw-500">
               {listItems.map((item, idx) => <li key={idx}>{item}</li>)}
             </ul>
-            <div className="d-inline-block w-100 mt-30px">
+            <div className="d-inline-block w-100 mt-3">
               <a href={ctaHref} className="btn service-btn">
                 {ctaText}<i className="fa-regular fa-envelope"></i>
               </a>
-              <a href={phoneHref} className="d-block d-sm-inline-block align-middle text-dark-gray text-dark-gray-hover fs-18 fw-600">
-                <i className="feather icon-feather-phone-call icon-small me-10px"></i>{phoneText}
-              </a>
+              
             </div>
           </div>
 

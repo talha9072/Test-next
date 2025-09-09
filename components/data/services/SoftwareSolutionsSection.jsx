@@ -11,10 +11,10 @@ export default function SoftwareSolutionsSection({
   return (
     <section className={sectionClass}>
       <div className="container">
-        <div className="row align-items-center g-5 mt-lg-3">
+        <div className="row align-items-center pt-0 pt-lg-5">
 
           {/* Left Text */}
-          <div className={`col-lg-7 position-relative`}>  
+          <div className={`col-lg-6 position-relative`}>  
             <h2 className="fw-700 text-dark-gray mb-4">
               {title.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>
@@ -31,7 +31,7 @@ export default function SoftwareSolutionsSection({
           </div>
 
           {/* Right Image */}
-          <div className="col-lg-5 text-center">
+          <div className="col-lg-6 text-center">
             <img src={imageSrc} alt={altText} className="img-fluid rounded shadow" width="100%" height="auto" />
           </div>
 

@@ -142,6 +142,34 @@ body {
         font-size: 14px !important;
     }
 }
+body .container {
+  width: 80%;
+  max-width: 1800px; /* optional, taake bohot zyada na failay */
+  margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+  body .container {
+    width: 100%;
+  }
+}
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.py-7 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+@media (max-width: 990px) {
+  section .container .row {
+    gap: 25px !important;
+  }
+  section .container .cardsrow{
+    gap: 0px !important;
+  }
+}
 
 /*==========================================================================
 * Novum Color CSS
@@ -179,6 +207,10 @@ body {
 }
 .main-clr{
   color: var(--primary-color-1) !important;
+}
+.bg-light-blue{
+  background-color: #e5f1ff;
+  border: 0px !important;
 }
 .border-color-base-color {
   border-color: var(--primary-color-1) !important;
@@ -424,7 +456,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 1.13;
   padding: 0;
   margin: 0;
@@ -434,7 +466,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.6rem;
   line-height: 1.25;
   padding: 0;
   margin: 0;
@@ -677,7 +709,8 @@ p {
 }
 .btn-two:hover {
   background-color: transparent;
-  color: var(--text-heading-color);
+  color: var(--primary-color-1) !important;
+  border: 1px solid var(--primary-color-1) !important;
 }
 .btn-two:hover i {
   color: var(--text-heading-color);
@@ -4087,765 +4120,115 @@ Responsive Menu Css
 /*==========================================================================
 * Banner One CSS
 ==========================================================================*/
-.banner__one {
-  padding: 95px 0;
-  background-image: linear-gradient(75deg, #fefefe 52%, var(--color-1) 48%);
+/* Banner Styles */
+.banner-slider,
+.banner-slide {
+  height: 500px;
   position: relative;
   overflow: hidden;
 }
-.banner__one .banner-shape .shape {
-  position: absolute;
-}
-.banner__one .banner-shape-1 {
-  width: 86px;
-  height: 115px;
-  background-color: var(--primary-color-1);
-  top: 0;
-  left: 46%;
-  transform: skew(18deg);
-}
-.banner__one .banner-shape-2 {
-  width: 28px;
-  height: 185px;
-  background-color: var(--primary-color-1);
-  bottom: 0;
-  left: 52.5%;
-  transform: skew(15deg);
-}
-.banner__one .banner-shape-3 {
-  width: 300px;
-  height: 300px;
-  background-color: transparent;
-  border: 4px solid rgba(5, 22, 52, 0.1607843137);
-  border-radius: 50%;
-  bottom: -21%;
-  left: 49%;
-}
-.banner__one .banner-shape-4 {
-  width: 420px;
-  height: 370px;
-  background-color: var(--primary-color-1);
-  filter: blur(195px);
-  border-radius: 50%;
-  left: 25px;
-  bottom: -180px;
-}
-.banner__one .banner-shape-5 {
-  top: 0;
-  right: 0;
-}
-.banner__one .banner-shape-6 {
-  width: 300px;
-  height: 340px;
-  background-color: transparent;
-  border: 4px solid var(--bg-white);
-  border-radius: 50%;
-  top: 8%;
-  right: -12%;
-}
-.banner__one .banner-shape-7 {
-  width: 60px;
-  height: 280px;
-  background-color: #4b83f4;
-  top: 8%;
-  right: -1%;
-  transform: skew(19deg);
-}
-.banner__one-content {
-  z-index: 3;
-  position: relative;
-}
-.banner__one-content h2 {
-  font-size: 72px;
-  line-height: 83px;
-  margin-bottom: 20px;
-  text-transform: none;
-}
-.banner__one-content h2 span {
-  color: var(--primary-color-1);
-}
-.banner__one-content p {
-  font-size: 18px;
-  text-transform: none;
-  margin-bottom: 40px;
-  width: 93%;
-}
-.banner__one-image-wrapper {
-  position: relative;
-  border-radius: 50%;
-}
-.banner__one-image-wrapper-shapes {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 50%;
-  z-index: 4;
-}
-.banner__one-image-wrapper-shapes .shape {
-  position: absolute;
-}
-.banner__one-image-wrapper-shapes .shape-1 {
-  width: 35px;
-  height: 35px;
-  background-color: var(--bg-white);
-  border-radius: 50%;
-  outline: 8px solid var(--primary-color-1);
-  top: 14%;
-  left: 7%;
-}
-.banner__one-image-wrapper-shapes .shape-2 {
-  width: 45px;
-  height: 45px;
-  background-color: var(--bg-white);
-  border-radius: 50%;
-  outline: 10px solid var(--primary-color-1);
-  bottom: 15%;
-  right: 20px;
-}
-.banner__one-image-wrapper img {
-  z-index: 3;
-  position: relative;
-  border-radius: 50%;
-  outline: 20px solid var(--bg-white);
+
+@media (min-width: 768px) {
+  .banner-slider,
+  .banner-slide {
+    height: 600px;
+  }
 }
 
-@media (max-width: 1399px) {
-  .banner__one-content p {
-    font-size: 16px;
-  }
-}
-@media (max-width: 991px) {
-  .banner__one-content {
-    margin-bottom: 30px;
-  }
-  .banner__one-content h2 {
-    max-width: 585px;
-  }
-}
-@media (max-width: 767px) {
-  .banner__one-content h2 {
-    font-size: 60px;
-  }
-}
-@media (max-width: 535px) {
-  .banner__one-content h2 {
-    font-size: 51px;
-    line-height: 66px;
-  }
-}
-@media (max-width: 575px) {
-  .banner__one-image-wrapper-shapes {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .banner__one .banner-shape-2 {
-    display: none;
-  }
-  .banner__one .banner-shape-5 {
-    display: none;
-  }
-  .banner__one .banner-shape-6 {
-    display: none;
-  }
-  .banner__one .banner-shape-7 {
-    display: none;
-  }
-  .banner__one-content {
-    margin-bottom: 0;
-  }
-  .banner__one-content p {
-    font-size: 15px;
-  }
-  .banner__one-image {
-    display: none;
-  }
-}
-/*==========================================================================
-* Banner Two CSS
-==========================================================================*/
-.banner__two-single-slider {
-  padding: 155px 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  background-position: center center;
-}
-.banner__two .banner-two-shape .shape {
-  position: absolute;
-}
-.banner__two .banner-two-shape-1 {
-  bottom: 12%;
-  right: 23%;
-  z-index: 2;
-  position: absolute;
-}
-.banner__two .banner-two-shape-1 svg {
-  position: absolute;
-  left: 0;
-  fill: var(--primary-color-1);
-  width: 50px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.banner__two .banner-two-shape-2 {
-  top: 215px;
-  left: 45%;
-  width: 150px;
-}
-.banner__two .banner-two-shape-3 {
-  top: 0px;
-  left: 46%;
-}
-.banner__two .banner-two-shape-4 {
-  right: 22%;
-  bottom: 0;
-}
-.banner__two-content {
-  z-index: 3;
-  position: relative;
-  overflow: hidden;
-}
-.banner__two-content h2 {
-  font-size: 74px;
-  color: var(--text-white);
-  font-weight: 700;
-  line-height: 1.13;
-  margin-bottom: 25px;
-  opacity: 0;
-  transition: transform 1500ms ease, opacity 1500ms ease;
-  transform: translateX(200px);
-}
-.banner__two-content h2 .highlighted::before {
-  content: "";
-  width: 111%;
-  height: 4px;
-  bottom: 14%;
-  left: 0;
-  border-radius: 3px;
-}
-.banner__two-content p {
-  color: var(--text-white);
-  text-transform: none;
-  margin-bottom: 42px;
-  opacity: 0;
-  transition: transform 1700ms ease, opacity 1700ms ease;
-  transform: translateX(250px);
-}
-.banner__two-content .btn-two {
-  transform: perspective(400px) translateY(80px);
-  transform-origin: bottom;
-  transition: all 1900ms ease;
-}
-.banner__two-content .btn-two:hover {
-  color: var(--text-white);
-}
-.banner__two-content .btn-two:hover i {
-  color: var(--text-white);
-}
-.banner__two .swiper-slide-active .banner__two-content h2 {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 1500ms;
-}
-.banner__two .swiper-slide-active .banner__two-content p {
-  opacity: 0.7;
-  transform: translateX(0);
-  transition-delay: 1700ms;
-}
-.banner__two .swiper-slide-active .banner__two-content .btn-two {
-  transform: perspective(400px) translateY(0px);
-  transition-delay: 1900ms;
-}
-
-@media (max-width: 1399px) {
-  .banner__two-content h2 {
-    font-size: 68px;
-  }
-}
-@media (max-width: 1199px) {
-  .banner-two-shape-2 {
-    display: none;
-  }
-  .banner-two-shape-3 {
-    display: none;
-  }
-  .banner-two-shape-4 {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .banner-two-shape-1 {
-    display: none;
-  }
-  .banner__two-single-slider {
-    padding: 100px 0;
-    background-color: var(--color-7);
-    background-image: none !important;
-  }
-  .banner__two-content h2 {
-    font-size: 58px;
-  }
-}
-@media (max-width: 575px) {
-  .banner__two {
-    background-image: none;
-    background-color: var(--color-7);
-  }
-}
-@media (max-width: 480px) {
-  .banner__two-content h2 {
-    font-size: 45px;
-  }
-}
-/*==========================================================================
-* Banner Three CSS
-==========================================================================*/
-.banner__three-single-slide {
-  padding: 180px 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-}
-.banner__three-single-slide::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--text-heading-color);
-  z-index: 1;
-  opacity: 0.8;
-}
-.banner__three-bg-shape-overlay {
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.banner__three-content {
-  z-index: 3;
-  position: relative;
-  text-align: center;
-}
-.banner__three-content h2 {
-  font-size: 74px;
-  color: var(--text-white);
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 25px;
-}
-.banner__three-content h2 .text-bordered {
-  color: transparent;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: var(--text-white);
-}
-.banner__three-content p {
-  color: var(--text-white);
-  text-transform: none;
-  margin: auto;
-  margin-bottom: 42px;
-  width: 61%;
-}
-.banner__three-content .btn-two:hover {
-  color: var(--text-white);
-}
-.banner__three-content .btn-two:hover i {
-  color: var(--text-white);
-}
-
-@media (max-width: 1399px) {
-  .banner__three-content h2 {
-    font-size: 71px;
-  }
-}
-@media (max-width: 991px) {
-  .banner__three-content h2 {
-    font-size: 68px;
-  }
-  .banner__three-content p {
-    width: auto;
-  }
-}
-@media (max-width: 767px) {
-  .banner__three-content h2 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 359px) {
-  .banner__three-content h2 {
-    font-size: 43px;
-  }
-}
-/*==========================================================================
-* Banner Four CSS
-==========================================================================*/
-/* Wrapper to position the badge in middle-right */
-.floating-badge-container {
-    position: absolute;
-    top: 40%;
-    right: 0px;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-/* Floating badge card styles */
-.badge-wrapper {
-    max-width: 300px;
-    background: #fff;
-    border-radius: 25px 0 0 25px;
-    padding: 20px 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    animation: floatY 4s ease-in-out infinite;
-}
-
-/* The badge image */
-.floating-badge {
-    width: 200px;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 768px) {
-  .floating-badge-container {
-    top: auto;
-    bottom: 60px;
-    left: 90px;
-    right: auto;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
-
-  .badge-wrapper {
-    max-width: 250px;
-    padding: 14px 16px;
-    border-radius: 0px 18px 18px 0px;
-    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
-    animation: floatY 4s ease-in-out infinite;
-  }
-
-  .floating-badge {
-    width: 180px;
-  }
-  .bannercon{
-    justify-content: flex-start !important;
-    align-items: start !important;
-  }
-}
-/* Floating animation */
-@keyframes floatY {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-12px);
-    }
-}
-.shine-text {
-  position: relative;
-  display: inline-block;
-  color: #fff;
+.carousel__gradientOverlay {
   background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.1) 45%,
-    #ffffff 50%,
-    rgba(255, 255, 255, 0.1) 55%,
-    rgba(255, 255, 255, 0.7) 100%
+    115deg,
+    rgba(13, 43, 117, 0.93) 0%,
+    rgba(6, 20, 89, 1) 70%,
+    rgba(29, 33, 73, 1) 100%
   );
-  background-size: 250% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: shine 10s linear infinite;
-  padding-right: 0.2em;
-  overflow: visible;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 150% center;
-  }
-  100% {
-    background-position: -150% center;
-  }
-}
-.banner__four {
-  padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
-.banner__four-content {
-  z-index: 3;
-  position: relative;
-}
-.banner-top{
-  color: var(--text-white);
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.banner__four-content h2 {
-  font-size: 50px;
-  line-height: 1.13;
-  margin-bottom: 20px;
-  text-transform: none;
-  color: var(--text-white);
-}
-@media (max-width: 768px) {
-  .banner__four-content h2 {
-    font-size: 35px !important;
-    
-  }
-}
-.banner__four-content p {
-  font-size: 18px;
-  text-transform: none;
-  margin-bottom: 40px;
-  color: var(--text-white);
-}
-.banner__four-content a:hover {
-  color: var(--text-white);
-}
-.banner__four-content a:hover i {
-  color: var(--text-white);
-}
-.banner__four-content-bottom {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-.banner__four-content-call {
-  display: flex;
-  align-items: center;
-}
-.banner__four-content-call i {
-  width: 50px;
-  height: 50px;
-  background-color: var(--bg-white);
-  font-size: 30px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: var(--primary-color-1);
-  margin-right: 15px;
-}
-.banner__four-content-call-right span {
-  display: block;
-  color: var(--text-white);
-}
-.banner__four-content-call-right a {
-  color: var(--text-white);
-  font-size: 18px;
-  transition: 0.4s;
-  font-weight: 500;
-}
-.banner__four-content-call-right a:hover {
-  color: var(--primary-color-1);
-}
-.banner__four-image {
-  padding-left: 73px;
-}
-.banner__four-image-wrapper img {
-  z-index: 3;
-}
-
-@media (max-width: 991px) {
-  .banner__four {
-    padding: 80px 0;
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 575px) {
-  .banner__four-content h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 480px) {
-  .banner__four-content h2 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 359px) {
-  .banner__four-image-wrapper img {
-    display: none;
-  }
-  .banner__four {
-    padding: 50px 0;
-    padding-bottom: 20px;
-  }
-  .banner__four-content h2 {
-    font-size: 28px;
-  }
-}
-/*==========================================================================
-* Banner Five CSS
-==========================================================================*/
-.banner__five {
-  padding: 165px 0px 135px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  overflow: hidden;
-}
-.banner__five-content {
-  z-index: 3;
-  position: relative;
-}
-.banner__five-content h2 {
-  font-size: 72px;
-  line-height: 1.15;
-  margin-bottom: 20px;
-  text-transform: none;
-}
-.banner__five-content p {
-  font-size: 18px;
-  text-transform: none;
-  margin-bottom: 40px;
-  width: 83%;
-}
-.banner__five-content-bottom {
-  display: flex;
-  align-items: center;
-}
-.banner__five-content-video-btn {
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
-}
-.banner__five-content-video-btn i {
-  width: 58px;
-  height: 58px;
-  background-color: var(--primary-color-1);
-  font-size: 18px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: var(--text-white);
-  margin-right: 15px;
-  cursor: pointer;
-}
-.banner__five-image {
-  padding-left: 60px;
-}
-.banner__five-image-wrapper {
-  position: relative;
-}
-.banner__five-image-wrapper img {
-  z-index: 3;
-}
-.banner__five-image-wrapper .img-2 {
   position: absolute;
-  left: -50px;
-  top: 65px;
+  top: 0;
+  left: -10%;
+  bottom: 0;
+  width: 60%;
+  transform-origin: bottom right;
+  transform: skew(-10.77deg, 0);
+  mix-blend-mode: multiply;
+  z-index: 5;
 }
 
-.modal-video-close-btn {
-  padding: 0;
+@media (max-width: 568px) {
+  .carousel__gradientOverlay {
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: none;
+  }
 }
 
-@media (max-width: 1399px) {
-  .banner__five-content h2 {
-    font-size: 68px;
-  }
-}
-@media (max-width: 767px) {
-  .banner__five-content h2 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 359px) {
-  .banner__three-content h2 {
-    font-size: 40px;
-  }
-}
-/*==========================================================================
-* Page Banner CSS
-==========================================================================*/
-.page__banner {
-  background-color: var(--primary-color-1);
-  position: relative;
-  overflow: hidden;
-}
-.page__banner-shape {
+
+.banner-content {
   position: absolute;
-  right: 0;
-  z-index: 1;
-}
-.page__banner-content {
-  z-index: 3;
-  position: relative;
-}
-.page__banner-content h2 {
-  color: var(--text-white);
-  margin-bottom: 25px;
-  font-size: 64px;
-  line-height: 1.13;
-}
-.page__banner-content span {
-  font-size: 18px;
-  color: var(--primary-color-1);
-}
-.page__banner-content span a {
-  color: var(--text-white);
-  transition: 0.4s;
-}
-.page__banner-content span a:hover {
-  color: var(--primary-color-1);
-}
-.page__banner-content span span {
-  margin: 0 8px;
-}
-.page__banner-img {
-  z-index: 2;
-  position: relative;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
 }
 
-@media (max-width: 991px) {
-  .page__banner-content {
-    padding: 85px 0;
-  }
-  .page__banner-img {
-    display: none;
+
+.text-box {
+  max-width: 600px;
+  color: #fff;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .text-box h1 {
+    font-size: 2.5rem
   }
 }
-@media (max-width: 767px) {
-  .page__banner-content h2 {
-    margin-bottom: 20px;
-    font-size: 64px;
-    line-height: 80px;
-  }
-}
-@media (max-width: 535px) {
-  .page__banner-content h2 {
-    margin-bottom: 18px;
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .page__banner-content {
-    padding: 60px 0;
-  }
+
+.text-box p {
+  font-size: 1rem;
   
 }
+
+@media (min-width: 768px) {
+  .text-box p {
+    font-size: 1.125rem;
+  }
+}
+
+.banner-btn {
+  display: inline-block;
+  background: white;
+  color: var(--primary-color-1);
+  padding: 7px 14px;
+  border-radius: 3px;
+  border: 1px solid white;
+  font-weight: 400;
+  transition: background 0.3s;
+}
+
+.banner-btn:hover {
+  background: var(--primary-color-1);
+  color: white;
+  border: 1px solid var(--primary-color-1);
+}
+
+
+.banner-slider .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.6;
+}
+
+.banner-slider .swiper-pagination-bullet-active {
+  background: var(--primary-color-1);
+  opacity: 1;
+}
+
+
 /*==========================================================================
 * About Area One CSS
 ==========================================================================*/
@@ -10764,13 +10147,14 @@ footer .logo img {
   background-color: var(--primary-color-1);
   border-radius: 3px; 
   margin-right: 20px;
-  padding: 15px 25px;
+  padding: 7px 14px;
 }
 .service-btn i{
   padding-left: 8px;
 }
 
 /* Container padding */
+
 .big-section.py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
@@ -10865,7 +10249,7 @@ footer .logo img {
 @media (max-width: 992px) {
   .big-section .col-lg-6, 
   .big-section .col-xl-5 {
-    text-align: center;
+    text-align: start;
   }
   .big-section .col-xl-5 {
     margin-top: 2rem;

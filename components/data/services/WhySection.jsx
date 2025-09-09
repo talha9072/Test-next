@@ -13,8 +13,8 @@ export default function WhySection({
       <div className="container">
 
         {/* Top Section */}
-        <div className="row align-items-center mb-5">
-          <div className="col-lg-7 mb-lg-0">
+        <div className="row align-items-center mb-5 pt-0 pt-lg-5">
+          <div className="col-lg-6">
             <h2 className="fw-bold text-dark-gray mb-4">{heading}</h2>
             {subheadingLines.map((line, idx) => (
               <p
@@ -29,20 +29,20 @@ export default function WhySection({
               </p>
             ))}
           </div>
-          <div className="col-lg-5 ptb-sm-10 text-center">
+          <div className="col-lg-6">
             <img
               src={imgSrc}
               alt={imgAlt}
               className="img-fluid rounded shadow-sm"
-              style={{ maxHeight: '420px' }}
+             
             />
           </div>
         </div>
 
         {/* Cards Grid */}
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div className="row g-4 cardsrow">
           {cards.map((card, i) => (
-            <div className="col" key={i}>
+            <div className="col-12 col-md-6 col-lg-4" key={i}>
               <div className="glass-card h-100">
                 <div className="icon-circle card-icon mb-6">
                   <i className={card.iconClass} />

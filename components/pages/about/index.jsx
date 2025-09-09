@@ -20,7 +20,7 @@ const Aboutus = () => {
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
           Our Mission
         </span>
-        <h2 className="fw-bold mb-3">Empowering Data-Driven, Intelligent Enterprises</h2>
+        <h2 className="fw-bold mb-4">Empowering Data-Driven, Intelligent Enterprises</h2>
         <p className="mb-4">
           At Novum, our mission is to empower businesses through data-driven decision-making,
           streamlined digital operations, and intelligent enterprise solutions. We strive to elevate
@@ -165,8 +165,8 @@ const Aboutus = () => {
           Who We Are
         </span>
         
-        <h2 className="fw-bold mb-3">Built on Innovation &amp; Expertise</h2>
-        <p className="mb-3">
+        <h2 className="fw-bold mb-4">Built on Innovation &amp; Expertise</h2>
+        <p className="mb-2">
           Founded in 2017, Novum is a data analytics and software development company delivering
           advanced digital solutions across local and international markets. We specialize in data
           warehousing, ERP implementation, custom software development, AI-driven analytics, and
@@ -192,8 +192,8 @@ const Aboutus = () => {
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
           What Drives Us
         </span>
-        <h2 className="h1 fw-bold mb-2">What Drives Us</h2>
-        <p className="text-muted mb-4">
+        <h2 className="fw-bold mb-4">What Drives Us</h2>
+        <p className="mb-4">
           At the core of Novum is a commitment to delivering business value through purposeful technology.
         </p>
       </div>
@@ -279,8 +279,8 @@ const Aboutus = () => {
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
           Global Impact, Local Expertise
         </span>
-        <h2 className="h1 fw-bold mb-3">Global Impact, Local Expertise</h2>
-        <p className="fs-5 mb-4">
+        <h2 className="fw-bold mb-4">Global Impact, Local Expertise</h2>
+        <p className="mb-4">
           With offices in <strong>Dubai</strong> and <strong>Baku</strong>, Novum blends global perspective
           with deep local market understanding. Our international presence lets us serve diverse clients
           while tailoring solutions to regional dynamics.

@@ -70,8 +70,8 @@ const MainServices = () => (
     <div className="container">
       <div className="row gy-4 pb-4">
         <div className="col-12">
-          <h2 className="fw-700 text-dark-gray ls-minus-1px mb-3">Explore Our Services</h2>
-          <p className="mb-0">
+          <h2 className="fw-700 text-dark-gray mb-4">Explore Our Services</h2>
+          <p className="mb-2">
             We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes.
           </p>
         </div>

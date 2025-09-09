@@ -45,12 +45,12 @@ const products = [
 const ProductsCarousel = () => (
   <section className="background-position-center-top overflow-hidden py-5">
     <div className="container">
-      <div className="row align-items-left mb-3 text-left">
+      <div className="row align-items-left mb-4 text-left">
         <div className="col-lg-9 col-xl-9">
-          <h2 className="fw-bold text-dark mb-3">
+          <h2 className="fw-bold text-dark mb-4">
             Smart Digital Products That Simplify Complex Operations
           </h2>
-          <p className="text-muted fs-5">
+          <p className="mb-2">
             Novum creates intelligent software tools that automate workflows, improve
             visibility, and enhance operational performance across industries.
           </p>
@@ -76,7 +76,7 @@ const ProductsCarousel = () => (
             {products.map((p, idx) => (
               <SwiperSlide key={idx}>
                 <div className="interactive-banner-style-06">
-                  <div className="interactive-banners-image">
+                  <div className="interactive-banners-image rounded">
                     <img src={p.img} alt={p.title} />
                     <div className="overlay-bg bg-gradient-dark-transparent box-overlay" />
                   </div>

@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 const megaItems = [
   {
     heading: 'Digital Transformation',
-    icon: 'fas fa-sync-alt main-clr',
+    
     links: [
       { label: 'Digital Strategy', href: '/services/digital-strategy' },
       { label: 'Sustainability Manager', href: '/services/microsoft-sustainability' },
@@ -19,7 +19,7 @@ const megaItems = [
   },
   {
     heading: 'Data & AI',
-    icon: 'fas fa-robot main-clr',
+    
     links: [
       { label: 'Power BI / Reporting Consulting', href: '/services/power-bi' },
       { label: 'Data Warehouse', href: '/services/data-warehouse' },
@@ -29,7 +29,7 @@ const megaItems = [
   },
   {
     heading: 'Business Applications',
-    icon: 'fas fa-briefcase main-clr',
+    
     links: [
       { label: 'Microsoft Dynamics 365', href: '/services/microsoft-dynamics-365' },
       { label: 'Microsoft 365 Deployment', href: '/services/microsoft-365-deployment' },
@@ -39,7 +39,7 @@ const megaItems = [
   
   {
     heading: 'Software & Engineering',
-    icon: 'fas fa-handshake main-clr',
+   
     links: [
       { label: 'Software Development', href: '/services/software-development' },
       { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
@@ -51,7 +51,7 @@ const megaItems = [
 const productItems = [
   {
     heading: 'Products ISV',
-    icon: 'fas fa-building main-clr',
+    
     links: [
       { label: 'Airport Turnaround Solution', href: '/products/airports-turnaround-solution' },
       { label: 'NES (Novum Entrance System)', href: '/products/nes-novum-entrance-system' },
@@ -62,7 +62,7 @@ const productItems = [
   },
   {
     heading: 'By Industry or Business Function',
-    icon: 'fas fa-users main-clr',
+   
     links: [
       { label: 'Healthcare & Pharma', href: '/industries/pharmaceutical-industry' },
       { label: 'Retail & Distribution', href: '/industries/food-retail-distribution' },
