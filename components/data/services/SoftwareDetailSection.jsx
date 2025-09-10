@@ -15,7 +15,7 @@ export default function SoftwareDetailSection({
   phoneHref,
 }) {
   return (
-    <section className="big-section py-5">
+    <section className="big-section py-5" id='services'>
       <div className="container">
         <div className="row align-items-center pt-0 pt-lg-5">
 

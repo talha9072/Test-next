@@ -1,57 +1,74 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+"use client";
+import React from "react";
+import PropTypes from "prop-types";
+import Image from "next/image";
 
-export default function SoftwareSolutionsSection({
+export default function AboutSection({
+  subtitle,
   title,
   paragraphs,
   imageSrc,
-  altText = '',
-  sectionClass = 'position-relative overflow-hidden py-5'
+  altText,
+  sectionClass = "py-5",
+  imageWidth = 800,
+  imageHeight = 500,
+  priority = false,
 }) {
   return (
-    <section className={sectionClass}>
+    <section className={sectionClass} id="about">
       <div className="container">
-        <div className="row align-items-center pt-0 pt-lg-5">
-
-          {/* Left Text */}
-          <div className={`col-lg-6 position-relative`}>  
-            <h2 className="fw-700 text-dark-gray mb-4">
-              {title.split('\n').map((line, idx) => (
-                <React.Fragment key={idx}>
-                  {line}
-                  {idx < title.split('\n').length - 1 && <br />}
-                </React.Fragment>
+        <div className="row align-items-center flex-wrap-reverse gy-4">
+          {/* Left Text Section */}
+          <div className="col-xl-6 col-lg-6 col-12">
+            <div className="about__four-content">
+              {subtitle && <span className="subtitle-one">{subtitle}</span>}
+              <h2 className="mb-4">{title}</h2>
+              {paragraphs.map((para, i) => (
+                <p key={i} className={i < paragraphs.length - 1 ? "mb-2" : "mb-0"}>
+                  {para}
+                </p>
               ))}
-            </h2>
-            {paragraphs.map((text, i) => (
-              <p key={i} className={i < paragraphs.length - 1 ? 'mb-2' : 'mb-0'}>
-                {text}
-              </p>
-            ))}
+            </div>
           </div>
 
-          {/* Right Image */}
-          <div className="col-lg-6 text-center">
-            <img src={imageSrc} alt={altText} className="img-fluid rounded shadow" width="100%" height="auto" />
+          {/* Right Image Section */}
+          <div className="col-xl-6 col-lg-6 col-12">
+            <div className="about__four-image">
+              <Image
+                src={imageSrc}
+                alt={altText}
+                width={imageWidth}
+                height={imageHeight}
+                quality={100}
+                priority={priority}
+                className="image-1 img-fluid rounded object-cover"
+                unoptimized={false}
+              />
+            </div>
           </div>
-
         </div>
       </div>
     </section>
   );
 }
 
-SoftwareSolutionsSection.propTypes = {
+AboutSection.propTypes = {
+  subtitle: PropTypes.string,
   title: PropTypes.string.isRequired,
   paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string,
-  bgLogoClass: PropTypes.string,
-  sectionClass: PropTypes.string
+  sectionClass: PropTypes.string,
+  imageWidth: PropTypes.number,
+  imageHeight: PropTypes.number,
+  priority: PropTypes.bool,
 };
 
-SoftwareSolutionsSection.defaultProps = {
-  altText: '',
-  bgLogoClass: 'novum-bg-logo',
-  sectionClass: 'position-relative overflow-hidden py-5'
+AboutSection.defaultProps = {
+  subtitle: "",
+  altText: "",
+  sectionClass: "py-5",
+  imageWidth: 800,
+  imageHeight: 500,
+  priority: false,
 };
