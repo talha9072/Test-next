@@ -75,32 +75,56 @@ const Footer = () => (
 
       {/* Bottom Row */}
       <div className="d-flex flex-column-reverse flex-md-row justify-content-between align-items-md-center pt-3">
-        {/* List links */}
-        <div className="order-1 order-md-0 w-100 mt-md-0 text-start text-md-start">
-          <ul className="list-inline mb-0">
-            <li className="list-inline-item">
-              <a href="#" className="text-muted text-decoration-none">
-                Privacy Policy
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-muted text-decoration-none">
-                Code of Conduct
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#" className="text-muted text-decoration-none">
-                Anti-Bribery and Corruption Policy
-              </a>
-            </li>
-          </ul>
+        {/* List links + Language Dropdown */}
+        <div className="footer-links-wrapper order-1 order-md-0 w-100 mt-md-0 text-start text-md-start">
+          {/* Links Section */}
+          <div className="mb-3">
+            <ul className="list-inline mb-0">
+              <li className="list-inline-item">
+                <a href="#" className="text-muted text-decoration-none">
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#" className="text-muted text-decoration-none">
+                  Code of Conduct
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#" className="text-muted text-decoration-none">
+                  Anti-Bribery and Corruption Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Language Dropdown */}
+          <div className="dropdown">
+            <button
+              className="btn-two mb-2"
+              type="button"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i className="fas fa-globe me-2"></i> English{" "}
+              <i className="fas fa-chevron-down ms-2"></i>
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="languageDropdown">
+              <li>
+                <a className="dropdown-item" href="#">
+                  English
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Copyright */}
         <div className="order-0 order-md-1 w-100 text-start text-md-end">
           <div className="text-muted">Copyright © 2025 Novum LLC. All Rights Reserved</div>
           <div className="text-muted">
-            Crafted by{' '}
+            Crafted by{" "}
             <a
               href="https://oasis-digital.ae/"
               target="_blank"
@@ -112,6 +136,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
+
     </div>
   </footer>
 );

@@ -34,9 +34,9 @@ export default function Testimonials() {
   return (
     <section className="position-relative py-5">
       <div className="container">
-        <div className="row justify-content-center mb-4">
+        <div className="row justify-content-center">
           <div className="col-lg-8 text-center">
-            <h2 className="fw-700 text-dark-gray mb-4">
+            <h2 className="fw-700 text-dark-gray">
               What Clients Say About Working With Novum
             </h2>
           </div>

@@ -27,7 +27,7 @@ export default function Tab1() {
             </ul>
             <div className="tab-content">
               <div className="tab-pane fade show active" id="tab_third1" role="tabpanel">
-                <div className="row align-items-center justify-content-center">
+                <div className="row align-items-center justify-content-center gy-4 gy-md-1">
                   <div className="col-lg-6 position-relative">
                     <figure className="rounded mb-0">
                       <img
@@ -49,7 +49,7 @@ export default function Tab1() {
                 </div>
               </div>
               <div className="tab-pane fade" id="tab_third2" role="tabpanel">
-                <div className="row align-items-center justify-content-center">
+                <div className="row align-items-center justify-content-center gy-4 gy-md-1">
                   <div className="col-lg-6">
                     <figure className="rounded mb-0">
                       <img
@@ -71,7 +71,7 @@ export default function Tab1() {
                 </div>
               </div>
               <div className="tab-pane fade" id="tab_third3" role="tabpanel">
-                <div className="row align-items-center justify-content-center">
+                <div className="row align-items-center justify-content-center gy-4 gy-md-1">
                   <div className="col-lg-6">
                     <figure className="mb-0 rounded">
                       <img

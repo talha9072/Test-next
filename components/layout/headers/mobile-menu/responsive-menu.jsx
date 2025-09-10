@@ -23,7 +23,7 @@ const ResponsiveMenu = () => {
                     <ul className="sub-menu" style={activeSubMenu("services")}>
                         {/* Digital Transformation */}
                         <li className="menu-group-heading">
-                            <i className="fas fa-sync-alt main-clr" /> Digital Transformation
+                             Digital Transformation
                         </li>
                         <li><Link href="/services/digital-strategy">Digital Strategy</Link></li>
                         <li><Link href="/services/microsoft-sustainability">Sustainability Manager</Link></li>
@@ -35,7 +35,7 @@ const ResponsiveMenu = () => {
 
                         {/* Data & AI */}
                         <li className="menu-group-heading">
-                            <i className="fas fa-robot main-clr" /> Data &amp; AI
+                         Data &amp; AI
                         </li>
                         <li><Link href="/services/power-bi">Power BI / Reporting Consulting</Link></li>
                         <li><Link href="/services/data-warehouse">Data Warehouse</Link></li>
@@ -44,7 +44,7 @@ const ResponsiveMenu = () => {
 
                         {/* Business Applications */}
                         <li className="menu-group-heading">
-                            <i className="fas fa-briefcase main-clr" /> Business Applications
+                         Business Applications
                         </li>
                         <li><Link href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</Link></li>
                         <li><Link href="/services/microsoft-365-deployment">Microsoft 365 Deployment</Link></li>
@@ -52,7 +52,7 @@ const ResponsiveMenu = () => {
 
                         {/* Engagements */}
                         <li className="menu-group-heading">
-                            <i className="fas fa-handshake main-clr" /> Software & Engineering
+                         Software & Engineering
                         </li>
                         <li><Link href="/services/software-development">Software Development</Link></li>
                         <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
@@ -68,7 +68,7 @@ const ResponsiveMenu = () => {
                 <ul className="sub-menu" style={activeSubMenu("products")}>
                     {/* Products ISV */}
                     <li className="menu-group-heading">
-                    <i className="fas fa-building main-clr" /> Products ISV
+                     Products ISV
                     </li>
                     <li><Link href="/products/airports-turnaround-solution">Airport Turnaround Solution</Link></li>
                     <li><Link href="/products/nes-novum-entrance-system">NES (Novum Entrance System)</Link></li>
@@ -78,7 +78,7 @@ const ResponsiveMenu = () => {
 
                     {/* By Industry or Business Function */}
                     <li className="menu-group-heading">
-                    <i className="fas fa-users main-clr" /> By Industry or Business Function
+                     By Industry or Business Function
                     </li>
                     <li><Link href="/industries/pharmaceutical-industry">Healthcare & Pharma</Link></li>
                     <li><Link href="/industries/food-retail-distribution">Retail & Distribution</Link></li>

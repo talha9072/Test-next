@@ -162,14 +162,7 @@ body .container {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
-@media (max-width: 990px) {
-  section .container .row {
-    gap: 25px !important;
-  }
-  section .container .cardsrow{
-    gap: 0px !important;
-  }
-}
+
 
 /*==========================================================================
 * Novum Color CSS

@@ -21,7 +21,7 @@ export default function QuickLinks() {
           {/* Left: Image with overlay */}
           <div className="col-lg-8 d-flex">
             <a
-              href="/services/novum-for-business"
+              href="/contact"
               className="text-decoration-none d-flex w-100"
             >
               <div className="position-relative overflow-hidden rounded shadow-sm flex-fill">
