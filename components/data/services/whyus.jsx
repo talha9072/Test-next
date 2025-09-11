@@ -54,10 +54,9 @@ export default function WhyUs({
     <section
       ref={sectionRef}
       id={id}
-      className="why-us-section py-7 position-relative text-dark"
+      className="why-us-section py-5 position-relative text-dark"
     >
-      {/* Background */}
-      <div className="section-bg position-absolute top-0 start-0 w-100 h-100"></div>
+      
 
       <div className="container position-relative">
         {/* Heading */}
@@ -114,49 +113,7 @@ export default function WhyUs({
         )}
       </div>
 
-      <style jsx>{`
-        .section-bg {
-          background: linear-gradient(
-            135deg,
-            rgba(13, 43, 117, 0.03),
-            rgba(13, 43, 117, 0.07)
-          );
-          z-index: 0;
-        }
-        .subtitle-one {
-          letter-spacing: 1px;
-          font-size: 14px;
-        }
-        
-        /* Counter Styles */
-        .counter-card {
-          background: #fff;
-          border: 1px solid #e5e7eb;
-          transition: all 0.3s ease;
-        }
-        .counter-card:hover {
-          border-color: #0d2b75;
-          transform: translateY(-6px);
-        }
-        .counter-value {
-          font-size: 2.5rem;
-          font-weight: 700;
-          background: linear-gradient(90deg, #0d2b75, #07195f);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        /* Feature card styles */
-        .feature-card {
-          background: #fff;
-          border: 1px solid #e5e7eb;
-          transition: all 0.3s ease;
-        }
-        .feature-card:hover {
-          border-color: #0d2b75;
-          transform: translateY(-4px);
-        }
-      `}</style>
+      
     </section>
   );
 }

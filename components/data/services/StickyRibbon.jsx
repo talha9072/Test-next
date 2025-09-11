@@ -10,7 +10,7 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
     const handleScroll = () => {
       setShowFixed(window.scrollY > 200);
 
-      // ✅ ScrollSpy logic
+      //  ScrollSpy logic
       let current = "";
       links.forEach((link) => {
         const section = document.querySelector(link.href);
@@ -29,7 +29,7 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
       if (current && current !== activeLink) {
         setActiveLink(current);
 
-        // ✅ Auto-scroll ribbon to keep active link visible (mobile only)
+        //  Auto-scroll ribbon to keep active link visible (mobile only)
         if (scrollRef.current && window.innerWidth <= 768) {
           const activeEl = scrollRef.current.querySelector(
             `.nav-link[href="${current}"]`

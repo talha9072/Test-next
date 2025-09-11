@@ -1,3 +1,4 @@
+// components/pages/homes/home-4/implement-section.jsx
 "use client";
 import { useRef } from "react";
 import PropTypes from "prop-types";
@@ -71,51 +72,14 @@ export default function ImplementSection({
 
         {/* Arrows only */}
         <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
-          <button ref={prevRef} className="custom-prev nav-arrow">
+          <button ref={prevRef} className="btn btn-outline-dark rounded-circle">
             <i className="fa-solid fa-chevron-left"></i>
           </button>
-          <button ref={nextRef} className="custom-next nav-arrow">
+          <button ref={nextRef} className="btn btn-outline-dark rounded-circle">
             <i className="fa-solid fa-chevron-right"></i>
           </button>
         </div>
       </div>
-
-      <style jsx>{`
-        .subtitle-one {
-          letter-spacing: 1px;
-          font-size: 14px;
-        }
-        h2 {
-          color: #0d2b75;
-        }
-        .benefit-card {
-          border: 1px solid #e5e7eb;
-          background: #fff;
-          transition: all 0.3s ease;
-        }
-        .benefit-card:hover {
-          border-color: #0d2b75;
-          transform: translateY(-4px);
-        }
-        .h-200 {
-          height: 200px;
-          object-fit: cover;
-        }
-
-        /* Arrows */
-        .nav-arrow {
-          background: none;
-          border: none;
-          color: #444;
-          font-size: 20px;
-          cursor: pointer;
-          transition: color 0.2s ease, transform 0.2s ease;
-        }
-        .nav-arrow:hover {
-          color: #0d2b75;
-          transform: scale(1.2);
-        }
-      `}</style>
     </section>
   );
 }

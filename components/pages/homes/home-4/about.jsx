@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const about1 = "/assets/img/home/novum-about.webp";
+const about1 = "/assets/img/home/our-team.png";
 
 const logos = [
   "/assets/img/clients/unicef.png",
