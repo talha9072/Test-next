@@ -49,11 +49,10 @@ export default function OtherServices({
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           }}
-          onInit={(swiper) => {
+          onBeforeInit={(swiper) => {
+            //  Fix for production: attach refs before init
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
           }}
           breakpoints={{
             576: { slidesPerView: 1 },

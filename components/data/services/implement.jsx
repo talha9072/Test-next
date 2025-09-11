@@ -40,11 +40,14 @@ export default function ImplementSection({
           modules={[Navigation]}
           spaceBetween={20}
           slidesPerView={1}
-          onInit={(swiper) => {
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            //  attach refs before init (fix for production)
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
           }}
           breakpoints={{
             576: { slidesPerView: 1 },
