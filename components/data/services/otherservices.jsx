@@ -1,6 +1,6 @@
 // components/pages/homes/home-4/other-services.jsx
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -16,6 +16,12 @@ export default function OtherServices({
 }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [navReady, setNavReady] = useState(false);
+
+  // ✅ ensure refs ready before Swiper render
+  useEffect(() => {
+    setNavReady(true);
+  }, []);
 
   return (
     <section className="services py-5 bg-light" id={id}>
@@ -36,50 +42,51 @@ export default function OtherServices({
         </div>
 
         {/* Swiper Slider */}
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            //  Fix for production: attach refs before init
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
-          breakpoints={{
-            576: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-          }}
-        >
-          {services.map((svc, i) => (
-            <SwiperSlide key={i}>
-              <a className="card p-2 h-100" href={svc.link}>
-                <div className="card-body text-center d-flex flex-column">
-                  {svc.imgSrc && (
-                    <img
-                      src={svc.imgSrc}
-                      alt={svc.title}
-                      width={64}
-                      height={64}
-                      loading="lazy"
-                    />
-                  )}
-                  <h3 className="card-title mt-3">{svc.title}</h3>
-                  <p className="card-text flex-grow-1">{svc.description}</p>
-                </div>
-              </a>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {navReady && (
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            navigation={{
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }}
+            onBeforeInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+            }}
+            breakpoints={{
+              576: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 3 },
+            }}
+          >
+            {services.map((svc, i) => (
+              <SwiperSlide key={i}>
+                <a className="card p-2 h-100" href={svc.link}>
+                  <div className="card-body text-center d-flex flex-column">
+                    {svc.imgSrc && (
+                      <img
+                        src={svc.imgSrc}
+                        alt={svc.title}
+                        width={64}
+                        height={64}
+                        loading="lazy"
+                      />
+                    )}
+                    <h3 className="card-title mt-3">{svc.title}</h3>
+                    <p className="card-text flex-grow-1">{svc.description}</p>
+                  </div>
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
 
         {/* Arrows */}
         <div className="d-flex justify-content-center gap-4 mt-4">
