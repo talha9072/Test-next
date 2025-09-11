@@ -87,12 +87,12 @@ const PowerBI = () => {
               desc: "Analyze data from sensors and smart devices to improve operations.",
             },
             {
-              img: "/assets/img/power-bi/benefit-cross.jpg",
+              img: "/assets/img/power-bi/department.webp",
               title: "Cross-Department Insights",
               desc: "Unify reporting across finance, sales, and supply chain for better collaboration.",
             },
             {
-              img: "/assets/img/power-bi/benefit-connectors.jpg",
+              img: "/assets/img/power-bi/data.webp",
               title: "200+ Data Connectors",
               desc: "Integrate cloud services, databases, Excel files, and more into a single platform.",
             },
