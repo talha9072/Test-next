@@ -1,6 +1,6 @@
 // components/pages/homes/home-4/implement-section.jsx
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -16,6 +16,12 @@ export default function ImplementSection({
 }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [navReady, setNavReady] = useState(false);
+
+  // ✅ ensure refs ready before Swiper render
+  useEffect(() => {
+    setNavReady(true);
+  }, []);
 
   return (
     <section className="py-5" id={id}>
@@ -36,42 +42,43 @@ export default function ImplementSection({
         </div>
 
         {/* Swiper Carousel */}
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={20}
-          slidesPerView={1}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            //  attach refs before init (fix for production)
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
-          breakpoints={{
-            576: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-          }}
-          className="benefits-swiper"
-        >
-          {items.map((item, i) => (
-            <SwiperSlide key={i}>
-              <div className="benefit-card h-100 rounded shadow-sm overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-100 h-200 object-cover"
-                />
-                <div className="p-4">
-                  <h5 className="fw-semibold text-dark mb-2">{item.title}</h5>
-                  <p className="text-muted small mb-0">{item.desc}</p>
+        {navReady && (
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation={{
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }}
+            onBeforeInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+            }}
+            breakpoints={{
+              576: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 3 },
+            }}
+            className="benefits-swiper"
+          >
+            {items.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div className="benefit-card h-100 rounded shadow-sm overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-100 h-200 object-cover"
+                  />
+                  <div className="p-4">
+                    <h5 className="fw-semibold text-dark mb-2">{item.title}</h5>
+                    <p className="text-muted small mb-0">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
 
         {/* Arrows only */}
         <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
