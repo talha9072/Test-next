@@ -13,25 +13,28 @@ const slides = [
     id: 1,
     image: "/assets/img/home/novum-hero-4.jpg",
     heading: "Transform Data Into Strategic Growth",
-    text: "Empower your business with advanced Power BI consulting and data analytics.NOVUM turns complex information into clarity that fuels smarter decisions.",
+    text: "Empower your business with advanced Power BI consulting and data analytics. NOVUM turns complex information into clarity that fuels smarter decisions.",
     link: "/contact",
-    linkText: "Learn more",
+    linkText: "Learn More",
+    brochure: "/assets/img/home/NOVUM-Brochure.pdf",
   },
   {
     id: 2,
     image: "/assets/img/home/novum-hero-5.jpg",
     heading: "Intelligent Solutions for a Digital Future",
-    text: "Accelerate transformation with AI-driven analytics and Azure migration expertise.NOVUM helps organizations stay agile, efficient, and future-ready.",
+    text: "Accelerate transformation with AI-driven analytics and Azure migration expertise. NOVUM helps organizations stay agile, efficient, and future-ready.",
     link: "/contact",
-    linkText: "Learn more",
+    linkText: "Learn More",
+    brochure: "/assets/img/home/NOVUM-Brochure.pdf",
   },
   {
     id: 3,
     image: "/assets/img/home/novum-hero-6.jpg",
     heading: "Driving Innovation Across Every Industry",
-    text: "Unlock potential with Microsoft data analytics and cloud solutions tailored to your needs.NOVUM delivers platforms that help businesses thrive in a changing world.",
+    text: "Unlock potential with Microsoft data analytics and cloud solutions tailored to your needs. NOVUM delivers platforms that help businesses thrive in a changing world.",
     link: "/contact",
-    linkText: "Learn more",
+    linkText: "Learn More",
+    brochure: "/assets/img/home/NOVUM-Brochure.pdf",
   },
 ];
 
@@ -55,10 +58,13 @@ const Banner = () => {
                 alt={slide.heading}
                 fill
                 priority
+                placeholder="blur"
+                blurDataURL="/assets/img/home/blur-placeholder.jpg"
+                quality={100} // ensures no pixelation
                 className="object-cover"
               />
 
-              <div className="carousel__gradientOverlay"></div>
+              {/* Removed gradient overlay */}
               <div className="dark-overlay"></div>
 
               <div className="banner-content">
@@ -66,9 +72,19 @@ const Banner = () => {
                   <div className="text-box">
                     <h1 className="mb-4">{slide.heading}</h1>
                     <p className="mb-4">{slide.text}</p>
-                    <Link href={slide.link} className="banner-btn">
-                      {slide.linkText}
-                    </Link>
+                    <div className="btn-group">
+                      <a
+                        href={slide.brochure}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="banner-btn secondary"
+                      >
+                        Download Brochure
+                      </a>
+                      <Link href={slide.link} className="banner-btn">
+                        {slide.linkText}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
