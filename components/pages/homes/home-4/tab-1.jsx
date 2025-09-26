@@ -31,7 +31,7 @@ export default function Tab1() {
                   <div className="col-lg-6 position-relative">
                     <figure className="rounded mb-0">
                       <img
-                        src="/assets/img/home/power-bi.png"
+                        src="/assets/img/home/power-bi-main.png"
                         alt="Power BI"
                         className="rounded"
                       />
@@ -53,7 +53,7 @@ export default function Tab1() {
                   <div className="col-lg-6">
                     <figure className="rounded mb-0">
                       <img
-                        src="/assets/img/home/365-copilot.png"
+                        src="/assets/img/home/copilot-main.png"
                         alt="365 Copilot"
                         className="rounded"
                       />
@@ -75,7 +75,7 @@ export default function Tab1() {
                   <div className="col-lg-6">
                     <figure className="mb-0 rounded">
                       <img
-                        src="/assets/img/home/data-warehousing.png"
+                        src="/assets/img/home/warehouse-main.png"
                         alt="Data Warehouse"
                         className="rounded"
                       />
