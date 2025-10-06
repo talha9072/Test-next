@@ -4115,7 +4115,7 @@ Responsive Menu Css
   }
 }
 /* ==========================================================================
-* Banner One CSS
+* Banner One CSS (Borderless + Left-aligned Buttons)
 ========================================================================== */
 .banner-slider,
 .banner-slide {
@@ -4130,6 +4130,7 @@ Responsive Menu Css
   position: absolute !important;
   inset: 0 !important;
 }
+
 .banner-slide img {
   object-fit: cover !important;
   object-position: center;
@@ -4139,7 +4140,7 @@ Responsive Menu Css
 .dark-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0);
   z-index: 5;
 }
 
@@ -4156,6 +4157,7 @@ Responsive Menu Css
 .text-box {
   max-width: 650px;
   color: #fff;
+  text-align: left; 
 }
 
 .text-box h1 {
@@ -4163,6 +4165,7 @@ Responsive Menu Css
   font-weight: 700;
   line-height: 1.3;
 }
+
 @media (min-width: 768px) {
   .text-box h1 {
     font-size: 2.8rem;
@@ -4172,75 +4175,117 @@ Responsive Menu Css
 .text-box p {
   font-size: 1rem;
 }
+
 @media (min-width: 768px) {
   .text-box p {
     font-size: 1.125rem;
   }
 }
 
-/* Buttons */
+/* ==========================================================================
+* BUTTON GROUP + BUTTONS
+========================================================================== */
 .btn-group {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: flex-start; 
 }
 
+/* Main banner button */
 .banner-btn {
-  flex: 1 1 auto; /* allow equal growth */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background: white;
+  background: var(--bg-white);
   color: var(--primary-color-1);
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: 1px solid white;
+  padding: 12px 24px;          
+  min-width: 180px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;               
   font-weight: 500;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  transition: color 0.3s ease, background 0.3s ease;
+  z-index: 1;
+  text-decoration: none;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+/* Hover fill (fixed white corner issue) */
+.banner-btn::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: calc(100% + 2px);
+  background: var(--primary-color-1);
+  transition: width 0.45s ease;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.banner-btn:hover::before {
+  width: calc(100% + 2px);
 }
 
 .banner-btn:hover {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
+  color: #fff;
 }
 
-.banner-btn.secondary {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-}
-.banner-btn.secondary:hover {
-  background: white;
-  color: var(--primary-color-1);
+/* Text stays above animation */
+.banner-btn span {
+  position: relative;
+  z-index: 2;
 }
 
-/* Responsive Fixes */
+/* ==========================================================================
+* RESPONSIVE ADJUSTMENTS
+========================================================================== */
 @media (max-width: 991px) {
   .banner-slider,
   .banner-slide {
-    height: 70vh; /* reduce height on tablets */
-  }
-}
-@media (max-width: 576px) {
-  .banner-slider,
-  .banner-slide {
-    height: 75vh; /* reduce height on mobiles */
-  }
-  .btn-group {
-    flex-direction: column;
-  }
-  .banner-btn {
-    width: 100%; /* full width equal buttons */
+    height: 70vh;
   }
 }
 
-/* Pagination Dots */
+@media (max-width: 576px) {
+  .banner-slider,
+  .banner-slide {
+    height: 75vh;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: flex-start; /* ✅ Keep left aligned on mobile too */
+  }
+
+  .banner-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* ==========================================================================
+* PAGINATION DOTS
+========================================================================== */
 .banner-slider .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 1;
+  width: 20px;
+  height: 6px;
+  border-radius: 2px;
 }
+
 .banner-slider .swiper-pagination-bullet-active {
   background: var(--primary-color-1);
   opacity: 1;
+  width: 20px;
+  height: 6px;
 }
 
 /*==========================================================================

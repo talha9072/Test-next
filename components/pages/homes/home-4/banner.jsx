@@ -60,11 +60,10 @@ const Banner = () => {
                 priority
                 placeholder="blur"
                 blurDataURL="/assets/img/home/blur-placeholder.jpg"
-                quality={100} // ensures no pixelation
+                quality={100}
                 className="object-cover"
               />
 
-              {/* Removed gradient overlay */}
               <div className="dark-overlay"></div>
 
               <div className="banner-content">
@@ -77,12 +76,12 @@ const Banner = () => {
                         href={slide.brochure}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="banner-btn secondary"
+                        className="banner-btn"
                       >
-                        Download Brochure
+                        <span>Download Brochure</span>
                       </a>
                       <Link href={slide.link} className="banner-btn">
-                        {slide.linkText}
+                        <span>{slide.linkText}</span>
                       </Link>
                     </div>
                   </div>
