@@ -68,72 +68,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* === Moving clients row right under About === */}
-      <div className="row position-relative mt-1 clients-style-08">
-        <div className="container">
-          <div className="col-12 overflow-hidden">
-            <div
-              className="clients-marquee"
-              aria-hidden="true"
-              onMouseEnter={() => setPaused(true)}
-              onMouseLeave={() => setPaused(false)}
-              style={{ ["--play"]: paused ? "paused" : "running" }}
-            >
-              <ul className="clients-track">
-                {/* first loop */}
-                {logos.map((src, i) => (
-                  <li className="clients-item" key={`loop1-${i}`}>
-                    <Image
-                      src={src}
-                      alt={`Client logo ${i + 1}`}
-                      width={120}
-                      height={50}
-                      className="h-50px w-auto"
-                    />
-                  </li>
-                ))}
-                {/* duplicate loop for seamless scroll */}
-                {logos.map((src, i) => (
-                  <li className="clients-item" key={`loop2-${i}`}>
-                    <Image
-                      src={src}
-                      alt={`Client logo duplicate ${i + 1}`}
-                      width={120}
-                      height={50}
-                      className="h-50px w-auto"
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <style jsx>{`
-        .clients-marquee {
-          display: flex;
-          overflow: hidden;
-          white-space: nowrap;
-        }
-        .clients-track {
-          display: flex;
-          animation: scroll 30s linear infinite;
-          animation-play-state: var(--play, running);
-        }
-        .clients-item {
-          flex: 0 0 auto;
-          padding: 0 30px;
-        }
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
+      
     </>
   );
 };

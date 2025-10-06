@@ -4810,7 +4810,7 @@ Responsive Menu Css
 }
 .services .card-body img {
     height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .services .card-title {
     font-size: 1.5rem;
@@ -9882,6 +9882,30 @@ footer .logo img {
         opacity: 1;
       }
       
+      /* ========================================================================== 
+   PRODUCTS CAROUSEL DOTS
+   ========================================================================== */
+.products-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.products-swiper .swiper-pagination-bullet {
+  background: grey;
+  opacity: 1;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 0 4px !important;
+}
+
+.products-swiper .swiper-pagination-bullet-active {
+  background: var(--primary-color-1);
+  opacity: 1;
+  width: 30px;
+  height: 3px;
+}
 
 /*==========================================================================
 * Mega Menu CSS
@@ -10806,7 +10830,7 @@ footer .logo img {
 
 .services .card-body img {
   height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .services .card-title {

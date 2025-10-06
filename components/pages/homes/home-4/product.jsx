@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Keyboard } from 'swiper/modules';
+import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -56,10 +57,11 @@ const ProductsCarousel = () => (
           </p>
         </div>
       </div>
+
       <div className="row align-items-center mb-0">
         <div className="col-md-12 position-relative">
           <Swiper
-            modules={[Autoplay, Keyboard]}
+            modules={[Autoplay, Keyboard, Pagination]}
             slidesPerView={1}
             spaceBetween={35}
             loop={true}
@@ -72,6 +74,7 @@ const ProductsCarousel = () => (
               992: { slidesPerView: 2.5 },
               1200: { slidesPerView: 3.5 },
             }}
+            className="products-swiper"
           >
             {products.map((p, idx) => (
               <SwiperSlide key={idx}>
@@ -93,11 +96,13 @@ const ProductsCarousel = () => (
                 </div>
               </SwiperSlide>
             ))}
+
+            {/* ✅ Built-in pagination now works automatically */}
+            <div className="swiper-pagination"></div>
           </Swiper>
         </div>
       </div>
     </div>
-
   </section>
 );
 

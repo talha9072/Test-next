@@ -80,7 +80,7 @@ const MainServices = () => (
         {services.map((svc, i) => (
           <div className="col-lg-4 col-md-6" key={i}>
             <a className="card p-2" href={svc.link}>
-              <div className="card-body text-center">
+              <div className="card-body text-left">
                 <img
                   src={svc.imgSrc}
                   alt={svc.title}
