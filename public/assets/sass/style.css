@@ -10948,5 +10948,32 @@ footer .logo img {
         } 
 
 
-        
-        
+    .video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playbtn {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 5;
+}
+
+.playbtn:hover {
+  transform: scale(1.1);
+}
+
+.playbtn img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
+}
