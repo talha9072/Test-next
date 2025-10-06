@@ -3414,7 +3414,7 @@ p {
   display: inline-block;
 }
 .header__area-menubar-left-logo a img {
-  max-width: 165px;
+  max-width: 180px;
   position: relative;
   z-index: 9999;
 }
@@ -4016,7 +4016,7 @@ Responsive Menu Css
   width: 100%;
 }
 .header__area-menubar{
-  padding: 8px 0;
+  padding: 24px 0;
 }
 @media (max-width: 1500px) {
   .header__area.two .header__area-menubar-right-box-social {
@@ -4119,7 +4119,7 @@ Responsive Menu Css
 ========================================================================== */
 .banner-slider,
 .banner-slide {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 90px);
   position: relative;
   overflow: hidden;
   min-height: 400px;
@@ -4199,13 +4199,13 @@ Responsive Menu Css
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--bg-white);
-  color: var(--primary-color-1);
+  background: transparent;
+  color: var(--bg-white);
   padding: 12px 24px;          
   min-width: 180px;
   font-size: 1rem;
   border-radius: 6px;
-  border: none;               
+  border: 1px solid var(--bg-white);               
   font-weight: 500;
   overflow: hidden;
   transition: color 0.3s ease, background 0.3s ease;
@@ -4223,7 +4223,7 @@ Responsive Menu Css
   left: -1px;
   width: 0;
   height: calc(100% + 2px);
-  background: var(--primary-color-1);
+  background: var(--bg-white);
   transition: width 0.45s ease;
   border-radius: inherit;
   z-index: 0;
@@ -4234,7 +4234,7 @@ Responsive Menu Css
 }
 
 .banner-btn:hover {
-  color: #fff;
+  color: var(--primary-color-1);
 }
 
 /* Text stays above animation */
@@ -4276,16 +4276,16 @@ Responsive Menu Css
 .banner-slider .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 1;
-  width: 20px;
-  height: 6px;
+  width: 30px;
+  height: 3px;
   border-radius: 2px;
 }
 
 .banner-slider .swiper-pagination-bullet-active {
-  background: var(--primary-color-1);
+  background: grey;
   opacity: 1;
-  width: 20px;
-  height: 6px;
+  width: 30px;
+  height: 3px;
 }
 
 /*==========================================================================
@@ -10924,4 +10924,5 @@ footer .logo img {
         } 
 
 
+        
         
