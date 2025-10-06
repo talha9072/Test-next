@@ -60,7 +60,7 @@ export default function QuickLinks() {
               <h5 className="fw-bold mb-3 text-dark">
                 Explore Business Solutions
               </h5>
-              <ul className="list-unstyled mb-0">
+              <ul className="list-unstyled mb-0 quicklinks">
                 {links.map((link, i) => (
                   <li key={i} className="mb-3">
                     <a

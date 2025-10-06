@@ -182,6 +182,7 @@ body .container {
   --primary-color-1: #0D2B75;
   --primary-color-2: #F8E559;
   --primary-color-3: #0D2B75;
+  --primary-hover:#2A4CA3;
   --bg-heading-color: #051634;
   --text-heading-color: #051634;
   --btn-heading-color: #131313;
@@ -4662,7 +4663,7 @@ Responsive Menu Css
 * About Area Four CSS
 ==========================================================================*/
 .about__four {
-  background-color: var(--color-1);
+  background-color: #e5f1ff;
 }
 .about__four-image {
   position: relative;
@@ -9811,11 +9812,32 @@ Responsive Menu Css
     padding: 14px 15px;
   }
 }
+
+/* ===========================================
+   QuickLinks hover effect
+   =========================================== */
+.quicklinks li a {
+  color: #212529; /* default text-dark */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.quicklinks li a:hover {
+  color: var(--primary-hover) !important; 
+  padding-left: 5px; 
+}
+
+/* Optional: change bullet or underline style if needed */
+.quicklinks li {
+  list-style: none;
+}
+
 /*==========================================================================
 * Footer One CSS
 ==========================================================================*/
 footer .logo img {
-  width: 160px;
+  width: 180px;
 }
 /*==========================================================================
 * 404 CSS

@@ -1,31 +1,32 @@
 // components/pages/homes/home-4/Testimonials.jsx
 "use client";
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectCoverflow } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/autoplay';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 export default function Testimonials() {
   const items = [
     {
-      img: 'https://novum-ae.netlify.app/.netlify/images?url=/images/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg',
-      text: 'In today’s world of big data, it is easy to get lost. Novum has helped us to gather information from different sources and to visualize it in a simple, clear and effective way.',
-      author: 'Huseyn Zeynalli',
-      position: 'Head of Brand Management at Italdizain Group',
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, it is easy to get lost. Novum has helped us to gather information from different sources and to visualize it in a simple, clear and effective way.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management at Italdizain Group",
     },
     {
-      img: 'https://novum-ae.netlify.app/.netlify/images?url=/images/clients/thumbnail_99x99_Elvin_Mammadov.jpg',
-      text: 'Novum LLC created a customized dashboard by unique combination of data for Baku City Circuit venue catering arrangement. It helped us and our vendor to accurately plan and distribute more than 65 thousands meals during 5 days.',
-      author: 'Elvin Mammadov',
-      position: 'Venue Operations Manager, Baku City Circuit',
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum LLC created a customized dashboard by unique combination of data for Baku City Circuit venue catering arrangement. It helped us and our vendor to accurately plan and distribute more than 65 thousands meals during 5 days.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
     },
     {
-      img: 'https://novum-ae.netlify.app/.netlify/images?url=/images/clients/thumbnail_99x99_Nizami_Mansirov.jpg',
-      text: 'Restructuring and visualizing our data-warehouse through Power BI implementation created a data-driven culture. With an insightful dashboard, our management has been able to control and achieve more in analytics, reporting and decision making.',
-      author: 'Nizami Mansirov',
-      position: 'CTO, Gilan Holding',
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Restructuring and visualizing our data-warehouse through Power BI implementation created a data-driven culture. With an insightful dashboard, our management has been able to control and achieve more in analytics, reporting and decision making.",
+      author: "Nizami Mansirov",
+      position: "CTO, Gilan Holding",
     },
   ];
 
@@ -43,7 +44,7 @@ export default function Testimonials() {
         </div>
 
         <Swiper
-          modules={[EffectCoverflow, Autoplay]}
+          modules={[EffectCoverflow, Autoplay, Pagination]}
           loop
           centeredSlides
           slidesPerView="auto"
@@ -56,37 +57,41 @@ export default function Testimonials() {
             modifier: 1.5,
             slideShadows: false,
           }}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
           breakpoints={{
-            0:   { slidesPerView: 1 },
+            0: { slidesPerView: 1 },
             980: { slidesPerView: 3 },
           }}
-          className="testimonials-style-04 swiper-horizontal-3d py-5"
+          className="testimonials-style-04 swiper-horizontal-3d py-4"
         >
           {slides.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="testimonial-card bg-white rounded-4 p-5 position-relative text-center">
+              <div className="testimonial-card bg-white rounded-4 p-4 position-relative text-center">
                 <img
                   src={item.img}
                   alt={item.author}
                   className="slider-image rounded-circle border border-white shadow position-absolute"
                   style={{
-                    width: 100,
-                    height: 100,
-                    top: -50,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
+                    width: 90,
+                    height: 90,
+                    top: -45,
+                    left: "50%",
+                    transform: "translateX(-50%)",
                   }}
                 />
                 <div className="content mt-3 pt-3 d-flex flex-column justify-content-between h-100">
-                  <p className="mb-4 text-gray-700">{item.text}</p>
+                  <p className="mb-2">{item.text}</p>
                   <div className="mt-3">
-                    <div className="fs-18 main-clr fw-bold">{item.author}</div>
-                    <div className="fs-15 text-secondary">{item.position}</div>
+                    <div className="fs-17 main-clr fw-bold">{item.author}</div>
+                    <div className="fs-14 text-secondary">{item.position}</div>
                   </div>
                 </div>
               </div>
@@ -96,16 +101,12 @@ export default function Testimonials() {
       </div>
 
       <style jsx global>{`
--       .testimonials-style-04.swiper {
--         overflow: visible !important;
--       }
-+       .testimonials-style-04.swiper {
-+         /* let Swiper clip to exactly slidesPerView */
-+         overflow: hidden !important;
-+       }
+        .testimonials-style-04.swiper {
+          overflow: hidden !important;
+        }
 
         .testimonials-style-04 .swiper-wrapper {
-          padding-top: 60px;
+          padding-top: 50px;
           align-items: stretch;
         }
 
@@ -122,7 +123,7 @@ export default function Testimonials() {
         .testimonials-style-04 .swiper-slide-active {
           filter: none !important;
           transform: scale(1.05) !important;
-          box-shadow: 0 0 60px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
           z-index: 2;
         }
 
@@ -133,8 +134,42 @@ export default function Testimonials() {
           justify-content: space-between;
           height: 100%;
         }
-        .testimonial-card .content {
-          flex-grow: 1;
+
+        /* ✅ Smaller font sizes only */
+        .testimonial-card p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+          color: #555;
+        }
+
+        .testimonial-card .fs-17 {
+          font-size: 0.95rem !important;
+        }
+
+        .testimonial-card .fs-14 {
+          font-size: 0.85rem !important;
+        }
+
+        /* ✅ Pagination Dots */
+        .testimonials-style-04 .swiper-pagination {
+          position: relative;
+          bottom: 0;
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        .testimonials-style-04 .swiper-pagination-bullet {
+          width: 20px;
+          height: 3px;
+          border-radius: 2px;
+          margin: 0 4px !important;
+          background: grey;
+          opacity: 1;
+          transition: background 0.3s ease;
+        }
+
+        .testimonials-style-04 .swiper-pagination-bullet-active {
+          background: #0D2B75 !important;
         }
       `}</style>
     </section>
