@@ -31,12 +31,14 @@ const HeaderFour = ({variant}) => {
                         <Link href="/"><img src={logo1.src} alt="logo" /></Link>
                     </div>
                 </div>
-				<div className="header__area-menubar-center">
+				
+                <div className="header__area-menubar-right">
+                    <div className="header__area-menubar-center">
                     <div className="header__area-menubar-center-menu">
                         <MainMenu />
                     </div>
 				</div>
-                <div className="header__area-menubar-right">
+                
                     <div className="header__area-menubar-right-box">
 						<div className="header__area-menubar-right-box-btn">
 							<Link className="btn-two" href="/contact">Contact Us</Link>

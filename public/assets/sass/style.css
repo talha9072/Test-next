@@ -3415,7 +3415,7 @@ p {
   display: inline-block;
 }
 .header__area-menubar-left-logo a img {
-  max-width: 180px;
+  max-width: 220px;
   position: relative;
   z-index: 9999;
 }
@@ -3818,7 +3818,7 @@ p {
 .header__area.four .btn-two {
   background: var(--primary-color-1);
   border: 1px solid var(--color-5);
-  margin-right: 25px;
+  
 }
 .header__area.four .btn-two:hover {
   background: transparent;
@@ -9860,7 +9860,7 @@ Responsive Menu Css
 * Footer One CSS
 ==========================================================================*/
 footer .logo img {
-  width: 180px;
+  width: 220px;
 }
 footer a:hover{
   color: var(--primary-hover)!important;
@@ -9975,7 +9975,7 @@ footer a:hover{
         
         .mega-menu .mega-dropdown {
           position: fixed;
-          top: 60px;
+          top: 90px;
           left: 0;
           right: 0;
           background: #fff;
