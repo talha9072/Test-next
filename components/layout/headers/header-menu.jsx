@@ -160,7 +160,7 @@ const MainMenu = () => {
                   <div key={i} className="mega-col">
                     <div className="cta-card-img position-relative overflow-hidden rounded-4 h-100 text-white">
                       <img
-                        src="https://novum-ae.netlify.app//.netlify/images?url=/images/services/powerbi.jpg"
+                        src="/assets/img/banner/banner-three-2.png"
                         alt="CTA Background"
                         className="w-100 h-100 object-fit-cover"
                         data-no-retina=""

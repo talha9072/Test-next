@@ -87,7 +87,7 @@ export default function Testimonials() {
                     transform: "translateX(-50%)",
                   }}
                 />
-                <div className="content mt-3 pt-3 d-flex flex-column justify-content-between h-100">
+                <div className="content mt-4 pt-4 d-flex flex-column justify-content-between h-100">
                   <p className="mb-2">{item.text}</p>
                   <div className="mt-3">
                     <div className="fs-17 main-clr fw-bold">{item.author}</div>

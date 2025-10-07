@@ -4834,7 +4834,7 @@ Responsive Menu Css
 }
 .services .card-body img {
     height: 60px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .services .card-title {
     font-size: 1.5rem;
@@ -10810,7 +10810,7 @@ footer a:hover{
 .services .card {
   position: relative;
   border: none;
-  padding: 1rem !important;
+  padding: 40px 20px !important;
   border-radius: 5px;
   height: 100%;
   top: 0;
@@ -10878,7 +10878,7 @@ footer a:hover{
 
 .services .card-body img {
   height: 60px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .services .card-title {
