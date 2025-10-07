@@ -4172,7 +4172,7 @@ Responsive Menu Css
   object-position: center;
 }
 
-/* Dark gradient overlay */
+/* Dark gradient overlay  */
 .dark-overlay {
   position: absolute;
   inset: 0;
@@ -4181,19 +4181,19 @@ Responsive Menu Css
   background: -webkit-linear-gradient(
     134deg,
     rgba(29, 33, 73, 1) 0%,
-    rgba(29, 33, 73, 0.86) 52%,
+    rgba(29, 33, 73, 0.86) 40%,
     rgba(255, 255, 255, 0) 100%
   );
   background: -moz-linear-gradient(
     134deg,
     rgba(29, 33, 73, 1) 0%,
-    rgba(29, 33, 73, 0.86) 52%,
+    rgba(29, 33, 73, 0.86) 40%,
     rgba(255, 255, 255, 0) 100%
   );
   background: linear-gradient(
     134deg,
     rgba(29, 33, 73, 1) 0%,
-    rgba(29, 33, 73, 0.86) 52%,
+    rgba(29, 33, 73, 0.86) 40%,
     rgba(255, 255, 255, 0) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(
