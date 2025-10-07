@@ -17,6 +17,7 @@ const ResponsiveMenu = () => {
         <>
             <ul>
                 <li><Link href="/">Home</Link></li>  
+                <li><Link href="/about-us">About</Link></li>
                 
                 <li className="menu-item-has-children">
                     <Link href="#">Services</Link>
@@ -104,7 +105,7 @@ const ResponsiveMenu = () => {
 
                 
 
-                <li><Link href="/about-us">About</Link></li>
+                
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
         </>

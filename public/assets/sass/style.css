@@ -3447,6 +3447,9 @@ p {
   padding: 10px;
   font-family: var(--heading-font);
 }
+.header__area-menubar-center-menu ul li a:hover{
+  color: var(--primary-hover) !important;
+}
 .header__area-menubar-center-menu ul li:hover > .sub-menu {
   transform: scale(1, 1);
   opacity: 1;

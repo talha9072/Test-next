@@ -106,6 +106,7 @@ const MainMenu = () => {
     <ul className="main-menu">
       <li><Link href="/">Home</Link></li>
 
+      <li><Link href="/about-us">About</Link></li>
       {/* Services Mega Menu */}
       <li className="menu-item-has-children mega-menu" ref={servicesRef}>
         <a
@@ -213,7 +214,7 @@ const MainMenu = () => {
         </ul>
       </li>
 
-      <li><Link href="/about-us">About</Link></li>
+      
     </ul>
   );
 };
