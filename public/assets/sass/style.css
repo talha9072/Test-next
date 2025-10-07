@@ -4129,7 +4129,7 @@ Responsive Menu Css
 ========================================================================== */
 .banner-slider,
 .banner-slide {
-  height: calc(100vh - 90px);
+  height: 100vh;
   position: relative;
   overflow: hidden;
   min-height: 400px;
