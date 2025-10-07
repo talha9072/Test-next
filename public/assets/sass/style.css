@@ -4137,12 +4137,35 @@ Responsive Menu Css
   object-position: center;
 }
 
-/* Dark overlay */
+/* Dark gradient overlay */
 .dark-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0);
   z-index: 5;
+  background: #1D2149;
+  background: -webkit-linear-gradient(
+    134deg,
+    rgba(29, 33, 73, 1) 0%,
+    rgba(29, 33, 73, 0.86) 52%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    134deg,
+    rgba(29, 33, 73, 1) 0%,
+    rgba(29, 33, 73, 0.86) 52%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    134deg,
+    rgba(29, 33, 73, 1) 0%,
+    rgba(29, 33, 73, 0.86) 52%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#1D2149",
+    endColorstr="#FFFFFF",
+    GradientType=0
+  );
 }
 
 /* Banner Content */
@@ -4205,7 +4228,7 @@ Responsive Menu Css
   padding: 12px 24px;          
   min-width: 180px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 3px;
   border: 1px solid var(--bg-white);               
   font-weight: 500;
   overflow: hidden;
