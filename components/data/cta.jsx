@@ -51,17 +51,8 @@ export default function CTA({
           <div className="col-xl-6 text-left text-xl-start mt-4">
             <a
               href={buttonHref}
-              className="btn left-icon btn-box-shadow text-transform-none fw-600 ls-0px d-inline-block align-middle me-15px xs-m-10px"
-              style={{
-                padding: '7px 14px',
-                borderRadius: '3px',
-                position: 'relative',
-                zIndex: 10,
-                isolation: 'isolate',
-                backgroundColor: 'white',
-                borderColor: 'var(--base-color)',
-                color: 'var(--base-color)',
-              }}
+              className="btn-white"
+              
             >
               {buttonText}
             </a>

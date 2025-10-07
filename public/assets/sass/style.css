@@ -844,6 +844,23 @@ p {
   color: var(--primary-color-1);
 }
 
+.btn-white{
+  background: var(--bg-white);
+  color: var(--primary-color-1) !important;
+  text-transform: none;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  padding: 9px 14px !important;
+  border-radius: 3px !important;
+  border: 1px solid var(--bg-white) !important;
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: var(--bg-white) !important;
+  border: 1px solid var(--bg-white) !important;
+}
+
 /*==========================================================================
 * Highlighted Text Styles
 ==========================================================================*/
@@ -3421,6 +3438,12 @@ p {
   max-width: 220px;
   position: relative;
   z-index: 9999;
+}
+/* For screens 670px and below */
+@media (max-width: 570px) {
+  .header__area-menubar-left-logo a img {
+    max-width: 160px; /* adjust size as needed */
+  }
 }
 .header__area-menubar-center-menu ul {
   padding: 0;
@@ -9873,6 +9896,12 @@ Responsive Menu Css
 ==========================================================================*/
 footer .logo img {
   width: 220px;
+}
+/* For screens 670px and below */
+@media (max-width: 570px) {
+  footer .logo img {
+    max-width: 160px; 
+  }
 }
 footer a:hover{
   color: var(--primary-hover)!important;
