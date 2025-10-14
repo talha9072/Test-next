@@ -1,9 +1,10 @@
 "use client"
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BreadCrumb from "../../common/breadcrumb";
+import Banner from "./banner";
 import Footer from "@/components/layout/footers/footer";
 import FeaturedPost from "./featured";
 import Otherpost from "./other-posts";
+import BlogLayout from "../blog/blog-layout";
 import CTA from '@/components/data/cta';
 // import ScrollToTop from "../../common/scroll/scroll-to-top";
 
@@ -12,7 +13,8 @@ const BlogGrid = () => {
     return (
         <>
             <HeaderFour />
-            <BreadCrumb title="Blogs" innerTitle="Blog Grid" />
+            <Banner />
+            <BlogLayout />
             <FeaturedPost />
             <Otherpost />
              <CTA
