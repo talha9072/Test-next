@@ -20,18 +20,21 @@ const PowerBI = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-        title="Power BI Consulting Services"
-        subtitle="Turn data into decisions with Power BI experts."
-        bgImage="/assets/img/power-bi/power-bi-hero.png"
-        links={[
-          { label: "Overview", href: "#about", active: true },
-          { label: "Services", href: "#services" },
-          { label: "implementation", href: "#implement" },
-          { label: "Why Choose?", href: "#whyus" },
-          { label: "Other Services", href: "#otherservices" },
-          
-        ]}
-      />
+  title="Power BI Consulting Services"
+  subtitle="Turn data into decisions with Power BI experts."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroButtons={[
+    { label: "Get Started", variant: "light" },
+    { label: "View Plans", variant: "outline" },
+  ]}
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Implementation", href: "#implement" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Other Services", href: "#otherservices" },
+  ]}
+/>
 
 
       <SoftwareSolutionsSection

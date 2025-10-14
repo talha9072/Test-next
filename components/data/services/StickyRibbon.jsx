@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 
-const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
+const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = [] }) => {
   const [showFixed, setShowFixed] = useState(false);
   const [activeLink, setActiveLink] = useState(links[0]?.href || "");
   const scrollRef = useRef(null);
@@ -10,7 +10,7 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
     const handleScroll = () => {
       setShowFixed(window.scrollY > 200);
 
-      //  ScrollSpy logic
+      // ScrollSpy logic
       let current = "";
       links.forEach((link) => {
         const section = document.querySelector(link.href);
@@ -29,7 +29,7 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
       if (current && current !== activeLink) {
         setActiveLink(current);
 
-        //  Auto-scroll ribbon to keep active link visible (mobile only)
+        // Auto-scroll ribbon to keep active link visible (mobile only)
         if (scrollRef.current && window.innerWidth <= 768) {
           const activeEl = scrollRef.current.querySelector(
             `.nav-link[href="${current}"]`
@@ -67,12 +67,29 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
     <>
       {/* Hero Section */}
       <section className="hero-section d-flex align-items-center position-relative">
-        <div className="overlay position-absolute top-0 start-0 w-100 h-100" />
         <div className="container position-relative" style={{ zIndex: 2 }}>
           <div className="row align-items-center h-100">
-            <div className="col-lg-6 col-sm-10">
-              <h1 className="text-white fw-bold display-5 mb-3">{title}</h1>
-              <p className="text-white mb-0">{subtitle}</p>
+            {/* LEFT SIDE - TEXT */}
+            <div className="col-lg-6 col-md-6">
+              <h1 className="serviceheading mb-3">{title}</h1>
+              <p className="text-white-50 mb-0">{subtitle}</p>
+            </div>
+
+            {/* RIGHT SIDE - BUTTONS */}
+            <div className="col-lg-6 col-md-6 d-flex flex-wrap justify-content-lg-end justify-content-start gap-3 mt-4 mt-lg-0">
+              {heroButtons.map((btn, i) => (
+                <button
+                  key={i}
+                  className={`btn ${
+                    btn.variant === "outline"
+                      ? "btn-outline-light"
+                      : "btn-light text-dark"
+                  } fw-semibold px-4 py-2`}
+                  onClick={btn.onClick}
+                >
+                  {btn.label}
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -113,19 +130,23 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
       <style jsx>{`
         /* Hero Section */
         .hero-section {
-          height: 50vh;
+          height: 75vh;
           background: url(${bgImage}) center/cover no-repeat;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
         }
 
-        .overlay {
-          background: radial-gradient(
-            circle at 85% 40%,
-            rgba(13, 43, 117, 0) 20%,
-            rgba(13, 43, 117, 0.85) 50%,
-            rgba(6, 20, 89, 0.95) 70%,
-            rgba(29, 33, 73, 1) 100%
-          );
-          z-index: 1;
+        .serviceheading{
+          color: #0D2B75 !important;
+          font-size: 44px !important;
+          font-weight: 500 !important;
+          line-height: 50px !important;
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 1.1rem;
         }
 
         /* Ribbon Base */
@@ -141,7 +162,7 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
         /* Fixed Ribbon */
         .anchor-links-ribbon.fixed {
           position: fixed;
-          top: 60px;
+          top: 95px;
           left: 0;
           right: 0;
           z-index: 10;
@@ -177,6 +198,11 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [] }) => {
         }
 
         @media (max-width: 768px) {
+          .hero-section {
+            height: auto;
+            padding: 80px 0;
+          }
+
           .ribbon-list {
             overflow-x: auto;
             flex-wrap: nowrap !important;
