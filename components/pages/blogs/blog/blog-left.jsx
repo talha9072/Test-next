@@ -79,7 +79,7 @@ export default function BlogLeft() {
                   />
                 </div>
                 <div className="card-body px-0 pt-0">
-                  <h6 className="fw-semibold mb-2">{p.title}</h6>
+                  <h6 className="fw-semibold mb-2 blog-item-h6">{p.title}</h6>
                   <small className="text-muted d-block">
                     Blog • {formatReadableDate(p.date)}
                   </small>
@@ -141,12 +141,13 @@ export default function BlogLeft() {
           object-fit: cover;
         }
 
-        .card h6 {
+        .blog-item-h6 {
           color: #000;
           line-height: 1.35;
+          font-size: 1rem;
         }
 
-        .card h6:hover {
+        .blog-item-h6:hover {
           color: #0d2b75;
         }
       `}</style>

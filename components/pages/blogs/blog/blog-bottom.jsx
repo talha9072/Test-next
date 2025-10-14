@@ -44,7 +44,7 @@ export default function BlogBottom() {
 
               {/* Content */}
               <div>
-                <h6 className="fw-semibold mb-1">{post.title}</h6>
+                <h6 className="fw-semibold mb-1 blog-item-h6">{post.title}</h6>
                 <small className="text-muted d-block">
                   Blog • {formatReadableDate(post.date)}
                 </small>
@@ -89,14 +89,14 @@ export default function BlogBottom() {
           transform: scale(1.05);
         }
 
-        .blog-item h6 {
-          font-size: 1rem;
+        .blog-item-h6 {
+          font-size: 1rem !important;
           color: #000;
           transition: color 0.3s ease;
           line-height: 1.4;
         }
 
-        .blog-item:hover h6 {
+        .blog-item-h6:hover {
           color: #0d2b75;
         }
 
