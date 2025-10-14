@@ -66,14 +66,7 @@ export default function BlogRight() {
 
       {/* === Inline CSS === */}
       <style jsx>{`
-        .blog-right {
-          position: -webkit-sticky;
-          position: sticky;
-          top: 100px; /* ✅ stays visible as you scroll */
-          background: #fff;
-          z-index: 2;
-          padding-bottom: 40px;
-        }
+        
 
         .text-novum-blue {
           color: #0d2b75;
