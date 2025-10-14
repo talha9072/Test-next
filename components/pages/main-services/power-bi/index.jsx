@@ -129,11 +129,7 @@ const PowerBI = () => {
             title: "Scalable Support",
             desc: "From quick fixes to full BI architecture.",
           },
-          {
-            icon: "fa-solid fa-chart-line",
-            title: "Business-First Approach",
-            desc: "Delivering cost savings, efficiency, and insights.",
-          },
+          
         ]}
       />
 

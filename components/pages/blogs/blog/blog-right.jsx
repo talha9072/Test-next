@@ -105,7 +105,7 @@ export default function BlogRight() {
         }
 
         hr {
-          border-top: 1px solid #e0e0e0;
+          border-top: 1px solid #d1d1d1ff;
           margin: 1.5rem 0;
         }
 
