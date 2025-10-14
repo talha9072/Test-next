@@ -3,6 +3,7 @@ import Banner from "./banner";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import CTA from "@/components/data/cta";
 import Footer from "@/components/layout/footers/footer";
+import Widget from "@/components/widget/widget";
 
 const Aboutus = () => {
   return (
@@ -354,6 +355,8 @@ const Aboutus = () => {
   buttonText="Talk to an Expert"
   buttonHref="/contact"
 />
+
+<Widget />
 
       <Footer />
     </div>
