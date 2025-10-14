@@ -1,6 +1,6 @@
 "use client";
+import Banner from "./banner";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BreadCrumb from "../common/breadcrumb";
 import CTA from "@/components/data/cta";
 import Footer from "@/components/layout/footers/footer";
 
@@ -8,132 +8,33 @@ const Aboutus = () => {
   return (
     <div>
       <HeaderFour />
-      <BreadCrumb title="About Novum" innerTitle="Contact Us" />
+      <Banner />
        
-
-{/* === Our Mission === */}
-<section className="py-5">
-  <div className="container">
-    <div className="row g-4 align-items-stretch">
-      {/* LEFT: keep your existing mission copy/pillars here */}
-      <div className="col-lg-7">
-        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
-          Our Mission
-        </span>
-        <h2 className="fw-bold mb-4">Empowering Data-Driven, Intelligent Enterprises</h2>
-        <p className="mb-4">
-          At Novum, our mission is to empower businesses through data-driven decision-making,
-          streamlined digital operations, and intelligent enterprise solutions. We strive to elevate
-          organizational performance by embedding analytics into the heart of every process, enabling
-          faster, smarter, and more agile decision-making.
-        </p>
-
-        <div className="row g-3">
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Analytics-First</div>
-              <div className="text-muted small">Insights at every step.</div>
-            </div>
-          </div>
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Automation</div>
-              <div className="text-muted small">Lean, efficient ops.</div>
-            </div>
-          </div>
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Cloud-Native</div>
-              <div className="text-muted small">Secure & scalable.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* RIGHT: partner / credibility card — compact & filled */}
-      <div className="col-lg-5">
-        <div className="card h-100 border rounded-4 shadow-sm">
-          <div className="card-body h-100 d-flex flex-column p-3 p-lg-4">
-
-            {/* Header */}
-            <div className="d-flex align-items-center gap-3 mb-3">
-              <img
-                src="/assets/img/home/microsoft-banner.svg"
-                alt="Microsoft Solutions Partner"
-                className="img-fluid"
-                width="150"
-              />
-              <div>
-                <div className="fw-semibold text-uppercase small text-muted">Certified</div>
-                <div className="h5 small mb-0">Microsoft Solutions Partner</div>
-              </div>
-            </div>
-
-            {/* Capability chips */}
-            <div className="d-flex flex-wrap gap-2 mb-3">
-              <span className="badge rounded-pill bg-light border text-dark">Data &amp; AI</span>
-              <span className="badge rounded-pill bg-light border text-dark">Azure Cloud</span>
-              <span className="badge rounded-pill bg-light border text-dark">Business Apps</span>
-            </div>
-
-            {/* Quick bullets (fills middle area neatly) */}
-            <ul className="list-unstyled mb-3">
-              <li className="d-flex align-items-start gap-2 mb-2">
-                <span className="badge bg-white border text-dark rounded-pill">1</span>
-                <div className="small">
-                  Solution design aligned to enterprise architecture and security baselines.
-                </div>
-              </li>
-              <li className="d-flex align-items-start gap-2 mb-2">
-                <span className="badge bg-white border text-dark rounded-pill">2</span>
-                <div className="small">
-                  Managed delivery with measurable KPIs across data, apps, and cloud.
-                </div>
-              </li>
-              <li className="d-flex align-items-start gap-2">
-                <span className="badge bg-white border text-dark rounded-pill">3</span>
-                <div className="small">
-                  Governance &amp; FinOps practices to keep platforms cost-efficient.
-                </div>
-              </li>
-            </ul>
-
-            {/* KPIs (no huge gaps; sits at bottom naturally) */}
-            <div className="row g-3 mt-auto">
-              <div className="col-4">
-                <div className="border rounded-4 text-center py-3">
-                  <div className="h4 fw-bold mb-0">8+</div>
-                  <div className="small text-muted">Years</div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="border rounded-4 text-center py-3">
-                  <div className="h4 fw-bold mb-0">20+</div>
-                  <div className="small text-muted">Experts</div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="border rounded-4 text-center py-3">
-                  <div className="h4 fw-bold mb-0">100+</div>
-                  <div className="small text-muted">Projects</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 {/* === About Section === */}
 <section className="py-5">
   <div className="container">
     <div className="row align-items-center gy-4">
+      {/* Content (right on desktop, above on mobile) */}
+      <div className="col-lg-7 order-1 order-lg-2">
+        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
+          Who We Are
+        </span>
+        
+        <h2 className="fw-bold mb-4">Built on Innovation &amp; Expertise</h2>
+        <p className="mb-2">
+          Founded in 2017, Novum specializes in Data Analytics, Software Development, and ERP Implementation, delivering impactful solutions across both local and international markets.
+        </p>
+        <p className="mb-0">
+           Our mission is to elevate decision-making, reporting, and business processes by fostering a data-driven culture across corporate, business, and functional layers. As a trusted Microsoft partner, we align with globally recognized Microsoft Cloud standards to ensure smooth digital transformations for our clients.
+        </p>
+        <p className="mb-0">
+           Backed by extensive domain expertise and industry experience in fields such as technology, aerospace, petroleum, business consulting, non-profit, risk & finance, and education, our team brings a dedicated, customer-focused approach and proven methodologies to every project. At Novum, we are driven by best practices, innovation, and a commitment to empowering clients with impactful, forward-looking solutions that drive real change in their industries.
+        </p>
+      </div>
+
+
       {/* Image (left on desktop, below on mobile) */}
-      <div className="col-lg-5 order-2 order-lg-1">
+      <div className="col-lg-5 order-2 order-lg-2">
         <div className="position-relative">
           {/* Floating Experience badge (Bootstrap utilities only) */}
           <div className="position-absolute top-0 start-0 ms-3 mt-3">
@@ -159,34 +60,132 @@ const Aboutus = () => {
         </div>
       </div>
 
-      {/* Content (right on desktop, above on mobile) */}
-      <div className="col-lg-7 order-1 order-lg-2">
-        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
-          Who We Are
+    </div>
+  </div>
+</section>
+
+
+{/* === Our Mission === */}
+<section className="py-5">
+  <div className="container">
+    <div className="row g-4 align-items-stretch">
+      {/* LEFT: Mission Content */}
+      <div className="col-lg-7">
+        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
+          Data-Driven
         </span>
-        
-        <h2 className="fw-bold mb-4">Built on Innovation &amp; Expertise</h2>
-        <p className="mb-2">
-          Founded in 2017, Novum is a data analytics and software development company delivering
-          advanced digital solutions across local and international markets. We specialize in data
-          warehousing, ERP implementation, custom software development, AI-driven analytics, and
-          cloud technologies tailored to the evolving needs of modern enterprises.
+        <h2 className="fw-bold mb-4">Our Mission</h2>
+        <p className="mb-4">
+          At Novum, our mission is to empower enterprises to operate smarter, faster, and more efficiently
+          by embedding analytics, automation, and cloud innovation at the core of their business operations
+          helping them evolve into truly data-driven organizations. We believe in transforming complexity into
+          clarity through data intelligence, driving measurable impact and long-term success.
         </p>
-        <p className="mb-0">
-          With a foundation in innovation and deep technical expertise, our engineers and consultants
-          work closely with each client to solve complex challenges and align every solution with
-          operational priorities and long-term vision.
-        </p>
+
+        <div className="row g-3">
+          <div className="col-sm-4">
+            <div className="bg-light border rounded-4 h-100 p-3">
+              <div className="fw-bold mb-1">Analytics-First</div>
+              <div className="text-muted small">Turning data into decisions.</div>
+            </div>
+          </div>
+          <div className="col-sm-4">
+            <div className="bg-light border rounded-4 h-100 p-3">
+              <div className="fw-bold mb-1">Automation</div>
+              <div className="text-muted small">Simplifying operations.</div>
+            </div>
+          </div>
+          <div className="col-sm-4">
+            <div className="bg-light border rounded-4 h-100 p-3">
+              <div className="fw-bold mb-1">Cloud-Native</div>
+              <div className="text-muted small">Secure, scalable, future-ready.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT: Partner / Credibility Card */}
+      <div className="col-lg-5">
+        <div className="card h-100 border rounded-4 shadow-sm">
+          <div className="card-body h-100 d-flex flex-column p-3 p-lg-4">
+
+            {/* Header */}
+            <div className="d-flex align-items-center gap-3 mb-3">
+              <img
+                src="/assets/img/home/microsoft-banner.svg"
+                alt="Microsoft Solutions Partner"
+                className="img-fluid"
+                width="150"
+              />
+              <div>
+                <div className="fw-semibold text-uppercase small text-muted">Certified</div>
+                <div className="h5 small mb-0">Microsoft Solutions Partner</div>
+              </div>
+            </div>
+
+            {/* Capability chips */}
+            <div className="d-flex flex-wrap gap-2 mb-3">
+              <span className="badge rounded-pill bg-light border text-dark">Data &amp; AI</span>
+              <span className="badge rounded-pill bg-light border text-dark">Azure Cloud</span>
+              <span className="badge rounded-pill bg-light border text-dark">Business Apps</span>
+            </div>
+
+            {/* Quick bullets */}
+            <ul className="list-unstyled mb-3">
+              <li className="d-flex align-items-start gap-2 mb-2">
+                <span className="badge bg-white border text-dark rounded-pill">1</span>
+                <div className="small">
+                  Enterprise-grade architecture aligned with security and scalability.
+                </div>
+              </li>
+              <li className="d-flex align-items-start gap-2 mb-2">
+                <span className="badge bg-white border text-dark rounded-pill">2</span>
+                <div className="small">
+                  KPI-driven project delivery across data, cloud, and business applications.
+                </div>
+              </li>
+              <li className="d-flex align-items-start gap-2">
+                <span className="badge bg-white border text-dark rounded-pill">3</span>
+                <div className="small">
+                  Continuous optimization through governance, FinOps, and innovation.
+                </div>
+              </li>
+            </ul>
+
+            {/* KPIs */}
+            <div className="row g-3 mt-auto">
+              <div className="col-4">
+                <div className="border rounded-4 text-center py-3">
+                  <div className="h4 fw-bold mb-0">8+</div>
+                  <div className="small text-muted">Years</div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="border rounded-4 text-center py-3">
+                  <div className="h4 fw-bold mb-0">20+</div>
+                  <div className="small text-muted">Experts</div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="border rounded-4 text-center py-3">
+                  <div className="h4 fw-bold mb-0">100+</div>
+                  <div className="small text-muted">Projects</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-{/* === What Drives Us (Bootstrap-only, aligned 3-up cards; no custom CSS) === */}
+{/* === What Drives Us (Refined Copy) === */}
 <section className="py-5">
   <div className="container">
 
-    {/* Section header */}
+    {/* Section Header */}
     <div className="row justify-content-center">
       <div className="col-lg-12 text-left">
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
@@ -194,23 +193,32 @@ const Aboutus = () => {
         </span>
         <h2 className="fw-bold mb-4">What Drives Us</h2>
         <p className="mb-4">
-          At the core of Novum is a commitment to delivering business value through purposeful technology.
+          At Novum, our driving force is the pursuit of purposeful innovation where technology,
+          data, and strategy converge to create lasting business value. We don’t just implement
+          solutions; we enable transformation that empowers organizations to lead with confidence
+          in the digital era.
         </p>
       </div>
     </div>
 
-    {/* 3 equal, perfectly aligned cards */}
+    {/* 3 Equal Cards */}
     <div className="row row-cols-1 row-cols-md-3 g-3">
+      
       {/* Card 1 */}
       <div className="col d-flex">
         <div className="card h-100 border rounded-4 shadow-sm w-100">
           <div className="card-body d-flex flex-column">
-            <div className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3" style={{ width: 56, height: 56 }}>
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3"
+              style={{ width: 56, height: 56 }}
+            >
               <i className="fas fa-user-check fs-5 text-novum-blue" aria-hidden="true"></i>
             </div>
-            <h3 className="h5 fw-bold mb-2">Customer-Centric Approach</h3>
+            <h3 className="h5 fw-bold mb-2">Customer-Centric Innovation</h3>
             <p className="text-muted mb-0 small">
-              We place our clients at the center of every engagement, ensuring solutions are technically sound and aligned with strategic objectives.
+              Every engagement begins with understanding our clients’ ambitions. We co-create
+              tailored digital solutions that align with business goals and deliver tangible,
+              measurable impact.
             </p>
           </div>
         </div>
@@ -220,12 +228,16 @@ const Aboutus = () => {
       <div className="col d-flex">
         <div className="card h-100 border rounded-4 shadow-sm w-100">
           <div className="card-body d-flex flex-column">
-            <div className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3" style={{ width: 56, height: 56 }}>
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3"
+              style={{ width: 56, height: 56 }}
+            >
               <i className="fas fa-chart-line fs-5 text-novum-blue" aria-hidden="true"></i>
             </div>
-            <h3 className="h5 fw-bold mb-2">Data-Driven Transformation</h3>
+            <h3 className="h5 fw-bold mb-2">Data-Driven Excellence</h3>
             <p className="text-muted mb-0 small">
-              We design the right data architecture to unlock actionable insights that guide real-time, informed decisions.
+              We believe in the power of data to transform. Through intelligent architecture
+              and analytics, we enable leaders to make faster, smarter, and insight-led decisions.
             </p>
           </div>
         </div>
@@ -235,20 +247,25 @@ const Aboutus = () => {
       <div className="col d-flex">
         <div className="card h-100 border rounded-4 shadow-sm w-100">
           <div className="card-body d-flex flex-column">
-            <div className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3" style={{ width: 56, height: 56 }}>
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-3"
+              style={{ width: 56, height: 56 }}
+            >
               <i className="fas fa-award fs-5 text-novum-blue" aria-hidden="true"></i>
             </div>
-            <h3 className="h5 fw-bold mb-2">Commitment to Excellence</h3>
+            <h3 className="h5 fw-bold mb-2">Relentless Pursuit of Quality</h3>
             <p className="text-muted mb-0 small">
-              From planning to execution, we use proven methodologies and a transparent, collaborative approach to ensure measurable results.
+              We uphold the highest standards across every project combining precision,
+              transparency, and collaboration to consistently deliver excellence and trust.
             </p>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
+
 
 {/* === Global Impact, Local Expertise — premium Bootstrap-only layout (no custom CSS) === */}
 <section className="py-5 bg-white">
@@ -259,7 +276,7 @@ const Aboutus = () => {
       <div className="col-lg-6">
         <div className="card border-0 shadow-sm rounded-4 text-white">
           <img
-            src="/assets/img/about/flags.png"  /* replace with your map/img */
+            src="/assets/img/about/flag-1.png"  /* replace with your map/img */
             alt="Global presence"
             className="card-img rounded-4"
             loading="lazy"
@@ -320,67 +337,6 @@ const Aboutus = () => {
               <div className="fw-bold">2 Timezones</div>
               <div className="small text-muted">Gulf &amp; Caucasus</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Row 2: Location detail cards */}
-    <div className="row g-3 mt-4">
-      {/* Dubai */}
-      <div className="col-md-6 d-flex">
-        <div className="card border rounded-4 shadow-sm w-100">
-          <div className="card-body">
-            <div className="d-flex align-items-center justify-content-between mb-2">
-              <div className="d-flex align-items-center gap-2">
-                <span className="badge bg-light border text-dark rounded-pill">UAE</span>
-                <span className="fw-semibold">Dubai</span>
-              </div>
-              <i className="fas fa-city text-novum-blue" aria-hidden="true"></i>
-            </div>
-            <ul className="list-unstyled small text-muted mb-0">
-              <li className="d-flex align-items-start gap-2 mb-1">
-                <i className="fas fa-building text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>Enterprise &amp; public sector delivery hub</span>
-              </li>
-              <li className="d-flex align-items-start gap-2 mb-1">
-                <i className="fas fa-shield-alt text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>GCC compliance &amp; security standards</span>
-              </li>
-              <li className="d-flex align-items-start gap-2">
-                <i className="fas fa-people-carry text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>Arabic &amp; English delivery teams</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Baku */}
-      <div className="col-md-6 d-flex">
-        <div className="card border rounded-4 shadow-sm w-100">
-          <div className="card-body">
-            <div className="d-flex align-items-center justify-content-between mb-2">
-              <div className="d-flex align-items-center gap-2">
-                <span className="badge bg-light border text-dark rounded-pill">AZ</span>
-                <span className="fw-semibold">Baku</span>
-              </div>
-              <i className="fas fa-landmark text-novum-blue" aria-hidden="true"></i>
-            </div>
-            <ul className="list-unstyled small text-muted mb-0">
-              <li className="d-flex align-items-start gap-2 mb-1">
-                <i className="fas fa-industry text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>Energy, manufacturing &amp; aviation focus</span>
-              </li>
-              <li className="d-flex align-items-start gap-2 mb-1">
-                <i className="fas fa-cogs text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>Nearshore engineering capability</span>
-              </li>
-              <li className="d-flex align-items-start gap-2">
-                <i className="fas fa-language text-novum-blue mt-1" aria-hidden="true"></i>
-                <span>Azerbaijani, Russian &amp; English</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
