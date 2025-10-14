@@ -16,7 +16,7 @@ export default function BlogLayout() {
           </div>
 
           {/* === Right Column (Sticky) === */}
-          <div className="col-12 col-lg-5 side-col">
+          <div className="col-12 col-lg-4 offset-lg-1 side-col">
             <div className="sticky-wrapper">
               <BlogRight />
             </div>
