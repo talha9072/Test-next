@@ -25,9 +25,9 @@ const PowerBI = () => {
   highlightText="Power BI"
   subtitle="Turn data into decisions with Power BI experts."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/about/about-banner-img.avif"
   heroButtons={[
-    { label: "Get Started", href: "#contact" },
-    { label: "View Plans", href: "#pricing" },
+    { label: "Contact Us", href: "/contact" },
   ]}
   links={[
     { label: "Overview", href: "#about" },
