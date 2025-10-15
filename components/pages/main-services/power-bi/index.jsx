@@ -6,6 +6,7 @@ import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import Footer from "@/components/layout/footers/footer";
 
@@ -34,6 +35,7 @@ const PowerBI = () => {
     { label: "Services", href: "#services" },
     { label: "Implementation", href: "#implement" },
     { label: "Why Choose?", href: "#whyus" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
@@ -135,6 +137,28 @@ const PowerBI = () => {
         ]}
       />
 
+
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
+
+
+
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -219,6 +243,7 @@ const PowerBI = () => {
     },
   ]}
 />
+
 
 
 
