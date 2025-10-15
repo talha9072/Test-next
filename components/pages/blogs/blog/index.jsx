@@ -2,6 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import Footer from "@/components/layout/footers/footer";
 import BlogLayout from "../blog/blog-layout";
+import Widget from "@/components/widget/widget";
 import CTA from '@/components/data/cta';
 // import ScrollToTop from "../../common/scroll/scroll-to-top";
 
@@ -14,12 +15,12 @@ const BlogGrid = () => {
             <BlogLayout />
              <CTA
                                     bgImage="/assets/img/cta-bg.png"
-                                    heading="Ready to Upgrade Your Aerospace or Transportation Operations?"
-                                    subText="Speak with Novum’s specialists to learn how cloud and data solutions can enhance your logistics, safety, and service performance.
-                                             Book a consultation today."
+                                    heading="Need a solution? Request a call!"
+                                    subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                                     buttonText="Get in Touch"
                                     buttonHref="/contact"
                                 />
+            <Widget />
             <Footer />
             {/* <ScrollToTop /> */}
 
