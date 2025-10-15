@@ -17,7 +17,7 @@ const Footer = () => (
     {/* Main Container */}
     <div className="container py-5">
       {/* Top Row */}
-      <div className="row border-bottom pb-4">
+      <div className="row border-bottom pb-2">
         {/* Logo */}
         <div className="col-md-3 col-12 d-flex align-items-start mb-3 mb-md-0 justify-content-start logo">
           <img
@@ -32,36 +32,22 @@ const Footer = () => (
           <div className="row">
             {/* Line 1 */}
             <div className="col-6 col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-end flex-wrap gap-3 mb-2">
-              <a href="/about" className="text-decoration-none text-muted">
-                About
-              </a>
-              <a href="/case-studies" className="text-decoration-none text-muted">
-                Case Studies
-              </a>
-              <a href="/" className="text-decoration-none text-muted">
-                Services
-              </a>
-              <a href="/" className="text-decoration-none text-muted">
-                Get a Quote
-              </a>
-              <a href="/services/microsoft-licensing" className="text-decoration-none text-muted">
-                Microsoft licenses
-              </a>
+              <a href="/about" className="text-decoration-none text-muted">About</a>
+              <a href="/case-studies" className="text-decoration-none text-muted">Case Studies</a>
+              <a href="/" className="text-decoration-none text-muted">Services</a>
+              <a href="/" className="text-decoration-none text-muted">Get a Quote</a>
+              <a href="/services/microsoft-licensing" className="text-decoration-none text-muted">Microsoft licenses</a>
             </div>
+
             {/* Line 2 */}
             <div className="col-6 col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-end flex-wrap gap-3 mb-2">
-              <a href="https://novum.tech/files/novum/NOVUM%20Brochure.pdf" className="text-decoration-none text-muted">
-                Our brochure
-              </a>
-              <a href="/blog" className="text-decoration-none text-muted">
-                News
-              </a>
-              <a href="/contact" className="text-decoration-none text-muted">
-                Contact Us
-              </a>
+              <a href="https://novum.tech/files/novum/NOVUM%20Brochure.pdf" className="text-decoration-none text-muted">Our brochure</a>
+              <a href="/blog" className="text-decoration-none text-muted">News</a>
+              <a href="/contact" className="text-decoration-none text-muted">Contact Us</a>
             </div>
+
             {/* Icons Row */}
-            <div className="col-12 d-flex justify-content-start justify-content-md-end gap-3">
+            <div className="col-12 d-flex justify-content-start justify-content-md-end gap-3 mb-3">
               <a href="https://www.linkedin.com/company/novum" className="text-muted" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in" />
               </a>
@@ -71,7 +57,48 @@ const Footer = () => (
             </div>
           </div>
         </div>
+
+        {/* === Partners Row (Inside Same Row) === */}
+        <div className="col-12 d-flex align-items-center gap-4 flex-wrap">
+          {/* Partner 1 */}
+          <a href="/partner/dell-technologies/overview" className="d-flex align-items-center text-decoration-none text-muted gap-2">
+            <img
+              src="/assets/img/dell.svg"
+              alt="Dell Technologies"
+              width="40"
+              height="40"
+              className="me-2"
+            />
+            <span style={{ fontSize: "10px" }}>Dell Technologies</span>
+          </a>
+
+          {/* Partner 2 (duplicate to replace later) */}
+          <a href="#" className="d-flex align-items-center text-decoration-none text-muted gap-2">
+            <img
+              src="/assets/img/hawlett.svg"
+              alt="Partner 2"
+              width="40"
+              height="40"
+              className="me-2"
+            />
+            <span style={{ fontSize: "10px" }}>Hewlett Packard Enterprise</span>
+          </a>
+
+          {/* Partner 3 (duplicate to replace later) */}
+          <a href="#" className="d-flex align-items-center text-decoration-none text-muted gap-2">
+            <img
+              src="/assets/img/microsoft.svg"
+              alt="Partner 3"
+              width="20"
+              height="20"
+              className="me-2"
+            />
+            <span style={{ fontSize: "10px" }}>Microsoft</span>
+          </a>
+        </div>
       </div>
+
+      
 
       {/* Bottom Row */}
       <div className="d-flex flex-column-reverse flex-md-row justify-content-between align-items-md-center pt-3">
