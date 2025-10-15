@@ -89,7 +89,7 @@ const HeroWithRibbon = ({
       {/* === HERO SECTION === */}
       <section className="hero-section d-flex align-items-center position-relative">
         <div className="container position-relative" style={{ zIndex: 2 }}>
-          <div className="row align-items-center h-100">
+          <div className="row align-items-center h-100 mt-5 pt-5">
             {/* LEFT SIDE - TEXT */}
             <div className="col-lg-6 col-md-6">
               {/* New service name heading */}
@@ -156,7 +156,7 @@ const HeroWithRibbon = ({
       <style jsx>{`
         /* Hero Section */
         .hero-section {
-          height: 75vh !important;
+          height: 70vh !important;
           background: url(${bgImage}) center/cover no-repeat;
           display: flex;
           align-items: center;
