@@ -72,39 +72,21 @@ Backed by extensive domain expertise and industry experience in fields such as t
   <div className="container">
     <div className="row g-4 align-items-stretch">
       {/* LEFT: Mission Content */}
-      <div className="col-lg-7">
-        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
-          Data-Driven
-        </span>
-        <h2 className="fw-bold mb-4">Our Mission</h2>
-        <p className="mb-4">
-          At Novum, our mission is to empower enterprises to operate smarter, faster, and more efficiently
-          by embedding analytics, automation, and cloud innovation at the core of their business operations
-          helping them evolve into truly data-driven organizations. We believe in transforming complexity into
-          clarity through data intelligence, driving measurable impact and long-term success.
-        </p>
+     <div className="col-lg-7">
+  <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
+    Data-Driven
+  </span>
+  <h2 className="fw-bold mb-4">Our Mission</h2>
+  <p className="mb-4">
+    To help the companies increase their efficiency and step into the future,
+    through implementing digital services and data analytics at the core.
+  </p>
 
-        <div className="row g-3">
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Analytics-First</div>
-              <div className="text-muted small">Turning data into decisions.</div>
-            </div>
-          </div>
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Automation</div>
-              <div className="text-muted small">Simplifying operations.</div>
-            </div>
-          </div>
-          <div className="col-sm-4">
-            <div className="bg-light border rounded-4 h-100 p-3">
-              <div className="fw-bold mb-1">Cloud-Native</div>
-              <div className="text-muted small">Secure, scalable, future-ready.</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <h2 className="fw-bold mb-4">Our Vision</h2>
+  <p className="mb-0">
+    Create organization environment with data driven decision power and transformative solutions.
+  </p>
+</div>
 
       {/* RIGHT: Partner / Credibility Card */}
       <div className="col-lg-5">
@@ -191,7 +173,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
     <div className="row justify-content-center">
       <div className="col-lg-12 text-left">
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
-          What Drives Us
+          Driven by Purpose
         </span>
         <h2 className="fw-bold mb-4">What Drives Us</h2>
         <p className="mb-4">
@@ -298,7 +280,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
         <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
           Global Impact, Local Expertise
         </span>
-        <h2 className="fw-bold mb-4">Global Impact, Local Expertise</h2>
+        <h2 className="fw-bold mb-4">Expanding Boundaries</h2>
         <p className="mb-4">
           With offices in <strong>Dubai</strong> and <strong>Baku</strong>, Novum blends global perspective
           with deep local market understanding. Our international presence lets us serve diverse clients
