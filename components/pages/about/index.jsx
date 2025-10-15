@@ -24,13 +24,14 @@ const Aboutus = () => {
         <h2 className="fw-bold mb-4">Built on Innovation &amp; Expertise</h2>
         <p className="mb-2">
           Founded in 2017, Novum specializes in Data Analytics, Software Development, and ERP Implementation, delivering impactful solutions across both local and international markets.
+
+As the demand for business process automation, complex data management, and ERP solutions grows, we are committed to providing tailored solutions that meet specific market needs enabling agile decision-making through advanced analytics and supporting diverse business functions with robust ERP systems.
+
+Our mission is to elevate decision-making, reporting, and business processes by fostering a data-driven culture across corporate, business, and functional layers. As a trusted Microsoft partner, we align with globally recognized Microsoft Cloud standards to ensure smooth digital transformations for our clients.
+
+Backed by extensive domain expertise and industry experience in fields such as technology, aerospace, petroleum, business consulting, non-profit, risk & finance, and education, our team brings a dedicated, customer-focused approach and proven methodologies to every project. At Novum, we are driven by best practices, innovation, and a commitment to empowering clients with impactful, forward-looking solutions that drive real change in their industries.
         </p>
-        <p className="mb-0">
-           Our mission is to elevate decision-making, reporting, and business processes by fostering a data-driven culture across corporate, business, and functional layers. As a trusted Microsoft partner, we align with globally recognized Microsoft Cloud standards to ensure smooth digital transformations for our clients.
-        </p>
-        <p className="mb-0">
-           Backed by extensive domain expertise and industry experience in fields such as technology, aerospace, petroleum, business consulting, non-profit, risk & finance, and education, our team brings a dedicated, customer-focused approach and proven methodologies to every project. At Novum, we are driven by best practices, innovation, and a commitment to empowering clients with impactful, forward-looking solutions that drive real change in their industries.
-        </p>
+        
       </div>
 
 

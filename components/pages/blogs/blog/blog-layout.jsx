@@ -56,7 +56,7 @@ export default function BlogLayout() {
   }, []);
 
   return (
-    <section className="py-5 blog-layout">
+    <section className="py-5 blog-layout mt-5 blogsection">
       <div className="container blog-container">
         <div className="row g-4 align-items-start blog-row">
           {/* === Left Column === */}
@@ -75,6 +75,17 @@ export default function BlogLayout() {
       </div>
 
       <style jsx>{`
+      .blogsection{
+      padding-top: 140px !important;
+      padding-bottom: 80px !important;
+      }
+      /* On screens 990px and below */
+@media (max-width: 990px) {
+  .blogsection {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
         .blog-layout {
           position: relative;
           background: #fff;

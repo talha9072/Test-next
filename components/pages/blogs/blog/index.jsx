@@ -1,6 +1,5 @@
 "use client"
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import Banner from "./banner";
 import Footer from "@/components/layout/footers/footer";
 import BlogLayout from "../blog/blog-layout";
 import CTA from '@/components/data/cta';
@@ -11,7 +10,7 @@ const BlogGrid = () => {
     return (
         <>
             <HeaderFour />
-            <Banner />
+            
             <BlogLayout />
              <CTA
                                     bgImage="/assets/img/cta-bg.png"
