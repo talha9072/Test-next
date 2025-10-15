@@ -333,9 +333,9 @@ Backed by extensive domain expertise and industry experience in fields such as t
 
       <CTA
   bgImage="/assets/img/cta-bg.png"
-  heading="Ready to Work with Novum?"
-  subText="Meet our team, share your goals, and get a clear, actionable plan for your next step in data, cloud, or apps."
-  buttonText="Talk to an Expert"
+  heading="Need a solution? Request a call!"
+  subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
+  buttonText="Get in Touch"
   buttonHref="/contact"
 />
 
