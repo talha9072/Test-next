@@ -10841,13 +10841,15 @@ footer a:hover{
           }
 
 
-         /*==========================================================================
-* Other Services Section
-==========================================================================*/
+         /*==================================================================
+* Other Services Section (Clean + Left Aligned)
+==================================================================*/
+
 .services .swiper-slide {
-  padding: 15px 0; 
+  padding: 15px 0;
 }
 
+/* === Card Base === */
 .services .card {
   position: relative;
   border: none;
@@ -10855,8 +10857,9 @@ footer a:hover{
   border-radius: 5px;
   height: 100%;
   top: 0;
-  transition: top 0.2s ease-in-out;
   background-color: #fff;
+  transition: top 0.2s ease-in-out, transform 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .services .card::before {
@@ -10868,7 +10871,7 @@ footer a:hover{
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: transparent;
+  background: transparent;
   transition: background 0.3s ease-in-out;
 }
 
@@ -10876,45 +10879,17 @@ footer a:hover{
   top: -5px;
 }
 
-/* === Swiper nth-child hover gradients === */
-.services .swiper-slide:nth-child(1) .card:hover::before {
-  background-color: #8746CA;
+.services .card:hover::before {
+  background: var(--card-gradient);
 }
 
-.services .swiper-slide:nth-child(2) .card:hover::before {
-  background-image: linear-gradient(90deg, #F7E078, #DA9B0E);
-}
-
-.services .swiper-slide:nth-child(3) .card:hover::before {
-  background-image: linear-gradient(90deg, #216868, #14B8BF);
-}
-
-.services .swiper-slide:nth-child(4) .card:hover::before {
-  background-image: linear-gradient(90deg, #157569, #71E9B6);
-}
-
-.services .swiper-slide:nth-child(5) .card:hover::before {
-  background-image: linear-gradient(90deg, #1B71EB, #A555C0);
-}
-
-.services .swiper-slide:nth-child(6) .card:hover::before {
-  background-image: linear-gradient(90deg, #32ADE9, #095EAA);
-}
-
-.services .swiper-slide:nth-child(7) .card:hover::before {
-  background-image: linear-gradient(90deg, #2353C4, #848FF0);
-}
-
-.services .swiper-slide:nth-child(8) .card:hover::before {
-  background-image: linear-gradient(90deg, #3352C0, #5875E5);
-}
-
-.services .swiper-slide:nth-child(9) .card:hover::before {
-  background-image: linear-gradient(90deg, #4CD1DA, #1085A4);
-}
-
-.services .swiper-slide:nth-child(10) .card:hover::before {
-  background-image: linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2);
+/* === Card Content === */
+.services .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start !important; /* ✅ left align */
+  text-align: left !important; /* ✅ left align text */
 }
 
 .services .card-body img {
@@ -10926,6 +10901,7 @@ footer a:hover{
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color-1);
+  margin-bottom: 8px;
 }
 
 .services .card-text {
@@ -10933,37 +10909,34 @@ footer a:hover{
   transition: color 0.3s ease-in-out;
 }
 
-.services .card:hover .card-text {
-  color: #7c898d;
-}
-
-/* Swiper wrapper ko flex banaye */
+/* === Layout Stretching === */
 .services .swiper-wrapper {
   display: flex;
   align-items: stretch;
 }
 
-/* Har slide full height le */
 .services .swiper-slide {
   display: flex;
   height: auto;
 }
 
-/* Card ko stretch karao */
 .services .swiper-slide .card {
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%; /* ✅ equalize all */
+  height: 100%;
 }
 
-/* Card body stretch */
 .services .swiper-slide .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+}
+
+/* === Optional: Button hover behavior === */
+.services .card:hover .card-text {
+  color: #7c898d;
 }
 
 

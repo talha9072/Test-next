@@ -1,4 +1,3 @@
-// components/pages/homes/home-4/other-services.jsx
 "use client";
 import { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
@@ -18,7 +17,6 @@ export default function OtherServices({
   const nextRef = useRef(null);
   const [navReady, setNavReady] = useState(false);
 
-  // ✅ ensure refs ready before Swiper render
   useEffect(() => {
     setNavReady(true);
   }, []);
@@ -27,7 +25,7 @@ export default function OtherServices({
     <section className="services py-5 bg-light" id={id}>
       <div className="container">
         {/* Heading */}
-        <div className="text-center mb-5">
+        <div className="text-start mb-5">
           {subtitle && (
             <span className="subtitle-one text-uppercase text-novum-blue fw-semibold mb-2 d-inline-block">
               {subtitle}
@@ -35,7 +33,10 @@ export default function OtherServices({
           )}
           {title && <h2 className="fw-bold mb-3">{title}</h2>}
           {description && (
-            <p className="text-muted mx-auto" style={{ maxWidth: "720px" }}>
+            <p
+              className="text-muted"
+              style={{ maxWidth: "720px", marginBottom: "0" }}
+            >
               {description}
             </p>
           )}
@@ -68,8 +69,14 @@ export default function OtherServices({
           >
             {services.map((svc, i) => (
               <SwiperSlide key={i}>
-                <a className="card p-2 h-100" href={svc.link}>
-                  <div className="card-body text-center d-flex flex-column">
+                <a
+                  className="card p-2 h-100"
+                  href={svc.link}
+                  style={{
+                    "--card-gradient": svc.gradient || "transparent",
+                  }}
+                >
+                  <div className="card-body text-start d-flex flex-column">
                     {svc.imgSrc && (
                       <img
                         src={svc.imgSrc}
@@ -98,6 +105,45 @@ export default function OtherServices({
           </button>
         </div>
       </div>
+
+      <style jsx>{`
+        .services .card {
+          position: relative;
+          border: none;
+          padding: 40px 20px !important;
+          border-radius: 5px;
+          height: 100%;
+          background: #fff;
+          transition: all 0.3s ease;
+          overflow: hidden;
+        }
+
+        .services .card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 7px;
+          width: 100%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background: transparent;
+          transition: background 0.3s ease;
+        }
+
+        .services .card:hover::before {
+          background: var(--card-gradient);
+        }
+
+        .services .card:hover {
+          transform: translateY(-5px);
+        }
+
+        .services .card-body img {
+          height: 60px;
+          margin-bottom: 10px;
+        }
+      `}</style>
     </section>
   );
 }
@@ -113,6 +159,7 @@ OtherServices.propTypes = {
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       link: PropTypes.string,
+      gradient: PropTypes.string, // ✅ new prop
     })
   ),
 };
