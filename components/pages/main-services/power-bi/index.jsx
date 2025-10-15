@@ -20,12 +20,14 @@ const PowerBI = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  title="Power BI Consulting Services"
+  serviceName="Power BI / Reporting Consulting"
+  title="The new era of AI-powered business"
+  highlightText="Power BI"
   subtitle="Turn data into decisions with Power BI experts."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroButtons={[
-    { label: "Get Started", variant: "light" },
-    { label: "View Plans", variant: "outline" },
+    { label: "Get Started", href: "#contact" },
+    { label: "View Plans", href: "#pricing" },
   ]}
   links={[
     { label: "Overview", href: "#about" },

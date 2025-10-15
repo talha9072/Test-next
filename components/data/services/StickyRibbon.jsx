@@ -1,7 +1,15 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 
-const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = [] }) => {
+const HeroWithRibbon = ({
+  serviceName = "",
+  title,
+  subtitle,
+  bgImage,
+  links = [],
+  heroButtons = [],
+  highlightText = "",
+}) => {
   const [showFixed, setShowFixed] = useState(false);
   const [activeLink, setActiveLink] = useState(links[0]?.href || "");
   const scrollRef = useRef(null);
@@ -10,12 +18,11 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
     const handleScroll = () => {
       setShowFixed(window.scrollY > 200);
 
-      // ScrollSpy logic
       let current = "";
       links.forEach((link) => {
         const section = document.querySelector(link.href);
         if (section) {
-          const sectionTop = section.offsetTop - 150; // offset for navbar
+          const sectionTop = section.offsetTop - 150;
           const sectionHeight = section.offsetHeight;
           if (
             window.scrollY >= sectionTop &&
@@ -29,7 +36,6 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
       if (current && current !== activeLink) {
         setActiveLink(current);
 
-        // Auto-scroll ribbon to keep active link visible (mobile only)
         if (scrollRef.current && window.innerWidth <= 768) {
           const activeEl = scrollRef.current.querySelector(
             `.nav-link[href="${current}"]`
@@ -46,13 +52,10 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run once at mount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [links, activeLink]);
 
-  // Scroll handler for arrows
   const scrollRibbon = (direction) => {
     if (scrollRef.current) {
       const scrollAmount = 120;
@@ -63,39 +66,61 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
     }
   };
 
+  // ✅ Highlighted text logic
+  const renderTitle = () => {
+    if (!highlightText) return <>{title}</>;
+
+    const regex = new RegExp(`(${highlightText})`, "gi");
+    const parts = title.split(regex);
+
+    return parts.map((part, i) =>
+      regex.test(part) ? (
+        <span key={i} className="highlight-text">
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
     <>
-      {/* Hero Section */}
+      {/* === HERO SECTION === */}
       <section className="hero-section d-flex align-items-center position-relative">
         <div className="container position-relative" style={{ zIndex: 2 }}>
           <div className="row align-items-center h-100">
             {/* LEFT SIDE - TEXT */}
             <div className="col-lg-6 col-md-6">
-              <h1 className="serviceheading mb-3">{title}</h1>
+              {/* New service name heading */}
+              {serviceName && (
+                <h5 className="service-name mb-2">{serviceName}</h5>
+              )}
+              <h1 className="serviceheading mb-3">{renderTitle()}</h1>
               <p className="text-white-50 mb-0">{subtitle}</p>
             </div>
 
             {/* RIGHT SIDE - BUTTONS */}
-            <div className="col-lg-6 col-md-6 d-flex flex-wrap justify-content-lg-end justify-content-start gap-3 mt-4 mt-lg-0">
-              {heroButtons.map((btn, i) => (
-                <button
-                  key={i}
-                  className={`btn ${
-                    btn.variant === "outline"
-                      ? "btn-outline-light"
-                      : "btn-light text-dark"
-                  } fw-semibold px-4 py-2`}
-                  onClick={btn.onClick}
-                >
-                  {btn.label}
-                </button>
-              ))}
+            <div className="col-lg-6 col-md-6 d-flex flex-wrap justify-content-lg-center justify-content-start gap-3 mt-4 mt-lg-0">
+              <div className="btn-group">
+                {heroButtons.map((btn, i) => (
+                  <a
+                    key={i}
+                    href={btn.href}
+                    target={btn.target || "_self"}
+                    rel="noopener noreferrer"
+                    className="banner-btn"
+                  >
+                    <span>{btn.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Ribbon */}
+      {/* === RIBBON === */}
       <div className={`anchor-links-ribbon ${showFixed ? "fixed" : ""}`}>
         <nav className="container-fluid px-0 position-relative">
           <button
@@ -127,26 +152,55 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
         </nav>
       </div>
 
+      {/* === STYLES === */}
       <style jsx>{`
         /* Hero Section */
         .hero-section {
-          height: 75vh;
+          height: 75vh !important;
           background: url(${bgImage}) center/cover no-repeat;
           display: flex;
           align-items: center;
           overflow: hidden;
         }
 
-        .serviceheading{
-          color: #0D2B75 !important;
-          font-size: 44px !important;
+        .serviceheading {
+          color: #0d2b75 !important;
+          font-size: 3.8rem !important;
           font-weight: 500 !important;
           line-height: 50px !important;
+          letter-spacing: -1.55px !important;
+          line-height: 72px !important;
+        }
+          @media (max-width: 980px) and (min-width: 571px) {
+          .serviceheading {
+            font-size: 2.8rem !important;
+            line-height: 55px !important;
+          }
+        }
+
+        /* From 570px and below */
+        @media (max-width: 570px) {
+          .serviceheading {
+            font-size: 2.2rem !important;
+            line-height: 42px !important;
+          }
+        }
+
+        .service-name {
+          color: #616262 !important;
+          font-size: 0.8rem;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          letter-spacing: 0.96px;
         }
 
         p {
-          color: rgba(255, 255, 255, 0.85);
-          font-size: 1.1rem;
+          color: #0d2b75 !important;
+          font-size: 1rem;
+          font-weight: 400;
+          letter-spacing: -0.48px;
+          line-height: 24px;
         }
 
         /* Ribbon Base */
@@ -159,7 +213,6 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
           width: 100%;
         }
 
-        /* Fixed Ribbon */
         .anchor-links-ribbon.fixed {
           position: fixed;
           top: 95px;
@@ -168,7 +221,6 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
           z-index: 10;
         }
 
-        /* Nav Styles */
         .anchor-links-ribbon .nav-link {
           color: #fff;
           font-weight: 500;
@@ -210,17 +262,19 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
             white-space: nowrap;
             justify-content: flex-start !important;
           }
+
           .ribbon-list .nav-item {
             flex: 0 0 auto;
           }
+
           .ribbon-list::-webkit-scrollbar {
             display: none;
           }
+
           .anchor-links-ribbon.fixed {
             top: 70px;
           }
 
-          /* Small arrows */
           .scroll-arrow {
             position: absolute;
             top: 50%;
@@ -233,9 +287,11 @@ const HeroWithRibbon = ({ title, subtitle, bgImage, links = [], heroButtons = []
             z-index: 1200;
             padding: 5px;
           }
+
           .scroll-arrow.left {
             left: 5px;
           }
+
           .scroll-arrow.right {
             right: 5px;
           }
