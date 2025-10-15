@@ -8,6 +8,7 @@ import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
@@ -245,7 +246,7 @@ const PowerBI = () => {
 />
 
 
-
+<Widget />
 
 
         <CTA
@@ -255,6 +256,8 @@ const PowerBI = () => {
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
+
+                    
 
       <Footer />
     </div>
