@@ -23,7 +23,7 @@ const HeroWithRibbon = ({
       links.forEach((link) => {
         const section = document.querySelector(link.href);
         if (section) {
-          const sectionTop = section.offsetTop - 150;
+          const sectionTop = section.offsetTop - 300;
           const sectionHeight = section.offsetHeight;
           if (
             window.scrollY >= sectionTop &&
