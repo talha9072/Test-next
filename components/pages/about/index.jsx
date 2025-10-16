@@ -35,61 +35,8 @@ Backed by extensive domain expertise and industry experience in fields such as t
       </div>
 
 
-      {/* Image (left on desktop, below on mobile) */}
-      <div className="col-lg-5 order-2 order-lg-2">
-        <div className="position-relative">
-          {/* Floating Experience badge (Bootstrap utilities only) */}
-          <div className="position-absolute top-0 start-0 ms-3 mt-3">
-            <div className="bg-white bg-opacity-75 border rounded-4 shadow d-flex align-items-center gap-3 px-3 py-2">
-              <div className="d-flex align-items-baseline">
-                <span className="display-5 text-novum-blue fw-bold mb-0">8</span>
-                <sup className="fw-bold text-novum-blue ms-1">+</sup>
-              </div>
-              <div className="small text-muted lh-sm">
-                <div className="fw-semibold">Years</div>
-                <div>Experience</div>
-              </div>
-            </div>
-          </div>
-
-          <img
-            src="/assets/img/about/about-main-1.png"
-            alt="About Novum"
-            className="img-fluid rounded shadow-sm"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-{/* === Our Mission === */}
-<section className="py-5">
-  <div className="container">
-    <div className="row g-4 align-items-stretch">
-      {/* LEFT: Mission Content */}
-     <div className="col-lg-7">
-  <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2">
-    Data-Driven
-  </span>
-  <h2 className="fw-bold mb-4">Our Mission</h2>
-  <p className="mb-4">
-    To help the companies increase their efficiency and step into the future,
-    through implementing digital services and data analytics at the core.
-  </p>
-
-  <h2 className="fw-bold mb-4">Our Vision</h2>
-  <p className="mb-0">
-    Create organization environment with data driven decision power and transformative solutions.
-  </p>
-</div>
-
       {/* RIGHT: Partner / Credibility Card */}
-      <div className="col-lg-5">
+      <div className="col-lg-5 order-2 order-lg-2">
         <div className="card h-100 border rounded-4 shadow-sm">
           <div className="card-body h-100 d-flex flex-column p-3 p-lg-4">
 
@@ -161,9 +108,105 @@ Backed by extensive domain expertise and industry experience in fields such as t
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
+<section className="py-5">
+  <div className="container">
+    <div className="row g-4 align-items-stretch">
+      {/* === Vision Box === */}
+      <div className="col-12 col-lg-6">
+        <div
+          className="h-100 text-white d-flex flex-column justify-content-start"
+          style={{
+            padding: "3rem 2.5rem 3rem",
+            background: "#3b4a9e",
+            borderRadius: "5px",
+          }}
+        >
+          <h6
+            className="text-uppercase fw-semibold mb-3"
+            style={{
+              fontSize: "12px",
+              letterSpacing: "0.5px",
+              color: "white",
+            }}
+          >
+            Company Vision
+          </h6>
+          <p
+            className="fw-semibold mb-0 responsive-text"
+            style={{ lineHeight: "1.5" }}
+          >
+            "Create organization environment with data-driven decision power and
+            transformative solutions."
+          </p>
+        </div>
+      </div>
+
+      {/* === Mission Box === */}
+      <div className="col-12 col-lg-6">
+        <div
+          className="h-100 text-white d-flex flex-column justify-content-start"
+          style={{
+            padding: "3rem 2.5rem 3rem",
+            background: "#3b4a9e",
+            borderRadius: "5px",
+          }}
+        >
+          <h6
+            className="text-uppercase fw-semibold mb-3"
+            style={{
+              fontSize: "12px",
+              letterSpacing: "0.5px",
+              color: "white",
+            }}
+          >
+            Mission Statement
+          </h6>
+          <p
+            className="fw-semibold mb-0 responsive-text"
+            style={{ lineHeight: "1.5" }}
+          >
+            “To help the companies increase their efficiency and step into the
+            future, through implementing digital services and data analytics at
+            the core.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* === Inline Responsive Style === */}
+  <style jsx>{`
+    .responsive-text {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 992px) {
+      .responsive-text {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .responsive-text {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .responsive-text {
+        font-size: 1.25rem;
+      }
+    }
+  `}</style>
+</section>
+
+
 
 {/* === What Drives Us (Refined Copy) === */}
 <section className="py-5">
