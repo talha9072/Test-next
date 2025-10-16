@@ -58,10 +58,35 @@ const Footer = () => (
           </div>
         </div>
 
+        {/* === Strategic Partners === */}
+        <div className="col-12 mb-0">
+          <h6 className="text-uppercase fw-semibold mb-0" style={{ fontSize: "10px", letterSpacing: "0.5px", color: "var(--bs-secondary-color)" }}>
+            Strategic Partners
+          </h6>
+        </div>
+
         {/* === Partners Row (Inside Same Row) === */}
         <div className="col-12 d-flex align-items-center gap-2 gap-lg-5 flex-wrap">
+          {/* Partner 3 */}
+          <a
+            href="#"
+            className="d-flex align-items-center text-decoration-none text-muted gap-2"
+          >
+            <img
+              src="/assets/img/microsoft.svg"
+              alt="Partner 3"
+              width="20"
+              height="20"
+              className="me-2"
+            />
+            <span style={{ fontSize: "10px" }}>Microsoft</span>
+          </a>
+          
           {/* Partner 1 */}
-          <a href="/partner/dell-technologies/overview" className="d-flex align-items-center text-decoration-none text-muted gap-0">
+          <a
+            href="/partner/dell-technologies/overview"
+            className="d-flex align-items-center text-decoration-none text-muted gap-0"
+          >
             <img
               src="/assets/img/dell.svg"
               alt="Dell Technologies"
@@ -72,8 +97,11 @@ const Footer = () => (
             <span style={{ fontSize: "10px" }}>Dell Technologies</span>
           </a>
 
-          {/* Partner 2 (duplicate to replace later) */}
-          <a href="#" className="d-flex align-items-center text-decoration-none text-muted gap-2">
+          {/* Partner 2 */}
+          <a
+            href="#"
+            className="d-flex align-items-center text-decoration-none text-muted gap-2"
+          >
             <img
               src="/assets/img/hawlett.svg"
               alt="Partner 2"
@@ -84,17 +112,7 @@ const Footer = () => (
             <span style={{ fontSize: "10px" }}>Hewlett Packard Enterprise</span>
           </a>
 
-          {/* Partner 3 (duplicate to replace later) */}
-          <a href="#" className="d-flex align-items-center text-decoration-none text-muted gap-2">
-            <img
-              src="/assets/img/microsoft.svg"
-              alt="Partner 3"
-              width="20"
-              height="20"
-              className="me-2"
-            />
-            <span style={{ fontSize: "10px" }}>Microsoft</span>
-          </a>
+          
         </div>
       </div>
 
