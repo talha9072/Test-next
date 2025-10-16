@@ -59,7 +59,7 @@ const Footer = () => (
         </div>
 
         {/* === Partners Row (Inside Same Row) === */}
-        <div className="col-12 d-flex align-items-center gap-5 flex-wrap">
+        <div className="col-12 d-flex align-items-center gap-2 gap-lg-5 flex-wrap">
           {/* Partner 1 */}
           <a href="/partner/dell-technologies/overview" className="d-flex align-items-center text-decoration-none text-muted gap-0">
             <img

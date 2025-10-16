@@ -10,6 +10,7 @@ import Tab1 from "./tab-1";
 import Testimonials from "./testimonials";
 import QuickLinks from "./quicklinks";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 // import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const HomeFour = () => {
@@ -31,6 +32,7 @@ const HomeFour = () => {
                 buttonText="Get in Touch"
                 buttonHref="/contact"
             />
+            <Widget />
             <Footer />
             {/* <ScrollToTop /> */}
         </div>
