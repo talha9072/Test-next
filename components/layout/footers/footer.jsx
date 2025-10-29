@@ -124,18 +124,18 @@ const Footer = () => (
         <div className="footer-links-wrapper order-1 order-md-0 w-100 mt-md-0 text-start text-md-start">
           {/* Links Section */}
           <div className="mb-3">
-            <ul className="list-inline mb-0">
-              <li className="list-inline-item">
+            <ul className="list-inline mb-0 d-flex gap-3">
+              <li className="list-inline-item m-0">
                 <a href="#" className="text-muted text-decoration-none">
                   Privacy Policy
                 </a>
               </li>
-              <li className="list-inline-item">
+              <li className="list-inline-item m-0">
                 <a href="#" className="text-muted text-decoration-none">
                   Code of Conduct
                 </a>
               </li>
-              <li className="list-inline-item">
+              <li className="list-inline-item m-0">
                 <a href="#" className="text-muted text-decoration-none">
                   Anti-Bribery and Corruption Policy
                 </a>

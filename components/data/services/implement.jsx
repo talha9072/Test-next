@@ -1,11 +1,11 @@
 // components/pages/homes/home-4/implement-section.jsx
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function ImplementSection({
   id,
@@ -14,18 +14,64 @@ export default function ImplementSection({
   description,
   items = [],
 }) {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-  const [navReady, setNavReady] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-  // ✅ ensure refs ready before Swiper render
   useEffect(() => {
-    setNavReady(true);
+    setIsMounted(true);
   }, []);
+
+  if (!isMounted) return null;
 
   return (
     <section className="py-5" id={id}>
       <div className="container">
+        {/* === Inline Scoped CSS === */}
+        <style jsx global>{`
+          /* --- SWIPER CORE --- */
+          .benefits-swiper {
+            overflow: visible !important;
+            padding-bottom: 50px !important; /* space for dots */
+          }
+
+          /* --- CARD IMAGE --- */
+          .benefit-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+          }
+
+          /* --- PAGINATION BELOW --- */
+          .benefits-swiper .swiper-pagination {
+            position: relative !important;
+            bottom: 0 !important;
+            margin-top: 30px !important;
+            text-align: center !important;
+          }
+
+          /* --- BULLET STYLE --- */
+          .benefits-swiper .swiper-pagination-bullet {
+            background: grey !important;
+            opacity: 1 !important;
+            width: 30px !important;
+            height: 3px !important;
+            border-radius: 4px !important;
+            margin: 0 5px !important;
+            transition: all 0.3s ease !important;
+          }
+
+          /* --- ACTIVE BULLET --- */
+          .benefits-swiper .swiper-pagination-bullet-active {
+            background: var(--primary-color-1) !important;
+          }
+
+          /* --- RESPONSIVE --- */
+          @media (max-width: 576px) {
+            .benefits-swiper .swiper-pagination-bullet {
+              width: 20px !important;
+            }
+          }
+        `}</style>
+
         {/* Heading */}
         <div className="text-center mb-4">
           {subtitle && (
@@ -41,54 +87,33 @@ export default function ImplementSection({
           )}
         </div>
 
-        {/* Swiper Carousel */}
-        {navReady && (
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-            }}
-            breakpoints={{
-              576: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              992: { slidesPerView: 3 },
-            }}
-            className="benefits-swiper"
-          >
-            {items.map((item, i) => (
-              <SwiperSlide key={i}>
-                <div className="benefit-card h-100 rounded shadow-sm overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-100 h-200 object-cover"
-                  />
-                  <div className="p-4">
-                    <h5 className="fw-semibold text-dark mb-2">{item.title}</h5>
-                    <p className="text-muted small mb-0">{item.desc}</p>
-                  </div>
+        {/* Swiper Carousel (pagination handled internally) */}
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            576: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+          }}
+          className="benefits-swiper"
+        >
+          {items.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div className="benefit-card h-100 rounded shadow-sm overflow-hidden">
+                <img src={item.img} alt={item.title} />
+                <div className="p-4">
+                  <h5 className="fw-semibold text-dark mb-2">{item.title}</h5>
+                  <p className="text-muted small mb-0">{item.desc}</p>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
-
-        {/* Arrows only */}
-        <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
-          <button ref={prevRef} className="btn btn-outline-dark rounded-circle">
-            <i className="fa-solid fa-chevron-left"></i>
-          </button>
-          <button ref={nextRef} className="btn btn-outline-dark rounded-circle">
-            <i className="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
