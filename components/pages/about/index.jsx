@@ -294,84 +294,152 @@ Backed by extensive domain expertise and industry experience in fields such as t
 </section>
 
 
-{/* === Global Impact, Local Expertise — premium Bootstrap-only layout (no custom CSS) === */}
-<section className="py-5 bg-white">
+  
+
+
+ <section className="services about__four py-5">
   <div className="container">
-    {/* Row 1: Visual + Copy */}
-    <div className="row g-4 align-items-center">
-      {/* Visual: Map card with overlay chips */}
-      <div className="col-lg-6">
-        <div className="card border-0 shadow-sm rounded-4 text-white">
-          <img
-            src="/assets/img/about/flag-1.png"  /* replace with your map/img */
-            alt="Global presence"
-            className="card-img rounded-4"
-            loading="lazy"
-            decoding="async"
-          />
-          <div className="card-img-overlay d-flex flex-column justify-content-end">
-            <div className="d-flex flex-wrap gap-2">
-              <span className="badge bg-light text-novum-blue rounded-pill">Dubai • UAE</span>
-              <span className="badge bg-light text-novum-blue rounded-pill">Baku • AZ</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Copy: Heading, paragraph, compact KPIs */}
-      <div className="col-lg-6">
-        <span className="badge rounded-pill bg-light border px-3 py-2 fw-semibold text-novum-blue mb-2 d-inline-block">
-          Global Impact, Local Expertise
-        </span>
-        <h2 className="fw-bold mb-4">Expanding Boundaries</h2>
-        <p className="mb-4">
-          With offices in <strong>Dubai</strong> and <strong>Baku</strong>, Novum blends global perspective
-          with deep local market understanding. Our international presence lets us serve diverse clients
-          while tailoring solutions to regional dynamics.
-        </p>
-
-        {/* KPI row */}
-        <div className="row g-3">
-          <div className="col-6 col-md-4">
-            <div className="border rounded-4 text-center py-3 h-100">
-              <div className="d-flex justify-content-center mb-2">
-                <span className="badge bg-light border rounded-circle p-3">
-                  <i className="fas fa-globe text-novum-blue" aria-hidden="true"></i>
-                </span>
-              </div>
-              <div className="fw-bold">GCC &amp; CIS</div>
-              <div className="small text-muted">Coverage</div>
-            </div>
-          </div>
-          <div className="col-6 col-md-4">
-            <div className="border rounded-4 text-center py-3 h-100">
-              <div className="d-flex justify-content-center mb-2">
-                <span className="badge bg-light border rounded-circle p-3">
-                  <i className="fas fa-language text-novum-blue" aria-hidden="true"></i>
-                </span>
-              </div>
-              <div className="fw-bold">Multi-lingual</div>
-              <div className="small text-muted">AR • EN • AZ • RU</div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="border rounded-4 text-center py-3 h-100">
-              <div className="d-flex justify-content-center mb-2">
-                <span className="badge bg-light border rounded-circle p-3">
-                  <i className="fas fa-clock text-novum-blue" aria-hidden="true"></i>
-                </span>
-              </div>
-              <div className="fw-bold">2 Timezones</div>
-              <div className="small text-muted">Gulf &amp; Caucasus</div>
-            </div>
-          </div>
-        </div>
+    {/* Header */}
+    <div className="row gy-4 pb-4">
+      <div className="col-12">
+        <h2 className="fw-700 text-dark-gray ls-minus-1px mb-3">
+          Industries We Serve &amp; Business Functions
+        </h2>
+        
       </div>
     </div>
 
-  </div>
-</section>     
+    {/* Grid */}
+    <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+      {/* Healthcare & Pharma */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-heart-pulse text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Healthcare &amp; Pharma</h3>
+            <p className="card-text small text-muted">
+              EMR integration, HL7/FHIR pipelines, and regulatory reporting.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/pharmaceutical-industry" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      {/* Retail & Distribution */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-cart text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Retail &amp; Distribution</h3>
+            <p className="card-text small text-muted">
+              Demand forecasting, inventory visibility, omnichannel analytics.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/food-retail-distribution" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Manufacturing & Agriculture */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-gear-wide-connected text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Manufacturing &amp; Agriculture</h3>
+            <p className="card-text small text-muted">
+              IoT telemetry, quality control, and supply planning.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/agriculture" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Government & Public Sector */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-building text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Government &amp; Public Sector</h3>
+            <p className="card-text small text-muted">
+              Citizen services, data governance, and secure cloud.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/government" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Oil & Gas / Energy */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-droplet-fill text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Oil &amp; Gas / Energy</h3>
+            <p className="card-text small text-muted">
+              Asset monitoring, production dashboards, safety analytics.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/natural-resources" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Transportation & Aviation */}
+      <div className="col">
+        <div className="card h-100 p-2">
+          <div className="card-body text-start d-flex flex-column">
+            <div
+              className="d-inline-flex align-items-center justify-content-center bg-light border rounded-circle mb-3"
+              style={{ width: 64, height: 64 }}
+            >
+              <i className="bi bi-airplane text-novum-blue fs-3" aria-hidden="true"></i>
+            </div>
+            <h3 className="card-title mt-1 mb-2">Transportation &amp; Aviation</h3>
+            <p className="card-text small text-muted">
+              Fleet operations, MRO analytics, on-time performance.
+            </p>
+            <div className="mt-auto pt-2">
+              <a href="/industries/aerospace-transportation" className="btn btn-two btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
       <CTA
