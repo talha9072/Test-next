@@ -22,103 +22,141 @@ const ContactUs = () => {
     <div className="row g-4 align-items-stretch">
       
       {/* Right: Minimal Contact Form */}
-      <div className="col-12 col-lg-7">
-        <div className="h-100 bg-white rounded-4 shadow-sm p-4 p-md-5">
-          <form action="#" method="post" noValidate>
-            <div className="row g-3">
-              {/* Name */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="name">
-                  Full Name *
-                </label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent">
-                    <i className="bi bi-person text-novum-blue"></i>
-                  </span>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    className="form-control"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-              </div>
+<div className="col-12 col-lg-7">
+  <div className="h-100 bg-white rounded-4 shadow-sm p-4 p-md-5">
+    <form action="#" method="post" noValidate>
+      <div className="row g-3">
+        {/* Name */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-600" htmlFor="name">
+            Full Name *
+          </label>
+          <div className="input-group">
+            <span className="input-group-text bg-transparent">
+              <i className="bi bi-person text-novum-blue"></i>
+            </span>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              className="form-control"
+              placeholder="Your name"
+              required
+            />
+          </div>
+        </div>
 
-              {/* Email */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="email">
-                  Email *
-                </label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent">
-                    <i className="bi bi-envelope text-novum-blue"></i>
-                  </span>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    className="form-control"
-                    placeholder="name@company.com"
-                    required
-                  />
-                </div>
-              </div>
+        {/* Email */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-600" htmlFor="email">
+            Email *
+          </label>
+          <div className="input-group">
+            <span className="input-group-text bg-transparent">
+              <i className="bi bi-envelope text-novum-blue"></i>
+            </span>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              className="form-control"
+              placeholder="name@company.com"
+              required
+            />
+          </div>
+        </div>
 
-              {/* Phone (optional) */}
-              <div className="col-12">
-                <label className="form-label fw-600" htmlFor="phone">
-                  Phone (optional)
-                </label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent">
-                    <i className="bi bi-telephone text-novum-blue"></i>
-                  </span>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    inputMode="tel"
-                    className="form-control"
-                    placeholder="+971 5X XXX XXXX"
-                  />
-                </div>
-              </div>
+        {/* Phone (optional) */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-600" htmlFor="phone">
+            Phone (optional)
+          </label>
+          <div className="input-group">
+            <span className="input-group-text bg-transparent">
+              <i className="bi bi-telephone text-novum-blue"></i>
+            </span>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputMode="tel"
+              className="form-control"
+              placeholder="+971 5X XXX XXXX"
+            />
+          </div>
+        </div>
 
-              {/* Message */}
-              <div className="col-12">
-                <label className="form-label fw-600" htmlFor="message">
-                  Message *
-                </label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent">
-                    <i className="bi bi-chat-left-text text-novum-blue"></i>
-                  </span>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="form-control"
-                    rows={4}
-                    placeholder="How can we help?"
-                    required
-                  ></textarea>
-                </div>
-              </div>
+        {/* Service Select */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-600" htmlFor="ServiceId">
+            Select a Service *
+          </label>
+          <div className="input-group">
+            <span className="input-group-text bg-transparent">
+              <i className="bi bi-layers text-novum-blue"></i>
+            </span>
+            <select
+              className="form-select"
+              aria-label="Floating label select example"
+              data-val="true"
+              data-val-required="The ServiceId field is required."
+              id="ServiceId"
+              name="ServiceId"
+              required
+            >
+              <option value="">Select</option>
+              <option value="39">Digital Strategies</option>
+              <option value="40">Analytics &amp; AI</option>
+              <option value="41">Strategic Resourcing</option>
+              <option value="9">Software Development</option>
+              <option value="28">Power BI Consulting</option>
+              <option value="26">Corporate Trainings</option>
+              <option value="35">Digital Services</option>
+              <option value="27">Data Warehouse</option>
+              <option value="10">Artificial Intelligence &amp; IoT</option>
+              <option value="42">Microsoft Azure</option>
+              <option value="43">Microsoft 365</option>
+              <option value="45">Dynamics 365</option>
+              <option value="46">Sustainability</option>
+              <option value="49">Copilot</option>
+            </select>
+          </div>
+        </div>
 
-              {/* Submit */}
-              <div className="col-12 d-grid d-sm-flex align-items-center gap-2 mt-4">
-                <button type="submit" className="btn btn-two">
-                  Send Message
-                </button>
-                <span className="text-muted small ms-sm-2">
-                  Typically replies within 1–2 business days.
-                </span>
-              </div>
-            </div>
-          </form>
+        {/* Message */}
+        <div className="col-12">
+          <label className="form-label fw-600" htmlFor="message">
+            Message *
+          </label>
+          <div className="input-group">
+            <span className="input-group-text bg-transparent">
+              <i className="bi bi-chat-left-text text-novum-blue"></i>
+            </span>
+            <textarea
+              id="message"
+              name="message"
+              className="form-control"
+              rows={4}
+              placeholder="How can we help?"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        {/* Submit */}
+        <div className="col-12 d-grid d-sm-flex align-items-center gap-2 mt-4">
+          <button type="submit" className="btn btn-two">
+            Send Message
+          </button>
+          <span className="text-muted small ms-sm-2">
+            Typically replies within 1–2 business days.
+          </span>
         </div>
       </div>
+    </form>
+  </div>
+</div>
+
       {/* /Right form */}
       {/* Left: Office info (Dubai & Baku) */}
       <div className="col-12 col-lg-5">
