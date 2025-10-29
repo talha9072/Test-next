@@ -1,5 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
+import HeroOnly from "@/components/data/industries/banner";
 import BannerSection from "@/components/data/services/banner";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
@@ -14,6 +15,17 @@ const Aerospace = () => {
   return (
     <div>
         <HeaderFour />
+        <HeroOnly
+  serviceName="Power BI / Reporting Consulting"
+  title="The new era of AI-powered business"
+  highlightText="Power BI"
+  subtitle="Turn data into decisions with Power BI experts."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/about/about-banner-img.avif"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
+  ]}
+/>
 
         <BannerSection
             bgImage="/assets/img/industries/aerospace/aero-hero.jpg"

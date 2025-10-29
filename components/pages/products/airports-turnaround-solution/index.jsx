@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroOnly from "@/components/data/industries/banner";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
 import WhySection from "@/components/data/services/WhySection";
@@ -15,24 +15,29 @@ const Aerospace = () => {
   return (
     <div>
         <HeaderFour />
-
-        <BannerSection
-            bgImage="/assets/img/industries/aerospace/aero-hero.jpg"
-            icon="/assets/img/main-product/airplane.png"
-            title="Airports Turnaround Solution"
-            borderColorStart="#D7E8FF"
-            borderColorEnd="#2374FF"
-        />
+        <HeroOnly
+  serviceName="Airports Turnaround Solution"
+  title="Smart Solutions for Faster Turnarounds"
+  highlightText="Turnaround Optimization"
+  subtitle="Streamline ground operations, reduce delays, and enhance efficiency across every flight movement."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/industries/aerospace/turn-around-hero.png"
+  heroButtons={[
+    { label: "Request Demo", href: "/contact" },
+  ]}
+/>
+        
         
         
         <SoftwareSolutionsSection
-            title={`Revolutionize Airport Operations with Real-Time Turnaround Management`}
-            paragraphs={[
-            "Novum’s Airports Turnaround Solution is a smart, AI-driven platform that streamlines every phase of aircraft turnaround — from touchdown to takeoff. Designed for airport authorities, airlines, and ground handlers, this solution enables real-time tracking, centralized dashboards, and actionable insights to improve on-time performance (OTP) and reduce operational costs.",
-            ]}
-            imageSrc="/assets/img/industries/aerospace/aero-2.jpg"
-            altText="Airport Turnaround Solutions"
-        />
+  title={`Smarter Airport Turnaround Management`}
+  paragraphs={[
+    "Novum’s Airports Turnaround Solution is an intelligent, AI-powered platform that optimizes every stage of aircraft turnaround from touchdown to takeoff. Built for airport authorities, airlines, and ground handling teams, it provides real-time visibility, automated alerts, and centralized dashboards to ensure smooth coordination across all stakeholders.",
+    "By leveraging predictive analytics and digital process automation, the system helps improve on-time performance (OTP), minimize idle time, and reduce operational costs, driving greater reliability and efficiency across airport operations."
+  ]}
+  imageSrc="/assets/img/industries/aerospace/azerbaijan.png"
+  altText="Airport Turnaround Solutions"
+/>
         
 
 <section className="position-relative overflow-hidden py-5">
@@ -103,28 +108,13 @@ const Aerospace = () => {
           </div>
         </div>
 
-        <div className="d-flex">
-          <div className="me-3">
-            <div
-              className="bg-base-color text-white rounded-circle d-flex align-items-center justify-content-center"
-              style={{ width: 40, height: 40 }}
-            >
-              <i className="bi bi-people"></i>
-            </div>
-          </div>
-          <div>
-            <h6 className="fw-semibold mb-1">Collaboration Boost</h6>
-            <p className="mb-0">
-              Keep airlines, handlers, and airport authorities in sync in real time.
-            </p>
-          </div>
-        </div>
+       
       </div>
 
       {/* Right Image */}
       <div className="col-lg-5 text-center">
         <img
-          src="/assets/img/main-product/aero-1.png"
+          src="/assets/img/industries/aerospace/aero-2.jpg"
           alt="Airport Solutions"
           className="img-fluid rounded shadow-lg"
         />
