@@ -77,16 +77,7 @@ const ResponsiveMenu = () => {
                     <li><Link href="/products/face-recognition-detection">Face Recognition & Detection</Link></li>
                     <li><Link href="/products/commodity-bidding-platform">Commodity Bidding Platform</Link></li>
 
-                    {/* By Industry or Business Function */}
-                    <li className="menu-group-heading">
-                     By Industry or Business Function
-                    </li>
-                    <li><Link href="/industries/pharmaceutical-industry">Healthcare & Pharma</Link></li>
-                    <li><Link href="/industries/food-retail-distribution">Retail & Distribution</Link></li>
-                    <li><Link href="/industries/agriculture">Manufacturing & Agriculture</Link></li>
-                    <li><Link href="/industries/government">Government & Public Sector</Link></li>
-                    <li><Link href="/industries/natural-resources">Oil & Gas / Energy</Link></li>
-                    <li><Link href="/industries/aerospace-transportation">Transportation & Aviation</Link></li>
+                    
                 </ul>
                 <a
                     className={`mean-expand ${activeIcon("products")}`}

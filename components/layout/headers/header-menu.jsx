@@ -56,20 +56,15 @@ const productItems = [
       { label: 'Airport Turnaround Solution', href: '/products/airports-turnaround-solution' },
       { label: 'NES (Novum Entrance System)', href: '/products/nes-novum-entrance-system' },
       { label: 'OCR Certification Directory', href: '/products/ocr-certification-directory' },
-      { label: 'Face Recognition & Detection', href: '/products/face-recognition-and-detection' },
-      { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding-platform' },
+      
     ],
   },
   {
     heading: 'By Industry or Business Function',
    
     links: [
-      { label: 'Healthcare & Pharma', href: '/industries/pharmaceutical-industry' },
-      { label: 'Retail & Distribution', href: '/industries/food-retail-distribution' },
-      { label: 'Manufacturing & Agriculture', href: '/industries/agriculture' },
-      { label: 'Government & Public Sector', href: '/industries/government' },
-      { label: 'Oil & Gas / Energy', href: '/industries/natural-resources' },
-      { label: 'Transportation & Aviation', href: '/industries/aerospace-transportation' },
+      { label: 'Face Recognition & Detection', href: '/products/face-recognition-and-detection' },
+      { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding-platform' },
     ],
   },
   {
@@ -140,67 +135,89 @@ const MainMenu = () => {
       </li>
 
       {/* Products Mega Menu */}
-      <li className="menu-item-has-children mega-menu" ref={productsRef}>
-        <a
-          href="#"
-          onClick={e => {
-            e.preventDefault();
-            setOpenMenu(openMenu === 'products' ? null : 'products');
-          }}
-        >
-          Products <i className="bi bi-chevron-down"></i>
-        </a>
-        <div className={`mega-dropdown ${openMenu === 'products' ? 'open' : ''}`}>
-          <div
-            className="mega-content"
-            style={{ gridTemplateColumns: `repeat(${productCols}, 1fr)` }}
-          >
-            {productItems.map((col, i) => {
-              if (i === 2) {
-                return (
-                  <div key={i} className="mega-col">
-                    <div className="cta-card-img position-relative overflow-hidden rounded-4 h-100 text-white">
-                      <img
-                        src="/assets/img/banner/banner-three-2.png"
-                        alt="CTA Background"
-                        className="w-100 h-100 object-fit-cover"
-                        data-no-retina=""
-                      />
-                      <div className="cta-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-8">
-                        <div>
-                          <h5 className="fw-semibold mb-2">Need help choosing?</h5>
-                          <p className="small mb-4 mt-4">
-                            Our team can guide you to the right service based on your business needs. Let’s talk today.
-                          </p>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn btn-yellow btn-sm rounded-pill mt-auto w-100"
-                          onClick={() => window.location.href = '/contact'}
-                        >
-                          Talk to an Expert
-                        </button>
-                      </div>
-                    </div>
+<li className="menu-item-has-children mega-menu" ref={productsRef}>
+  <a
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      setOpenMenu(openMenu === "products" ? null : "products");
+    }}
+  >
+    Products <i className="bi bi-chevron-down"></i>
+  </a>
+  <div className={`mega-dropdown ${openMenu === "products" ? "open" : ""}`}>
+    <div
+      className="mega-content"
+      style={{ gridTemplateColumns: `repeat(${productCols}, 1fr)` }}
+    >
+      {productItems.map((col, i) => {
+        if (i === 2) {
+          return (
+            <div key={i} className="mega-col">
+              <div className="cta-card-img position-relative overflow-hidden rounded-4 h-100 text-white">
+                <img
+                  src="/assets/img/banner/banner-three-2.png"
+                  alt="CTA Background"
+                  className="w-100 h-100 object-fit-cover"
+                  data-no-retina=""
+                />
+                <div className="cta-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-8">
+                  <div>
+                    <h5 className="fw-semibold mb-2">Need help choosing?</h5>
+                    <p className="small mb-4 mt-4">
+                      Our team can guide you to the right service based on your
+                      business needs. Let’s talk today.
+                    </p>
                   </div>
-                );
-              }
-              return (
-                <div key={i} className="mega-col">
-                  <h4><i className={`${col.icon} me-2`} />{col.heading}</h4>
-                  <ul>
-                    {col.links.map((link, j) => (
-                      <li key={j}>
-                        <Link href={link.href}>{link.label}</Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <button
+                    type="button"
+                    className="btn btn-yellow btn-sm rounded-pill mt-auto w-100"
+                    onClick={() => (window.location.href = "/contact")}
+                  >
+                    Talk to an Expert
+                  </button>
                 </div>
-              );
-            })}
+              </div>
+            </div>
+          );
+        }
+
+        return (
+          <div key={i} className="mega-col">
+            {/* ✅ Text hidden but border remains */}
+            <h4
+              className={i === 1 ? "ghost-heading" : ""}
+            >
+              <span>{col.heading}</span>
+            </h4>
+
+            <ul>
+              {col.links.map((link, j) => (
+                <li key={j}>
+                  <Link href={link.href}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </li>
+        );
+      })}
+    </div>
+  </div>
+
+  {/* ✅ Scoped CSS Fix */}
+  <style jsx>{`
+    /* Make only the text invisible, keep border visible */
+    .mega-col .ghost-heading {
+      border-bottom: 1px solid #dee2e6 !important;
+      position: relative;
+    }
+
+    .mega-col .ghost-heading span {
+      opacity: 0; /* hides text only */
+    }
+  `}</style>
+</li>
+
 
       {/* Resources */}
       <li className="menu-item-has-children">

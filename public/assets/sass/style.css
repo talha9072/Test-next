@@ -4173,7 +4173,7 @@ Responsive Menu Css
 }
 
 /* Dark gradient overlay  */
-.dark-overlay {
+/* .dark-overlay {
   position: absolute;
   inset: 0;
   z-index: 5;
@@ -4201,7 +4201,7 @@ Responsive Menu Css
     endColorstr="#FFFFFF",
     GradientType=0
   );
-}
+} */
 
 /* Banner Content */
 .banner-content {
