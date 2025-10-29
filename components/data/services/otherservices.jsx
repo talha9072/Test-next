@@ -1,10 +1,12 @@
+// components/pages/homes/home-4/other-services.jsx
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 export default function OtherServices({
   id,
@@ -13,13 +15,13 @@ export default function OtherServices({
   description,
   services = [],
 }) {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-  const [navReady, setNavReady] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setNavReady(true);
+    setIsMounted(true);
   }, []);
+
+  if (!isMounted) return null;
 
   return (
     <section className="services py-5 bg-light" id={id}>
@@ -42,71 +44,56 @@ export default function OtherServices({
           )}
         </div>
 
-        {/* Swiper Slider */}
-        {navReady && (
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-            }}
-            breakpoints={{
-              576: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              992: { slidesPerView: 3 },
-            }}
-          >
-            {services.map((svc, i) => (
-              <SwiperSlide key={i}>
-                <a
-                  className="card p-2 h-100"
-                  href={svc.link}
-                  style={{
-                    "--card-gradient": svc.gradient || "transparent",
-                  }}
-                >
-                  <div className="card-body text-start d-flex flex-column">
-                    {svc.imgSrc && (
-                      <img
-                        src={svc.imgSrc}
-                        alt={svc.title}
-                        width={64}
-                        height={64}
-                        loading="lazy"
-                      />
-                    )}
-                    <h3 className="card-title mt-3">{svc.title}</h3>
-                    <p className="card-text flex-grow-1">{svc.description}</p>
-                  </div>
-                </a>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
-
-        {/* Arrows */}
-        <div className="d-flex justify-content-center gap-4 mt-4">
-          <button ref={prevRef} className="btn btn-outline-dark rounded-circle">
-            <i className="fa-solid fa-chevron-left"></i>
-          </button>
-          <button ref={nextRef} className="btn btn-outline-dark rounded-circle">
-            <i className="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
+        {/* Swiper Slider with Pagination */}
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            576: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+          }}
+          className="services-swiper"
+        >
+          {services.map((svc, i) => (
+            <SwiperSlide key={i}>
+              <a
+                className="card p-2 h-100"
+                href={svc.link}
+                style={{
+                  "--card-gradient": svc.gradient || "transparent",
+                }}
+              >
+                <div className="card-body text-start d-flex flex-column">
+                  {svc.imgSrc && (
+                    <img
+                      src={svc.imgSrc}
+                      alt={svc.title}
+                      width={64}
+                      height={64}
+                      loading="lazy"
+                    />
+                  )}
+                  <h3 className="card-title mt-3">{svc.title}</h3>
+                  <p className="card-text flex-grow-1">{svc.description}</p>
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
-      <style jsx>{`
+      <style jsx global>{`
+        /* === Card styling === */
         .services .card {
           position: relative;
           border: none;
@@ -143,6 +130,33 @@ export default function OtherServices({
           height: 60px;
           margin-bottom: 10px;
         }
+
+        /* === Pagination Styling (rectangle bars) === */
+        .services-swiper .swiper-pagination {
+          position: relative !important;
+          bottom: 0 !important;
+          text-align: center !important;
+        }
+
+        .services-swiper .swiper-pagination-bullet {
+          background: grey !important;
+          opacity: 1 !important;
+          width: 30px !important;
+          height: 3px !important;
+          border-radius: 4px !important;
+          margin: 0 5px !important;
+          transition: all 0.3s ease !important;
+        }
+
+        .services-swiper .swiper-pagination-bullet-active {
+          background: var(--primary-color-1) !important;
+        }
+
+        @media (max-width: 576px) {
+          .services-swiper .swiper-pagination-bullet {
+            width: 20px !important;
+          }
+        }
       `}</style>
     </section>
   );
@@ -159,7 +173,7 @@ OtherServices.propTypes = {
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       link: PropTypes.string,
-      gradient: PropTypes.string, // ✅ new prop
+      gradient: PropTypes.string,
     })
   ),
 };

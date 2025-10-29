@@ -44,7 +44,7 @@ export default function ImplementSection({
           .benefits-swiper .swiper-pagination {
             position: relative !important;
             bottom: 0 !important;
-            margin-top: 30px !important;
+            margin-top: 10px !important;
             text-align: center !important;
           }
 
