@@ -196,6 +196,7 @@ body .container {
   --color-5: #0c1434;
   --color-6: #864af942;
   --color-7: #07204D;
+  --offwhite:#f6f6f6;
   --border-color-1: #E7E7E7;
   --border-color-2: #E9E9E8;
   --border-color-3: rgba(19, 19, 19, 0.1);
@@ -218,6 +219,9 @@ body .container {
 }
 .bg-grey{
   background-color: var(--color-1) !important;
+}
+.offwhite{
+  background-color: var(--offwhite) !important;
 }
 .w-80{
 width: 80%;
