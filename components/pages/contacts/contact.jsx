@@ -1,14 +1,21 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BreadCrumb from "../common/breadcrumb";
 import Footer from "@/components/layout/footers/footer";
+import HeroContactSection from "@/components/layout/hero-section";
 // import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const ContactUs = () => {
   return (
     <>
       <HeaderFour />
-      <BreadCrumb title="Contact Us" innerTitle="Contact Us" />
+
+      <HeroContactSection
+  title="Get in Touch"
+  line1="We’re ready to collaborate and turn your ideas into impact."
+  line2="Contact our team to start your next project today."
+  bgColor="var(--primary-color-1)"
+  paddingY="50px"
+/>
 
       {/* === Contact Novum (minimal form + Dubai/Baku info) === */}
 <section

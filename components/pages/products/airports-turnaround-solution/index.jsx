@@ -7,6 +7,7 @@ import AirportStakeholdersSection from "@/components/data/industries/tabs";
 import SmartTurnaroundCards from "@/components/data/industries/cards";
 import WhySection from "@/components/data/services/WhySection";
 import CTA from '@/components/data/cta';
+import ContactWidget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
@@ -194,6 +195,8 @@ const Aerospace = () => {
   ]}
 />
        
+
+       <ContactWidget />
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"

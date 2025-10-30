@@ -1,7 +1,8 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BreadCrumb from "../common/breadcrumb";
+import HeroIndustriesSection from "@/components/layout/hero-section";
 import CTA from '@/components/data/cta';
+import ContactWidget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
@@ -11,17 +12,23 @@ const Health = () => {
   return (
     <div>
         <HeaderFour />
-        <BreadCrumb title="Industries" innerTitle="Contact Us" />
+        <HeroIndustriesSection
+  title="Industries & Business Functions"
+  line1="Modern data and AI solutions for every sector."
+  line2="Driving performance and innovation across global industries."
+  bgColor="var(--primary-color-1)"
+/>
+        
         <section className="services about__four py-5">
   <div className="container">
     {/* Header */}
     <div className="row gy-4 pb-4">
       <div className="col-12">
         <h2 className="fw-700 text-dark-gray ls-minus-1px mb-3">
-          Industries We Serve &amp; Business Functions
+          Industries We Serve
         </h2>
         <p className="mb-0">
-          Novum delivers data, AI, and cloud solutions for Healthcare &amp; Pharma, Retail &amp; Distribution, Manufacturing &amp; Agriculture, Government &amp; Public Sector, Oil &amp; Gas / Energy, and Transportation &amp; Aviation—modernizing operations with Microsoft Azure, Power BI, and Dynamics 365 to drive measurable outcomes.
+          Novum delivers data, AI, and cloud solutions for Healthcare &amp; Pharma, Retail &amp; Distribution, Manufacturing &amp; Agriculture, Government &amp; Public Sector, Oil &amp; Gas / Energy, and Transportation &amp; Aviation modernizing operations with Microsoft Azure, Power BI, and Dynamics 365 to drive measurable outcomes.
         </p>
       </div>
     </div>
@@ -161,13 +168,14 @@ const Health = () => {
         
 
 
+
+<ContactWidget />
        
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
-                        heading="Ready to Transform Your Pharmaceutical Operations?"
-                        subText="Let’s build a smarter, more agile digital foundation for your pharmaceutical business.
- Book a consultation with Novum’s pharma solutions experts."
+                        heading="Need a solution? Request a call!"
+                        subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
