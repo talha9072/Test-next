@@ -41,7 +41,29 @@ const products = [
       'Flexible SaaS platform for digital trading. Create product listings, set approval flows, monitor activity, and access real-time analytics.',
     img: '/assets/img/products/bidding.webp',
   },
+  {
+    href: '/products/d365-automations',
+    title: 'D365 Automations',
+    description:
+      'Enhance Microsoft Dynamics 365 workflows with intelligent automation. Simplify data entry, approvals, and reporting for faster results.',
+    img: '/assets/img/products/ds365.png',
+  },
+  {
+    href: '/products/ess-employee-self-service',
+    title: 'ESS - Employee Self Service',
+    description:
+      'A secure, user-friendly portal that empowers employees to manage their profiles, leave requests, and HR information anytime, anywhere.',
+    img: '/assets/img/products/ess.webp',
+  },
+  {
+    href: '/products/airport-revenue-management-isv',
+    title: 'Airport Revenue Management ISV',
+    description:
+      'Comprehensive revenue management tool designed for airports to optimize billing, contracts, and income forecasting through automation.',
+    img: '/assets/img/products/airport-revenue.webp',
+  },
 ];
+
 
 const ProductsCarousel = () => (
   <section className="background-position-center-top overflow-hidden py-5">

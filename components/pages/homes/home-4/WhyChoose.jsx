@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 
 const counters = [
-  { number: 2200, suffix: "+", label: "Certified Experts", icon: "bi-people-fill" },
-  { number: 10000, suffix: "+", label: "Technical Certifications", icon: "bi-award-fill" },
-  { number: 15, suffix: "+", label: "Years Experience", icon: "bi-trophy-fill" },
-  { number: 6000, suffix: "+", label: "AI Certifications", icon: "bi-cpu-fill" },
+  { number: 40, suffix: "+", label: "Multi-Industry Implementations", icon: "bi-building-check" },
+  { number: 8, suffix: "+", label: "Years of history of enhancing and redefining. Analytics/BI, ERP and ISV", icon: "bi-award-fill" },
+  { number: 100, suffix: "%", label: "Certified Human Capital in multiple competencies", icon: "bi-emoji-smile-fill" },
+  { number: 35, suffix: "+", label: "Certified Human Capital in multiple competencies", icon: "bi-mortarboard-fill" },
 ];
 
 // Counter animation component
@@ -46,11 +46,10 @@ export default function ModernCounterSection() {
           {/* Left Column */}
           <div className="col-lg-5 mb-4 mb-lg-0">
             <h2 className="fw-bold mb-4 text-white">
-              Decades of expertise <br /> with thousands of experts
+              Trusted expertise shaped by <br /> years of innovation and global talent
             </h2>
             <p className="">
-              Expert guidance so you can maximize <br /> the benefits of modern
-              cloud.
+              Novum is a trusted partner in data analytics and BI, ERP (Dynamics 365), and Microsoft Cloud solutions with proven expertise in implementing, optimizing, and supporting your digital transformation.
             </p>
           </div>
 

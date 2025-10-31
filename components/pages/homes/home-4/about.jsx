@@ -32,23 +32,18 @@ const About = () => {
             <div className="col-xl-6 col-lg-6 col-12">
               <div className="about__four-content">
                 <span className="subtitle-one">About us</span>
-                <h2 className="mb-4">Trusted by Leading Organizations Across Sectors</h2>
+                {/* <h2 className="mb-4">Trusted by Leading Organizations Across Sectors</h2> */}
                 <p className="mb-2">
-                  From aviation and petroleum to finance, education, and
-                  non-profits Novum delivers reliable, scalable digital
-                  solutions for complex business environments. Our clients value
-                  our ability to solve operational challenges with custom-built
-                  platforms, AI integration, and cloud-native systems.
+                  As the business landscape evolves and market demands shift, companies face increasingly complex challenges that call for advanced digital solutions. Novum offers a comprehensive suite of services including data warehousing, big data visualizations, custom software development, and enterprise resource planning (ERP) systems designed to enhance decision-making, optimize processes, and drive business value within your organization.
                 </p>
                 <p className="mb-2">
-                  As the business landscape evolves and market demands shift,
-                  companies face increasingly complex challenges that call for
-                  advanced digital solutions. Novum offers a comprehensive suite
-                  of services—including data warehousing, big data
-                  visualizations, custom software development, and enterprise
-                  resource planning (ERP) systems—designed to enhance
-                  decision-making, optimize processes, and drive business value
-                  within your organization.
+                  By elevating management to a data-driven approach, we enable structured workflows and increased organizational efficiency. As a trusted Microsoft Solution Partner across multiple areas, we support SMBs and enterprise-level clients by implementing key Microsoft Cloud solutions in Data & AI, Business Applications, Apps and Innovation, and Modern Desktop.
+With a strong market presence and extensive technical expertise, we provide high-value services, including data analytics, business process consulting in manufacturing, application development, crowd modeling, and demand planning, leveraging the latest in IoT and AI technologies. We have supported digital transformations in industries such as Consumer Goods, Health & Pharma, Telecommunications, Agriculture, Construction, Oil & Gas, and Government sectors, delivering impactful results across diverse sectors. 
+
+                </p>
+                <p className="mb-2"style={{ color: "#0D2B75" }}>
+                  OUR SLOGAN REFLECTS GOALS, BELIEFS, KNOWLEDGE AND TRANSFORMATION THAT WE BRING INTO ORGANIZATIONS. WHAT WE DO CREATES LONG-LASTING VALUE.
+
                 </p>
                 
               </div>
