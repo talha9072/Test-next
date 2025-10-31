@@ -15,7 +15,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const PowerBI = () => {
+const Datawarehouse = () => {
   return (
     <div>
         <HeaderFour />
@@ -263,4 +263,4 @@ const PowerBI = () => {
   );
 };
 
-export default PowerBI;
+export default Datawarehouse;
