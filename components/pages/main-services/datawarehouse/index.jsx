@@ -84,7 +84,7 @@ const Datawarehouse = () => {
   id="implement"
   subtitle="Benefits"
   title="How a Modern Data Warehouse Transforms Business Intelligence"
-  description="Implementing a modern data warehouse goes beyond storage — it reshapes how organizations collect, access, and act on information. NOVUM’s architecture empowers teams with unified data visibility, faster analytics, and reliable performance at scale."
+  description="Implementing a modern data warehouse goes beyond storage it reshapes how organizations collect, access, and act on information. NOVUM’s architecture empowers teams with unified data visibility, faster analytics, and reliable performance at scale."
   items={[
     {
       img: "/assets/img/datawarehouse/unified-data.webp",

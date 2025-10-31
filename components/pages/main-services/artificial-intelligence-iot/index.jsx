@@ -15,7 +15,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const PowerBI = () => {
+const Ai = () => {
   return (
     <div>
         <HeaderFour />
@@ -52,7 +52,7 @@ const PowerBI = () => {
     </>
   }
   paragraphs={[
-    "Artificial Intelligence and the Internet of Things are reshaping how businesses operate — automating tasks, predicting outcomes, and enabling real-time decision-making across every department.",
+    "Artificial Intelligence and the Internet of Things are reshaping how businesses operate automating tasks, predicting outcomes, and enabling real-time decision-making across every department.",
     "By connecting devices, sensors, and data through intelligent systems, organizations can unlock valuable insights, reduce downtime, and enhance productivity with smarter workflows.",
     "NOVUM’s AI and IoT solutions empower enterprises to move from reactive to predictive operations — driving efficiency, innovation, and competitive advantage in a connected world.",
   ]}
@@ -103,7 +103,7 @@ const PowerBI = () => {
   id="implement"
   subtitle="Benefits"
   title="How AI and IoT Empower Intelligent and Connected Operations"
-  description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation — toward predictive, adaptive, and self-optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
+  description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation toward predictive, adaptive, and self-optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
   items={[
     {
       img: "/assets/img/ai/predective.webp",
@@ -289,4 +289,4 @@ const PowerBI = () => {
   );
 };
 
-export default PowerBI;
+export default Ai;

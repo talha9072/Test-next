@@ -1,247 +1,278 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import Microsoft365Section from "@/components/data/services/Microsoft365Section";
-import Microsoft365BusinessPlans from "@/components/data/services/Microsoft365BusinessPlans";
-import EnterprisePlans from "@/components/data/services/EnterprisePlans";
-import PlansComparison from "@/components/data/services/PlansComparison";
+import MainServices from "@/components/data/services/main-services";
+import ImplementSection from "@/components/data/services/implement";
+import Whyus from "@/components/data/services/whyus";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
-// Comparison data array (with all apps included)
-const comparisonPlans = [
-  {
-    title: 'Microsoft 365 E3',
-    features: [
-      'Microsoft 365 apps for desktop and mobile',
-      'Windows for Enterprise',
-      'Chat, meetings, and file sharing',
-      '1 TB of cloud storage',
-      'Security and identity management',
-    ],
-    apps: [
-      { src: '/assets/img/azure/word.png',               alt: 'Word' },
-      { src: '/assets/img/azure/excel.png',              alt: 'Excel' },
-      { src: '/assets/img/azure/powerpoint.png',         alt: 'PowerPoint' },
-      { src: '/assets/img/azure/windows.png',            alt: 'Windows' },
-      { src: '/assets/img/azure/teams.png',              alt: 'Teams' },
-      { src: '/assets/img/azure/outlook.png',            alt: 'Outlook' },
-      { src: '/assets/img/azure/exchange.png',           alt: 'Exchange' },
-      { src: '/assets/img/azure/sharepoint.png',         alt: 'Sharepoint' },
-      { src: '/assets/img/azure/onenote.png',            alt: 'OneNote' },
-      { src: '/assets/img/azure/onedrive.png',           alt: 'OneDrive' },
-      { src: '/assets/img/azure/microsoftstream.png',    alt: 'Microsoft Stream' },
-      { src: '/assets/img/azure/microsoft-bookings.png', alt: 'Microsoft Booking' },
-      { src: '/assets/img/azure/microsoft-publisher.png',alt: 'Microsoft Publisher (PC only)' },
-      { src: '/assets/img/azure/microsoft-access.png',   alt: 'Microsoft Access (PC only)' },
-      { src: '/assets/img/azure/viva-connections.png',   alt: 'Viva Connections' },
-      { src: '/assets/img/azure/viva-engage.png',        alt: 'Viva Engage' },
-      { src: '/assets/img/azure/viva-insights.png',      alt: 'Viva Insights' },
-      { src: '/assets/img/azure/viva-lists.png',         alt: 'Microsoft Lists' },
-      { src: '/assets/img/azure/forms.png',              alt: 'Microsoft Forms' },
-      { src: '/assets/img/azure/sway.png',               alt: 'Sway' },
-      { src: '/assets/img/azure/visio.png',              alt: 'Visio' },
-      { src: '/assets/img/azure/power-apps.png',         alt: 'Power Apps' },
-      { src: '/assets/img/azure/power-automate.png',     alt: 'Power Automate' },
-      { src: '/assets/img/azure/virtual-agents.png',     alt: 'Power Virtual Agents' },
-      { src: '/assets/img/azure/planner.png',            alt: 'Microsoft Planner' },
-      { src: '/assets/img/azure/todo.png',               alt: 'Microsoft To-Do' },
-    ],
-    ctaText: 'Contact Sales',
-    ctaHref: '#',
-  },
-  {
-    title: 'Microsoft 365 E5',
-    features: [
-      'Everything in E3, plus',
-      'Advanced security and compliance',
-      'Audio conferencing for up to 1,000 attendees',
-    ],
-    apps: [
-      { src: '/assets/img/azure/word.png',               alt: 'Word' },
-      { src: '/assets/img/azure/excel.png',              alt: 'Excel' },
-      { src: '/assets/img/azure/powerpoint.png',         alt: 'PowerPoint' },
-      { src: '/assets/img/azure/windows.png',            alt: 'Windows' },
-      { src: '/assets/img/azure/teams.png',              alt: 'Teams' },
-      { src: '/assets/img/azure/outlook.png',            alt: 'Outlook' },
-      { src: '/assets/img/azure/exchange.png',           alt: 'Exchange' },
-      { src: '/assets/img/azure/sharepoint.png',         alt: 'Sharepoint' },
-      { src: '/assets/img/azure/onenote.png',            alt: 'OneNote' },
-      { src: '/assets/img/azure/onedrive.png',           alt: 'OneDrive' },
-      { src: '/assets/img/azure/microsoftstream.png',    alt: 'Microsoft Stream' },
-      { src: '/assets/img/azure/microsoft-bookings.png', alt: 'Microsoft Booking' },
-      { src: '/assets/img/azure/microsoft-publisher.png',alt: 'Microsoft Publisher (PC only)' },
-      { src: '/assets/img/azure/microsoft-access.png',   alt: 'Microsoft Access (PC only)' },
-      { src: '/assets/img/azure/viva-connections.png',   alt: 'Viva Connections' },
-      { src: '/assets/img/azure/viva-engage.png',        alt: 'Viva Engage' },
-      { src: '/assets/img/azure/viva-insights.png',      alt: 'Viva Insights' },
-      { src: '/assets/img/azure/viva-lists.png',         alt: 'Microsoft Lists' },
-      { src: '/assets/img/azure/forms.png',              alt: 'Microsoft Forms' },
-      { src: '/assets/img/azure/sway.png',               alt: 'Sway' },
-      { src: '/assets/img/azure/visio.png',              alt: 'Visio' },
-      { src: '/assets/img/azure/power-apps.png',         alt: 'Power Apps' },
-      { src: '/assets/img/azure/power-automate.png',     alt: 'Power Automate' },
-      { src: '/assets/img/azure/virtual-agents.png',     alt: 'Power Virtual Agents' },
-      { src: '/assets/img/azure/planner.png',            alt: 'Microsoft Planner' },
-      { src: '/assets/img/azure/todo.png',               alt: 'Microsoft To-Do' },
-    ],
-    ctaText: 'Contact Sales',
-    ctaHref: '#',
-  },
-  {
-    title: 'Microsoft 365 E1',
-    features: [
-      'Web-only apps and services',
-      'Includes Teams, Outlook, and OneDrive',
-      'Ideal for frontline & remote workers',
-    ],
-    apps: [
-      { src: '/assets/img/azure/word.png',               alt: 'Word' },
-      { src: '/assets/img/azure/excel.png',              alt: 'Excel' },
-      { src: '/assets/img/azure/powerpoint.png',         alt: 'PowerPoint' },
-      { src: '/assets/img/azure/windows.png',            alt: 'Windows' },
-      { src: '/assets/img/azure/teams.png',              alt: 'Teams' },
-      { src: '/assets/img/azure/outlook.png',            alt: 'Outlook' },
-      { src: '/assets/img/azure/exchange.png',           alt: 'Exchange' },
-      { src: '/assets/img/azure/sharepoint.png',         alt: 'Sharepoint' },
-      { src: '/assets/img/azure/onenote.png',            alt: 'OneNote' },
-      { src: '/assets/img/azure/onedrive.png',           alt: 'OneDrive' },
-      { src: '/assets/img/azure/microsoftstream.png',    alt: 'Microsoft Stream' },
-      { src: '/assets/img/azure/microsoft-bookings.png', alt: 'Microsoft Booking' },
-      { src: '/assets/img/azure/viva-engage.png',        alt: 'Viva Engage' },
-      { src: '/assets/img/azure/viva-insights.png',      alt: 'Viva Insights' },
-      { src: '/assets/img/azure/viva-lists.png',         alt: 'Microsoft Lists' },
-      { src: '/assets/img/azure/forms.png',              alt: 'Microsoft Forms' },
-      { src: '/assets/img/azure/sway.png',               alt: 'Sway' },
-      { src: '/assets/img/azure/visio.png',              alt: 'Visio' },
-      { src: '/assets/img/azure/power-apps.png',         alt: 'Power Apps' },
-      { src: '/assets/img/azure/power-automate.png',     alt: 'Power Automate' },
-      { src: '/assets/img/azure/virtual-agents.png',     alt: 'Power Virtual Agents' },
-      { src: '/assets/img/azure/planner.png',            alt: 'Microsoft Planner' },
-      { src: '/assets/img/azure/todo.png',               alt: 'Microsoft To-Do' },
-    ],
-    ctaText: 'Contact Sales',
-    ctaHref: '#',
-  },
-];
 
-const Azure = () => {
+
+
+const Ai = () => {
   return (
     <div>
         <HeaderFour />
+        {/* Hero Section */}
 
-        <BannerSection
-            bgImage="/assets/img/azure/azure-hero.png"
-            icon="https://novum-ae.netlify.app/images/service-cards/azure.svg"
-            title="Microsoft Azure Solutions"
-            borderColorStart="#32ADE9"
-            borderColorEnd="#095EAA"
-        />
+      <HeroWithRibbon
+  serviceName="Microsoft Azure Solutions"
+  title="Empower Your Business with the Cloud"
+  highlightText="Azure"
+  subtitle="Accelerate innovation, enhance scalability, and strengthen security with NOVUM’s end-to-end Microsoft Azure cloud solutions built for agility, performance, and growth."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/azure/azure-hero.webp"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Implementation", href: "#implement" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
+  ]}
+/>
 
-        <SoftwareSolutionsSection
-                    title={`Automate, Optimize,and Innovate`}
-                    paragraphs={[
-                    "At NOVUM, we design intelligent systems that transform the way businesses operate. Using artificial intelligence and IoT technologies, we automate workflows, monitor environments, and unlock insights in real time.",
-                    "Our solutions are built for scalability and aligned with your organizational goals. Whether integrating machine learning into customer journeys or enabling IoT across physical locations, we help you gain control, visibility, and performance where it matters most."
-                    ]}
-                    imageSrc="/assets/img/azure/azure-1.png"
-                    altText="Azure"
-                />
+ 
 
-        <Microsoft365Section
-      badgeTitle="Microsoft 365"
-      badgeText="Microsoft 365 is a suite of apps that help you stay connected and get things done."
-      plans={[
-        {
-          title: 'Microsoft 365 Business',
-          backgroundImage: '/assets/img/azure/bg-2.png',
-        },
-        {
-          title: 'Microsoft 365 Enterprise',
-          backgroundImage: '/assets/img/azure/bg-1.png',
-        },
-      ]}
-      diffText="The primary difference between the two plans is the number of users offered. Microsoft 365 Business can be used and shared with up to 300 users, whereas Microsoft 365 Enterprise can be shared with an unlimited number of users."
-      subtitle="Novum Offers You Migration from Different Platforms to Microsoft 365"
-      migrations={[
-        {
-          number: '01',
-          title: 'Staged Migration',
-          text: `Office 365 staged migration moves everything over in batches.
-It transitions all of your resource mailboxes and existing users from Exchange 2003 or 2007 to Exchange Online.`,
-        },
-        {
-          number: '02',
-          title: 'Cutover Migration',
-          text: `A cutover migration is an immediate transition from an on-premises Exchange system to Office 365.
-All your resources are migrated at once, including mailboxes, contacts, and distribution groups.`,
-        },
-        {
-          number: '03',
-          title: 'Hybrid Migration',
-          text: `Allows you to integrate Office 365 with your on-premises Exchange servers and your existing directory services.
-Synchronize and manage user accounts for both environments.`,
-        },
-        {
-          number: '04',
-          title: 'IMAP Migration',
-          text: `IMAP (Internet Message Access Protocol) migration allows you to transition users from Gmail or any other email system that supports IMAP integration to Office 365.`,
-        },
-      ]}
-    />
-    <Microsoft365BusinessPlans
-      badgeTitle="Microsoft 365 Business"
-      plans={[
-        {
-          title: 'Microsoft<br>365 Business Basic',
-          gradient: 'linear-gradient(135deg, #EB5321, #FBB8A2)',
-        },
-        {
-          title: 'Microsoft<br>365 Business Standard',
-          gradient: 'linear-gradient(135deg, #7FBA00, #CDFB6C)',
-        },
-        {
-          title: 'Microsoft<br>365 Business Premium',
-          gradient: 'linear-gradient(135deg, #08A1EF, #CCEEFF)',
-        },
-        {
-          title: 'Microsoft<br>365 Apps',
-          gradient: 'linear-gradient(135deg, #FCBB01, #FFEAAE)',
-        },
-      ]}
-    />
-        <EnterprisePlans
-      badgeTitle="Microsoft 365 Enterprise"
-      cards={[
-        {
-          iconSrc: '/assets/img/azure/bx-lock 1.png',
-          iconAlt: 'Lock Icon',
-          titleHtml: 'Microsoft 365 E3 — Get best-in-class productivity apps combined with core security and compliance capabilities for your enterprise.',
-        },
-        {
-          iconSrc: '/assets/img/azure/bx-check-circle 1.png',
-          iconAlt: 'Check Icon',
-          titleHtml: 'Microsoft 365 E5 — Get best-in-class productivity apps and advanced security, compliance, voice and analytical capabilities for your enterprise.',
-        },
-        {
-          iconSrc: '/assets/img/azure/bx-cloud 1.png',
-          iconAlt: 'Cloud Icon',
-          titleHtml: 'Microsoft 365 F3 — <span class="text-light-purple">Formerly Microsoft 365 F1</span> Empower your frontline workforce with productivity apps and cloud services that allow them to do their best work.',
-        },
-        {
-          iconSrc: '/assets/img/azure/bytesize_download.png',
-          iconAlt: 'Download Icon',
-          titleHtml: 'Download the full enterprise plans comparison table',
-          ctaText: 'Get the full comparison table (PDF)',
-          ctaHref: '/downloads/enterprise-comparison.pdf'
-        }
-      ]}
-    />
 
-{/* Comparison Plans Section */}
-      <PlansComparison plans={comparisonPlans} />
+      <SoftwareSolutionsSection
+  title={
+    <>
+      Why Microsoft Azure Is the Foundation <br />
+      of Modern Cloud Transformation
+    </>
+  }
+  paragraphs={[
+    "Microsoft Azure empowers organizations to move beyond traditional IT infrastructure offering unmatched scalability, reliability, and intelligence in the cloud.",
+    "From data hosting and AI services to security and analytics, Azure enables businesses to innovate faster, optimize operations, and securely connect people, systems, and data across hybrid and multi-cloud environments.",
+    "NOVUM helps enterprises modernize their infrastructure, migrate applications, and implement cloud-native solutions using Azure’s powerful ecosystem driving agility, resilience, and long-term growth.",
+  ]}
+  imageSrc="/assets/img/azure/azure-1.webp"
+  altText="Microsoft Azure Solutions"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
+        
+      <MainServices
+  id="services"
+  subtitle="Microsoft Azure Services"
+  title="Flexible, Secure, and Scalable Cloud Solutions for Modern Enterprises"
+  description="NOVUM helps organizations leverage the full potential of Microsoft Azure by designing, deploying, and managing end-to-end cloud solutions. From infrastructure modernization to AI integration and DevOps automation, our Azure services empower businesses to scale faster, innovate smarter, and stay secure in a connected world."
+  image={{
+    src: "/assets/img/azure/azure-2.webp",
+    alt: "Microsoft Azure Cloud Architecture",
+  }}
+  services={[
+    {
+      title: "Cloud Infrastructure Deployment",
+      desc: "Designing and implementing high-performance virtual networks, servers, and storage solutions on Azure.",
+    },
+    {
+      title: "Migration & Modernization",
+      desc: "Seamlessly moving workloads, databases, and applications from on-premises or other clouds to Microsoft Azure.",
+    },
+    {
+      title: "Azure Data & AI Services",
+      desc: "Leveraging Azure AI, Machine Learning, and Synapse Analytics to deliver actionable insights and automation.",
+    },
+    {
+      title: "Security & Compliance",
+      desc: "Implementing Azure Security Center and Defender tools for identity, threat, and compliance management.",
+    },
+    {
+      title: "DevOps & Automation",
+      desc: "Enhancing delivery pipelines using Azure DevOps, GitHub Actions, and Infrastructure as Code (IaC) best practices.",
+    },
+    {
+      title: "Managed Cloud Operations",
+      desc: "Ongoing optimization, monitoring, and cost management to ensure peak performance and reliability.",
+    },
+  ]}
+/>
+
+
+      <ImplementSection
+  id="implement"
+  subtitle="Benefits"
+  title="How Microsoft Azure Accelerates Digital Transformation"
+  description="Microsoft Azure gives enterprises the flexibility, intelligence, and performance needed to stay ahead in a cloud-first world. NOVUM’s Azure implementations help organizations modernize infrastructure, secure workloads, and enable smarter, data-driven decision-making at scale."
+  items={[
+    {
+      img: "/assets/img/azure/cloud-migration.webp",
+      title: "Seamless Cloud Migration",
+      desc: "Move applications, databases, and workloads to Azure with zero downtime ensuring business performance.",
+    },
+    {
+      img: "/assets/img/azure/multi-cloud.webp",
+      title: "Hybrid & Multi-Cloud Flexibility",
+      desc: "Operate across on-premises and cloud environments effortlessly using Azure Arc and hybrid infrastructure support.",
+    },
+    {
+      img: "/assets/img/azure/azure-ai.webp",
+      title: "AI-Powered Insights",
+      desc: "Leverage Azure AI and Machine Learning services to transform data into predictive, actionable business intelligence.",
+    },
+    {
+      img: "/assets/img/azure/azure-security.webp",
+      title: "Enterprise-Grade Security",
+      desc: "Protect your data and assets with Azure’s built-in identity, compliance, and threat protection frameworks.",
+    },
+    {
+      img: "/assets/img/azure/azure-cost.webp",
+      title: "Cost Optimization & Efficiency",
+      desc: "Reduce infrastructure costs and improve operational efficiency through automated scaling and Azure Cost Management tools.",
+    },
+  ]}
+/>
+   
+<Whyus
+  id="whyus"
+  subtitle="Why Choose Us"
+  title="Why Choose NOVUM as Your Microsoft Azure Partner"
+  description="NOVUM brings years of experience in cloud architecture, migration, and optimization within the Microsoft ecosystem. As a trusted Azure Solutions Partner, we help organizations accelerate innovation, strengthen security, and modernize their infrastructure through intelligent, scalable, and cost-effective cloud solutions."
+  counters={[
+    { value: 35, suffix: "+", label: "Azure Implementations" },
+    { value: 12, suffix: "+", label: "Industries Served" },
+    { value: 100, suffix: "%", label: "Client Satisfaction" },
+    { value: 9, suffix: "+", label: "Years of Cloud Expertise" },
+  ]}
+  features={[
+    {
+      icon: "fa-solid fa-cloud",
+      title: "Certified Azure Expertise",
+      desc: "Our team of Microsoft-certified engineers delivers end-to-end Azure architecture, deployment, and management.",
+    },
+    {
+      icon: "fa-solid fa-shield-halved",
+      title: "Security & Compliance",
+      desc: "Implementing robust identity, governance, and protection frameworks powered by Azure Security Center and Defender.",
+    },
+    {
+      icon: "fa-solid fa-rocket",
+      title: "Scalable Innovation",
+      desc: "Helping enterprises adopt AI, IoT, and hybrid cloud technologies that grow with your business needs.",
+    },
+  ]}
+/>
+
+
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
+
+
+
+      <OtherServices
+  subtitle="Our Expertise"
+  title="Other Services We Provide"
+  description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+  services={[
+    {
+      title: "Software Development",
+      imgSrc: "/assets/img/service-cards/softwaredev.svg",
+      description:
+        "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+      link: "/services/software-development",
+      gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+    },
+    {
+      title: "Power BI Consulting",
+      imgSrc: "/assets/img/service-cards/powerbi.svg",
+      description:
+        "We transform and model data into insights that drive data-driven decisions.",
+      link: "/services/power-bi",
+      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
+    },
+    {
+      title: "Digital Services",
+      imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+      description: "We bring transformative digital outcomes to organizations.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+    },
+    {
+      title: "Data Warehouse",
+      imgSrc: "/assets/img/service-cards/datawarehouse.svg",
+      description:
+        "We consolidate intelligence data from multiple sources to unlock deeper insights.",
+      link: "/services/data-warehouse",
+      gradient: "linear-gradient(90deg, #157569, #71E9B6)",
+    },
+    {
+      title: "Artificial Intelligence & IoT",
+      imgSrc: "/assets/img/service-cards/ai.svg",
+      description:
+        "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+      link: "/services/artificial-intelligence-iot",
+      gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+    },
+    {
+      title: "Microsoft Azure",
+      imgSrc: "/assets/img/service-cards/azure.svg",
+      description: "Swiftly shift your business resources to cloud infrastructure.",
+      link: "/services/azure",
+      gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+    },
+    {
+      title: "Microsoft 365",
+      imgSrc: "/assets/img/service-cards/microsoft365.svg",
+      description: "A suite of apps to help you stay connected and get things done.",
+      link: "/services/microsoft-365-deployment",
+      gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+    },
+    {
+      title: "Dynamics 365",
+      imgSrc: "/assets/img/service-cards/dynamic365.svg",
+      description:
+        "Boost efficiency and customer experiences with an agile business platform.",
+      link: "/services/microsoft-dynamics-365",
+      gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+    },
+    {
+      title: "Sustainability",
+      imgSrc: "/assets/img/service-cards/sustainability.svg",
+      description:
+        "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+      link: "/services/microsoft-sustainability",
+      gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+    },
+    {
+      title: "Copilot",
+      imgSrc: "/assets/img/service-cards/copilot.png",
+      description:
+        "An AI assistant that automates tasks and provides real-time insights.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+    },
+  ]}
+/>
+
+
+<Widget />
+
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
@@ -251,9 +282,11 @@ Synchronize and manage user accounts for both environments.`,
                         buttonHref="/contact"
                     />
 
+                    
+
       <Footer />
     </div>
   );
 };
 
-export default Azure;
+export default Ai;
