@@ -4340,7 +4340,7 @@ Responsive Menu Css
 @media (max-width: 576px) {
   .banner-slider,
   .banner-slide {
-    height: 85vh;
+    height: 90vh;
   }
 
   .btn-group {
