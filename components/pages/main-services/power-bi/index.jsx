@@ -173,14 +173,7 @@ const PowerBI = () => {
       link: "/services/software-development",
       gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
     },
-    {
-      title: "Power BI Consulting",
-      imgSrc: "/assets/img/service-cards/powerbi.svg",
-      description:
-        "We transform and model data into insights that drive data-driven decisions.",
-      link: "/services/power-bi",
-      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
-    },
+    
     {
       title: "Digital Services",
       imgSrc: "/assets/img/service-cards/digitalmarketing.png",

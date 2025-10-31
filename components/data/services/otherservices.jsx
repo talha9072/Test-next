@@ -24,7 +24,7 @@ export default function OtherServices({
   if (!isMounted) return null;
 
   return (
-    <section className="services py-5 bg-light" id={id}>
+    <section className="services py-5 about__four" id={id}>
       <div className="container">
         {/* Heading */}
         <div className="text-start mb-5">
