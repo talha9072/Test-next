@@ -1,357 +1,283 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
-import WhySection from "@/components/data/services/WhySection";
-import CoreCapabilitiesSection from "@/components/data/services/CoreCapabilitiesSection";
+import MainServices from "@/components/data/services/main-services";
+import ImplementSection from "@/components/data/services/implement";
+import Whyus from "@/components/data/services/whyus";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
 
 
-const coreTabs = [
-  {
-    id: 'tab_modular',
-    label: 'Use Modular, Prebuilt Applications',
-    content: {
-      imageSrc: '/assets/img/dynamics365/dynamics-4.webp',
-      imageAlt: 'Use Modular, Prebuilt Applications',
-      title: 'Use Modular, Prebuilt Applications',
-      paragraphs: [
-        'Easily connect Dynamics 365 apps with your current systems and tools to expand capabilities.',
-        <a
-          key="cta-modular"
-          href="https://www.microsoft.com/en/customers/story/814362-siemens-manufacturing-dynamics-365-field-service"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-two mt-4"
-        >
-          Siemens case study <i className="fa-solid fa-arrow-right ms-1"></i>
-        </a>,
-      ],
-    },
-  },
-  {
-    id: 'tab_e2e',
-    label: 'Connect Solutions End to End',
-    content: {
-      imageSrc: '/assets/img/dynamics365/dynamics-5.webp',
-      imageAlt: 'Connect Solutions End to End',
-      title: 'Connect Solutions End to End',
-      paragraphs: [
-        'Link business applications across departments to optimize processes and customer engagement.',
-        <a
-          key="cta-e2e"
-          href="https://www.microsoft.com/en/customers/story/1496198354107568434-tillamook-consumergoods"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-two mt-4"
-        >
-          Tillamook case study <i className="fa-solid fa-arrow-right ms-1"></i>
-        </a>,
-      ],
-    },
-  },
-  {
-    id: 'tab_onboard',
-    label: 'Rapidly Deploy and Onboard',
-    content: {
-      imageSrc: '/assets/img/dynamics365/dynamics-6.webp',
-      imageAlt: 'Rapidly Deploy and Onboard',
-      title: 'Rapidly Deploy and Onboard',
-      paragraphs: [
-        'Implement solutions and drive adoption quickly to accelerate innovation and business performance.',
-        <a
-          key="cta-onboard"
-          href="https://www.microsoft.com/en/customers/story/1339024248153617465-hp-inc-consumer-goods-dynamics-365"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-two mt-4"
-        >
-          HP case study <i className="fa-solid fa-arrow-right ms-1"></i>
-        </a>,
-      ],
-    },
-  },
-];
 
-
-const Dynamics365 = () => {
+const Datawarehouse = () => {
   return (
     <div>
         <HeaderFour />
+        {/* Hero Section */}
 
-        <BannerSection
-            bgImage="/assets/img/dynamics365/dynamics-hero.webp"
-            icon="/assets/img/service-cards/dynamic365.svg"
-            title="Microsoft Dynamics 365"
-            borderColorStart="#3352c0"
-            borderColorEnd="#5875e5"
-        />
-        <SoftwareSolutionsSection
-            title={`Intelligent Business Applications That Power Performance`}
-            paragraphs={[
-            "Dynamics 365 is a suite of smart business applications that helps organizations streamline operations, improve customer experiences, and make faster, data-driven decisions. Built on the Microsoft ecosystem, it connects with your existing tools to deliver scalable, end-to-end solutions across finance, sales, supply chain, customer service, and more.",
-            "At Novum, we help you unlock the full value of Dynamics 365 by tailoring it to your goals, accelerating implementation, and ensuring long-term usability. Whether you're enhancing a specific workflow or reimagining enterprise-wide systems, we support every step of your digital journey."
-            ]}
-            imageSrc="/assets/img/dynamics365/dynamics-2.webp"
-            altText="Dynamics 365"
-        />
-        <SoftwareDetailSection
-          imageSrc="/assets/img/dynamics365/dynamics-3.webp"
-          imageAlt="AI in Dynamics 365"
-          numberMain="6"
-          numberSub="+"
-          label="AI-Enhanced Workstreams"
-          heading={
-            <>
-              How AI Enhances{" "}
-              <span
-                className="highlight-separator mb-0 pb-0"
-                data-shadow-animation="true"
-                data-animation-delay="500"
-              >
-                Dynamics 365
-                <span className="z-index-minus-1">
-                  <img src="/images/demo-digital-agency-highlight-separator.png" alt="" />
-                </span>
-              </span>
-            </>
-          }
-          listItems={[
-            "Sales: Guide reps with predictive insights and automate follow-ups.",
-            "Marketing: Deliver targeted campaigns and track engagement across channels.",
-            "Customer Service: Resolve issues faster with real-time suggestions and automation.",
-            "Field Service: Coordinate field agents with intelligent scheduling and mobile support.",
-            "Supply Chain: Improve inventory management and demand forecasting.",
-            "Finance: Strengthen reporting, visibility, and planning with integrated financial data."
-          ]}
-          ctaText="Explore AI in Dynamics 365"
-          ctaHref="/contact"
-          phoneText="971 56 192 06 16"
-          phoneHref="tel:971561920616"
-        />
+      <HeroWithRibbon
+  serviceName="Microsoft Dynamics 365 Solutions"
+  title="Empower Your Business with Unified Intelligence"
+  highlightText="Dynamics 365"
+  subtitle="Transform operations, elevate customer experiences, and accelerate growth with NOVUM’s Microsoft Dynamics 365 implementation and consulting solutions."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/dynamics365/dynamics-hero.webp"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "AI Integration", href: "#ai" },
+    { label: "Departments", href: "#departments" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Get Started", href: "#cta" },
+  ]}
+/>
+ 
 
 
-      <CoreCapabilitiesSection
-            heading="Explore Key Capabilities"
-            tabs={coreTabs}
-          />
-            
-
-      <section className="py-5">
-        <div className="container">
-          {/* Heading */}
-          <div className="row justify-content-center mb-4">
-            <div className="col-lg-8 col-md-10 text-center">
-              <h2 className="ls-minus-1px text-dark-gray fw-600 mb-3">
-                See How Every Department Wins with Dynamics 365 and AI
-              </h2>
-              <p className="mb-0">
-                Explore how AI-powered Dynamics 365 applications help various teams work smarter, faster, and more efficiently.
-              </p>
-            </div>
-          </div>
-
-          {/* Tabs + content */}
-          <div className="row">
-            <div className="col tab-style-03">
-              <ul className="nav nav-tabs justify-content-center text-center fw-500 border-color-light-medium-gray mb-5" role="tablist">
-                <li className="nav-item">
-                  <a className="nav-link active" data-bs-toggle="tab" href="#dept_sales" role="tab">Sales</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-bs-toggle="tab" href="#dept_marketing" role="tab">Marketing</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-bs-toggle="tab" href="#dept_cs" role="tab">Customer Service</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-bs-toggle="tab" href="#dept_fs" role="tab">Field Service</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-bs-toggle="tab" href="#dept_sc" role="tab">Supply Chain</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-bs-toggle="tab" href="#dept_finance" role="tab">Finance</a>
-                </li>
-              </ul>
-
-              <div className="tab-content">
-                {/* Sales */}
-                <div className="tab-pane fade show active" id="dept_sales" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-sales.webp" alt="Dynamics 365 Sales" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Accelerate Revenue with AI-Powered Sales Intelligence
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Equip your sales team with real-time insights, automation, and AI-driven guidance using Microsoft Dynamics 365 Sales.
-                        With Sales Copilot, reps streamline workflows, personalize engagement, and close deals faster with intelligent recommendations and next-best actions.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Sales</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Marketing */}
-                <div className="tab-pane fade" id="dept_marketing" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-marketing.webp" alt="Dynamics 365 Customer Insights" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Create Personalized Journeys Fueled by Data and AI
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Deliver meaningful marketing experiences by combining customer data with AI-enabled journey orchestration.
-                        Dynamics 365 Customer Insights unifies profiles, triggers real-time engagement, and optimizes campaigns across the journey.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Customer Insights</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Customer Service */}
-                <div className="tab-pane fade" id="dept_cs" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-customer.webp" alt="Dynamics 365 Customer Service" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Deliver Fast, Personalized Support at Scale
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Transform customer experiences by empowering agents with generative AI, automation, and real-time insights.
-                        Dynamics 365 Customer Service enables faster case resolution, consistent service delivery, and seamless omnichannel support that builds long-term loyalty.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Customer Service</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Field Service */}
-                <div className="tab-pane fade" id="dept_fs" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-field.webp" alt="Dynamics 365 Field Service" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Optimize Service Delivery with Real-Time Intelligence
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Improve operational efficiency and exceed expectations with smart scheduling, remote diagnostics, and proactive maintenance.
-                        Dynamics 365 Field Service connects frontline workers with the tools they need to deliver timely, high-quality service on-site or remotely.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Field Service</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Supply Chain */}
-                <div className="tab-pane fade" id="dept_sc" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-supplychain.webp" alt="Dynamics 365 Supply Chain Management" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Build a Resilient and Predictive Supply Chain
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Adapt to market shifts, mitigate risk, and drive sustainability with an AI-powered supply chain.
-                        Dynamics 365 Supply Chain Management provides real-time visibility, predictive planning, and automated workflows to reduce disruptions.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Supply Chain Management</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Finance */}
-                <div className="tab-pane fade" id="dept_finance" role="tabpanel">
-                  <div className="row align-items-center justify-content-center g-0">
-                    <div className="col-lg-6 col-md-11 position-relative md-mb-30px">
-                      <figure className="mb-0">
-                        <img src="/assets/img/dynamics365/tab-finance.webp" alt="Dynamics 365 Finance" className="w-95 rounded mb-3" />
-                      </figure>
-                    </div>
-                    <div className="col-lg-5 col-md-11 offset-lg-1 mt-4 mt-lg-0">
-                      <h3 className="fs-15 mb-3 text-gradient-fast-blue-purple fw-700 d-inline-block text-uppercase ls-1px">
-                        Gain Financial Clarity and Drive Profitability
-                      </h3>
-                      <p className="mb-3 w-95 sm-w-100">
-                        Move beyond transactional finance with predictive insights, risk mitigation, and real-time visibility.
-                        Dynamics 365 Finance empowers smarter decisions, reduces fraud, and improves profitability via automated processes and unified financial data.
-                      </p>
-                      <span className="badge bg-primary-subtle text-novum-blue fw-600">Powered by: Dynamics 365 Finance</span>
-                    </div>
-                  </div>
-                </div>
-              </div>{/* /.tab-content */}
-            </div>
-          </div>
-        </div>
-      </section>
+      <SoftwareSolutionsSection
+  title={
+    <>
+      Why Microsoft Dynamics 365 Is
+      Transforming Modern Enterprises
+    </>
+  }
+  paragraphs={[
+    "In today’s digital economy, organizations need connected, intelligent systems that drive collaboration and insight across every department. Microsoft Dynamics 365 delivers exactly that a unified platform that integrates CRM and ERP capabilities under one powerful cloud ecosystem.",
+    "By connecting finance, sales, operations, and customer service data, Dynamics 365 enables real-time visibility, predictive decision-making, and seamless automation. It eliminates silos, enhances productivity, and creates a single version of truth across the enterprise.",
+  ]}
+  imageSrc="/assets/img/dynamics365/dynamics-1.webp"
+  altText="Microsoft Dynamics 365 Solutions"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
+        
+     <MainServices
+  id="services"
+  subtitle="Dynamics 365 Services"
+  title="Empowering Businesses with Unified, Intelligent, and Scalable Solutions"
+  description="NOVUM helps organizations deploy, customize, and scale Microsoft Dynamics 365 applications to streamline operations and improve decision-making. From CRM and ERP integration to automation and AI insights, we enable enterprises to unify data, enhance collaboration, and accelerate growth on a single cloud platform. Our certified consultants ensure every implementation delivers measurable value, efficiency, and innovation."
+  image={{
+    src: "/assets/img/dynamics365/dynamics-3.webp",
+    alt: "Microsoft Dynamics 365 Architecture",
+  }}
+  services={[
+    {
+      title: "Implementation & Deployment",
+      desc: "Seamless end-to-end implementation of Dynamics 365 modules — tailored to your business processes and goals.",
+    },
+    {
+      title: "Customization & Integration",
+      desc: "Integrating Dynamics 365 with Power BI, Azure, and third-party systems to create a unified digital ecosystem.",
+    },
+    {
+      title: "CRM & ERP Modernization",
+      desc: "Upgrading legacy systems to modern, cloud-based Dynamics 365 environments for enhanced performance and flexibility.",
+    },
+    {
+      title: "Process Automation",
+      desc: "Leveraging Power Automate and AI capabilities to automate manual tasks, streamline workflows, and reduce costs.",
+    },
+    {
+      title: "User Training & Adoption",
+      desc: "Ensuring successful platform adoption through tailored training, user enablement, and continuous support programs.",
+    },
+    {
+      title: "Managed Services & Support",
+      desc: "Providing proactive maintenance, updates, and optimization to keep your Dynamics 365 environment secure and efficient.",
+    },
+  ]}
+/>
 
 
-        <WhySection
-          heading="Why Choose Microsoft Dynamics 365?"
-          subheadingLines={[
-            "Bring together data, automation, and AI to transform how teams sell, serve, and operate—all on a secure Microsoft cloud foundation.",
-            "Start fast, scale confidently, and connect experiences across sales, service, finance, supply chain, and more."
-          ]}
-          imgSrc="/assets/img/dynamics365/why.webp"
-          imgAlt="Microsoft Dynamics 365 overview"
-          cards={[
-            {
-              iconClass: 'fa-solid fa-bolt text-novum-blue',
-              title: 'Accelerate Results',
-              text: 'Quickly adopt or extend applications to deliver value sooner. Enable teams to work smarter with built-in automation and AI.',
-            },
-            {
-              iconClass: 'fa-solid fa-database text-novum-blue',
-              title: 'Unify Customer & Operational Data',
-              text: 'Create a connected environment where every team has access to relevant data, insights, and tools for better decisions and engagement.',
-            },
-            {
-              iconClass: 'fa-solid fa-layer-group text-novum-blue',
-              title: 'Grow Without Complexity',
-              text: 'Start with what you need and expand as you grow. Modular apps let you innovate without disrupting existing operations.',
-            },
-          ]}
-        />
+      <ImplementSection
+  id="implement"
+  subtitle="Benefits"
+  title="How Dynamics 365 Accelerates Business Transformation"
+  description="Microsoft Dynamics 365 connects data, operations, and intelligence across every department. With NOVUM’s implementation expertise, businesses gain the agility to adapt quickly, improve productivity, and make smarter, faster decisions through an integrated digital platform."
+  items={[
+    {
+      img: "/assets/img/dynamics365/tab-1.webp",
+      title: "End-to-End Process Automation",
+      desc: "Automate workflows across sales, service, finance, and operations to eliminate manual tasks and boost efficiency.",
+    },
+    {
+      img: "/assets/img/dynamics365/tab-2.png",
+      title: "Predictive Forecasting",
+      desc: "Leverage AI-powered insights to forecast demand, manage pipelines, and optimize supply chain performance.",
+    },
+    {
+      img: "/assets/img/dynamics365/tab-3.webp",
+      title: "Unified Customer Insights",
+      desc: "Combine CRM and ERP data to get a 360° view of customers, enabling personalization and stronger engagement.",
+    },
+    {
+      img: "/assets/img/dynamics365/tab-4.webp",
+      title: "Increased Workforce Productivity",
+      desc: "Empower teams with connected apps, guided workflows, and automation that reduce friction in daily operations.",
+    },
+    {
+      img: "/assets/img/dynamics365/tab-5.png",
+      title: "Native Microsoft Integration",
+      desc: "Work seamlessly across Microsoft 365, Teams, and Power Platform for a unified business experience.",
+    },
+  ]}
+/>
+   
+      <Whyus
+  id="whyus"
+  subtitle="Why Choose Us"
+  title="Why Choose NOVUM as Your Microsoft Dynamics 365 Partner"
+  description="NOVUM helps businesses unlock the full potential of Microsoft Dynamics 365 by combining deep product knowledge with real-world industry experience. Our certified consultants ensure seamless implementation, rapid adoption, and measurable ROI across every stage of your digital transformation."
+  counters={[
+    { value: 30, suffix: "+", label: "Dynamics 365 Deployments" },
+    { value: 10, suffix: "+", label: "Industries Served" },
+    { value: 95, suffix: "%", label: "Client Retention Rate" },
+    { value: 8, suffix: "+", label: "Years of Microsoft Partnership" },
+  ]}
+  features={[
+    {
+      icon: "fa-solid fa-handshake",
+      title: "Certified Microsoft Partner",
+      desc: "Recognized for delivering enterprise-grade implementations and ongoing solution optimization.",
+    },
+    {
+      icon: "fa-solid fa-gears",
+      title: "Tailored Business Solutions",
+      desc: "Customizing Dynamics 365 modules to align perfectly with your organization’s structure and objectives.",
+    },
+    {
+      icon: "fa-solid fa-brain",
+      title: "AI-Driven Optimization",
+      desc: "Integrating Power Platform and AI tools to enhance forecasting, automation, and business intelligence.",
+    },
+  ]}
+/>
 
-       
+
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
+
+
+
+      <OtherServices
+  subtitle="Our Expertise"
+  title="Other Services We Provide"
+  description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+  services={[
+    {
+      title: "Software Development",
+      imgSrc: "/assets/img/service-cards/softwaredev.svg",
+      description:
+        "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+      link: "/services/software-development",
+      gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+    },
+    {
+      title: "Power BI Consulting",
+      imgSrc: "/assets/img/service-cards/powerbi.svg",
+      description:
+        "We transform and model data into insights that drive data-driven decisions.",
+      link: "/services/power-bi",
+      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
+    },
+    {
+      title: "Digital Services",
+      imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+      description: "We bring transformative digital outcomes to organizations.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+    },
+    
+    {
+      title: "Artificial Intelligence & IoT",
+      imgSrc: "/assets/img/service-cards/ai.svg",
+      description:
+        "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+      link: "/services/artificial-intelligence-iot",
+      gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+    },
+    {
+      title: "Microsoft Azure",
+      imgSrc: "/assets/img/service-cards/azure.svg",
+      description: "Swiftly shift your business resources to cloud infrastructure.",
+      link: "/services/azure",
+      gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+    },
+    {
+      title: "Microsoft 365",
+      imgSrc: "/assets/img/service-cards/microsoft365.svg",
+      description: "A suite of apps to help you stay connected and get things done.",
+      link: "/services/microsoft-365-deployment",
+      gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+    },
+    {
+      title: "Dynamics 365",
+      imgSrc: "/assets/img/service-cards/dynamic365.svg",
+      description:
+        "Boost efficiency and customer experiences with an agile business platform.",
+      link: "/services/microsoft-dynamics-365",
+      gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+    },
+    {
+      title: "Sustainability",
+      imgSrc: "/assets/img/service-cards/sustainability.svg",
+      description:
+        "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+      link: "/services/microsoft-sustainability",
+      gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+    },
+    {
+      title: "Copilot",
+      imgSrc: "/assets/img/service-cards/copilot.png",
+      description:
+        "An AI assistant that automates tasks and provides real-time insights.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+    },
+  ]}
+/>
+
+
+<Widget />
+
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
-                        heading="Let’s Build Your Solution"
-                        subText="Ready to improve efficiency, agility, and outcomes with Microsoft Dynamics 365? Novum is here to help you take the next step with strategy, implementation, and support."
+                        heading="Need a solution? Request a call!"
+                        subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
+
+                    
 
       <Footer />
     </div>
   );
 };
 
-export default Dynamics365;
+export default Datawarehouse;

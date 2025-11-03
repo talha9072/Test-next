@@ -47,7 +47,7 @@ const Ai = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Microsoft Azure Is the Foundation <br />
+      Why Microsoft Azure Is the Foundation
       of Modern Cloud Transformation
     </>
   }

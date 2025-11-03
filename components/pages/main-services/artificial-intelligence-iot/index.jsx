@@ -47,7 +47,7 @@ const Ai = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why AI and IoT Are Revolutionizing <br />
+      Why AI and IoT Are Revolutionizing
       Modern Business Operations
     </>
   }

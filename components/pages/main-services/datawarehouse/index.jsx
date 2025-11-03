@@ -46,7 +46,7 @@ const Datawarehouse = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Data Warehousing Is Essential <br />
+      Why Data Warehousing Is Essential
       for Modern Enterprises
     </>
   }
