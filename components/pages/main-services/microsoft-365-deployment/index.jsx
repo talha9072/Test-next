@@ -34,10 +34,10 @@ const Datawarehouse = () => {
   links={[
     { label: "Overview", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Deployment Steps", href: "#implementation" },
+    { label: "Implementation", href: "#implement" },
     { label: "Why Choose?", href: "#whyus" },
-    { label: "Get Started", href: "#cta" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
   ]}
 />
  
