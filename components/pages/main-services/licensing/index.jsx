@@ -1,9 +1,17 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import MainServices from "@/components/data/services/main-services";
+import ImplementSection from "@/components/data/services/implement";
+import Whyus from "@/components/data/services/whyus";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
+
+
 
 
 
@@ -11,162 +19,252 @@ const Licensing = () => {
   return (
     <div>
         <HeaderFour />
+        {/* Hero Section */}
 
-        <BannerSection
-            bgImage="/assets/img/licensing/license-hero.webp"
-            icon="/assets/img/service-cards/product.png"
-            title="Request a Product License"
-            borderColorStart="#0d2b75"
-            borderColorEnd="#193781"
-        />
-        <SoftwareSolutionsSection
-            title={`Start Your License Request`}
-            paragraphs={[
-            "To gain access to one of Novum’s AI-powered products or platforms, please complete the form below. Our team will review your request and follow up with access instructions, pricing details, and any required agreements.",
-            ]}
-            imageSrc="/assets/img/licensing/microsoft-1.webp"
-            altText="Power BI Consulting"
-        />
+      <HeroWithRibbon
+  serviceName="Product Licensing & Access Requests"
+  title="Request and Activate Your Product Licenses"
+  highlightText="Licensing"
+  subtitle="Gain secure access to NOVUM’s AI-powered solutions and Microsoft products through our streamlined licensing process — designed for transparency, speed, and enterprise-grade compliance."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/licensing/license-hero.webp"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Implementation", href: "#implement" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
+  ]}
+/>
+ 
+
+
+      <SoftwareSolutionsSection
+  title={
+    <>
+      Why Secure Product Licensing Is
+      Essential for Modern Enterprises
+    </>
+  }
+  paragraphs={[
+    "Managing software access efficiently is critical to maintaining compliance, security, and scalability. NOVUM’s product licensing process ensures that every request is verified, transparent, and aligned with enterprise-grade standards for deployment and governance.",
+    "Whether you need access to Microsoft solutions, AI-driven platforms, or specialized business tools, our licensing framework simplifies the journey — from request to activation. With fast turnaround times, verified approvals, and ongoing support, organizations can operate confidently and securely with licensed technology built for growth.",
+  ]}
+  imageSrc="/assets/img/licensing/license-1.webp"
+  altText="Product Licensing Solutions"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
         
+     <MainServices
+  id="services"
+  subtitle="Product Licensing Services"
+  title="Simplifying Access, Compliance, and License Management"
+  description="NOVUM streamlines the process of requesting, managing, and activating software licenses for Microsoft and NOVUM solutions. From eligibility assessment to pricing, provisioning, and compliance verification, our licensing team ensures a fast, secure, and transparent experience. With enterprise-grade support and a focus on governance, we make sure every license aligns with your organization’s operational, technical, and legal requirements."
+  image={{
+    src: "/assets/img/licensing/license-2.webp",
+    alt: "Enterprise Product Licensing Process",
+  }}
+  services={[
+    {
+      title: "License Consultation & Assessment",
+      desc: "Evaluating your business needs and recommending the most suitable licensing models and entitlements.",
+    },
+    {
+      title: "Pricing & Procurement",
+      desc: "Providing tailored quotes and flexible licensing options to ensure cost-effective, scalable access for your teams.",
+    },
+    {
+      title: "Activation & Provisioning",
+      desc: "Handling setup, activation, and user access management across NOVUM and Microsoft platforms.",
+    },
+    {
+      title: "Compliance & Audit Support",
+      desc: "Maintaining adherence to software licensing agreements, renewals, and enterprise compliance requirements.",
+    },
+    {
+      title: "License Renewals & Upgrades",
+      desc: "Managing renewals, version upgrades, and additional entitlements to keep your organization up to date.",
+    },
+    {
+      title: "Dedicated Licensing Support",
+      desc: "Offering continuous guidance, verification, and escalation handling for all license-related requests and issues.",
+    },
+  ]}
+/>
 
-        
-<section id="license-info-form" className="py-5" style={{background: "linear-gradient(180deg,#F5FAFF 0%,#ECF6FF 100%)"}}>
-  <div className="container">
-    <div className="row justify-content-center mb-4">
-      <div className="col-xl-8 col-lg-9 text-center">
-        <h2 className="fw-700 mb-2" style={{letterSpacing: "-0.3px"}}>License Information Form</h2>
-        <p className="text-muted mb-0">Please provide the following details:</p>
-      </div>
-    </div>
 
-    <div className="row g-4 align-items-stretch">
-      {/* Left info panel */}
-      <div className="col-12 col-lg-5">
-        <div className="h-100 p-4 p-md-5 rounded-4 shadow-sm text-white"
-             style={{background: "linear-gradient(135deg,#0F6CBD 0%,#0078D4 60%,#115EA3 100%)"}}>
-          <div className="d-flex align-items-center mb-3">
-            <div className="d-inline-flex align-items-center justify-content-center rounded-3 me-3"
-                 style={{width: 44, height: 44, background: "rgba(255,255,255,0.15)"}}>
-              <i className="fa-solid fa-id-badge fs-5"></i>
-            </div>
-            <h3 className="h5 fw-700 mb-0">Request licensing details</h3>
-          </div>
+<ImplementSection
+  id="implement"
+  subtitle="Benefits"
+  title="How NOVUM’s Licensing Process Simplifies Software Management"
+  description="Implementing a structured licensing framework with NOVUM helps organizations manage software access efficiently, maintain compliance, and reduce administrative overhead. Our transparent process ensures quick approvals, accurate entitlements, and secure provisioning for every user and department."
+  items={[
+    {
+      img: "/assets/img/licensing/tab-1.webp",
+      title: "Streamlined License Requests",
+      desc: "Submit and process license applications quickly with guided forms and fast verification from NOVUM’s licensing specialists.",
+    },
+    {
+      img: "/assets/img/licensing/tab-2.webp",
+      title: "Transparent Pricing & Entitlements",
+      desc: "Receive clear visibility into product SKUs, pricing tiers, and entitlements for accurate budgeting and allocation.",
+    },
+    {
+      img: "/assets/img/licensing/tab-3.webp",
+      title: "Centralized License Management",
+      desc: "Manage all licenses, renewals, and activations from a unified system built for scalability and administrative control.",
+    },
+    {
+      img: "/assets/img/licensing/tab-4.webp",
+      title: "Compliance & Audit Assurance",
+      desc: "Ensure all products meet vendor, regional, and enterprise compliance standards with complete audit documentation.",
+    },
+    {
+      img: "/assets/img/licensing/tab-5.webp",
+      title: "Dedicated Support & Renewal Tracking",
+      desc: "Stay compliant and up to date with proactive renewal reminders and licensing support from NOVUM’s experts.",
+    },
+  ]}
+/>
 
-          <ul className="list-unstyled small mb-4">
-            <li className="mb-2"><i className="fa-solid fa-check me-2"></i> Fast response from NOVUM team</li>
-            <li className="mb-2"><i className="fa-solid fa-check me-2"></i> Guidance on SKUs & entitlements</li>
-            <li><i className="fa-solid fa-check me-2"></i> Tailored pricing for your use case</li>
-          </ul>
+   
+      <Whyus
+  id="whyus"
+  subtitle="Why Choose Us"
+  title="Why Partner with NOVUM for Licensing Solutions"
+  description="NOVUM simplifies enterprise software licensing through a transparent, secure, and efficient process. Our experienced team ensures every organization receives the right licenses, full compliance support, and responsive service — enabling businesses to focus on innovation, not administration."
+  counters={[
+    { value: 45, suffix: "+", label: "Licenses Processed" },
+    { value: 12, suffix: "+", label: "Regions Supported" },
+    { value: 100, suffix: "%", label: "Compliance Accuracy" },
+    { value: 9, suffix: "+", label: "Years of Experience" },
+  ]}
+  features={[
+    {
+      icon: "fa-solid fa-file-contract",
+      title: "Transparent Licensing Process",
+      desc: "From quote to activation, our step-by-step process ensures clarity, compliance, and smooth execution.",
+    },
+    {
+      icon: "fa-solid fa-shield-halved",
+      title: "Enterprise-Grade Security",
+      desc: "All license requests and data are handled under strict confidentiality and security protocols.",
+    },
+    {
+      icon: "fa-solid fa-headset",
+      title: "Dedicated Support Team",
+      desc: "Our specialists provide personalized assistance for renewals, audits, and ongoing license management.",
+    },
+  ]}
+/>
 
-          <div className="border-top border-light pt-3 small" style={{opacity: .95}}>
-            <div className="mb-1"><i className="fa-solid fa-shield-halved me-2"></i>Enterprise-grade security</div>
-            <div><i className="fa-solid fa-lock me-2"></i>Your info is kept confidential</div>
-          </div>
-        </div>
-      </div>
 
-      {/* Right form */}
-      <div className="col-12 col-lg-7">
-        <div className="h-100 bg-white rounded-4 shadow-sm p-4 p-md-5">
-          <form action="#" method="post" noValidate>
-            <div className="row g-3">
-              {/* Full Name */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="fullName">Full Name *</label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent"><i className="fa-solid fa-user text-novum-blue"></i></span>
-                  <input id="fullName" name="fullName" type="text" className="form-control" placeholder="Daniel Morris" required />
-                </div>
-              </div>
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
 
-              {/* Company Name */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="companyName">Company Name *</label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent"><i className="fa-solid fa-building text-novum-blue"></i></span>
-                  <input id="companyName" name="companyName" type="text" className="form-control" placeholder="Novum Ltd." required />
-                </div>
-              </div>
 
-              {/* Business Email */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="businessEmail">Business Email *</label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent"><i className="fa-solid fa-envelope text-novum-blue"></i></span>
-                  <input id="businessEmail" name="businessEmail" type="email" className="form-control" placeholder="name@company.com" required />
-                </div>
-              </div>
 
-              {/* Phone Number */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="phone">Phone Number</label>
-                <div className="input-group">
-                  <span className="input-group-text bg-transparent"><i className="fa-solid fa-phone text-novum-blue"></i></span>
-                  <input id="phone" name="phone" type="tel" inputMode="tel" className="form-control" placeholder="+971 5X XXX XXXX" />
-                </div>
-              </div>
+      <OtherServices
+  subtitle="Our Expertise"
+  title="Other Services We Provide"
+  description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+  services={[
+    {
+      title: "Software Development",
+      imgSrc: "/assets/img/service-cards/softwaredev.svg",
+      description:
+        "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+      link: "/services/software-development",
+      gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+    },
+    {
+      title: "Power BI Consulting",
+      imgSrc: "/assets/img/service-cards/powerbi.svg",
+      description:
+        "We transform and model data into insights that drive data-driven decisions.",
+      link: "/services/power-bi",
+      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
+    },
+    {
+      title: "Digital Services",
+      imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+      description: "We bring transformative digital outcomes to organizations.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+    },
+    
+    {
+      title: "Artificial Intelligence & IoT",
+      imgSrc: "/assets/img/service-cards/ai.svg",
+      description:
+        "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+      link: "/services/artificial-intelligence-iot",
+      gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+    },
+    {
+      title: "Microsoft Azure",
+      imgSrc: "/assets/img/service-cards/azure.svg",
+      description: "Swiftly shift your business resources to cloud infrastructure.",
+      link: "/services/azure",
+      gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+    },
+    {
+      title: "Microsoft 365",
+      imgSrc: "/assets/img/service-cards/microsoft365.svg",
+      description: "A suite of apps to help you stay connected and get things done.",
+      link: "/services/microsoft-365-deployment",
+      gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+    },
+    {
+      title: "Dynamics 365",
+      imgSrc: "/assets/img/service-cards/dynamic365.svg",
+      description:
+        "Boost efficiency and customer experiences with an agile business platform.",
+      link: "/services/microsoft-dynamics-365",
+      gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+    },
+    {
+      title: "Sustainability",
+      imgSrc: "/assets/img/service-cards/sustainability.svg",
+      description:
+        "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+      link: "/services/microsoft-sustainability",
+      gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+    },
+    {
+      title: "Copilot",
+      imgSrc: "/assets/img/service-cards/copilot.png",
+      description:
+        "An AI assistant that automates tasks and provides real-time insights.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+    },
+  ]}
+/>
 
-              {/* Product of Interest */}
-              <div className="col-12">
-                <label className="form-label fw-600" htmlFor="product">Product of Interest *</label>
-                <select id="product" name="product" className="form-select" required>
-                  <option value="">Select a product…</option>
-                  <option>Microsoft 365</option>
-                  <option>Dynamics 365 Sales</option>
-                  <option>Dynamics 365 Customer Service</option>
-                  <option>Dynamics 365 Field Service</option>
-                  <option>Dynamics 365 Supply Chain Management</option>
-                  <option>Dynamics 365 Finance</option>
-                  <option>Power BI</option>
-                  <option>Power Apps / Power Automate</option>
-                  <option>Azure (Compute/AI/Security)</option>
-                </select>
-              </div>
 
-              {/* Intended Use Case */}
-              <div className="col-12">
-                <label className="form-label fw-600" htmlFor="usecase">Intended Use Case *</label>
-                <textarea id="usecase" name="usecase" className="form-control" rows={3} placeholder="Briefly describe how you plan to use the product…" required></textarea>
-              </div>
+<Widget />
 
-              {/* Country */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="country">Country *</label>
-                <select id="country" name="country" className="form-select" required>
-                  <option value="">Select country…</option>
-                  <option>United Arab Emirates</option>
-                  <option>Saudi Arabia</option>
-                  <option>Qatar</option>
-                  <option>Pakistan</option>
-                  <option>India</option>
-                  <option>United Kingdom</option>
-                  <option>United States</option>
-                </select>
-              </div>
-
-              {/* Additional Comments */}
-              <div className="col-12 col-md-6">
-                <label className="form-label fw-600" htmlFor="comments">Additional Comments (optional)</label>
-                <input id="comments" name="comments" type="text" className="form-control" placeholder="Anything else we should know?" />
-              </div>
-
-              {/* Submit */}
-              <div className="col-12 d-grid d-sm-flex align-items-center gap-2 mt-2">
-                <button type="submit" className="btn btn-two"
-                        >
-                  Submit Request
-                </button>
-                <span className="text-muted small ms-sm-2">We’ll get back within 1–2 business days.</span>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-      
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
@@ -175,6 +273,8 @@ const Licensing = () => {
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
+
+                    
 
       <Footer />
     </div>

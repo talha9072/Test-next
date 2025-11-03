@@ -15,7 +15,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Datawarehouse = () => {
+const Microsoftdeployment = () => {
   return (
     <div>
         <HeaderFour />
@@ -281,4 +281,4 @@ const Datawarehouse = () => {
   );
 };
 
-export default Datawarehouse;
+export default Microsoftdeployment;

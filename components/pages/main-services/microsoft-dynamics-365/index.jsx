@@ -15,7 +15,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Datawarehouse = () => {
+const Dynamic365 = () => {
   return (
     <div>
         <HeaderFour />
@@ -280,4 +280,4 @@ const Datawarehouse = () => {
   );
 };
 
-export default Datawarehouse;
+export default Dynamic365;
