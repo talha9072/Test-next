@@ -25,7 +25,7 @@ const Licensing = () => {
   serviceName="Product Licensing & Access Requests"
   title="Request and Activate Your Product Licenses"
   highlightText="Licensing"
-  subtitle="Gain secure access to NOVUM’s AI-powered solutions and Microsoft products through our streamlined licensing process — designed for transparency, speed, and enterprise-grade compliance."
+  subtitle="Gain secure access to NOVUM’s AI-powered solutions and Microsoft products through our streamlined licensing process designed for transparency, speed, and enterprise-grade compliance."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/licensing/license-hero.webp"
   heroButtons={[
