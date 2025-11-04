@@ -102,9 +102,9 @@ export default function WhyUs({
                       <i className={feature.icon}></i>
                     </div>
                   )}
-                  <h5 className="fw-semibold text-dark mb-2">
+                  <h4 className="fw-semibold text-dark mb-2">
                     {feature.title}
-                  </h5>
+                  </h4>
                   <p className="text-muted small mb-0">{feature.desc}</p>
                 </div>
               </div>

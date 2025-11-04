@@ -1,214 +1,285 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
-import WhySection from "@/components/data/services/WhySection";
+import MainServices from "@/components/data/services/main-services";
+import ImplementSection from "@/components/data/services/implement";
+import Whyus from "@/components/data/services/whyus";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
-const tabsData = [
-  {
-    id: "ms",
-    label: "Microsoft Sources",
-    items: [
-      { src: "https://novum-ae.netlify.app/images/power-bi/dynamics.png", alt: "Dynamics 365" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/sql-server.png", alt: "SQL Server" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/azure.png", alt: "Azure" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/sharepoint.png", alt: "SharePoint" },
-    ],
-  },
-  {
-    id: "files",
-    label: "Files & Analytics",
-    items: [
-      { src: "https://novum-ae.netlify.app/images/power-bi/excel.png", alt: "Excel" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/csv.png", alt: "CSV" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/google-analytics.png", alt: "Google Analytics" },
-    ],
-  },
-  {
-    id: "cloud",
-    label: "Cloud & Web APIs",
-    items: [
-      { src: "https://novum-ae.netlify.app/images/power-bi/power-apps.png", alt: "Power Apps" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/rest-api.png", alt: "Web APIs" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/cloud.png", alt: "Cloud Systems" },
-    ],
-  },
-  {
-    id: "iot",
-    label: "IoT & Streaming",
-    items: [
-      { src: "https://novum-ae.netlify.app/images/power-bi/iot.png", alt: "IoT Devices" },
-      { src: "https://novum-ae.netlify.app/images/power-bi/streaming-data.png", alt: "Streaming Data" },
-    ],
-  },
-];
 
-const coreTabs = [
-  {
-    id: 'tab_architecture',
-    label: 'Unified Data Architecture',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-unified.png',
-      imageAlt: 'Unified Data Architecture',
-      title: 'Unified Data Architecture',
-      paragraphs: [
-        'We design flexible architectures that bring together data from ERPs, CRMs, legacy systems, files, IoT devices, and cloud applications. Our solutions offer complete organizational visibility and are built to evolve as your business grows.'
-      ]
-    }
-  },
-  {
-    id: 'tab_reporting',
-    label: 'Advanced Reporting',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-reporting.png',
-      imageAlt: 'Advanced Reporting',
-      title: 'Advanced Reporting and KPIs',
-      paragraphs: [
-        'Centralized data enables consistent reporting and insight generation. We help your teams build performance dashboards and custom KPIs across departments such as finance, sales, supply chain, and operations.'
-      ]
-    }
-  },
-  {
-    id: 'tab_integration',
-    label: 'Seamless Integration',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-integration.png',
-      imageAlt: 'Seamless Source Integration',
-      title: 'Seamless Source Integration',
-      paragraphs: [
-        'Our solutions work with your ecosystem. We offer native compatibility with Microsoft Dynamics 365, Azure Synapse, Power BI, SQL Server, and more. This ensures smooth data flow between your systems and analytics platforms.'
-      ]
-    }
-  },
-  {
-    id: 'tab_quality',
-    label: 'Data Insight',
-    content: {
-      imageSrc: 'https://novum-ae.netlify.app/images/datawarehouse/warehouse-source.png',
-      imageAlt: 'Data Quality and Real-Time Access',
-      title: 'From Raw Data to Business Insight',
-      paragraphs: [
-        'Data Quality and Consistency: Using automated cleansing and transformation methods, we standardize your incoming data to remove duplication, fill gaps, and align formats. This creates a reliable foundation for analytics across your business.',
-        'Real-Time Access and Agility: We support near real-time updates to keep your analytics fresh and your operations responsive. With fast data delivery and high visibility, teams can shift from reactive to strategic planning.'
-      ]
-    }
-  },
-];
 
-const DigitalStrategy = () => {
+
+const Softwaredev = () => {
   return (
     <div>
         <HeaderFour />
+        {/* Hero Section */}
 
-        <BannerSection
-            bgImage="/assets/img/digital-strategy/digital-strategy-hero.webp"
-            icon="/assets/img/service-cards/digital-strategy.png"
-            title="Digital Strategy Services"
-            borderColorStart="#0D2B75"
-            borderColorEnd="#193781"
-        />
-        <SoftwareSolutionsSection
-            title={`Building Future-Ready Roadmaps That Drive Results`}
-            paragraphs={[
-            "Novum helps organizations shape digital strategies that connect business objectives with the right technologies and execution plans. We create tailored roadmaps that enable scalable transformation, improve efficiency, and unlock new value across every level of the enterprise. Our framework is grounded in real-world industry insight and built to adapt as customer needs and market conditions evolve.",
-            "Digital transformation is not about adopting technology for the sake of change. It is about aligning people, processes, and platforms to achieve measurable business outcomes. At Novum, we place human experience at the center of every strategy, ensuring that digital initiatives lead to long-term impact."
-            ]}
-            imageSrc="/assets/img/digital-strategy/strategy-1.webp"
-            altText="Digital Strategy"
-        />
+      <HeroWithRibbon
+  serviceName="Digital Strategy & Transformation"
+  title="Future-Ready Roadmaps for Sustainable Growth"
+  highlightText="Digital Strategy"
+  subtitle="Connecting vision, technology, and measurable business outcomes."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/digital-strategy/digital-strategy-hero.webp"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "Implementation", href: "#implement" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Other Services", href: "#otherservices" },
+  ]}
+/>
+ 
 
-        <SoftwareDetailSection
-        imageSrc="/assets/img/digital-strategy/strategy-2.webp"
-        imageAlt="On-Demand Power BI Services"
-        numberMain="50"
-        numberSub="+"
-        label="Successful Digital Transformations"
-        heading={(
-            <>
-            A Strategy That Moves With You{" "}
-            <span
-                className="highlight-separator mb-0 pb-0"
-                data-shadow-animation="true"
-                data-animation-delay="500"
-            >
-                Key Outcomes
-                <span className="z-index-minus-1">
-                <img
-                    src="images/demo-digital-agency-highlight-separator.png"
-                    alt=""
-                />
-                </span>
-            </span>
-            </>
-        )}
-        listItems={[
-            "Increased revenue and profitability through digitized operations",
-            "Greater customer satisfaction and engagement through personalized experiences",
-            "Improved workforce productivity and collaboration",
-            "Reduced technical debt, IT support overhead, and operational bottlenecks",
-            "Stronger alignment between digital investments and business priorities",
-            "A flexible, scalable roadmap that grows with your organization",
-        ]}
-        ctaText="Let’s talk now"
-        ctaHref="#contact"
-        phoneText="971 56 192 06 16"
-        phoneHref="tel:971561920616"
-        />
+
+      <SoftwareSolutionsSection
+  title={
+    <>
+      Why Custom Software Development Is
+      Essential for Modern Businesses
+    </>
+  }
+  paragraphs={[
+    "In a rapidly evolving digital landscape, off-the-shelf solutions often fail to meet unique operational demands. NOVUM’s custom software development ensures that every system is tailored to your business processes, delivering agility, scalability, and long-term value.",
+    "By combining technical expertise with strategic insight, we create robust applications that integrate seamlessly with your existing ecosystem. From automating workflows to enhancing customer engagement, our solutions are engineered to drive performance, security, and growth across every department.",
+  ]}
+  imageSrc="/assets/img/softwaredev/dev-1.webp"
+  altText="Custom Software Development Solutions"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
         
-        <WhySection
-        heading="Why Novum?"
-        subheadingLines={[
-            "Our strategy team brings a unique blend of technical expertise, creative problem-solving, and deep industry knowledge.",
-            "We collaborate closely with your stakeholders to deliver strategies that are practical, measurable, and built for scale. As a Microsoft Solutions Partner, Novum ensures every plan is grounded in modern technologies that enable future innovation.",
-        ]}
-        imgSrc="/assets/img/digital-strategy/strategy-3.webp"
-        imgAlt="Strategy Planning Meeting"
-        cards={[
-            {
-            iconClass: 'fa-solid fa-lightbulb text-novum-blue',
-            title: 'Vision and Roadmapping',
-            text: 'We work with your leadership team to define a clear transformation vision, backed by phased roadmaps that prioritize high-value initiatives.',
-            },
-            {
-            iconClass: 'fa-solid fa-server text-novum-blue',
-            title: 'Technology Alignment',
-            text: 'Our experts evaluate your existing systems and recommend modern, scalable technologies that align with your business model and future needs.',
-            },
-            {
-            iconClass: 'fa-solid fa-users-gear text-novum-blue',
-            title: 'Change Enablement',
-            text: 'We design strategies that prepare your teams for change, build internal capabilities, and foster adoption from day one.',
-            },
-            {
-            iconClass: 'fa-solid fa-file-invoice-dollar text-novum-blue',
-            title: 'Business Case Development',
-            text: 'We help quantify the value of your transformation efforts through detailed ROI models, budget scenarios, and benefit tracking.',
-            },
-            {
-            iconClass: 'fa-solid fa-handshake text-novum-blue',
-            title: 'Ongoing Advisory Support',
-            text: 'Novum stays engaged beyond the initial planning phase to guide you through implementation, course corrections, and continuous optimization.',
-            },
-        ]}
-        />
+     <MainServices
+  id="services"
+  subtitle="Software Development Services"
+  title="Delivering Intelligent, Scalable, and Impactful Software Solutions"
+  description="NOVUM provides end-to-end software development services designed to transform your ideas into robust digital products. From initial planning and architecture to deployment and optimization, we ensure every solution aligns with your business goals, technology landscape, and scalability needs. With agile processes and deep engineering expertise, we help enterprises innovate faster and operate smarter."
+  image={{
+    src: "/assets/img/softwaredev/dev-2.webp",
+    alt: "Enterprise Software Development Process",
+  }}
+  services={[
+    {
+      title: "Custom Application Development",
+      desc: "Designing and building tailored web, desktop, and mobile applications optimized for performance and scalability.",
+    },
+    {
+      title: "Cloud Architecture & Deployment",
+      desc: "Developing cloud-native systems that ensure high availability, security, and seamless integration across environments.",
+    },
+    {
+      title: "API Development & Integration",
+      desc: "Creating secure, high-performance APIs and connecting new solutions with existing enterprise systems.",
+    },
+    {
+      title: "UI/UX Design & Prototyping",
+      desc: "Crafting user-centric designs that blend functionality with intuitive, engaging experiences for all platforms.",
+    },
+    {
+      title: "Agile Project Delivery",
+      desc: "Using agile methodologies to deliver iterative, flexible, and transparent software solutions with measurable results.",
+    },
+    {
+      title: "Maintenance & Support",
+      desc: "Providing continuous monitoring, updates, and enhancements to ensure long-term reliability and optimal performance.",
+    },
+  ]}
+/>
 
-        
+
+<ImplementSection
+  id="implement"
+  subtitle="Benefits"
+  title="How NOVUM’s Software Development Drives Digital Transformation"
+  description="Partnering with NOVUM for software development empowers organizations to innovate faster, optimize workflows, and enhance business performance through reliable, scalable, and user-focused applications. Our development process ensures agility, quality, and measurable impact across every stage of the software lifecycle."
+  items={[
+    {
+      img: "/assets/img/softwaredev/tab-1.webp",
+      title: "Tailored Business Solutions",
+      desc: "Every application is custom-built around your goals, ensuring seamless alignment with processes, teams, and customer needs.",
+    },
+    {
+      img: "/assets/img/softwaredev/tab-2.webp",
+      title: "Faster Time to Market",
+      desc: "Our agile development framework accelerates delivery, helping you launch, test, and iterate new software faster.",
+    },
+    {
+      img: "/assets/img/softwaredev/tab-3.webp",
+      title: "Enhanced Scalability & Performance",
+      desc: "We design robust architectures capable of handling growth, high traffic, and complex enterprise operations effortlessly.",
+    },
+    {
+      img: "/assets/img/softwaredev/tab-4.webp",
+      title: "Seamless Integration",
+      desc: "Connect new systems with your existing applications and cloud infrastructure through secure, efficient APIs and integrations.",
+    },
+    {
+      img: "/assets/img/softwaredev/tab-5.webp",
+      title: "Continuous Optimization & Support",
+      desc: "Benefit from ongoing updates, maintenance, and performance tuning to ensure your software stays future-ready.",
+    },
+  ]}
+/>
+
+   
+      <Whyus
+  id="whyus"
+  subtitle="Why Choose Us"
+  title="Why Partner with NOVUM for Software Development"
+  description="NOVUM combines technical excellence with a deep understanding of business challenges to deliver high-quality, scalable software solutions. Our team of experienced developers, architects, and strategists ensures every project is built with precision, innovation, and measurable results that align with your organization’s long-term goals."
+  counters={[
+    { value: 50, suffix: "+", label: "Custom Solutions Delivered" },
+    { value: 15, suffix: "+", label: "Industries Served" },
+    { value: 100, suffix: "%", label: "Project Success Rate" },
+    { value: 10, suffix: "+", label: "Years of Development Expertise" },
+  ]}
+  features={[
+    {
+      icon: "fa-solid fa-code",
+      title: "Full-Cycle Development",
+      desc: "From discovery to deployment, we manage every stage of the software lifecycle with agile precision and transparency.",
+    },
+    {
+      icon: "fa-solid fa-cloud",
+      title: "Scalable Cloud Architecture",
+      desc: "We engineer secure, high-performing applications optimized for cloud environments and global scalability.",
+    },
+    {
+      icon: "fa-solid fa-handshake",
+      title: "Collaborative Partnership",
+      desc: "Our team works closely with clients to ensure every project aligns with strategic goals and delivers lasting business impact.",
+    },
+  ]}
+/>
+
+
+
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
+
+
+
+      <OtherServices
+  subtitle="Our Expertise"
+  title="Other Services We Provide"
+  description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+  services={[
+    {
+      title: "Software Development",
+      imgSrc: "/assets/img/service-cards/softwaredev.svg",
+      description:
+        "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+      link: "/services/software-development",
+      gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+    },
+    {
+      title: "Power BI Consulting",
+      imgSrc: "/assets/img/service-cards/powerbi.svg",
+      description:
+        "We transform and model data into insights that drive data-driven decisions.",
+      link: "/services/power-bi",
+      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
+    },
+    {
+      title: "Digital Services",
+      imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+      description: "We bring transformative digital outcomes to organizations.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+    },
+    
+    {
+      title: "Artificial Intelligence & IoT",
+      imgSrc: "/assets/img/service-cards/ai.svg",
+      description:
+        "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+      link: "/services/artificial-intelligence-iot",
+      gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+    },
+    {
+      title: "Microsoft Azure",
+      imgSrc: "/assets/img/service-cards/azure.svg",
+      description: "Swiftly shift your business resources to cloud infrastructure.",
+      link: "/services/azure",
+      gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+    },
+    {
+      title: "Microsoft 365",
+      imgSrc: "/assets/img/service-cards/microsoft365.svg",
+      description: "A suite of apps to help you stay connected and get things done.",
+      link: "/services/microsoft-365-deployment",
+      gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+    },
+    {
+      title: "Dynamics 365",
+      imgSrc: "/assets/img/service-cards/dynamic365.svg",
+      description:
+        "Boost efficiency and customer experiences with an agile business platform.",
+      link: "/services/microsoft-dynamics-365",
+      gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+    },
+    {
+      title: "Sustainability",
+      imgSrc: "/assets/img/service-cards/sustainability.svg",
+      description:
+        "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+      link: "/services/microsoft-sustainability",
+      gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+    },
+    {
+      title: "Copilot",
+      imgSrc: "/assets/img/service-cards/copilot.png",
+      description:
+        "An AI assistant that automates tasks and provides real-time insights.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+    },
+  ]}
+/>
+
+
+<Widget />
+
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
-                        heading="Ready to Define Your Digital Strategy?"
-                        subText="Let Novum help you build a roadmap that connects vision to value. Book a consultation today."
+                        heading="Need a solution? Request a call!"
+                        subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
+
+                    
 
       <Footer />
     </div>
   );
 };
 
-export default DigitalStrategy;
+export default Softwaredev;

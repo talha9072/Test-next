@@ -48,9 +48,9 @@ export default function MainServices({
             {services.map((svc, i) => (
               <div className="col-md-4 col-sm-6" key={i}>
                 <div className="info-card h-100 p-4 rounded">
-                  <h5 className="fw-semibold mb-2 text-novum-blue">
+                  <p className="fw-semibold mb-2 text-novum-blue fs-16">
                     {svc.title}
-                  </h5>
+                  </p>
                   <p className="text-muted small mb-0">{svc.desc}</p>
                 </div>
               </div>

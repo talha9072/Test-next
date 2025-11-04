@@ -112,6 +112,10 @@ export default function ImplementSection({
           .benefits-swiper .swiper-pagination-bullet-active {
             background: var(--primary-color-1) !important;
           }
+            .benefits-swiper .heading-card {
+            font-size: 20px;
+            color: #0d2b75;
+          }
 
           /* --- RESPONSIVE --- */
           @media (max-width: 576px) {
@@ -156,7 +160,7 @@ export default function ImplementSection({
               <div className="benefit-card shadow-sm overflow-hidden">
                 <img src={item.img} alt={item.title} />
                 <div className="p-4">
-                  <h5 className="fw-semibold mb-2">{item.title}</h5>
+                  <h3 className="fw-semibold mb-2 heading-card">{item.title}</h3>
                   <p className="small mb-0">{item.desc}</p>
                 </div>
               </div>
