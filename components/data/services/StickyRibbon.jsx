@@ -16,46 +16,52 @@ const HeroWithRibbon = ({
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowFixed(window.scrollY > 200);
+  const handleScroll = () => {
+    // check screen width
+    const triggerPoint =
+      window.innerWidth <= 570
+        ? window.innerHeight * 0.7 // mobile 70vh
+        : window.innerHeight * 0.62; // desktop 68vh
 
-      let current = "";
-      links.forEach((link) => {
-        const section = document.querySelector(link.href);
-        if (section) {
-          const sectionTop = section.offsetTop - 300;
-          const sectionHeight = section.offsetHeight;
-          if (
-            window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight
-          ) {
-            current = link.href;
-          }
-        }
-      });
+    setShowFixed(window.scrollY > triggerPoint);
 
-      if (current && current !== activeLink) {
-        setActiveLink(current);
-
-        if (scrollRef.current && window.innerWidth <= 768) {
-          const activeEl = scrollRef.current.querySelector(
-            `.nav-link[href="${current}"]`
-          );
-          if (activeEl) {
-            activeEl.scrollIntoView({
-              behavior: "smooth",
-              inline: "center",
-              block: "nearest",
-            });
-          }
+    let current = "";
+    links.forEach((link) => {
+      const section = document.querySelector(link.href);
+      if (section) {
+        const sectionTop = section.offsetTop - 300;
+        const sectionHeight = section.offsetHeight;
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          current = link.href;
         }
       }
-    };
+    });
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [links, activeLink]);
+    if (current && current !== activeLink) {
+      setActiveLink(current);
+
+      if (scrollRef.current && window.innerWidth <= 768) {
+        const activeEl = scrollRef.current.querySelector(
+          `.nav-link[href="${current}"]`
+        );
+        if (activeEl) {
+          activeEl.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest",
+          });
+        }
+      }
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [links, activeLink]);
 
   const scrollRibbon = (direction) => {
     if (scrollRef.current) {
