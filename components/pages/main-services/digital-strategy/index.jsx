@@ -15,7 +15,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Softwaredev = () => {
+const Digitalstrategy = () => {
   return (
     <div>
         <HeaderFour />
@@ -284,4 +284,4 @@ const Softwaredev = () => {
   );
 };
 
-export default Softwaredev;
+export default Digitalstrategy;
