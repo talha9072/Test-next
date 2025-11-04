@@ -1,6 +1,6 @@
 "use client"
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BreadCrumb from "../common/breadcrumb";
+import HeroContactSection from "@/components/layout/hero-section";
 import Footer from "@/components/layout/footers/footer";
 import FeaturedPost from "./featured";
 import Otherpost from "./other-posts";
@@ -12,7 +12,13 @@ const BlogGrid = () => {
     return (
         <>
             <HeaderFour />
-            <BreadCrumb title="Case Studies"/>
+            <HeroContactSection
+  title="Let’s Create Your Success Story"
+  line1="Ready to achieve measurable results like our clients?"
+  line2="Connect with NOVUM to start your next transformation journey today."
+  bgColor="var(--primary-color-1)"
+  paddingY="50px"
+/>
             <FeaturedPost />
             <Otherpost />
              <CTA
