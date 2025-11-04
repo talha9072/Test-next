@@ -27,7 +27,7 @@ export default function OtherServices({
     <section className="services py-5 about__four" id={id}>
       <div className="container">
         {/* Heading */}
-        <div className="text-start mb-5">
+        <div className="text-center mb-5">
           {subtitle && (
             <span className="subtitle-one text-uppercase text-novum-blue fw-semibold mb-2 d-inline-block">
               {subtitle}
@@ -37,7 +37,7 @@ export default function OtherServices({
           {description && (
             <p
               className="text-muted"
-              style={{ maxWidth: "720px", marginBottom: "0" }}
+              style={{ maxWidth: "720px", marginBottom: "0", marginLeft: "auto", marginRight: "auto" }}
             >
               {description}
             </p>
