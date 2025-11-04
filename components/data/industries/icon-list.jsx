@@ -51,7 +51,7 @@ export default function IndustrySection({
                     </div>
                   </div>
                   <div>
-                    <h6 className="fw-semibold mb-1">{item.title}</h6>
+                    <p className="fw-semibold mb-1">{item.title}</p>
                     <p className="mb-0">{item.description}</p>
                   </div>
                 </div>

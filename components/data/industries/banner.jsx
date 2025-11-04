@@ -35,9 +35,9 @@ const HeroOnly = ({
             {/* LEFT SIDE - TEXT + BUTTONS */}
             <div className="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
               {serviceName && (
-                <h5 className="service-name mb-2">{serviceName}</h5>
+                <h1 className="service-name mb-2">{serviceName}</h1>
               )}
-              <h1 className="serviceheading mb-3">{renderTitle()}</h1>
+              <h2 className="serviceheading mb-3">{renderTitle()}</h2>
               <p className="text-white-50 mb-4">{subtitle}</p>
 
               {heroButtons.length > 0 && (
@@ -91,23 +91,23 @@ const HeroOnly = ({
 
         .serviceheading {
           color: #0d2b75 !important;
-          font-size: 3.8rem !important;
+          font-size: 3.2rem !important;
           font-weight: 500 !important;
           letter-spacing: -1.55px !important;
-          line-height: 72px !important;
+          line-height: 60px !important;
         }
 
         @media (max-width: 980px) and (min-width: 571px) {
           .serviceheading {
-            font-size: 2.8rem !important;
-            line-height: 55px !important;
+            font-size: 2.4rem !important;
+            line-height: 50px !important;
           }
         }
 
         @media (max-width: 570px) {
           .serviceheading {
-            font-size: 2.2rem !important;
-            line-height: 42px !important;
+            font-size: 2rem !important;
+            line-height: 38px !important;
           }
         }
 
