@@ -46,118 +46,120 @@ const Softwaredev = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Custom Software Development Is
-      Essential for Modern Businesses
+      Why Digital Strategy Is 
+      Critical for Modern Enterprises
     </>
   }
   paragraphs={[
-    "In a rapidly evolving digital landscape, off-the-shelf solutions often fail to meet unique operational demands. NOVUM’s custom software development ensures that every system is tailored to your business processes, delivering agility, scalability, and long-term value.",
-    "By combining technical expertise with strategic insight, we create robust applications that integrate seamlessly with your existing ecosystem. From automating workflows to enhancing customer engagement, our solutions are engineered to drive performance, security, and growth across every department.",
+    "In a fast-evolving business landscape, technology alone isn’t enough organizations need a clear strategy to align innovation with measurable outcomes. NOVUM’s digital strategy services help businesses define a clear roadmap for transformation, ensuring that every initiative supports growth, agility, and customer value.",
+    "By bridging the gap between business vision and technology execution, we enable organizations to modernize operations, improve decision-making, and scale efficiently. Our strategies combine data-driven insights, process optimization, and future-ready architecture to ensure lasting impact across your enterprise.",
   ]}
-  imageSrc="/assets/img/softwaredev/dev-1.webp"
-  altText="Custom Software Development Solutions"
+  imageSrc="/assets/img/digital-strategy/strategy-1.webp"
+  altText="Digital Strategy Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
         
      <MainServices
   id="services"
-  subtitle="Software Development Services"
-  title="Delivering Intelligent, Scalable, and Impactful Software Solutions"
-  description="NOVUM provides end-to-end software development services designed to transform your ideas into robust digital products. From initial planning and architecture to deployment and optimization, we ensure every solution aligns with your business goals, technology landscape, and scalability needs. With agile processes and deep engineering expertise, we help enterprises innovate faster and operate smarter."
+  subtitle="Digital Strategy Services"
+  title="Transforming Vision into Actionable, Scalable Strategies"
+  description="NOVUM helps organizations craft digital strategies that align business goals with the right technologies, processes, and execution models. From current-state assessments to roadmap creation and implementation planning, we ensure every initiative drives measurable impact and sustainable growth. Our experts translate vision into actionable strategies that enhance agility, innovation, and long-term competitiveness."
   image={{
-    src: "/assets/img/softwaredev/dev-2.webp",
-    alt: "Enterprise Software Development Process",
+    src: "/assets/img/digital-strategy/strategy-2.webp",
+    alt: "Enterprise Digital Strategy Process",
   }}
   services={[
     {
-      title: "Custom Application Development",
-      desc: "Designing and building tailored web, desktop, and mobile applications optimized for performance and scalability.",
+      title: "Digital Maturity Assessment",
+      desc: "Evaluating your organization’s current digital capabilities to identify gaps, strengths, and transformation opportunities.",
     },
     {
-      title: "Cloud Architecture & Deployment",
-      desc: "Developing cloud-native systems that ensure high availability, security, and seamless integration across environments.",
+      title: "Technology Roadmapping",
+      desc: "Defining strategic technology investments and phased implementation plans that align with business priorities.",
     },
     {
-      title: "API Development & Integration",
-      desc: "Creating secure, high-performance APIs and connecting new solutions with existing enterprise systems.",
+      title: "Process Optimization",
+      desc: "Redesigning workflows and operations to maximize efficiency, scalability, and cross-department collaboration.",
     },
     {
-      title: "UI/UX Design & Prototyping",
-      desc: "Crafting user-centric designs that blend functionality with intuitive, engaging experiences for all platforms.",
+      title: "Change Management Strategy",
+      desc: "Building adoption and readiness plans that empower teams to embrace new technologies and ways of working.",
     },
     {
-      title: "Agile Project Delivery",
-      desc: "Using agile methodologies to deliver iterative, flexible, and transparent software solutions with measurable results.",
+      title: "Data & Insights Strategy",
+      desc: "Leveraging analytics and business intelligence to guide decision-making and uncover new growth opportunities.",
     },
     {
-      title: "Maintenance & Support",
-      desc: "Providing continuous monitoring, updates, and enhancements to ensure long-term reliability and optimal performance.",
+      title: "Governance & Risk Management",
+      desc: "Establishing frameworks that ensure compliance, accountability, and transparency across all digital initiatives.",
     },
   ]}
 />
+
 
 
 <ImplementSection
   id="implement"
   subtitle="Benefits"
-  title="How NOVUM’s Software Development Drives Digital Transformation"
-  description="Partnering with NOVUM for software development empowers organizations to innovate faster, optimize workflows, and enhance business performance through reliable, scalable, and user-focused applications. Our development process ensures agility, quality, and measurable impact across every stage of the software lifecycle."
+  title="How NOVUM’s Digital Strategy Empowers Business Transformation"
+  description="Partnering with NOVUM for digital strategy enables organizations to align technology with vision, streamline operations, and accelerate innovation. Our strategic frameworks connect leadership goals with practical execution plans ensuring measurable outcomes, improved agility, and sustainable growth across all business functions."
   items={[
     {
-      img: "/assets/img/softwaredev/tab-1.webp",
-      title: "Tailored Business Solutions",
-      desc: "Every application is custom-built around your goals, ensuring seamless alignment with processes, teams, and customer needs.",
+      img: "/assets/img/digital-strategy/tab-1.webp",
+      title: "Aligned Business & Technology Goals",
+      desc: "Bridge the gap between strategic vision and digital execution, ensuring technology investments directly support business priorities.",
     },
     {
-      img: "/assets/img/softwaredev/tab-2.webp",
-      title: "Faster Time to Market",
-      desc: "Our agile development framework accelerates delivery, helping you launch, test, and iterate new software faster.",
+      img: "/assets/img/digital-strategy/tab-2.webp",
+      title: "Accelerated Transformation",
+      desc: "Implement clear, phased roadmaps that fast-track modernization, reduce complexity, and deliver early wins across departments.",
     },
     {
-      img: "/assets/img/softwaredev/tab-3.webp",
-      title: "Enhanced Scalability & Performance",
-      desc: "We design robust architectures capable of handling growth, high traffic, and complex enterprise operations effortlessly.",
+      img: "/assets/img/digital-strategy/tab-3.webp",
+      title: "Enhanced Decision Intelligence",
+      desc: "Leverage analytics, KPIs, and dashboards to enable data-driven decision-making and real-time strategic adjustments.",
     },
     {
-      img: "/assets/img/softwaredev/tab-4.webp",
-      title: "Seamless Integration",
-      desc: "Connect new systems with your existing applications and cloud infrastructure through secure, efficient APIs and integrations.",
+      img: "/assets/img/digital-strategy/tab-4.webp",
+      title: "Operational Efficiency",
+      desc: "Optimize workflows and systems to eliminate redundancy, improve collaboration, and maximize productivity enterprise-wide.",
     },
     {
-      img: "/assets/img/softwaredev/tab-5.webp",
-      title: "Continuous Optimization & Support",
-      desc: "Benefit from ongoing updates, maintenance, and performance tuning to ensure your software stays future-ready.",
+      img: "/assets/img/digital-strategy/tab-5.webp",
+      title: "Future-Ready Scalability",
+      desc: "Build adaptable frameworks and governance models that evolve with emerging technologies and changing market demands.",
     },
   ]}
 />
+
 
    
       <Whyus
   id="whyus"
   subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Software Development"
-  description="NOVUM combines technical excellence with a deep understanding of business challenges to deliver high-quality, scalable software solutions. Our team of experienced developers, architects, and strategists ensures every project is built with precision, innovation, and measurable results that align with your organization’s long-term goals."
+  title="Why Partner with NOVUM for Digital Strategy"
+  description="NOVUM helps organizations define, plan, and execute digital transformation with clarity and confidence. Our strategic experts combine business insight with technological depth to create actionable roadmaps that deliver measurable impact. We don’t just plan change we help you make it sustainable, scalable, and aligned with your long-term vision."
   counters={[
-    { value: 50, suffix: "+", label: "Custom Solutions Delivered" },
-    { value: 15, suffix: "+", label: "Industries Served" },
-    { value: 100, suffix: "%", label: "Project Success Rate" },
-    { value: 10, suffix: "+", label: "Years of Development Expertise" },
+    { value: 60, suffix: "+", label: "Digital Strategies Delivered" },
+    { value: 20, suffix: "+", label: "Industries Served" },
+    { value: 95, suffix: "%", label: "Client Retention Rate" },
+    { value: 10, suffix: "+", label: "Years of Strategic Experience" },
   ]}
   features={[
     {
-      icon: "fa-solid fa-code",
-      title: "Full-Cycle Development",
-      desc: "From discovery to deployment, we manage every stage of the software lifecycle with agile precision and transparency.",
+      icon: "fa-solid fa-lightbulb",
+      title: "Strategic Expertise",
+      desc: "Our consultants bring cross-industry knowledge and proven methodologies to design transformation strategies that work in the real world.",
     },
     {
-      icon: "fa-solid fa-cloud",
-      title: "Scalable Cloud Architecture",
-      desc: "We engineer secure, high-performing applications optimized for cloud environments and global scalability.",
+      icon: "fa-solid fa-gear",
+      title: "Execution-Focused Planning",
+      desc: "We bridge the gap between vision and implementation, ensuring every recommendation is practical, measurable, and results-oriented.",
     },
     {
       icon: "fa-solid fa-handshake",
-      title: "Collaborative Partnership",
-      desc: "Our team works closely with clients to ensure every project aligns with strategic goals and delivers lasting business impact.",
+      title: "Long-Term Partnership",
+      desc: "NOVUM remains engaged beyond strategy delivery guiding you through adoption, optimization, and continuous improvement.",
     },
   ]}
 />
