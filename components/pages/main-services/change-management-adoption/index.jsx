@@ -1,190 +1,274 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import WhySection from "@/components/data/services/WhySection";
-import CoreCapabilitiesSection from "@/components/data/services/CoreCapabilitiesSection";
+import MainServices from "@/components/data/services/main-services";
+import ImplementSection from "@/components/data/services/implement";
+import Whyus from "@/components/data/services/whyus";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
 
-const coreTabs = [
-  {
-    id: 'tab_communication',
-    label: 'Strategic Communication and Training',
-    content: {
-      imageSrc: '/assets/img/change-management-adoption/tab1.webp',
-      imageAlt: 'Strategic Communication and Training',
-      title: 'Strategic Communication and Training',
-      paragraphs: [
-        'We create structured communication plans and interactive training materials to ensure that every stakeholder understands the vision and benefits of the transformation. These materials are tailored for different audiences including leadership, department heads, and end users.'
-      ]
-    }
-  },
-  {
-    id: 'tab_enablement',
-    label: 'Role-Based Enablement',
-    content: {
-      imageSrc: '/assets/img/change-management-adoption/tab2.webp',
-      imageAlt: 'Role-Based Enablement',
-      title: 'Role-Based Enablement',
-      paragraphs: [
-        'Our programs are designed around real user roles and responsibilities. This ensures that training sessions and adoption strategies directly reflect the way employees perform their daily tasks, increasing relevance and retention.'
-      ]
-    }
-  },
-  {
-    id: 'tab_resistance',
-    label: 'Resistance Management and Feedback Loops',
-    content: {
-      imageSrc: '/assets/img/change-management-adoption/tab3.webp',
-      imageAlt: 'Resistance Management and Feedback Loops',
-      title: 'Resistance Management and Feedback Loops',
-      paragraphs: [
-        'We identify common sources of resistance early and work with internal champions to address concerns proactively. Post-launch, we implement feedback loops and performance reviews to monitor adoption and fine-tune ongoing support.'
-      ]
-    }
-  }
-];
 
-const Management = () => {
+
+const Change = () => {
   return (
     <div>
         <HeaderFour />
+        {/* Hero Section */}
 
-        <BannerSection
-            bgImage="/assets/img/change-management-adoption/management-hero.webp"
-            icon="/assets/img/service-cards/change-management.png"
-            title="Change Management and Adoption"
-            borderColorStart="#F9B817"
-            borderColorEnd="#EB5B3B"
-        />
-        <SoftwareSolutionsSection
-            title={`Align People with Technology`}
-            paragraphs={[
-            "Digital transformation is not just about systems and tools it’s about people. At Novum, we recognize that successful technology deployment requires a clear change management strategy that supports your teams through every step of the transformation. Our change management and adoption services help organizations build readiness, drive engagement, and ensure that users embrace new ways of working.",
-            "We focus on aligning digital initiatives with human behavior, business culture, and operational workflows to ensure long-term success."
-            ]}
-            imageSrc="/assets/img/change-management-adoption/management-1.webp"
-            altText="Management Adoptation"
-        />
-
-        <section className="py-5 changemanagement" id="ms-sustainability-overview-alt">
-  <div className="container">
-    
-    {/* Row 1 — Supporting Long-Term Adoption (image left, text right) */}
-    <div className="row align-items-center g-4 mb-4 mb-lg-5">
-      <div className="col-12 col-lg-6">
-        <img
-          src="/assets/img/change-management-adoption/management-2.webp"
-          alt="Supporting Long-Term Adoption"
-          className="img-fluid rounded-4"
-        />
-      </div>
-      <div className="col-12 col-lg-6">
-        <div className="feature-rule ps-4 ps-md-4">
-          <div className="small text-uppercase text-secondary mb-2">Adoption</div>
-          <h2 className="h2 fw-bold mb-3">Supporting Long-Term Adoption</h2>
-          <p className="text-muted mb-4">
-            Change does not stop after go-live. We provide support beyond implementation to reinforce behaviors,
-            measure impact, and track user engagement. Our adoption plans are iterative and scalable, supporting
-            growth and continuous improvement within your organization.
-          </p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-two"
-          >
-            Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Row 2 — Why It Matters for Digital Transformation (image right, text left) */}
-    <div className="row align-items-center g-4">
-      <div className="col-12 col-lg-6 order-lg-2">
-        <img
-          src="/assets/img/change-management-adoption/management-3.webp"
-          alt="Why It Matters for Digital Transformation"
-          className="img-fluid rounded-4"
-        />
-      </div>
-      <div className="col-12 col-lg-6 order-lg-1">
-        <div className="feature-rule ps-4 ps-md-4">
-          <div className="small text-uppercase text-secondary mb-2">Change Management</div>
-          <h2 className="h2 fw-bold mb-3">Why It Matters for Digital Transformation</h2>
-          <p className="text-muted mb-4">
-            Even the most advanced tools can fail if users are not equipped or willing to adopt them.
-            Change management is the link between vision and execution. By preparing your teams for change and
-            guiding them through the transition, Novum ensures that your digital investments generate measurable returns.
-          </p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-two"
-          >
-            Learn more <i className="fa-solid fa-arrow-right ms-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<CoreCapabilitiesSection
-      heading="What We Deliver"
-      tabs={coreTabs}
-    />
-        
-        <WhySection
-  heading="Partner with Novum"
-  subheadingLines={[
-    "Whether you’re rolling out a new ERP system, shifting to cloud-based workflows, or modernizing internal processes, Novum provides the guidance and structure needed for smooth adoption. Contact us to learn how our change management services can accelerate the impact of your transformation."
+      <HeroWithRibbon
+  serviceName="Change Management & Adoption"
+  title="Successful Transformation Through People"
+  highlightText="Change Management"
+  subtitle="Empowering teams to embrace technology, adapt faster, and sustain long-term success."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/change-management-adoption/management-hero.webp"
+  heroButtons={[
+    { label: "Contact Us", href: "/contact" },
   ]}
-  imgSrc="/assets/img/change-management-adoption/management-why.webp"
-  imgAlt="Change Management and Adoption Overview"
-  cards={[
+  links={[
+    { label: "Overview", href: "#about" },
+    { label: "Programs", href: "#services" },
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "Why Choose?", href: "#whyus" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
+  ]}
+/>
+
+ 
+
+
+      <SoftwareSolutionsSection
+  title={
+    <>
+      Why Change Management Is
+      Critical for Digital Transformation
+    </>
+  }
+  paragraphs={[
+    "Technology alone doesn’t drive transformation people do. NOVUM’s Change Management & Adoption services help organizations align their workforce with new systems, ensuring every digital initiative is embraced, understood, and sustained. We build the bridge between technical deployment and human adoption, minimizing disruption and maximizing ROI.",
+    "Through structured communication, training, and engagement strategies, we empower teams to adapt confidently and maintain momentum long after go-live. Our approach combines behavioral insight, organizational psychology, and practical implementation support for measurable, lasting success."
+  ]}
+  imageSrc="/assets/img/change-management-adoption/management-1.webp"
+  altText="Change Management and Adoption Services"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
+
+<MainServices
+  id="services"
+  subtitle="Change Management Services"
+  title="Empowering People to Drive Lasting Transformation"
+  description="NOVUM’s Change Management & Adoption services help organizations ensure that digital transformation succeeds not just technologically, but culturally. We develop structured engagement frameworks, leadership alignment strategies, and tailored enablement programs that inspire adoption and long-term commitment. Our proven methodologies foster readiness, resilience, and measurable business impact."
+  image={{
+    src: "/assets/img/change-management-adoption/management-2.webp",
+    alt: "Change Management and Adoption Framework",
+  }}
+  services={[
     {
-      iconClass: 'fa-solid fa-bullhorn text-novum-blue',
-      title: 'Strategic Communication & Training',
-      text: 'Clear messaging and interactive training tailored for leaders, department heads, and end users.'
+      title: "Organizational Readiness Assessment",
+      desc: "Assess your organization’s culture, communication, and capabilities to prepare teams for upcoming transformation initiatives.",
     },
     {
-      iconClass: 'fa-solid fa-chalkboard-user text-novum-blue',
-      title: 'Role-Based Enablement',
-      text: 'Programs mapped to real responsibilities so adoption fits day-to-day work and sticks.'
+      title: "Change Strategy Development",
+      desc: "Design comprehensive strategies that combine clear communication, leadership support, and behavioral change planning.",
     },
     {
-      iconClass: 'fa-solid fa-people-arrows text-novum-blue',
-      title: 'Resistance Management',
-      text: 'Identify concerns early, activate internal champions, and address barriers proactively.'
+      title: "Stakeholder Engagement & Alignment",
+      desc: "Build leadership sponsorship and involve key influencers to create trust, alignment, and shared accountability.",
     },
     {
-      iconClass: 'fa-solid fa-chart-line text-novum-blue',
-      title: 'Adoption Analytics',
-      text: 'Track engagement and performance KPIs to monitor progress and prove impact.'
+      title: "Training & Role-Based Enablement",
+      desc: "Deliver hands-on, targeted learning experiences that empower employees to confidently adopt new systems and workflows.",
     },
     {
-      iconClass: 'fa-solid fa-people-group text-novum-blue',
-      title: 'Champions Network',
-      text: 'Equip change ambassadors across departments to reinforce new behaviors at scale.'
+      title: "Adoption Tracking & Performance Analytics",
+      desc: "Monitor user engagement, training progress, and adoption metrics to evaluate impact and guide ongoing improvement.",
     },
     {
-      iconClass: 'fa-solid fa-life-ring text-novum-blue',
-      title: 'Post-Go-Live Support',
-      text: 'Feedback loops, refreshers, and continuous optimization for sustained adoption.'
-    }
+      title: "Post-Implementation Reinforcement",
+      desc: "Provide ongoing support, refresher sessions, and performance feedback loops to sustain adoption and maximize ROI.",
+    },
   ]}
 />
 
 
 
 
-        
+<ImplementSection
+  id="implement"
+  subtitle="Benefits"
+  title="How NOVUM’s Change Management Services Drive Successful Transformation"
+  description="Partnering with NOVUM helps organizations achieve true transformation by aligning people, processes, and technology. Our structured change management approach fosters readiness, minimizes resistance, and ensures sustained adoption empowering teams to embrace innovation and deliver measurable business outcomes."
+  items={[
+    {
+      img: "/assets/img/change-management-adoption/tab-1.webp",
+      title: "Improved User Adoption",
+      desc: "Ensure employees confidently embrace new systems and workflows through clear communication, training, and support frameworks.",
+    },
+    {
+      img: "/assets/img/change-management-adoption/tab-2.webp",
+      title: "Reduced Implementation Resistance",
+      desc: "Address challenges early and build organizational buy-in with proactive engagement and leadership alignment strategies.",
+    },
+    {
+      img: "/assets/img/change-management-adoption/tab-3.webp",
+      title: "Faster ROI on Digital Investments",
+      desc: "Accelerate the realization of business value by ensuring technologies are effectively utilized and integrated across teams.",
+    },
+    {
+      img: "/assets/img/change-management-adoption/tab-4.webp",
+      title: "Enhanced Employee Engagement",
+      desc: "Foster a culture of collaboration, empowerment, and accountability through inclusive communication and continuous feedback.",
+    },
+    {
+      img: "/assets/img/change-management-adoption/tab-5.webp",
+      title: "Sustained Organizational Agility",
+      desc: "Build long-term resilience with adaptive frameworks that prepare teams for future change and evolving digital priorities.",
+    },
+  ]}
+/>
+
+   
+      <Whyus
+  id="whyus"
+  subtitle="Why Choose Us"
+  title="Why Partner with NOVUM for Corporate Training"
+  description="NOVUM empowers organizations to upskill their teams through expert-led, hands-on corporate training designed for measurable results. Our certified instructors combine technical mastery with real-world experience to create learning experiences that enhance productivity, engagement, and long-term business success."
+  counters={[
+    { value: 500, suffix: "+", label: "Professionals Trained" },
+    { value: 25, suffix: "+", label: "Corporate Clients Served" },
+    { value: 98, suffix: "%", label: "Satisfaction Rate" },
+    { value: 10, suffix: "+", label: "Years of Training Expertise" },
+  ]}
+  features={[
+    {
+      icon: "fa-solid fa-chalkboard-user",
+      title: "Certified Microsoft Instructors",
+      desc: "Our trainers include Microsoft MVPs, MCTs, and industry-certified professionals with deep expertise in modern tools and technologies.",
+    },
+    {
+      icon: "fa-solid fa-users-gear",
+      title: "Tailored Learning Solutions",
+      desc: "Each program is customized to fit your business objectives, skill levels, and operational workflows for maximum relevance and impact.",
+    },
+    {
+      icon: "fa-solid fa-handshake",
+      title: "End-to-End Support",
+      desc: "From planning and scheduling to delivery and feedback, NOVUM ensures seamless coordination and measurable outcomes.",
+    },
+  ]}
+/>
+
+
+
+<Testimonials
+  subtitle="Client Stories"
+  title="What Clients Say About Working With Novum"
+  items={[
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
+      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
+      author: "Huseyn Zeynalli",
+      position: "Head of Brand Management, Italdizain Group",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
+      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
+      author: "Elvin Mammadov",
+      position: "Venue Operations Manager, Baku City Circuit",
+    },
+  ]}
+/>
+
+
+
+      <OtherServices
+  subtitle="Our Expertise"
+  title="Other Services We Provide"
+  description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+  services={[
+    {
+      title: "Software Development",
+      imgSrc: "/assets/img/service-cards/softwaredev.svg",
+      description:
+        "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+      link: "/services/software-development",
+      gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+    },
+    {
+      title: "Power BI Consulting",
+      imgSrc: "/assets/img/service-cards/powerbi.svg",
+      description:
+        "We transform and model data into insights that drive data-driven decisions.",
+      link: "/services/power-bi",
+      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
+    },
+    {
+      title: "Digital Services",
+      imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+      description: "We bring transformative digital outcomes to organizations.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+    },
+    
+    {
+      title: "Artificial Intelligence & IoT",
+      imgSrc: "/assets/img/service-cards/ai.svg",
+      description:
+        "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+      link: "/services/artificial-intelligence-iot",
+      gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+    },
+    {
+      title: "Microsoft Azure",
+      imgSrc: "/assets/img/service-cards/azure.svg",
+      description: "Swiftly shift your business resources to cloud infrastructure.",
+      link: "/services/azure",
+      gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+    },
+    {
+      title: "Microsoft 365",
+      imgSrc: "/assets/img/service-cards/microsoft365.svg",
+      description: "A suite of apps to help you stay connected and get things done.",
+      link: "/services/microsoft-365-deployment",
+      gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+    },
+    {
+      title: "Dynamics 365",
+      imgSrc: "/assets/img/service-cards/dynamic365.svg",
+      description:
+        "Boost efficiency and customer experiences with an agile business platform.",
+      link: "/services/microsoft-dynamics-365",
+      gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+    },
+    {
+      title: "Sustainability",
+      imgSrc: "/assets/img/service-cards/sustainability.svg",
+      description:
+        "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+      link: "/services/microsoft-sustainability",
+      gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+    },
+    {
+      title: "Copilot",
+      imgSrc: "/assets/img/service-cards/copilot.png",
+      description:
+        "An AI assistant that automates tasks and provides real-time insights.",
+      link: "#",
+      gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+    },
+  ]}
+/>
+
+
+<Widget />
+
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
@@ -194,9 +278,11 @@ const Management = () => {
                         buttonHref="/contact"
                     />
 
+                    
+
       <Footer />
     </div>
   );
 };
 
-export default Management;
+export default Change;
