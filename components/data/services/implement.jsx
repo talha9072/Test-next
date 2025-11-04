@@ -33,11 +33,60 @@ export default function ImplementSection({
             padding-bottom: 50px !important; /* space for dots */
           }
 
-          /* --- CARD IMAGE --- */
+          /* === CARD WRAPPER === */
+          .benefit-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+          }
+
+          .benefit-card:hover {
+            transform: translateY(-5px);
+          }
+
+          /* === IMAGE === */
           .benefit-card img {
             height: 200px;
-            object-fit: cover;
             width: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+          }
+
+          /* === CONTENT AREA === */
+          .benefit-card .p-4 {
+            flex: 1; /* ensures equal growth */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          .benefit-card h5 {
+            flex-shrink: 0;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #0d2b75;
+          }
+
+          .benefit-card p {
+            flex-grow: 1; /* ensures content stretch */
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+          }
+
+          /* === SWIPER SLIDE EQUAL HEIGHT FIX === */
+          .benefits-swiper .swiper-slide {
+            display: flex !important;
+            height: auto !important;
+          }
+
+          .benefits-swiper .swiper-slide > .benefit-card {
+            flex: 1;
+            height: 100%;
           }
 
           /* --- PAGINATION BELOW --- */
@@ -104,11 +153,11 @@ export default function ImplementSection({
         >
           {items.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="benefit-card h-100 rounded shadow-sm overflow-hidden">
+              <div className="benefit-card shadow-sm overflow-hidden">
                 <img src={item.img} alt={item.title} />
                 <div className="p-4">
-                  <h5 className="fw-semibold text-dark mb-2">{item.title}</h5>
-                  <p className="text-muted small mb-0">{item.desc}</p>
+                  <h5 className="fw-semibold mb-2">{item.title}</h5>
+                  <p className="small mb-0">{item.desc}</p>
                 </div>
               </div>
             </SwiperSlide>
