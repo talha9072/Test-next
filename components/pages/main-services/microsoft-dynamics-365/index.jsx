@@ -25,7 +25,7 @@ const Dynamic365 = () => {
   serviceName="Microsoft Dynamics 365 Solutions"
   title="Empower Your Business with Unified Intelligence"
   highlightText="Dynamics 365"
-  subtitle="Transform operations, elevate customer experiences, and accelerate growth with NOVUM’s Microsoft Dynamics 365 implementation and consulting solutions."
+  subtitle="Streamline processes and enhance customer experiences with Dynamics 365."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/dynamics365/dynamics-hero.webp"
   heroButtons={[

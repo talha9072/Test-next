@@ -25,7 +25,7 @@ const Licensing = () => {
   serviceName="Product Licensing & Access Requests"
   title="Request and Activate Your Product Licenses"
   highlightText="Licensing"
-  subtitle="Gain secure access to NOVUM’s AI-powered solutions and Microsoft products through our streamlined licensing process designed for transparency, speed, and enterprise-grade compliance."
+  subtitle="Power your business with simplified, enterprise grade Microsoft licensing."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/licensing/license-hero.webp"
   heroButtons={[
@@ -52,7 +52,7 @@ const Licensing = () => {
   }
   paragraphs={[
     "Managing software access efficiently is critical to maintaining compliance, security, and scalability. NOVUM’s product licensing process ensures that every request is verified, transparent, and aligned with enterprise-grade standards for deployment and governance.",
-    "Whether you need access to Microsoft solutions, AI-driven platforms, or specialized business tools, our licensing framework simplifies the journey — from request to activation. With fast turnaround times, verified approvals, and ongoing support, organizations can operate confidently and securely with licensed technology built for growth.",
+    "Whether you need access to Microsoft solutions, AI-driven platforms, or specialized business tools, our licensing framework simplifies the journey from request to activation. With fast turnaround times, verified approvals, and ongoing support, organizations can operate confidently and securely with licensed technology built for growth.",
   ]}
   imageSrc="/assets/img/licensing/license-1.webp"
   altText="Product Licensing Solutions"

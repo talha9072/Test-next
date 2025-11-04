@@ -25,7 +25,7 @@ const Strategicresourcing = () => {
   serviceName="Strategic IT Resourcing"
   title="Flexible and Outcome Driven Talent Solutions"
   highlightText="Strategic Resourcing"
-  subtitle="Scale your technical capacity with NOVUM’s flexible resourcing models. From short-term expertise to long-term embedded support, we provide certified professionals who integrate seamlessly into your teams and accelerate digital transformation."
+  subtitle="Seamlessly scale your team with certified NOVUM professionals."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/strategic-resourcing/Strategic-resourcing-hero.webp"
   heroButtons={[

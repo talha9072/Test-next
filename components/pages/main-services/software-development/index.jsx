@@ -25,7 +25,7 @@ const Softwaredev = () => {
   serviceName="Custom Software Development"
   title="Innovative, Scalable, and Business-Driven Solutions"
   highlightText="Software Development"
-  subtitle="Build powerful, tailor-made software solutions with NOVUM. From cloud-ready applications to enterprise platforms, we design, develop, and deploy systems that accelerate growth, enhance efficiency, and drive digital transformation."
+  subtitle="Designing and delivering scalable software that drives digital growth."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/softwaredev/software-hero.webp"
   heroButtons={[
@@ -46,7 +46,7 @@ const Softwaredev = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Custom Software Development Is <br />
+      Why Custom Software Development Is
       Essential for Modern Businesses
     </>
   }

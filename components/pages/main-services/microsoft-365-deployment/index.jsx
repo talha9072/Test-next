@@ -25,7 +25,7 @@ const Microsoftdeployment = () => {
   serviceName="Microsoft 365 Deployment Services"
   title="Seamless, Secure, and Scalable Cloud Productivity"
   highlightText="Microsoft 365"
-  subtitle="Empower your workforce with modern collaboration, productivity, and security expertly deployed and managed by NOVUM for organizations of all sizes."
+  subtitle="Empower teams with secure, seamless Microsoft 365 deployment."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/microsoft-deployment/hero.png"
   heroButtons={[

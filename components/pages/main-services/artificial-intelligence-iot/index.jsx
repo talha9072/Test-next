@@ -25,7 +25,7 @@ const Ai = () => {
   serviceName="Artificial Intelligence & IoT Solutions"
   title="Transforming the Future with AI and IoT"
   highlightText="AI & IoT"
-  subtitle="Enhance efficiency, automate workflows, and unlock real-time insights with NOVUM’s enterprise-grade AI and IoT solutions built for scalability and innovation."
+  subtitle="Harness AI and IoT to turn automation into advantage."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/ai/ai-hero.webp"
   heroButtons={[
@@ -52,9 +52,9 @@ const Ai = () => {
     </>
   }
   paragraphs={[
-    "Artificial Intelligence and the Internet of Things are reshaping how businesses operate automating tasks, predicting outcomes, and enabling real-time decision-making across every department.",
+    "Artificial Intelligence and the Internet of Things are reshaping how businesses operate automating tasks, predicting outcomes, and enabling real time decision-making across every department.",
     "By connecting devices, sensors, and data through intelligent systems, organizations can unlock valuable insights, reduce downtime, and enhance productivity with smarter workflows.",
-    "NOVUM’s AI and IoT solutions empower enterprises to move from reactive to predictive operations — driving efficiency, innovation, and competitive advantage in a connected world.",
+    "NOVUM’s AI and IoT solutions empower enterprises to move from reactive to predictive operations driving efficiency, innovation, and competitive advantage in a connected world.",
   ]}
   imageSrc="/assets/img/ai/ai-1.webp"
   altText="AI and IoT Solutions"
@@ -65,7 +65,7 @@ const Ai = () => {
   id="services"
   subtitle="AI and IoT Services"
   title="Intelligent, Connected, and Scalable Solutions for the Future"
-  description="NOVUM designs and deploys AI and IoT ecosystems that merge data intelligence with real-world operations. From predictive analytics to connected device automation, our solutions help organizations enhance productivity, reduce costs, and unlock new opportunities through intelligent transformation."
+  description="NOVUM designs and deploys AI and IoT ecosystems that merge data intelligence with real world operations. From predictive analytics to connected device automation, our solutions help organizations enhance productivity, reduce costs, and unlock new opportunities through intelligent transformation."
   image={{
     src: "/assets/img/ai/ai-2.webp",
     alt: "AI and IoT Systems",
@@ -77,7 +77,7 @@ const Ai = () => {
     },
     {
       title: "Computer Vision Integration",
-      desc: "Deploying smart vision systems for object detection, facial recognition, and real-time visual insights.",
+      desc: "Deploying smart vision systems for object detection, facial recognition, and real time visual insights.",
     },
     {
       title: "IoT Connectivity & Sensors",
@@ -85,7 +85,7 @@ const Ai = () => {
     },
     {
       title: "Edge & Cloud Intelligence",
-      desc: "Building distributed architectures that process data instantly—on the edge or in the cloud—for faster decisions.",
+      desc: "Building distributed architectures that process data instantly on the edge or in the cloud for faster decisions.",
     },
     {
       title: "Process Automation",
@@ -103,7 +103,7 @@ const Ai = () => {
   id="implement"
   subtitle="Benefits"
   title="How AI and IoT Empower Intelligent and Connected Operations"
-  description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation toward predictive, adaptive, and self-optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
+  description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation toward predictive, adaptive, and self optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
   items={[
     {
       img: "/assets/img/ai/predective.webp",
@@ -123,7 +123,7 @@ const Ai = () => {
     {
       img: "/assets/img/ai/adaptive.webp",
       title: "Adaptive Scalability",
-      desc: "Easily expand your AI and IoT network as data volumes and connected devices grow — without complexity.",
+      desc: "Easily expand your AI and IoT network as data volumes and connected devices grow without complexity.",
     },
     {
       img: "/assets/img/ai/security.webp",

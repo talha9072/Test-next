@@ -25,7 +25,7 @@ const Ai = () => {
   serviceName="Microsoft Azure Solutions"
   title="Empower Your Business with the Cloud"
   highlightText="Azure"
-  subtitle="Accelerate innovation, enhance scalability, and strengthen security with NOVUM’s end-to-end Microsoft Azure cloud solutions built for agility, performance, and growth."
+  subtitle="Scale smarter with secure, high performance Azure cloud solutions."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/azure/azure-hero.webp"
   heroButtons={[
@@ -53,7 +53,7 @@ const Ai = () => {
   }
   paragraphs={[
     "Microsoft Azure empowers organizations to move beyond traditional IT infrastructure offering unmatched scalability, reliability, and intelligence in the cloud.",
-    "From data hosting and AI services to security and analytics, Azure enables businesses to innovate faster, optimize operations, and securely connect people, systems, and data across hybrid and multi-cloud environments.",
+    "From data hosting and AI services to security and analytics, Azure enables businesses to innovate faster, optimize operations, and securely connect people, systems, and data across hybrid and multi cloud environments.",
     "NOVUM helps enterprises modernize their infrastructure, migrate applications, and implement cloud-native solutions using Azure’s powerful ecosystem driving agility, resilience, and long-term growth.",
   ]}
   imageSrc="/assets/img/azure/azure-1.webp"

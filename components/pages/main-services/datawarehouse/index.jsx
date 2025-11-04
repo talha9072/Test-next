@@ -25,7 +25,7 @@ const Datawarehouse = () => {
   serviceName="Data Warehouse Solutions"
   title="Centralized, Scalable, and Strategic"
   highlightText="Data Warehouse"
-  subtitle="Unify your data, accelerate decisions, and empower insights with NOVUM’s enterprise-grade data warehouse solutions."
+  subtitle="Empower faster, smarter decisions through unified data."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/datawarehouse/warehouse-hero.webp"
   heroButtons={[
@@ -94,7 +94,7 @@ const Datawarehouse = () => {
     {
       img: "/assets/img/datawarehouse/real-time.webp",
       title: "Real-Time Decision Support",
-      desc: "Access updated insights instantly with automated refresh cycles and real-time data synchronization.",
+      desc: "Access updated insights instantly with automated refresh cycles and real time data synchronization.",
     },
     {
       img: "/assets/img/datawarehouse/cost.webp",
@@ -129,12 +129,12 @@ const Datawarehouse = () => {
     {
       icon: "fa-solid fa-database",
       title: "Deep Data Expertise",
-      desc: "Proven success in building scalable, high-performance data warehouses across industries.",
+      desc: "Proven success in building scalable, high performance data warehouses across industries.",
     },
     {
       icon: "fa-solid fa-link",
       title: "Seamless System Integration",
-      desc: "Ensuring unified data flow across ERP, CRM, and cloud platforms for real-time insights.",
+      desc: "Ensuring unified data flow across ERP, CRM, and cloud platforms for real time insights.",
     },
     {
       icon: "fa-solid fa-shield-halved",
