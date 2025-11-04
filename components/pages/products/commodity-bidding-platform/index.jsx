@@ -12,7 +12,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Aerospace = () => {
+const Bidding = () => {
   return (
     <div>
         <HeaderFour />
@@ -94,7 +94,7 @@ const Aerospace = () => {
       description: `
         Optimize freight procurement and contract bidding through real-time, competitive auctions tailored for logistics networks. 
         Shippers and carriers can transparently bid on lanes, routes, or capacity blocks, ensuring cost optimization and fair competition. 
-        Integrated dashboards provide complete visibility into freight rates, carrier reliability, and performance metrics — helping procurement teams make faster, data-driven decisions.
+        Integrated dashboards provide complete visibility into freight rates, carrier reliability, and performance metrics helping procurement teams make faster, data-driven decisions.
         Automated comparisons, AI-based ranking, and smart contract management streamline vendor selection and negotiation cycles. 
         The result: reduced logistics overheads, improved route efficiency, and scalable freight operations with measurable ROI.
       `,
@@ -108,7 +108,7 @@ const Aerospace = () => {
       title: "Streamlined Raw Material Procurement",
       description: `
         Simplify the sourcing of commodities such as metals, grains, and chemicals through centralized, intelligent bidding automation. 
-        Manufacturers gain end-to-end visibility in supplier selection, price comparison, and delivery commitments — all validated through secure, system-driven workflows.
+        Manufacturers gain end-to-end visibility in supplier selection, price comparison, and delivery commitments all validated through secure, system-driven workflows.
         The platform tracks every auction, from listing to delivery confirmation, providing full accountability and traceability at every stage.
         AI-powered analytics uncover supplier performance patterns, cost trends, and demand forecasts, enabling more accurate and proactive procurement strategies.
         The result: reduced sourcing risks, faster turnaround, and smarter purchasing decisions for mission-critical materials that impact production continuity.
@@ -213,4 +213,4 @@ const Aerospace = () => {
   );
 };
 
-export default Aerospace;
+export default Bidding;
