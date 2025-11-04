@@ -60,9 +60,9 @@ const Footer = () => (
 
         {/* === Strategic Partners === */}
         <div className="col-12 mb-0">
-          <h6 className="text-uppercase fw-semibold mb-0" style={{ fontSize: "10px", letterSpacing: "0.5px", color: "var(--bs-secondary-color)" }}>
+          <p className="text-uppercase fw-semibold mb-0" style={{ fontSize: "10px", letterSpacing: "0.5px", color: "var(--bs-secondary-color)" }}>
             Strategic Partners
-          </h6>
+          </p>
         </div>
 
         {/* === Partners Row (Inside Same Row) === */}

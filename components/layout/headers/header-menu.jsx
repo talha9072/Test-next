@@ -158,7 +158,7 @@ const MainMenu = () => {
                       />
                       <div className="cta-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-8">
                         <div>
-                          <h5 className="fw-semibold mb-2">Need help choosing?</h5>
+                          <p className="fw-semibold mb-2 cta-p">Need help choosing?</p>
                           <p className="small mb-4 mt-4">
                             Our team can guide you to the right service based on your
                             business needs. Let’s talk today.
@@ -210,6 +210,8 @@ const MainMenu = () => {
     opacity: 0 !important; /* ensures text is invisible */
     visibility: hidden !important; /* extra safeguard */
   }
+    .mega-col .cta-p{
+    font-size: 1.1rem !important;}
 `}</style>
       </li>
 

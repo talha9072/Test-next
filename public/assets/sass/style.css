@@ -10131,9 +10131,7 @@ footer a:hover{
   transition: transform 0.5s ease;
   min-height: 300px;
 }
-.mega-col .cta-card-img:hover img {
-  transform: scale(1.05);
-}
+
 
 
 .mega-col .cta-card-img .cta-overlay {
