@@ -12,7 +12,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Bidding = () => {
+const FaceRecognition = () => {
   return (
     <div>
         <HeaderFour />
@@ -214,4 +214,4 @@ const Bidding = () => {
   );
 };
 
-export default Bidding;
+export default FaceRecognition;
