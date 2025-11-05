@@ -9,7 +9,7 @@ export default function HeroContactSection({
   bgColor = "var(--primary-color-1)",
 }) {
   return (
-    <section className="hero-contact text-center d-flex align-items-center justify-content-center">
+    <section className="hero-contact d-flex align-items-center justify-content-center">
       <div className="container pt-5 mt-5">
         <h1 className="fw-bold text-white mb-3">{title}</h1>
         <p className="text-white mb-1">{line1}</p>
@@ -33,7 +33,7 @@ export default function HeroContactSection({
         .hero-contact p {
           font-size: 18px;
           line-height: 1.6;
-          max-width: 700px;
+          
           margin: 0 auto;
         }
         @media (max-width: 768px) {

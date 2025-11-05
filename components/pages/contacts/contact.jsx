@@ -10,7 +10,7 @@ const ContactUs = () => {
       <HeaderFour />
 
       <HeroContactSection
-  title="Get in Touch"
+  title="Contact Novum"
   line1="We’re ready to collaborate and turn your ideas into impact."
   line2="Contact our team to start your next project today."
   bgColor="var(--primary-color-1)"
