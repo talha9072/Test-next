@@ -53,6 +53,7 @@ const productItems = [
       { label: 'Airport Turnaround Solution', href: '/products/airports-turnaround-solution' },
       { label: 'NES (Novum Entrance System)', href: '/products/nes-novum-entrance-system' },
       { label: 'OCR Certification Directory', href: '/products/ocr-certification-directory' },
+      { label: 'ESS - Employee Self Service', href: '/products/ess-employee-self-service' },
     ],
   },
   {
@@ -61,6 +62,8 @@ const productItems = [
     links: [
       { label: 'Face Recognition & Detection', href: '/products/face-recognition-and-detection' },
       { label: 'Commodity Bidding Platform', href: '/products/commodity-bidding-platform' },
+      { label: 'D365 Automations', href: '/products/d365-automations' },
+      { label: 'Airport Revenue Management ISV', href: '/products/airport-revenue-management-isv' },
     ],
   },
   {

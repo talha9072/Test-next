@@ -76,6 +76,9 @@ const ResponsiveMenu = () => {
                     <li><Link href="/products/ocr-certification-directory">OCR Certification Directory</Link></li>
                     <li><Link href="/products/face-recognition-detection">Face Recognition & Detection</Link></li>
                     <li><Link href="/products/commodity-bidding-platform">Commodity Bidding Platform</Link></li>
+                    <li><Link href="/products/d365-automations">D365 Automations</Link></li>
+                    <li><Link href="/products/airport-revenue-management-isv">Airport Revenue Management ISV</Link></li>
+                    <li><Link href="/products/ess-employee-self-service">ESS - Employee Self Service</Link></li>
 
                     
                 </ul>
