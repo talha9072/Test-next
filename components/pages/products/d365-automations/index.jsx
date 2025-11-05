@@ -12,7 +12,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const FaceRecognition = () => {
+const D365 = () => {
   return (
     <div>
         <HeaderFour />
@@ -218,4 +218,4 @@ const FaceRecognition = () => {
   );
 };
 
-export default FaceRecognition;
+export default D365;

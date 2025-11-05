@@ -12,7 +12,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Bidding = () => {
+const NES = () => {
   return (
     <div>
         <HeaderFour />
@@ -213,4 +213,4 @@ const Bidding = () => {
   );
 };
 
-export default Bidding;
+export default NES;
