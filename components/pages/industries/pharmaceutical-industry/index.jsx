@@ -11,7 +11,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const Food = () => {
+const Pharmaceutical = () => {
   return (
     <div>
         <HeaderFour />
@@ -141,4 +141,4 @@ const Food = () => {
   );
 };
 
-export default Food;
+export default Pharmaceutical;
