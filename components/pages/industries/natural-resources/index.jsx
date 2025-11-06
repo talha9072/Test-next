@@ -1,127 +1,138 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import BannerSection from "@/components/data/services/banner";
+import HeroOnly from "@/components/data/industries/banner";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSection";
 import WhySection from "@/components/data/services/WhySection";
 import IssuesSection from "@/components/data/industries/issues";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
 
-const NaturalResources = () => {
+const Natural = () => {
   return (
     <div>
         <HeaderFour />
+       <HeroOnly
+  serviceName="Natural Resources"
+  title="Powering Safer, Smarter Energy and Mining Operations"
+  highlightText="Oil, Gas & Mining"
+  subtitle="Helping energy and mining organizations enhance efficiency, safety, and sustainability through cloud and data innovation."
+  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  heroImage="/assets/img/industries/natural/natural-hero.webp"
+  heroButtons={[
+    { label: "Explore Solutions", href: "#solutions" },
+    { label: "Contact Experts", href: "/contact" },
+  ]}
+/>
 
-        <BannerSection
-            bgImage="/assets/img/industries/natural/natural-hero.jpg"
-            icon="/assets/img/service-cards/natural-resources.png"
-            title="Natural Resources (Oil & Gas, Mining) Solutions"
-            borderColorStart="#FFAA4A"
-            borderColorEnd="#FFCC47"
-        />
-        <SoftwareSolutionsSection
-            title={`Enhancing Operational Control and Safety Through Data and Cloud Technology`}
-            paragraphs={[
-            "In the oil, gas, and mining industries, efficiency, safety, and compliance are critical to long-term success. Novum supports natural resources organizations with end-to-end digital solutions that centralize data, enable predictive insights, and improve operational visibility. From field sites to head offices, our cloud platforms and analytics tools help companies manage complex assets, monitor performance in real time, and stay ahead of regulatory requirements.",
-            ]}
-            imageSrc="/assets/img/industries/natural/natural-1.jpg"
-            altText="Natural Resources"
-        />
+        
+      <SoftwareSolutionsSection
+  title="Connecting Field Operations for Real-Time Control and Safety"
+  paragraphs={[
+    "Oil, gas, and mining organizations rely on accurate, connected data to maintain safety, efficiency, and sustainability. Novum’s integrated cloud platforms bring together information from exploration, production, and logistics to enable real-time visibility, predictive insights, and compliance tracking. The result — reduced downtime, improved decision-making, and safer, more efficient operations.",
+  ]}
+  imageSrc="/assets/img/industries/natural/natural-1.webp"
+  altText="Natural Resources Digital Solutions"
+/>
         
         <IssuesSection
-        title="Oil, Gas, and Mining"
-        subtitle="Key Challenges"
-        imageSrc="/assets/img/industries/natural/natural-3.png"
-        imageAlt="Oil, Gas, and Mining Challenges"
-        leftCards={[
-            { icon: "bi bi-diagram-3", title: "Disconnected Systems", text: "Across exploration, production, logistics, and compliance." },
-            { icon: "bi bi-eye", title: "Lack of Real-Time Data", text: "On equipment performance, site activity, and safety incidents." }
-        ]}
-        rightCards={[
-            { icon: "bi bi-clipboard-data", title: "Manual Reporting Delays", text: "In high-risk and time-sensitive operational environments." },
-            { icon: "bi bi-graph-down", title: "Environmental & Cost Challenges", text: "Difficulty tracking environmental impact, energy usage, and operational risk." }
-        ]}
-        />
+  title="Oil, Gas & Mining"
+  subtitle="Key Challenges"
+  imageSrc="/assets/img/industries/natural/natural-3.png"
+  imageAlt="Oil, Gas and Mining Challenges"
+  leftCards={[
+    {
+      icon: "bi bi-diagram-3",
+      title: "Disconnected Field Systems",
+      text: "Fragmented data between exploration, production, and logistics reduces coordination and accuracy.",
+    },
+    {
+      icon: "bi bi-gear-wide-connected",
+      title: "Equipment & Asset Downtime",
+      text: "Lack of predictive monitoring increases maintenance costs and unplanned outages.",
+    },
+  ]}
+  rightCards={[
+    {
+      icon: "bi bi-shield-exclamation",
+      title: "Safety & Environmental Risks",
+      text: "Limited visibility into field operations increases exposure to safety and compliance issues.",
+    },
+    {
+      icon: "bi bi-bar-chart-line",
+      title: "Reporting & Regulatory Delays",
+      text: "Manual data collection slows environmental reporting and operational decision-making.",
+    },
+  ]}
+/>
+
+
+
 
         <SoftwareDetailSection
-        imageSrc="/assets/img/industries/natural/natural-2.png"
-        imageAlt="Measurable Impact Delivered"
-        numberMain="6"
-        numberSub="+"
-        label="Oil, Gas, and Mining Partners Served"
-        heading={(
-            <>Measurable Impact Delivered <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500">
-                <span className="z-index-minus-1">
-                
-                </span>
-            </span></>
-        )}
-        listItems={[
-            'Greater operational oversight across extraction, processing, and logistics',
-            'Reduced unplanned downtime and improved asset reliability',
-            'Improved regulatory compliance with streamlined reporting and documentation',
-            'Enhanced safety visibility through live monitoring and predictive alerts',
-            'More informed decisions supported by real-time performance data'
-        ]}
-        ctaText="Let’s talk now"
-        ctaHref="#contact"
-        phoneText="971 56 192 06 16"
-        phoneHref="tel:971561920616"
-        />
+  imageSrc="/assets/img/industries/natural/natural-2.webp"
+  imageAlt="Measurable Impact Delivered"
+  heading={<>Measurable Impact Delivered</>}
+  listItems={[
+    'Greater operational control and visibility across field and production sites',
+    'Reduced downtime and maintenance costs through predictive analytics',
+    'Improved compliance and reporting accuracy with centralized data systems',
+    'Enhanced safety performance through real-time monitoring and alerts',
+  ]}
+/>
 
        <WhySection
-        heading="Why Natural Resources Companies Choose Novum"
-        subheadingLines={[
-            "Novum brings a deep understanding of the operational complexity and regulatory landscape facing oil, gas, and mining organizations.",
-            "As a Microsoft Solutions Partner, we deliver platforms built for resilience, scalability, and real-world application.",
-            "Our team enables resource-driven companies to modernize their infrastructure, manage risk, and improve long-term performance using reliable, integrated digital solutions."
-        ]}
-        imgSrc="/assets/img/industries/natural/natural-4.jpg"
-        imgAlt="Natural Resources Digital Transformation"
-        cards={[
-            {
-            iconClass: 'fa-solid fa-cloud text-novum-blue',
-            title: 'Azure Infrastructure for Industrial Environments',
-            text: 'Implement secure, scalable cloud systems for centralized data access across field operations, control rooms, and corporate teams.',
-            },
-            {
-            iconClass: 'fa-solid fa-chart-column text-novum-blue',
-            title: 'Power BI for Operational and Environmental Analytics',
-            text: 'Track production volumes, equipment health, energy usage, emissions, and safety metrics in real time through intuitive dashboards.',
-            },
-            {
-            iconClass: 'fa-solid fa-gears text-novum-blue',
-            title: 'Custom Software for Asset and Compliance Management',
-            text: 'Develop solutions to track asset utilization, regulatory reporting, maintenance schedules, and risk assessments across multiple sites.',
-            },
-            {
-            iconClass: 'fa-solid fa-robot text-novum-blue',
-            title: 'AI-Driven Predictive Maintenance',
-            text: 'Leverage machine learning models to forecast equipment failures, reduce downtime, and optimize maintenance strategies for field assets.',
-            },
-            {
-            iconClass: 'fa-solid fa-database text-novum-blue',
-            title: 'Data Warehouse Integration',
-            text: 'Consolidate data from SCADA systems, IoT sensors, ERP platforms, and safety logs into a unified environment for reporting and decision-making.',
-            },
-            {
-            iconClass: 'fa-solid fa-people-group text-novum-blue',
-            title: 'Microsoft 365 for Cross-Site Collaboration',
-            text: 'Facilitate secure communication and workflow coordination across remote teams and field engineers using Microsoft productivity tools.',
-            },
-        ]}
-        />
+  heading="Why Natural Resources Companies Choose Novum"
+  subheadingLines={[
+    "Novum helps oil, gas, and mining organizations strengthen safety, efficiency, and sustainability through data and cloud innovation.",
+    "As a Microsoft Solutions Partner, we deliver secure, scalable platforms that improve operational visibility, reduce downtime, and support regulatory compliance.",
+  ]}
+  imgSrc="/assets/img/industries/natural/natural-3.webp"
+  imgAlt="Natural Resources Digital Transformation"
+  cards={[
+    {
+      iconClass: 'fa-solid fa-cloud text-novum-blue',
+      title: 'Azure Cloud Infrastructure',
+      text: 'Deploy secure, high-performance cloud environments that support complex industrial operations at scale.',
+    },
+    {
+      iconClass: 'fa-solid fa-database text-novum-blue',
+      title: 'Data Integration & Warehousing',
+      text: 'Unify IoT, SCADA, and ERP data for real-time visibility across field and production sites.',
+    },
+    {
+      iconClass: 'fa-solid fa-chart-column text-novum-blue',
+      title: 'Power BI Dashboards',
+      text: 'Monitor production, energy use, safety, and performance KPIs through real-time dashboards.',
+    },
+    {
+      iconClass: 'fa-solid fa-robot text-novum-blue',
+      title: 'AI & Predictive Maintenance',
+      text: 'Use machine learning to forecast equipment issues, reduce downtime, and improve asset reliability.',
+    },
+    {
+      iconClass: 'fa-solid fa-shield-halved text-novum-blue',
+      title: 'Security & Compliance',
+      text: 'Ensure data integrity and meet environmental and operational standards through advanced governance tools.',
+    },
+    {
+      iconClass: 'fa-solid fa-people-group text-novum-blue',
+      title: 'Microsoft 365 Collaboration',
+      text: 'Connect field engineers, operations teams, and management with secure, modern communication tools.',
+    },
+  ]}
+/>
 
-       
+
+       <Widget />
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
-                        heading="Ready to Modernize Your Oil, Gas, or Mining Operations?"
-                        subText="Explore how Novum’s cloud and analytics technologies can help your organization improve safety, efficiency, and environmental performance.
-                                 Book a consultation with our experts today."
+                        heading="Need a solution? Request a call!"
+                        subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
@@ -131,4 +142,4 @@ const NaturalResources = () => {
   );
 };
 
-export default NaturalResources;
+export default Natural;
