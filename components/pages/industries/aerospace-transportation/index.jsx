@@ -6,6 +6,7 @@ import SoftwareDetailSection from "@/components/data/services/SoftwareDetailSect
 import WhySection from "@/components/data/services/WhySection";
 import IssuesSection from "@/components/data/industries/issues";
 import CTA from '@/components/data/cta';
+import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
 
@@ -123,13 +124,12 @@ const Aerospace = () => {
   ]}
 />
 
-       
+       <Widget />
 
         <CTA
                         bgImage="/assets/img/cta-bg.png"
-                        heading="Ready to Upgrade Your Aerospace or Transportation Operations?"
-                        subText="Speak with Novum’s specialists to learn how cloud and data solutions can enhance your logistics, safety, and service performance.
-                                 Book a consultation today."
+                        heading="Need a solution? Request a call!"
+                        subText="For pricing information about services simply complete the form below and one of our sales professionals will contact you within one business day."
                         buttonText="Get in Touch"
                         buttonHref="/contact"
                     />
