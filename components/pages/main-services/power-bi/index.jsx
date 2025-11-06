@@ -85,7 +85,7 @@ const PowerBI = () => {
               desc: "Monitor KPIs and performance in real time with interactive dashboards.",
             },
             {
-              img: "/assets/img/sustainability/card-1.webp",
+              img: "/assets/img/sustainability/tab-1.webp",
               title: "Forecasting Tools",
               desc: "Predict sales, inventory, and demand trends using advanced analytics.",
             },
