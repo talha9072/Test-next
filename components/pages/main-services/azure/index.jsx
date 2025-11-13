@@ -47,88 +47,89 @@ const Ai = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Microsoft Azure Is the Foundation
-      of Modern Cloud Transformation
+      Azure AI Foundry: The Unified Platform
+      for Building and Scaling Enterprise AI
     </>
   }
   paragraphs={[
-    "Microsoft Azure empowers organizations to move beyond traditional IT infrastructure offering unmatched scalability, reliability, and intelligence in the cloud.",
-    "From data hosting and AI services to security and analytics, Azure enables businesses to innovate faster, optimize operations, and securely connect people, systems, and data across hybrid and multi cloud environments.",
-    "NOVUM helps enterprises modernize their infrastructure, migrate applications, and implement cloud-native solutions using Azure’s powerful ecosystem driving agility, resilience, and long-term growth.",
+    "Azure AI Foundry (formerly Azure AI Studio) is a unified, Azure-hosted platform-as-a-service designed for building, customizing, managing, and scaling AI applications and agents across the enterprise.",
+    "It brings together models, developer tools, agents, and governance under a single namespace all secured with unified RBAC, networking controls, and policy management for consistent and safe AI operations.",
+    "With end-to-end capabilities spanning model access, fine tuning, observability, and agent orchestration, Azure AI Foundry empowers organizations to rapidly innovate and deploy AI solutions with enterprise grade security, reliability, and scalability."
   ]}
   imageSrc="/assets/img/azure/azure-1.webp"
-  altText="Microsoft Azure Solutions"
+  altText="Azure AI Foundry Overview"
   sectionClass="position-relative overflow-hidden py-7"
 />
         
       <MainServices
   id="services"
-  subtitle="Microsoft Azure Services"
-  title="Flexible, Secure, and Scalable Cloud Solutions for Modern Enterprises"
-  description="NOVUM helps organizations leverage the full potential of Microsoft Azure by designing, deploying, and managing end-to-end cloud solutions. From infrastructure modernization to AI integration and DevOps automation, our Azure services empower businesses to scale faster, innovate smarter, and stay secure in a connected world."
+  subtitle="Azure AI Foundry Capabilities"
+  title="A Unified Platform to Build, Customize, and Scale Enterprise AI"
+  description="Azure AI Foundry brings everything enterprises need to build and operationalize AI into one unified environment models, tools, agents, observability, governance, and deployment. These core capabilities make it the most powerful AI development platform in the Microsoft ecosystem."
   image={{
     src: "/assets/img/azure/azure-2.webp",
-    alt: "Microsoft Azure Cloud Architecture",
+    alt: "Azure AI Foundry Capabilities",
   }}
   services={[
     {
-      title: "Cloud Infrastructure Deployment",
-      desc: "Designing and implementing high-performance virtual networks, servers, and storage solutions on Azure.",
+      title: "Model Access & Customization",
+      desc: "Access foundation and open-source models including OpenAI, Meta, Mistral, and more with support for fine-tuning, prompt flow optimization, and serverless inference.",
     },
     {
-      title: "Migration & Modernization",
-      desc: "Seamlessly moving workloads, databases, and applications from on-premises or other clouds to Microsoft Azure.",
+      title: "Agent Toolchain & Project Environment",
+      desc: "Build intelligent agents using RAG, fine-tuning, distillation, and reusable tools within collaborative project environments with isolated workspaces.",
     },
     {
-      title: "Azure Data & AI Services",
-      desc: "Leveraging Azure AI, Machine Learning, and Synapse Analytics to deliver actionable insights and automation.",
+      title: "Tooling & Integration",
+      desc: "Integrate seamlessly with GitHub, VS Code, Copilot Studio, and use SDKs for Python, C#, JavaScript/TypeScript, and Java for faster AI development.",
     },
     {
-      title: "Security & Compliance",
-      desc: "Implementing Azure Security Center and Defender tools for identity, threat, and compliance management.",
+      title: "Observability, Trust & Governance",
+      desc: "Monitor real-time performance, apply enterprise identity controls, enforce safety filters, and maintain responsible governance across the AI lifecycle.",
     },
     {
-      title: "DevOps & Automation",
-      desc: "Enhancing delivery pipelines using Azure DevOps, GitHub Actions, and Infrastructure as Code (IaC) best practices.",
+      title: "Multi-Agent Orchestration",
+      desc: "Coordinate multiple agents that can call each other, run long workflows, and support open standards like A2A and MCP for interoperable agent systems.",
     },
     {
-      title: "Managed Cloud Operations",
-      desc: "Ongoing optimization, monitoring, and cost management to ensure peak performance and reliability.",
+      title: "Local & Edge Deployment",
+      desc: "Deploy AI models locally using Foundry Local on Windows or Mac, with Azure Arc support coming soon for hybrid and edge environments.",
     },
   ]}
 />
 
 
+
       <ImplementSection
   id="implement"
-  subtitle="Benefits"
-  title="How Microsoft Azure Accelerates Digital Transformation"
-  description="Microsoft Azure gives enterprises the flexibility, intelligence, and performance needed to stay ahead in a cloud-first world. NOVUM’s Azure implementations help organizations modernize infrastructure, secure workloads, and enable smarter, data-driven decision-making at scale."
+  subtitle="Innovations"
+  title="How Azure AI Foundry Accelerates Enterprise AI Transformation"
+  description="Azure AI Foundry continues to evolve with new models, orchestration tools, and platform-level advancements—helping organizations build, deploy, and scale next-generation AI applications with greater speed, reliability, and intelligence."
   items={[
     {
-      img: "/assets/img/azure/cloud-migration.webp",
-      title: "Seamless Cloud Migration",
-      desc: "Move applications, databases, and workloads to Azure with zero downtime ensuring business performance.",
+      img: "/assets/img/azure/cloud-migration.webp", // same image
+      title: "Next-Generation Model Access",
+      desc: "Access cutting-edge models like Grok 3, Flux Pro 1.1, Sora, and a broad range of open-source models through the Hugging Face catalog all available directly within Azure AI Foundry.",
     },
     {
-      img: "/assets/img/azure/multi-cloud.webp",
-      title: "Hybrid & Multi-Cloud Flexibility",
-      desc: "Operate across on-premises and cloud environments effortlessly using Azure Arc and hybrid infrastructure support.",
+      img: "/assets/img/azure/multi-cloud.webp", // same image
+      title: "Intelligent Model Routing",
+      desc: "A built-in model router intelligently selects the optimal model for each request, balancing performance and cost without manual tuning.",
     },
     {
-      img: "/assets/img/azure/azure-ai.webp",
-      title: "AI-Powered Insights",
-      desc: "Leverage Azure AI and Machine Learning services to transform data into predictive, actionable business intelligence.",
+      img: "/assets/img/azure/azure-ai.webp", // same image
+      title: "Enterprise Agent Service (GA)",
+      desc: "Build AI agents using 1,400+ connectors with deployment support for Teams, Office, Slack, and Twilio now generally available for enterprise use.",
     },
     {
-      img: "/assets/img/azure/azure-security.webp",
-      title: "Enterprise-Grade Security",
-      desc: "Protect your data and assets with Azure’s built-in identity, compliance, and threat protection frameworks.",
+      img: "/assets/img/azure/azure-security.webp", // same image
+      title: "Advanced Multi-Agent Orchestration",
+      desc: "Support for multi-agent collaboration, long-running workflows, error handling, and open standards such as A2A and Model Context Protocol (MCP).",
     },
     {
-      img: "/assets/img/azure/azure-cost.webp",
-      title: "Cost Optimization & Efficiency",
-      desc: "Reduce infrastructure costs and improve operational efficiency through automated scaling and Azure Cost Management tools.",
+      img: "/assets/img/azure/azure-cost.webp", // same image
+      title: "Foundry Labs Innovations",
+      desc: "Explore emerging capabilities including Project Amelie, Magnetic-UI, TypeAgent, EvoDiff, and BioEmu pushing forward the next wave of AI innovation.",
     },
   ]}
 />
@@ -136,32 +137,33 @@ const Ai = () => {
 <Whyus
   id="whyus"
   subtitle="Why Choose Us"
-  title="Why Choose NOVUM as Your Microsoft Azure Partner"
-  description="NOVUM brings years of experience in cloud architecture, migration, and optimization within the Microsoft ecosystem. As a trusted Azure Solutions Partner, we help organizations accelerate innovation, strengthen security, and modernize their infrastructure through intelligent, scalable, and cost-effective cloud solutions."
+  title="Why Choose NOVUM for Azure AI Foundry"
+  description="NOVUM brings deep expertise in the Microsoft AI ecosystem with strong capabilities across model integration, enterprise agent development, observability, and governance. We help organizations build reliable and intelligent AI systems that scale securely across the entire enterprise."
   counters={[
-    { value: 35, suffix: "+", label: "Azure Implementations" },
+    { value: 35, suffix: "+", label: "AI and Cloud Implementations" },
     { value: 12, suffix: "+", label: "Industries Served" },
     { value: 100, suffix: "%", label: "Client Satisfaction" },
-    { value: 9, suffix: "+", label: "Years of Cloud Expertise" },
+    { value: 9, suffix: "+", label: "Years of AI Expertise" },
   ]}
   features={[
     {
       icon: "fa-solid fa-cloud",
-      title: "Certified Azure Expertise",
-      desc: "Our team of Microsoft-certified engineers delivers end-to-end Azure architecture, deployment, and management.",
+      title: "Strong AI and Model Expertise",
+      desc: "We work with a wide range of foundation and open source models and help teams customize, fine tune, and apply them for real business use cases.",
     },
     {
       icon: "fa-solid fa-shield-halved",
-      title: "Security & Compliance",
-      desc: "Implementing robust identity, governance, and protection frameworks powered by Azure Security Center and Defender.",
+      title: "Governance and Trust",
+      desc: "We guide enterprises in setting up clear access control, safety filters, responsible AI rules, and complete visibility across the AI lifecycle.",
     },
     {
       icon: "fa-solid fa-rocket",
-      title: "Scalable Innovation",
-      desc: "Helping enterprises adopt AI, IoT, and hybrid cloud technologies that grow with your business needs.",
+      title: "Enterprise Agent Development",
+      desc: "We design intelligent agents using advanced tools, connectors, and multi agent patterns that support secure and reliable enterprise operations.",
     },
   ]}
 />
+
 
 
 <Testimonials
