@@ -47,52 +47,54 @@ const Change = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Change Management Is
-      Critical for Digital Transformation
+      Why Change Management Matters
+      for Successful Transformation
     </>
   }
   paragraphs={[
-    "Technology alone doesn’t drive transformation people do. NOVUM’s Change Management & Adoption services help organizations align their workforce with new systems, ensuring every digital initiative is embraced, understood, and sustained. We build the bridge between technical deployment and human adoption, minimizing disruption and maximizing ROI.",
-    "Through structured communication, training, and engagement strategies, we empower teams to adapt confidently and maintain momentum long after go-live. Our approach combines behavioral insight, organizational psychology, and practical implementation support for measurable, lasting success."
+    "A clear and structured change plan prevents the most common reasons digital projects fail such as low adoption, weak engagement, and misaligned expectations.",
+    "Without effective change management, even strong technical solutions risk becoming simple data entry tools instead of real business value creators.",
+    "Our approach ensures that people understand the purpose of the change and have the confidence and capability to use the new solution in a meaningful way."
   ]}
   imageSrc="/assets/img/change-management-adoption/management-1.webp"
   altText="Change Management and Adoption Services"
   sectionClass="position-relative overflow-hidden py-7"
 />
 
+
 <MainServices
   id="services"
-  subtitle="Change Management Services"
-  title="Empowering People to Drive Lasting Transformation"
-  description="NOVUM’s Change Management & Adoption services help organizations ensure that digital transformation succeeds not just technologically, but culturally. We develop structured engagement frameworks, leadership alignment strategies, and tailored enablement programs that inspire adoption and long-term commitment. Our proven methodologies foster readiness, resilience, and measurable business impact."
+  subtitle="Change Management Programs"
+  title="Align Your Digital Solution with Real Business Outcomes"
+  description="Many projects meet technical requirements but still struggle because the human experience is not considered. Our programs help teams understand, adopt, and effectively use new solutions so the business achieves the results it expects."
   image={{
     src: "/assets/img/change-management-adoption/management-2.webp",
     alt: "Change Management and Adoption Framework",
   }}
   services={[
     {
-      title: "Organizational Readiness Assessment",
-      desc: "Assess your organization’s culture, communication, and capabilities to prepare teams for upcoming transformation initiatives.",
+      title: "Outcome Focused Planning",
+      desc: "We ensure that every project is designed around the business goals and the real needs of the people who will use the solution.",
     },
     {
-      title: "Change Strategy Development",
-      desc: "Design comprehensive strategies that combine clear communication, leadership support, and behavioral change planning.",
+      title: "User Experience Alignment",
+      desc: "We work with cross functional teams including development to embed user experience into the design process.",
     },
     {
-      title: "Stakeholder Engagement & Alignment",
-      desc: "Build leadership sponsorship and involve key influencers to create trust, alignment, and shared accountability.",
+      title: "Readiness and Communication Support",
+      desc: "We prepare teams for change through simple and clear communication that builds excitement and reduces uncertainty.",
     },
     {
-      title: "Training & Role-Based Enablement",
-      desc: "Deliver hands-on, targeted learning experiences that empower employees to confidently adopt new systems and workflows.",
+      title: "Role Based Enablement",
+      desc: "We deliver targeted learning experiences that help employees feel confident and capable when using the new system.",
     },
     {
-      title: "Adoption Tracking & Performance Analytics",
-      desc: "Monitor user engagement, training progress, and adoption metrics to evaluate impact and guide ongoing improvement.",
+      title: "Adoption Measurement",
+      desc: "We track usage, engagement, and performance to ensure the solution delivers the intended outcomes.",
     },
     {
-      title: "Post-Implementation Reinforcement",
-      desc: "Provide ongoing support, refresher sessions, and performance feedback loops to sustain adoption and maximize ROI.",
+      title: "Continuous Reinforcement",
+      desc: "We help maintain long term momentum through ongoing support, feedback loops, and coaching.",
     },
   ]}
 />
@@ -102,34 +104,34 @@ const Change = () => {
 
 <ImplementSection
   id="implement"
-  subtitle="Benefits"
-  title="How NOVUM’s Change Management Services Drive Successful Transformation"
-  description="Partnering with NOVUM helps organizations achieve true transformation by aligning people, processes, and technology. Our structured change management approach fosters readiness, minimizes resistance, and ensures sustained adoption empowering teams to embrace innovation and deliver measurable business outcomes."
+  subtitle="Capabilities"
+  title="How Structured Change Management Improves Project Success"
+  description="Using proven frameworks such as the Prosci Change Management approach, we help organizations achieve stronger outcomes by ensuring users are prepared, supported, and engaged throughout the transformation journey."
   items={[
     {
       img: "/assets/img/change-management-adoption/tab-1.webp",
-      title: "Improved User Adoption",
-      desc: "Ensure employees confidently embrace new systems and workflows through clear communication, training, and support frameworks.",
+      title: "Stronger Executive Sponsorship",
+      desc: "Ongoing support from leadership ensures that change is visible, credible, and aligned with business priorities.",
     },
     {
       img: "/assets/img/change-management-adoption/tab-2.webp",
-      title: "Reduced Implementation Resistance",
-      desc: "Address challenges early and build organizational buy-in with proactive engagement and leadership alignment strategies.",
+      title: "Integrated Project Collaboration",
+      desc: "Close coordination with project management and development teams keeps user experience at the center of all decisions.",
     },
     {
       img: "/assets/img/change-management-adoption/tab-3.webp",
-      title: "Faster ROI on Digital Investments",
-      desc: "Accelerate the realization of business value by ensuring technologies are effectively utilized and integrated across teams.",
+      title: "Higher User Engagement",
+      desc: "Active involvement of employees builds trust, reduces resistance, and increases readiness for new ways of working.",
     },
     {
       img: "/assets/img/change-management-adoption/tab-4.webp",
-      title: "Enhanced Employee Engagement",
-      desc: "Foster a culture of collaboration, empowerment, and accountability through inclusive communication and continuous feedback.",
+      title: "Clear and Frequent Communication",
+      desc: "Transparent updates and simplified messaging help users understand the purpose of the change and what is expected.",
     },
     {
       img: "/assets/img/change-management-adoption/tab-5.webp",
-      title: "Sustained Organizational Agility",
-      desc: "Build long-term resilience with adaptive frameworks that prepare teams for future change and evolving digital priorities.",
+      title: "Better Achievement of Project Goals",
+      desc: "Projects with structured change management are significantly more likely to achieve the expected business results.",
     },
   ]}
 />
