@@ -47,52 +47,52 @@ const Dataaudit = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Why Data Auditing Is 
-      Essential for Modern Enterprises
+      Why Dataverse Auditing Matters
+      for Security and Compliance
     </>
   }
   paragraphs={[
-    "In today’s data-driven world, decisions are only as good as the information behind them. NOVUM’s Data Audit Services provide the foundation for trusted, high-quality data by identifying inconsistencies, compliance gaps, and integrity risks across your ecosystem.",
-    "Our structured auditing approach goes beyond technical validation it aligns governance, security, and usability to ensure your organization can rely on data for accurate insights, confident reporting, and strategic growth. With NOVUM, your data becomes not just compliant, but actionable.",
+    "Dataverse auditing plays a vital role in helping organizations meet compliance, security, and governance requirements. It creates a clear record of who made changes, when they were made, and how data was accessed across the environment.",
+    "Auditing ensures full visibility into user actions by tracking updates, deletions, and modifications whether they happen through an app or through the software development kit.",
   ]}
   imageSrc="/assets/img/data-audit/audit-1.webp"
-  altText="Data Audit and Compliance Solutions"
+  altText="Dataverse Audit and Compliance Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
         
     <MainServices
   id="services"
-  subtitle="Data Audit Services"
-  title="Enhancing Data Integrity, Compliance, and Business Intelligence"
-  description="NOVUM’s Data Audit Services help organizations uncover data inconsistencies, governance gaps, and performance risks before they affect decision-making. Our experts conduct comprehensive evaluations across systems, ensuring your data is clean, compliant, and business-ready. From accuracy validation to security reviews and remediation planning, we transform your data into a trusted foundation for analytics and transformation."
+  subtitle="Dataverse Audit Capabilities"
+  title="Full Visibility Across Data Changes and User Activity"
+  description="Dataverse auditing provides a clear and structured way to monitor changes across tables, records, and columns. It ensures that organizations have complete insight into how data is accessed and updated, supporting stronger governance and audit readiness."
   image={{
     src: "/assets/img/data-audit/audit-2.webp",
-    alt: "Data Audit and Validation Process",
+    alt: "Dataverse Audit and Monitoring",
   }}
   services={[
     {
-      title: "Data Quality Assessment",
-      desc: "Evaluate data accuracy, completeness, and consistency across all systems to eliminate errors and redundancies.",
+      title: "Custom Table Auditing",
+      desc: "Apply auditing to custom and most customizable tables to track changes and maintain a reliable data history.",
     },
     {
-      title: "Governance & Compliance Review",
-      desc: "Audit your data management practices to ensure alignment with GDPR, HIPAA, and other regulatory standards.",
+      title: "Column Level Tracking",
+      desc: "Enable auditing on selected columns to capture updates to critical fields with precision.",
     },
     {
-      title: "Security & Access Analysis",
-      desc: "Assess user access levels, encryption standards, and security protocols to safeguard sensitive information.",
+      title: "Record Level Audit History",
+      desc: "View detailed changes on each record through the Audit History tab for full transparency.",
     },
     {
-      title: "Data Cleansing & Standardization",
-      desc: "Identify and correct duplicates, inconsistencies, and outdated records to improve reporting accuracy.",
+      title: "Audit Summary View",
+      desc: "Access a consolidated overview of audit activities across the system for faster analysis.",
     },
     {
-      title: "Integration & System Mapping",
-      desc: "Analyze how data flows between applications, databases, and APIs to optimize performance and reliability.",
+      title: "Environment and Organization Controls",
+      desc: "Manage where auditing is active by configuring it at the environment or organization level.",
     },
     {
-      title: "Remediation & Optimization Planning",
-      desc: "Receive actionable recommendations and implementation roadmaps to maintain long-term data health.",
+      title: "Role Based Administration",
+      desc: "Ensure only System Administrators and System Customizers can configure audit settings for secure control.",
     },
   ]}
 />
@@ -102,34 +102,34 @@ const Dataaudit = () => {
 
 <ImplementSection
   id="implement"
-  subtitle="Benefits"
-  title="How NOVUM’s Data Audit Services Strengthen Business Intelligence"
-  description="Partnering with NOVUM enables organizations to build confidence in their data by ensuring accuracy, compliance, and security. Our comprehensive audit process transforms fragmented data landscapes into reliable sources of truth — improving decision-making, reducing risk, and enabling seamless analytics and reporting."
+  subtitle="Administration"
+  title="How Dataverse Audit Controls Strengthen Governance"
+  description="Administrators have precise control over how auditing works across the environment. From enabling or disabling settings to managing retention periods, Dataverse offers the flexibility required for secure and compliant data governance."
   items={[
     {
       img: "/assets/img/data-audit/tab-1.webp",
-      title: "Improved Data Accuracy",
-      desc: "Detect and resolve data inconsistencies, duplication, and inaccuracies to enhance trust in business insights.",
+      title: "Configurable Audit Levels",
+      desc: "Enable or disable auditing at the environment, organization, table, or column level to match your governance needs.",
     },
     {
       img: "/assets/img/data-audit/tab-2.webp",
-      title: "Regulatory Compliance Assurance",
-      desc: "Ensure adherence to data governance and privacy standards such as GDPR, HIPAA, and ISO certifications.",
+      title: "Role Based Configuration",
+      desc: "Only users with administrator or customizer roles can change audit settings, ensuring secure and controlled access.",
     },
     {
       img: "/assets/img/data-audit/tab-3.webp",
-      title: "Enhanced Decision-Making",
-      desc: "Empower leadership with validated, high-quality data that drives strategic and evidence-based decisions.",
+      title: "Flexible Retention Settings",
+      desc: "Choose retention periods ranging from one day to indefinite based on compliance and storage requirements.",
     },
     {
       img: "/assets/img/data-audit/tab-4.webp",
-      title: "Reduced Operational Risk",
-      desc: "Identify and mitigate risks associated with inaccurate, outdated, or unsecured data across systems and departments.",
+      title: "Selective Log Removal",
+      desc: "Delete audit logs based on table, access category, or specific date ranges to optimize storage and management.",
     },
     {
       img: "/assets/img/data-audit/tab-5.webp",
-      title: "Long-Term Data Governance",
-      desc: "Establish frameworks for continuous monitoring, standardization, and data quality management at scale.",
+      title: "Lifecycle Aware Log Handling",
+      desc: "Retention changes apply to new logs only, ensuring existing audit records remain intact and traceable.",
     },
   ]}
 />
@@ -139,8 +139,8 @@ const Dataaudit = () => {
       <Whyus
   id="whyus"
   subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Data Audit Services"
-  description="NOVUM delivers precision-driven data auditing that helps organizations enhance data integrity, strengthen compliance, and unlock business intelligence. Our certified experts combine technical depth, regulatory understanding, and proven methodologies to ensure your data becomes a reliable strategic asset across all departments."
+  title="Why Partner with NOVUM for Dataverse Audit Services"
+  description="NOVUM helps organizations build compliant and transparent systems by combining deep knowledge of Dataverse architecture, governance frameworks, and enterprise reporting. Our experts ensure your audit processes are reliable, efficient, and ready for regulatory standards."
   counters={[
     { value: 70, suffix: "+", label: "Data Audits Completed" },
     { value: 18, suffix: "+", label: "Industries Supported" },
@@ -150,18 +150,18 @@ const Dataaudit = () => {
   features={[
     {
       icon: "fa-solid fa-database",
-      title: "Comprehensive Data Expertise",
-      desc: "Our specialists audit structured and unstructured data across systems to ensure integrity, consistency, and reliability.",
+      title: "Advanced API Integration",
+      desc: "Use APIs and developer tools to retrieve audit history, enable or disable auditing, and manage log data programmatically.",
     },
     {
       icon: "fa-solid fa-shield-halved",
-      title: "Governance & Compliance Focus",
-      desc: "We design and validate frameworks that align with international data protection and governance standards.",
+      title: "Compliance Ready Reporting",
+      desc: "Integrate audit information into reporting solutions and compliance workflows using Microsoft Purview and other enterprise tools.",
     },
     {
       icon: "fa-solid fa-handshake",
-      title: "Trusted Strategic Partnership",
-      desc: "NOVUM works collaboratively with your teams to deliver insights, remediation plans, and continuous improvement strategies.",
+      title: "Automation and Workflow Support",
+      desc: "Enhance governance by connecting audit events to Power Platform automation for real time alerts and monitoring.",
     },
   ]}
 />
