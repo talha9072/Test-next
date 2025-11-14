@@ -9,10 +9,15 @@ const megaItems = [
     
     links: [
       { label: 'Digital Strategy', href: '/services/digital-strategy' },
-      { label: 'Sustainability Manager', href: '/services/microsoft-sustainability' },
-      { label: 'Data Audit', href: '/services/data-audit' },
-      { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
+      { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
       { label: 'Change Management & Adoption', href: '/services/change-management-adoption' },
+      { label: 'Corporate Trainings', href: '/services/corporate-trainings' },
+      { label: 'Data Audit', href: '/services/data-audit' },
+      { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
+      { label: 'Sustainability Manager', href: '/services/microsoft-sustainability' },
+      
+      
+      
     ],
   },
   {
@@ -31,7 +36,7 @@ const megaItems = [
     links: [
       { label: 'Microsoft Dynamics 365', href: '/services/microsoft-dynamics-365' },
       { label: 'Microsoft 365 Deployment', href: '/services/microsoft-365-deployment' },
-      { label: 'Microsoft Licensing', href: '/services/microsoft-licensing' },
+      
     ],
   },
   {
@@ -39,7 +44,21 @@ const megaItems = [
    
     links: [
       { label: 'Software Development', href: '/services/software-development' },
-      { label: 'Strategic Resourcing', href: '/services/strategic-resourcing' },
+      { label: 'Application Development', href: '/services/custom-application-development' },
+      { label: 'System integration', href: '/services/system-integration' },
+      { label: 'Automation', href: '/services/automation' },
+      
+    ],
+  },
+   {
+    heading: 'Engagement',
+   
+    links: [
+      { label: 'Consulting & Advisory', href: '/services/consulting-advisory' },
+      { label: 'Professional Services', href: '/services/custom-application-development' },
+      { label: 'Managed Services', href: '/services/managed-services' },
+      
+      
     ],
   },
 ];

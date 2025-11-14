@@ -27,10 +27,15 @@ const ResponsiveMenu = () => {
                              Digital Transformation
                         </li>
                         <li><Link href="/services/digital-strategy">Digital Strategy</Link></li>
+                         <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
+                         <li><Link href="/services/change-management-adoption">Change Management & Adoption</Link></li>
+                         <li><Link href="/services/corporate-trainings">Corporate Trainings</Link></li>
+                         <li><Link href="/services/data-audit">Data Audit</Link></li>
+                         <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
                         <li><Link href="/services/microsoft-sustainability">Sustainability Manager</Link></li>
-                        <li><Link href="/services/data-audit">Data Audit</Link></li>
-                        <li><Link href="/services/corporate-trainings">Corporate Trainings</Link></li>
-                        <li><Link href="/services/change-management-adoption">Change Management & Adoption</Link></li>
+                        
+                        
+                        
                         
                         
 
@@ -49,14 +54,26 @@ const ResponsiveMenu = () => {
                         </li>
                         <li><Link href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</Link></li>
                         <li><Link href="/services/microsoft-365-deployment">Microsoft 365 Deployment</Link></li>
-                        <li><Link href="/services/microsoft-licensing">Microsoft Licensing</Link></li>
+                        
 
                         {/* Engagements */}
                         <li className="menu-group-heading">
                          Software & Engineering
                         </li>
                         <li><Link href="/services/software-development">Software Development</Link></li>
-                        <li><Link href="/services/strategic-resourcing">Strategic Resourcing</Link></li>
+                        <li><Link href="/services/custom-application-development">Application Development</Link></li>
+                        <li><Link href="/services/system-integration">System Integration</Link></li>
+                        <li><Link href="/services/automation">Automation</Link></li>
+
+                        {/* Engagements */}
+                        <li className="menu-group-heading">
+                        Engagement
+                        </li>
+                        <li><Link href="/services/consulting-advisory">Consulting & Advisory</Link></li>
+                        <li><Link href="/services/professional-services">Professional Services</Link></li>
+                        <li><Link href="/services/managed-services">Managed Services</Link></li>
+                        
+                       
                     </ul>
                     <a
                         className={`mean-expand ${activeIcon("services")}`}
