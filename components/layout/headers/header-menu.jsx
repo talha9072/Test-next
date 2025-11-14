@@ -55,7 +55,7 @@ const megaItems = [
    
     links: [
       { label: 'Consulting & Advisory', href: '/services/consulting-advisory' },
-      { label: 'Professional Services', href: '/services/custom-application-development' },
+      { label: 'Professional Services', href: '/services/professional-services' },
       { label: 'Managed Services', href: '/services/managed-services' },
       
       
