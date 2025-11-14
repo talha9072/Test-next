@@ -27,7 +27,7 @@ const Training = () => {
   highlightText="Custom Applications"
   subtitle="Design powerful low code applications that streamline workflows, connect data, and support smarter business decisions."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/corporate-training/corporate-training-hero.webp"
+  heroImage="/assets/img/app-dev/app-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -54,7 +54,7 @@ const Training = () => {
     "Power Apps which is part of the Microsoft Power Platform is a low code platform that enables rapid development of custom applications. It empowers organizations to build apps that solve business challenges streamline workflows and integrate with Microsoft and third party systems.",
     "Power Apps supports a wide range of business needs by making it possible to create custom solutions without complex coding while still maintaining strong security and performance."
   ]}
-  imageSrc="/assets/img/corporate-training/cooperate-1.webp"
+  imageSrc="/assets/img/app-dev/app-1.webp"
   altText="Custom Application Development with Power Apps"
   sectionClass="position-relative overflow-hidden py-7"
 />
@@ -66,7 +66,7 @@ const Training = () => {
   title="Key Capabilities of Custom Application Development with Power Apps"
   description="Power Apps provides organizations with essential tools to build custom applications that improve workflows and solve business challenges. It connects data, extends automation, and allows rapid development using a low code platform that supports enterprise scale performance."
   image={{
-    src: "/assets/img/corporate-training/cooperate-2.webp",
+    src: "/assets/img/app-dev/app-2.webp",
     alt: "Custom Application Development Capabilities",
   }}
   services={[
@@ -108,32 +108,32 @@ const Training = () => {
   description="Power Apps follows a clear development process that helps teams define goals, select the right app type, build the interface, connect data, add automation, and deploy securely. This structured workflow ensures predictable and efficient application delivery."
   items={[
     {
-      img: "/assets/img/corporate-training/tab-1.webp",
+      img: "/assets/img/app-dev/tab-1.jpg",
       title: "Define Requirements",
       desc: "Begin by understanding the business problem and identifying the key outcomes the application must support.",
     },
     {
-      img: "/assets/img/corporate-training/tab-2.webp",
+      img: "/assets/img/app-dev/tab-2.jpg",
       title: "Select Application Type",
       desc: "Choose between Canvas Apps Model Driven Apps or Portals based on the required user experience and data structure.",
     },
     {
-      img: "/assets/img/corporate-training/tab-3.webp",
+      img: "/assets/img/app-dev/tab-3.jpg",
       title: "Design the User Interface",
       desc: "Use Power Apps Studio to build the interface with ready controls templates and customizable components.",
     },
     {
-      img: "/assets/img/corporate-training/tab-4.webp",
+      img: "/assets/img/app-dev/tab-4.jpg",
       title: "Connect to Data Sources",
       desc: "Use Power Apps connectors to link the app with Dataverse SharePoint SQL Server Dynamics 365 and other systems.",
     },
     {
-      img: "/assets/img/corporate-training/tab-5.webp",
+      img: "/assets/img/app-dev/tab-5.jpg",
       title: "Add Automation and AI",
       desc: "Enhance the application with automation and machine learning features using Power Automate and AI Builder.",
     },
     {
-      img: "/assets/img/corporate-training/tab-5.webp",
+      img: "/assets/img/app-dev/tab-6.jpg",
       title: "Test Secure Share and Deploy",
       desc: "Validate performance apply security assign access and deploy the application across your organization.",
     },
