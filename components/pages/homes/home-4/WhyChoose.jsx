@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 
 const counters = [
-  { number: 40, suffix: "+", label: "Multi-Industry Implementations", icon: "bi-building-check" },
-  { number: 8, suffix: "+", label: "Years of history of enhancing and redefining. Analytics/BI, ERP and ISV", icon: "bi-award-fill" },
-  { number: 100, suffix: "%", label: "Certified Human Capital in multiple competencies", icon: "bi-emoji-smile-fill" },
-  { number: 35, suffix: "+", label: "Technical Human Capital", icon: "bi-mortarboard-fill" },
+  { number: 40, suffix: "+", label: "Multi-Industry Implementations", icon: "bi-diagram-3" },
+  { number: 8, suffix: "+", label: "Years of history of enhancing and redefining. Analytics/BI, ERP and ISV", icon: "bi-graph-up-arrow" },
+  { number: 100, suffix: "%", label: "Certified Human Capital in multiple competencies", icon: "bi bi-award-fill" },
+  { number: 35, suffix: "+", label: "Technical Human Capital", icon: "bi-people-fill" },
 ];
 
 // Counter animation component
