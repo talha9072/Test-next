@@ -120,18 +120,18 @@ const HeroWithRibbon = ({
               )}
             </div>
 
-            {/* RIGHT SIDE - IMAGE */}
+            {/* RIGHT SIDE - IMAGE (Show only if heroImage exists) */}
+            {heroImage && (
             <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-left align-items-center">
-              <div className="hero-image-wrapper w-100">
-                {heroImage && (
-                  <img
+                <div className="hero-image-wrapper w-100">
+                <img
                     src={heroImage}
                     alt="Hero Illustration"
                     className="hero-img"
-                  />
-                )}
-              </div>
+                />
+                </div>
             </div>
+            )}
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ const HeroWithRibbon = ({
 
         @media (max-width: 990px) {
           .hero-section {
-            height: 90vh !important;
+            height: 60vh !important;
           }
         }
 
