@@ -26,8 +26,7 @@ const Ai = () => {
   title="Transforming the Future with AI and IoT"
   highlightText="AI & IoT"
   subtitle="Harness AI and IoT to turn automation into advantage."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/ai/ai-hero.webp"
+  bgImage="/assets/img/power-bi/bg-ai.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -56,7 +55,7 @@ const Ai = () => {
     "By connecting devices, sensors, and data through intelligent systems, organizations can unlock valuable insights, reduce downtime, and enhance productivity with smarter workflows.",
     "NOVUM’s AI and IoT solutions empower enterprises to move from reactive to predictive operations driving efficiency, innovation, and competitive advantage in a connected world.",
   ]}
-  imageSrc="/assets/img/ai/ai-1.webp"
+  imageSrc="/assets/img/ai/ai-main.png"
   altText="AI and IoT Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
@@ -67,7 +66,7 @@ const Ai = () => {
   title="Intelligent, Connected, and Scalable Solutions for the Future"
   description="NOVUM designs and deploys AI and IoT ecosystems that merge data intelligence with real world operations. From predictive analytics to connected device automation, our solutions help organizations enhance productivity, reduce costs, and unlock new opportunities through intelligent transformation."
   image={{
-    src: "/assets/img/ai/ai-2.webp",
+    src: "/assets/img/ai/ai-main2.png",
     alt: "AI and IoT Systems",
   }}
   services={[
@@ -106,27 +105,27 @@ const Ai = () => {
   description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation toward predictive, adaptive, and self optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
   items={[
     {
-      img: "/assets/img/ai/predective.webp",
+      img: "/assets/img/ai/predictive.jpg",
       title: "Predictive Intelligence",
       desc: "Use AI models to forecast trends, detect anomalies, and proactively address operational challenges.",
     },
     {
-      img: "/assets/img/ai/real-time.webp",
+      img: "/assets/img/ai/insights.jpg",
       title: "Real-Time Insights",
       desc: "Leverage IoT sensors and edge analytics to monitor assets, performance, and conditions in real time.",
     },
     {
-      img: "/assets/img/ai/resource.webp",
+      img: "/assets/img/ai/resource.jpg",
       title: "Smarter Resource Utilization",
       desc: "Reduce energy consumption, maintenance costs, and downtime through intelligent process automation.",
     },
     {
-      img: "/assets/img/ai/adaptive.webp",
+      img: "/assets/img/ai/adaptive.jpg",
       title: "Adaptive Scalability",
       desc: "Easily expand your AI and IoT network as data volumes and connected devices grow without complexity.",
     },
     {
-      img: "/assets/img/ai/security.webp",
+      img: "/assets/img/ai/secure.jpg",
       title: "Secure & Compliant Infrastructure",
       desc: "Built on enterprise-grade frameworks like Microsoft Azure to ensure data privacy, governance, and reliability.",
     },

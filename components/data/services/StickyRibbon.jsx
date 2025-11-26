@@ -120,18 +120,18 @@ const HeroWithRibbon = ({
               )}
             </div>
 
-            {/* RIGHT SIDE - IMAGE */}
-            <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-left align-items-center">
-              <div className="hero-image-wrapper w-100">
-                {heroImage && (
+            {/* RIGHT SIDE - IMAGE (Show only when heroImage exists) */}
+            {heroImage && (
+              <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-left align-items-center">
+                <div className="hero-image-wrapper w-100">
                   <img
                     src={heroImage}
                     alt="Hero Illustration"
                     className="hero-img"
                   />
-                )}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>

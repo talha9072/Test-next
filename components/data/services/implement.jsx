@@ -50,7 +50,7 @@ export default function ImplementSection({
 
           /* === IMAGE === */
           .benefit-card img {
-            height: 200px;
+            height: 250px;
             width: 100%;
             object-fit: cover;
             flex-shrink: 0;
