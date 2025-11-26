@@ -182,6 +182,7 @@ const HeroWithRibbon = ({
         @media (max-width: 990px) {
           .hero-section {
             height: 60vh !important;
+            background-position: left center !important;
           }
         }
 
