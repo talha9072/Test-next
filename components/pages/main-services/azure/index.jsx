@@ -35,11 +35,13 @@ const Ai = () => {
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
-    { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
+    { label: "Overview", href: "#overview" },
+    { label: "Capabilities", href: "#core-capabilities" },
     { label: "Innovation", href: "#future-roadmap" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Use Case", href: "#use-cases" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "Announcements", href: "#latest-announcements" },
+    { label: "Why Us?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -173,23 +175,7 @@ const Ai = () => {
   ]}
 />
       
-<BulletPoints
-  sectionId="innovations"
-  title={<>Innovations & Future Roadmap</>}
-  paragraphs={[
-    "From cutting-edge model support to breakthrough experimental research in Foundry Labs, the platform is shaping the future of enterprise AI development."
-  ]}
-  bulletPoints={[
-    "Support for emerging next-gen models including Grok 3, Flux Pro 1.1, Sora, and hundreds of Hugging Face models",
-    "Smart model router for intelligent cost and performance optimisation",
-    "Public release of Foundry Agent Service with enterprise grade deployment templates",
-    "Expanded integrations across Microsoft Teams, Office, Slack, Twilio, and a growing third-party ecosystem",
-    "Experimental innovation initiatives in Foundry Labs including Project Amelie, Magnetic UI, TypeAgent, EvoDiff, and BioEmu"
-  ]}
-  imageSrc="/assets/img/azure/azure-1.png"
-  altText="Azure AI Foundry Innovation Roadmap"
-  sectionClass="position-relative overflow-hidden py-7"
-/>
+
       
 <InnovationsRoadmapSection
   sectionId="future-roadmap"
@@ -233,6 +219,7 @@ const Ai = () => {
 />
 
 <UseCasesSection
+  sectionId="use-cases"
   backgroundImage="/assets/img/azure/bg-azure.avif"
   primaryColor="#0d2b75"
   subtitle="USE CASES"

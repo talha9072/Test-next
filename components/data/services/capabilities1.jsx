@@ -33,6 +33,7 @@ export default function CapabilitiesTabsCards({
         backgroundRepeat: "no-repeat"
       }}
     >
+      {/* OVERLAY */}
       {backgroundOverlay && backgroundImage && (
         <div
           style={{
@@ -80,7 +81,7 @@ export default function CapabilitiesTabsCards({
           transition: all .35s ease;
         }
 
-        /* ================= PREMIUM MICROSOFT CARD ================= */
+        /* ================= PREMIUM CARD ================= */
         .cap-card {
           background: #fff;
           border-radius: 24px;
@@ -94,7 +95,7 @@ export default function CapabilitiesTabsCards({
           box-shadow: 0px 16px 44px rgba(0,0,0,0.10);
         }
 
-        /* IMAGE WRAPPER → 8px PADDING */
+        /* 8px padded IMG */
         .cap-image-wrapper {
           padding: 8px;
           padding-bottom: 0;
@@ -103,7 +104,7 @@ export default function CapabilitiesTabsCards({
           border-radius: 18px;
         }
 
-        /* CONTENT WRAPPER → 20px PADDING */
+        /* 20px CONTENT */
         .cap-content {
           padding: 20px;
         }
@@ -148,15 +149,15 @@ export default function CapabilitiesTabsCards({
           margin-right: 10px;
         }
 
-        /* ================= GRID ================= */
+        /* ================= GRID (DESKTOP) ================= */
         .cap-grid {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 26px;
         }
 
-        /* MOBILE SLIDER */
-        @media (max-width: 767px) {
+        /* ================= MOBILE/TABLET SLIDER ================= */
+        @media (max-width: 991px) {
           .cap-grid {
             display: flex;
             overflow-x: auto;
@@ -171,38 +172,52 @@ export default function CapabilitiesTabsCards({
           }
         }
 
-        /* ================= MOBILE ARROWS ================= */
-        .cap-arrows { display: none; }
+        /* ================= MOBILE/TABLET ARROWS ================= */
+        .cap-arrows { 
+          display: none; 
+        }
 
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           .cap-arrows {
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 22px;
           }
         }
 
+        /* CTA-STYLE PREMIUM ARROW BUTTONS */
         .cap-arrow-btn {
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-          border: 1px solid #d0d0d0;
-          background: #ffffff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          font-size: 20px;
-          color: ${primaryColor};
-          transition: .25s ease;
+        width: 54px !important;
+        height: 54px !important;
+        min-width: 54px !important;
+        min-height: 54px !important;
+        max-width: 54px !important;
+        max-height: 54px !important;
+
+        border-radius: 50% !important;
+        padding: 0 !important;
+        line-height: 1 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: rgba(13,43,117,0.10);
+        border: 1px solid rgba(13,43,117,0.25);
+
+        color: #0d2b75;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .25s ease;
         }
 
         .cap-arrow-btn:hover {
-          background: #f0f4ff;
+          background: ${primaryColor};
+          color: #fff;
           border-color: ${primaryColor};
-          transform: translateY(-2px);
-          box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+          transform: translateY(-3px);
+          box-shadow: 0px 8px 24px rgba(0,0,0,0.18);
         }
 
       `}</style>
@@ -210,6 +225,7 @@ export default function CapabilitiesTabsCards({
       <div className="container position-relative" style={{ zIndex: 3 }}>
         <h2 className="text-center fw-bold mb-4">{title}</h2>
 
+        {/* ================== TABS ================== */}
         <TabsBar
           tabs={tabs}
           activeTab={activeTab}
@@ -217,12 +233,10 @@ export default function CapabilitiesTabsCards({
           setActiveTab={setActiveTab}
         />
 
-        {/* GRID / SLIDER */}
+        {/* ================== GRID / SLIDER ================== */}
         <div className="cap-grid" ref={sliderRef}>
           {tabs[activeTab]?.cards?.map((card, idx) => (
             <div className="cap-card" key={idx}>
-
-              {/* 8px padded IMAGE WRAPPER */}
               <div className="cap-image-wrapper">
                 {card.image && (
                   <Image
@@ -239,7 +253,6 @@ export default function CapabilitiesTabsCards({
                 )}
               </div>
 
-              {/* 20px CONTENT WRAPPER */}
               <div className="cap-content">
                 <div className="cap-label">{card.label}</div>
                 <div className="cap-title">{card.title}</div>
@@ -252,18 +265,18 @@ export default function CapabilitiesTabsCards({
                   Learn More
                 </a>
               </div>
-
             </div>
           ))}
         </div>
 
-        {/* MOBILE ARROWS */}
+        {/* ================== MOBILE/TABLET ARROWS ================== */}
         <div className="cap-arrows">
           <button className="cap-arrow-btn" onClick={scrollLeft}>
-            <i className="bi bi-chevron-left"></i>
+            <i className="bi bi-arrow-left"></i>
           </button>
+
           <button className="cap-arrow-btn" onClick={scrollRight}>
-            <i className="bi bi-chevron-right"></i>
+            <i className="bi bi-arrow-right"></i>
           </button>
         </div>
       </div>
