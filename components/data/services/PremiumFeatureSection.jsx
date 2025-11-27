@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function PremiumFeatureSection({
+  sectionId = "premium-feature",   // ⭐ NEW PROP
   headline,
   subtext,
   label,
@@ -15,7 +16,7 @@ export default function PremiumFeatureSection({
   sectionClass = "py-5",
 }) {
   return (
-    <section className={sectionClass}>
+    <section className={sectionClass} id={sectionId}>
       <div className="container">
         <div className="row align-items-center flex-wrap-reverse gy-4">
 

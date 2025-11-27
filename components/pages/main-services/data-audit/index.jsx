@@ -7,8 +7,6 @@ import FunnelSection from "@/components/data/services/funnel";
 import PremiumFeatureSection from "@/components/data/services/PremiumFeatureSection";
 import PremiumFeatureSection1 from "@/components/data/services/PremiumFeatureSection-flip";
 import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -36,17 +34,21 @@ const Dataaudit = () => {
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
-    { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Overview", href: "#overview" },
+    { label: "Audit Configuration", href: "#audit-config" },
+    { label: "Audit Structure", href: "#structure" },
+    { label: "Audit Retention", href: "#audit-retention" },
+    { label: "Api Access", href: "#api" },
+    { label: "Audit Approach", href: "#approach" },
+    { label: "Services For", href: "#serviceAudience" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
  
 <BulletPoints
+sectionId="overview"
   title={<>Why Data Auditing Is Critical</>}
   paragraphs={[
     "Without proper auditing, organizations risk compliance failures, security gaps, and unreliable data. Dataverse auditing ensures every change is traceable, accountable, and aligned with governance standards."
@@ -64,6 +66,7 @@ const Dataaudit = () => {
 />
 
 <BulletPointsFlip
+sectionId="audit-config"
   title={<>What We Audit in Microsoft Dataverse</>}
   paragraphs={[
     "We configure Dataverse auditing to capture changes and access activity across your Power Platform environment."
@@ -81,6 +84,7 @@ const Dataaudit = () => {
 />
 
       <FunnelSection
+      sectionId="structure"
   leftHeading="Flexible Audit Configuration & Governance"
   leftText="Auditing can be enabled and managed at multiple levels to align with your governance model."
 
@@ -108,6 +112,7 @@ const Dataaudit = () => {
         
 
 <PremiumFeatureSection
+sectionId="audit-retention"
   headline="Audit Log Retention & Data Management"
   subtext="We help define audit retention policies that balance compliance requirements with performance and operational needs."
   label="Capabilities include:"
@@ -124,6 +129,7 @@ const Dataaudit = () => {
 
 
 <PremiumFeatureSection1
+sectionId="api"
   headline="API Access & Compliance Integrations"
   subtext="For advanced scenarios, Dataverse auditing integrates seamlessly into your wider compliance and reporting ecosystem."
   label="Integrates with:"
@@ -139,6 +145,7 @@ const Dataaudit = () => {
 />
 
 <BulletPoints
+sectionId="approach"
   title={<>Our Proven Data Audit Approach</>}
   paragraphs={[
     "We don’t just switch auditing on we design it around your business and compliance goals."

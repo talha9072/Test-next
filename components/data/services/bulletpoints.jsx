@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 
 export default function AboutSection({
+  sectionId = "about",      // ⭐ NEW PROP
   subtitle,
   title,
   paragraphs,
-  bulletPoints, // Only bullet points (extraParagraph removed)
+  bulletPoints,
   imageSrc,
   altText,
   sectionClass = "py-5",
@@ -16,14 +17,14 @@ export default function AboutSection({
   priority = false,
 }) {
   return (
-    <section className={sectionClass} id="about">
+    <section className={sectionClass} id={sectionId}>   {/* ⭐ UPDATED */}
       <div className="container">
         <div className="row align-items-center flex-wrap-reverse gy-4">
 
           {/* LEFT TEXT SECTION */}
           <div className="col-xl-6 col-lg-6 col-12">
             <div className="about__four-content">
-              
+
               {subtitle && <span className="subtitle-one">{subtitle}</span>}
               <h2 className="mb-4">{title}</h2>
 
@@ -38,24 +39,24 @@ export default function AboutSection({
                 </p>
               ))}
 
-              {/* BULLET POINTS WITH BOOTSTRAP ICONS */}
-                {bulletPoints && bulletPoints.length > 0 && (
+              {/* BULLET POINTS */}
+              {bulletPoints && bulletPoints.length > 0 && (
                 <ul className="list-unstyled mt-2">
-                    {bulletPoints.map((point, idx) => (
+                  {bulletPoints.map((point, idx) => (
                     <li
-                        key={idx}
-                        className="d-flex align-items-center mb-2"
-                        style={{ lineHeight: "1.6" }}
+                      key={idx}
+                      className="d-flex align-items-center mb-2"
+                      style={{ lineHeight: "1.6" }}
                     >
-                        <i
+                      <i
                         className="bi bi-check2-circle text-novum-blue fs-5 me-2"
                         style={{ marginTop: "1px" }}
-                        ></i>
-                        <span>{point}</span>
+                      ></i>
+                      <span>{point}</span>
                     </li>
-                    ))}
+                  ))}
                 </ul>
-                )}
+              )}
 
             </div>
           </div>
@@ -83,6 +84,7 @@ export default function AboutSection({
 }
 
 AboutSection.propTypes = {
+  sectionId: PropTypes.string,     // ⭐ NEW PROP TYPE
   subtitle: PropTypes.string,
   title: PropTypes.string.isRequired,
   paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -96,6 +98,7 @@ AboutSection.propTypes = {
 };
 
 AboutSection.defaultProps = {
+  sectionId: "",              // ⭐ DEFAULT VALUE
   subtitle: "",
   altText: "",
   sectionClass: "py-5",

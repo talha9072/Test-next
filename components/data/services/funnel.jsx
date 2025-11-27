@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 
 export default function AuditTwoColSection({
+  sectionId = "audit-two-col",   // ⭐ NEW PROP
   leftHeading,
   leftText,
   leftCards = [],
@@ -21,7 +22,7 @@ export default function AuditTwoColSection({
             .forEach((el) => el.classList.add("animateDown"));
         }
       },
-      { threshold: 0.25 } // triggers when 25% visible
+      { threshold: 0.25 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -31,7 +32,7 @@ export default function AuditTwoColSection({
 
   return (
     <>
-      <section className="py-5" ref={sectionRef}>
+      <section className="py-5" id={sectionId} ref={sectionRef}>
         <div className="container">
           <div className="row align-items-start g-5">
 
@@ -57,15 +58,12 @@ export default function AuditTwoColSection({
                 {funnelLevels.map((label, index) => {
                   const total = funnelLevels.length;
 
-                  // Base color (#0d2b75)
                   const baseHue = 225;
                   const baseSat = 80;
 
-                  // Bottom-most faded
                   const isLast = index === total - 1;
-
                   const lightness = isLast
-                    ? 68 // FADED bottom layer
+                    ? 68
                     : 26 + index * (22 / total);
 
                   const widthPercent = 100 - index * (60 / total);
@@ -127,7 +125,7 @@ export default function AuditTwoColSection({
           border-radius: 14px;
           clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0 100%);
           opacity: 0;
-          transform: translateY(-40px); /* TOP → BOTTOM */
+          transform: translateY(-40px);
         }
 
         .dynamic-layer span {
@@ -135,7 +133,7 @@ export default function AuditTwoColSection({
           letter-spacing: 0.5px;
         }
 
-        /* SCROLL-TRIGGER ANIMATION */
+        /* ANIMATION */
         .animateDown {
           animation: fallDown 0.85s ease-out forwards;
         }
