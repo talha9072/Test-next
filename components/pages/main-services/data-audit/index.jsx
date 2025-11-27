@@ -37,8 +37,6 @@ const Dataaudit = () => {
     { label: "Overview", href: "#overview" },
     { label: "Audit Configuration", href: "#audit-config" },
     { label: "Audit Structure", href: "#structure" },
-    { label: "Audit Retention", href: "#audit-retention" },
-    { label: "Api Access", href: "#api" },
     { label: "Audit Approach", href: "#approach" },
     { label: "Services For", href: "#serviceAudience" },
     { label: "Testimonials", href: "#testimonials" },

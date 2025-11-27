@@ -43,7 +43,7 @@ const HeroWithRibbon = ({
     if (current && current !== activeLink) {
       setActiveLink(current);
 
-      if (scrollRef.current && window.innerWidth <= 768) {
+      if (scrollRef.current && window.innerWidth <= 1300) {
         const activeEl = scrollRef.current.querySelector(
           `.nav-link[href="${current}"]`
         );
@@ -323,7 +323,7 @@ const HeroWithRibbon = ({
           justify-content: center;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1300px) {
           .hero-section {
             padding: 80px 0;
           }
