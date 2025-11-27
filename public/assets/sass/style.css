@@ -570,7 +570,7 @@ p {
     font-size: 30px;
   }
   h2 {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 30px;
   }
   h3 {
@@ -580,7 +580,7 @@ p {
 }
 @media (max-width: 359px) {
   h2 {
-    font-size: 27px;
+    font-size: 24px;
     line-height: 30px;
   }
   h3 {

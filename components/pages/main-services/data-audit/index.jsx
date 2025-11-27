@@ -138,98 +138,56 @@ const Dataaudit = () => {
   priority={true}
 />
 
+<BulletPoints
+  title={<>Our Proven Data Audit Approach</>}
+  paragraphs={[
+    "We don’t just switch auditing on we design it around your business and compliance goals."
+  ]}
+  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
+  bulletPoints={[
+    "Audit readiness & environment review",
+    "Table and column-level audit design",
+    "Retention policy configuration",
+    "Role-based access governance"
+  ]}
+  imageSrc="/assets/img/data-audit/Data-img-1.png"
+  altText="Dataverse Audit and Compliance Solutions"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
 
 
     <MainServices
-  id="services"
-  subtitle="Dataverse Audit Capabilities"
-  title="Full Visibility Across Data Changes and User Activity"
-  description="Dataverse auditing provides a clear and structured way to monitor changes across tables, records, and columns. It ensures that organizations have complete insight into how data is accessed and updated, supporting stronger governance and audit readiness."
+  id="serviceAudience"
+  subtitle="Who This Service Is For"
+  title="Designed for Teams That Need Strong Data Governance"
+  description="Our auditing solutions help teams who require full transparency, strong oversight, and reliable change tracking across their Dataverse environments."
   image={{
     src: "/assets/img/data-audit/audit-2.webp",
-    alt: "Dataverse Audit and Monitoring",
+    alt: "Who This Service Is For",
   }}
   services={[
     {
-      title: "Custom Table Auditing",
-      desc: "Apply auditing to custom and most customizable tables to track changes and maintain a reliable data history.",
+      title: "Regulated Industries",
+      desc: "Industries where compliance, traceability, and audit readiness are essential for operations.",
     },
     {
-      title: "Column Level Tracking",
-      desc: "Enable auditing on selected columns to capture updates to critical fields with precision.",
+      title: "Enterprise Power Platform Users",
+      desc: "Large organizations with complex data structures and mission-critical Dataverse environments.",
     },
-    
+    {
+      title: "IT, Security & Compliance Teams",
+      desc: "Teams responsible for safeguarding data access, ensuring governance, and monitoring user activity.",
+    },
   ]}
 />
 
 
 
 
-<ImplementSection
-  id="implement"
-  subtitle="Administration"
-  title="How Dataverse Audit Controls Strengthen Governance"
-  description="Administrators have precise control over how auditing works across the environment. From enabling or disabling settings to managing retention periods, Dataverse offers the flexibility required for secure and compliant data governance."
-  items={[
-    {
-      img: "/assets/img/data-audit/tab-1.webp",
-      title: "Configurable Audit Levels",
-      desc: "Enable or disable auditing at the environment, organization, table, or column level to match your governance needs.",
-    },
-    {
-      img: "/assets/img/data-audit/tab-2.webp",
-      title: "Role Based Configuration",
-      desc: "Only users with administrator or customizer roles can change audit settings, ensuring secure and controlled access.",
-    },
-    {
-      img: "/assets/img/data-audit/tab-3.webp",
-      title: "Flexible Retention Settings",
-      desc: "Choose retention periods ranging from one day to indefinite based on compliance and storage requirements.",
-    },
-    {
-      img: "/assets/img/data-audit/tab-4.webp",
-      title: "Selective Log Removal",
-      desc: "Delete audit logs based on table, access category, or specific date ranges to optimize storage and management.",
-    },
-    {
-      img: "/assets/img/data-audit/tab-5.webp",
-      title: "Lifecycle Aware Log Handling",
-      desc: "Retention changes apply to new logs only, ensuring existing audit records remain intact and traceable.",
-    },
-  ]}
-/>
 
 
    
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Dataverse Audit Services"
-  description="NOVUM helps organizations build compliant and transparent systems by combining deep knowledge of Dataverse architecture, governance frameworks, and enterprise reporting. Our experts ensure your audit processes are reliable, efficient, and ready for regulatory standards."
-  counters={[
-    { value: 70, suffix: "+", label: "Data Audits Completed" },
-    { value: 18, suffix: "+", label: "Industries Supported" },
-    { value: 99, suffix: "%", label: "Data Accuracy Achieved" },
-    { value: 10, suffix: "+", label: "Years of Data Excellence" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-database",
-      title: "Advanced API Integration",
-      desc: "Use APIs and developer tools to retrieve audit history, enable or disable auditing, and manage log data programmatically.",
-    },
-    {
-      icon: "fa-solid fa-shield-halved",
-      title: "Compliance Ready Reporting",
-      desc: "Integrate audit information into reporting solutions and compliance workflows using Microsoft Purview and other enterprise tools.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "Automation and Workflow Support",
-      desc: "Enhance governance by connecting audit events to Power Platform automation for real time alerts and monitoring.",
-    },
-  ]}
-/>
+      
 
 
 
@@ -239,15 +197,27 @@ const Dataaudit = () => {
   items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
 />

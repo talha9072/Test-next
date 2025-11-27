@@ -42,7 +42,7 @@ export default function AuditTwoColSection({
 
               {leftCards.map((card, idx) => (
                 <div className="left-card p-4 mb-4" key={idx}>
-                  <h4 className="mb-2">{card.title}</h4>
+                  <h3 className="mb-2">{card.title}</h3>
                   <p className="mb-0">{card.text}</p>
                 </div>
               ))}
