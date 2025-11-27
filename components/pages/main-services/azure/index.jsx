@@ -3,6 +3,8 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import CoreCapabilitiesSection from "@/components/data/services/capabilities1";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import UseCasesSection from "@/components/data/services/UseCasesSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -36,6 +38,7 @@ const Ai = () => {
     { label: "Overview", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Implementation", href: "#implement" },
+    { label: "Innovation", href: "#future-roadmap" },
     { label: "Why Choose?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
@@ -191,40 +194,150 @@ const Ai = () => {
 />
 
       
+<BulletPoints
+  sectionId="innovations"
+  title={<>Innovations & Future Roadmap</>}
+  paragraphs={[
+    "From cutting-edge model support to breakthrough experimental research in Foundry Labs, the platform is shaping the future of enterprise AI development."
+  ]}
+  bulletPoints={[
+    "Support for emerging next-gen models including Grok 3, Flux Pro 1.1, Sora, and hundreds of Hugging Face models",
+    "Smart model router for intelligent cost and performance optimisation",
+    "Public release of Foundry Agent Service with enterprise grade deployment templates",
+    "Expanded integrations across Microsoft Teams, Office, Slack, Twilio, and a growing third-party ecosystem",
+    "Experimental innovation initiatives in Foundry Labs including Project Amelie, Magnetic UI, TypeAgent, EvoDiff, and BioEmu"
+  ]}
+  imageSrc="/assets/img/azure/azure-1.png"
+  altText="Azure AI Foundry Innovation Roadmap"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
+      
+<InnovationsRoadmapSection
+  sectionId="future-roadmap"
+  backgroundColor="#fff"
+  subtitle="INNOVATIONS"
+  title="Innovations & Future Roadmap"
+  intro="Azure Data Foundry continues to evolve with next-generation models, intelligent routing, deep enterprise integrations, and breakthrough research from Foundry Labs."
+  primaryColor="#0d2b75"
+  items={[
+    {
+      icon: "bi-lightning-charge",
+      title: "Next-Gen Model Support",
+      desc: "Support for Grok 3, Flux Pro 1.1, Sora, and hundreds of Hugging Face models."
+    },
+    {
+      icon: "bi-diagram-3",
+      title: "Smart Model Router",
+      desc: "Automatically optimises cost and performance using Azure’s routing engine."
+    },
+    {
+      icon: "bi-cpu",
+      title: "Foundry Agent Service",
+      desc: "Enterprise-ready agent deployment templates now publicly available."
+    },
+    {
+      icon: "bi-link-45deg",
+      title: "Expanded Integrations",
+      desc: "Teams, Office, Slack, Twilio, and growing third-party connectors."
+    },
+    {
+      icon: "bi-flask",
+      title: "Foundry Labs Experiments",
+      desc: "Includes Project Amelie, TypeAgent, EvoDiff, BioEmu, and more."
+    },
+    {
+      icon: "bi-stars",
+      title: "Magnetic UI",
+      desc: "A new adaptive interface concept emerging from Foundry Labs."
+    }
+  ]}
+/>
+
+<UseCasesSection
+  backgroundImage="/assets/img/azure/bg-azure.avif"
+  primaryColor="#0d2b75"
+  subtitle="USE CASES"
+  title="Use Cases & Industry Applications"
+  intro="Azure Data Foundry enables intelligent automation across industries with multimodal AI, intelligent agents, and enterprise-grade orchestration."
+  tabs={[
+    {
+      label: "Popular Use Cases",
+      items: [
+        {
+          label: "Use Case",
+          title: "AI Chatbots & Virtual Assistants",
+          desc: "Build conversational assistants with secure enterprise agent pipelines.",
+          image: "/assets/img/azure/azure-2.webp",
+          cta: "Explore",
+        },
+        {
+          label: "Use Case",
+          title: "Document Automation",
+          desc: "Generate summaries and extract insights from high-volume documents.",
+          image: "/assets/img/azure/azure-1.webp",
+          cta: "Read more",
+        },
+        {
+          label: "Use Case",
+          title: "Multimodal Intelligence",
+          desc: "Analyze images, audio, and video using multimodal foundation models.",
+          image: "/assets/img/usecases/multimodal.webp",
+          cta: "Learn more",
+        },
+      ],
+    },
+    {
+      label: "Customer Success",
+      items: [
+        {
+          label: "Success",
+          title: "Accenture",
+          desc: "Enterprise-scale assistant creation with Azure Data Foundry.",
+          image: "/assets/img/logos/accenture.webp",
+          cta: "Read story",
+        },
+        {
+          label: "Success",
+          title: "Nasdaq",
+          desc: "Advanced analytics for financial markets using Foundry.",
+          image: "/assets/img/logos/nasdaq.webp",
+          cta: "View insights",
+        },
+        {
+          label: "Success",
+          title: "Carvana",
+          desc: "AI systems powering retail and customer engagement.",
+          image: "/assets/img/logos/carvana.webp",
+          cta: "Explore case",
+        },
+      ],
+    },
+  ]}
+/>
+
         
-      <MainServices
-  id="services"
-  subtitle="Azure AI Foundry Capabilities"
-  title="A Unified Platform to Build, Customize, and Scale Enterprise AI"
-  description="Azure AI Foundry brings everything enterprises need to build and operationalize AI into one unified environment models, tools, agents, observability, governance, and deployment. These core capabilities make it the most powerful AI development platform in the Microsoft ecosystem."
+     <MainServices
+  id="success-stories"
+  subtitle="Success Stories"
+  title="Trusted by Global Enterprises"
+  description="Azure Data Foundry powers enterprise-scale AI deployments across industries — from finance and retail to sports and professional services."
   image={{
-    src: "/assets/img/azure/azure-2.webp",
-    alt: "Azure AI Foundry Capabilities",
+    src: "/assets/img/azure/customers.webp",
+    alt: "Azure AI Customer Success",
   }}
   services={[
     {
-      title: "Model Access & Customization",
-      desc: "Access foundation and open-source models including OpenAI, Meta, Mistral, and more with support for fine-tuning, prompt flow optimization, and serverless inference.",
+      title: "Accenture",
+      desc: "Enterprise-scale intelligent assistant development and automation solutions.",
     },
     {
-      title: "Agent Toolchain & Project Environment",
-      desc: "Build intelligent agents using RAG, fine-tuning, distillation, and reusable tools within collaborative project environments with isolated workspaces.",
+      title: "Nasdaq",
+      desc: "Advanced analytics and AI-powered market insight systems.",
     },
+    
     {
-      title: "Tooling & Integration",
-      desc: "Integrate seamlessly with GitHub, VS Code, Copilot Studio, and use SDKs for Python, C#, JavaScript/TypeScript, and Java for faster AI development.",
-    },
-    {
-      title: "Observability, Trust & Governance",
-      desc: "Monitor real-time performance, apply enterprise identity controls, enforce safety filters, and maintain responsible governance across the AI lifecycle.",
-    },
-    {
-      title: "Multi-Agent Orchestration",
-      desc: "Coordinate multiple agents that can call each other, run long workflows, and support open standards like A2A and MCP for interoperable agent systems.",
-    },
-    {
-      title: "Local & Edge Deployment",
-      desc: "Deploy AI models locally using Foundry Local on Windows or Mac, with Azure Arc support coming soon for hybrid and edge environments.",
+      title: "Carvana",
+      desc: "AI systems for retail automation and customer engagement.",
     },
   ]}
 />

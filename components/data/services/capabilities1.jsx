@@ -15,21 +15,43 @@ export default function CoreCapabilitiesSection({
     <section id={sectionId} className={sectionClass}>
       <style>{`
         .novum-primary { color: ${primaryColor}; }
-        .novum-bg-primary { background-color: ${primaryColor}; }
+
         .tab-active {
           background: ${primaryColor} !important;
           color: #fff !important;
           border-color: ${primaryColor} !important;
         }
+
         .tab-btn {
           transition: all 0.25s ease;
           border-left: 4px solid transparent;
         }
+
         .tab-btn:hover {
           background: rgba(13, 43, 117, 0.08);
         }
+
         .tab-active-border {
           border-left: 4px solid ${primaryColor} !important;
+        }
+
+        /* PROFESSIONAL CARD STYLING */
+        .capability-card {
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          transition: all 0.25s ease;
+        }
+
+        .capability-card:hover {
+          box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+          transform: translateY(-4px);
+        }
+
+        /* IMAGE STYLING ONLY (NO WIDTH LIMIT) */
+        .capability-img {
+          border-radius: 16px;
+          border: 1px solid #e5e7eb;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.06);
         }
       `}</style>
 
@@ -54,27 +76,27 @@ export default function CoreCapabilitiesSection({
             </div>
           </div>
 
-          {/* RIGHT SIDE CONTENT */}
+          {/* RIGHT CONTENT */}
           <div className="col-lg-8 col-md-7">
 
-            {/* PER-TAB IMAGE */}
+            {/* FULL-WIDTH IMAGE */}
             {tabs[activeTab]?.image && (
-              <div className="mb-4 text-center">
+              <div className="mb-4">
                 <Image
                   src={tabs[activeTab].image}
-                  width={900}
-                  height={600}
+                  width={1200}      // ensures full width responsiveness
+                  height={700}
                   alt={tabs[activeTab].label}
-                  className="img-fluid rounded shadow-sm"
+                  className="img-fluid capability-img"
                 />
               </div>
             )}
 
-            {/* FEATURE CARDS */}
+            {/* FULL-WIDTH FEATURE CARDS (SAME WIDTH AS IMAGE) */}
             <div className="row g-4">
               {tabs[activeTab]?.features?.map((feature, idx) => (
                 <div className="col-md-6" key={idx}>
-                  <div className="p-4 border rounded h-100 shadow-sm bg-white">
+                  <div className="p-4 bg-white capability-card h-100">
                     <h5 className="fw-semibold mb-3 novum-primary d-flex align-items-center">
                       <i className={`${feature.icon} me-2 fs-4`}></i>
                       {feature.title}
@@ -84,7 +106,7 @@ export default function CoreCapabilitiesSection({
                       {feature.points.map((pt, i) => (
                         <li key={i} className="d-flex align-items-start mb-2">
                           <i
-                            className="bi bi-check2-circle text-novum-blue fs-5 me-2"
+                            className="bi bi-check2-circle fs-5 me-2"
                             style={{ color: primaryColor }}
                           ></i>
                           <span>{pt}</span>
