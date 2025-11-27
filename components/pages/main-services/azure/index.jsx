@@ -1,7 +1,8 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import CoreCapabilitiesSection from "@/components/data/services/capabilities1";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -22,10 +23,10 @@ const Ai = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Microsoft Azure Solutions"
-  title="Empower Your Business with the Cloud"
+  serviceName="Azure Data Foundry"
+  title="Build, Scale, and Govern Enterprise AI with Confidence"
   highlightText="Azure"
-  subtitle="Scale smarter with secure, high performance Azure cloud solutions."
+  subtitle="A unified Azure platform for creating, customising, deploying, and managing advanced AI applications, agents, and multimodal solutions at scale."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/azure/azure-hero.webp"
   heroButtons={[
@@ -42,24 +43,154 @@ const Ai = () => {
 />
 
  
-
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Azure AI Foundry: The Unified Platform
-      for Building and Scaling Enterprise AI
-    </>
-  }
+<BulletPoints
+  sectionId="overview"
+  title={<>What Is Azure Data Foundry?</>}
   paragraphs={[
-    "Azure AI Foundry (formerly Azure AI Studio) is a unified, Azure-hosted platform-as-a-service designed for building, customizing, managing, and scaling AI applications and agents across the enterprise.",
-    "It brings together models, developer tools, agents, and governance under a single namespace all secured with unified RBAC, networking controls, and policy management for consistent and safe AI operations.",
-    "With end-to-end capabilities spanning model access, fine tuning, observability, and agent orchestration, Azure AI Foundry empowers organizations to rapidly innovate and deploy AI solutions with enterprise grade security, reliability, and scalability."
+    "Azure Data Foundry is a powerful unified platform as a-service that allows businesses to design, build, customise, deploy, and scale AI applications inside a single, highly governed Azure workspace.",
+    "It brings together foundation models, agent runtimes, orchestration tools, data connectors, and enterprise grade governance controls all operating under a central namespace."
+  ]}
+  bulletPoints={[
+    "Unified workspace for AI development and deployment",
+    "Consistent RBAC, network governance, and policy controls",
+    "End-to-end lifecycle management from prototyping to production",
+    "Seamless integration with Azure services, GitHub, and enterprise identity systems"
   ]}
   imageSrc="/assets/img/azure/azure-1.webp"
-  altText="Azure AI Foundry Overview"
+  altText="Azure Data Foundry Unified AI Platform"
   sectionClass="position-relative overflow-hidden py-7"
 />
+
+<CoreCapabilitiesSection
+  title="Core Capabilities of Azure Data Foundry"
+  primaryColor="#0d2b75"
+  tabs={[
+    {
+      label: "Model Access & Customisation",
+      image: "/assets/img/azure/azure-1.webp",
+      features: [
+        {
+          icon: "ri-brain-line",
+          title: "Model Access",
+          points: [
+            "1,900+ foundation & open-source models",
+            "OpenAI, Meta, Mistral, xAI, Hugging Face",
+            "Unified Azure API"
+          ]
+        },
+        {
+          icon: "ri-tools-line",
+          title: "Model Customisation",
+          points: [
+            "Fine-tuning & distillation",
+            "Serverless inference",
+            "Multimodal model support"
+          ]
+        }
+      ]
+    },
+
+    {
+      label: "Advanced Agent Toolchain",
+      image: "/assets/img/azure/azure-2.webp",
+      features: [
+        {
+          icon: "ri-robot-line",
+          title: "Enterprise Agents",
+          points: [
+            "RAG-ready agent pipelines",
+            "Long-running workflows",
+            "Built-in fault recovery"
+          ]
+        },
+        {
+          icon: "ri-team-line",
+          title: "Multi-Agent Systems",
+          points: [
+            "A2A & MCP orchestration",
+            "Agent-to-Agent communication",
+            "Secure RBAC-based flows"
+          ]
+        }
+      ]
+    },
+
+    {
+      label: "Tooling & Integration",
+      image: "/assets/img/azure/azure-1.webp",
+      features: [
+        {
+          icon: "ri-code-line",
+          title: "SDK Support",
+          points: [
+            "Python, C#, JS/TS, Java",
+            "GitHub Codespaces, VS Code",
+            "Copilot Studio templates"
+          ]
+        },
+        {
+          icon: "ri-links-line",
+          title: "Enterprise Connectors",
+          points: [
+            "1,400+ integrations",
+            "ERP, CRM, HRM-ready",
+            "Authentication via Entra ID"
+          ]
+        }
+      ]
+    },
+
+    {
+      label: "Governance & Observability",
+      image: "/assets/img/azure/azure-2.webp",
+      features: [
+        {
+          icon: "ri-eye-line",
+          title: "Observability",
+          points: [
+            "Telemetry dashboards",
+            "Real-time monitoring",
+            "Usage & performance tracking"
+          ]
+        },
+        {
+          icon: "ri-shield-check-line",
+          title: "Governance",
+          points: [
+            "Responsible AI tools",
+            "Policy enforcement",
+            "Full audit history"
+          ]
+        }
+      ]
+    },
+
+    {
+      label: "Local & Edge Deployment",
+      image: "/assets/img/data-foundry/edge.png",
+      features: [
+        {
+          icon: "ri-computer-line",
+          title: "Foundry Local",
+          points: [
+            "Run on Windows & Mac",
+            "Offline inference support"
+          ]
+        },
+        {
+          icon: "ri-cloud-line",
+          title: "Hybrid Cloud",
+          points: [
+            "Azure Arc (coming soon)",
+            "On-prem environments"
+          ]
+        }
+      ]
+    }
+  ]}
+/>
+
+      
         
       <MainServices
   id="services"
