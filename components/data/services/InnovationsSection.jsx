@@ -7,7 +7,7 @@ export default function InnovationsRoadmapSection({
   title = "Innovations & Future Roadmap",
   intro = "",
   items = [],
-  sectionClass = "py-7 position-relative",
+  sectionClass = "py-7 pt-0 position-relative",
   primaryColor = "#0d2b75",
   backgroundGradient = "linear-gradient(to right bottom, #ffffff, #eef3ff)",
 }) {

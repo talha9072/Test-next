@@ -63,7 +63,7 @@ const Ai = () => {
   ]}
   imageSrc="/assets/img/azure/azure-1.webp"
   altText="Azure Data Foundry Unified AI Platform"
-  sectionClass="position-relative overflow-hidden py-7"
+  sectionClass="position-relative overflow-hidden py-7 pb-0"
 />
 
 <CapabilitiesTabsCards
