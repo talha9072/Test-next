@@ -7,9 +7,9 @@ export default function UseCasesTabsSection({
   subtitle = "USE CASES",
   title = "Use Cases & Industry Applications",
   intro = "",
-  backgroundImage = "",          // NEW PROP
+  backgroundImage = "",
   primaryColor = "#0d2b75",
-  tabs = []
+  tabs = [],
 }) {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -36,7 +36,7 @@ export default function UseCasesTabsSection({
 
       <style>{`
         /* ------------------------------ */
-        /* Pill Bar (Microsoft Fluent UI) */
+        /* Pill Bar */
         /* ------------------------------ */
         .pill-bar {
           position: relative;
@@ -70,11 +70,10 @@ export default function UseCasesTabsSection({
           background: ${primaryColor};
           color: #fff;
           border-color: ${primaryColor};
-          
         }
 
         /* ------------------------------ */
-        /* Cards (TRUE Microsoft replica) */
+        /* Premium Microsoft Cards */
         /* ------------------------------ */
         .uc-card {
           position: relative;
@@ -82,7 +81,7 @@ export default function UseCasesTabsSection({
           background: #ffffff;
           border-radius: 24px;
           border: 1px solid #e5e5e5;
-          padding: 20px;
+          overflow: hidden;
           transition: all .3s ease;
           height: 100%;
         }
@@ -92,31 +91,41 @@ export default function UseCasesTabsSection({
           box-shadow: 0px 18px 48px rgba(0,0,0,0.10);
         }
 
-        .uc-image-wrapper img {
-          border-radius: 18px;
-          border: 1px solid #ececec;
+        /* Image wrapper – 8px padding */
+        .uc-img-container {
+          padding: 8px;
+          
+        }
+
+        /* Content wrapper – 20px padding */
+        .uc-body {
+          padding: 20px;
+        }
+
+        .uc-image {
+          border-radius: 16px;
+          border: 1px solid #e6e6e6;
         }
 
         .uc-label {
           font-size: 0.9rem;
           font-weight: 600;
           color: #666;
-          margin-top: 4px;
+          margin-bottom: 6px;
         }
 
         .uc-title {
           font-size: 1.22rem;
           font-weight: 700;
           color: #0b1a3d;
-          margin-top: 6px;
-          margin-bottom: 12px;
+          margin-bottom: 10px;
         }
 
         .uc-desc {
           font-size: 0.97rem;
           color: #444;
           line-height: 1.6;
-          margin-bottom: 14px;
+          margin-bottom: 16px;
         }
 
         .uc-cta {
@@ -140,7 +149,6 @@ export default function UseCasesTabsSection({
       `}</style>
 
       <div className="container position-relative" style={{ zIndex: 4 }}>
-        
         {/* HEADER */}
         <p className="text-uppercase fw-semibold small text-muted mb-1">
           {subtitle}
@@ -170,35 +178,35 @@ export default function UseCasesTabsSection({
           {tabs[activeTab]?.items?.map((card, idx) => (
             <div className="col-lg-4 col-md-6" key={idx}>
               <div className="uc-card">
-
-                {/* IMAGE */}
-{card.image && (
-  <div className="uc-image-wrapper mb-3">
-    <Image
-      src={card.image}
-      alt={card.title}
-      width={0}
-      height={0}
-      sizes="100vw"
-      style={{ width: "100%", height: "auto", borderRadius: "18px" }}
-      className="img-fluid"
-    />
-  </div>
-)}
-
-                <div className="uc-label">{card.label}</div>
-
-                <div className="uc-title">{card.title}</div>
-
-                <p className="uc-desc">{card.desc}</p>
-
-                <a className="uc-cta" href={card.link || "#"} target="_blank">
-                  <div className="cta-arrow">
-                    <i className="bi bi-arrow-right"></i>
+                {/* IMAGE CONTAINER (8px padding) */}
+                {card.image && (
+                  <div className="uc-img-container">
+                    <Image
+                      src={card.image}
+                      alt={card.title}
+                      width={600}
+                      height={350}
+                      className="uc-image"
+                      style={{ width: "100%", height: "auto" }}
+                    />
                   </div>
-                  {card.cta}
-                </a>
+                )}
 
+                {/* CONTENT (20px padding) */}
+                <div className="uc-body">
+                  <div className="uc-label">{card.label}</div>
+
+                  <div className="uc-title">{card.title}</div>
+
+                  <p className="uc-desc">{card.desc}</p>
+
+                  <a className="uc-cta" href={card.link || "#"} target="_blank">
+                    <div className="cta-arrow">
+                      <i className="bi bi-arrow-right"></i>
+                    </div>
+                    {card.cta}
+                  </a>
+                </div>
               </div>
             </div>
           ))}
