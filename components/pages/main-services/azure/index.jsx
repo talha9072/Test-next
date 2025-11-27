@@ -5,6 +5,7 @@ import BulletPoints from "@/components/data/services/bulletpoints";
 import CoreCapabilitiesSection from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -312,6 +313,54 @@ const Ai = () => {
         },
       ],
     },
+  ]}
+/>
+
+<PricingCardsSection
+  sectionId="pricing"
+  backgroundImage="/assets/img/azure/pricing-bg.avif"
+  title="Pricing, Licensing & Cost Considerations"
+  intro="Azure Data Foundry is free to explore, and you only pay for the AI services you consume. We help organisations estimate and optimise their spending with the right model and deployment choices."
+  primaryColor="#0d2b75"
+  cards={[
+    {
+      title: "Pay-As-You-Go",
+      desc: "Flexible usage-based billing across models, compute, and storage.",
+      list: [
+        "Over 1,900+ AI models billed per token",
+        "Only pay for what you use",
+        "Full cost visibility"
+      ]
+    },
+    {
+      title: "Model Inference",
+      desc: "Consumption pricing for LLMs, embedding models, multimodal transformers, and more.",
+      list: [
+        "LLM token-based billing",
+        "Multimodal image/video inference",
+        "Optimised routing for cost reduction"
+      ]
+    },
+    {
+      title: "Fine-Tuning & Hosting",
+      desc: "Scaled hosted fine-tuning and custom model deployment on Azure GPU compute.",
+      list: [
+        "Training compute billed per-hour",
+        "Model hosting priced by GPU/CPU",
+        "Auto-scaling for lower cost"
+      ]
+    },
+    {
+      title: "Cost Optimisation Support",
+      desc: "We help clients reduce spend across model selection, caching, routing, and architecture.",
+      list: [
+        "Large model optimisation",
+        "Token efficiency tuning",
+        "Right-size infrastructure planning"
+      ],
+      cta: "Talk to us",
+      link: "#"
+    }
   ]}
 />
 
