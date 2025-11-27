@@ -7,22 +7,32 @@ export default function InnovationsRoadmapSection({
   title = "Innovations & Future Roadmap",
   intro = "",
   items = [],
-  sectionClass = "py-7",
+  sectionClass = "py-7 position-relative",
   primaryColor = "#0d2b75",
-  backgroundColor = "#f7f7f7"   // NEW PROP
+
+  /* NEW CLEAN PROP */
+  backgroundGradient = "linear-gradient(to right bottom, #ffffff, #eef3ff)",
 }) {
   return (
     <section
       id={sectionId}
       className={sectionClass}
-      style={{ backgroundColor: backgroundColor }} // APPLY BACKGROUND
+      style={{
+        background: backgroundGradient,
+      }}
     >
       <style>{`
+        section#${sectionId} > .container {
+          position: relative;
+          z-index: 2;
+        }
+
         .ms-item-title {
           font-size: 1.15rem;
           font-weight: 600;
           color: ${primaryColor};
         }
+
         .ms-icon-box {
           width: 52px;
           height: 52px;
@@ -33,11 +43,13 @@ export default function InnovationsRoadmapSection({
           justify-content: center;
           margin-right: 14px;
         }
+
         .ms-item-desc {
           color: #444;
           margin-top: 6px;
           line-height: 1.55;
         }
+
         .ms-line {
           width: 30px;
           height: 3px;
@@ -67,7 +79,7 @@ export default function InnovationsRoadmapSection({
           {items.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="d-flex">
-                
+
                 {/* Icon Box */}
                 <div className="ms-icon-box">
                   <i className={`${item.icon} fs-3`} style={{ color: primaryColor }}></i>

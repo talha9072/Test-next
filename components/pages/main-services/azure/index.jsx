@@ -214,7 +214,7 @@ const Ai = () => {
       
 <InnovationsRoadmapSection
   sectionId="future-roadmap"
-  backgroundColor="#fff"
+  backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
   subtitle="INNOVATIONS"
   title="Innovations & Future Roadmap"
   intro="Azure Data Foundry continues to evolve with next-generation models, intelligent routing, deep enterprise integrations, and breakthrough research from Foundry Labs."
