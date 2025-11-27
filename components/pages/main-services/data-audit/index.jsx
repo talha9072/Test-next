@@ -4,6 +4,8 @@ import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import BulletPointsFlip from "@/components/data/services/bulletpoints-flip";
 import FunnelSection from "@/components/data/services/funnel";  
+import PremiumFeatureSection from "@/components/data/services/PremiumFeatureSection";
+import PremiumFeatureSection1 from "@/components/data/services/PremiumFeatureSection-flip";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -104,6 +106,40 @@ const Dataaudit = () => {
   ]}
 />
         
+
+<PremiumFeatureSection
+  headline="Audit Log Retention & Data Management"
+  subtext="We help define audit retention policies that balance compliance requirements with performance and operational needs."
+  label="Capabilities include:"
+  items={[
+    "Retention from 1 day to indefinite",
+    "Forward-only retention changes",
+    "Deletion by table, access logs, or date range",
+    "Aligned with GDPR, ISO, and internal governance policies"
+  ]}
+  imageSrc="/assets/img/data-audit/Data-img-1.png"
+  altText="Audit Log Retention"
+  priority={true}
+/>
+
+
+<PremiumFeatureSection1
+  headline="API Access & Compliance Integrations"
+  subtext="For advanced scenarios, Dataverse auditing integrates seamlessly into your wider compliance and reporting ecosystem."
+  label="Integrates with:"
+  items={[
+    "Dataverse APIs and SDKs",
+    "Power Automate workflows",
+    "Microsoft Purview",
+    "External reporting or SIEM tools"
+  ]}
+  imageSrc="/assets/img/data-audit/Data-img-2.png"
+  altText="API Integrations"
+  priority={true}
+/>
+
+
+
     <MainServices
   id="services"
   subtitle="Dataverse Audit Capabilities"
