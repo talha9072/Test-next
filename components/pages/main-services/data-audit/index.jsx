@@ -1,7 +1,9 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import BulletPointsFlip from "@/components/data/services/bulletpoints-flip";
+import FunnelSection from "@/components/data/services/funnel";  
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -22,12 +24,12 @@ const Dataaudit = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Data Audit Services"
-  title="Building Trust Through Data Accuracy and Compliance"
+  serviceName="Data Audit & Dataverse Auditing Services"
+  title="Dataverse Auditing Services for Compliance, Security, and Data Governance"
   highlightText="Data Audit"
-  subtitle="Evaluate, cleanse, and strengthen your data for smarter decisions."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/data-audit/hero.webp"
+  subtitle="Track Data Changes and User Activity Across Your Dataverse Environment"
+  bgImage="/assets/img/data-audit/Data-banner.png"
+  heroImage="/assets/img/data-audit/Data-banner-detail.jpg"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -42,22 +44,64 @@ const Dataaudit = () => {
 />
 
  
-
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Dataverse Auditing Matters
-      for Security and Compliance
-    </>
-  }
+<BulletPoints
+  title={<>Why Data Auditing Is Critical</>}
   paragraphs={[
-    "Dataverse auditing plays a vital role in helping organizations meet compliance, security, and governance requirements. It creates a clear record of who made changes, when they were made, and how data was accessed across the environment.",
-    "Auditing ensures full visibility into user actions by tracking updates, deletions, and modifications whether they happen through an app or through the software development kit.",
+    "Without proper auditing, organizations risk compliance failures, security gaps, and unreliable data. Dataverse auditing ensures every change is traceable, accountable, and aligned with governance standards."
   ]}
-  imageSrc="/assets/img/data-audit/audit-1.webp"
+  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
+  bulletPoints={[
+    "Meet compliance and regulatory requirements",
+    "Track who accessed or modified data",
+    "Improve security and accountability",
+    "Strengthen trust in reporting and decision-making"
+  ]}
+  imageSrc="/assets/img/data-audit/Data-img-1.png"
   altText="Dataverse Audit and Compliance Solutions"
   sectionClass="position-relative overflow-hidden py-7"
+/>
+
+<BulletPointsFlip
+  title={<>What We Audit in Microsoft Dataverse</>}
+  paragraphs={[
+    "We configure Dataverse auditing to capture changes and access activity across your Power Platform environment."
+  ]}
+  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
+  bulletPoints={[
+    "Custom and customizable system tables",
+    "Business-critical and sensitive columns",
+    "User access via apps, integrations, and SDKs",
+    "Data creation, updates, and deletions"
+  ]}
+  imageSrc="/assets/img/data-audit/Data-img-2.png"
+  altText="Dataverse Audit and Compliance Solutions"
+  sectionClass="position-relative overflow-hidden py-7 pt-0"
+/>
+
+      <FunnelSection
+  leftHeading="Flexible Audit Configuration & Governance"
+  leftText="Auditing can be enabled and managed at multiple levels to align with your governance model."
+
+  leftCards={[
+    {
+      title: "Audit History (Record Level)",
+      text: "View exact changes on individual records, including previous values, timestamps, and user actions."
+    },
+    {
+      title: "Audit Summary (System Level)",
+      text: "Monitor audit activity across the environment to identify trends, risks, or anomalies."
+    }
+  ]}
+
+  rightHeading="Audit Structure Overview"
+  rightText="Dataverse supports multiple layers of auditing for comprehensive tracking."
+
+  funnelLevels={[
+    "ENVIRONMENT LEVEL",
+    "ORGANIZATION LEVEL",
+    "TABLE LEVEL",
+    "COLUMN LEVEL"
+  ]}
 />
         
     <MainServices
@@ -78,22 +122,7 @@ const Dataaudit = () => {
       title: "Column Level Tracking",
       desc: "Enable auditing on selected columns to capture updates to critical fields with precision.",
     },
-    {
-      title: "Record Level Audit History",
-      desc: "View detailed changes on each record through the Audit History tab for full transparency.",
-    },
-    {
-      title: "Audit Summary View",
-      desc: "Access a consolidated overview of audit activities across the system for faster analysis.",
-    },
-    {
-      title: "Environment and Organization Controls",
-      desc: "Manage where auditing is active by configuring it at the environment or organization level.",
-    },
-    {
-      title: "Role Based Administration",
-      desc: "Ensure only System Administrators and System Customizers can configure audit settings for secure control.",
-    },
+    
   ]}
 />
 
