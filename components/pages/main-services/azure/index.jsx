@@ -6,9 +6,8 @@ import CoreCapabilitiesSection from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import WhyChooseSection from "@/components/data/services/whychooseus";
+import HighlightsSection from "@/components/data/services/HighlightsSection";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -364,98 +363,81 @@ const Ai = () => {
   ]}
 />
 
-        
-     <MainServices
-  id="success-stories"
-  subtitle="Success Stories"
-  title="Trusted by Global Enterprises"
-  description="Azure Data Foundry powers enterprise-scale AI deployments across industries — from finance and retail to sports and professional services."
-  image={{
-    src: "/assets/img/azure/customers.webp",
-    alt: "Azure AI Customer Success",
-  }}
-  services={[
+<HighlightsSection
+  sectionId="latest-announcements"
+  leftImage="/assets/img/azure/ppl.avif"
+  backgroundGradient="linear-gradient(to bottom right, #ffffff, #eef3ff)"
+  cards={[
     {
-      title: "Accenture",
-      desc: "Enterprise-scale intelligent assistant development and automation solutions.",
+      icon: "bi-lightning-charge-fill",
+      title: "Grok 3 Now on Azure",
+      desc: "Microsoft now hosts xAI’s Grok 3 model with full performance parity for enterprise workloads.",
+      link: "#",
+      cta: "Learn more"
     },
     {
-      title: "Nasdaq",
-      desc: "Advanced analytics and AI-powered market insight systems.",
+      icon: "bi-diagram-3",
+      title: "Hugging Face Catalog Expansion",
+      desc: "Expanded support for open-source model catalogs, offering hundreds of new models.",
+      link: "#",
+      cta: "Learn more"
     },
-    
     {
-      title: "Carvana",
-      desc: "AI systems for retail automation and customer engagement.",
+      icon: "bi-arrows-move",
+      title: "Model Context Protocol",
+      desc: "Broader interoperability for agents and custom workflows via MCP.",
+      link: "#",
+      cta: "Learn more"
     },
+    {
+      icon: "bi-robot",
+      title: "Agent Deployment Enhancements",
+      desc: "Improved agent orchestration, workflow automation, and enterprise reliability.",
+      link: "#",
+      cta: "Learn more"
+    }
   ]}
 />
 
 
-
-      <ImplementSection
-  id="implement"
-  subtitle="Innovations"
-  title="How Azure AI Foundry Accelerates Enterprise AI Transformation"
-  description="Azure AI Foundry continues to evolve with new models, orchestration tools, and platform-level advancements—helping organizations build, deploy, and scale next-generation AI applications with greater speed, reliability, and intelligence."
+<WhyChooseSection
+sectionId="whyus"
   items={[
     {
-      img: "/assets/img/azure/cloud-migration.webp", // same image
-      title: "Next-Generation Model Access",
-      desc: "Access cutting-edge models like Grok 3, Flux Pro 1.1, Sora, and a broad range of open-source models through the Hugging Face catalog all available directly within Azure AI Foundry.",
+      icon: "bi-lightbulb",
+      title: "AI Strategy & Discovery",
+      desc: "We guide organisations to define objectives and identify AI opportunities using Azure Data Foundry."
     },
     {
-      img: "/assets/img/azure/multi-cloud.webp", // same image
-      title: "Intelligent Model Routing",
-      desc: "A built-in model router intelligently selects the optimal model for each request, balancing performance and cost without manual tuning.",
+      icon: "bi-shield-lock",
+      title: "Secure Platform Setup",
+      desc: "Governance, RBAC, networking, identity, and compliance configured for enterprise deployment."
     },
     {
-      img: "/assets/img/azure/azure-ai.webp", // same image
-      title: "Enterprise Agent Service (GA)",
-      desc: "Build AI agents using 1,400+ connectors with deployment support for Teams, Office, Slack, and Twilio now generally available for enterprise use.",
+      icon: "bi-cpu",
+      title: "Model Selection & Tuning",
+      desc: "Fine-tuning, prompt optimisation, and performance calibration across 1,900+ Azure-hosted models."
     },
     {
-      img: "/assets/img/azure/azure-security.webp", // same image
-      title: "Advanced Multi-Agent Orchestration",
-      desc: "Support for multi-agent collaboration, long-running workflows, error handling, and open standards such as A2A and Model Context Protocol (MCP).",
+      icon: "bi-diagram-3",
+      title: "Multi-Agent Architecture",
+      desc: "We design scalable multi-agent systems with A2A and MCP standards for enterprise operations."
     },
     {
-      img: "/assets/img/azure/azure-cost.webp", // same image
-      title: "Foundry Labs Innovations",
-      desc: "Explore emerging capabilities including Project Amelie, Magnetic-UI, TypeAgent, EvoDiff, and BioEmu pushing forward the next wave of AI innovation.",
+      icon: "bi-cloud-arrow-down",
+      title: "System Integration",
+      desc: "Deep integrations with Azure, Power Platform, Microsoft 365, ERP, CRM, and your business systems."
     },
+    {
+      icon: "bi-graph-up-arrow",
+      title: "Cost Optimisation",
+      desc: "We optimise token usage, compute costs, hosting, and performance — saving up to 40% monthly."
+    }
   ]}
 />
-   
-<Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose NOVUM for Azure AI Foundry"
-  description="NOVUM brings deep expertise in the Microsoft AI ecosystem with strong capabilities across model integration, enterprise agent development, observability, and governance. We help organizations build reliable and intelligent AI systems that scale securely across the entire enterprise."
-  counters={[
-    { value: 35, suffix: "+", label: "AI and Cloud Implementations" },
-    { value: 12, suffix: "+", label: "Industries Served" },
-    { value: 100, suffix: "%", label: "Client Satisfaction" },
-    { value: 9, suffix: "+", label: "Years of AI Expertise" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-cloud",
-      title: "Strong AI and Model Expertise",
-      desc: "We work with a wide range of foundation and open source models and help teams customize, fine tune, and apply them for real business use cases.",
-    },
-    {
-      icon: "fa-solid fa-shield-halved",
-      title: "Governance and Trust",
-      desc: "We guide enterprises in setting up clear access control, safety filters, responsible AI rules, and complete visibility across the AI lifecycle.",
-    },
-    {
-      icon: "fa-solid fa-rocket",
-      title: "Enterprise Agent Development",
-      desc: "We design intelligent agents using advanced tools, connectors, and multi agent patterns that support secure and reliable enterprise operations.",
-    },
-  ]}
-/>
+
+        
+    
 
 
 
