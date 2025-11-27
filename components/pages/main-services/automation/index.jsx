@@ -65,28 +65,28 @@ const Automation = () => {
   }}
   services={[
     {
-      title: "Infrastructure Automation",
-      desc: "Automate the deployment configuration and full management of IT infrastructure to improve speed and reliability.",
+      title: "Business Process Automation",
+      desc: "Automate routine finance, operations, and HR tasks with Dynamics 365 and Power Platform. From invoice approvals to payroll and procurement workflows, Novum streamlines complex business processes into seamless, rule-driven flows. Drive higher accuracy, faster approvals, and real-time visibility across your organization.",
     },
     {
-      title: "Network Automation",
-      desc: "Simplify network provisioning monitoring and policy enforcement through automated workflows.",
+      title: "Data & Analytics Automation",
+      desc: "Transform raw data into actionable insights with Microsoft Fabric and Azure. Our automations handle ingestion, transformation, and reporting ensuring real-time KPIs, predictive insights, and data-driven decisions. Eliminate manual reporting and empower every team with automated intelligence.",
     },
     {
-      title: "Security Automation",
-      desc: "Enable automated threat detection incident response compliance checks and continuous security monitoring.",
+      title: "Collaboration & Productivity Automation",
+      desc: "Boost team efficiency across Microsoft 365, Teams, and SharePoint. Novum builds smart workflows that automate document approvals, task reminders, and onboarding processes keeping collaboration structured and transparent. Empower your teams to focus on outcomes, not administration.",
     },
     {
-      title: "Application Automation",
-      desc: "Support application delivery through automated pipelines deployment processes and full lifecycle management.",
+      title: "Application & DevOps Automation",
+      desc: "Accelerate app delivery and system reliability through Azure DevOps and GitHub Actions. We automate deployments, testing, and environment provisioning for faster innovation and fewer errors. Perfect for organizations scaling custom solutions and ISVs on the Microsoft Cloud.",
     },
     {
-      title: "Cloud Automation",
-      desc: "Automate cloud resource provisioning orchestration and cost optimization across your cloud environments.",
+      title: "Customer & Frontline Automation",
+      desc: "Enhance customer and frontline experiences with AI-powered, low-code automations. Using Dynamics 365, Power Virtual Agents, and Copilot Studio, Novum delivers self-service chatbots, automated ticket routing, and intelligent field-service scheduling improving satisfaction and reducing manual workload.",
     },
     {
-      title: "Consulting and Implementation Support",
-      desc: "From strategy and discovery sessions to proof of concept pilots and full implementation we guide your automation journey at every stage.",
+      title: "Governance & Compliance Automation",
+      desc: "Simplify tenant management and compliance operations through automated Microsoft 365 and Azure workflows. From license assignment to usage reporting and data retention, Novum ensures governance is proactive and efficient without adding administrative overhead.",
     },
   ]}
 />
