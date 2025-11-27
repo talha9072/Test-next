@@ -2,7 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import BulletPoints from "@/components/data/services/bulletpoints";
-import CoreCapabilitiesSection from "@/components/data/services/capabilities1";
+import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -64,135 +64,114 @@ const Ai = () => {
   sectionClass="position-relative overflow-hidden py-7"
 />
 
-<CoreCapabilitiesSection
-  title="Core Capabilities of Azure Data Foundry"
+<CapabilitiesTabsCards
+  title="Core Capabilities Of Azure Data Foundry"
   primaryColor="#0d2b75"
+  sectionId="core-capabilities"
+  backgroundImage="/assets/img/azure/azure-1-bg.png"
+  backgroundOverlay={true}
   tabs={[
     {
       label: "Model Access & Customisation",
-      image: "/assets/img/azure/azure-1.webp",
-      features: [
+      cards: [
         {
-          icon: "ri-brain-line",
+          image: "/assets/img/azure/azure-1.webp",
+          label: "Access",
           title: "Model Access",
-          points: [
-            "1,900+ foundation & open-source models",
-            "OpenAI, Meta, Mistral, xAI, Hugging Face",
-            "Unified Azure API"
-          ]
+          desc: "1,900+ foundation & open-source models via unified Azure API.",
+          link: "#"
         },
         {
-          icon: "ri-tools-line",
+          image: "/assets/img/azure/azure-2.webp",
+          label: "Customisation",
           title: "Model Customisation",
-          points: [
-            "Fine-tuning & distillation",
-            "Serverless inference",
-            "Multimodal model support"
-          ]
+          desc: "Fine-tuning, distillation, multimodal, serverless inference.",
+          link: "#"
         }
       ]
     },
 
     {
       label: "Advanced Agent Toolchain",
-      image: "/assets/img/azure/azure-2.webp",
-      features: [
+      cards: [
         {
-          icon: "ri-robot-line",
+          image: "/assets/img/azure/azure-2.webp",
+          label: "Agents",
           title: "Enterprise Agents",
-          points: [
-            "RAG-ready agent pipelines",
-            "Long-running workflows",
-            "Built-in fault recovery"
-          ]
+          desc: "RAG-ready pipelines & long-running workflows.",
+          link: "#"
         },
         {
-          icon: "ri-team-line",
+          image: "/assets/img/azure/azure-1.webp",
+          label: "Multi-Agent",
           title: "Multi-Agent Systems",
-          points: [
-            "A2A & MCP orchestration",
-            "Agent-to-Agent communication",
-            "Secure RBAC-based flows"
-          ]
+          desc: "A2A & MCP orchestration, secure RBAC agent flows.",
+          link: "#"
         }
       ]
     },
 
     {
       label: "Tooling & Integration",
-      image: "/assets/img/azure/azure-1.webp",
-      features: [
+      cards: [
         {
-          icon: "ri-code-line",
+          image: "/assets/img/azure/azure-1.webp",
+          label: "SDKs",
           title: "SDK Support",
-          points: [
-            "Python, C#, JS/TS, Java",
-            "GitHub Codespaces, VS Code",
-            "Copilot Studio templates"
-          ]
+          desc: "Python, C#, JS/TS, Java, GitHub Copilot, VS Code templates.",
+          link: "#"
         },
         {
-          icon: "ri-links-line",
+          image: "/assets/img/azure/azure-2.webp",
+          label: "Connectors",
           title: "Enterprise Connectors",
-          points: [
-            "1,400+ integrations",
-            "ERP, CRM, HRM-ready",
-            "Authentication via Entra ID"
-          ]
+          desc: "1,400+ integrations across ERP, CRM, HRM, and more.",
+          link: "#"
         }
       ]
     },
 
     {
       label: "Governance & Observability",
-      image: "/assets/img/azure/azure-2.webp",
-      features: [
+      cards: [
         {
-          icon: "ri-eye-line",
+          image: "/assets/img/azure/azure-1.webp",
+          label: "Monitoring",
           title: "Observability",
-          points: [
-            "Telemetry dashboards",
-            "Real-time monitoring",
-            "Usage & performance tracking"
-          ]
+          desc: "Telemetry dashboards, monitoring, usage tracking.",
+          link: "#"
         },
         {
-          icon: "ri-shield-check-line",
-          title: "Governance",
-          points: [
-            "Responsible AI tools",
-            "Policy enforcement",
-            "Full audit history"
-          ]
+          image: "/assets/img/azure/azure-2.webp",
+          label: "Governance",
+          title: "Responsible AI & Policy",
+          desc: "Policy enforcement, audits, responsible AI tools.",
+          link: "#"
         }
       ]
     },
 
     {
       label: "Local & Edge Deployment",
-      image: "/assets/img/data-foundry/edge.png",
-      features: [
+      cards: [
         {
-          icon: "ri-computer-line",
+          image: "/assets/img/data-foundry/edge.png",
+          label: "Local",
           title: "Foundry Local",
-          points: [
-            "Run on Windows & Mac",
-            "Offline inference support"
-          ]
+          desc: "Run on Mac/Windows with offline inference support.",
+          link: "#"
         },
         {
-          icon: "ri-cloud-line",
+          image: "/assets/img/data-foundry/edge.png",
+          label: "Hybrid",
           title: "Hybrid Cloud",
-          points: [
-            "Azure Arc (coming soon)",
-            "On-prem environments"
-          ]
+          desc: "Azure Arc support for on-prem and hybrid deployments.",
+          link: "#"
         }
       ]
     }
   ]}
 />
-
       
 <BulletPoints
   sectionId="innovations"

@@ -9,8 +9,6 @@ export default function InnovationsRoadmapSection({
   items = [],
   sectionClass = "py-7 position-relative",
   primaryColor = "#0d2b75",
-
-  /* NEW CLEAN PROP */
   backgroundGradient = "linear-gradient(to right bottom, #ffffff, #eef3ff)",
 }) {
   return (
@@ -21,10 +19,49 @@ export default function InnovationsRoadmapSection({
         background: backgroundGradient,
       }}
     >
-      <style>{`
-        section#${sectionId} > .container {
+      <div className="container">
+        {/* Header */}
+        {subtitle && (
+          <p className="text-uppercase fw-semibold small text-muted mb-1">
+            {subtitle}
+          </p>
+        )}
+
+        <h2 className="fw-bold mb-3" style={{ color: "#0b1a3d" }}>
+          {title}
+        </h2>
+
+        {intro && <p className="mb-5">{intro}</p>}
+
+        {/* Microsoft Grid */}
+        <div className="row g-5">
+          {items.map((item, index) => (
+            <div className="col-lg-4 col-md-6" key={index}>
+              <div className="d-flex">
+                {/* Icon Box */}
+                <div className="ms-icon-box">
+                  <i
+                    className={`${item.icon} fs-3`}
+                    style={{ color: primaryColor }}
+                  ></i>
+                </div>
+
+                {/* Text */}
+                <div>
+                  <div className="ms-line"></div>
+                  <h5 className="ms-item-title">{item.title}</h5>
+                  <p className="ms-item-desc">{item.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* STYLES (SAFE) */}
+      <style jsx>{`
+        section {
           position: relative;
-          z-index: 2;
         }
 
         .ms-item-title {
@@ -58,46 +95,6 @@ export default function InnovationsRoadmapSection({
           margin-bottom: 8px;
         }
       `}</style>
-
-      <div className="container">
-
-        {/* Header */}
-        {subtitle && (
-          <p className="text-uppercase fw-semibold small text-muted mb-1">
-            {subtitle}
-          </p>
-        )}
-
-        <h2 className="fw-bold mb-3" style={{ color: "#0b1a3d" }}>
-          {title}
-        </h2>
-
-        {intro && <p className="mb-5">{intro}</p>}
-
-        {/* Microsoft Grid */}
-        <div className="row g-5">
-          {items.map((item, index) => (
-            <div className="col-lg-4 col-md-6" key={index}>
-              <div className="d-flex">
-
-                {/* Icon Box */}
-                <div className="ms-icon-box">
-                  <i className={`${item.icon} fs-3`} style={{ color: primaryColor }}></i>
-                </div>
-
-                {/* Text */}
-                <div>
-                  <div className="ms-line"></div>
-                  <h5 className="ms-item-title">{item.title}</h5>
-                  <p className="ms-item-desc">{item.desc}</p>
-                </div>
-
-              </div>
-            </div>
-          ))}
-        </div>
-
-      </div>
     </section>
   );
 }
