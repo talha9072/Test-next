@@ -37,8 +37,9 @@ const System = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
+    { label: "Expertise", href: "#Expertise" },
+    { label: "CLOUD STRATEGY", href: "#ccoe" },
     { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
     { label: "Why Choose?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
@@ -59,6 +60,7 @@ const System = () => {
 />
 
 <ExpertiseSplitSection
+sectionId="Expertise"
   title="Expertise & Industry Recognition"
   subtitle="APC is recognised globally for its excellence in Azure-driven transformation."
   tabs={[
@@ -143,6 +145,7 @@ const System = () => {
 
 
 <BigCardTabsSection
+sectionId="services"
   subtitle="AZURE SERVICES"
   title="Modern System Integration & Managed Cloud Operations"
   tabs={[
