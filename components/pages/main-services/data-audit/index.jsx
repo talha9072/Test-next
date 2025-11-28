@@ -83,6 +83,7 @@ sectionId="audit-config"
 
       <FunnelSection
       sectionId="structure"
+      backgroundStyle="#e5f1ff"
   leftHeading="Flexible Audit Configuration & Governance"
   leftText="Auditing can be enabled and managed at multiple levels to align with your governance model."
 

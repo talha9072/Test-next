@@ -2,17 +2,25 @@
 import React, { useEffect, useRef } from "react";
 
 export default function AuditTwoColSection({
-  sectionId = "audit-two-col",   // ⭐ NEW PROP
+  sectionId = "audit-two-col",
+
+  /* LEFT */
   leftHeading,
   leftText,
   leftCards = [],
 
+  /* RIGHT */
   rightHeading,
   rightText,
   funnelLevels = [],
+
+  /* NEW */
+  backgroundStyle = "linear-gradient(to bottom right, #f3f6ff, #e3e9ff)",
+  flipColumns = false
 }) {
   const sectionRef = useRef(null);
 
+  /* ANIMATION TRIGGER */
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,57 +40,63 @@ export default function AuditTwoColSection({
 
   return (
     <>
-      <section className="py-5" id={sectionId} ref={sectionRef}>
+      <section
+        id={sectionId}
+        className="py-6"
+        ref={sectionRef}
+        style={{ background: backgroundStyle }}
+      >
         <div className="container">
-          <div className="row align-items-start g-5">
 
-            {/* LEFT COLUMN */}
+          <div className={`row g-5 align-items-start ${flipColumns ? "flex-row-reverse" : ""}`}>
+
+            {/* RIGHT COLUMN — *NO BOX BACKGROUND* */}
             <div className="col-lg-6">
-              <h2 className="mb-4">{leftHeading}</h2>
-              <p className="mb-4">{leftText}</p>
+              <div className="right-content">
+                <h2 className="mb-4">{rightHeading}</h2>
+                <p className="mb-4">{rightText}</p>
 
-              {leftCards.map((card, idx) => (
-                <div className="left-card p-4 mb-4" key={idx}>
-                  <h3 className="mb-2">{card.title}</h3>
-                  <p className="mb-0">{card.text}</p>
+                <div className="funnel-wrapper mt-5">
+                  {funnelLevels.map((label, index) => {
+                    const total = funnelLevels.length;
+                    const baseHue = 225;
+                    const baseSat = 80;
+
+                    const isLast = index === total - 1;
+                    const lightness = isLast ? 68 : 26 + index * (22 / total);
+                    const widthPercent = 100 - index * (60 / total);
+
+                    return (
+                      <div
+                        key={index}
+                        className="dynamic-layer mx-auto mb-4"
+                        style={{
+                          width: `${widthPercent}%`,
+                          background: `hsl(${baseHue}, ${baseSat}%, ${lightness}%)`,
+                          opacity: isLast ? 0.55 : 1,
+                          animationDelay: `${index * 0.25}s`,
+                        }}
+                      >
+                        <span>{label}</span>
+                      </div>
+                    );
+                  })}
                 </div>
-              ))}
+              </div>
             </div>
 
-            {/* RIGHT COLUMN */}
+            {/* LEFT COLUMN — BOXED STYLE */}
             <div className="col-lg-6">
-              <h2 className="mb-4">{rightHeading}</h2>
-              <p className="mb-4">{rightText}</p>
+              <div className="left-box p-4 p-lg-5">
+                <h2 className="mb-4">{leftHeading}</h2>
+                <p className="mb-4">{leftText}</p>
 
-              <div className="funnel-wrapper mt-4">
-                {funnelLevels.map((label, index) => {
-                  const total = funnelLevels.length;
-
-                  const baseHue = 225;
-                  const baseSat = 80;
-
-                  const isLast = index === total - 1;
-                  const lightness = isLast
-                    ? 68
-                    : 26 + index * (22 / total);
-
-                  const widthPercent = 100 - index * (60 / total);
-
-                  return (
-                    <div
-                      key={index}
-                      className="dynamic-layer mx-auto mb-4"
-                      style={{
-                        width: `${widthPercent}%`,
-                        background: `hsl(${baseHue}, ${baseSat}%, ${lightness}%)`,
-                        opacity: isLast ? 0.55 : 1,
-                        animationDelay: `${index * 0.25}s`,
-                      }}
-                    >
-                      <span>{label}</span>
-                    </div>
-                  );
-                })}
+                {leftCards.map((card, idx) => (
+                  <div className="left-card p-4 mb-4" key={idx}>
+                    <h3 className="mb-2">{card.title}</h3>
+                    <p className="mb-0">{card.text}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -91,7 +105,14 @@ export default function AuditTwoColSection({
       </section>
 
       <style jsx>{`
-        /* LEFT CARDS */
+        /* ========== LEFT COLUMN BOX ========== */
+        .left-box {
+          background: rgba(255, 255, 255, 0.65);
+          border-radius: 18px;
+          backdrop-filter: blur(6px);
+          box-shadow: 0 0 0 1px rgba(255,255,255,0.45);
+        }
+
         .left-card {
           background: #f8f9ff;
           border-radius: 14px;
@@ -102,10 +123,17 @@ export default function AuditTwoColSection({
           background: #eef1ff;
         }
 
-        /* FUNNEL */
+        /* ========== FUNNEL / RIGHT SIDE ========== */
+        .right-content {
+          padding: 5px;
+        }
+
         .funnel-wrapper {
           position: relative;
+          margin-top: 40px;
+          padding-top: 30px;
         }
+
         .funnel-wrapper::before {
           content: "";
           position: absolute;
@@ -113,7 +141,7 @@ export default function AuditTwoColSection({
           top: 0;
           width: 1px;
           height: 100%;
-          background: #d0d0d0;
+          background: #cfd2e0;
           transform: translateX(-50%);
         }
 
@@ -133,7 +161,6 @@ export default function AuditTwoColSection({
           letter-spacing: 0.5px;
         }
 
-        /* ANIMATION */
         .animateDown {
           animation: fallDown 0.85s ease-out forwards;
         }
