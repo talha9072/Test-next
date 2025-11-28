@@ -3,6 +3,7 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MainServices from "@/components/data/services/main-services";
+import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
@@ -22,10 +23,10 @@ const System = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="System Integration Services"
-  title="Build Modern Azure Systems with Confidence"
+  serviceName="APC Azure System Integration Services"
+  title="Cloud Native Design, Migration & Managed Operations"
   highlightText="System Integration"
-  subtitle="Design deploy and operate cloud native solutions powered by Azure experts."
+  subtitle="APC delivers enterprise-grade Azure system integration, cloud-native deployments, DevOps pipelines, Kubernetes, serverless, IaC, monitoring, and 24/7 managed services powered by certified Azure experts."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/system-integration/system-integration-hero.webp"
   heroButtons={[
@@ -44,16 +45,57 @@ const System = () => {
 
 
       <SoftwareSolutionsSection
-  title={`Why System Integration Is Essential for Modern Cloud Environments`}
+  title={`Cloud Native System Integration Powered by APC & Azure`}
   paragraphs={[
-    "Novum delivers system integration services built on strong cloud native principles helping organizations design deploy and operate modern Azure environments with confidence.",
-    "Our certified Azure specialists provide complete support from architecture planning and solution design to implementation and ongoing operations ensuring every system is scalable secure and aligned with your business goals."
+    "AP Communications (APC) is a specialist Azure System Integration provider with deep expertise in designing, deploying, and operating cloud-native environments.",
+    "As a long-standing Azure partner, APC supports organisations through every phase of their cloud journey from assessment and PoC to full production rollout and ongoing managed operations."
   ]}
   imageSrc="/assets/img/system-integration/system-integration-1.webp"
   altText="System Integration Services by Novum"
   sectionClass="position-relative overflow-hidden py-7"
 />
 
+<ExpertiseSplitSection
+  title="Expertise & Industry Recognition"
+  subtitle="APC is recognised globally for its excellence in Azure-driven transformation."
+  tabs={[
+    {
+      label: "Certifications",
+      title: "Microsoft Solution Partner Certifications",
+      desc: "APC is certified across multiple Azure disciplines:",
+      points: [
+        "Digital & App Innovation (Azure)",
+        "Infrastructure (Azure)",
+        "Data & AI (Azure)",
+        "Recognised for secure, scalable cloud delivery"
+      ],
+      cta: "View Certifications"
+    },
+    {
+      label: "Our Experts",
+      title: "Highly Qualified Azure Specialists",
+      desc: "Industry-leading certified engineers delivering enterprise-scale solutions.",
+      points: [
+        "100+ Microsoft Azure certified professionals",
+        "Extensive enterprise deployment experience",
+        "Advanced specialisations across cloud, AI, and data"
+      ],
+      cta: "Meet the Team"
+    },
+    {
+      label: "Industry Presence",
+      title: "Global Recognition & Contributions",
+      desc: "APC actively contributes to top-tier technology conferences and events.",
+      points: [
+        "Developer Summit",
+        "Japan Container Days",
+        "Interop Tokyo",
+        "Thought leadership across cloud and AI ecosystems"
+      ],
+      cta: "Upcoming Events"
+    }
+  ]}
+/>
 
         
      <MainServices
