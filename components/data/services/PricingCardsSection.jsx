@@ -77,16 +77,17 @@ export default function PricingCardsSection({
           background: ${primaryColor};
           border: none;
           padding: 10px 26px;
-          border-radius: 8px;
+          border-radius: 3px;
           color: white;
-          font-weight: 600;
           text-decoration: none;
           display: inline-block;
           transition: all .25s ease;
         }
 
         .pc-cta:hover {
-          background: #0a1f5a;
+          background: #fff;
+          border: 1px solid ${primaryColor};
+          color: ${primaryColor};
         }
       `}</style>
 
