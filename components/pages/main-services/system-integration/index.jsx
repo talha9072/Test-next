@@ -6,6 +6,7 @@ import MainServices from "@/components/data/services/main-services";
 import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import BigCardTabsSection from "@/components/data/services/BigCardWithGridSection";
+import WhyChooseSection from "@/components/data/services/whychooseus";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
@@ -210,117 +211,44 @@ const System = () => {
   ]}
 />
 
-      
-     <MainServices
-  id="services"
-  subtitle="System Integration Services"
-  title="Design Build and Operate Modern Azure Environments"
-  description="Novum delivers system integration services that help organizations build strong cloud native foundations on Azure. Our certified specialists support architecture planning container platforms serverless design DevOps automation migration and full operational workflows. We combine proven methods with real enterprise experience to ensure every solution is reliable scalable and ready for long term growth."
-  image={{
-    src: "/assets/img/system-integration/system-integration-2.webp",
-    alt: "System Integration Services by Novum",
-  }}
-  services={[
-    {
-      title: "Cloud Center of Excellence",
-      desc: "We provide assessment planning training and proof of concept support to build a strong Azure foundation that aligns with your business goals.",
-    },
-    {
-      title: "Container and Platform Services",
-      desc: "Design and implement Azure Kubernetes Service App Service and container solutions for modern scalable application environments.",
-    },
-    {
-      title: "Serverless Architecture",
-      desc: "Build event driven systems using Azure Functions and Logic Apps to simplify workloads and improve operational efficiency.",
-    },
-    {
-      title: "Infrastructure as Code",
-      desc: "Use ARM Bicep and Terraform to automate deployments and create consistent secure and repeatable Azure environments.",
-    },
-    {
-      title: "DevOps and CI CD Pipelines",
-      desc: "Implement automated pipelines with Azure DevOps and GitHub Actions to streamline development testing and deployment processes.",
-    },
-    {
-      title: "Migration and Modernization",
-      desc: "Migrate workloads applications and identity systems to Azure and modernize legacy platforms with API development data services and machine learning support.",
-    },
-  ]}
-/>
 
-
-
-
-     <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="What You Gain from NOVUM System Integration Services"
-  description="Novum strengthens your cloud environment by delivering modern Azure architectures automated deployment processes and stable long term operations. Our system integration services ensure that your solutions are secure scalable and optimized for real enterprise performance."
+<WhyChooseSection
+  sectionId="whyus"
+  title="Why Choose APC for Azure System Integration?"
+  subtitle=""
   items={[
     {
-      img: "/assets/img/system-integration/tab-1.jpg",
-      title: "Stronger Cloud Native Architecture",
-      desc: "Build modern Azure environments using container platforms serverless frameworks and cloud native design patterns.",
+      icon: "bi-lightning-charge-fill",
+      title: "Deep Microsoft Azure Partnership",
+      desc: "APC is a long-standing Azure partner with proven expertise across cloud-native architecture and modernisation."
     },
     {
-      img: "/assets/img/system-integration/tab-2.jpg",
-      title: "Faster and Safer Deployments",
-      desc: "Automate infrastructure and application delivery through pipelines that reduce manual effort and improve release speed.",
+      icon: "bi-mortarboard-fill",
+      title: "100+ Certified Azure Professionals",
+      desc: "Our architects, DevOps engineers, and cloud consultants hold advanced Azure certifications across infra, DevOps, Kubernetes, and security."
     },
     {
-      img: "/assets/img/system-integration/tab-3.jpg",
-      title: "Improved Application Modernization",
-      desc: "Modernize applications legacy systems and data platforms to support current analytics workloads and future growth.",
+      icon: "bi-diagram-3-fill",
+      title: "Enterprise-Scale Delivery Experience",
+      desc: "We have successfully delivered Azure solutions for large enterprises requiring reliability, scalability, and compliance."
     },
     {
-      img: "/assets/img/system-integration/tab-4.jpg",
-      title: "Secure and Stable Operations",
-      desc: "Enable secure design strong identity controls monitoring systems and governance models that improve operational health.",
+      icon: "bi-cpu-fill",
+      title: "Kubernetes, DevOps & Serverless Expertise",
+      desc: "Specialised capability in AKS, IaC, GitHub Actions, Azure DevOps, Functions, and event-driven architectures."
     },
     {
-      img: "/assets/img/system-integration/tab-5.jpg",
-      title: "Continuous Automation and DevOps Flow",
-      desc: "Implement DevOps practices CI CD workflows and IaC methods to support continuous improvement and reliable delivery.",
+      icon: "bi-infinity",
+      title: "End-to-End Service Model",
+      desc: "We support the full cloud lifecycle: strategy, design, build, DevOps automation, optimisation, and managed operations."
     },
     {
-      img: "/assets/img/system-integration/tab-6.jpg",
-      title: "Proactive Managed Operations",
-      desc: "Gain stable operations with twenty four seven monitoring patching issue handling and operational design based on best practices.",
-    },
+      icon: "bi-stars",
+      title: "Continuous Improvement Through CCoE",
+      desc: "Our Cloud Center of Excellence ensures governance, consistency, and rapid innovation across your organisation."
+    }
   ]}
 />
-
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose Novum for System Integration Services"
-  description="Novum brings certified Azure expertise strong system integration capability and proven delivery methods to help organizations build modern cloud native environments. Our teams are experienced in design deployment automation and long term operations ensuring every solution is stable secure and ready for future growth."
-  counters={[
-    { value: 100, suffix: "+", label: "Azure Certified Specialists" },
-    { value: 150, suffix: "+", label: "Enterprise Deployments" },
-    { value: 20, suffix: "+", label: "Cloud Native Competencies" },
-    { value: 10, suffix: "+", label: "Years of Integration Excellence" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-user-tie",
-      title: "Azure Focused Expertise",
-      desc: "Certified professionals with deep knowledge in Azure PaaS AI container platforms serverless systems and DevOps pipelines.",
-    },
-    {
-      icon: "fa-solid fa-layer-group",
-      title: "Strong System Integration Capability",
-      desc: "Experience across containers serverless IaC CI CD virtualization and full modernization workflows for enterprise environments.",
-    },
-    {
-      icon: "fa-solid fa-expand",
-      title: "Reliable Operations and Support",
-      desc: "Operational designs based on industry best practices supported by monitoring patching incident handling and continuous improvement.",
-    },
-  ]}
-/>
-
 
 
 
@@ -330,15 +258,27 @@ const System = () => {
   items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
 />

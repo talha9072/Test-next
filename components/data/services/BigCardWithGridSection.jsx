@@ -77,7 +77,7 @@ export default function BigCardTabsSection({
             height: 200px;
             background: linear-gradient(
                 rgba(0, 0, 0, 0),
-                rgba(43, 43, 43, 0.9)
+                rgba(43, 43, 43, 1)
             );
             z-index: 2;
             pointer-events: none;
