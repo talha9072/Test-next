@@ -78,7 +78,7 @@ export default function ConceptTwoCol({
 
           {/* RIGHT COLUMN */}
           <div className="col-lg-6">
-            <h4 className="right-title">{rightTitle}</h4>
+            <h3 className="right-title">{rightTitle}</h3>
 
             {rightPoints.map((text, idx) => (
               <div className="check-item" key={idx}>

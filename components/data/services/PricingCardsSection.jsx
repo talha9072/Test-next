@@ -112,7 +112,7 @@ export default function PricingCardsSection({
               <div className="pricing-card">
 
                 {/* TITLE */}
-                <h4 className="pc-title">{card.title}</h4>
+                <h3 className="pc-title">{card.title}</h3>
 
                 {/* DESCRIPTION */}
                 {card.desc && <p className="pc-desc">{card.desc}</p>}
