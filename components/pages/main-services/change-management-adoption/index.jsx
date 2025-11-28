@@ -130,6 +130,7 @@ backgroundStyle="#e5f1ff"
 
 
 <WhyChooseSection
+title = "Why Choose Our Change Management Services?"
   sectionId="whyus-change"
   items={[
     {
