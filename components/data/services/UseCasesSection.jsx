@@ -7,8 +7,11 @@ export default function UseCasesTabsSection({
   subtitle = "USE CASES",
   title = "Use Cases & Industry Applications",
   intro = "",
-  backgroundImage = "",
   primaryColor = "#0d2b75",
+
+  /* ⭐ NEW CLEAN PROP → Accepts color, gradient, or empty */
+  backgroundStyle = "#ffffff",
+
   tabs = [],
 }) {
   const [activeTab, setActiveTab] = useState(0);
@@ -18,22 +21,9 @@ export default function UseCasesTabsSection({
       id={sectionId}
       className="py-7 position-relative"
       style={{
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        background: backgroundStyle, // ← SOLID COLOR or GRADIENT
       }}
     >
-      {/* Soft Overlay */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(255,255,255,0.78)",
-          backdropFilter: "blur(6px)",
-        }}
-      ></div>
-
       <style>{`
         /* ------------------------------ */
         /* Pill Bar */
@@ -94,7 +84,6 @@ export default function UseCasesTabsSection({
         /* Image wrapper – 8px padding */
         .uc-img-container {
           padding: 8px;
-          
         }
 
         /* Content wrapper – 20px padding */
@@ -146,13 +135,17 @@ export default function UseCasesTabsSection({
           background: rgba(13,43,117,0.10);
           margin-right: 10px;
         }
+
       `}</style>
 
       <div className="container position-relative" style={{ zIndex: 4 }}>
+        
         {/* HEADER */}
-        <p className="text-uppercase fw-semibold small text-muted mb-1">
-          {subtitle}
-        </p>
+        {subtitle && (
+          <p className="text-uppercase fw-semibold small text-muted mb-1">
+            {subtitle}
+          </p>
+        )}
 
         <h2 className="fw-bold mb-3" style={{ color: "#0b1a3d" }}>
           {title}
@@ -178,7 +171,7 @@ export default function UseCasesTabsSection({
           {tabs[activeTab]?.items?.map((card, idx) => (
             <div className="col-lg-4 col-md-6" key={idx}>
               <div className="uc-card">
-                {/* IMAGE CONTAINER (8px padding) */}
+
                 {card.image && (
                   <div className="uc-img-container">
                     <Image
@@ -192,21 +185,19 @@ export default function UseCasesTabsSection({
                   </div>
                 )}
 
-                {/* CONTENT (20px padding) */}
                 <div className="uc-body">
                   <div className="uc-label">{card.label}</div>
-
                   <div className="uc-title">{card.title}</div>
-
                   <p className="uc-desc">{card.desc}</p>
 
                   <a className="uc-cta" href={card.link || "#"} target="_blank">
                     <div className="cta-arrow">
                       <i className="bi bi-arrow-right"></i>
                     </div>
-                    {card.cta}
+                    {card.cta || "Learn More"}
                   </a>
                 </div>
+
               </div>
             </div>
           ))}
