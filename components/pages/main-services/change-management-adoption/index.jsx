@@ -1,10 +1,10 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import ConceptTwoCol from "@/components/data/services/ConceptTwoCol";
+import WhyChooseSection from "@/components/data/services/whychooseus";
+import FourCardSection from "@/components/data/services/FourPillarsSection";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -23,9 +23,9 @@ const Change = () => {
 
       <HeroWithRibbon
   serviceName="Change Management & Adoption"
-  title="Successful Transformation Through People"
+  title="Increase User Adoption & Project Success"
   highlightText="Change Management"
-  subtitle="Empowering teams to embrace technology, adapt faster, and sustain long-term success."
+  subtitle="Management & Adoption services align people, processes, and technology to maximise user adoption and reduce project risk."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/change-management-adoption/management-hero.webp"
   heroButtons={[
@@ -42,130 +42,131 @@ const Change = () => {
 />
 
  
-
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Change Management Matters
-      for Successful Transformation
-    </>
-  }
+<BulletPoints
+  sectionId="change-overview"
+  title={<>Why Change Management Matters?</>}
   paragraphs={[
-    "A clear and structured change plan prevents the most common reasons digital projects fail such as low adoption, weak engagement, and misaligned expectations.",
-    "Without effective change management, even strong technical solutions risk becoming simple data entry tools instead of real business value creators.",
-    "Our approach ensures that people understand the purpose of the change and have the confidence and capability to use the new solution in a meaningful way."
+    "Successful technology implementation is not only about deploying new tools it’s about preparing people, aligning leadership, and enabling teams to adopt new ways of working.",
+    "Our Change Management & Adoption framework ensures your investment delivers real business value by guiding users, reducing resistance, and accelerating organisation-wide adoption."
+  ]}
+  bulletPoints={[
+    "Improves user adoption and reduces change resistance",
+    "Aligns leadership and teams on shared expectations and goals",
+    "Provides clear communication and structured onboarding",
+    "Ensures sustainable use of new systems and processes",
+    "Accelerates time-to-value for your technology investment"
   ]}
   imageSrc="/assets/img/change-management-adoption/management-1.webp"
-  altText="Change Management and Adoption Services"
+  altText="Change Management and User Adoption"
+  sectionClass="position-relative overflow-hidden py-7"
+/>
+
+<ConceptTwoCol
+backgroundStyle="#e5f1ff"
+  title="Align Technology With Desired Business Outcomes"
+  intro={[
+    "Many projects meet all technical requirements yet still miss their intended business goals.",
+    "This happens when user experience and people-readiness are not prioritised.",
+    "Change management ensures your solution is adopted, not ignored."
+  ]}
+  rightPoints={[
+    "Increase user adoption across all teams",
+    "Improve utilisation and ROI",
+    "Reduce change resistance and roll-out friction",
+    "Align technology with actual workflows",
+    "Enable confident and skilled users",
+  ]}
+/>
+
+
+
+<FourCardSection
+  title="Boost Project Success with Structured Change Management"
+  intro="Structured change management increases success rates by up to 6x. These four pillars ensure a predictable and scalable approach."
+  backgroundStyle="linear-gradient(to bottom right, #ffffff, #f4f7ff);"
+  cards={[
+    {
+      image: "/assets/img/change-management-adoption/tab-1.webp",
+      title: "Ongoing Executive Sponsorship",
+      desc: "Visible leadership support removes barriers, reinforces priorities, and motivates teams."
+    },
+    {
+      image: "/assets/img/change-management-adoption/tab-2.webp",
+      title: "Integrated with Project Management",
+      desc: "Change activities run in sync with delivery milestones, communication, and rollout plans."
+    },
+    {
+      image: "/assets/img/change-management-adoption/tab-3.webp",
+      title: "Active Employee Engagement",
+      desc: "Inclusive engagement reduces resistance and helps users build ownership early."
+    },
+    {
+      image: "/assets/img/change-management-adoption/tab-4.webp",
+      title: "Frequent & Transparent Communication",
+      desc: "Clear, consistent communication builds trust and keeps all teams aligned."
+    }
+  ]}
+/>
+
+<BulletPoints
+  sectionId="service-includes"
+  title={<>What Our Change Management & Adoption Service Includes</>}
+  paragraphs={[
+    "Our Change Management & Adoption service provides a structured, people-centred approach that ensures your technology investment delivers meaningful and sustained business value.",
+  ]}
+  bulletPoints={[
+    "Change impact assessment across teams and processes",
+    "Stakeholder mapping, engagement planning, and readiness checks",
+    "Communication strategy and clear messaging frameworks",
+    "Training material creation — guides, workshops, and enablement plans",
+    "Adoption dashboards and performance measurement tracking",
+    "Structured feedback loops and iterative improvement cycles",
+    "Post-go-live reinforcement to sustain long-term adoption"
+  ]}
+  imageSrc="/assets/img/change-management-adoption/management-2.webp"
+  altText="Change Management & Adoption Services"
   sectionClass="position-relative overflow-hidden py-7"
 />
 
 
-<MainServices
-  id="services"
-  subtitle="Change Management Programs"
-  title="Align Your Digital Solution with Real Business Outcomes"
-  description="Many projects meet technical requirements but still struggle because the human experience is not considered. Our programs help teams understand, adopt, and effectively use new solutions so the business achieves the results it expects."
-  image={{
-    src: "/assets/img/change-management-adoption/management-2.webp",
-    alt: "Change Management and Adoption Framework",
-  }}
-  services={[
-    {
-      title: "Outcome Focused Planning",
-      desc: "We ensure that every project is designed around the business goals and the real needs of the people who will use the solution.",
-    },
-    {
-      title: "User Experience Alignment",
-      desc: "We work with cross functional teams including development to embed user experience into the design process.",
-    },
-    {
-      title: "Readiness and Communication Support",
-      desc: "We prepare teams for change through simple and clear communication that builds excitement and reduces uncertainty.",
-    },
-    {
-      title: "Role Based Enablement",
-      desc: "We deliver targeted learning experiences that help employees feel confident and capable when using the new system.",
-    },
-    {
-      title: "Adoption Measurement",
-      desc: "We track usage, engagement, and performance to ensure the solution delivers the intended outcomes.",
-    },
-    {
-      title: "Continuous Reinforcement",
-      desc: "We help maintain long term momentum through ongoing support, feedback loops, and coaching.",
-    },
-  ]}
-/>
-
-
-
-
-<ImplementSection
-  id="implement"
-  subtitle="Capabilities"
-  title="How Structured Change Management Improves Project Success"
-  description="Using proven frameworks such as the Prosci Change Management approach, we help organizations achieve stronger outcomes by ensuring users are prepared, supported, and engaged throughout the transformation journey."
+<WhyChooseSection
+  sectionId="whyus-change"
   items={[
     {
-      img: "/assets/img/change-management-adoption/tab-1.webp",
-      title: "Stronger Executive Sponsorship",
-      desc: "Ongoing support from leadership ensures that change is visible, credible, and aligned with business priorities.",
+      icon: "bi-diagram-3",
+      title: "Proven Prosci-Based Methodology",
+      desc: "Our approach is grounded in globally recognised Prosci change management principles ensuring structured, repeatable, and predictable results."
     },
     {
-      img: "/assets/img/change-management-adoption/tab-2.webp",
-      title: "Integrated Project Collaboration",
-      desc: "Close coordination with project management and development teams keeps user experience at the center of all decisions.",
+      icon: "bi-briefcase",
+      title: "Cross-Industry Experience",
+      desc: "We deliver successful change programs across sectors including finance, health, retail, manufacturing, and the public domain."
     },
     {
-      img: "/assets/img/change-management-adoption/tab-3.webp",
-      title: "Higher User Engagement",
-      desc: "Active involvement of employees builds trust, reduces resistance, and increases readiness for new ways of working.",
+      icon: "bi-people",
+      title: "User-Centred Adoption Strategy",
+      desc: "Our framework focuses on real employee behaviour, readiness, and engagement to ensure technology is truly adopted — not just deployed."
     },
     {
-      img: "/assets/img/change-management-adoption/tab-4.webp",
-      title: "Clear and Frequent Communication",
-      desc: "Transparent updates and simplified messaging help users understand the purpose of the change and what is expected.",
+      icon: "bi-microsoft",
+      title: "Aligned with Microsoft Best Practices",
+      desc: "We follow Microsoft’s organisational change adoption guidance ensuring smooth integration with Azure, Power Platform, and enterprise systems."
     },
     {
-      img: "/assets/img/change-management-adoption/tab-5.webp",
-      title: "Better Achievement of Project Goals",
-      desc: "Projects with structured change management are significantly more likely to achieve the expected business results.",
+      icon: "bi-sliders2-vertical",
+      title: "Flexible Support Models",
+      desc: "Choose from full program support, project-based engagement, or lightweight advisory services based on your business needs."
     },
+    {
+      icon: "bi-rocket-takeoff",
+      title: "Maximised Technology ROI",
+      desc: "Our structured adoption programs help you realise value faster, reduce resistance, and accelerate productivity across the organisation."
+    }
   ]}
 />
 
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Corporate Training"
-  description="NOVUM empowers organizations to upskill their teams through expert-led, hands-on corporate training designed for measurable results. Our certified instructors combine technical mastery with real-world experience to create learning experiences that enhance productivity, engagement, and long-term business success."
-  counters={[
-    { value: 500, suffix: "+", label: "Professionals Trained" },
-    { value: 25, suffix: "+", label: "Corporate Clients Served" },
-    { value: 98, suffix: "%", label: "Satisfaction Rate" },
-    { value: 10, suffix: "+", label: "Years of Training Expertise" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-chalkboard-user",
-      title: "Certified Microsoft Instructors",
-      desc: "Our trainers include Microsoft MVPs, MCTs, and industry-certified professionals with deep expertise in modern tools and technologies.",
-    },
-    {
-      icon: "fa-solid fa-users-gear",
-      title: "Tailored Learning Solutions",
-      desc: "Each program is customized to fit your business objectives, skill levels, and operational workflows for maximum relevance and impact.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "End-to-End Support",
-      desc: "From planning and scheduling to delivery and feedback, NOVUM ensures seamless coordination and measurable outcomes.",
-    },
-  ]}
-/>
+
+     
 
 
 
@@ -175,15 +176,27 @@ const Change = () => {
   items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
 />
