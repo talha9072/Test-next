@@ -4,6 +4,8 @@ import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MainServices from "@/components/data/services/main-services";
 import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
+import BigCardTabsSection from "@/components/data/services/BigCardWithGridSection";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
@@ -97,7 +99,118 @@ const System = () => {
   ]}
 />
 
-        
+
+  <PricingCardsSection
+  sectionId="ccoe"
+  subtitle="CLOUD STRATEGY"
+  backgroundImage="/assets/img/azure/pricing-bg.avif"
+  title="Cloud Center of Excellence (CCoE)"
+  intro="APC’s Cloud Center of Excellence helps organisations build a strong Azure foundation through structured planning, training, and validation services."
+  primaryColor="#0d2b75"
+  cards={[
+    {
+      title: "Assessment & Strategy",
+      desc: "Establish a cloud-native roadmap aligned with your business goals.",
+      list: [
+        "Evaluate current systems and cloud readiness",
+        "Define cloud-native architecture principles",
+        "Create migration, modernization & containerisation pathways"
+      ]
+    },
+    {
+      title: "Training & Upskilling",
+      desc: "Equip teams with Azure-first cloud skills for long-term capability building.",
+      list: [
+        "Azure fundamentals & architecture education",
+        "DevOps, CI/CD, and Kubernetes enablement",
+        "Hands-on cloud-native team enablement"
+      ]
+    },
+    {
+      title: "Proof of Concept (PoC)",
+      desc: "Validate architecture decisions with structured PoCs and Azure starter kits.",
+      list: [
+        "Requirement definition workshops",
+        "Deployment of Azure starter kits",
+        "Technical PoC implementation support"
+      ],
+      cta: "Start a PoC",
+      link: "/contact"
+    }
+  ]}
+/>
+
+
+<BigCardTabsSection
+  subtitle="AZURE SERVICES"
+  title="Modern System Integration & Managed Cloud Operations"
+  tabs={[
+    {
+      label: "System Integration (SI)",
+      leftImage: "/assets/img/azure/ppl.avif",
+      leftTitle: "Cloud-Native System Integration",
+      leftDesc: "APC builds complete Azure architectures across containers, serverless, IaC, DevOps, networking, and modernization.",
+      cards: [
+        {
+          icon: "bi-diagram-3",
+          title: "Container Services",
+          desc: "AKS, ACI, App Services, governance, scaling, security."
+        },
+        {
+          icon: "bi-lightning-charge",
+          title: "Serverless & Events",
+          desc: "Functions, Logic Apps, Event Grid, Service Bus automation."
+        },
+        {
+          icon: "bi-code-slash",
+          title: "Infrastructure as Code",
+          desc: "ARM, Bicep, Terraform for consistent deployments."
+        },
+        {
+          icon: "bi-git",
+          title: "CI/CD Pipelines",
+          desc: "Azure DevOps, GitHub Actions, automated releases."
+        },
+        {
+          icon: "bi-cloud-arrow-up",
+          title: "Migration & Modernisation",
+          desc: "IaaS, Identity, Networking, Hybrid Cloud, security hardening."
+        },
+        {
+          icon: "bi-display",
+          title: "Monitoring & Virtualisation",
+          desc: "Azure Monitor, Elastic, AVD, performance observability."
+        }
+      ]
+    },
+
+    {
+      label: "Managed Operations",
+      leftImage: "/assets/img/azure/ppl.avif",
+      leftTitle: "24/7 Azure Operations & Reliability",
+      leftDesc: "We manage your Azure workloads with proactive monitoring, ITIL processes, security patching, and operational excellence.",
+      cards: [
+        {
+          icon: "bi-clock-history",
+          title: "24/7 Monitoring",
+          desc: "Real-time logs, patching, security updates, certificates."
+        },
+        {
+          icon: "bi-shield-check",
+          title: "ITIL-Based Operations",
+          desc: "Incident, change, config management, reporting."
+        },
+        {
+          icon: "bi-gear",
+          title: "Operational Design",
+          desc: "Kubernetes ops, DevOps workflows, access governance."
+        }
+      ]
+    }
+  ]}
+/>
+
+      
      <MainServices
   id="services"
   subtitle="System Integration Services"
