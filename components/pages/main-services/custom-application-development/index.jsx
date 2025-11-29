@@ -2,6 +2,9 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
+import Reveal from "@/components/reveal";
+import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -22,10 +25,10 @@ const Training = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Custom Application Development"
-  title="Create Secure and Modern Business Applications"
+  serviceName="Low Code Business App Solutions"
+  title="Custom Application Development with Power Apps"
   highlightText="Custom Applications"
-  subtitle="Design powerful low code applications that streamline workflows, connect data, and support smarter business decisions."
+  subtitle="Accelerate digital transformation with Microsoft Power Apps."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/app-dev/app-hero.webp"
   heroButtons={[
@@ -47,19 +50,269 @@ const Training = () => {
       <SoftwareSolutionsSection
   title={
     <>
-      Overview of Custom Application Development
+      Build Custom Business Apps Faster with Power Apps
     </>
   }
   paragraphs={[
-    "Power Apps which is part of the Microsoft Power Platform is a low code platform that enables rapid development of custom applications. It empowers organizations to build apps that solve business challenges streamline workflows and integrate with Microsoft and third party systems.",
-    "Power Apps supports a wide range of business needs by making it possible to create custom solutions without complex coding while still maintaining strong security and performance."
+    "Microsoft Power Apps, part of the Microsoft Power Platform, is a leading low-code application development environment. It enables organisations to build secure, high-performing apps that solve real business challenges without lengthy development cycles.",
+    "Our Custom Application Development service helps companies design, create, and deploy applications that streamline workflows, automate processes, and connect seamlessly with both Microsoft and third-party platforms."
   ]}
   imageSrc="/assets/img/app-dev/app-1.webp"
   altText="Custom Application Development with Power Apps"
   sectionClass="position-relative overflow-hidden py-7"
 />
 
-        
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+ <DynamicTabsCards
+  sectionId="powerapps-capabilities"
+  title="Core Capabilities of Power Apps"
+  primaryColor="#0d2b75"
+  backgroundType="gradient"
+  backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+  tabs={[
+    /* ------------------------------------ */
+    /* LOW-CODE DEVELOPMENT (3 cards)       */
+    /* ------------------------------------ */
+    {
+      label: "Low-Code Development",
+      cards: [
+        {
+          image: "/assets/img/app-dev/tab-1.jpg",
+          label: "UI Builder",
+          title: "Drag-and-Drop UI Creation",
+          list: [
+            "Create UIs quickly with visual components",
+            "No manual HTML/CSS required",
+            "Fast business app layout building"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-2.jpg",
+          label: "Templates",
+          title: "Prebuilt Templates & Components",
+          list: [
+            "Accelerate development with ready templates",
+            "Reusable components for consistency",
+            "Reduces repetitive tasks"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-3.jpg",
+          label: "Prototyping",
+          title: "Faster Prototyping & Iteration",
+          list: [
+            "Validate ideas rapidly",
+            "Short testing cycles",
+            "Move from concept to production faster"
+          ],
+          link: "#"
+        }
+      ]
+    },
+
+    /* ------------------------------------ */
+    /* DATA CONNECTIVITY (4 cards)          */
+    /* ------------------------------------ */
+    {
+      label: "Data Connectivity",
+      cards: [
+        {
+          image: "/assets/img/app-dev/tab-2.jpg",
+          label: "Dataverse",
+          title: "Microsoft Dataverse",
+          list: [
+            "Enterprise-grade relational storage",
+            "Security roles and data rules",
+            "Scalable for large applications"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-3.jpg",
+          label: "SharePoint",
+          title: "SharePoint / SQL / Dynamics 365",
+          list: [
+            "Instant connection to Microsoft systems",
+            "Native integration with business data",
+            "Seamless enterprise workflows"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-4.jpg",
+          label: "Azure",
+          title: "Azure Services",
+          list: [
+            "Azure Functions",
+            "Logic Apps",
+            "AI + Cloud-based APIs"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-5.jpg",
+          label: "Connectors",
+          title: "1,000+ SaaS & API Integrations",
+          list: [
+            "Third-party SaaS systems",
+            "Enterprise application integrations",
+            "Prebuilt connectors for fast setup"
+          ],
+          link: "#"
+        }
+      ]
+    },
+
+    /* ------------------------------------ */
+    /* AI & AUTOMATION (4 cards)            */
+    /* ------------------------------------ */
+    {
+      label: "AI & Automation",
+      cards: [
+        {
+          image: "/assets/img/app-dev/tab-2.jpg",
+          label: "AI Builder",
+          title: "Built-In AI Builder",
+          list: [
+            "Prediction models",
+            "Object detection",
+            "Classification and scoring"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-3.jpg",
+          label: "Power Automate",
+          title: "Workflow Automation",
+          list: [
+            "Approvals & notifications",
+            "Automated business processes",
+            "Low-code logic creation"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-4.jpg",
+          label: "Document AI",
+          title: "Document Intelligence",
+          list: [
+            "Extract data from PDFs & forms",
+            "OCR & AI-based text recognition",
+            "Automated data capture"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-5.jpg",
+          label: "ML",
+          title: "Machine Learning",
+          list: [
+            "Prediction & scoring models",
+            "Custom ML integrations",
+            "AI-driven insights"
+          ],
+          link: "#"
+        }
+      ]
+    },
+
+    /* ------------------------------------ */
+    /* CROSS-PLATFORM SUPPORT (3 cards)     */
+    /* ------------------------------------ */
+    {
+      label: "Cross-Platform Compatibility",
+      cards: [
+        {
+          image: "/assets/img/app-dev/tab-2.jpg",
+          label: "Mobile",
+          title: "Mobile & Tablet Ready",
+          list: [
+            "Run across iOS and Android",
+            "Adaptive responsive layouts",
+            "Optimised performance"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-3.jpg",
+          label: "Web",
+          title: "Web Browser Compatibility",
+          list: [
+            "Runs in any modern browser",
+            "No installation required",
+            "Instant access via web"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-4.jpg",
+          label: "Devices",
+          title: "Consistent Performance",
+          list: [
+            "Smooth rendering across devices",
+            "Optimised loading and caching",
+            "Unified user experience"
+          ],
+          link: "#"
+        }
+      ]
+    },
+
+    /* ------------------------------------ */
+    /* ENTERPRISE SECURITY (3 cards)        */
+    /* ------------------------------------ */
+    {
+      label: "Enterprise-Grade Security",
+      cards: [
+        {
+          image: "/assets/img/app-dev/tab-2.jpg",
+          label: "Security",
+          title: "Role-Based Access Control",
+          list: [
+            "Granular permissions",
+            "User-level data access",
+            "Secure environment isolation"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-3.jpg",
+          label: "Entra ID",
+          title: "Azure AD / Entra ID Security",
+          list: [
+            "Multi-factor authentication",
+            "Conditional access",
+            "Identity governance"
+          ],
+          link: "#"
+        },
+        {
+          image: "/assets/img/app-dev/tab-4.jpg",
+          label: "Governance",
+          title: "Centralised Governance",
+          list: [
+            "Data policies",
+            "Environment monitoring",
+            "Compliance tools in Admin Center"
+          ],
+          link: "#"
+        }
+      ]
+    }
+  ]}
+/> 
+</Reveal>
+
+
+
+
+
+
+
+
+
     <MainServices
   id="services"
   subtitle="Core Capabilities"

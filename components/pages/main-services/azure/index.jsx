@@ -13,6 +13,7 @@ import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
+import Reveal from "@/components/Reveal";
 
 
 
@@ -47,7 +48,7 @@ const Ai = () => {
   ]}
 />
 
- 
+ <Reveal direction="left">
 <BulletPoints
   sectionId="overview"
   title={<>What Is Azure Data Foundry?</>}
@@ -65,7 +66,10 @@ const Ai = () => {
   altText="Azure Data Foundry Unified AI Platform"
   sectionClass="position-relative overflow-hidden py-7 pb-0"
 />
+</Reveal>
 
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <CapabilitiesTabsCards
   title="Core Capabilities Of Azure Data Foundry"
   primaryColor="#0d2b75"
@@ -174,9 +178,9 @@ const Ai = () => {
     }
   ]}
 />
-      
+</Reveal>      
 
-      
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
 <InnovationsRoadmapSection
   sectionId="future-roadmap"
   backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
@@ -217,7 +221,10 @@ const Ai = () => {
     }
   ]}
 />
+</Reveal>
 
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <UseCasesSection
   sectionId="use-cases"
   backgroundStyle="#e5f1ff"
@@ -280,7 +287,9 @@ const Ai = () => {
     },
   ]}
 />
+</Reveal>
 
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <PricingCardsSection
   sectionId="pricing"
   backgroundImage="/assets/img/azure/pricing-bg.avif"
@@ -328,7 +337,10 @@ const Ai = () => {
     }
   ]}
 />
+</Reveal>
 
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <HighlightsSection
   sectionId="latest-announcements"
   leftImage="/assets/img/azure/ppl.avif"
@@ -364,8 +376,10 @@ const Ai = () => {
     }
   ]}
 />
+</Reveal>
 
 
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <WhyChooseSection
 sectionId="whyus"
   items={[
@@ -401,12 +415,12 @@ sectionId="whyus"
     }
   ]}
 />
-
+</Reveal>
         
     
 
 
-
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -437,9 +451,10 @@ sectionId="whyus"
     },
   ]}
 />
+</Reveal>
 
 
-
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -524,7 +539,7 @@ sectionId="whyus"
     },
   ]}
 />
-
+</Reveal>
 
 <Widget />
 
