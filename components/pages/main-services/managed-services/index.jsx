@@ -2,12 +2,14 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
+import Reveal from "@/components/Reveal";
 import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
@@ -22,10 +24,10 @@ const PowerBI = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Managed Services"
-  title="Transform Operations with Proactive Cloud Management"
+  serviceName="Novum Managed Services"
+  title="Multi-Cloud Operations, Security, Cost Optimisation & 24/7 Support"
   highlightText="Managed Services"
-  subtitle="Flexible multi cloud support to improve performance security and innovation."
+  subtitle="Novum delivers proactive managed services across Azure, AWS, and Google Cloud including DevOps, security operations, cost optimisation, infrastructure management, database services, and modern application support."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/managed-services/managed-hero.webp"
   heroButtons={[
@@ -44,15 +46,138 @@ const PowerBI = () => {
 
 
       <SoftwareSolutionsSection
-  title={`Why Managed Services Are Essential for Modern Cloud Environments`}
+  title={`Modern Managed Services for Cloud-Driven Organisations`}
   paragraphs={[
-    "NOVUM’s Managed Services help organizations transition from routine management to true innovation within their cloud environments.",
-    "We provide flexible service models certified expertise and proactive support to manage and optimize IT operations across multiple cloud platforms."
+    "Novum’s Managed Services empower businesses to focus on innovation while we take care of the day-to-day management of cloud operations.",
+    "With flexible service models, certified cloud experts, and proactive 24/7 support, we help organisations optimise performance, improve security maturity, and maximise cloud ROI across Azure, AWS, and Google Cloud."
   ]}
   imageSrc="/assets/img/managed-services/managed-1.webp"
   altText="Managed Services by Novum"
   sectionClass="position-relative overflow-hidden py-7"
 />
+
+
+
+<div id="service-offerings">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <ServiceFeatureCards
+      title="Key Managed Service Offerings"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+      primaryColor="#0d2b75"
+  items={[
+    {
+      iconType: "bootstrap",
+      icon: "bi-people",
+      title: "Elastic Engineering (Cloud Pods)",
+      list: [
+        "Cloud migration & platform onboarding",
+        "DevOps support & pipeline automation",
+        "Infrastructure as Code (Terraform, Bicep, ARM)",
+        "Cost optimisation & FinOps governance",
+        "Security hardening & compliance guidance",
+        "Backup, DR, and resilience planning",
+        "Flexible expertise available when needed"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-cloud-check",
+      title: "24/7 Cloud Operations",
+      list: [
+        "24/7 monitoring & incident response",
+        "Environment health checks",
+        "Performance tuning & optimisation",
+        "Governance, patching & vulnerability management",
+        "Release, change & configuration management",
+        "Stable, secure, optimised cloud operations"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-cash-stack",
+      title: "Cost Optimisation & FinOps",
+      list: [
+        "In-depth cost analysis & rightsizing",
+        "Waste elimination & workload optimisation",
+        "Architectural cost-efficiency reviews",
+        "CloudHealth & native FinOps tooling",
+        "Custom dashboards & forecasting",
+        "Measured and proven cost savings"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-hdd-network",
+      title: "Platform Support Services",
+      list: [
+        "OS patching & lifecycle management",
+        "Identity & access governance",
+        "Backup, restore & escalation support",
+        "SLA-driven incident & change management",
+        "Keeps platforms secure, stable & resilient"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-shield-lock",
+      title: "Cloud Native Security Services",
+      list: [
+        "Deploy & manage cloud security tools",
+        "24/7 SIEM/SOAR threat detection",
+        "Identity & access security governance",
+        "Vulnerability scanning & compliance reporting",
+        "Automated remediation pipelines"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-exclamation-triangle",
+      title: "Proactive Detection & Response",
+      list: [
+        "Real-time breach detection",
+        "Attack surface monitoring",
+        "Behaviour-based anomaly detection",
+        "Immediate containment & remediation actions"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-database-check",
+      title: "Proactive Database Management",
+      list: [
+        "24/7 monitoring & performance optimisation",
+        "Backup, restore & recovery",
+        "Index tuning & query optimisation",
+        "Scaling & performance improvements",
+        "SQL, PostgreSQL, MySQL, Cosmos DB, MongoDB support"
+      ]
+    },
+
+    {
+      iconType: "bootstrap",
+      icon: "bi-app-indicator",
+      title: "Application Services",
+      list: [
+        "ERP, CRM & digital platform support",
+        "Application monitoring & health management",
+        "DevOps for continuous improvement",
+        "Modernisation & cloud-readiness refactoring",
+        "24/7 operational coverage"
+      ]
+    }
+  ]}
+    />
+  </Reveal>
+</div>
+
+
 
         
       <MainServices
