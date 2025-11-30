@@ -2,6 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import ThreeFeatureSection from "@/components/data/services/ThreeFeatureSection";
 import Reveal from "@/components/Reveal";
 import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
 import MainServices from "@/components/data/services/main-services";
@@ -306,6 +307,27 @@ const Training = () => {
 
 
 
+<ThreeFeatureSection
+  headline="Types of Applications You Can Build"
+  subtext="Power Apps supports multiple application types to suit different scenarios and user experiences."
+  items={[
+    {
+      iconClass: "bi-palette-fill",
+      title: "Canvas Apps",
+      desc: "Create fully customised, pixel-perfect interfaces with complete control over the user experience. Ideal for highly tailored workflows."
+    },
+    {
+      iconClass: "bi-diagram-3-fill",
+      title: "Model-Driven Apps",
+      desc: "Data-first applications where the UI is automatically generated based on your data model. Perfect for structured, process-heavy business operations."
+    },
+    {
+      iconClass: "bi-globe2",
+      title: "Power Apps Portals (Power Pages)",
+      desc: "Secure external-facing portals allowing customers, vendors, and partners to access and interact with your data."
+    }
+  ]}
+/>
 
 
 
