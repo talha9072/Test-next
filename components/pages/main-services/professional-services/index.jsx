@@ -3,9 +3,10 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import Reveal from "@/components/Reveal";
+import BulletPoints from "@/components/data/services/BulletPoints";
+import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -34,15 +35,18 @@ const Professional = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Services", href: "#service-offerings" },
+    { label: "Approach", href: "#approach" },
+    { label: "Expertise", href: "#expertise" },
+    { label: "Why Us?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
 
+<section id="about">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <SoftwareSolutionsSection
   title={`Expert-Led Professional Services for Modern Enterprises`}
   paragraphs={[
@@ -53,7 +57,11 @@ const Professional = () => {
   altText="Professional Services by Novum"
   sectionClass="position-relative overflow-hidden py-7"
 />
+</Reveal>
+</section>
 
+<section id="service-offerings">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ServiceFeatureSlider
   sectionId="service-offerings"
   title="Core Service Offerings"
@@ -108,139 +116,141 @@ const Professional = () => {
     }
   ]}
 />
-        
-     <MainServices
-  id="services"
-  subtitle="Professional Services"
-  title="Expert Support to Design Build and Optimize Modern Solutions"
-  description="NOVUM’s Professional Services follow a collaborative engagement model that includes discovery workshops design sessions implementation and knowledge transfer. Our team applies proven frameworks and best practice methodologies to accelerate cloud adoption modernization and solution delivery ensuring strong outcomes for every project."
-  image={{
-    src: "/assets/img/professional-services/professional-2.webp",
-    alt: "Professional Services by Novum",
-  }}
-  services={[
-    {
-      title: "Collaborative Engagement Model",
-      desc: "We partner closely with your teams through discovery workshops solution design implementation and full knowledge transfer.",
-    },
-    {
-      title: "Proven Frameworks and Best Practices",
-      desc: "Our delivery approach is grounded in industry aligned methods that accelerate project timelines and improve outcomes.",
-    },
-    {
-      title: "Certified Cloud Expertise",
-      desc: "NOVUM experts are certified across major cloud platforms including Azure AWS Google Cloud and VMware.",
-    },
-    {
-      title: "Cloud Strategy and Adoption",
-      desc: "Develop actionable cloud adoption plans that align technology with business goals and long term growth.",
-    },
-    {
-      title: "Application and Data Modernization",
-      desc: "Re architect applications and modernize data platforms to support scalability analytics and AI integration.",
-    },
-    {
-      title: "Security Architecture and Compliance",
-      desc: "Design secure and compliant cloud environments with advanced monitoring governance and protection tools.",
-    },
+</Reveal>
+</section>
+
+<section id="approach">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+  <BulletPoints
+    sectionId="approach"
+    title={<>Our Engagement Approach</>}
+    paragraphs={[
+      "Novum follows a collaborative, outcome-driven delivery method that ensures clarity, speed, and measurable success.",
+      "Our process includes:"
+    ]}
+    bulletPoints={[
+      "Discovery Workshops Understand current state, challenges, and goals",
+      "Solution Design Sessions Architect cloud-native, secure, scalable solutions",
+      "Implementation & Deployment Hands-on execution by certified experts",
+      "Knowledge Transfer & Enablement Empower your teams with documentation and training",
+      "Ongoing Improvement Recommendations for optimisation and next-phase enhancements"
+    ]}
+    extraParagraph="This structured approach reduces project risk and accelerates transformation."
+    imageSrc="/assets/img/professional-services/professional-1.webp"
+    altText="Novum Engagement Approach"
+    sectionClass="position-relative overflow-hidden py-7"
+  />
+</Reveal>
+</section>
+
+<section id="expertise">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+<InsightShowcaseSection
+  eyebrow="Industry recognition"
+  title="Expertise & Industry Recognition"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
+  description="Novum brings deep technical capability across all major cloud platforms and modern technologies. Our credentials include:"
+  bullets={[
+    "Certified cloud experts across Azure, AWS, and Google Cloud",
+    "Specialists in DevOps, security, data engineering, application development, and AI",
+    "Proven delivery across diverse industries",
+    "Recognised by technology partners and enterprise clients for quality and innovation"
   ]}
+  buttonLabel="Explore our capabilities"
+  buttonLink="/contact"
+  imageSrc="/assets/img/professional-services/professional-2.webp"
+  imageAlt="Novum Industry Expertise and Certifications"
 />
+</Reveal>
+</section>
 
 
-
-     <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="What You Gain from NOVUM Professional Services"
-  description="NOVUM’s Professional Services strengthen your cloud journey by delivering structured guidance expert implementation and continuous improvement across your entire technology stack."
+<section id="whyus">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+<AIUseCaseGrid
+  title="Why Organisations Choose Novum"
+  backgroundType="gradient"
+backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+  columns={3}
   items={[
     {
-      img: "/assets/img/professional-services/tab-1.jpg",
-      title: "Cloud Strategy and Adoption",
-      desc: "Develop clear cloud adoption plans aligned to business goals supported by deep expertise across Azure AWS and Google Cloud.",
+      iconType: "bootstrap",
+      icon: "bi-cloud-check",
+      title: "Multi-cloud & hybrid-cloud expertise",
+      desc: "Deep capability across Azure, AWS, and Google Cloud.",
+      link: "#",
     },
     {
-      img: "/assets/img/professional-services/tab-2.jpg",
-      title: "Seamless Migration Services",
-      desc: "Plan and execute smooth migrations with reduced downtime lower risk and complete alignment with your operational needs.",
+      iconType: "bootstrap",
+      icon: "bi-diagram-3",
+      title: "Proven frameworks",
+      desc: "Best-practice architectures and delivery accelerators.",
+      link: "#",
     },
     {
-      img: "/assets/img/professional-services/tab-3.jpg",
-      title: "Application and Data Modernization",
-      desc: "Re architect applications modernize data platforms and prepare systems for analytics and AI powered innovation.",
+      iconType: "bootstrap",
+      icon: "bi-shield-lock",
+      title: "Governance, security & scalability",
+      desc: "Architectures aligned to enterprise security standards.",
+      link: "#",
     },
     {
-      img: "/assets/img/professional-services/tab-4.jpg",
-      title: "Security and Compliance Architecture",
-      desc: "Design secure environments that meet compliance standards supported by advanced monitoring and protection tools.",
+      iconType: "bootstrap",
+      icon: "bi-people",
+      title: "Collaborative delivery",
+      desc: "Transparent communication and shared ownership.",
+      link: "#",
     },
     {
-      img: "/assets/img/professional-services/tab-5.jpg",
-      title: "DevOps and Automation",
-      desc: "Build automated pipelines provision infrastructure and streamline development for improved speed and reliability.",
-    },
-    {
-      img: "/assets/img/professional-services/tab-6.jpg",
-      title: "Performance and Cost Optimization",
-      desc: "Improve system performance increase cost efficiency and enhance resilience with continuous optimization services.",
+      iconType: "bootstrap",
+      icon: "bi-layers",
+      title: "End-to-end support",
+      desc: "Strategy, design, implementation and optimisation.",
+      link: "#",
     },
   ]}
 />
+</Reveal>
+</section>
 
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose Novum for Professional Services"
-  description="Novum delivers strategic guidance strong technical capability and proven delivery frameworks to help organizations accelerate cloud adoption modernize technology and improve long term performance."
-  counters={[
-    { value: 150, suffix: "+", label: "Projects Delivered" },
-    { value: 40, suffix: "+", label: "Cloud Certified Experts" },
-    { value: 12, suffix: "+", label: "Industries Served" },
-    { value: 10, suffix: "+", label: "Years of Solution Excellence" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-user-tie",
-      title: "Certified Multi Cloud Experts",
-      desc: "Experienced professionals across Azure AWS Google Cloud and VMware bringing deep platform knowledge.",
-    },
-    {
-      icon: "fa-solid fa-layer-group",
-      title: "Proven Delivery Frameworks",
-      desc: "Structured discovery design implementation and transfer model ensures clear progress and predictable outcomes.",
-    },
-    {
-      icon: "fa-solid fa-expand",
-      title: "Collaborative Engagement",
-      desc: "We work closely with your teams through workshops design sessions and continuous support to drive lasting results.",
-    },
-  ]}
-/>
-
-
-
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+     <section id="testimonials">
+  <Reveal direction="fade">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  </Reveal>
+</section>
 
-
-
+<section id="otherservices">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -318,6 +328,8 @@ const Professional = () => {
     },
   ]}
 />
+</Reveal>
+</section>
 
 
 <Widget />
