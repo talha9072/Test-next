@@ -3,12 +3,10 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
-import ThreeFeatureSection from "@/components/data/services/ThreeFeatureSection";
 import Reveal from "@/components/Reveal";
+import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
 import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
-import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -311,27 +309,33 @@ const Training = () => {
 </div>
 
 
+
 <div id="powerapps">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-<ThreeFeatureSection
-  headline="Types of Applications You Can Build"
-  subtext="Power Apps supports multiple application types to suit different scenarios and user experiences."
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+<MicrosoftBannerStats
+  title="Types of Applications You Can Build"
+  subtitle="Power Apps supports multiple application types to suit different scenarios and user experiences."
+  backgroundType="gradient"
+  backgroundGradient="linear-gradient(to right, #e5f1ff, #e5f1ff)"
   items={[
     {
-      iconClass: "bi-palette-fill",
+      iconType: "bootstrap",
+      icon: "bi-grid-1x2",
       title: "Canvas Apps",
-      desc: "Create fully customised, pixel-perfect interfaces with complete control over the user experience. Ideal for highly tailored workflows."
+      desc: "Create fully customised, pixel-perfect interfaces with complete control over the user experience.",
     },
     {
-      iconClass: "bi-diagram-3-fill",
+      iconType: "bootstrap",
+      icon: "bi-table",
       title: "Model-Driven Apps",
-      desc: "Data-first applications where the UI is automatically generated based on your data model. Perfect for structured, process-heavy business operations."
+      desc: "Data-first applications where the UI is automatically generated based on your data model.",
     },
     {
-      iconClass: "bi-globe2",
+      iconType: "bootstrap",
+      icon: "bi-globe",
       title: "Power Apps Portals (Power Pages)",
-      desc: "Secure external-facing portals allowing customers, vendors, and partners to access and interact with your data."
-    }
+      desc: "Secure external-facing portals allowing customers, vendors, and partners to access and interact with your data.",
+    },
   ]}
 />
 </Reveal>
