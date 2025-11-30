@@ -4,7 +4,7 @@ import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import Reveal from "@/components/Reveal";
-import BulletPoints from "@/components/data/services/BulletPoints";
+import BulletPoints from "@/components/data/services/bulletPoints";
 import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
