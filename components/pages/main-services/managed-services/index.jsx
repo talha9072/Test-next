@@ -2,7 +2,9 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import BulletPoints from "@/components/data/services/BulletPoints";
 import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -176,6 +178,85 @@ const PowerBI = () => {
     />
   </Reveal>
 </div>
+
+
+<div id="approach">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <BulletPoints
+      sectionId="approach"
+      title={<>Our Approach to Managed Services</>}
+      paragraphs={[
+        "Novum combines proactive cloud operations with a collaborative engagement model tailored to your organisation’s needs.",
+        "Our delivery approach includes:"
+      ]}
+      bulletPoints={[
+        "Proactive monitoring and automated issue resolution",
+        "Regular optimisation reviews and advisory sessions",
+        "Flexible service tiers to support different maturity levels",
+        "Knowledge transfer and co-ownership with your internal teams",
+        "Industry-recognised frameworks and cloud engineering best practices"
+      ]}
+      extraParagraph="This approach ensures stability, continuous improvement, and long-term operational excellence."
+      imageSrc="/assets/img/professional-services/professional-1.webp"
+      altText="Novum Managed Services Approach"
+      sectionClass="position-relative overflow-hidden py-7"
+    />
+  </Reveal>
+</div>
+
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+  <PricingCardsSection
+    sectionId="expertise"
+    subtitle="ENGINEERING EXPERTISE"
+    backgroundImage="/assets/img/azure/pricing-bg.avif"
+    title="Expertise & Recognition"
+    intro="Novum brings certified, multi-cloud engineering excellence to every engagement delivering trusted, enterprise-grade solutions built on proven skills and industry recognition."
+    primaryColor="#0d2b75"
+    cards={[
+      {
+        title: "Multi-Cloud Certified Engineers",
+        desc: "Hands-on expertise across leading cloud platforms with proven implementation experience.",
+        list: [
+          "Azure Solutions Architect & Administrator",
+          "AWS Professional & Specialist certifications",
+          "Google Cloud Professional Engineers",
+          "VMware cloud & virtualisation specialists"
+        ]
+      },
+      {
+        title: "Security & Compliance Expertise",
+        desc: "Our teams maintain globally recognised security certifications across disciplines.",
+        list: [
+          "SOC & ISO-compliant architecture expertise",
+          "CISSP, CEH, CCSP certified professionals",
+          "Identity, governance, and Zero Trust specialists",
+          "Advanced security monitoring & compliance skills"
+        ]
+      },
+      {
+        title: "Cloud Engineering Specialisations",
+        desc: "Certified capability across modern cloud delivery practices.",
+        list: [
+          "FinOps & cloud cost optimisation practitioners",
+          "DevOps, CI/CD & automation experts",
+          "SRE & reliability engineering talent",
+          "Cloud operations & platform engineering"
+        ]
+      },
+      {
+        title: "Industry Recognition",
+        desc: "Proven delivery excellence validated by enterprise clients and technology partners.",
+        list: [
+          "Recognised for innovation and quality delivery",
+          "Trusted by major enterprise organisations",
+          "Strong track record of successful cloud programmes",
+          "High client satisfaction across engagements"
+        ]
+      }
+    ]}
+  />
+</Reveal>
 
 
 
