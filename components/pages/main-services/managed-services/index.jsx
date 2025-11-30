@@ -61,7 +61,7 @@ const PowerBI = () => {
 
 
 <div id="service-offerings">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+ 
     <ServiceFeatureCards
       title="Key Managed Service Offerings"
       backgroundType="gradient"
@@ -176,7 +176,7 @@ const PowerBI = () => {
     }
   ]}
     />
-  </Reveal>
+  
 </div>
 
 
