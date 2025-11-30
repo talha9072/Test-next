@@ -39,7 +39,7 @@ export default function ImplementSection({
             flex-direction: column;
             height: 100%;
             background: #fff;
-            border-radius: 8px;
+            border-radius: 22px;
             border: 1px solid #e9ecef;
             transition: all 0.3s ease;
           }
@@ -54,8 +54,8 @@ export default function ImplementSection({
             width: 100%;
             object-fit: cover;
             flex-shrink: 0;
-            padding:8px;
-            border-radius: 18px;
+            padding:12px;
+            border-radius: 30px;
           }
 
           /* === CONTENT AREA === */
