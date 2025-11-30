@@ -2,6 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -22,10 +23,10 @@ const Professional = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Professional Services"
-  title="Accelerate Your Cloud and Technology Goals"
+  serviceName="Novum Professional Services"
+  title="Cloud Strategy, Migration, Modernization & DevOps"
   highlightText="Professional Services"
-  subtitle="Expert support to design build and optimize modern solutions."
+  subtitle="Novum provides expert professional services to help organisations design, build, migrate, and optimise cloud and modern IT environments across Azure, AWS, and Google Cloud."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/professional-services/professional-hero.webp"
   heroButtons={[
@@ -43,16 +44,70 @@ const Professional = () => {
 
 
       <SoftwareSolutionsSection
-  title={`Why Professional Services Matter for Modern Organizations`}
+  title={`Expert-Led Professional Services for Modern Enterprises`}
   paragraphs={[
-    "NOVUM’s Professional Services provide expert guidance and hands on implementation to help organizations design build and optimize their technology solutions.",
-    "Our focus is on accelerating cloud adoption modernizing IT environments and maximizing return on investment so your business can innovate faster and operate more efficiently."
+    "Novum’s Professional Services team provides strategic guidance and hands-on implementation support to help organisations transform their technology landscape.",
+    "We partner with your teams to accelerate cloud adoption, modernise legacy environments, and maximise return on investment through secure, scalable, and efficient solutions. Our approach blends deep technical expertise with a proven delivery framework to ensure every engagement achieves real business impact."
   ]}
   imageSrc="/assets/img/professional-services/professional-1.webp"
   altText="Professional Services by Novum"
   sectionClass="position-relative overflow-hidden py-7"
 />
 
+<ServiceFeatureSlider
+  sectionId="service-offerings"
+  title="Core Service Offerings"
+  backgroundType="gradient"
+  backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+  primaryColor="#0d2b75"
+  items={[
+    {
+      image: "/assets/img/professional-services/tab-1.jpg",
+      title: "Cloud Strategy & Adoption",
+      list: [
+        "Align cloud strategy with business goals",
+        "Evaluate readiness & architecture",
+        "Use Azure, AWS, GCP best practices"
+      ],
+    },
+    {
+      image: "/assets/img/professional-services/tab-2.jpg",
+      title: "Migration Services",
+      list: [
+        "App, DB, infrastructure migrations",
+        "Refactoring / replatforming",
+        "Cutover support"
+      ],
+    },
+    {
+      image: "/assets/img/professional-services/tab-3.jpg",
+      title: "Application & Data Modernisation",
+      list: [
+        "Re-architect monoliths",
+        "Microservices / containers",
+        "Data platform modernisation"
+      ],
+    },
+    {
+      image: "/assets/img/professional-services/tab-5.jpg",
+      title: "Security & Compliance",
+      list: [
+        "Zero Trust",
+        "Identity governance",
+        "Threat monitoring"
+      ],
+    },
+    {
+      image: "/assets/img/professional-services/tab-4.jpg",
+      title: "DevOps & Automation",
+      list: [
+        "CI/CD pipelines",
+        "IaC (Terraform, Bicep)",
+        "Automated testing"
+      ],
+    }
+  ]}
+/>
         
      <MainServices
   id="services"

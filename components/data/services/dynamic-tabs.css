@@ -192,13 +192,13 @@
   align-items: center;
 }
 .dtc-dot {
-  width: 28px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.22);
   transition: all 0.25s ease;
 }
 .dtc-dot.active {
   background: var(--primary);
-  width: 38px;
+  width: 30px;
 }
