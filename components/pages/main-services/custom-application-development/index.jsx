@@ -392,22 +392,22 @@ const Training = () => {
       desc: "Low-code development dramatically reduces build time, speeding up delivery and enabling faster time-to-market for business solutions."
     },
     {
-      img: "/assets/img/app-dev/impact-2.jpg",
+      img: "/assets/img/app-dev/app-2.webp",
       title: "Empowers Business Users",
       desc: "Citizen developers can safely build and iterate solutions while IT retains full governance, security, and oversight."
     },
     {
-      img: "/assets/img/app-dev/impact-3.jpg",
+      img: "/assets/img/app-dev/tab-1.jpg",
       title: "Scalable & Maintainable",
       desc: "Applications built on Power Apps scale easily and evolve alongside your business, ensuring long-term sustainability."
     },
     {
-      img: "/assets/img/app-dev/impact-4.jpg",
+      img: "/assets/img/app-dev/tab-2.jpg",
       title: "Reduced Development Cost",
       desc: "Less manual coding means fewer development hours, reduced reliance on specialised resources, and lower overall cost."
     },
     {
-      img: "/assets/img/app-dev/impact-5.jpg",
+      img: "/assets/img/app-dev/tab-3.jpg",
       title: "Deep Microsoft Integration",
       desc: "Seamless connections with Microsoft 365, Azure, Dynamics 365, and Power Platform deliver unified, reliable performance."
     }
