@@ -187,22 +187,22 @@ const HeroWithRibbon = ({
 
         .serviceheading {
           color: #0d2b75 !important;
-          font-size: 3.2rem !important;
+          font-size: 2.4rem !important;
           font-weight: 500 !important;
           letter-spacing: -1.55px !important;
-          line-height: 60px !important;
+          line-height: 55px !important;
         }
 
         @media (max-width: 980px) and (min-width: 571px) {
           .serviceheading {
-            font-size: 2.4rem !important;
-            line-height: 50px !important;
+            font-size: 1.8rem !important;
+            line-height: 47px !important;
           }
         }
 
         @media (max-width: 570px) {
           .serviceheading {
-            font-size: 2rem !important;
+            font-size: 1.6rem !important;
             line-height: 38px !important;
           }
         }

@@ -123,7 +123,7 @@ sectionId="audit-config"
 </div>      
 
 
-<div id="approach">
+
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <PremiumFeatureSection
 sectionId="audit-retention"
@@ -141,10 +141,10 @@ sectionId="audit-retention"
   priority={true}
 />
 </Reveal>
-</div>
 
 
-<div id="serviceAudience">
+
+
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <PremiumFeatureSection1
 sectionId="api"
@@ -163,10 +163,10 @@ sectionId="api"
 />
 
 </Reveal>
-</div>
 
 
 
+<div id="approach">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPoints
   title={<>Our Proven Data Audit Approach</>}
@@ -185,11 +185,12 @@ sectionId="api"
   sectionClass="position-relative overflow-hidden py-7"
 />
 </Reveal>
+</div>
 
 
 
 
-
+<div id="serviceAudience">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <MainServices
   subtitle="Who This Service Is For"
@@ -216,7 +217,7 @@ sectionId="api"
 />
 
 </Reveal>
-
+</div>
 
 
 
