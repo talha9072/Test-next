@@ -418,8 +418,6 @@ sectionId="whyus"
 </Reveal>
         
     
-
-
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
