@@ -16,7 +16,6 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-
 const Professional = () => {
   return (
     <div>
