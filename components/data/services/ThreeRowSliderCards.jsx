@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import "./dynamic-tabs.css"; // uses same card styling
+import "./dynamic-tabs.css";
 
 export default function ServiceFeatureSlider({
   sectionId = "service-feature-slider",
@@ -14,7 +14,7 @@ export default function ServiceFeatureSlider({
   backgroundGradient = "linear-gradient(to bottom right, #ffffff, #f4f6ff)",
   backgroundImage = "",
 
-  items = [] // NOW SUPPORTS: { image?, title, desc?, list? }
+  items = []
 }) {
   const [dotIndex, setDotIndex] = useState(0);
   const [pageCount, setPageCount] = useState(1);
@@ -22,7 +22,7 @@ export default function ServiceFeatureSlider({
 
   const sliderRef = useRef(null);
 
-  // -------- Detect Mobile Mode --------
+  // Detect mobile
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 980);
     check();
@@ -30,7 +30,7 @@ export default function ServiceFeatureSlider({
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  // -------- Background --------
+  // Background styling
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
     if (backgroundType === "gradient") return { background: backgroundGradient };
@@ -43,16 +43,18 @@ export default function ServiceFeatureSlider({
     return {};
   };
 
-  // -------- Page Count --------
+  // FIXED PAGE COUNT LOGIC
   useEffect(() => {
     if (isMobile) {
       setPageCount(items.length);
     } else {
-      setPageCount(Math.ceil(items.length / 3));
+      const visible = 3;
+      const logicalPages = items.length - visible + 1;
+      setPageCount(logicalPages > 0 ? logicalPages : 1);
     }
   }, [items, isMobile]);
 
-  // -------- Scroll Listener --------
+  // Scroll listener
   const handleScroll = () => {
     const slider = sliderRef.current;
     if (!slider) return;
@@ -61,18 +63,18 @@ export default function ServiceFeatureSlider({
     setDotIndex(page);
   };
 
-  // -------- Slide Left --------
+  // Slide Left
   const scrollLeft = () => {
     if (!sliderRef.current) return;
-    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
-    sliderRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    const w = sliderRef.current.children[0]?.offsetWidth || 350;
+    sliderRef.current.scrollBy({ left: -w, behavior: "smooth" });
   };
 
-  // -------- Slide Right --------
+  // Slide Right
   const scrollRight = () => {
     if (!sliderRef.current) return;
-    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
-    sliderRef.current.scrollBy({ left: cardWidth, behavior: "smooth" });
+    const w = sliderRef.current.children[0]?.offsetWidth || 350;
+    sliderRef.current.scrollBy({ left: w, behavior: "smooth" });
   };
 
   return (
@@ -82,14 +84,13 @@ export default function ServiceFeatureSlider({
       style={{ ...getBackgroundStyle(), "--primary": primaryColor }}
     >
       <div className="container">
+
         {title && <h2 className="text-center fw-bold mb-4">{title}</h2>}
 
-        {/* SLIDER */}
         <div className="dtc-grid" ref={sliderRef} onScroll={handleScroll}>
           {items.map((card, idx) => (
             <div className="dtc-card" key={idx}>
 
-              {/* IMAGE SUPPORT (new) */}
               {card.image && (
                 <div className="dtc-image-wrap">
                   <Image
@@ -104,7 +105,6 @@ export default function ServiceFeatureSlider({
               <div className="dtc-body">
                 <div className="dtc-title fw-bold fs-5 mb-2">{card.title}</div>
 
-                {/* LIST OR PARAGRAPH */}
                 {card.list ? (
                   <ul className="dtc-list">
                     {card.list.map((item, i) => (
@@ -123,9 +123,10 @@ export default function ServiceFeatureSlider({
           ))}
         </div>
 
-        {/* ------- ARROWS + DOTS ------- */}
+        {/* ARROWS + DOTS */}
         {(isMobile || items.length > 3) && (
           <div className="dtc-arrows">
+
             <button className="dtc-arrow-btn" onClick={scrollLeft}>
               <i className="bi bi-arrow-left"></i>
             </button>
@@ -142,6 +143,7 @@ export default function ServiceFeatureSlider({
             <button className="dtc-arrow-btn" onClick={scrollRight}>
               <i className="bi bi-arrow-right"></i>
             </button>
+
           </div>
         )}
 
