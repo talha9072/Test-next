@@ -43,9 +43,8 @@
   scroll-snap-align: start;
   transition: 0.25s ease;
 
-  /* 🔥 Equal Height FIX */
-  height: 100%;
-  min-height: 460px;       /* Increased for more content support */
+  /* REAL FIX – remove manual height */
+  height: auto;
 }
 .dtc-card:hover {
   transform: translateY(-6px);
@@ -55,7 +54,7 @@
 /* ---------------------- IMAGE ---------------------- */
 .dtc-image-wrap {
   width: 100%;
-  height: 230px;          /* 🔥 Equal height for all images */
+  height: 230px;
   overflow: hidden;
   padding: 12px;
 }
@@ -69,24 +68,27 @@
 /* ---------------------- BODY ---------------------- */
 .dtc-body {
   padding: 20px;
+
+  /* REAL FIX – makes all card bodies equal + fills available space */
   display: flex;
   flex-direction: column;
-  flex-grow: 1;          /* 🔥 Ensures equal height */
+  flex-grow: 1;
 }
 
 .dtc-title {
   font-size: 1.25rem;
   margin-bottom: 10px;
+  flex-shrink: 0;  /* prevents shrinking */
 }
 
+/* LIST + DESC equal height logic */
 .dtc-desc {
-  flex-grow: 1;          /* 🔥 Makes text expand/shrink evenly */
+  flex-grow: 1;
   margin-bottom: 20px;
 }
 
-/* ---------------------- LIST ---------------------- */
 .dtc-list {
-  flex-grow: 1;
+  flex-grow: 1;     /* takes remaining space */
   padding-left: 0;
   list-style: none;
   margin-bottom: 16px;
@@ -101,6 +103,8 @@
 
 /* ---------------------- CTA ---------------------- */
 .dtc-cta {
+  margin-top: auto;      /* ALWAYS pushes to bottom */
+  padding: 6px 0;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -108,8 +112,6 @@
   font-size: 1rem;
   color: var(--primary);
   text-decoration: none;
-  margin-top: auto;
-  padding: 6px 0;
 }
 
 .dtc-cta-arrow {
@@ -130,7 +132,7 @@
 /* ---------------------- GRID ---------------------- */
 .dtc-grid {
   display: flex;
-  align-items: stretch;       /* 🔥 Equal height guaranteed */
+  align-items: stretch;    /* forces equal height */
   gap: 26px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -140,20 +142,18 @@
   display: none !important;
 }
 
-/* ---------------------- MOBILE BREAKPOINT ---------------------- */
+/* ---------------------- MOBILE ---------------------- */
 @media (max-width: 980px) {
   .dtc-card {
     min-width: 85%;
     flex: 0 0 85%;
-    min-height: 420px;    /* Slightly reduced for mobile */
   }
-
   .dtc-image-wrap {
-    height: 200px;        /* Mobile optimised image height */
+    height: 200px;
   }
 }
 
-/* ---------------------- ARROW WRAPPER ---------------------- */
+/* ---------------------- ARROWS ---------------------- */
 .dtc-arrows {
   display: flex;
   justify-content: center;
@@ -162,13 +162,11 @@
   margin-top: 18px;
 }
 
-/* ---------------------- ARROW BUTTON ---------------------- */
 .dtc-arrow-btn {
   aspect-ratio: 1/1;
   width: 48px;
   border-radius: 50%;
   padding: 0;
-  line-height: 0;
   background: rgba(13, 43, 117, 0.1);
   border: 1px solid rgba(13, 43, 117, 0.25);
   display: flex;
