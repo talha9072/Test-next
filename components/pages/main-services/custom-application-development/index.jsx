@@ -37,8 +37,9 @@ const Training = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Programs", href: "#services" },
     { label: "Capabilities", href: "#capabilities" },
+    { label: "Power Apps", href: "#powerapps" },
+    { label: "Work Flow", href: "#workflow" },
     { label: "Why Choose?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
@@ -46,8 +47,8 @@ const Training = () => {
 />
 
  
-
-
+<div id="about">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <SoftwareSolutionsSection
   title={
     <>
@@ -62,10 +63,12 @@ const Training = () => {
   altText="Custom Application Development with Power Apps"
   sectionClass="position-relative overflow-hidden py-7"
 />
+</Reveal>
+</div>
 
+<div id="capabilities">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
  <DynamicTabsCards
-  sectionId="powerapps-capabilities"
   title="Core Capabilities of Power Apps"
   primaryColor="#0d2b75"
   backgroundType="gradient"
@@ -305,9 +308,11 @@ const Training = () => {
   ]}
 /> 
 </Reveal>
+</div>
 
 
-
+<div id="powerapps">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ThreeFeatureSection
   headline="Types of Applications You Can Build"
   subtext="Power Apps supports multiple application types to suit different scenarios and user experiences."
@@ -329,8 +334,12 @@ const Training = () => {
     }
   ]}
 />
+</Reveal>
+</div>
 
 
+<div id="workflow">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <MicrosoftNumberedFAQ
   sectionId="dev-workflow-faq"
   headline="Our Development Workflow"
@@ -369,7 +378,8 @@ const Training = () => {
     }
   ]}
 />
-
+</Reveal>
+</div>
 
 
 
@@ -378,8 +388,8 @@ const Training = () => {
 
 
 
-
-
+<div id="whyus">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ImplementSection
   id="benefits-impact"
   subtitle="Benefits & Business Impact"
@@ -413,15 +423,15 @@ const Training = () => {
     }
   ]}
 />
-
-
+</Reveal>
+</div>
 
    
     
 
 
 
-
+<div id="testimonials">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
@@ -454,9 +464,12 @@ const Training = () => {
   ]}
 />
 </Reveal>
+</div>
 
 
 
+<div id="otherservices">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -534,7 +547,8 @@ const Training = () => {
     },
   ]}
 />
-
+</Reveal>
+</div>
 
 <Widget />
 
