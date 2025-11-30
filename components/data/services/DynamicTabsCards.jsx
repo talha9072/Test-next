@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import "./dynamic-tabs.css"; // <-- NEW CSS FILE
+import "./dynamic-tabs.css";
 
 export default function DynamicTabsCards({
   sectionId = "dynamic-tabs-cards",
@@ -19,14 +19,19 @@ export default function DynamicTabsCards({
   const [activeTab, setActiveTab] = useState(0);
   const [dotIndex, setDotIndex] = useState(0);
   const [pageCount, setPageCount] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
 
   const sliderRef = useRef(null);
 
-  const scrollLeft = () =>
-    sliderRef.current?.scrollBy({ left: -350, behavior: "smooth" });
-  const scrollRight = () =>
-    sliderRef.current?.scrollBy({ left: 350, behavior: "smooth" });
+  // -------- Detect Mobile Mode --------
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 980);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
+  // -------- Background --------
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
     if (backgroundType === "gradient") return { background: backgroundGradient };
@@ -39,30 +44,54 @@ export default function DynamicTabsCards({
     return {};
   };
 
+  // -------- Page Count Calculation --------
   useEffect(() => {
     const cards = tabs[activeTab]?.cards || [];
-    const pages = Math.ceil(cards.length / 3);
-    setPageCount(pages);
-  }, [activeTab, tabs]);
 
+    if (isMobile) {
+      setPageCount(cards.length); // 1 dot per card
+    } else {
+      setPageCount(Math.ceil(cards.length / 3)); // desktop → pages of 3
+    }
+  }, [activeTab, tabs, isMobile]);
+
+  // -------- Scroll Listener --------
   const handleScroll = () => {
-    if (!sliderRef.current) return;
+    const slider = sliderRef.current;
+    if (!slider) return;
+    const cardWidth = slider.children[0]?.offsetWidth || 1;
 
-    const scrollLeftVal = sliderRef.current.scrollLeft;
-    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 1;
-
-    const page = Math.round(scrollLeftVal / cardWidth);
+    const page = Math.round(slider.scrollLeft / cardWidth);
     setDotIndex(page);
+  };
+
+  // -------- Slide Left --------
+  const scrollLeft = () => {
+    if (!sliderRef.current) return;
+    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
+
+    sliderRef.current.scrollBy({
+      left: -cardWidth,
+      behavior: "smooth",
+    });
+  };
+
+  // -------- Slide Right --------
+  const scrollRight = () => {
+    if (!sliderRef.current) return;
+    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
+
+    sliderRef.current.scrollBy({
+      left: cardWidth,
+      behavior: "smooth",
+    });
   };
 
   return (
     <section
       id={sectionId}
       className={sectionClass}
-      style={{
-        ...getBackgroundStyle(),
-        "--primary": primaryColor, // <-- the magic fix!
-      }}
+      style={{ ...getBackgroundStyle(), "--primary": primaryColor }}
     >
       <div className="container">
         <h2 className="text-center fw-bold mb-4">{title}</h2>
@@ -73,6 +102,7 @@ export default function DynamicTabsCards({
           setActiveTab={setActiveTab}
         />
 
+        {/* SLIDER */}
         <div className="dtc-grid" ref={sliderRef} onScroll={handleScroll}>
           {tabs[activeTab]?.cards?.map((card, idx) => (
             <div className="dtc-card" key={idx}>
@@ -98,7 +128,7 @@ export default function DynamicTabsCards({
                   <ul className="dtc-list">
                     {card.list.map((item, i) => (
                       <li key={i}>
-                        <i className="bi bi-check2-circle text-novum-blue fs-5 me-2"></i>
+                        <i className="bi bi-check2-circle fs-5 me-2"></i>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -118,7 +148,8 @@ export default function DynamicTabsCards({
           ))}
         </div>
 
-        {pageCount > 1 && (
+        {/* ------- DYNAMIC LOGIC FOR ARROWS + DOTS ------- */}
+        {(isMobile || tabs[activeTab]?.cards?.length > 3) && (
           <div className="dtc-arrows">
             <button className="dtc-arrow-btn" onClick={scrollLeft}>
               <i className="bi bi-arrow-left"></i>
@@ -143,7 +174,7 @@ export default function DynamicTabsCards({
   );
 }
 
-/* TABS BAR */
+/* ---------------------- TABS BAR ---------------------- */
 function TabsBar({ tabs, activeTab, setActiveTab }) {
   const underlineRef = useRef(null);
   const tabsRef = useRef([]);
@@ -168,7 +199,6 @@ function TabsBar({ tabs, activeTab, setActiveTab }) {
           {tab.label}
         </div>
       ))}
-
       <div className="dtc-underline" ref={underlineRef}></div>
     </div>
   );
