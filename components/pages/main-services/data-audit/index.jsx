@@ -45,8 +45,8 @@ const Dataaudit = () => {
   ]}
 />
 
-
- <Reveal direction="left">
+<div id="overview">
+ <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPoints
 sectionId="overview"
   title={<>Why Data Auditing Is Critical</>}
@@ -65,9 +65,11 @@ sectionId="overview"
   sectionClass="position-relative overflow-hidden py-7"
 />
 </Reveal>
+</div>
 
 
-<Reveal direction="up" delay={0.1}>
+<div id="audit-config">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPointsFlip
 sectionId="audit-config"
   title={<>What We Audit in Microsoft Dataverse</>}
@@ -86,9 +88,10 @@ sectionId="audit-config"
   sectionClass="position-relative overflow-hidden py-7 pt-0"
 />
 </Reveal>
+</div>
 
-
-<Reveal direction="up" delay={0.1}>
+<div id="structure">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <FunnelSection
       sectionId="structure"
       backgroundStyle="#e5f1ff"
@@ -116,10 +119,12 @@ sectionId="audit-config"
     "COLUMN LEVEL"
   ]}
 />
-</Reveal>       
+</Reveal> 
+</div>      
 
 
-<Reveal direction="left" delay={0.2}>
+<div id="approach">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <PremiumFeatureSection
 sectionId="audit-retention"
   headline="Audit Log Retention & Data Management"
@@ -136,9 +141,11 @@ sectionId="audit-retention"
   priority={true}
 />
 </Reveal>
+</div>
 
 
-<Reveal direction="up" delay={0.2}>
+<div id="serviceAudience">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <PremiumFeatureSection1
 sectionId="api"
   headline="API Access & Compliance Integrations"
@@ -156,11 +163,12 @@ sectionId="api"
 />
 
 </Reveal>
+</div>
 
 
-<Reveal direction="up" delay={0.2}>
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPoints
-sectionId="approach"
   title={<>Our Proven Data Audit Approach</>}
   paragraphs={[
     "We don’t just switch auditing on we design it around your business and compliance goals."
@@ -179,9 +187,11 @@ sectionId="approach"
 </Reveal>
 
 
-<Reveal direction="up" delay={0.2}>
+
+
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <MainServices
-  id="serviceAudience"
   subtitle="Who This Service Is For"
   title="Designed for Teams That Need Strong Data Governance"
   description="Our auditing solutions help teams who require full transparency, strong oversight, and reliable change tracking across their Dataverse environments."
@@ -213,8 +223,8 @@ sectionId="approach"
    
       
 
-
-<Reveal direction="up" delay={0.2}>
+<div id="testimonials">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -246,9 +256,12 @@ sectionId="approach"
   ]}
 />
 </Reveal>
+</div>
 
 
-<Reveal direction="up" delay={0.2}>
+
+<div id="otherservices">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -327,6 +340,7 @@ sectionId="approach"
   ]}
 />
 </Reveal>
+</div>
 
 <Widget />
 
