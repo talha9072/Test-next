@@ -479,7 +479,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.13;
   padding: 0;
   margin: 0;
@@ -552,8 +552,8 @@ p {
     font-size: 55px;
   }
   h2 {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 33px;
   }
 }
 @media (max-width: 767px) {
@@ -561,8 +561,8 @@ p {
     font-size: 45px;
   }
   h2 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 @media (max-width: 420px) {
@@ -570,22 +570,22 @@ p {
     font-size: 30px;
   }
   h2 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 23px;
+    line-height: 26px;
   }
   h3 {
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 @media (max-width: 359px) {
   h2 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 23px;
+    line-height: 26px;
   }
   h3 {
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 26px;
   }
   h4 {
     font-size: 21px;
