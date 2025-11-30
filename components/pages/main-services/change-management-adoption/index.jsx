@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import BulletPoints from "@/components/data/services/bulletpoints";
+import BulletPoints from "@/components/data/services/Bulletpoints";
 import ConceptTwoCol from "@/components/data/services/ConceptTwoCol";
 import WhyChooseSection from "@/components/data/services/whychooseus";
 import FourCardSection from "@/components/data/services/FourPillarsSection";

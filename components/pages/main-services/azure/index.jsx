@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import BulletPoints from "@/components/data/services/bulletpoints";
+import BulletPoints from "@/components/data/services/Bulletpoints";
 import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
