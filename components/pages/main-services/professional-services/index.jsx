@@ -45,7 +45,7 @@ const Professional = () => {
 />
 
 
-<section id="about">
+<div id="about">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <SoftwareSolutionsSection
   title={`Expert-Led Professional Services for Modern Enterprises`}
@@ -58,9 +58,9 @@ const Professional = () => {
   sectionClass="position-relative overflow-hidden py-7"
 />
 </Reveal>
-</section>
+</div>
 
-<section id="service-offerings">
+<div id="service-offerings">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ServiceFeatureSlider
   sectionId="service-offerings"
@@ -117,9 +117,9 @@ const Professional = () => {
   ]}
 />
 </Reveal>
-</section>
+</div>
 
-<section id="approach">
+<div id="approach">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <BulletPoints
     sectionId="approach"
@@ -141,9 +141,9 @@ const Professional = () => {
     sectionClass="position-relative overflow-hidden py-7"
   />
 </Reveal>
-</section>
+</div>
 
-<section id="expertise">
+<div id="expertise">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <InsightShowcaseSection
   eyebrow="Industry recognition"
@@ -163,10 +163,10 @@ const Professional = () => {
   imageAlt="Novum Industry Expertise and Certifications"
 />
 </Reveal>
-</section>
+</div>
 
 
-<section id="whyus">
+<div id="whyus">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <AIUseCaseGrid
   title="Why Organisations Choose Novum"
@@ -212,9 +212,9 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
   ]}
 />
 </Reveal>
-</section>
+</div>
 
-     <section id="testimonials">
+     <div id="testimonials">
   <Reveal direction="fade">
     <Testimonials
       subtitle="Client Stories"
@@ -247,9 +247,9 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
   ]}
     />
   </Reveal>
-</section>
+</div>
 
-<section id="otherservices">
+<div id="otherservices">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
@@ -329,7 +329,7 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
   ]}
 />
 </Reveal>
-</section>
+</div>
 
 
 <Widget />
