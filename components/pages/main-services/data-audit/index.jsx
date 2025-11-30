@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import BulletPoints from "@/components/data/services/Bulletpoints";
+import BulletPoints from "@/components/data/services/bulletpoints";
 import BulletPointsFlip from "@/components/data/services/bulletpoints-flip";
 import FunnelSection from "@/components/data/services/funnel";  
 import PremiumFeatureSection from "@/components/data/services/PremiumFeatureSection";
