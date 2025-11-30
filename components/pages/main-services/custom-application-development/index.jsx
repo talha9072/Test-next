@@ -374,139 +374,86 @@ const Training = () => {
 
 
 
-    <MainServices
-  id="services"
-  subtitle="Core Capabilities"
-  title="Key Capabilities of Custom Application Development with Power Apps"
-  description="Power Apps provides organizations with essential tools to build custom applications that improve workflows and solve business challenges. It connects data, extends automation, and allows rapid development using a low code platform that supports enterprise scale performance."
-  image={{
-    src: "/assets/img/app-dev/app-2.webp",
-    alt: "Custom Application Development Capabilities",
-  }}
-  services={[
-    {
-      title: "Low Code Development",
-      desc: "Create applications quickly using a drag and drop interface with ready templates and reusable components.",
-    },
-    {
-      title: "Data Connectivity",
-      desc: "Connect to more than one thousand data sources including Microsoft Dataverse SharePoint SQL Server and Dynamics 365.",
-    },
-    {
-      title: "AI Automation",
-      desc: "Use AI Builder to add machine learning and automation features without complex coding.",
-    },
-    {
-      title: "Cross Platform Compatibility",
-      desc: "Build the application once and use it on mobile tablet and web without any extra configuration.",
-    },
-    {
-      title: "Enterprise Grade Security",
-      desc: "Use role based access control and Azure Active Directory to maintain secure and compliant access.",
-    },
-    {
-      title: "Integrated Development Workflow",
-      desc: "Power Apps supports a complete development process from planning and design to data connection automation testing and deployment.",
-    },
-  ]}
-/>
+ 
 
 
 
 
 
 <ImplementSection
-  id="capabilities"
-  subtitle="Workflow"
-  title="Development Workflow for Custom Applications"
-  description="Power Apps follows a clear development process that helps teams define goals, select the right app type, build the interface, connect data, add automation, and deploy securely. This structured workflow ensures predictable and efficient application delivery."
+  id="benefits-impact"
+  subtitle="Benefits & Business Impact"
+  title="Why Custom Application Development Delivers Real Value"
+  description="Low-code Power Apps development empowers organisations to innovate faster, reduce costs, and scale solutions confidently across teams. The approach brings both immediate and long-term business impact through streamlined processes and deep Microsoft ecosystem integration."
   items={[
     {
-      img: "/assets/img/app-dev/tab-1.jpg",
-      title: "Define Requirements",
-      desc: "Begin by understanding the business problem and identifying the key outcomes the application must support.",
+      img: "/assets/img/app-dev/app-1.webp",
+      title: "Accelerated Delivery",
+      desc: "Low-code development dramatically reduces build time, speeding up delivery and enabling faster time-to-market for business solutions."
     },
     {
-      img: "/assets/img/app-dev/tab-2.jpg",
-      title: "Select Application Type",
-      desc: "Choose between Canvas Apps Model Driven Apps or Portals based on the required user experience and data structure.",
+      img: "/assets/img/app-dev/impact-2.jpg",
+      title: "Empowers Business Users",
+      desc: "Citizen developers can safely build and iterate solutions while IT retains full governance, security, and oversight."
     },
     {
-      img: "/assets/img/app-dev/tab-3.jpg",
-      title: "Design the User Interface",
-      desc: "Use Power Apps Studio to build the interface with ready controls templates and customizable components.",
+      img: "/assets/img/app-dev/impact-3.jpg",
+      title: "Scalable & Maintainable",
+      desc: "Applications built on Power Apps scale easily and evolve alongside your business, ensuring long-term sustainability."
     },
     {
-      img: "/assets/img/app-dev/tab-4.jpg",
-      title: "Connect to Data Sources",
-      desc: "Use Power Apps connectors to link the app with Dataverse SharePoint SQL Server Dynamics 365 and other systems.",
+      img: "/assets/img/app-dev/impact-4.jpg",
+      title: "Reduced Development Cost",
+      desc: "Less manual coding means fewer development hours, reduced reliance on specialised resources, and lower overall cost."
     },
     {
-      img: "/assets/img/app-dev/tab-5.jpg",
-      title: "Add Automation and AI",
-      desc: "Enhance the application with automation and machine learning features using Power Automate and AI Builder.",
-    },
-    {
-      img: "/assets/img/app-dev/tab-6.jpg",
-      title: "Test Secure Share and Deploy",
-      desc: "Validate performance apply security assign access and deploy the application across your organization.",
-    },
+      img: "/assets/img/app-dev/impact-5.jpg",
+      title: "Deep Microsoft Integration",
+      desc: "Seamless connections with Microsoft 365, Azure, Dynamics 365, and Power Platform deliver unified, reliable performance."
+    }
   ]}
 />
+
 
 
    
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Custom Application Development"
-  description="Power Apps supports faster development and enables organizations to build solutions that are scalable maintainable and deeply integrated with the Microsoft ecosystem. NOVUM helps teams take full advantage of these capabilities by guiding the entire development process from planning to deployment to ensure the application delivers real business impact."
-  counters={[
-    { value: 200, suffix: "+", label: "Applications Delivered" },
-    { value: 30, suffix: "+", label: "Industries Supported" },
-    { value: 95, suffix: "%", label: "Client Satisfaction" },
-    { value: 10, suffix: "+", label: "Years of Platform Experience" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-chalkboard-user",
-      title: "Accelerated Development",
-      desc: "Power Apps reduces development time and makes it possible to deliver business applications faster without complex coding.",
-    },
-    {
-      icon: "fa-solid fa-users-gear",
-      title: "Empowered Business Users",
-      desc: "Business users can participate in the application building process while maintaining full oversight through IT and governance controls.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "Microsoft Ecosystem Integration",
-      desc: "Applications created through Power Apps connect naturally with Dataverse Dynamics 365 Azure and Microsoft automation tools.",
-    },
-  ]}
-/>
+    
 
 
 
 
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
   items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
 />
+</Reveal>
 
 
 

@@ -54,6 +54,8 @@ export default function ImplementSection({
             width: 100%;
             object-fit: cover;
             flex-shrink: 0;
+            padding:8px;
+            border-radius: 18px;
           }
 
           /* === CONTENT AREA === */
