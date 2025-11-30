@@ -2,6 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
 import ThreeFeatureSection from "@/components/data/services/ThreeFeatureSection";
 import Reveal from "@/components/Reveal";
 import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
@@ -329,6 +330,45 @@ const Training = () => {
   ]}
 />
 
+
+<MicrosoftNumberedFAQ
+  sectionId="dev-workflow-faq"
+  headline="Our Development Workflow"
+  backgroundType="gradient"
+  backgroundValue="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+  items={[
+    {
+      question: "Requirements Definition",
+      answer:
+        "We identify the core problem, business needs, and user expectations."
+    },
+    {
+      question: "Select the Right App Type",
+      answer:
+        "Canvas, Model-Driven, or Portal — we choose the optimal approach based on your requirements."
+    },
+    {
+      question: "UI & Experience Design",
+      answer:
+        "Using Power Apps Studio, we design intuitive, user-friendly interfaces that maximise productivity."
+    },
+    {
+      question: "Connect Data Sources",
+      answer:
+        "We integrate required data systems using secure connectors and Dataverse where appropriate."
+    },
+    {
+      question: "Add Automation & AI",
+      answer:
+        "We enhance your app with workflows, AI models, triggers, and intelligent processing."
+    },
+    {
+      question: "Test, Secure & Deploy",
+      answer:
+        "Apps undergo thorough testing before being shared, secured, and deployed across your organisation."
+    }
+  ]}
+/>
 
 
 
