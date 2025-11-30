@@ -1,6 +1,4 @@
 "use client";
-import Reveal from "@/components/Reveal";
-import Image from "next/image";
 
 export default function ServiceManagedGrid({
   sectionId = "managed-services",
@@ -44,66 +42,62 @@ export default function ServiceManagedGrid({
         <div className="row g-4 align-items-stretch">
           {items.map((card, idx) => (
             <div key={idx} className={`${columnClass} d-flex`}>
-              
-              <Reveal direction="fade" blur={true} delay={idx * 0.22} duration={1.4}>
-                
-                {/* ⭐ CARD NOW STRETCHES FULL HEIGHT ⭐ */}
+
+              {/* ⭐ CARD WITHOUT REVEAL ⭐ */}
+              <div
+                className="premium-card d-flex flex-column h-100 w-100 bg-white p-4 rounded-4"
+                style={{
+                  border: "1px solid #ececec",
+                  transition: "0.35s ease",
+                }}
+              >
+
+                {/* ICON */}
                 <div
-                  className="premium-card d-flex flex-column h-100 w-100 bg-white p-4 rounded-4"
+                  className="icon-box mb-3"
                   style={{
-                    border: "1px solid #ececec",
-                    transition: "0.35s ease",
+                    width: "56px",
+                    height: "56px",
+                    borderRadius: "14px",
+                    background: "rgba(13,43,117,0.1)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
                   }}
                 >
-
-                  {/* ICON */}
-                  <div
-                    className="icon-box mb-3"
-                    style={{
-                      width: "56px",
-                      height: "56px",
-                      borderRadius: "14px",
-                      background: "rgba(13,43,117,0.1)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {card.iconType === "bootstrap" && (
-                      <i
-                        className={card.icon}
-                        style={{ fontSize: "1.4rem", color: primaryColor }}
-                      ></i>
-                    )}
-                  </div>
-
-                  {/* TITLE */}
-                  <h5 className="fw-bold mb-3" style={{ color: primaryColor }}>
-                    {card.title}
-                  </h5>
-
-                  {/* LIST — flex-grow keeps spacing equal */}
-                  <ul className="managed-list flex-grow-1 p-0 m-0">
-                    {card.list?.map((item, i) => (
-                      <li key={i}>
-                        <i className="bi bi-check2-circle me-2 text-novum-blue"></i>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* CTA fixed to bottom */}
-                  <a href="#" className="dtc-cta mt-4">
-                    <div className="dtc-cta-arrow">
-                      <i className="bi bi-arrow-right"></i>
-                    </div>
-                    Explore
-                  </a>
-
+                  {card.iconType === "bootstrap" && (
+                    <i
+                      className={card.icon}
+                      style={{ fontSize: "1.4rem", color: primaryColor }}
+                    ></i>
+                  )}
                 </div>
 
-              </Reveal>
+                {/* TITLE */}
+                <h5 className="fw-bold mb-3" style={{ color: primaryColor }}>
+                  {card.title}
+                </h5>
+
+                {/* LIST */}
+                <ul className="managed-list flex-grow-1 p-0 m-0">
+                  {card.list?.map((item, i) => (
+                    <li key={i}>
+                      <i className="bi bi-check2-circle me-2 text-novum-blue"></i>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* CTA */}
+                <a href="#" className="dtc-cta mt-4">
+                  <div className="dtc-cta-arrow">
+                    <i className="bi bi-arrow-right"></i>
+                  </div>
+                  Explore
+                </a>
+
+              </div>
 
             </div>
           ))}
