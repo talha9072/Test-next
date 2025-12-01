@@ -5,6 +5,7 @@ import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutio
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
+import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -259,121 +260,93 @@ const PowerBI = () => {
 </Reveal>
 
 
-
-        
-      <MainServices
-  id="services"
-  subtitle="Managed Services"
-  title="Proactive Cloud Management for Performance Security and Innovation"
-  description="NOVUM delivers managed services that combine proactive monitoring flexible service models and deep cloud expertise. Our approach helps organizations improve performance strengthen security and operate confidently across multi cloud environments including Azure AWS and Google Cloud. With certified specialists and industry aligned practices we ensure your cloud operations remain stable secure and ready for continuous innovation."
-  image={{
-    src: "/assets/img/managed-services/managed-2.webp",
-    alt: "Managed Cloud Services",
-  }}
-  services={[
-    {
-      title: "Proactive Monitoring",
-      desc: "Round the clock monitoring to maintain stability optimize resources and identify issues before they impact operations.",
-    },
-    {
-      title: "Flexible Service Models",
-      desc: "Adaptable support that aligns with your business needs from reactive assistance to fully managed operations.",
-    },
-    {
-      title: "Multi Cloud Expertise",
-      desc: "Certified specialists across Azure AWS Google Cloud VMware and security disciplines providing expert technical guidance.",
-    },
-    {
-      title: "Performance and Security Optimization",
-      desc: "Continuous improvement through best practice architecture reviews security assessments and operational tuning.",
-    },
-    {
-      title: "Collaborative Delivery",
-      desc: "A partnership model where NOVUM works closely with your internal teams to support growth transformation and innovation.",
-    },
-    {
-      title: "Industry Recognized Quality",
-      desc: "Trusted by leading enterprises and backed by proven cloud frameworks and recognized certifications.",
-    },
-  ]}
-/>
-
-
-
-      <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="What You Gain from NOVUM’s Managed Services"
-  description="NOVUM’s Managed Services deliver proactive support flexible operations and certified cloud expertise to help organizations run secure high performing and resilient environments across Azure AWS and Google Cloud."
+<ServiceSplitPanel
+  title="Why Organisations Choose Novum Managed Services"
+  primaryColor="#2d1a78"
   items={[
     {
-      img: "/assets/img/managed-services/tab-1.webp",
-      title: "Elastic Engineering Support",
-      desc: "On demand access to cloud engineers who provide migration DevOps cost optimization infrastructure as code security guidance and disaster recovery support.",
+      label: "Multi-cloud Expertise",
+      paragraphs: [
+        "Our certified cloud engineers specialise in Azure, AWS, and Google Cloud, delivering deep architectural experience across hybrid and multi-cloud environments.",
+        "We design, implement, and optimise cloud platforms that remain scalable, resilient, secure, and cost-efficient as your business grows."
+      ],
+      listItems: [
+        "Azure, AWS & Google Cloud certified specialists",
+        "Cloud architecture, migration & modernisation",
+        "High availability, resilience & workload optimisation"
+      ]
     },
+
     {
-      img: "/assets/img/managed-services/tab-2.webp",
-      title: "Modern Multi Cloud Operations",
-      desc: "Round the clock management of Azure AWS and Google Cloud environments to maintain stability improve performance and enable continuous innovation.",
+      label: "Flexible Service Models",
+      paragraphs: [
+        "Every organisation operates differently, which is why we offer modular and fully customisable service models tailored around your workloads, timelines, and operational maturity.",
+        "Whether you need on-demand expertise or a fully managed service, our flexible delivery ensures seamless scale-up and scale-down based on business priorities."
+      ],
+      listItems: [
+        "Elastic engineering pods (Cloud, DevOps, Data)",
+        "On-demand specialists and dedicated teams",
+        "Hybrid, co-managed, and fully managed operating models"
+      ]
     },
+
     {
-      img: "/assets/img/managed-services/tab-3.webp",
-      title: "Cost Optimization and Insights",
-      desc: "Financial consultancy proactive monitoring architecture reviews and advanced optimization tools to reduce cloud spend and improve operational efficiency.",
+      label: "24/7 Global Monitoring",
+      paragraphs: [
+        "Our global cloud operations teams provide around-the-clock monitoring, incident response, and proactive issue prevention to minimise downtime and improve service reliability.",
+        "We combine automation, observability tools, and SRE best practices to ensure your mission-critical systems stay healthy and continuously optimised."
+      ],
+      listItems: [
+        "Real-time monitoring & event-driven alerts",
+        "SRE-driven incident, problem & change management",
+        "Performance tuning & proactive remediation"
+      ]
     },
+
     {
-      img: "/assets/img/managed-services/tab-4.webp",
-      title: "Operational Platform Support",
-      desc: "Ongoing technical and operational support including OS management access control escalation handling and routine cloud administration.",
+      label: "Security-first Operations",
+      paragraphs: [
+        "Security is embedded into every layer of our managed services, from identity and access management to automated threat detection and compliance alignment.",
+        "We lift your cloud security posture with continuous monitoring, governance guardrails, and industry-aligned best practices."
+      ],
+      listItems: [
+        "Identity, access & policy governance",
+        "Threat detection, SIEM/SOAR integration",
+        "Compliance alignment: ISO, CIS, NIST, GDPR"
+      ]
     },
+
     {
-      img: "/assets/img/managed-services/tab-5.webp",
-      title: "Cloud Security and Threat Detection",
-      desc: "Deployment management and monitoring of security tools with round the clock threat detection SIEM integration and rapid incident response.",
+      label: "Proven Cost Optimisation",
+      paragraphs: [
+        "Our FinOps-led approach eliminates cloud waste, optimises resource utilisation, and ensures predictable and trackable spending across all environments.",
+        "We provide visibility, forecasting, and actionable insights that reduce cost overruns and drive long-term financial efficiency."
+      ],
+      listItems: [
+        "Rightsizing, workload optimisation & automation",
+        "Cost visibility dashboards & forecasting",
+        "Sustained measurable savings via FinOps maturity"
+      ]
     },
+
     {
-      img: "/assets/img/managed-services/tab-6.webp",
-      title: "Database Lifecycle Management",
-      desc: "Full lifecycle management for relational and NoSQL databases including monitoring backups performance tuning and recovery operations.",
-    },
-    {
-      img: "/assets/img/managed-services/tab-7.webp",
-      title: "Application Management Services",
-      desc: "Continuous modernization and operational support for ERPs CRMs and digital platforms backed by round the clock coverage.",
-    },
+      label: "End-to-end Coverage",
+      paragraphs: [
+        "Our managed services span the full cloud lifecycle — from infrastructure to applications, security, data, and integration — ensuring continuous operational excellence.",
+        "We act as a strategic partner to support your transformation goals while keeping your cloud environment stable, secure, and high performing."
+      ],
+      listItems: [
+        "Applications, data, platforms & infrastructure support",
+        "Operational governance & lifecycle management",
+        "Unified service coverage across your technology stack"
+      ]
+    }
   ]}
 />
 
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose Novum as Your Managed Services Partner"
-  description="NOVUM provides certified cloud expertise proactive monitoring and a flexible service model that helps organizations operate with confidence across Azure AWS and Google Cloud. Our approach combines deep technical skill with a collaborative partnership ethos to deliver reliable secure and high performing cloud environments."
-  counters={[
-    { value: 24, suffix: "+", label: "Cloud Environments Managed" },
-    { value: 100, suffix: "+", label: "Certified Cloud Experts" },
-    { value: 10, suffix: "+", label: "Years of Experience" },
-    { value: 5, suffix: "★", label: "Client Satisfaction Rating" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-user-tie",
-      title: "Certified Multi Cloud Experts",
-      desc: "Specialists certified across Azure AWS Google Cloud VMware and security disciplines ensuring high quality cloud operations.",
-    },
-    {
-      icon: "fa-solid fa-layer-group",
-      title: "Best Practice Frameworks",
-      desc: "We apply industry recognized methods and cloud standards to enhance stability performance and security.",
-    },
-    {
-      icon: "fa-solid fa-expand",
-      title: "Flexible and Collaborative Model",
-      desc: "Our delivery model adapts to your business needs providing support from rapid issue resolution to full operational management.",
-    },
-  ]}
-/>
+
+
+        
 
 
 
