@@ -2,9 +2,14 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
+import Reveal from "@/components/Reveal";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -22,10 +27,10 @@ const Professional = () => {
         {/* Hero Section */}
 
      <HeroWithRibbon
-  serviceName="Consulting and Advisory Services"
-  title="Strategic Guidance for Confident Cloud Transformation"
+  serviceName="Consulting & Advisory Services"
+  title="Cloud Strategy, Modernisation & Digital Transformation"
   highlightText="Consulting and Advisory"
-  subtitle="Expert support to assess plan and guide your cloud and technology journey."
+  subtitle="Novum delivers end-to-end cloud consulting and advisory services, including cloud strategy, cost optimisation, security, governance, data modernisation, and innovation planning."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/consulting-advisory/consulting-hero.png"
   heroButtons={[
@@ -33,161 +38,282 @@ const Professional = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Services", href: "#service-offerings" },
+    { label: "Approach", href: "#approach" },
+    { label: "Expertise", href: "#expertise" },
+    { label: "Why Us?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
 
-     <SoftwareSolutionsSection
-  title={`Why Consulting and Advisory Services Matter for Modern Organizations`}
-  paragraphs={[
-    "Novum provides end to end cloud consulting and advisory services guiding organizations from early assessment and strategy through to full implementation.",
-    "Our approach focuses on creating cloud strategies that align with real business goals enabling stronger innovation better efficiency and long term scalability across the entire technology landscape."
-  ]}
-  imageSrc="/assets/img/consulting-advisory/consulting-1.webp"
-  altText="Consulting and Advisory Services by Novum"
-  sectionClass="position-relative overflow-hidden py-7"
-/>
+<div id="about">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <SoftwareSolutionsSection
+      title={`Strategic Guidance for Your Cloud & Digital Transformation`}
+      paragraphs={[
+        "Novum provides comprehensive Consulting & Advisory Services designed to help organisations move from strategy to execution with confidence.",
+        "Our experts guide you through assessment, planning, architecture design, and implementation ensuring every cloud or digital initiative aligns with your business goals.",
+        "We specialise in crafting cloud strategies that deliver innovation, efficiency, and scalability, empowering your organisation to modernise operations and accelerate growth."
+      ]}
+      imageSrc="/assets/img/professional-services/professional-1.webp"
+      altText="Professional Services by Novum"
+      sectionClass="position-relative overflow-hidden py-7"
+    />
+  </Reveal>
+</div>
 
+     
+<div id="service-offerings">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <ServiceFeatureSlider
+      sectionId="service-offerings"
+      title="Core Areas of Engagement"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+      primaryColor="#0d2b75"
+      items={[
+        {
+          image: "/assets/img/professional-services/tab-1.jpg",
+          title: "Cloud Migration & Adoption",
+          list: [
+            "Assess current-state architecture & readiness",
+            "Identify risks, dependencies & constraints",
+            "Develop phased migration plans",
+            "Evaluate cloud cost-benefit scenarios",
+            "Align cloud adoption with business objectives"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-3.jpg",
+          title: "Application Modernisation",
+          list: [
+            "Define modernisation KPIs & objectives",
+            "Identify high-impact workloads",
+            "Refactor, replatform, & containerise apps",
+            "Implement microservices & API strategies",
+            "Build future-ready application roadmaps"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-5.jpg",
+          title: "Cost Optimisation & FinOps Advisory",
+          list: [
+            "Cloud spend assessments & benchmarking",
+            "Waste analysis & rightsizing actions",
+            "Financial governance & cost ownership",
+            "FinOps maturity planning",
+            "Architecture improvements to reduce cost"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-2.jpg",
+          title: "Innovation & Growth Enablement",
+          list: [
+            "Identify new cloud-driven revenue opportunities",
+            "Modernise IT operations & processes",
+            "Leverage AI, analytics & automation",
+            "Align cloud capabilities to business growth",
+            "Accelerate time-to-value through innovation"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-4.jpg",
+          title: "Mergers & Acquisitions Integration",
+          list: [
+            "Harmonise tools, processes & cloud platforms",
+            "Unify governance, identity & security models",
+            "Reduce complexity during transitions",
+            "Enable operational continuity",
+            "Support post-merger integration execution"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-6.jpg",
+          title: "Cloud Security Advisory",
+          list: [
+            "Security posture assessments",
+            "Identify vulnerabilities & map risks",
+            "Zero Trust architecture planning",
+            "Secure landing zone design",
+            "Compliance alignment: ISO, GDPR, SOC, HIPAA"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-7.jpg",
+          title: "Governance Frameworks & Operating Models",
+          list: [
+            "Define cloud governance structures",
+            "Identity, access & compliance policies",
+            "Future-state operating model design",
+            "Process alignment with industry standards",
+            "Continuous governance improvement"
+          ],
+        },
+
+        {
+          image: "/assets/img/professional-services/tab-8.jpg",
+          title: "Data Modernisation Roadmaps",
+          list: [
+            "Define data & analytics business goals",
+            "Assess data platforms & estate architecture",
+            "Design cloud-native data strategies",
+            "Plan modernisation: Fabric, Databricks, DataLake",
+            "Enable AI & advanced analytics readiness"
+          ],
+        }
+      ]}
+    />
+  </Reveal>
+</div>
+
+
+<div id="approach">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <BulletPoints
+      sectionId="approach"
+      title={<>Engagement Approach</>}
+      paragraphs={[
+        "Novum offers a complete continuum of services that support organisations throughout their entire cloud journey.",
+        "Our approach includes:"
+      ]}
+      bulletPoints={[
+        "Consulting & Advisory – Strategy, assessment, and architecture direction",
+        "Professional Services – Implementation, modernisation, and integration",
+        "Managed Services – Ongoing operations, optimisation, and security management"
+      ]}
+      extraParagraph="This unified end-to-end model enables organisations to partner with a single expert provider — from vision to execution and continuous improvement."
+      imageSrc="/assets/img/professional-services/professional-1.webp"
+      altText="Novum Engagement Approach"
+      sectionClass="position-relative overflow-hidden py-7"
+    />
+  </Reveal>
+</div>
+
+
+<div id="expertise">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <InsightShowcaseSection
+      eyebrow="Credentials & Recognition"
+      title="Our Expertise & Industry Recognition"
+      backgroundType="color"
+      backgroundColor="#e5f1ff"
+      description="Novum brings world-class expertise backed by certified professionals, proven delivery capability, and extensive enterprise experience across cloud and modern engineering practices."
+      bullets={[
+        "Certified experts across Azure, AWS, and Google Cloud",
+        "Deep specialisation in data, security, DevOps, and cloud architecture",
+        "Recognised by enterprise clients for high-quality delivery and innovation",
+        "Extensive experience designing and operationalising modern cloud operating models"
+      ]}
+      buttonLabel="Explore our certifications"
+      buttonLink="/contact"
+      imageSrc="/assets/img/professional-services/professional-2.webp"
+      imageAlt="Novum Industry Credentials and Recognition"
+    />
+  </Reveal>
+</div>
         
-    <MainServices
-  id="services"
-  subtitle="Consulting and Advisory Services"
-  title="Strategic Guidance for Every Stage of Your Cloud Journey"
-  description="Novum provides a complete consulting and advisory model that supports organizations from early assessment through design implementation and ongoing improvement. Our approach combines collaborative workshops proven delivery frameworks and deep technical expertise to create strategies that drive innovation scalability and long term success."
-  image={{
-    src: "/assets/img/consulting-advisory/consulting-2.webp",
-    alt: "Consulting and Advisory Services by Novum",
-  }}
-  services={[
-    {
-      title: "Engagement Across the Full Cloud Journey",
-      desc: "We offer consulting advisory professional services and managed services ensuring support at every stage of transformation.",
-    },
-    {
-      title: "Collaborative Consulting Approach",
-      desc: "Our process includes discovery sessions strategy design implementation support and full knowledge transfer for long term ownership.",
-    },
-    {
-      title: "Certified Cloud Expertise",
-      desc: "Novum teams include certified specialists across Azure AWS Google Cloud and VMware with broad multi platform capability.",
-    },
-    {
-      title: "Cloud Strategy and Adoption",
-      desc: "We build cloud strategies aligned with business goals balancing performance cost efficiency and growth plans.",
-    },
-    {
-      title: "Application and Data Modernization",
-      desc: "We modernize applications and data platforms to support agility analytics AI and future ready architectures.",
-    },
-    {
-      title: "Security Architecture and Governance",
-      desc: "We strengthen cloud environments through secure design governance frameworks compliance support and advanced monitoring.",
-    },
-  ]}
-/>
+<div id="whyus">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <AIUseCaseGrid
+      title="Why Organisations Choose Novum"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-layers",
+          title: "End-to-end Cloud & Digital Guidance",
+          desc: "Support across strategy, design, migration, modernisation, and ongoing optimisation.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-diagram-3",
+          title: "Proven Frameworks",
+          desc: "Industry-aligned delivery models tailored to measurable business outcomes.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-cloud-check",
+          title: "Strong Multi-cloud Expertise",
+          desc: "Certified capability across Azure, AWS, and Google Cloud environments.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-shield-lock",
+          title: "Security-first Approach",
+          desc: "Architectures, processes, and operations aligned with enterprise security standards.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-people",
+          title: "Transparent Delivery",
+          desc: "Clear communication, shared ownership, and outcome-driven execution.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-gear",
+          title: "Modern Engineering Practices",
+          desc: "Adoption of DevOps, automation, IaC, and continuous improvement principles.",
+          link: "#",
+        }
+      ]}
+    />
+  </Reveal>
+</div>
 
 
-
-     <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="What You Gain from NOVUM Consulting and Advisory Services"
-  description="Novum strengthens your cloud journey by providing structured assessments clear strategies and expert guidance across every stage of transformation. Our advisory approach ensures that your technology landscape supports long term growth innovation and operational excellence."
-  items={[
-    {
-      img: "/assets/img/consulting-advisory/tab-1.jpg",
-      title: "Cloud Migration and Adoption",
-      desc: "Assess readiness identify risks and create clear migration plans that support smooth transitions and strong business outcomes.",
-    },
-    {
-      img: "/assets/img/consulting-advisory/tab-2.jpg",
-      title: "Application Modernization",
-      desc: "Define modernization goals prioritize high value processes and build roadmaps that improve agility and long term scalability.",
-    },
-    {
-      img: "/assets/img/consulting-advisory/tab-3.jpg",
-      title: "Cost Optimization Strategy",
-      desc: "Align cloud spend with business objectives through detailed assessments improved architecture and proactive optimization plans.",
-    },
-    {
-      img: "/assets/img/consulting-advisory/tab-4.jpg",
-      title: "Innovation and Growth Enablement",
-      desc: "Identify new opportunities enhance IT operations and design strategies that support sustained business growth.",
-    },
-    {
-      img: "/assets/img/consulting-advisory/tab-5.jpg",
-      title: "Mergers and Acquisitions Integration",
-      desc: "Unify tools systems and teams through structured integration models that simplify transitions and reduce disruption.",
-    },
-    {
-      img: "/assets/img/consulting-advisory/tab-6.jpg",
-      title: "Cloud Security and Governance",
-      desc: "Strengthen security uncover vulnerabilities establish governance models and ensure secure dependable cloud deployments.",
-    },
-  ]}
-/>
-
-
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose Novum for Consulting and Advisory Services"
-  description="Novum provides deep strategic insight strong cloud expertise and structured advisory frameworks that help organizations plan transform and grow with confidence. Our approach ensures every decision aligns with long term business objectives and delivers measurable impact."
-  counters={[
-    { value: 1700, suffix: "+", label: "Technical Certifications" },
-    { value: 11000, suffix: "+", label: "Individual Skill Accreditations" },
-    { value: 25, suffix: "+", label: "Cloud and Technology Specializations" },
-    { value: 10, suffix: "+", label: "Years of Advisory Excellence" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-user-tie",
-      title: "Certified Multi Cloud Specialists",
-      desc: "Experts certified across Azure AWS Google Cloud and VMware delivering strong architectural and advisory capability.",
-    },
-    {
-      icon: "fa-solid fa-layer-group",
-      title: "Structured Advisory Frameworks",
-      desc: "Clear discovery planning and roadmap design supported by proven methods used to accelerate decision making and delivery.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "End to End Cloud Guidance",
-      desc: "Support across strategy modernization governance security and cost management ensuring alignment with business goals.",
-    },
-  ]}
-/>
-
-
-
-
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+    
+<div id="testimonials">
+  <Reveal direction="fade">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  </Reveal>
+</div>
 
-
-
+<div id="otherservices">
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -265,6 +391,9 @@ const Professional = () => {
     },
   ]}
 />
+</Reveal>
+</div>
+
 
 
 <Widget />
