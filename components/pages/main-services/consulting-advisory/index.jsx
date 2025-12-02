@@ -1,14 +1,11 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import Reveal from "@/components/Reveal";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
@@ -31,8 +28,7 @@ const Professional = () => {
   title="Cloud Strategy, Modernisation & Digital Transformation"
   highlightText="Consulting and Advisory"
   subtitle="Novum delivers end-to-end cloud consulting and advisory services, including cloud strategy, cost optimisation, security, governance, data modernisation, and innovation planning."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/consulting-advisory/consulting-hero.png"
+  bgImage="/assets/img/consulting-advisory/bg-consulting.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
