@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import Reveal from "@/components/Reveal";
@@ -27,8 +27,8 @@ const Professional = () => {
   title="Cloud Strategy, Migration, Modernization & DevOps"
   highlightText="Professional Services"
   subtitle="Novum provides expert professional services to help organisations design, build, migrate, and optimise cloud and modern IT environments across Azure, AWS, and Google Cloud."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/professional-services/professional-hero.webp"
+  bgImage="/assets/img/professional-services/bg-3.png"
+  // heroImage="/assets/img/professional-services/professional-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
