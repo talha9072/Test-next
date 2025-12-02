@@ -212,12 +212,17 @@ export default function CapabilitiesTabsCards({
         transition: .25s ease;
         }
 
-        .cap-arrow-btn:hover {
+          .cap-arrow-btn:hover {
           background: ${primaryColor};
           color: #fff;
           border-color: ${primaryColor};
           transform: translateY(-3px);
           box-shadow: 0px 8px 24px rgba(0,0,0,0.18);
+        }
+          .cap-cta:hover .cap-cta-arrow {
+          background: ${primaryColor};
+          color: #fff;
+          
         }
 
       `}</style>

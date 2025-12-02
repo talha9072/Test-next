@@ -135,6 +135,10 @@ export default function UseCasesTabsSection({
           background: rgba(13,43,117,0.10);
           margin-right: 10px;
         }
+          .uc-cta:hover .cta-arrow {
+          background: ${primaryColor};
+          color: #fff;
+      }
 
       `}</style>
 

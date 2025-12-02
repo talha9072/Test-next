@@ -128,8 +128,8 @@ export default function HighlightsSection({
         }
 
         .hl-cta-arrow {
-          width: 28px;
-          height: 28px;
+          width: 34px;
+          height: 34px;
           border-radius: 50%;
           background: #eef2ff;
           color: ${primaryColor};
@@ -142,8 +142,8 @@ export default function HighlightsSection({
         }
 
         .hl-cta:hover .hl-cta-arrow {
-          background: #dbe4ff;
-          transform: translateX(4px);
+          background: ${primaryColor};
+          color: #fff;
         }
 
       `}</style>
