@@ -1,14 +1,13 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import HeroSideBySide from "@/components/data/services/HeroSideBySide";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -31,8 +30,8 @@ const PowerBI = () => {
   title="Multi-Cloud Operations, Security, Cost Optimisation & 24/7 Support"
   highlightText="Managed Services"
   subtitle="Novum delivers proactive managed services across Azure, AWS, and Google Cloud including DevOps, security operations, cost optimisation, infrastructure management, database services, and modern application support."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/managed-services/managed-hero.webp"
+  bgImage="/assets/img/professional-services/bg-managed.avif"
+  // heroImage="/assets/img/managed-services/managed-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -46,9 +45,27 @@ const PowerBI = () => {
   ]}
 />
 
+<OverviewComponent
+  title="Modern Managed Services for Cloud-Driven Organisations"
+  primaryColor="#0d2b75"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
+
+  paragraphs={[
+    "Novum’s Managed Services empower businesses to focus on innovation while we take care of the day-to-day management of cloud operations.",
+    "With flexible service models, certified cloud experts, and proactive 24/7 support, we help organisations optimise performance, improve security maturity, and maximise cloud ROI across Azure, AWS, and Google Cloud.",
+    "Our approach ensures your cloud environments remain stable, cost-efficient, and future-ready."
+  ]}
+
+  listItems={[
+    "Proactive 24/7 cloud monitoring and incident response",
+    "FinOps-led cost optimisation for measurable savings",
+    "Security-first governance aligned with ISO, CIS, and NIST standards",
+  ]}
+/>
 
 
-      <SoftwareSolutionsSection
+<SoftwareSolutionsSection
   title={`Modern Managed Services for Cloud-Driven Organisations`}
   paragraphs={[
     "Novum’s Managed Services empower businesses to focus on innovation while we take care of the day-to-day management of cloud operations.",
@@ -181,6 +198,15 @@ const PowerBI = () => {
 </div>
 
 
+
+
+      
+
+
+
+
+
+
 <div id="approach">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <BulletPoints
@@ -205,6 +231,31 @@ const PowerBI = () => {
   </Reveal>
 </div>
 
+<HeroSideBySide
+  imageSrc="/assets/img/managed-services/managed-8.png"
+  imageAlt="Team working together"
+
+  title="Our Approach to Managed Services"
+
+  paragraphs={[
+    "Novum combines proactive cloud operations with a collaborative engagement model tailored to your organisation’s needs.",
+    "Our delivery approach includes:"
+  ]}
+  listItems={[
+    "Proactive monitoring and automated issue resolution",
+    "Regular optimisation reviews and advisory sessions",
+    "Flexible service tiers to support different maturity levels",
+    "Knowledge transfer and co-ownership with your internal teams",
+    "Industry-recognised frameworks and cloud engineering best practices",
+  ]}
+
+  buttonText="Read our Story"
+  buttonLink="/our-story"
+
+  primaryColor="#0D2B75"
+  backgroundColor="#e5f1ff"
+  backgroundType="color"
+/>
 
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
