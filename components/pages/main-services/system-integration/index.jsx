@@ -145,6 +145,7 @@ sectionId="Expertise"
 sectionId="services"
   subtitle="AZURE SERVICES"
   title="Modern System Integration & Managed Cloud Operations"
+  backgroundGradient="linear-gradient(to bottom right, #e5f1ff, #e5f1ff)"
   tabs={[
     {
       label: "System Integration (SI)",

@@ -65,8 +65,6 @@ export default function ExpertiseSplitSection({
         }
 
         .ex-panel h3 {
-          font-size: 2rem;
-          font-weight: 700;
           margin-bottom: 16px;
         }
 
@@ -108,7 +106,9 @@ export default function ExpertiseSplitSection({
         }
 
         .ex-btn:hover {
-          background: #e8ecff;
+          background: #0d2b75;
+          color: #fff;
+          border: 1px solid #fff;
           transform: translateY(-2px);
         }
 
