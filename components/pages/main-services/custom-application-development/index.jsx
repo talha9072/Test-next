@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
 import Reveal from "@/components/Reveal";
@@ -28,8 +28,8 @@ const Training = () => {
   title="Custom Application Development with Power Apps"
   highlightText="Custom Applications"
   subtitle="Accelerate digital transformation with Microsoft Power Apps."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/app-dev/app-hero.webp"
+  bgImage="/assets/img/app-dev/bg-app.png"
+  // heroImage="/assets/img/app-dev/app-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -316,7 +316,7 @@ const Training = () => {
   title="Types of Applications You Can Build"
   subtitle="Power Apps supports multiple application types to suit different scenarios and user experiences."
   backgroundType="gradient"
-  backgroundGradient="linear-gradient(to right, #e5f1ff, #e5f1ff)"
+  backgroundGradient=""
   items={[
     {
       iconType: "bootstrap",

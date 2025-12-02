@@ -1,14 +1,11 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
 import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import BigCardTabsSection from "@/components/data/services/BigCardWithGridSection";
 import WhyChooseSection from "@/components/data/services/whychooseus";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -30,8 +27,8 @@ const System = () => {
   title="Cloud Native Design, Migration & Managed Operations"
   highlightText="System Integration"
   subtitle="APC delivers enterprise-grade Azure system integration, cloud-native deployments, DevOps pipelines, Kubernetes, serverless, IaC, monitoring, and 24/7 managed services powered by certified Azure experts."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/system-integration/system-integration-hero.webp"
+  bgImage="/assets/img/system-integration/bg-si.png"
+  // heroImage="/assets/img/system-integration/system-integration-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
