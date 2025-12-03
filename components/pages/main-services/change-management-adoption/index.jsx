@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ConceptTwoCol from "@/components/data/services/ConceptTwoCol";
 import WhyChooseSection from "@/components/data/services/whychooseus";
@@ -26,8 +26,7 @@ const Change = () => {
   title="Increase User Adoption & Project Success"
   highlightText="Change Management"
   subtitle="Management & Adoption services align people, processes, and technology to maximise user adoption and reduce project risk."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/change-management-adoption/management-hero.webp"
+  bgImage="/assets/img/change-management-adoption/change-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
