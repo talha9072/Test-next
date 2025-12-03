@@ -35,14 +35,17 @@ const Automation = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
+    { label: "Capabilities", href: "#service-offerings" },
     { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Approach", href: "#approach" },
+    { label: "Use Case", href: "#usecase" },
+    { label: "Why Us?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
+<div id="about">
 <OverviewComponent
   title="Modern Managed Services for Cloud-Driven Organisations"
   primaryColor="#0d2b75"
@@ -63,6 +66,7 @@ const Automation = () => {
     "Continuous improvement with roadmap recommendations and operational insights"
   ]}
 />
+</div>
 
 <div id="service-offerings">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
@@ -124,7 +128,7 @@ const Automation = () => {
 </div>
 
 
-<div id="whyus">
+<div id="services">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <AIUseCaseGrid
       title="Accelerate Transformation with Our Automation Services"
@@ -179,7 +183,7 @@ const Automation = () => {
   </Reveal>
 </div>
 
-
+<div id="approach">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
     sectionId="automation-approach"
@@ -232,9 +236,9 @@ const Automation = () => {
     ]}
   />
 </Reveal>
+</div>
 
-
-
+<div id="usecase">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
   <InnovationsRoadmapSection
     sectionId="automation-roadmap"
@@ -272,9 +276,10 @@ const Automation = () => {
     ]}
   />
 </Reveal>
+</div>
 
      
-        
+    <div id="whyus">    
    <ServiceSplitPanel
   title="Why Choose Novum for Automation?"
   primaryColor="#2d1a78"
@@ -358,7 +363,7 @@ const Automation = () => {
     }
   ]}
 />
- 
+ </div>
 
 
 
@@ -367,7 +372,7 @@ const Automation = () => {
 
 
 
-
+<div id="testimonials">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
@@ -400,7 +405,7 @@ const Automation = () => {
   ]}
 />
 </Reveal>
-
+</div>
 
 
       <OtherServices
