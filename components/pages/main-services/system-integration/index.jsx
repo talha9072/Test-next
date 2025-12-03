@@ -27,7 +27,7 @@ const System = () => {
   title="Cloud Native Design, Migration & Managed Operations"
   highlightText="System Integration"
   subtitle="APC delivers enterprise-grade Azure system integration, cloud-native deployments, DevOps pipelines, Kubernetes, serverless, IaC, monitoring, and 24/7 managed services powered by certified Azure experts."
-  bgImage="/assets/img/system-integration/bg-si.png"
+  bgImage="/assets/img/system-integration/bg-si-1.png"
   // heroImage="/assets/img/system-integration/system-integration-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
