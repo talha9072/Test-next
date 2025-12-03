@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
@@ -30,8 +30,7 @@ const Ai = () => {
   title="Build, Scale, and Govern Enterprise AI with Confidence"
   highlightText="Azure"
   subtitle="A unified Azure platform for creating, customising, deploying, and managing advanced AI applications, agents, and multimodal solutions at scale."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/azure/azure-hero.webp"
+  bgImage="/assets/img/azure/bg-azure-2.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
