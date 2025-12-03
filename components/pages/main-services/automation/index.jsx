@@ -1,14 +1,13 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import Reveal from "@/components/Reveal";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -30,8 +29,7 @@ const Automation = () => {
   title="Accelerate Operations with Intelligent Automation"
   highlightText="Automation"
   subtitle="Streamline processes improve accuracy and scale your business faster with modern automation across cloud infrastructure applications and security."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/automation/automation-hero.webp"
+  bgImage="/assets/img/automation/bg-automation.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -182,136 +180,226 @@ const Automation = () => {
 </div>
 
 
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+  <PricingCardsSection
+    sectionId="automation-approach"
+    subtitle="END-TO-END AUTOMATION APPROACH"
+    backgroundImage="/assets/img/azure/pricing-bg.avif"
+    title="Novum’s End-to-End Automation Delivery Model"
+    intro="Novum provides a complete automation lifecycle from initial discovery to enterprise-wide implementation and ongoing optimisation. Our structured framework ensures automation delivers measurable efficiency, speed, and accuracy across your organisation."
+    primaryColor="#0d2b75"
+    cards={[
+      {
+        title: "Discovery, Consulting & Strategy Alignment",
+        desc: "We assess your current processes, identify automation opportunities, and build a roadmap aligned with business outcomes.",
+        list: [
+          "Process assessment & automation maturity analysis",
+          "Identification of high-impact automation candidates",
+          "Alignment with operational, financial & strategic goals",
+          "Development of automation roadmap & prioritisation"
+        ]
+      },
+      {
+        title: "Proof of Concept (PoC) & Pilot Validation",
+        desc: "Novum validates automation solutions in controlled, low-risk environments before scaling to full operations.",
+        list: [
+          "Pilot design for targeted workflows",
+          "Technical feasibility validation",
+          "ROI measurement & performance testing",
+          "Blueprint creation for scalable deployment"
+        ]
+      },
+      {
+        title: "Implementation & Workflow Integration",
+        desc: "Full-scale deployment of automation frameworks across cloud, infrastructure, applications, and security.",
+        list: [
+          "AI-powered workflow automation",
+          "System integration & orchestration",
+          "CI/CD, IaC & DevOps automation pipelines",
+          "Enterprise-grade automation governance"
+        ]
+      },
+      {
+        title: "Managed Automation Services",
+        desc: "Continuous optimisation, monitoring, and enhancement of enterprise automation systems.",
+        list: [
+          "Ongoing tuning & workflow optimisation",
+          "24/7 health, performance, and incident monitoring",
+          "New automation opportunities discovery",
+          "Long-term ROI improvement & governance"
+        ]
+      }
+    ]}
+  />
+</Reveal>
+
+
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
+  <InnovationsRoadmapSection
+    sectionId="automation-roadmap"
+    backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
+    subtitle="USE CASES"
+    title="Real-World Automation Use Cases"
+    intro="Novum delivers intelligent automation across cloud, security, networks, applications, and business processes enabling high-performance operations with minimal manual effort."
+    primaryColor="#0d2b75"
+    items={[
+      {
+        icon: "bi-hdd-network",
+        title: "Data Centre & Cloud Operations",
+        desc: "Automated provisioning, scaling, patching, backup workflows, and hybrid-cloud orchestration to improve operational speed and reliability."
+      },
+      {
+        icon: "bi-diagram-3",
+        title: "Network Provisioning & Policy Enforcement",
+        desc: "Zero-touch network deployment, automated configuration updates, and compliance-driven policy enforcement across environments."
+      },
+      {
+        icon: "bi-shield-lock",
+        title: "Automated Cybersecurity Response",
+        desc: "Real-time detection and automated remediation using SIEM/SOAR workflows, reducing response times and improving security posture."
+      },
+      {
+        icon: "bi-gear-fill",
+        title: "DevOps & Continuous Delivery Pipelines",
+        desc: "End-to-end build, test, and deployment automation enabling faster software releases and improved reliability across teams."
+      },
+      {
+        icon: "bi-clipboard-check",
+        title: "Business Process Automation (BPA)",
+        desc: "Streamline finance, HR, and operations workflows by replacing repetitive manual tasks with intelligent, rule-driven automation."
+      }
+    ]}
+  />
+</Reveal>
+
      
         
-    <MainServices
-  id="services"
-  subtitle="Automation Services"
-  title="Modern Automation Solutions to Improve Speed Accuracy and Scale"
-  description="Novum delivers automation solutions that streamline operations reduce manual effort and improve overall performance. Our approach combines strategy consulting proof of concept validation implementation support and continuous optimization to ensure automation aligns with your business goals and delivers measurable results."
-  image={{
-    src: "/assets/img/automation/automate-2.webp",
-    alt: "Automation Services by Novum",
-  }}
-  services={[
-    {
-      title: "Business Process Automation",
-      desc: "Automate routine finance, operations, and HR tasks with Dynamics 365 and Power Platform. From invoice approvals to payroll and procurement workflows, Novum streamlines complex business processes into seamless, rule-driven flows. Drive higher accuracy, faster approvals, and real-time visibility across your organization.",
-    },
-    {
-      title: "Data & Analytics Automation",
-      desc: "Transform raw data into actionable insights with Microsoft Fabric and Azure. Our automations handle ingestion, transformation, and reporting ensuring real-time KPIs, predictive insights, and data-driven decisions. Eliminate manual reporting and empower every team with automated intelligence.",
-    },
-    {
-      title: "Collaboration & Productivity Automation",
-      desc: "Boost team efficiency across Microsoft 365, Teams, and SharePoint. Novum builds smart workflows that automate document approvals, task reminders, and onboarding processes keeping collaboration structured and transparent. Empower your teams to focus on outcomes, not administration.",
-    },
-    {
-      title: "Application & DevOps Automation",
-      desc: "Accelerate app delivery and system reliability through Azure DevOps and GitHub Actions. We automate deployments, testing, and environment provisioning for faster innovation and fewer errors. Perfect for organizations scaling custom solutions and ISVs on the Microsoft Cloud.",
-    },
-    {
-      title: "Customer & Frontline Automation",
-      desc: "Enhance customer and frontline experiences with AI-powered, low-code automations. Using Dynamics 365, Power Virtual Agents, and Copilot Studio, Novum delivers self-service chatbots, automated ticket routing, and intelligent field-service scheduling improving satisfaction and reducing manual workload.",
-    },
-    {
-      title: "Governance & Compliance Automation",
-      desc: "Simplify tenant management and compliance operations through automated Microsoft 365 and Azure workflows. From license assignment to usage reporting and data retention, Novum ensures governance is proactive and efficient without adding administrative overhead.",
-    },
-  ]}
-/>
-
-
-
-
-     <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="What You Gain from NOVUM Automation Services"
-  description="Novum strengthens your operations through automation that improves speed accuracy and scalability across your entire technology environment. Our automation capabilities help reduce manual effort enhance reliability and support long term growth."
+   <ServiceSplitPanel
+  title="Why Choose Novum for Automation?"
+  primaryColor="#2d1a78"
   items={[
     {
-      img: "/assets/img/automation/tab-1.jpg",
-      title: "Infrastructure Automation",
-      desc: "Automate deployment configuration and full management of IT infrastructure to improve efficiency and consistency.",
+      label: "Deep Multi-Domain Expertise",
+      paragraphs: [
+        "Novum brings advanced capability across cloud engineering, DevOps automation, enterprise security, and modern infrastructure. Our teams design high-performance ecosystems where automation becomes a natural extension of your technology landscape.",
+        "We help organisations deploy end-to-end automation across hybrid, multi-cloud, and on-premise environments with consistency, security, and reliability."
+      ],
+      listItems: [
+        "Certified Azure, AWS & Google Cloud experts",
+        "DevOps, SRE, security & infrastructure specialists",
+        "Hands-on experience building enterprise automation"
+      ]
     },
+
     {
-      img: "/assets/img/automation/tab-2.jpg",
-      title: "Network Automation",
-      desc: "Streamline network provisioning monitoring and policy control through automated workflows that reduce operational effort.",
+      label: "Proven Automation Methodologies",
+      paragraphs: [
+        "Our delivery framework is built on industry best practices and refined through real enterprise transformation programs. We ensure every automation initiative is structured, measurable, and aligned with business outcomes.",
+        "From discovery to rollout, our methodology reduces risk, accelerates adoption, and ensures long-term scalability."
+      ],
+      listItems: [
+        "Structured automation delivery framework",
+        "Reusable architectures & workflow blueprints",
+        "Outcome-driven planning & execution"
+      ]
     },
+
     {
-      img: "/assets/img/automation/tab-3.jpg",
-      title: "Security Automation",
-      desc: "Enable automated threat detection incident response and compliance checks to strengthen your security posture.",
+      label: "Governance & Compliance-Driven Approach",
+      paragraphs: [
+        "Automation is only effective when it operates within the right controls. We embed governance, identity, security, and compliance guardrails into every workflow to ensure enterprise-grade reliability.",
+        "Our teams design automation that aligns with your regulatory, operational, and risk requirements."
+      ],
+      listItems: [
+        "Policy-driven workflows & access governance",
+        "Compliance alignment: ISO, CIS, NIST, GDPR",
+        "Automated controls & continuous monitoring"
+      ]
     },
+
     {
-      img: "/assets/img/automation/tab-4.jpg",
-      title: "Application Automation",
-      desc: "Support application delivery with automated pipelines deployment processes and full lifecycle management.",
+      label: "Scalable & Customisable Solutions",
+      paragraphs: [
+        "Automation needs vary by organisation — that’s why we design solutions that scale with your processes, teams, and future roadmap.",
+        "Whether you're automating specific workflows or building an enterprise-wide automation program, our approach adapts seamlessly to your environment."
+      ],
+      listItems: [
+        "Modular, extensible automation architectures",
+        "Scales across teams, workloads & cloud platforms",
+        "Custom workflows tailored to business needs"
+      ]
     },
+
     {
-      img: "/assets/img/automation/tab-5.jpg",
-      title: "Cloud Automation",
-      desc: "Automate cloud resource provisioning orchestration and cost management to achieve better performance and control.",
+      label: "Long-Term Operational Partnership",
+      paragraphs: [
+        "Automation is not a one-time project — it requires ongoing optimisation and refinement. Novum continues to support, iterate, and enhance your automation capabilities through managed services.",
+        "We ensure your automation ecosystem remains efficient, secure, and aligned to evolving business goals."
+      ],
+      listItems: [
+        "Managed automation operations & monitoring",
+        "Ongoing optimisation & workflow enhancements",
+        "Continuous improvement & strategic advisory"
+      ]
     },
+
+    {
+      label: "End-to-End Coverage",
+      paragraphs: [
+        "Novum supports the entire automation lifecycle — from consulting and architecture to deployment, optimisation, and long-term management.",
+        "This unified approach helps organisations achieve seamless automation maturity without relying on multiple vendors or disconnected solutions."
+      ],
+      listItems: [
+        "Consulting, implementation & managed services",
+        "Cross-domain coverage: cloud, DevOps, security, data",
+        "Unified support across your automation ecosystem"
+      ]
+    }
   ]}
 />
-
-
-
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose Novum for Consulting and Advisory Services"
-  description="Novum provides deep strategic insight strong cloud expertise and structured advisory frameworks that help organizations plan transform and grow with confidence. Our approach ensures every decision aligns with long term business objectives and delivers measurable impact."
-  counters={[
-    { value: 1700, suffix: "+", label: "Technical Certifications" },
-    { value: 11000, suffix: "+", label: "Individual Skill Accreditations" },
-    { value: 25, suffix: "+", label: "Cloud and Technology Specializations" },
-    { value: 10, suffix: "+", label: "Years of Advisory Excellence" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-user-tie",
-      title: "Certified Multi Cloud Specialists",
-      desc: "Experts certified across Azure AWS Google Cloud and VMware delivering strong architectural and advisory capability.",
-    },
-    {
-      icon: "fa-solid fa-layer-group",
-      title: "Structured Advisory Frameworks",
-      desc: "Clear discovery planning and roadmap design supported by proven methods used to accelerate decision making and delivery.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "End to End Cloud Guidance",
-      desc: "Support across strategy modernization governance security and cost management ensuring alignment with business goals.",
-    },
-  ]}
-/>
+ 
 
 
 
 
+    
+
+
+
+
+<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
   items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
 />
+</Reveal>
 
 
 
