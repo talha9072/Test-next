@@ -38,13 +38,16 @@ const PowerBI = () => {
   links={[
     { label: "Overview", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
+    { label: "Approach", href: "#approach" },
+    { label: "Expertise", href: "#expertise" },
     { label: "Why Choose?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
+
+<div id="about">
 <OverviewComponent
   title="Modern Managed Services for Cloud-Driven Organisations"
   primaryColor="#0d2b75"
@@ -63,13 +66,10 @@ const PowerBI = () => {
     "Security-first governance aligned with ISO, CIS, and NIST standards",
   ]}
 />
+</div>
 
 
-
-
-
-
-<div id="service-offerings">
+<div id="services">
  
     <ServiceFeatureCards
       title="Key Managed Service Offerings"
@@ -189,15 +189,6 @@ const PowerBI = () => {
 </div>
 
 
-
-
-      
-
-
-
-
-
-
 <div id="approach">
   <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <BulletPoints
@@ -223,7 +214,7 @@ const PowerBI = () => {
 </div>
 
 
-
+<div id="expertise">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
     sectionId="expertise"
@@ -276,8 +267,9 @@ const PowerBI = () => {
     ]}
   />
 </Reveal>
+</div>
 
-
+<div id="whyus">
 <ServiceSplitPanel
   title="Why Organisations Choose Novum Managed Services"
   primaryColor="#2d1a78"
@@ -361,13 +353,13 @@ const PowerBI = () => {
     }
   ]}
 />
-
+</div>
 
 
         
 
 
-
+<div id="testimonials">
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
@@ -400,7 +392,7 @@ const PowerBI = () => {
   ]}
 />
 </Reveal>
-
+</div>
 
 
       <OtherServices

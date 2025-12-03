@@ -27,7 +27,7 @@ const Professional = () => {
   title="Cloud Strategy, Migration, Modernization & DevOps"
   highlightText="Professional Services"
   subtitle="Novum provides expert professional services to help organisations design, build, migrate, and optimise cloud and modern IT environments across Azure, AWS, and Google Cloud."
-  bgImage="/assets/img/professional-services/bg-3.png"
+  bgImage="/assets/img/professional-services/bg-2.png"
   // heroImage="/assets/img/professional-services/professional-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
