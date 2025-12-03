@@ -1,6 +1,10 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
+import Reveal from "@/components/Reveal";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
@@ -25,7 +29,7 @@ const Automation = () => {
   serviceName="Automation Services"
   title="Accelerate Operations with Intelligent Automation"
   highlightText="Automation"
-  subtitle="Streamline processes improve accuracy and scale faster with modern automation solutions."
+  subtitle="Streamline processes improve accuracy and scale your business faster with modern automation across cloud infrastructure applications and security."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
   heroImage="/assets/img/automation/automation-hero.webp"
   heroButtons={[
@@ -41,18 +45,144 @@ const Automation = () => {
   ]}
 />
 
+<OverviewComponent
+  title="Modern Managed Services for Cloud-Driven Organisations"
+  primaryColor="#0d2b75"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
 
-     <SoftwareSolutionsSection
-  title={`Why Automation Is Essential for Modern Organizations`}
   paragraphs={[
-    "Automation uses advanced technology to perform tasks with minimal human involvement helping organizations improve efficiency accuracy and overall scalability.",
-    "Novum delivers automation solutions that streamline business processes reduce operational costs and accelerate innovation across all industries empowering teams to work smarter and focus on high value outcomes."
+    "Novum’s Managed Services enable organisations to focus on innovation while we manage and optimise the daily operations of your cloud environment.",
+    "Our certified cloud specialists provide continuous monitoring, security oversight, and performance optimisation to ensure your platforms remain resilient and future-ready.",
+    "Through flexible engagement models and proactive 24/7 operations, we help enterprises increase reliability, enhance security posture, and maximise ROI across Azure, AWS, and Google Cloud."
   ]}
-  imageSrc="/assets/img/automation/automate-1.webp"
-  altText="Automation Services by Novum"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  listItems={[
+    "Proactive 24/7 cloud monitoring, incident management, and platform health checks",
+    "FinOps-aligned cost optimisation ensuring measurable and sustained savings",
+    "Security-first governance aligned to ISO, CIS, NIST, and cloud best-practice frameworks",
+    "Performance tuning and workload optimisation for enhanced reliability",
+    "Continuous improvement with roadmap recommendations and operational insights"
+  ]}
 />
 
+<div id="service-offerings">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <ServiceFeatureSlider
+      sectionId="service-offerings"
+      title="Core Automation Capabilities"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+      primaryColor="#0d2b75"
+      items={[
+        {
+          image: "/assets/img/automation/tab-1.jpg",
+          title: "Infrastructure Automation",
+          list: [
+            "Automated provisioning and configuration",
+            "Infrastructure-as-Code (Terraform, Bicep, ARM)",
+            "Scalable, consistent environment deployment",
+          ],
+        },
+        {
+          image: "/assets/img/automation/tab-2.jpg",
+          title: "Network Automation",
+          list: [
+            "Zero-touch network provisioning",
+            "Policy enforcement via programmable workflows",
+            "Automated monitoring and remediation",
+          ],
+        },
+        {
+          image: "/assets/img/automation/tab-3.jpg",
+          title: "Security Automation",
+          list: [
+            "Automated threat detection & response (SIEM/SOAR)",
+            "Continuous compliance and security scanning",
+            "Identity and access governed through automation",
+          ],
+        },
+        {
+          image: "/assets/img/automation/tab-4.jpg",
+          title: "Application Automation & CI/CD",
+          list: [
+            "Automated builds, testing, and deployments",
+            "Full application lifecycle workflows",
+            "Faster development with modern CI/CD pipelines",
+          ],
+        },
+        {
+          image: "/assets/img/automation/tab-5.jpg",
+          title: "Cloud Automation & Optimisation",
+          list: [
+            "Resource provisioning & autoscaling",
+            "Automated cloud governance and tagging",
+            "Cost optimisation across multi-cloud environments",
+          ],
+        }
+      ]}
+    />
+  </Reveal>
+</div>
+
+
+<div id="whyus">
+  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+    <AIUseCaseGrid
+      title="Accelerate Transformation with Our Automation Services"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #e5f1ff, #e5f1ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-arrows-move",
+          title: "Business Process Automation",
+          desc: "Automate routine finance, operations, and HR tasks with Dynamics 365 and Power Platform. From invoice approvals to payroll and procurement workflows, Novum streamlines complex business processes into seamless, rule-driven flows. Drive higher accuracy, faster approvals, and real-time visibility across your organization.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-bar-chart-line",
+          title: "Data & Analytics Automation",
+          desc: "Transform raw data into actionable insights with Microsoft Fabric and Azure. Our automations handle ingestion, transformation, and reporting ensuring real-time KPIs, predictive insights, and data-driven decisions. Eliminate manual reporting and empower every team with automated intelligence.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-people",
+          title: "Collaboration & Productivity Automation",
+          desc: "Boost team efficiency across Microsoft 365, Teams, and SharePoint. Novum builds smart workflows that automate document approvals, task reminders, and onboarding processes keeping collaboration structured and transparent. Empower your teams to focus on outcomes, not administration.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-code-slash",
+          title: "Application & DevOps Automation",
+          desc: "Accelerate app delivery and system reliability through Azure DevOps and GitHub Actions. We automate deployments, testing, and environment provisioning for faster innovation and fewer errors. Perfect for organizations scaling custom solutions and ISVs on the Microsoft Cloud.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-robot",
+          title: "Customer & Frontline Automation",
+          desc: "Enhance customer and frontline experiences with AI-powered, low-code automations. Using Dynamics 365, Power Virtual Agents, and Copilot Studio, Novum delivers self-service chatbots, automated ticket routing, and intelligent field-service scheduling improving satisfaction and reducing manual workload.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-shield-check",
+          title: "Governance & Compliance Automation",
+          desc: "Simplify tenant management and compliance operations through automated Microsoft 365 and Azure workflows. From license assignment to usage reporting and data retention, Novum ensures governance is proactive and efficient without adding administrative overhead.",
+          link: "#",
+        },
+      ]}
+    />
+  </Reveal>
+</div>
+
+
+     
         
     <MainServices
   id="services"
