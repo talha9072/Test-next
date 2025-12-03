@@ -65,16 +65,7 @@ const PowerBI = () => {
 />
 
 
-<SoftwareSolutionsSection
-  title={`Modern Managed Services for Cloud-Driven Organisations`}
-  paragraphs={[
-    "Novum’s Managed Services empower businesses to focus on innovation while we take care of the day-to-day management of cloud operations.",
-    "With flexible service models, certified cloud experts, and proactive 24/7 support, we help organisations optimise performance, improve security maturity, and maximise cloud ROI across Azure, AWS, and Google Cloud."
-  ]}
-  imageSrc="/assets/img/managed-services/managed-1.webp"
-  altText="Managed Services by Novum"
-  sectionClass="position-relative overflow-hidden py-7"
-/>
+
 
 
 
@@ -231,31 +222,7 @@ const PowerBI = () => {
   </Reveal>
 </div>
 
-<HeroSideBySide
-  imageSrc="/assets/img/managed-services/managed-8.png"
-  imageAlt="Team working together"
 
-  title="Our Approach to Managed Services"
-
-  paragraphs={[
-    "Novum combines proactive cloud operations with a collaborative engagement model tailored to your organisation’s needs.",
-    "Our delivery approach includes:"
-  ]}
-  listItems={[
-    "Proactive monitoring and automated issue resolution",
-    "Regular optimisation reviews and advisory sessions",
-    "Flexible service tiers to support different maturity levels",
-    "Knowledge transfer and co-ownership with your internal teams",
-    "Industry-recognised frameworks and cloud engineering best practices",
-  ]}
-
-  buttonText="Read our Story"
-  buttonLink="/our-story"
-
-  primaryColor="#0D2B75"
-  backgroundColor="#e5f1ff"
-  backgroundType="color"
-/>
 
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
