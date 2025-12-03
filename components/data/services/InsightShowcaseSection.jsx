@@ -60,7 +60,7 @@ export default function InsightShowcaseSection({
         >
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-6 col-12 p-4">
+          <div className="col-lg-6 col-12 p-5">
             <Reveal direction="left">
 
               {eyebrow && (
