@@ -33,15 +33,16 @@ const Change = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Programs", href: "#services" },
-    { label: "Capabilities", href: "#capabilities" },
+    { label: "Benefits", href: "#Benefits" },
+    { label: "Project Success", href: "#projects" },
+    { label: "Services", href: "#services" },
     { label: "Why Choose?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
- 
+ <div id="about">
 <BulletPoints
   sectionId="change-overview"
   title={<>Why Change Management Matters?</>}
@@ -60,7 +61,9 @@ const Change = () => {
   altText="Change Management and User Adoption"
   sectionClass="position-relative overflow-hidden py-7"
 />
+</div>
 
+<div id="Benefits">
 <ConceptTwoCol
 backgroundStyle="#e5f1ff"
   title="Align Technology With Desired Business Outcomes"
@@ -77,9 +80,10 @@ backgroundStyle="#e5f1ff"
     "Enable confident and skilled users",
   ]}
 />
+</div>
 
 
-
+<div id="projects">
 <FourCardSection
   title="Boost Project Success with Structured Change Management"
   intro="Structured change management increases success rates by up to 6x. These four pillars ensure a predictable and scalable approach."
@@ -107,7 +111,10 @@ backgroundStyle="#e5f1ff"
     }
   ]}
 />
+</div>
 
+
+<div id="services">
 <BulletPoints
   sectionId="service-includes"
   title={<>What Our Change Management & Adoption Service Includes</>}
@@ -127,8 +134,10 @@ backgroundStyle="#e5f1ff"
   altText="Change Management & Adoption Services"
   sectionClass="position-relative overflow-hidden py-7"
 />
+</div>
 
 
+<div id="whyus">
 <WhyChooseSection
 title = "Why Choose Our Change Management Services?"
   sectionId="whyus-change"
@@ -165,7 +174,7 @@ title = "Why Choose Our Change Management Services?"
     }
   ]}
 />
-
+</div>
 
      
 
