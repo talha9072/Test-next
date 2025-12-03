@@ -48,7 +48,7 @@ export default function InnovationsRoadmapSection({
 
                 {/* Text */}
                 <div>
-                  <div className="ms-line"></div>
+                  
                   <h5 className="ms-item-title">{item.title}</h5>
                   <p className="ms-item-desc">{item.desc}</p>
                 </div>
@@ -79,6 +79,7 @@ export default function InnovationsRoadmapSection({
           align-items: center;
           justify-content: center;
           margin-right: 14px;
+          padding:12px;
         }
 
         .ms-item-desc {
@@ -87,13 +88,7 @@ export default function InnovationsRoadmapSection({
           line-height: 1.55;
         }
 
-        .ms-line {
-          width: 30px;
-          height: 3px;
-          background: ${primaryColor};
-          border-radius: 4px;
-          margin-bottom: 8px;
-        }
+        
       `}</style>
     </section>
   );
