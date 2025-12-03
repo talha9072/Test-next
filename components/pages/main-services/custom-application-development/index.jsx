@@ -28,7 +28,7 @@ const Training = () => {
   title="Custom Application Development with Power Apps"
   highlightText="Custom Applications"
   subtitle="Accelerate digital transformation with Microsoft Power Apps."
-  bgImage="/assets/img/app-dev/bg-app.png"
+  bgImage="/assets/img/app-dev/bg-app-1.png"
   // heroImage="/assets/img/app-dev/app-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
