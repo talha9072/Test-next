@@ -5,6 +5,7 @@ import OverviewComponent from "@/components/data/services/OverviewComponent";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import CTAPage from '@/components/data/services/CTAPage';
 import UseCasesSection from "@/components/data/services/UseCasesSection";
+import VideoHero from "@/components/data/services/VideoHero";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
@@ -139,15 +140,12 @@ const Sustainability = () => {
   />
 </div>
 
-<CTAPage
-  title="A Global Commitment to Net Zero"
-  description="Microsoft is committed to achieving net zero and helping the world reach shared sustainability targets. Through continuous innovation, responsible leadership, and global partnerships, Microsoft provides tools and expertise to help organisations reduce environmental impact while driving business value."
-  buttonLabel="Discover More"
-  buttonLink="/contact"
-  backgroundType="image"
-  backgroundImage="/assets/img/sustainability/earth-2.webp"
-  textColor="#ffffff"
-  sectionClass="py-7"
+<VideoHero
+  backgroundImage="/assets/img/sustainability/sustainability-video-background.png"
+  overlayOpacity={0.45}
+  title="Reaching net zero: a global, collaborative effort"
+  description="At Microsoft, we’re committed to helping the world reach our collective goals while creating new value for organizations."
+  videoUrl="/assets/img/sustainability/sustainability.mp4" // Replace with your video
 />
 
 
@@ -204,6 +202,7 @@ const Sustainability = () => {
     />
   
 </div>
+
 
       
 <div id="testimonials">
