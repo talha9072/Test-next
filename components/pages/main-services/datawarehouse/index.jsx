@@ -1,10 +1,12 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import FourCardSection from "@/components/data/services/FourPillarsSection";
+import CTAPage from '@/components/data/services/CTAPage';
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -22,147 +24,239 @@ const Datawarehouse = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Data Warehouse Solutions"
-  title="Centralized, Scalable, and Strategic"
+  serviceName="Data Warehouse Services"
+  title="Unify Your Data to Unlock Deeper Intelligence Across the Organisation"
   highlightText="Data Warehouse"
-  subtitle="Empower faster, smarter decisions through unified data."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/datawarehouse/warehouse-hero.webp"
+  subtitle="Novum helps organisations consolidate data from ERP, CRM, databases, applications, and operational systems into a centralised data warehouse that enables reliable reporting, advanced analytics, and confident decision-making at scale."
+  bgImage="/assets/img/datawarehouse/bg-datawarehouse.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
-    { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Overview", href: "#overview" },
+    { label: "About", href: "#about" },
+    { label: "Foundation", href: "#foundation" },
+    { label: "Usecases", href: "#usecase" },
+    { label: "Enterprise", href: "#enterprise" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
  
 
+<div id="overview">
+  <OverviewComponent
+    title="Establish a Strong Data Foundation for Enterprise Analytics"
+    primaryColor="#0d2b75"
+    backgroundType="color"
+    backgroundColor="#e5f1ff"
 
+    paragraphs={[
+      "In the modern business landscape, effective data management is essential for building a successful analytics environment and a data-driven culture. Global enterprises rely on data warehousing to unify information from multiple locations, divisions, and systems while SMEs use it to centralise raw data from every business unit.",
+      "Novum helps organisations consolidate all business intelligence data from ERP, CRM, databases, flat files, cloud applications, and manufacturing equipment into a single advanced data warehouse. This unified environment powers deeper analytics, structured reporting, automated data processing, and enterprise grade BI capabilities.",
+      "A robust data warehouse enables organisations to standardise information, reduce errors, improve accuracy, automate data allocation, and build a reliable foundation for dashboards, KPIs, and advanced analytics."
+    ]}
+
+    listItems={[
+      "Centralise data from ERP, CRM, cloud apps, IoT devices, and legacy systems into one unified platform.",
+      "Improve data quality through standardisation, deduplication, and automated validation rules.",
+      "Enable faster reporting with scheduled data refreshes, automated ETL pipelines, and governed datasets.",
+      "Support advanced analytics, forecasting, and AI-driven insights using reliable, structured data models.",
+      "Reduce manual reporting effort and eliminate inconsistent spreadsheets across departments.",
+      "Provide a scalable foundation for enterprise dashboards, KPIs, and cross-functional BI solutions."
+    ]}
+  />
+</div>
+
+<div id="about">
       <SoftwareSolutionsSection
   title={
     <>
-      Why Data Warehousing Is Essential
-      for Modern Enterprises
+      What Is a Data Warehouse?
     </>
   }
   paragraphs={[
-    "As organizations grow, data is generated across countless systems from ERPs and CRMs to cloud apps and IoT devices. When this information remains scattered, it limits visibility and slows down critical decisions.",
-    "A centralized data warehouse brings all your business data together into one reliable structure. It ensures accuracy, consistency, and performance across departments while enabling powerful analytics and real time reporting.",
-    "By creating a single source of truth, businesses can uncover insights faster, reduce operational inefficiencies, and make informed, data-driven decisions with confidence.",
+    "A data warehouse (DW or DWH) is a central repository designed to store integrated data from multiple, diverse systems across the organisation. It consolidates both historical and real-time information to support business intelligence, reporting, and advanced analytics.",
+    "By standardising data formats and structures, a data warehouse ensures that teams across Finance, Sales, Operations, Supply Chain, and Management all work with consistent, trusted information.",
+    "With a unified and well-governed data foundation, organisations can analyse trends, share insights, and make strategic decisions with far greater accuracy and speed."
   ]}
   imageSrc="/assets/img/datawarehouse/warehouse-1.webp"
-  altText="Data Warehouse Solutions"
+  altText="Data Warehouse Architecture and Business Intelligence"
   sectionClass="position-relative overflow-hidden py-7"
 />
-        
-      <MainServices
-  id="services"
-  subtitle="Data Warehouse Services"
-  title="Building a Foundation for Unified, Reliable, and Insight-Driven Data"
-  description="NOVUM designs and implements robust data warehouse solutions that centralize information from multiple business systems into a single, trusted source. Our experts ensure seamless integration, optimized performance, and reliable data pipelines that power analytics, reporting, and strategic decision-making across your organization."
-  image={{
-    src: "/assets/img/datawarehouse/warehouse-2.webp",
-    alt: "Enterprise Data Warehouse Architecture",
-  }}
-  services={[
-    { title: "Architecture Design", desc: "Designing scalable data warehouse architectures tailored to your business ecosystem." },
-    { title: "ETL & Data Pipelines", desc: "Developing efficient extract, transform, and load processes for accurate and timely data." },
-    { title: "Source Integration", desc: "Connecting ERPs, CRMs, cloud applications, and IoT systems for unified analytics." },
-    { title: "Performance Tuning", desc: "Optimizing storage, queries, and data refresh cycles for maximum efficiency." },
-    { title: "Data Quality & Governance", desc: "Ensuring data accuracy, security, and compliance through structured governance." },
-    { title: "Analytics Enablement", desc: "Preparing clean, consistent data ready for BI tools like Power BI and Azure Synapse." },
-  ]}
+</div>
+
+<div id="foundation">
+  <ServiceSplitPanel
+    title="The Foundation for Modern, Insight-Driven Organisations"
+    primaryColor="#0d2b75"
+    items={[
+      {
+        label: "Why a Strong Data Foundation Matters",
+        paragraphs: [
+          "As businesses undergo digital transformation, nearly every process becomes dependent on systems and the data they produce. To operate effectively, employees across every level from executives to analysts need fast, accurate access to insights that reflect performance, risks, and opportunities.",
+          "A modern data warehouse provides the stable, governed, and consolidated environment required to support analytics at enterprise scale."
+        ],
+        listItems: [
+          "Eliminate fragmented data spread across multiple systems",
+          "Enable consistent, organisation-wide reporting structures",
+          "Build real-time visibility into performance and operations"
+        ]
+      },
+
+      {
+        label: "Key Reasons Organisations Invest in a Data Warehouse",
+        paragraphs: [
+          "A data warehouse enables teams to move beyond intuition-based decisions and establish a strong analytics foundation that improves accuracy, consistency, and speed. It also supports the growing need for advanced analytics, predictive models, and AI-driven insights."
+        ],
+        listItems: [
+          "Data-driven decision making with trusted, consolidated information",
+          "Improved data quality & consistency across all business units",
+          "Fast and easy access to analytics for competitive advantage",
+          "Interactive visualisation support for dashboards, KPIs, and reporting",
+          "Stronger reporting structure for management and C-level executives",
+          "AI & advanced analytics readiness through structured data models",
+          "Enterprise-wide analytics deployment across every department"
+        ]
+      }
+    ]}
+  />
+</div>
+
+
+<div id="usecase">
+    <AIUseCaseGrid
+      title="How Data Warehousing Supports the Entire Organisation"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-cash-stack",
+          title: "Finance",
+          desc: "Reliable financial reporting, budgeting insights, forecasting accuracy, and consolidated financial performance dashboards.",
+          link: "/contact",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-truck",
+          title: "Supply Chain",
+          desc: "End-to-end visibility across inventory, logistics, vendors, and procurement with real-time operational insights.",
+          link: "/contact",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-graph-up-arrow",
+          title: "Sales & Marketing",
+          desc: "Customer behaviour analytics, sales forecasting, campaign ROI tracking, and unified revenue intelligence.",
+          link: "/contact",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-building-gear",
+          title: "Manufacturing",
+          desc: "Production performance monitoring, quality insights, downtime analysis, and IoT machine data integration.",
+          link: "/contact",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-clipboard-check",
+          title: "Operations & Quality",
+          desc: "Standardised operational reporting, root-cause analysis, process optimisation, and compliance monitoring.",
+          link: "/contact",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-person-badge",
+          title: "HR & Workforce Management",
+          desc: "Employee performance analytics, hiring trends, retention insights, and workforce planning dashboards.",
+          link: "/contact",
+        }
+      ]}
+    />
+  
+</div>
+
+<div id="enterprise">
+  <FourCardSection
+    title="Enterprise Data Warehouse (EDW)"
+    intro="An Enterprise Data Warehouse supports analytics across the entire organisation not just a single department. EDWs give large companies a unified, consistent view of their operations even when data comes from many systems, locations, and business units."
+    backgroundStyle="linear-gradient(to bottom right, #ffffff, #f4f7ff);"
+    cards={[
+      {
+        image: "/assets/img/datawarehouse/warehouse-1.webp",
+        title: "Unified Analytics Environment",
+        desc: "An EDW consolidates data from multiple, fragmented systems into one central environment, enabling enterprise-wide analysis."
+      },
+      {
+        image: "/assets/img/datawarehouse/warehouse-2.webp",
+        title: "Centralised Reporting",
+        desc: "All departments access the same trusted, governed data—ensuring consistent dashboards, KPIs, and performance reports."
+      },
+      {
+        image: "/assets/img/datawarehouse/warehouse-1.webp",
+        title: "Cross-Departmental Insights",
+        desc: "Finance, Supply Chain, Sales, Manufacturing, HR, and Leadership all gain shared visibility for better planning and decisions."
+      },
+      {
+        image: "/assets/img/datawarehouse/warehouse-2.webp",
+        title: "Standardised Performance Metrics",
+        desc: "A single source of truth ensures metrics stay consistent across regions, teams, and business units, reducing errors and duplication."
+      }
+    ]}
+  />
+</div>
+
+
+<CTAPage
+  title="Start Building a Unified, Insight-Driven Data Warehouse"
+  description="If you’re ready to centralise your data, improve reporting, and unlock advanced analytics, our data warehousing experts are here to help."
+  buttonLabel="Download Presentation"
+  buttonLink="/assets/img/datawarehouse/NOVUM.ppsx"
+  backgroundType="image"
+  backgroundImage="/assets/img/datawarehouse/bg-data-cta.webp"
+  textColor="#ffffff"
+  sectionClass="py-7"
+  overlayOpacity={0.65}
 />
 
-
-      <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How a Modern Data Warehouse Transforms Business Intelligence"
-  description="Implementing a modern data warehouse goes beyond storage it reshapes how organizations collect, access, and act on information. NOVUM’s architecture empowers teams with unified data visibility, faster analytics, and reliable performance at scale."
-  items={[
-    {
-      img: "/assets/img/datawarehouse/unified-data.webp",
-      title: "Unified Data Foundation",
-      desc: "Bring together structured and unstructured data from diverse systems into one dependable source of truth.",
-    },
-    {
-      img: "/assets/img/datawarehouse/real-time.webp",
-      title: "Real-Time Decision Support",
-      desc: "Access updated insights instantly with automated refresh cycles and real time data synchronization.",
-    },
-    {
-      img: "/assets/img/datawarehouse/cost.webp",
-      title: "Reduced Operational Costs",
-      desc: "Eliminate data silos and redundant storage by centralizing infrastructure for long-term efficiency.",
-    },
-    {
-      img: "/assets/img/datawarehouse/scalable.webp",
-      title: "Scalable Architecture",
-      desc: "Adapt quickly to new data sources, users, and business needs with a flexible, cloud-ready framework.",
-    },
-    {
-      img: "/assets/img/datawarehouse/compliance.webp",
-      title: "Enhanced Compliance & Governance",
-      desc: "Maintain full control over data lineage, access, and security to meet regulatory and audit requirements.",
-    },
-  ]}
-/>
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose NOVUM as Your Data Warehouse Partner"
-  description="NOVUM brings together deep technical expertise and cross-industry experience to design data warehouse solutions that deliver measurable impact. From architecture to integration and analytics, we ensure your organization’s data becomes a strategic advantage."
-  counters={[
-    { value: 40, suffix: "+", label: "Enterprise Implementations" },
-    { value: 8, suffix: "+", label: "Years of Experience" },
-    { value: 100, suffix: "%", label: "Client Satisfaction" },
-    { value: 35, suffix: "+", label: "Certified Data Professionals" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-database",
-      title: "Deep Data Expertise",
-      desc: "Proven success in building scalable, high performance data warehouses across industries.",
-    },
-    {
-      icon: "fa-solid fa-link",
-      title: "Seamless System Integration",
-      desc: "Ensuring unified data flow across ERP, CRM, and cloud platforms for real time insights.",
-    },
-    {
-      icon: "fa-solid fa-shield-halved",
-      title: "Data Quality & Governance",
-      desc: "Implementing strong governance, validation, and security standards for trusted analytics.",
-    },
-  ]}
-/>
+      
 
 
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  
+</div>
 
 
 
