@@ -13,6 +13,7 @@ export default function CTAPage({
   backgroundGradient = "",
   sectionClass = "py-7",
   textColor = "#ffffff",
+  overlayOpacity = 0.55, // ★ NEW PROP
 }) {
   let wrapperStyle = {};
   let backgroundLayer = {};
@@ -43,22 +44,22 @@ export default function CTAPage({
       className={sectionClass}
       style={{ ...wrapperStyle, color: textColor, position: "relative" }}
     >
-      {/* Background Image */}
+      {/* === Background Image === */}
       {backgroundType === "image" && <div style={backgroundLayer}></div>}
 
-      {/* Overlay */}
+      {/* === Overlay (Opacity now dynamic) === */}
       {backgroundType === "image" && (
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(0, 0, 0, 0.55)",
+            background: `rgba(0, 0, 0, ${overlayOpacity})`,
             zIndex: 2,
           }}
         ></div>
       )}
 
-      {/* Content */}
+      {/* === Content === */}
       <div
         className="container text-center"
         style={{ position: "relative", zIndex: 3 }}
@@ -98,7 +99,7 @@ export default function CTAPage({
         )}
       </div>
 
-      {/* ===== Button Hover Styling ===== */}
+      {/* Hover styling */}
       <style jsx>{`
         .btn-two:hover {
           background: #ffffff !important;

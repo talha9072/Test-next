@@ -1,10 +1,11 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import DataSourcesSection from "@/components/data/services/DataSourcesSection";
+import CTAPage from '@/components/data/services/CTAPage';
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -22,12 +23,11 @@ const PowerBI = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Power BI / Reporting Consulting"
-  title="The new era of AI-powered business"
+  serviceName="Power BI Consulting"
+  title="Transform Data into Insights that Power Better Decision Making"
   highlightText="Power BI"
-  subtitle="Turn data into decisions with Power BI experts."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/about/about-banner-img.avif"
+  subtitle="Novum helps organisations model, prepare, and visualise data using Power BI to build a truly data-driven culture. Unlock meaningful insights, streamline reporting, and enable smarter strategic decisions across every department."
+  bgImage="/assets/img/power-bi/power-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -42,101 +42,127 @@ const PowerBI = () => {
 />
 
 
-      <SoftwareSolutionsSection
-            title={`Why Business Intelligence Is Critical for Modern Organizations`}
-            paragraphs={[
-            "In today’s data-rich business environment, companies often struggle to convert fragmented or siloed data into meaningful insights. Without a centralized BI solution, decision-makers face slow reporting cycles, limited visibility, and disconnected systems hindering growth, efficiency, and innovation. Every department, from finance to operations, depends on timely, accurate data to stay competitive.",
-            
-            ]}
-            imageSrc="/assets/img/power-bi/power-bi1.png"
-            altText="Power BI Consulting"
-            sectionClass="position-relative overflow-hidden py-7"
-      />
-        
-      <MainServices
-          id="services"
-                  subtitle="Power BI Consulting Services"
-                  title="Power BI Consulting Services to Turn Data Into Decisions"
-                  description="Novum delivers expert Power BI consulting services that help transform raw data into business intelligence. Our team designs scalable dashboards, builds dynamic data models, and integrates Power BI with platforms like Microsoft Dynamics 365, SQL Server, Azure, and more. Whether you’re launching a new BI initiative or optimizing an existing one, we work closely with your internal teams to ensure your data strategy aligns with your business goals."
-                  image={{
-                    src: "/assets/img/power-bi/power-bi2.png",
-                    alt: "Power BI Dashboard",
-                  }}
-                  services={[
-                    { title: "Model Optimization", desc: "Optimizing and troubleshooting Power BI models." },
-                    { title: "Advanced Dashboards", desc: "Enhancing dashboards using advanced DAX and visuals." },
-                    { title: "Rapid Reports", desc: "Fast development and deployment of custom reports." },
-                    { title: "Team Support", desc: "One-on-one support for internal BI teams." },
-                    { title: "Remote Consulting", desc: "Immediate on-site or remote consulting available." },
-                    { title: "Scalable BI Strategy", desc: "Designing scalable dashboards and data models for growth." },
-           ]}
-      />
+<div id="about">
+<OverviewComponent
+  title="Accelerate Your Sustainability Journey"
+  primaryColor="#0d2b75"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
+
+  paragraphs={[
+    "In today’s data-driven environment, data modelling and visual reporting have become essential capabilities for every modern organisation. Power BI, a leading Microsoft analytics tool, enables teams to build interactive dashboards, generate insights, and develop data-centric solutions integrated with Azure Analytics.",
+    "With the right Power BI strategy, organisations can uncover business opportunities, reduce costs, improve margins, track operational performance, and support strategic planning across Finance, Supply Chain, Manufacturing, Sales & Marketing, Operations, Management, and HR.",
+    "Novum provides a full suite of Power BI services designed to help organisations maximise the value of their data assets.",
+  ]}
+
+  listItems={[
+  "Build real-time dashboards that give instant visibility across finance, operations, sales, and supply chain performance.",
+  "Automate data preparation and reporting workflows to eliminate manual effort and improve reporting accuracy.",
+  "Use AI-enhanced analytics to uncover trends, identify risks, and highlight improvement opportunities across the business.",
+  "Connect data from multiple systems to create a unified, organisation-wide view for faster, insight-driven decision-making.",
+]}
+/>
+</div>
 
 
-      <ImplementSection
-        id="implement"
-          subtitle="Benefits"
-          title="What You Gain from a Strong Power BI Implementation"
-          description="Power BI enables faster, smarter decisions through real-time, interactive dashboards and predictive analytics that deliver clarity across your entire organization."
-          items={[
-            {
-              img: "/assets/img/main-product/dashboard.png",
-              title: "Live Dashboards",
-              desc: "Monitor KPIs and performance in real time with interactive dashboards.",
-            },
-            {
-              img: "/assets/img/sustainability/tab-1.webp",
-              title: "Forecasting Tools",
-              desc: "Predict sales, inventory, and demand trends using advanced analytics.",
-            },
-            {
-              img: "/assets/img/ai/ai-2.png",
-              title: "IoT Integration",
-              desc: "Analyze data from sensors and smart devices to improve operations.",
-            },
-            {
-              img: "/assets/img/power-bi/department.webp",
-              title: "Cross-Department Insights",
-              desc: "Unify reporting across finance, sales, and supply chain for better collaboration.",
-            },
-            {
-              img: "/assets/img/power-bi/data.webp",
-              title: "200+ Data Connectors",
-              desc: "Integrate cloud services, databases, Excel files, and more into a single platform.",
-            },
-         ]}
-      />
-   
-      <Whyus
-        id="whyus"
-        subtitle="Why Choose Us"
-        title="Why Choose Novum as Your Power BI Partner"
-        description="With over 24 clients supported remotely, Novum combines technical expertise with a personalized consulting model."
-        counters={[
-          { value: 24, suffix: "+", label: "Clients Supported" },
-          { value: 100, suffix: "+", label: "Certified Experts" },
-          { value: 10, suffix: "+", label: "Years of Experience" },
-          { value: 5, suffix: "★", label: "Client Satisfaction" },
-        ]}
-        features={[
-          {
-            icon: "fa-solid fa-user-tie",
-            title: "Dedicated Consultants",
-            desc: "Focused solely on your company’s BI success.",
-          },
-          {
-            icon: "fa-solid fa-layer-group",
-            title: "Enhancing BI Teams",
-            desc: "Proven ability to enhance internal BI capabilities.",
-          },
-          {
-            icon: "fa-solid fa-expand",
-            title: "Scalable Support",
-            desc: "From quick fixes to full BI architecture.",
-          },
-          
-        ]}
-      />
+<div id="perfermance">
+  <BulletPoints
+    sectionId="overview"
+    title={<>Power BI Consulting On-Demand Expertise for Your Organisation</>}
+    
+    paragraphs={[
+      "If your organisation already has a Power BI environment in place and requires updates, enhancements, or advanced analytical capabilities, Novum's specialists are ready to support you. Our consultants bring deep expertise across Microsoft technologies and deliver end-to-end Power BI solutions tailored to evolving business needs."
+    ]}
+
+    extraParagraph="From complex data models and automated dashboards to custom integrations and performance optimisation, our On-Demand Power BI Consulting service ensures your analytics ecosystem is scalable, efficient, and enterprise-ready."
+
+    bulletPoints={[
+      "Expert Power BI support tailored to your BI team’s ideas and requirements",
+      "Consulting aligned with real business use cases and measurable outcomes",
+      "A dedicated consultant assigned exclusively to your organisation",
+      "Immediate online or on-site assistance for urgent needs and rapid issue resolution",
+      "Development of robust dashboards, scalable data models, and enterprise-grade analytics"
+    ]}
+
+    imageSrc="/assets/img/power-bi/power-bi-hero.png"
+    altText="Power BI Consulting and Analytics Expertise"
+    sectionClass="position-relative overflow-hidden py-7"
+  />
+</div>
+
+
+<InnovationsRoadmapSection
+    sectionId="future-roadmap"
+    backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
+    subtitle="POWER BI BENEFITS"
+    title="Why Organisations Need Business Intelligence"
+    intro="Microsoft Power BI enables organisations to convert raw operational data into meaningful insights. By integrating Power BI with Dynamics 365 and internal systems, businesses gain real-time visibility and actionable intelligence across all functions."
+    primaryColor="#0d2b75"
+    items={[
+      {
+        icon: "bi-graph-up",
+        title: "Real-Time Dashboards",
+        desc: "Monitor key business metrics with live dashboards that update instantly as data changes."
+      },
+      {
+        icon: "bi-bar-chart-line",
+        title: "Advanced Visual Analytics",
+        desc: "Access rich visualisations including charts, maps, KPIs, and custom graphs for deeper insight."
+      },
+      {
+        icon: "bi-wifi",
+        title: "IoT Monitoring",
+        desc: "Track IoT device performance in real time to improve asset reliability and operational efficiency."
+      },
+      {
+        icon: "bi-box-seam",
+        title: "Inventory Intelligence",
+        desc: "Monitor stock levels, predict demand, and forecast sales trends with built-in analytics."
+      },
+      {
+        icon: "bi-diagram-3-fill",
+        title: "Process & Operations Analysis",
+        desc: "Analyse business processes across Supply Chain, Finance, Sales, and Operations to identify optimisation opportunities."
+      },
+      {
+        icon: "bi-pin-map",
+        title: "Cross-System Integration",
+        desc: "Connect data from Dynamics 365, ERP, CRM, IoT, and third-party tools to build a unified analytics view."
+      }
+    ]}
+  />
+
+  <DataSourcesSection
+  icons={[
+    { src: "/assets/img/power-bi/icons/microsoft-access.png", name: "Microsoft Access" },
+    { src: "/assets/img/power-bi/icons/directory.png", name: "Microsoft Directory" },
+    { src: "/assets/img/power-bi/icons/acu.png", name: "Acumatica" },
+    { src: "/assets/img/power-bi/icons/adobe-analytics.png", name: "Adobe Analytics" },
+    { src: "/assets/img/power-bi/icons/sql.png", name: "Sql Server" },
+    { src: "/assets/img/power-bi/icons/af.jpeg", name: "App Figure" },
+    { src: "/assets/img/power-bi/icons/quickbooks.png", name: "Quick Books" },
+    { src: "/assets/img/power-bi/icons/salesforce.png", name: "SalesForce" },
+     { src: "/assets/img/power-bi/icons/sendgrid.png", name: "Send Grid" },
+     { src: "/assets/img/power-bi/icons/sharepoint.png", name: "Share Point" },
+    
+       
+  ]}
+/>
+
+<CTAPage
+  title="GET SAMPLE REPORTS"
+  description="After reviewing your data landscape and system infrastructure, Novum’s Power BI consultants will create a tailored BI strategy and roadmap to transform your unused or unorganised data into powerful insights. Our sample reports demonstrate how data visualisation can support informed decision-making and highlight opportunities for operational improvement."
+  buttonLabel="View samples"
+  buttonLink="https://app.powerbi.com/view?r=eyJrIjoiNDFkMmJmM2ItNGNmMi00MDU2LWJlZDgtYTY4NTU4YjU3MGU5IiwidCI6Ijk0ZTZlOGZjLThkNmQtNDNiNy1iNjJlLWRjZDBjY2YwMWE0ZCIsImMiOjl9"
+  backgroundType="image"
+  backgroundImage="/assets/img/power-bi/powerbi-cta.png"
+  textColor="#ffffff"
+  sectionClass="py-7"
+  overlayOpacity={0.1}
+/>
+
+
+      
 
 
 <Testimonials
