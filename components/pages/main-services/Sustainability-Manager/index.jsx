@@ -27,7 +27,7 @@ const Sustainability = () => {
   title="Modernise ESG Reporting and Advance Your Net-Zero Strategy"
   highlightText="Sustainability"
   subtitle="Harness cloud-powered sustainability tools to unify environmental data, improve performance, and drive measurable impact. From emissions tracking to operational optimisation, empower your organisation to move faster and more responsibly."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  bgImage="/assets/img/sustainability/sustain-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
