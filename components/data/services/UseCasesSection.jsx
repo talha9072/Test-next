@@ -8,26 +8,23 @@ export default function UseCasesTabsSection({
   title = "Use Cases & Industry Applications",
   intro = "",
   primaryColor = "#0d2b75",
-
-  /* ⭐ NEW CLEAN PROP → Accepts color, gradient, or empty */
   backgroundStyle = "#ffffff",
-
   tabs = [],
 }) {
   const [activeTab, setActiveTab] = useState(0);
+
+  /* ✔ Check if any tab has a valid label */
+  const hasLabels = tabs.some(
+    (t) => t.label && t.label.trim() !== ""
+  );
 
   return (
     <section
       id={sectionId}
       className="py-7 position-relative"
-      style={{
-        background: backgroundStyle, // ← SOLID COLOR or GRADIENT
-      }}
+      style={{ background: backgroundStyle }}
     >
       <style>{`
-        /* ------------------------------ */
-        /* Pill Bar */
-        /* ------------------------------ */
         .pill-bar {
           position: relative;
           z-index: 3;
@@ -62,9 +59,6 @@ export default function UseCasesTabsSection({
           border-color: ${primaryColor};
         }
 
-        /* ------------------------------ */
-        /* Premium Microsoft Cards */
-        /* ------------------------------ */
         .uc-card {
           position: relative;
           z-index: 3;
@@ -81,15 +75,8 @@ export default function UseCasesTabsSection({
           box-shadow: 0px 18px 48px rgba(0,0,0,0.10);
         }
 
-        /* Image wrapper – 8px padding */
-        .uc-img-container {
-          padding: 8px;
-        }
-
-        /* Content wrapper – 20px padding */
-        .uc-body {
-          padding: 20px;
-        }
+        .uc-img-container { padding: 8px; }
+        .uc-body { padding: 20px; }
 
         .uc-image {
           border-radius: 16px;
@@ -135,11 +122,11 @@ export default function UseCasesTabsSection({
           background: rgba(13,43,117,0.10);
           margin-right: 10px;
         }
-          .uc-cta:hover .cta-arrow {
+
+        .uc-cta:hover .cta-arrow {
           background: ${primaryColor};
           color: #fff;
-      }
-
+        }
       `}</style>
 
       <div className="container position-relative" style={{ zIndex: 4 }}>
@@ -157,20 +144,24 @@ export default function UseCasesTabsSection({
 
         {intro && <p className="mb-4">{intro}</p>}
 
-        {/* PILLS BAR */}
-        <div className="pill-bar mb-5">
-          {tabs.map((t, i) => (
-            <button
-              key={i}
-              className={`pill-item ${activeTab === i ? "active" : ""}`}
-              onClick={() => setActiveTab(i)}
-            >
-              {t.label}
-            </button>
-          ))}
-        </div>
+        {/* ✔ Only show pills bar if at least 1 label exists */}
+        {hasLabels && (
+          <div className="pill-bar mb-5">
+            {tabs.map((t, i) =>
+              t.label && t.label.trim() !== "" ? (
+                <button
+                  key={i}
+                  className={`pill-item ${activeTab === i ? "active" : ""}`}
+                  onClick={() => setActiveTab(i)}
+                >
+                  {t.label}
+                </button>
+              ) : null
+            )}
+          </div>
+        )}
 
-        {/* CARD GRID */}
+        {/* ✔ Cards ALWAYS use original tabs (not filtered) */}
         <div className="row g-4">
           {tabs[activeTab]?.items?.map((card, idx) => (
             <div className="col-lg-4 col-md-6" key={idx}>
@@ -190,16 +181,26 @@ export default function UseCasesTabsSection({
                 )}
 
                 <div className="uc-body">
-                  <div className="uc-label">{card.label}</div>
+
+                  {/* Label only if exists */}
+                  {card.label && (
+                    <div className="uc-label">{card.label}</div>
+                  )}
+
                   <div className="uc-title">{card.title}</div>
                   <p className="uc-desc">{card.desc}</p>
 
-                  <a className="uc-cta" href={card.link || "#"} target="_blank">
+                  <a
+                    className="uc-cta"
+                    href={card.link || "#"}
+                    target={card.link ? "_blank" : "_self"}
+                  >
                     <div className="cta-arrow">
                       <i className="bi bi-arrow-right"></i>
                     </div>
                     {card.cta || "Learn More"}
                   </a>
+
                 </div>
 
               </div>

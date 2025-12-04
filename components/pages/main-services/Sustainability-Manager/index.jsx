@@ -1,7 +1,10 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import CTAPage from '@/components/data/services/CTAPage';
+import UseCasesSection from "@/components/data/services/UseCasesSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -23,11 +26,10 @@ const Sustainability = () => {
 
       <HeroWithRibbon
   serviceName="Microsoft Sustainability Solutions"
-  title="Accelerate Your Journey Toward a Greener Future"
+  title="Modernise ESG Reporting and Advance Your Net-Zero Strategy"
   highlightText="Sustainability"
-  subtitle="Empowering organizations to achieve environmental goals with data driven Microsoft solutions."
+  subtitle="Harness cloud-powered sustainability tools to unify environmental data, improve performance, and drive measurable impact. From emissions tracking to operational optimisation, empower your organisation to move faster and more responsibly."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/sustainability/Sustainability-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -42,23 +44,116 @@ const Sustainability = () => {
 />
 
  
+<div id="about">
+<OverviewComponent
+  title="Accelerate Your Sustainability Journey"
+  primaryColor="#0d2b75"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
 
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Sustainability Matters
-      for Modern Enterprises
-    </>
-  }
   paragraphs={[
-    "Sustainability is no longer just a corporate responsibility it’s a strategic advantage. NOVUM helps organizations harness Microsoft’s sustainability solutions to measure, manage, and reduce their environmental impact while improving operational efficiency and transparency.",
-    "By integrating intelligent data tools, real time analytics, and automated reporting, we enable enterprises to transform sustainability goals into measurable results. Our approach ensures compliance, drives innovation, and helps build a resilient, low-carbon future across every industry.",
+    "Sustainability is now a strategic priority for every modern organisation. With powerful ESG tools and cloud-driven insights, businesses can accelerate progress toward environmental and operational goals.",
+    "Novum helps organisations use Microsoft’s sustainability technologies to measure impact, reduce emissions, improve transparency, and scale environmental initiatives with confidence."
   ]}
-  imageSrc="/assets/img/sustainability/sustain-1.webp"
-  altText="Microsoft Sustainability Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  listItems={[
+    "Gain real-time visibility across carbon, water, waste, and operational sustainability metrics.",
+    "Automate ESG data collection to improve reporting accuracy and reduce manual workloads.",
+    "Use AI-powered insights to identify reduction opportunities and optimise resource usage.",
+    "Scale environmental initiatives across teams, supply chains, and multi-site operations.",
+    
+  ]}
 />
+</div>
+
+
+<div id="overview">
+  
+    <BulletPoints
+      sectionId="overview"
+      title={<>Monitor and Manage Your Environmental Sustainability Performance</>}
+      paragraphs={[
+        "Record, analyse, and optimise your environmental footprint using automated data collection and intelligent insights across your organisation."
+      ]}
+      extraParagraph="Microsoft Sustainability Manager, available in Essentials and Premium editions, enables organisations to monitor emissions, streamline ESG reporting, and stay compliant with global sustainability standards."
+      bulletPoints={[
+        "Automated data ingestion across systems and business units",
+        "Unified dashboards for carbon, water, and waste tracking",
+        "AI-powered insights to identify and reduce emissions",
+        "Support for global ESG frameworks and reporting standards"
+      ]}
+      imageSrc="/assets/img/sustainability/sustain-1.webp"
+      altText="Microsoft Sustainability Manager – ESG Tracking and Insights"
+      sectionClass="position-relative overflow-hidden py-7"
+    />
+</div>
+
+<CTAPage
+  title="Start your sustainability transformation with the leader’s guide"
+  description="Whether you operate in finance, operations, supply chain, or IT, this guide helps leaders define a scalable sustainability strategy. Discover how to build a digital foundation capable of capturing environmental data, reducing operational costs, and accelerating progress toward net-zero commitments."
+  buttonLabel="Download the e-book"
+  buttonLink="https://info.microsoft.com/ww-landing-leaders-guide-to-sustainable-business-transformation.html"
+  backgroundType="image"
+  backgroundImage="/assets/img/sustainability/earth.webp"
+  textColor="#ffffff"
+  sectionClass="py-7"
+/>
+
+
+  <UseCasesSection
+    sectionId="use-cases"
+    backgroundStyle="#e5f1ff"
+    primaryColor="#0d2b75"
+    subtitle="SUSTAINABILITY PILLARS"
+    title="Three Pillars of Sustainable Progress"
+    intro="Microsoft sustainability solutions help organisations build a continuous pathway from assessment to acceleration to complete business transformation—powered by accurate data, intelligent insights, and future-ready technologies."
+    tabs={[
+      {
+       
+        items: [
+          {
+            label: "Pillar",
+            title: "Assess Your Impact",
+            desc: "Fully leverage your data ecosystem to measure and monitor your environmental footprint with accuracy and transparency.",
+            image: "/assets/img/sustainability/tab-4.webp",
+            cta: "Assess",
+            link: "https://www.microsoft.com/en-us/sustainability/sustainability-thought-leadership",
+          },
+          {
+            label: "Pillar",
+            title: "Accelerate Progress",
+            desc: "Adopt data-driven sustainability solutions to reduce emissions, improve energy performance, and drive operational improvements across the business.",
+            image: "/assets/img/sustainability/tab-4.webp",
+            cta: "Accelerate",
+            link: "https://www.microsoft.com/en-us/sustainability/sustainability-thought-leadership",
+          },
+          {
+            label: "Pillar",
+            title: "Transform Your Business",
+            desc: "Reimagine processes and business models with innovative digital technologies that support long-term sustainability and future-ready operations.",
+            image: "/assets/img/sustainability/tab-4.webp",
+            cta: "Transform",
+            link: "https://www.microsoft.com/en-us/sustainability/sustainability-thought-leadership",
+          },
+        ],
+      },
+    ]}
+  />
+
+
+<CTAPage
+  title="A Global Commitment to Net Zero"
+  description="Microsoft is committed to achieving net zero and helping the world reach shared sustainability targets. Through continuous innovation, responsible leadership, and global partnerships, Microsoft provides tools and expertise to help organisations reduce environmental impact while driving business value."
+  buttonLabel="Download the e-book"
+  buttonLink="https://info.microsoft.com/ww-landing-leaders-guide-to-sustainable-business-transformation.html"
+  backgroundType="image"
+  backgroundImage="/assets/img/sustainability/earth-2.webp"
+  textColor="#ffffff"
+  sectionClass="py-7"
+/>
+
+
+      
         
      <MainServices
   id="services"
