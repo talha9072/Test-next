@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function DataSourcesSection({
   title = "Connect to Over 200+ Data Sources",
   description = "Power BI supports data ingestion from over 200+ sources...",
-  icons = [], // [{src:"", name:""}]
-  fullImage = "", // 🔥 NEW PROP -> large image to open in popup
+  icons = [], 
+  fullImage = "",
   sectionClass = "py-7",
 }) {
   const [showModal, setShowModal] = useState(false);
@@ -23,7 +23,6 @@ export default function DataSourcesSection({
             {description}
           </p>
 
-          {/* VIEW ALL BUTTON */}
           {fullImage && (
             <button
               onClick={() => setShowModal(true)}
@@ -66,12 +65,12 @@ export default function DataSourcesSection({
             className="modal-overlay"
             onClick={() => setShowModal(false)}
           >
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div
+              className="modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
               {/* Close Button */}
-              <button
-                className="close-btn"
-                onClick={() => setShowModal(false)}
-              >
+              <button className="close-btn" onClick={() => setShowModal(false)}>
                 ×
               </button>
 
@@ -95,7 +94,7 @@ export default function DataSourcesSection({
             border: 1px solid #0d2b75;
             color: #0d2b75;
             padding: 6px 16px;
-            border-radius: 3px;
+            border-radius: 4px;
             font-size: 0.85rem;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -134,12 +133,13 @@ export default function DataSourcesSection({
             inset: 0;
             background: rgba(0,0,0,0.65);
             backdrop-filter: blur(4px);
-            z-index: 9999;
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 9999;
             padding: 20px;
           }
+
           .modal-content {
             position: relative;
             max-width: 1000px;
@@ -147,25 +147,32 @@ export default function DataSourcesSection({
             border-radius: 12px;
             overflow: hidden;
           }
+
+          /* FIXED PERFECT CIRCLE CLOSE BUTTON */
           .close-btn {
             position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.4);
+            top: 12px;
+            right: 12px;
+            background: rgba(0,0,0,0.45);
             color: #fff;
             border: none;
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
             border-radius: 50%;
             cursor: pointer;
-            font-size: 22px;
+            font-size: 26px;
+            line-height: 40px;   /* horizontally aligns the × */
+            text-align: center;  /* ensures × stays centered */
             z-index: 10;
-          }
-          .close-btn:hover {
-            background: rgba(0,0,0,0.6);
+            transition: all 0.2s ease;
           }
 
-          /* Responsiveness */
+          .close-btn:hover {
+            background: rgba(0,0,0,0.65);
+          }
+
+          /* Responsive grid */
           @media (max-width: 1200px) {
             .icon-grid { grid-template-columns: repeat(6, 1fr); }
           }
