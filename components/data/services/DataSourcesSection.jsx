@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DataSourcesSection({
   title = "Connect to Over 200+ Data Sources",
-  description = "Power BI supports data ingestion from over 200+ sources...",
+  description = "Power BI supports data ingestion from over 200+ sources, including SQL, Access, Excel, Google Analytics, cloud services, databases, device-generated data, spreadsheets, and even unstructured data from the web or external systems.",
   icons = [], // [{src:"", name:""}]
   sectionClass = "py-7",
 }) {
