@@ -1,8 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import HeroSideBySide from "@/components/data/services/HeroSideBySide";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -30,7 +28,7 @@ const PowerBI = () => {
   title="Multi-Cloud Operations, Security, Cost Optimisation & 24/7 Support"
   highlightText="Managed Services"
   subtitle="Novum delivers proactive managed services across Azure, AWS, and Google Cloud including DevOps, security operations, cost optimisation, infrastructure management, database services, and modern application support."
-  bgImage="/assets/img/professional-services/bg-managed.avif"
+  bgImage="/assets/img/professional-services/bg-managed.png"
   // heroImage="/assets/img/managed-services/managed-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
