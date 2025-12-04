@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DataSourcesSection({
   title = "Connect to Over 200+ Data Sources",
-  description = "Power BI supports data ingestion from over 200+ sources, including SQL, Access, Excel, Google Analytics, cloud services, databases, device-generated data, spreadsheets, and even unstructured data from external systems. This flexibility allows organisations to centralise all their data into a single, unified reporting layer.",
+  description = "Power BI supports data ingestion from over 200+ sources...",
   icons = [], // [{src:"", name:""}]
   sectionClass = "py-7",
 }) {
@@ -20,7 +20,7 @@ export default function DataSourcesSection({
           </p>
         </div>
 
-        {/* BIG CARD WRAPPER */}
+        {/* MAIN WRAPPER CARD */}
         <div
           style={{
             background: "#fff",
@@ -31,18 +31,9 @@ export default function DataSourcesSection({
           }}
         >
           {/* ICON GRID */}
-          <div
-            className="icon-grid"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(10, 1fr)", // ★ 10 per row
-              gap: "25px",
-              alignItems: "center",
-              textAlign: "center",
-            }}
-          >
+          <div className="icon-grid">
             {icons.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="icon-card">
                 <Image
                   src={item.src}
                   alt={item.name}
@@ -50,10 +41,7 @@ export default function DataSourcesSection({
                   height={40}
                   style={{ objectFit: "contain" }}
                 />
-
-                <p className="data-source-name">
-                  {item.name}
-                </p>
+                <p className="data-source-name">{item.name}</p>
               </div>
             ))}
           </div>
@@ -61,6 +49,18 @@ export default function DataSourcesSection({
 
         {/* STYLES */}
         <style>{`
+          .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* Default desktop */
+            gap: 25px;
+            align-items: center;
+            text-align: center;
+          }
+
+          .icon-card {
+            text-align: center;
+          }
+
           .data-source-name {
             margin-top: 8px;
             font-size: 0.75rem;
@@ -73,21 +73,23 @@ export default function DataSourcesSection({
           }
 
           .data-source-name:hover {
-            color: #0d2b75; /* Main brand color */
+            color: #0d2b75;
             text-decoration-color: #0d2b75;
           }
 
-          /* RESPONSIVE FIXES */
+          /* RESPONSIVE BREAKPOINTS */
           @media (max-width: 1200px) {
             .icon-grid {
               grid-template-columns: repeat(6, 1fr);
             }
           }
+
           @media (max-width: 768px) {
             .icon-grid {
               grid-template-columns: repeat(4, 1fr);
             }
           }
+
           @media (max-width: 480px) {
             .icon-grid {
               grid-template-columns: repeat(3, 1fr);
