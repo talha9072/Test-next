@@ -133,6 +133,7 @@ const PowerBI = () => {
   />
 
   <DataSourcesSection
+  fullImage="/assets/img/power-bi/data-sources.png"
   icons={[
     { src: "/assets/img/power-bi/icons/microsoft-access.png", name: "Microsoft Access" },
     { src: "/assets/img/power-bi/icons/directory.png", name: "Microsoft Directory" },
