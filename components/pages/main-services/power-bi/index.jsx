@@ -33,9 +33,9 @@ const PowerBI = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Expertise", href: "#expertise" },
+    { label: "Benifits", href: "#benefits" },
+    { label: "Data Sources", href: "#datasources" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -65,7 +65,7 @@ const PowerBI = () => {
 </div>
 
 
-<div id="perfermance">
+<div id="expertise">
   <BulletPoints
     sectionId="overview"
     title={<>Power BI Consulting On-Demand Expertise for Your Organisation</>}
@@ -90,7 +90,7 @@ const PowerBI = () => {
   />
 </div>
 
-
+<div id="benefits">
 <InnovationsRoadmapSection
     sectionId="future-roadmap"
     backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
@@ -131,7 +131,9 @@ const PowerBI = () => {
       }
     ]}
   />
+</div>
 
+<div id="datasources">
   <DataSourcesSection
   fullImage="/assets/img/power-bi/data-sources.png"
   icons={[
@@ -149,6 +151,7 @@ const PowerBI = () => {
        
   ]}
 />
+</div>
 
 <CTAPage
   title="GET SAMPLE REPORTS"
