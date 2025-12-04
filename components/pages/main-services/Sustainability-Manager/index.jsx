@@ -5,9 +5,7 @@ import OverviewComponent from "@/components/data/services/OverviewComponent";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import CTAPage from '@/components/data/services/CTAPage';
 import UseCasesSection from "@/components/data/services/UseCasesSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -35,10 +33,10 @@ const Sustainability = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Solutions", href: "#services" },
-    { label: "Industries", href: "#industries" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Performance", href: "#perfermance" },
+    { label: "Pillars", href: "#pillars" },
+    { label: "Use Case", href: "#usecase" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
@@ -67,7 +65,7 @@ const Sustainability = () => {
 </div>
 
 
-<div id="overview">
+<div id="perfermance">
   
     <BulletPoints
       sectionId="overview"
@@ -99,7 +97,7 @@ const Sustainability = () => {
   sectionClass="py-7"
 />
 
-
+<div id="pillars">
   <UseCasesSection
     sectionId="use-cases"
     backgroundStyle="#e5f1ff"
@@ -139,13 +137,13 @@ const Sustainability = () => {
       },
     ]}
   />
-
+</div>
 
 <CTAPage
   title="A Global Commitment to Net Zero"
   description="Microsoft is committed to achieving net zero and helping the world reach shared sustainability targets. Through continuous innovation, responsible leadership, and global partnerships, Microsoft provides tools and expertise to help organisations reduce environmental impact while driving business value."
-  buttonLabel="Download the e-book"
-  buttonLink="https://info.microsoft.com/ww-landing-leaders-guide-to-sustainable-business-transformation.html"
+  buttonLabel="Discover More"
+  buttonLink="/contact"
   backgroundType="image"
   backgroundImage="/assets/img/sustainability/earth-2.webp"
   textColor="#ffffff"
@@ -153,133 +151,94 @@ const Sustainability = () => {
 />
 
 
+<div id="usecase">
+    <AIUseCaseGrid
+      title="Industry-Specific Sustainability Solutions"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-car-front",
+          title: "Automotive",
+          desc: "Enhance mobility ecosystems and reduce emissions by connecting people, vehicles, and manufacturing processes through cloud technologies.",
+          link: "/contact"
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-lightning-fill",
+          title: "Energy",
+          desc: "Accelerate the shift to cleaner, more efficient, and resilient energy systems using Microsoft’s advanced digital capabilities.",
+          link: "/contact"
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-bank",
+          title: "Financial Services",
+          desc: "Manage risk, strengthen governance, and drive sustainable growth while improving transparency and ESG reporting.",
+          link: "/contact"
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-gear-wide-connected",
+          title: "Manufacturing",
+          desc: "Reduce waste, optimise resource usage, and improve workplace safety through intelligent manufacturing and operational insights.",
+          link: "/contact"
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-cart-check",
+          title: "Retail",
+          desc: "Enhance energy efficiency, lower environmental impact, and modernise retail operations with cloud-enabled sustainability tools.",
+          link: "/contact"
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-building-check",
+          title: "Sustainable Buildings & Smart Infrastructure",
+          desc: "Optimise energy consumption in buildings, campuses, and cities with advanced analytics and smart resource management technologies.",
+          link: "/contact"
+        }
+      ]}
+    />
+  
+</div>
+
       
-        
-     <MainServices
-  id="services"
-  subtitle="Sustainability Services"
-  title="Empowering Businesses to Build a Greener, Data-Driven Future"
-  description="NOVUM helps organizations implement Microsoft Sustainability solutions that combine environmental responsibility with operational excellence. From emissions tracking to ESG reporting and renewable integration, we guide enterprises through every stage of their sustainability transformation. Our experts ensure transparency, compliance, and measurable results powered by intelligent data and cloud innovation."
-  image={{
-    src: "/assets/img/sustainability/sustain-2.webp",
-    alt: "Microsoft Sustainability Solutions Process",
-  }}
-  services={[
-    {
-      title: "Carbon & Emission Management",
-      desc: "Track, analyze, and reduce carbon emissions across your operations using Microsoft Sustainability Manager.",
-    },
-    {
-      title: "Sustainability Data Integration",
-      desc: "Connect data from multiple systems energy, logistics, and production into a unified sustainability platform.",
-    },
-    {
-      title: "ESG Reporting & Compliance",
-      desc: "Automate sustainability reporting and align with global standards such as GHG Protocol, CDP, and CSRD.",
-    },
-    {
-      title: "Renewable Energy Optimization",
-      desc: "Leverage data insights to improve energy efficiency, manage consumption, and support renewable initiatives.",
-    },
-    {
-      title: "Cloud & AI-Powered Insights",
-      desc: "Use Azure and AI analytics to gain real-time visibility into sustainability metrics and resource performance.",
-    },
-    {
-      title: "Sustainable Operations Strategy",
-      desc: "Develop long-term sustainability frameworks that balance growth, cost-efficiency, and environmental goals.",
-    },
-  ]}
-/>
-
-
-
-<ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How Microsoft Sustainability Solutions Drive Measurable Impact"
-  description="Partnering with NOVUM helps organizations turn sustainability goals into actionable, data-driven outcomes. Through Microsoft’s cloud and AI platforms, we enable enterprises to monitor performance, reduce emissions, and report progress with accuracy and transparency delivering long-term environmental and operational value."
-  items={[
-    {
-      img: "/assets/img/sustainability/tab-1.webp",
-      title: "Data-Driven Sustainability",
-      desc: "Centralize and analyze environmental data across energy, logistics, and operations to uncover actionable insights.",
-    },
-    {
-      img: "/assets/img/sustainability/tab-2.webp",
-      title: "Automated ESG Reporting",
-      desc: "Generate reliable, audit-ready sustainability reports that align with global frameworks and regulatory standards.",
-    },
-    {
-      img: "/assets/img/sustainability/tab-3.webp",
-      title: "Carbon Reduction Insights",
-      desc: "Track and forecast emissions, identify inefficiencies, and implement reduction strategies supported by AI analytics.",
-    },
-    {
-      img: "/assets/img/sustainability/tab-4.webp",
-      title: "Operational Efficiency Gains",
-      desc: "Integrate sustainability data with business processes to reduce waste, optimize resource usage, and lower costs.",
-    },
-    {
-      img: "/assets/img/sustainability/tab-5.webp",
-      title: "Future-Ready Resilience",
-      desc: "Adopt cloud-based tools and predictive intelligence to build adaptive, sustainable operations for a low-carbon future.",
-    },
-  ]}
-/>
-
-
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Sustainability Solutions"
-  description="NOVUM helps organizations embed sustainability into their operations through data-driven, Microsoft-powered solutions. Our experts combine environmental insight with cloud and analytics expertise to create measurable impact. From carbon tracking to ESG reporting, we empower businesses to innovate responsibly and achieve long-term resilience."
-  counters={[
-    { value: 80, suffix: "+", label: "Sustainability Projects Delivered" },
-    { value: 15, suffix: "+", label: "Industries Supported" },
-    { value: 98, suffix: "%", label: "Data Accuracy in Reporting" },
-    { value: 10, suffix: "+", label: "Years of Cloud Experience" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-leaf",
-      title: "Sustainability Expertise",
-      desc: "Our team blends environmental knowledge with Microsoft’s technology ecosystem to deliver tangible sustainability outcomes.",
-    },
-    {
-      icon: "fa-solid fa-chart-line",
-      title: "Data-Driven Transformation",
-      desc: "We leverage AI and analytics to provide transparent, actionable insights that drive operational efficiency and carbon reduction.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "Trusted Microsoft Partnership",
-      desc: "As a Microsoft Solutions Partner, NOVUM ensures seamless implementation, compliance, and ongoing optimization across your sustainability journey.",
-    },
-  ]}
-/>
-
-
-
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  
+</div>
 
 
 
