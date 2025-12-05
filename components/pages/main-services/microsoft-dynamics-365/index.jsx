@@ -4,6 +4,8 @@ import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import VideoHero from "@/components/data/services/VideoHero";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
@@ -148,7 +150,7 @@ const Dynamic365 = () => {
   title="A connected suite of intelligent business applications"
   highlightText="Dynamics 365"
   subtitle="Dynamics 365 integrates ERP, CRM, and AI capabilities to improve efficiency, enhance decision-making, and streamline operations"
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  bgImage="/assets/img/dynamics365/bg-dynamic365.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -185,6 +187,14 @@ const Dynamic365 = () => {
   />
 </div>
 
+
+<VideoHero
+  backgroundImage="/assets/img/dynamics365/365-cta2.webp"
+  overlayOpacity={0.65}
+  title="Empower your organisation with Dynamics 365"
+  description="Unify data, streamline operations, and accelerate digital transformation with intelligent business applications built for agility and growth."
+  videoUrl="/assets/img/dynamics365/d365video.mp4" // Replace with your video
+/>
 
 <UseCasesSection
   sectionId="use-cases"
@@ -232,6 +242,47 @@ const Dynamic365 = () => {
   </div>
 </section>
 
+
+<div id="getstarted">
+    <AIUseCaseGrid
+      title="Get Started with Dynamics 365"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-rocket-takeoff",
+          title: "Try for Free",
+          desc: "Experience Dynamics 365 business applications hands-on for 30 days.",
+          button: {
+            label: "Start a free trial",
+            link: "#"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-telephone-inbound",
+          title: "Contact Us",
+          desc: "Speak with a product expert for personalised guidance.",
+          button: {
+            label: "Get in touch",
+            link: "#"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-journal-bookmark",
+          title: "Learn More",
+          desc: "Browse documentation, tutorials, and best practices for using Dynamics 365.",
+          button: {
+            label: "Browse resources",
+            link: "#"
+          }
+        }
+      ]}
+    />
+</div>
 
       <SoftwareSolutionsSection
   title={
