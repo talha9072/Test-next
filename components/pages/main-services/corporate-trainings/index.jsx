@@ -9,9 +9,6 @@ import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
 import CourseDurationBox from "@/components/data/services/CourseDurationBox";
 import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
 import CTAPage from '@/components/data/services/CTAPage';
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -97,7 +94,7 @@ const Training = () => {
       primaryColor="#0d2b75"
       items={[
         {
-          image: "/assets/img/corporate-training/mct.jpg",
+          image: "/assets/img/corporate-training/tab-1.webp",
           title: "World-Class Microsoft Expertise",
           list: [
             "Led by Microsoft Certified Trainers (MCT)",
@@ -106,7 +103,7 @@ const Training = () => {
           ]
         },
         {
-          image: "/assets/img/corporate-training/enterprise-training.jpg",
+          image: "/assets/img/corporate-training/tab-2.webp",
           title: "Enterprise-Level Training Delivery",
           list: [
             "More than 500 professionals trained each year",
@@ -115,7 +112,7 @@ const Training = () => {
           ]
         },
         {
-          image: "/assets/img/corporate-training/microsoft-skills.jpg",
+          image: "/assets/img/corporate-training/tab-3.webp",
           title: "Microsoft Technology Training",
           list: [
             "Microsoft 365, Power Platform, Azure",
@@ -124,7 +121,7 @@ const Training = () => {
           ]
         },
         {
-          image: "/assets/img/corporate-training/data-analytics.jpg",
+          image: "/assets/img/corporate-training/tab-4.webp",
           title: "Data & Analytics Upskilling",
           list: [
             "Data literacy and reporting fundamentals",
@@ -133,7 +130,7 @@ const Training = () => {
           ]
         },
         {
-          image: "/assets/img/corporate-training/leadership.jpg",
+          image: "/assets/img/corporate-training/tab-5.webp",
           title: "Leadership & Productivity Training",
           list: [
             "Corporate communication and collaboration",
@@ -388,111 +385,6 @@ const Training = () => {
 </div>
 
 
-    <MainServices
-  id="services"
-  subtitle="Corporate Training Services"
-  title="Developing Skills That Drive Performance and Innovation"
-  description="NOVUM’s Corporate Training programs are designed to empower professionals with hands-on, high-impact learning experiences. Led by certified Microsoft experts and industry specialists, our sessions bridge the gap between theory and real-world application. From technical mastery to leadership growth, we deliver tailored training that enhances productivity, collaboration, and long-term organizational success."
-  image={{
-    src: "/assets/img/corporate-training/cooperate-2.webp",
-    alt: "Corporate Training and Workforce Development",
-  }}
-  services={[
-    {
-      title: "Microsoft Product Workshops",
-      desc: "Instructor-led sessions covering Power BI, Excel, Office 365, and more focused on practical, real-world business applications.",
-    },
-    {
-      title: "Train the Trainer Program",
-      desc: "Enable your internal trainers to deliver certified, impactful sessions aligned with Microsoft’s MCT and ISC standards.",
-    },
-    {
-      title: "Customized Corporate Learning",
-      desc: "Bespoke programs designed to match your organization’s industry, skill levels, and strategic goals.",
-    },
-    {
-      title: "Technical Skills Development",
-      desc: "Hands-on upskilling in areas like cloud computing, analytics, and digital transformation to future-proof your workforce.",
-    },
-    {
-      title: "Leadership & Communication Training",
-      desc: "Interactive workshops that strengthen leadership, teamwork, and communication across all departments.",
-    },
-    {
-      title: "Flexible Learning Formats",
-      desc: "Delivered online, on-site, or hybrid ensuring maximum participation and convenience for every team.",
-    },
-  ]}
-/>
-
-
-
-
-
-<ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How NOVUM’s Corporate Training Programs Elevate Workforce Performance"
-  description="Partnering with NOVUM helps organizations build stronger, more capable teams ready to meet modern business challenges. Our tailored training programs combine practical instruction, real-world applications, and continuous learning to enhance productivity, innovation, and overall employee engagement across all departments."
-  items={[
-    {
-      img: "/assets/img/corporate-training/tab-1.webp",
-      title: "Enhanced Employee Productivity",
-      desc: "Equip teams with the latest tools and techniques to streamline daily tasks, improve efficiency, and achieve business objectives faster.",
-    },
-    {
-      img: "/assets/img/corporate-training/tab-2.webp",
-      title: "Improved Technical Competence",
-      desc: "Strengthen your workforce’s expertise in Microsoft products, analytics, and emerging technologies through certified, hands-on training.",
-    },
-    {
-      img: "/assets/img/corporate-training/tab-3.webp",
-      title: "Stronger Collaboration & Communication",
-      desc: "Foster teamwork and knowledge-sharing across departments with training that improves communication and cross-functional cooperation.",
-    },
-    {
-      img: "/assets/img/corporate-training/tab-4.webp",
-      title: "Employee Retention & Growth",
-      desc: "Invest in your people with professional development opportunities that boost satisfaction, loyalty, and long-term retention.",
-    },
-    {
-      img: "/assets/img/corporate-training/tab-5.webp",
-      title: "Organizational Agility",
-      desc: "Build a flexible, future-ready workforce capable of adapting quickly to new technologies, processes, and business priorities.",
-    },
-  ]}
-/>
-
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Corporate Training"
-  description="NOVUM empowers organizations to upskill their teams through expert-led, hands-on corporate training designed for measurable results. Our certified instructors combine technical mastery with real-world experience to create learning experiences that enhance productivity, engagement, and long-term business success."
-  counters={[
-    { value: 500, suffix: "+", label: "Professionals Trained" },
-    { value: 25, suffix: "+", label: "Corporate Clients Served" },
-    { value: 98, suffix: "%", label: "Satisfaction Rate" },
-    { value: 10, suffix: "+", label: "Years of Training Expertise" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-chalkboard-user",
-      title: "Certified Microsoft Instructors",
-      desc: "Our trainers include Microsoft MVPs, MCTs, and industry-certified professionals with deep expertise in modern tools and technologies.",
-    },
-    {
-      icon: "fa-solid fa-users-gear",
-      title: "Tailored Learning Solutions",
-      desc: "Each program is customized to fit your business objectives, skill levels, and operational workflows for maximum relevance and impact.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "End-to-End Support",
-      desc: "From planning and scheduling to delivery and feedback, NOVUM ensures seamless coordination and measurable outcomes.",
-    },
-  ]}
-/>
 
 
 
