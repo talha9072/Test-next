@@ -23,20 +23,14 @@ export default function AIUseCaseGrid({
   const syncHeights = () => {
     let max = 0;
 
-    // Reset before recalculating
-    cardRefs.current.forEach((el) => {
-      if (el) el.style.height = "auto";
-    });
+    // Reset
+    cardRefs.current.forEach((el) => el && (el.style.height = "auto"));
 
-    // Find tallest
-    cardRefs.current.forEach((el) => {
-      if (el) max = Math.max(max, el.offsetHeight);
-    });
+    // Find tallest height
+    cardRefs.current.forEach((el) => el && (max = Math.max(max, el.offsetHeight)));
 
-    // Apply tallest height to all
-    cardRefs.current.forEach((el) => {
-      if (el) el.style.height = max + "px";
-    });
+    // Apply equal height
+    cardRefs.current.forEach((el) => el && (el.style.height = max + "px"));
   };
 
   useEffect(() => {
@@ -71,58 +65,76 @@ export default function AIUseCaseGrid({
         {subtitle && <p className="text-center text-muted mb-5">{subtitle}</p>}
 
         <div className="row g-4">
-          {items.map((card, idx) => (
-            <div key={idx} className={`${columnClass}`}>
-              <Reveal direction="fade" blur={true} delay={idx * 0.2} duration={1.3}>
-                <div
-                  className="premium-card equal-card p-4 rounded-4 bg-white"
-                  ref={(el) => (cardRefs.current[idx] = el)}
-                >
+          {items.map((card, idx) => {
+            
+            // ✔ FALLBACKS
+            const buttonLabel = card.button?.label || "Explore";
+            const buttonLink = card.button?.link || "/contact";
+
+            return (
+              <div key={idx} className={columnClass}>
+                <Reveal direction="fade" blur={true} delay={idx * 0.2} duration={1.3}>
+                  
+                  {/* FLEX COLUMN CARD */}
                   <div
-                    className="icon-wrapper mb-3"
-                    style={{
-                      width: "56px",
-                      height: "56px",
-                      borderRadius: "14px",
-                      background: "rgba(13,43,117,0.08)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
+                    className="premium-card equal-card p-4 rounded-4 bg-white d-flex flex-column"
+                    ref={(el) => (cardRefs.current[idx] = el)}
                   >
-                    {card.iconType === "bootstrap" && (
-                      <i
-                        className={card.icon}
-                        style={{ fontSize: "1.3rem", color: primaryColor }}
-                      ></i>
-                    )}
+                    {/* TOP CONTENT */}
+                    <div className="flex-grow-1">
+                      
+                      {/* ICON */}
+                      <div
+                        className="icon-wrapper mb-3"
+                        style={{
+                          width: "56px",
+                          height: "56px",
+                          borderRadius: "14px",
+                          background: "rgba(13,43,117,0.08)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        {card.iconType === "bootstrap" && (
+                          <i
+                            className={card.icon}
+                            style={{ fontSize: "1.3rem", color: primaryColor }}
+                          ></i>
+                        )}
 
-                    {card.iconType === "image" && (
-                      <Image
-                        src={card.icon}
-                        alt={card.title}
-                        width={32}
-                        height={32}
-                      />
-                    )}
-                  </div>
+                        {card.iconType === "image" && (
+                          <Image src={card.icon} alt={card.title} width={32} height={32} />
+                        )}
+                      </div>
 
-                  <h5 className="fw-bold mb-2" style={{ color: primaryColor }}>
-                    {card.title}
-                  </h5>
+                      {/* TITLE */}
+                      <h5 className="fw-bold mb-2" style={{ color: primaryColor }}>
+                        {card.title}
+                      </h5>
 
-                  <p className="text-muted">{card.desc}</p>
-
-                  <a href={card.link} className="dtc-cta mt-3 d-inline-flex align-items-center gap-2 fw-semibold">
-                    <div className="dtc-cta-arrow">
-                      <i className="bi bi-arrow-right"></i>
+                      {/* DESCRIPTION */}
+                      <p className="text-muted">{card.desc}</p>
                     </div>
-                    Explore
-                  </a>
-                </div>
-              </Reveal>
-            </div>
-          ))}
+
+                    {/* CTA BUTTON ALWAYS AT BOTTOM */}
+                    <div className="mt-3">
+                      <a
+                        href={buttonLink}
+                        className="dtc-cta d-inline-flex align-items-center gap-2 fw-semibold"
+                      >
+                        <div className="dtc-cta-arrow">
+                          <i className="bi bi-arrow-right"></i>
+                        </div>
+
+                        {buttonLabel}
+                      </a>
+                    </div>
+                  </div>
+                </Reveal>
+              </div>
+            );
+          })}
         </div>
       </div>
 

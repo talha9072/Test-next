@@ -6,10 +6,6 @@ import UseCasesSection from "@/components/data/services/UseCasesSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import VideoHero from "@/components/data/services/VideoHero";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -156,9 +152,9 @@ const Dynamic365 = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "Product Demos", href: "#product" },
+    { label: "Get Started", href: "#getstarted" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -196,6 +192,8 @@ const Dynamic365 = () => {
   videoUrl="/assets/img/dynamics365/d365video.mp4" // Replace with your video
 />
 
+
+<div id="capabilities">
 <UseCasesSection
   sectionId="use-cases"
   backgroundStyle="#e5f1ff"
@@ -229,9 +227,10 @@ const Dynamic365 = () => {
     }
   ]}
 />
+</div>
 
 
-<section className="dynamics-section py-5">
+<section className="dynamics-section py-5" id="product">
   <div className="container">
     <h2 className="section-title text-center mb-4">Do more with Dynamics 365 and AI</h2>
     <p className="section-desc text-center">
@@ -257,7 +256,7 @@ const Dynamic365 = () => {
           desc: "Experience Dynamics 365 business applications hands-on for 30 days.",
           button: {
             label: "Start a free trial",
-            link: "#"
+            link: "https://www.microsoft.com/en/dynamics-365/"
           }
         },
         {
@@ -267,7 +266,7 @@ const Dynamic365 = () => {
           desc: "Speak with a product expert for personalised guidance.",
           button: {
             label: "Get in touch",
-            link: "#"
+            link: "/contact"
           }
         },
         {
@@ -277,151 +276,51 @@ const Dynamic365 = () => {
           desc: "Browse documentation, tutorials, and best practices for using Dynamics 365.",
           button: {
             label: "Browse resources",
-            link: "#"
+            link: "https://learn.microsoft.com/en-us/dynamics365/"
           }
         }
       ]}
     />
 </div>
 
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Microsoft Dynamics 365 Is
-      Transforming Modern Enterprises
-    </>
-  }
-  paragraphs={[
-    "In today’s digital economy, organizations need connected, intelligent systems that drive collaboration and insight across every department. Microsoft Dynamics 365 delivers exactly that a unified platform that integrates CRM and ERP capabilities under one powerful cloud ecosystem.",
-    "By connecting finance, sales, operations, and customer service data, Dynamics 365 enables real-time visibility, predictive decision-making, and seamless automation. It eliminates silos, enhances productivity, and creates a single version of truth across the enterprise.",
-  ]}
-  imageSrc="/assets/img/dynamics365/dynamics-1.webp"
-  altText="Microsoft Dynamics 365 Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
-/>
+      
         
-     <MainServices
-  id="services"
-  subtitle="Dynamics 365 Services"
-  title="Empowering Businesses with Unified, Intelligent, and Scalable Solutions"
-  description="NOVUM helps organizations deploy, customize, and scale Microsoft Dynamics 365 applications to streamline operations and improve decision-making. From CRM and ERP integration to automation and AI insights, we enable enterprises to unify data, enhance collaboration, and accelerate growth on a single cloud platform. Our certified consultants ensure every implementation delivers measurable value, efficiency, and innovation."
-  image={{
-    src: "/assets/img/dynamics365/dynamics-3.webp",
-    alt: "Microsoft Dynamics 365 Architecture",
-  }}
-  services={[
-    {
-      title: "Implementation & Deployment",
-      desc: "Seamless end-to-end implementation of Dynamics 365 modules — tailored to your business processes and goals.",
-    },
-    {
-      title: "Customization & Integration",
-      desc: "Integrating Dynamics 365 with Power BI, Azure, and third-party systems to create a unified digital ecosystem.",
-    },
-    {
-      title: "CRM & ERP Modernization",
-      desc: "Upgrading legacy systems to modern, cloud-based Dynamics 365 environments for enhanced performance and flexibility.",
-    },
-    {
-      title: "Process Automation",
-      desc: "Leveraging Power Automate and AI capabilities to automate manual tasks, streamline workflows, and reduce costs.",
-    },
-    {
-      title: "User Training & Adoption",
-      desc: "Ensuring successful platform adoption through tailored training, user enablement, and continuous support programs.",
-    },
-    {
-      title: "Managed Services & Support",
-      desc: "Providing proactive maintenance, updates, and optimization to keep your Dynamics 365 environment secure and efficient.",
-    },
-  ]}
-/>
+    
 
 
-      <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How Dynamics 365 Accelerates Business Transformation"
-  description="Microsoft Dynamics 365 connects data, operations, and intelligence across every department. With NOVUM’s implementation expertise, businesses gain the agility to adapt quickly, improve productivity, and make smarter, faster decisions through an integrated digital platform."
-  items={[
-    {
-      img: "/assets/img/dynamics365/tab-1.webp",
-      title: "End-to-End Process Automation",
-      desc: "Automate workflows across sales, service, finance, and operations to eliminate manual tasks and boost efficiency.",
-    },
-    {
-      img: "/assets/img/dynamics365/tab-2.png",
-      title: "Predictive Forecasting",
-      desc: "Leverage AI-powered insights to forecast demand, manage pipelines, and optimize supply chain performance.",
-    },
-    {
-      img: "/assets/img/dynamics365/tab-3.webp",
-      title: "Unified Customer Insights",
-      desc: "Combine CRM and ERP data to get a 360° view of customers, enabling personalization and stronger engagement.",
-    },
-    {
-      img: "/assets/img/dynamics365/tab-4.webp",
-      title: "Increased Workforce Productivity",
-      desc: "Empower teams with connected apps, guided workflows, and automation that reduce friction in daily operations.",
-    },
-    {
-      img: "/assets/img/dynamics365/tab-5.png",
-      title: "Native Microsoft Integration",
-      desc: "Work seamlessly across Microsoft 365, Teams, and Power Platform for a unified business experience.",
-    },
-  ]}
-/>
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose NOVUM as Your Microsoft Dynamics 365 Partner"
-  description="NOVUM helps businesses unlock the full potential of Microsoft Dynamics 365 by combining deep product knowledge with real-world industry experience. Our certified consultants ensure seamless implementation, rapid adoption, and measurable ROI across every stage of your digital transformation."
-  counters={[
-    { value: 30, suffix: "+", label: "Dynamics 365 Deployments" },
-    { value: 10, suffix: "+", label: "Industries Served" },
-    { value: 95, suffix: "%", label: "Client Retention Rate" },
-    { value: 8, suffix: "+", label: "Years of Microsoft Partnership" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-handshake",
-      title: "Certified Microsoft Partner",
-      desc: "Recognized for delivering enterprise-grade implementations and ongoing solution optimization.",
-    },
-    {
-      icon: "fa-solid fa-gears",
-      title: "Tailored Business Solutions",
-      desc: "Customizing Dynamics 365 modules to align perfectly with your organization’s structure and objectives.",
-    },
-    {
-      icon: "fa-solid fa-brain",
-      title: "AI-Driven Optimization",
-      desc: "Integrating Power Platform and AI tools to enhance forecasting, automation, and business intelligence.",
-    },
-  ]}
-/>
-
-
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
-
+    />
+  
+</div>
 
 
       <OtherServices
