@@ -1,10 +1,12 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import CTAPage from '@/components/data/services/CTAPage';
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -22,165 +24,263 @@ const Ai = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Artificial Intelligence & IoT Solutions"
-  title="Transforming the Future with AI and IoT"
+  serviceName="Artificial Intelligence & IoT"
+  title="AI-Driven Insights and Intelligent Device Integration"
   highlightText="AI & IoT"
-  subtitle="Harness AI and IoT to turn automation into advantage."
-  bgImage="/assets/img/power-bi/bg-ai.png"
+  subtitle="Novum leverages Microsoft Cognitive Services to develop smart applications, automate workflows, recognise patterns, and connect IoT hardware for real-time and predictive operations."
+  bgImage="/assets/img/ai/ai-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
     { label: "Overview", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Use Cases", href: "#usecases" },
+    { label: "IOT", href: "#iot" },
+    { label: "IOT Value", href: "#iot-value" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
 
- 
+<div id="about">
+<OverviewComponent
+  title="AI & IoT Solutions Built for Real-World Impact"
+  primaryColor="#0d2b75"
+  backgroundType="color"
+  backgroundColor="#e5f1ff"
 
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why AI and IoT Are Revolutionizing
-      Modern Business Operations
-    </>
-  }
   paragraphs={[
-    "Artificial Intelligence and the Internet of Things are reshaping how businesses operate automating tasks, predicting outcomes, and enabling real time decision-making across every department.",
-    "By connecting devices, sensors, and data through intelligent systems, organizations can unlock valuable insights, reduce downtime, and enhance productivity with smarter workflows.",
-    "NOVUM’s AI and IoT solutions empower enterprises to move from reactive to predictive operations driving efficiency, innovation, and competitive advantage in a connected world.",
+    "Novum delivers AI and IoT solutions powered by Microsoft Cognitive Services and industry technologies such as TensorFlow, Python, and OpenCV. We develop production-ready machine learning models, computer vision systems, and intelligent automation workflows that improve operational performance.",
+    "Our IoT capabilities enable organisations to connect devices, monitor assets, enhance visibility, and support predictive maintenance across critical operations."
+  ]}
+
+  listItems={[
+    "Analyse large and complex datasets to uncover actionable insights",
+    "Automate repetitive or high-risk workflows for greater efficiency",
+    "Recognise patterns using ML and computer vision models",
+    "Improve forecasting accuracy across operations",
+    "Support predictive maintenance through connected IoT data",
+    
+  ]}
+/>
+</div> 
+
+<div id="services">
+<PricingCardsSection
+    sectionId="ai-services"
+    subtitle="Services"
+    backgroundImage="/assets/img/azure/bg-azure-2.png"
+    title="Our AI Development Services"
+    intro="Novum designs and deploys intelligent AI and IoT solutions that enhance operational efficiency, automate workflows, and unlock new business value through data-driven innovation."
+    primaryColor="#0d2b75"
+    cards={[
+
+      {
+        title: "Machine Learning Development",
+        desc: "Custom ML models built to identify patterns, forecast outcomes, and convert unstructured data into actionable intelligence.",
+        list: [
+          "Predictive analytics and forecasting",
+          "Classification, clustering, and anomaly detection",
+          "Model training, optimisation, and deployment"
+        ]
+      },
+
+      {
+        title: "Computer Vision Solutions",
+        desc: "Advanced recognition systems for images, objects, and faces built using deep learning and modern vision frameworks.",
+        list: [
+          "Face and object detection",
+          "Visual search and product recognition",
+          "Image classification and automated inspection"
+        ]
+      },
+
+      {
+        title: "Business Intelligence Automation",
+        desc: "AI-powered automation integrated with dashboards, KPIs, and operational systems to streamline decision-making.",
+        list: [
+          "Real-time performance analytics",
+          "Behavioural and trend modelling",
+          "Automated reporting and insight generation"
+        ]
+      },
+
+      {
+        title: "Conversational AI & Chatbots",
+        desc: "Human-like conversational systems designed to improve customer support, internal operations, and personalised engagement.",
+        list: [
+          "AI chatbots and virtual assistants",
+          "Natural language understanding (NLU)",
+          "Omni-channel support automation"
+        ],
+        cta: "Talk to Us",
+        link: "#"
+      }
+
+    ]}
+  />
+  </div>
+
+<div id="usecases">
+  <AIUseCaseGrid
+      title="AI & IoT Solutions Tailored for Every Industry"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-bag-check",
+          title: "Retail",
+          desc: "Enhance customer behaviour insights, improve inventory accuracy, automate checkout experiences, and deliver personalised product recommendations using AI-driven intelligence.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-heart-pulse",
+          title: "Healthcare",
+          desc: "Optimise patient data management, support diagnostics with AI models, and streamline care delivery through automated decision support systems.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-truck",
+          title: "Supply Chain & Logistics",
+          desc: "Improve forecasting accuracy, automate manual operational tasks, and eliminate inefficiencies with real-time AI-powered analytics.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-cpu",
+          title: "Manufacturing",
+          desc: "Enable predictive maintenance, monitor production lines, detect anomalies, and enhance equipment performance with integrated AI + IoT solutions.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-bank",
+          title: "Finance",
+          desc: "Automate risk analysis, detect fraud, strengthen compliance monitoring, and leverage real-time AI insights for fast, accurate decision-making.",
+          link: "#",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-globe2",
+          title: "Enterprise Operations",
+          desc: "Support workforce efficiency, optimise workflows, and drive operational intelligence across all departments using connected AI systems.",
+          link: "#",
+        }
+      ]}
+    />
+    </div>
+
+<div id="iot">
+      <SoftwareSolutionsSection
+  title={<>What Is IoT (Internet of Things)?</>}
+  paragraphs={[
+    "The Internet of Things (IoT) connects physical devices such as sensors, vehicles, machinery, and equipment to the internet so they can collect, exchange, and analyse data in real time.",
+    "IoT gives organisations greater visibility into their operations by enabling remote monitoring, automated processes, and intelligent device-to-device communication.",
+    "With a connected infrastructure, businesses can optimise performance, reduce downtime, improve resource utilisation, and integrate physical assets directly into digital ecosystems."
   ]}
   imageSrc="/assets/img/ai/ai-main.png"
   altText="AI and IoT Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
-        
-      <MainServices
-  id="services"
-  subtitle="AI and IoT Services"
-  title="Intelligent, Connected, and Scalable Solutions for the Future"
-  description="NOVUM designs and deploys AI and IoT ecosystems that merge data intelligence with real world operations. From predictive analytics to connected device automation, our solutions help organizations enhance productivity, reduce costs, and unlock new opportunities through intelligent transformation."
-  image={{
-    src: "/assets/img/ai/ai-main2.png",
-    alt: "AI and IoT Systems",
-  }}
-  services={[
-    {
-      title: "Machine Learning Development",
-      desc: "Custom AI models for forecasting, recommendation engines, anomaly detection, and intelligent automation.",
-    },
-    {
-      title: "Computer Vision Integration",
-      desc: "Deploying smart vision systems for object detection, facial recognition, and real time visual insights.",
-    },
-    {
-      title: "IoT Connectivity & Sensors",
-      desc: "Integrating sensors, controllers, and smart devices to collect and analyze live operational data.",
-    },
-    {
-      title: "Edge & Cloud Intelligence",
-      desc: "Building distributed architectures that process data instantly on the edge or in the cloud for faster decisions.",
-    },
-    {
-      title: "Process Automation",
-      desc: "Automating workflows and optimizing resources using AI-driven decision logic and IoT-triggered actions.",
-    },
-    {
-      title: "Predictive Maintenance",
-      desc: "Using connected systems and analytics to predict equipment failures before they happen, minimizing downtime.",
-    },
-  ]}
+</div>
+
+<CTAPage
+  title="Accelerate innovation with AI and IoT"
+  description="Leverage AI, machine learning, and IoT integration to optimise workflows, enhance visibility, and drive smarter decision-making"
+  buttonLabel="Get Started"
+  buttonLink="/contact"
+  backgroundType="image"
+  backgroundImage="/assets/img/ai/bg-cta-ai.png"
+  textColor="#ffffff"
+  sectionClass="py-7"
+  overlayOpacity={0.65}
 />
 
 
-      <ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How AI and IoT Empower Intelligent and Connected Operations"
-  description="Implementing AI and IoT solutions enables organizations to move beyond traditional automation toward predictive, adaptive, and self optimizing systems. NOVUM helps enterprises integrate intelligence into every layer of their business for faster decisions and sustainable growth."
-  items={[
-    {
-      img: "/assets/img/ai/predictive.jpg",
-      title: "Predictive Intelligence",
-      desc: "Use AI models to forecast trends, detect anomalies, and proactively address operational challenges.",
-    },
-    {
-      img: "/assets/img/ai/insights.jpg",
-      title: "Real-Time Insights",
-      desc: "Leverage IoT sensors and edge analytics to monitor assets, performance, and conditions in real time.",
-    },
-    {
-      img: "/assets/img/ai/resource.jpg",
-      title: "Smarter Resource Utilization",
-      desc: "Reduce energy consumption, maintenance costs, and downtime through intelligent process automation.",
-    },
-    {
-      img: "/assets/img/ai/adaptive.jpg",
-      title: "Adaptive Scalability",
-      desc: "Easily expand your AI and IoT network as data volumes and connected devices grow without complexity.",
-    },
-    {
-      img: "/assets/img/ai/secure.jpg",
-      title: "Secure & Compliant Infrastructure",
-      desc: "Built on enterprise-grade frameworks like Microsoft Azure to ensure data privacy, governance, and reliability.",
-    },
-  ]}
-/>
-   
-     <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Choose NOVUM as Your AI and IoT Partner"
-  description="NOVUM combines expertise in artificial intelligence, machine learning, and IoT integration to deliver solutions that drive automation, intelligence, and measurable business impact. We help organizations connect devices, data, and decisions into one cohesive ecosystem built for performance and scalability."
-  counters={[
-    { value: 25, suffix: "+", label: "AI & IoT Projects Delivered" },
-    { value: 10, suffix: "+", label: "Industries Served" },
-    { value: 100, suffix: "%", label: "Client Retention Rate" },
-    { value: 8, suffix: "+", label: "Years of Experience" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-robot",
-      title: "AI Expertise",
-      desc: "End-to-end experience in building and deploying machine learning and intelligent automation systems.",
-    },
-    {
-      icon: "fa-solid fa-network-wired",
-      title: "IoT Integration",
-      desc: "Connecting sensors, devices, and applications through secure, cloud-enabled architectures.",
-    },
-    {
-      icon: "fa-solid fa-bolt",
-      title: "Innovation & Scalability",
-      desc: "We deliver flexible solutions that grow with your data, users, and connected infrastructure.",
-    },
-  ]}
-/>
+<div id="iot-value">
+<InnovationsRoadmapSection
+    sectionId="iot-value"
+    backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
+    subtitle="IOT VALUE"
+    title="How IoT Creates Value Across Your Organisation"
+    intro="IoT enables real-time monitoring of materials, equipment, assets, production, and distribution—while AI enhances automation, predictive insights, and operational optimisation across the entire business."
+    primaryColor="#0d2b75"
+    sectionClass = "py-5 position-relative"
+    items={[
+      {
+        icon: "bi-graph-up",
+        title: "Operational Data Visibility",
+        desc: "Access real-time insights from equipment, supply chains, workplaces, and environmental sensors to improve decision-making."
+      },
+      {
+        icon: "bi-people",
+        title: "Deeper Customer Understanding",
+        desc: "Analyse behaviour, demand patterns, and usage metrics to enhance products, services, and engagement strategies."
+      },
+      {
+        icon: "bi-box-seam",
+        title: "Inventory & Flow Optimisation",
+        desc: "Track and optimise inventory levels with intelligent monitoring across distribution and fulfilment networks."
+      },
+      {
+        icon: "bi-robot",
+        title: "Lower Operational Costs",
+        desc: "Reduce manual effort and eliminate downtime through automation, intelligent workflows, and predictive operations."
+      },
+      {
+        icon: "bi-speedometer2",
+        title: "Real-Time Monitoring & Control",
+        desc: "Get accurate, instant visibility into asset performance and operational health from any location."
+      },
+      {
+        icon: "bi-broadcast",
+        title: "Stronger Remote Operations",
+        desc: "Enhance workforce and equipment management through connected devices and secure remote monitoring capabilities."
+      }
+    ]}
+  />
+    </div>    
+      
 
 
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  
+</div>
 
 
 
