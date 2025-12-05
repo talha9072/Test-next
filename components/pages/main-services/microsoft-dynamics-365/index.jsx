@@ -45,27 +45,41 @@ const tabsData = [
     title: "Personalise engagement with intelligent insights",
     description:
       "Dynamics 365 Marketing helps organisations create personalised journeys, automate multi-channel campaigns, and improve conversions through AI-powered segmentation and real-time analytics.",
-    bottomLabel: "Dynamics 365 Marketing",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
+    bullets: [
+    "Create tailored customer journeys with behaviour-based triggers and AI-driven segmentation.",
+    "Automate email, SMS, social, and event campaigns from a single, unified marketing platform."
+  ],
+      bottomLabel: "Dynamics 365 Marketing",
+    bottomLogo: "/assets/img/dynamics365/d365-marketing.png",
     images: [
-      "/assets_v2/images/slider/marketing-1.png",
-      "/assets_v2/images/slider/marketing-2.png"
+      "/assets/img/dynamics365/marketing-1.png",
+      "/assets/img/dynamics365/marketing-2.png",
+      "/assets/img/dynamics365/marketing-3.png"
     ]
   },
 
   {
-    label: "Customer Service",
-    title: "Earn customers for life with connected service experiences",
-    description:
-      "Dynamics 365 Customer Service delivers consistent, high-quality support through AI-assisted case resolution, unified knowledge access, and omnichannel engagement tools.",
-    bottomLabel: "Dynamics 365 Customer Service",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
-    images: [
-      "/assets_v2/images/slider/customerservice-1.png",
-      "/assets_v2/images/slider/customerservice-2.png",
-      "/assets_v2/images/slider/customerservice-3.png"
-    ]
-  },
+  label: "Customer Service",
+  title: "Earn customers for life with connected service experiences",
+  description:
+    "Dynamics 365 Customer Service delivers consistent, high-quality support through AI-assisted case resolution, unified knowledge access, and omnichannel engagement tools.",
+
+  bullets: [
+    "Empower agents with AI-driven recommendations, guided workflows, and real-time knowledge insights.",
+    "Deliver seamless, personalised support across chat, email, voice, social, and self-service portals."
+  ],
+
+  bottomLabel: "Dynamics 365 Customer Service",
+  bottomLogo: "/assets/img/dynamics365/d365-customer.png",
+
+  images: [
+    "/assets/img/dynamics365/customerservice-1.png",
+    "/assets/img/dynamics365/customerservice-2.png",
+    "/assets/img/dynamics365/customerservice-3.png",
+    "/assets/img/dynamics365/customerservice-4.png",
+    "/assets/img/dynamics365/customerservice-5.png"
+  ]
+},
 
   {
     label: "Field Service",
