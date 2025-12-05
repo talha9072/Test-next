@@ -1,6 +1,9 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import UseCasesSection from "@/components/data/services/UseCasesSection";
+import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
@@ -13,6 +16,87 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
+const tabsData = [
+  {
+    label: "Sales",
+    title: "Close more deals with AI assistance",
+    description:
+      "Dynamics 365 Sales empowers teams to build stronger customer relationships, understand intent, and accelerate revenue with guided selling, AI insights, and real-time pipeline visibility.",
+    bottomLabel: "Dynamics 365 Sales",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/sales-1.png",
+      "/assets_v2/images/slider/sales-2.png",
+      "/assets_v2/images/slider/sales-3.png"
+    ]
+  },
+
+  {
+    label: "Marketing",
+    title: "Personalise engagement with intelligent insights",
+    description:
+      "Dynamics 365 Marketing helps organisations create personalised journeys, automate multi-channel campaigns, and improve conversions through AI-powered segmentation and real-time analytics.",
+    bottomLabel: "Dynamics 365 Marketing",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/marketing-1.png",
+      "/assets_v2/images/slider/marketing-2.png"
+    ]
+  },
+
+  {
+    label: "Customer Service",
+    title: "Earn customers for life with connected service experiences",
+    description:
+      "Dynamics 365 Customer Service delivers consistent, high-quality support through AI-assisted case resolution, unified knowledge access, and omnichannel engagement tools.",
+    bottomLabel: "Dynamics 365 Customer Service",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/customerservice-1.png",
+      "/assets_v2/images/slider/customerservice-2.png",
+      "/assets_v2/images/slider/customerservice-3.png"
+    ]
+  },
+
+  {
+    label: "Field Service",
+    title: "Deliver intelligent, predictive field operations",
+    description:
+      "Dynamics 365 Field Service enables proactive maintenance, optimised technician scheduling, and connected on-site experiences—powered by IoT insights and AI-driven recommendations.",
+    bottomLabel: "Dynamics 365 Field Service",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/field-1.png",
+      "/assets_v2/images/slider/field-2.png"
+    ]
+  },
+
+  {
+    label: "Supply Chain",
+    title: "Build a resilient, sustainable supply chain",
+    description:
+      "Dynamics 365 Supply Chain Management provides real-time visibility, predictive planning, connected logistics, and optimisation tools that help organisations operate efficiently and sustainably.",
+    bottomLabel: "Dynamics 365 Supply Chain Management",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/supply-1.png",
+      "/assets_v2/images/slider/supply-2.png"
+    ]
+  },
+
+  {
+    label: "Finance",
+    title: "Maximise financial visibility and profitability",
+    description:
+      "Dynamics 365 Finance helps organisations reduce financial risk, improve accuracy, automate reporting, and shift from transactional operations to predictive, insight-driven finance.",
+    bottomLabel: "Dynamics 365 Finance",
+    bottomLogo: "/assets_v2/images/d365logo.svg",
+    images: [
+      "/assets_v2/images/slider/finance-1.png",
+      "/assets_v2/images/slider/finance-2.png"
+    ]
+  }
+];
 
 
 const Dynamic365 = () => {
@@ -22,12 +106,11 @@ const Dynamic365 = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Microsoft Dynamics 365 Solutions"
-  title="Empower Your Business with Unified Intelligence"
+  serviceName="Dynamics 365"
+  title="A connected suite of intelligent business applications"
   highlightText="Dynamics 365"
-  subtitle="Streamline processes and enhance customer experiences with Dynamics 365."
+  subtitle="Dynamics 365 integrates ERP, CRM, and AI capabilities to improve efficiency, enhance decision-making, and streamline operations"
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/dynamics365/dynamics-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -41,6 +124,75 @@ const Dynamic365 = () => {
   ]}
 />
  
+<div id="about">
+  <OverviewComponent
+    title="What Is Dynamics 365?"
+    primaryColor="#0d2b75"
+    backgroundType="color"
+    backgroundColor="#e5f1ff"
+
+    paragraphs={[
+      "Dynamics 365 is a unified suite of intelligent business applications that helps organisations streamline operations, improve customer experiences, and make smarter decisions through real-time visibility.",
+      "Bringing together ERP, CRM, and AI-powered insights, Dynamics 365 enables teams to adapt quickly, enhance agility, and reduce operational complexity without increasing costs.",
+      "With powerful automation and connected workflows, businesses can deliver more value in less time empowering every team to create impact faster and delight customers every day."
+    ]}
+
+    listItems={[
+      "Unified ERP and CRM platform powered by Microsoft AI",
+      "Real-time insights that improve decision-making across the organisation",
+      "Flexible workflows that reduce complexity and support faster innovation",
+      "Tools that enhance customer experiences at scale",
+      "A connected ecosystem that helps teams create impact faster"
+    ]}
+  />
+</div>
+
+
+<UseCasesSection
+  sectionId="use-cases"
+  backgroundStyle="#e5f1ff"
+  primaryColor="#0d2b75"
+  subtitle="CAPABILITIES"
+  title="Modern Capabilities That Accelerate Business Performance"
+  intro="Dynamics 365 empowers organisations with modular applications, unified workflows, and rapid deployment tools that enhance operational agility and business outcomes."
+  
+  tabs={[
+    {
+      items: [
+        {
+          title: "Modular, Prebuilt Applications",
+          desc: "Easily extend Dynamics 365 with scalable components designed to integrate, evolve, and grow with your organisation.",
+          image: "/assets/img/dynamics365/dynamics-1.webp",
+          cta: "Explore",
+        },
+        {
+          title: "Connected End-to-End Workflows",
+          desc: "Unify sales, marketing, operations, finance, and supply chain through seamless cross-system workflows that eliminate silos and boost performance.",
+          image: "/assets/img/dynamics365/dynamics-1.webp",
+          cta: "Explore",
+        },
+        {
+          title: "Rapid Deployment & Onboarding",
+          desc: "Leverage low-code and no-code tools to deploy new applications quickly, streamline onboarding, and accelerate value across teams.",
+          image: "/assets/img/dynamics365/dynamics-1.webp",
+          cta: "Explore",
+        },
+      ],
+    }
+  ]}
+/>
+
+
+<section className="dynamics-section py-5">
+  <div className="container">
+    <h2 className="section-title text-center mb-4">Do more with Dynamics 365 and AI</h2>
+    <p className="section-desc text-center">
+      See how AI enhances Dynamics 365 applications to give every team—from sales to operations—an intelligent edge.
+    </p>
+
+    <DynamicsTabs tabs={tabsData} />
+  </div>
+</section>
 
 
       <SoftwareSolutionsSection
