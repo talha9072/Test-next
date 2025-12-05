@@ -157,13 +157,11 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
 
       <style jsx>{`
         .dyn-title {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 600;
         }
         .dyn-desc {
-          font-size: 1rem;
-          line-height: 1.6;
-          color: #414141;
+          color: #737373;
         }
 
         .dyn-bullets {

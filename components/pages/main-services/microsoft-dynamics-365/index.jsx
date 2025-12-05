@@ -74,10 +74,10 @@ const tabsData = [
 
   images: [
     "/assets/img/dynamics365/customerservice-1.png",
-    "/assets/img/dynamics365/customerservice-2.png",
-    "/assets/img/dynamics365/customerservice-3.png",
-    "/assets/img/dynamics365/customerservice-4.png",
-    "/assets/img/dynamics365/customerservice-5.png"
+     "/assets/img/dynamics365/customerservice-2.png",
+      "/assets/img/dynamics365/customerservice-3.png",
+       "/assets/img/dynamics365/customerservice-4.png",
+        "/assets/img/dynamics365/customerservice-5.png"
   ]
 },
 
@@ -86,11 +86,16 @@ const tabsData = [
     title: "Deliver intelligent, predictive field operations",
     description:
       "Dynamics 365 Field Service enables proactive maintenance, optimised technician scheduling, and connected on-site experiences—powered by IoT insights and AI-driven recommendations.",
-    bottomLabel: "Dynamics 365 Field Service",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
+    bullets: [
+  "Automatically assign the right technician with smart, skills-based scheduling.",
+  "Improve first-time fix rates using guided work orders and real-time asset insights."
+],
+      bottomLabel: "Dynamics 365 Field Service",
+    bottomLogo: "/assets/img/dynamics365/d365-field.png",
     images: [
-      "/assets_v2/images/slider/field-1.png",
-      "/assets_v2/images/slider/field-2.png"
+       "/assets/img/dynamics365/fieldservice-1.png",
+    "/assets/img/dynamics365/fieldservice-2.png",
+    "/assets/img/dynamics365/fieldservice-3.png",
     ]
   },
 
@@ -99,11 +104,18 @@ const tabsData = [
     title: "Build a resilient, sustainable supply chain",
     description:
       "Dynamics 365 Supply Chain Management provides real-time visibility, predictive planning, connected logistics, and optimisation tools that help organisations operate efficiently and sustainably.",
-    bottomLabel: "Dynamics 365 Supply Chain Management",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
+    bullets: [
+  "Enhance demand forecasting with AI-driven planning and real-time supply insights.",
+  "Streamline warehouse, production, and logistics operations through automation and connected workflows."
+],
+      bottomLabel: "Dynamics 365 Supply Chain Management",
+    bottomLogo: "/assets/img/dynamics365/dynamic365-supplychain.png",
     images: [
-      "/assets_v2/images/slider/supply-1.png",
-      "/assets_v2/images/slider/supply-2.png"
+      "/assets/img/dynamics365/supplychain-1.png",
+      "/assets/img/dynamics365/supplychain-2.png",
+      "/assets/img/dynamics365/supplychain-3.png",
+      "/assets/img/dynamics365/supplychain-4.png",
+      "/assets/img/dynamics365/supplychain-5.png",
     ]
   },
 
@@ -112,11 +124,14 @@ const tabsData = [
     title: "Maximise financial visibility and profitability",
     description:
       "Dynamics 365 Finance helps organisations reduce financial risk, improve accuracy, automate reporting, and shift from transactional operations to predictive, insight-driven finance.",
-    bottomLabel: "Dynamics 365 Finance",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
+    bullets: [
+  "Automate financial processes with AI-assisted reporting, reconciliation, and compliance workflows.",
+  "Gain real-time visibility into cash flow, budgets, and performance to support faster, data-driven decisions."
+],
+      bottomLabel: "Dynamics 365 Finance",
+    bottomLogo: "/assets/img/dynamics365/dynamic365-finance.png",
     images: [
-      "/assets_v2/images/slider/finance-1.png",
-      "/assets_v2/images/slider/finance-2.png"
+      "/assets/img/dynamics365/finance-1.png",
     ]
   }
 ];
