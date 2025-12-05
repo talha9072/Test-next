@@ -6,6 +6,8 @@ import UseCasesSection from "@/components/data/services/UseCasesSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import VideoHero from "@/components/data/services/VideoHero";
+import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
+import BulletPoints from "@/components/data/services/bulletpoints";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -155,6 +157,8 @@ const Dynamic365 = () => {
     { label: "Capabilities", href: "#capabilities" },
     { label: "Product Demos", href: "#product" },
     { label: "Get Started", href: "#getstarted" },
+    { label: "Advantage", href: "#advantage" },
+    { label: "ERP", href: "#erp" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -283,10 +287,55 @@ const Dynamic365 = () => {
     />
 </div>
 
-      
-        
+    <div id="advantage">
+ <MicrosoftBannerStats
+      title="Get advantage over competition"
+      subtitle=""
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #ffffff, #fff)"
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-graph-up-arrow",
+          title: "60% reduction in reporting time",
+          desc: "Achieve faster insights with unified and automated reporting across departments.",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-arrow-repeat",
+          title: "51.5% improvement in supply chain efficiency",
+          desc: "Optimise operations with predictive planning and end-to-end visibility.",
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-lightning-charge",
+          title: "Up to 55% increase in finance team productivity",
+          desc: "Empower finance teams with automation, real-time data, and streamlined workflows.",
+        },
+      ]}
+    />  
+    </div>       
     
 
+<div id="erp" style={{ backgroundColor: "#e5f1ff" }}>
+    <BulletPoints
+      sectionId="overview"
+      title={<>How we help modernise your ERP system</>}
+      paragraphs={[
+        "Organisations are under pressure to modernise legacy ERP systems to improve scalability, flexibility, and resilience. Our modernisation approach enables seamless migration and transformation while aligning technology with business growth."
+      ]}
+      extraParagraph="We help enterprises transition from rigid legacy systems to intelligent, cloud-powered ERP platforms that support real-time insight, operational efficiency, and connected experiences."
+      bulletPoints={[
+        "Migrate to the cloud with confidence",
+        "Enhance business model transformation",
+        "Improve operational speed and data accuracy",
+        "Connect people, processes, and systems under one intelligent platform"
+      ]}
+      imageSrc="/assets/img/dynamics365/erpimage.png"
+      altText="ERP Modernisation Services"
+      sectionClass="position-relative overflow-hidden py-7"
+    />
+</div>
 
 <div id="testimonials">
     <Testimonials
