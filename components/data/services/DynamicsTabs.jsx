@@ -8,11 +8,15 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
 
+  /* ------------------------------
+     TRUE FIX: Update arrow state
+     after ANY layout change
+  ------------------------------ */
   const updateScrollState = () => {
     const el = scrollRef.current;
     if (!el) return;
 
-    const hasOverflow = el.scrollWidth > el.clientWidth + 1;
+    const hasOverflow = el.scrollWidth > el.clientWidth + 2;
 
     if (!hasOverflow) {
       setShowLeft(false);
@@ -20,34 +24,61 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
       return;
     }
 
-    setShowLeft(el.scrollLeft > 1);
-    setShowRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
+    setShowLeft(el.scrollLeft > 2);
+    setShowRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 2);
   };
 
   useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
+  const el = scrollRef.current;
+  if (!el) return;
 
-    const t = setTimeout(() => updateScrollState(), 50);
+  // ---- PASS 1: next tick update ----
+  const t1 = requestAnimationFrame(updateScrollState);
 
-    el.addEventListener("scroll", updateScrollState);
-    window.addEventListener("resize", updateScrollState);
+  // ---- PASS 2: layout settle hone ke baad ----
+  const t2 = setTimeout(updateScrollState, 200);
 
-    return () => {
-      clearTimeout(t);
-      el.removeEventListener("scroll", updateScrollState);
-      window.removeEventListener("resize", updateScrollState);
-    };
-  }, [tabs]);
+  // ---- WINDOW LOAD fixes mobile refresh ----
+  window.addEventListener("load", updateScrollState);
 
+  // ---- REAL FIX: resize observer ----
+  const resizeObserver = new ResizeObserver(() => {
+    updateScrollState();
+    requestAnimationFrame(updateScrollState); // second pass
+  });
+
+  resizeObserver.observe(el);
+
+  // ---- Mutation Observer (tabs render / labels wrap etc) ----
+  const mo = new MutationObserver(() => {
+    updateScrollState();
+    requestAnimationFrame(updateScrollState);
+  });
+
+  mo.observe(el, { childList: true, subtree: true });
+
+  // ---- Scroll listener ----
+  el.addEventListener("scroll", updateScrollState);
+
+  return () => {
+    cancelAnimationFrame(t1);
+    clearTimeout(t2);
+    window.removeEventListener("load", updateScrollState);
+    resizeObserver.disconnect();
+    mo.disconnect();
+    el.removeEventListener("scroll", updateScrollState);
+  };
+}, [tabs]);
+
+  /* ------------------------------
+     Scroll by half-container width
+  ------------------------------ */
   const scrollTabs = (dir) => {
     const el = scrollRef.current;
     if (!el) return;
 
-    const tabWidth = el.clientWidth / 2; // smooth feels better
-
     el.scrollBy({
-      left: dir === "right" ? tabWidth : -tabWidth,
+      left: dir === "right" ? el.clientWidth / 2 : -el.clientWidth / 2,
       behavior: "smooth",
     });
   };
@@ -56,17 +87,16 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
     <>
       <div className="tabs-container">
 
+        {/* Fades */}
         {showLeft && <div className="fade-left"></div>}
         {showRight && <div className="fade-right"></div>}
 
-        {/* LEFT ARROW */}
+        {/* Arrows */}
         {showLeft && (
           <button className="nav-arrow left" onClick={() => scrollTabs("left")}>
             <i className="bi bi-chevron-left"></i>
           </button>
         )}
-
-        {/* RIGHT ARROW */}
         {showRight && (
           <button className="nav-arrow right" onClick={() => scrollTabs("right")}>
             <i className="bi bi-chevron-right"></i>
@@ -86,7 +116,6 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
           ))}
         </div>
 
-        {/* ------------ STYLES ------------ */}
         <style jsx>{`
           .tabs-container {
             position: relative;
@@ -98,58 +127,50 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
           .tabs-strip {
             display: flex;
             overflow-x: auto;
-            overflow-y: hidden;
-            scrollbar-width: none;
-            border: 1px solid #e5e5e5;
-            border-radius: 12px;
             white-space: nowrap;
+            scrollbar-width: none;
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
           }
-
-          .tabs-strip::-webkit-scrollbar {
-            display: none;
-          }
+          .tabs-strip::-webkit-scrollbar { display: none; }
 
           .tab-btn {
             flex: 0 0 calc(100% / 4);
             padding: 18px 0;
             background: #fff;
             border: none;
+            border-radius:0px;
             border-right: 1px solid #e5e5e5;
             font-size: 15px;
             font-weight: 600;
             cursor: pointer;
             color: #323232;
             transition: 0.3s ease;
-            border-radius: 0;
           }
-
           .tab-btn.active {
             color: #0d2b75;
             border-bottom: 3px solid #0d2b75;
           }
 
-          /* Fade */
-          .fade-left,
-          .fade-right {
+          /* Fades */
+          .fade-left, .fade-right {
             position: absolute;
             top: 0;
             bottom: 0;
             width: 60px;
             pointer-events: none;
-            z-index: 5;
+            z-index: 6;
           }
-
           .fade-left {
             left: 0;
-            background: linear-gradient(to left, rgba(255,255,255,0), #ffffff 80%);
+            background: linear-gradient(to left, transparent, white 75%);
           }
-
           .fade-right {
             right: 0;
-            background: linear-gradient(to right, rgba(255,255,255,0), #ffffff 80%);
+            background: linear-gradient(to right, transparent, white 75%);
           }
 
-          /* ARROWS (Inside, Blue, Perfect Circle) */
+          /* Arrows */
           .nav-arrow {
             position: absolute;
             top: 50%;
@@ -157,77 +178,42 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
             width: 38px;
             height: 38px;
             border-radius: 50%;
-            background: #ffffff;
+            background: #fff;
             border: 1px solid #dcdcdc;
             color: #0d2b75;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            padding: 0;
             z-index: 10;
+            padding: 0;
             font-size: 18px;
             line-height: 1;
           }
 
-          .nav-arrow.left {
-            left: -10px;   /* moved inside */
-          }
+          .nav-arrow.left { left: -10px; }
+          .nav-arrow.right { right: -10px; }
 
-          .nav-arrow.right {
-            right: -10px;  /* moved inside */
+          /* RESPONSIVE */
+          @media (max-width: 1200px) {
+            .tab-btn { flex: 0 0 calc(100% / 3); }
+            .nav-arrow.left { left: 5px; }
+            .nav-arrow.right { right: 5px; }
           }
-
-
-          /* ======================
-             RESPONSIVE BREAKPOINTS
-             ====================== */
-
-          /* 1200px → 980px = 3 tabs */
-          @media (max-width: 1200px) and (min-width: 981px) {
-            .tab-btn {
-              flex: 0 0 calc(100% / 3);
-            }
-              .nav-arrow.left{
-              left:10px;
-              }
-              .nav-arrow.right {
-            right: 10px;  /* moved inside */
+          @media (max-width: 980px) {
+            .tab-btn { flex: 0 0 calc(100% / 2); }
+            .nav-arrow.left { left: 10px; }
+            .nav-arrow.right { right: 10px; }
           }
-          }
-
-          /* 980px → 568px = 2 tabs */
-          @media (max-width: 980px) and (min-width: 569px) {
-            .tab-btn {
-              flex: 0 0 calc(100% / 2);
-            }
-               .nav-arrow.left{
-              left:20px;
-              }
-              .nav-arrow.right {
-            right: 20px;  /* moved inside */
-          }
-          }
-
-          /* Below 568px = 1.5 tabs */
           @media (max-width: 568px) {
-            .tab-btn {
-              flex: 0 0 calc(100% / 1.5);
-            }
-              .nav-arrow.left{
-              left:0px;
-              }
-              .nav-arrow.right {
-            right: 0px;  /* moved inside */
+            .tab-btn { flex: 0 0 calc(100% / 1.5); }
+            .nav-arrow.left { left: 0; }
+            .nav-arrow.right { right: 0; }
           }
-          }
-
-          
         `}</style>
       </div>
 
-      {/* TAB CONTENT BELOW */}
+      {/* CONTENT SECTION */}
       <DynamicsContent activeTab={active} tabs={tabs} />
     </>
   );
