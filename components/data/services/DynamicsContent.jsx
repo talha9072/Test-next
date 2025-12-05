@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function DynamicsContent({ activeTab, tabs = [] }) {
@@ -17,21 +17,47 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
 
   const [current, setCurrent] = useState(0);
 
-  const goToSlide = (index) => setCurrent(index);
+  const nextSlide = () => {
+    if (current < images.length - 1) setCurrent((c) => c + 1);
+  };
+
+  const prevSlide = () => {
+    if (current > 0) setCurrent((c) => c - 1);
+  };
+
+  // Swipe handling
+  const startX = useRef(0);
+  const isDragging = useRef(false);
+
+  const handleStart = (x) => {
+    startX.current = x;
+    isDragging.current = true;
+  };
+
+  const handleEnd = (x) => {
+    if (!isDragging.current) return;
+    const diff = x - startX.current;
+
+    if (diff > 50) prevSlide();
+    if (diff < -50) nextSlide();
+
+    isDragging.current = false;
+  };
+
+  // Reset slide on tab change
+  useEffect(() => {
+    setCurrent(0);
+  }, [activeTab]);
 
   return (
     <div className="dyn-content container mt-5">
       <div className="row align-items-start">
 
-        {/* ======================
-            LEFT COLUMN - CONTENT
-        ======================= */}
+        {/* LEFT CONTENT */}
         <div className="col-lg-5 col-12 mb-4">
+          {title && <h3 className="dyn-title mb-4">{title}</h3>}
+          {description && <p className="dyn-desc">{description}</p>}
 
-          {title && <h3 className="dyn-title">{title}</h3>}
-          {description && <p className="dyn-desc mt-2">{description}</p>}
-
-          {/* Bullet Points */}
           {bullets.length > 0 && (
             <ul className="dyn-bullets mt-3">
               {bullets.map((item, i) => (
@@ -43,23 +69,26 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
             </ul>
           )}
 
-          {/* Bottom Info + Logo */}
           {bottomLabel && bottomLogo && (
-            <div className="bottom-info mt-4">
+            <div className="bottom-info mt-3">
               <img src={bottomLogo} alt="logo" className="bottom-logo" />
               <span className="bottom-text">{bottomLabel}</span>
             </div>
           )}
         </div>
 
-        {/* ======================
-            RIGHT COLUMN - CAROUSEL
-        ======================= */}
+        {/* RIGHT CAROUSEL */}
         <div className="col-lg-7 col-12">
-
           {images.length > 1 ? (
             <>
-              <div className="carousel-wrapper">
+              <div
+                className="carousel-wrapper"
+                onMouseDown={(e) => handleStart(e.clientX)}
+                onMouseUp={(e) => handleEnd(e.clientX)}
+                onMouseLeave={(e) => handleEnd(e.clientX)}
+                onTouchStart={(e) => handleStart(e.touches[0].clientX)}
+                onTouchEnd={(e) => handleEnd(e.changedTouches[0].clientX)}
+              >
                 <div
                   className="carousel-track"
                   style={{ transform: `translateX(-${current * 100}%)` }}
@@ -78,32 +107,54 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
                 </div>
               </div>
 
-              <div className="carousel-dots mt-3">
-                {images.map((_, i) => (
-                  <span
-                    key={i}
-                    className={`dot ${current === i ? "active" : ""}`}
-                    onClick={() => goToSlide(i)}
-                  />
-                ))}
+              {/* ARROWS + DOTS WRAPPED */}
+              <div className="nav-wrapper mt-3">
+
+                {/* LEFT ARROW */}
+                <button
+                  className="dtc-arrow-btn"
+                  onClick={prevSlide}
+                  disabled={current === 0}
+                >
+                  <i className="bi bi-arrow-left"></i>
+                </button>
+
+                {/* DOTS */}
+                <div className="carousel-dots">
+                  {images.map((_, i) => (
+                    <span
+                      key={i}
+                      className={`dot ${current === i ? "active" : ""}`}
+                      onClick={() => setCurrent(i)}
+                    />
+                  ))}
+                </div>
+
+                {/* RIGHT ARROW */}
+                <button
+                  className="dtc-arrow-btn"
+                  onClick={nextSlide}
+                  disabled={current === images.length - 1}
+                >
+                  <i className="bi bi-arrow-right"></i>
+                </button>
+
               </div>
             </>
-          ) : images.length === 1 ? (
-            <Image
-              src={images[0]}
-              width={900}
-              height={600}
-              alt="dynamics visual"
-              className="img-fluid rounded"
-            />
-          ) : null}
-
+          ) : (
+            images.length === 1 && (
+              <Image
+                src={images[0]}
+                width={900}
+                height={600}
+                alt="visual"
+                className="img-fluid rounded"
+              />
+            )
+          )}
         </div>
       </div>
 
-      {/* ======================
-          INLINE CSS
-      ======================= */}
       <style jsx>{`
         .dyn-title {
           font-size: 1.4rem;
@@ -115,33 +166,22 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
           color: #414141;
         }
 
-        /* ======================
-            BULLETS
-        ======================= */
         .dyn-bullets {
           list-style: none;
           padding: 0;
-          margin: 0;
         }
-
         .dyn-bullet-item {
           display: flex;
-          align-items: flex-start;
           gap: 10px;
           margin-bottom: 12px;
-          line-height: 1.4;
         }
-
         .bullet-icon {
           color: #0d2b75;
           font-size: 1.1rem;
-          flex-shrink: 0;
           margin-top: 2px;
         }
 
-        /* =====================
-            BOTTOM INFO BLOCK
-        ===================== */
+        /* Bottom Info */
         .bottom-info {
           display: inline-flex;
           align-items: center;
@@ -151,48 +191,78 @@ export default function DynamicsContent({ activeTab, tabs = [] }) {
           border-radius: 12px;
           border: 1px solid #e0e7ff;
         }
-
         .bottom-logo {
           width: 30px;
           height: 30px;
         }
-
         .bottom-text {
-          font-size: 0.95rem;
-          font-weight: 600;
           color: #0d2b75;
+          font-weight: 600;
         }
 
-        /* =====================
-            CAROUSEL
-        ===================== */
+        /* Carousel */
         .carousel-wrapper {
           width: 100%;
           overflow: hidden;
           border-radius: 12px;
         }
-
         .carousel-track {
           display: flex;
-          transition: transform 0.5s ease;
+          transition: transform 0.45s ease;
         }
-
         .carousel-slide {
           min-width: 100%;
         }
 
-        /* Dots */
+        /* NEW: ARROWS + DOTS WRAPPED */
+        .nav-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        }
+
+        .dtc-arrow-btn {
+            width: 40px;
+            height: 40px;
+            aspect-ratio: 1 / 1; /* 🔥 Forces perfect circle even if parent flex stretches */
+            border-radius: 50%;
+            background:transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.25s ease;
+            padding: 0; /* 🔥 Prevents stretching inside */
+            }
+
+            .dtc-arrow-btn i {
+            color: #0d2b75; /* 🔥 ICON primary blue */
+            font-size: 18px;
+            }
+
+            .dtc-arrow-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            }
+
+            .dtc-arrow-btn:hover:not(:disabled) {
+            background: #0d2b75;
+            border-color: #0d2b75;
+            }
+            .dtc-arrow-btn:hover:not(:disabled) i{
+            color:white;
+            }
+
         .carousel-dots {
           display: flex;
-          justify-content: center;
           gap: 10px;
         }
 
         .dot {
-          width: 30px;
+          width: 28px;
           height: 4px;
-          display: inline-block;
-          border-radius: 2px;
+          border-radius: 3px;
           background: #d0d0d0;
           cursor: pointer;
           transition: 0.3s ease;
