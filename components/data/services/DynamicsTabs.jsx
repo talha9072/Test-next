@@ -119,6 +119,7 @@ export default function DynamicsTabsStrip({ tabs = [] }) {
             background: #fff;
             border: none;
             border-right: 1px solid #e5e5e5;
+            border-radius:0px;
             font-size: 15px;
             font-weight: 600;
             cursor: pointer;

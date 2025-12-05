@@ -18,18 +18,27 @@ import Footer from "@/components/layout/footers/footer";
 
 const tabsData = [
   {
-    label: "Sales",
-    title: "Close more deals with AI assistance",
-    description:
-      "Dynamics 365 Sales empowers teams to build stronger customer relationships, understand intent, and accelerate revenue with guided selling, AI insights, and real-time pipeline visibility.",
-    bottomLabel: "Dynamics 365 Sales",
-    bottomLogo: "/assets_v2/images/d365logo.svg",
-    images: [
-      "/assets_v2/images/slider/sales-1.png",
-      "/assets_v2/images/slider/sales-2.png",
-      "/assets_v2/images/slider/sales-3.png"
-    ]
-  },
+  label: "Sales",
+  title: "Close more deals with AI assistance",
+  description:
+    "Dynamics 365 Sales empowers teams to build stronger customer relationships, understand intent, and accelerate revenue with guided selling, AI insights, and real-time pipeline visibility.",
+
+  bullets: [
+    "AI-driven lead scoring helps reps prioritise the highest-value opportunities.",
+    "Real-time collaboration tools improve deal coordination across sales teams.",
+  ],
+
+  bottomLabel: "Dynamics 365 Sales",
+  bottomLogo: "/assets/img/dynamics365/d365-sales.svg",
+
+  images: [
+    "/assets/img/dynamics365/sales-5.png",
+    "/assets/img/dynamics365/sales-4.png",
+    "/assets/img/dynamics365/sales-3.png",
+    "/assets/img/dynamics365/sales-2.png",
+    "/assets/img/dynamics365/sales-1.png"
+  ]
+},
 
   {
     label: "Marketing",
@@ -187,7 +196,7 @@ const Dynamic365 = () => {
   <div className="container">
     <h2 className="section-title text-center mb-4">Do more with Dynamics 365 and AI</h2>
     <p className="section-desc text-center">
-      See how AI enhances Dynamics 365 applications to give every team—from sales to operations—an intelligent edge.
+      See how AI enhances Dynamics 365 applications to give every team from sales to operations an intelligent edge.
     </p>
 
     <DynamicsTabs tabs={tabsData} />
