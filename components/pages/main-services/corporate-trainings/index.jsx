@@ -1,7 +1,14 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
+import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
+import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
+import CourseDurationBox from "@/components/data/services/CourseDurationBox";
+import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
+import CTAPage from '@/components/data/services/CTAPage';
 import MainServices from "@/components/data/services/main-services";
 import ImplementSection from "@/components/data/services/implement";
 import Whyus from "@/components/data/services/whyus";
@@ -25,9 +32,8 @@ const Training = () => {
   serviceName="Corporate Trainings"
   title="Empowering Teams Through Practical, Expert-Led Learning"
   highlightText="Corporate Training"
-  subtitle="Upskill your workforce with certified Microsoft workshops and hands-on professional development."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/corporate-training/corporate-training-hero.webp"
+  subtitle="At Novum, we value education and continuous learning. Our corporate training programs help teams develop the practical skills needed to solve real business challenges using modern technologies."
+  bgImage="/assets/img/corporate-training/bg-training.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -42,24 +48,346 @@ const Training = () => {
 />
 
  
+<div id="about">
+  <OverviewComponent
+    title="Why Education Matters for Organisations"
+    primaryColor="#0d2b75"
+    backgroundType="color"
+    backgroundColor="#e5f1ff"
+
+    paragraphs={[
+      "Technology evolves rapidly, and organisations must continuously strengthen internal capabilities to remain competitive. Building technological literacy enables teams to innovate, improve efficiency, and make better data-driven decisions.",
+      "Corporate training equips employees at every level with the knowledge and practical skills needed to leverage modern tools, streamline workflows, and support long-term organisational transformation."
+    ]}
+
+    listItems={[
+      "Strengthens the organisation’s ability to innovate",
+      "Improves technical proficiency and productivity",
+      "Enhances data literacy and analytical decision-making",
+      "Enables faster, more efficient workflows",
+      "Supports organisational transformation and growth"
+    ]}
+  />
+</div>
 
 
       <SoftwareSolutionsSection
   title={
     <>
-      Why Corporate Training Is
-      Essential for Organizational Growth
+      Training designed to elevate skills
+      across every level of your organisation
     </>
   }
   paragraphs={[
-    "In an evolving digital landscape, continuous learning is critical for maintaining a competitive edge. NOVUM’s Corporate Training programs equip teams with practical, real-world skills in Microsoft technologies, analytics, and digital transformation helping businesses enhance productivity, collaboration, and innovation.",
-    "Led by certified experts and Microsoft MVPs, our workshops blend theory with hands-on practice to ensure knowledge retention and measurable results. From leadership coaching to technical mastery, NOVUM empowers your workforce to perform with confidence and deliver lasting business value.",
+    "We deliver corporate trainings as part of our consulting services, focusing on practical, real-world skills that employees can apply immediately in their daily work. Our instructors specialise in Microsoft technologies and provide structured, outcome-focused training for senior executives, department managers, technical teams, and analysts.",
+    "Each program is fully customisable to align with your industry, role requirements, and organisational goals—ensuring meaningful skill development, improved performance, and measurable business impact."
   ]}
   imageSrc="/assets/img/corporate-training/cooperate-1.webp"
   altText="Corporate Training and Professional Development Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
-        
+
+
+<div id="training-expertise">
+    <ServiceFeatureSlider
+      sectionId="training-expertise"
+      title="About Novum Training Expertise"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to bottom right, #ffffff, #eef3ff)"
+      primaryColor="#0d2b75"
+      items={[
+        {
+          image: "/assets/img/corporate-training/mct.jpg",
+          title: "World-Class Microsoft Expertise",
+          list: [
+            "Led by Microsoft Certified Trainers (MCT)",
+            "Includes Microsoft MVPs and MCT Regional Leads",
+            "Instruction from globally recognised educators"
+          ]
+        },
+        {
+          image: "/assets/img/corporate-training/enterprise-training.jpg",
+          title: "Enterprise-Level Training Delivery",
+          list: [
+            "More than 500 professionals trained each year",
+            "Programs designed for modern organisations",
+            "Hands-on learning aligned with business goals"
+          ]
+        },
+        {
+          image: "/assets/img/corporate-training/microsoft-skills.jpg",
+          title: "Microsoft Technology Training",
+          list: [
+            "Microsoft 365, Power Platform, Azure",
+            "Modern workplace and cloud productivity",
+            "Best practices for enterprise technology adoption"
+          ]
+        },
+        {
+          image: "/assets/img/corporate-training/data-analytics.jpg",
+          title: "Data & Analytics Upskilling",
+          list: [
+            "Data literacy and reporting fundamentals",
+            "Power BI, data modelling, and visualisation",
+            "Analytical decision-making for teams"
+          ]
+        },
+        {
+          image: "/assets/img/corporate-training/leadership.jpg",
+          title: "Leadership & Productivity Training",
+          list: [
+            "Corporate communication and collaboration",
+            "Workflow optimisation and productivity habits",
+            "Managerial development and role-based coaching"
+          ]
+        }
+      ]}
+    />
+</div>
+
+
+<div id="isc-program-overview">
+  <ExpertiseSplitSection
+    sectionId="isc-program-overview"
+    title="Instructional Skills Certification (ISC) Full Programme Overview"
+    subtitle="Microsoft-recognised training pathway designed for professionals pursuing the Train-The-Trainer (TTT) and MCT credential."
+    tabs={[
+      /* ===========================
+         TAB 1 — ISC OVERVIEW (MERGED)
+      ============================ */
+      {
+        label: "ISC Overview",
+        title: "ISC Course for MCT Certification",
+        desc:
+          "Our flagship offering—the Instructional Skills Certification (ISC) is a Microsoft-recognised programme designed for professionals preparing to enter the Train-The-Trainer (TTT) pathway and ultimately qualify as Microsoft Certified Trainers (MCT). This workshop builds the instructional, presentation, and facilitation skills needed to deliver high-quality Microsoft courses.",
+        points: [
+          "Microsoft-recognised Train-The-Trainer pathway",
+          "Develop real-world instructional and presentation skills",
+          "Build confidence delivering Microsoft technical courses",
+          "Hands-on practice with personalised expert feedback",
+          "Ideal for aspiring MCTs and corporate trainers"
+        ],
+        cta: "Learn About ISC"
+      },
+
+      /* ===========================
+         TAB 2 — TTT OVERVIEW
+      ============================ */
+      {
+        label: "TTT Overview",
+        title: "Train-The-Trainer (TTT) Program",
+        desc:
+          "The TTT programme prepares certified IT professionals to become authorised Microsoft trainers. Participants master communication, content delivery, and demonstration skills required for teaching Microsoft technologies with clarity and confidence.",
+        points: [
+          "Develop essential presentation and communication skills",
+          "Learn effective teaching and facilitation techniques",
+          "Understand Microsoft’s authorised trainer expectations",
+          "Foundational step toward Microsoft Certified Trainer (MCT)"
+        ],
+        cta: "Learn About TTT"
+      },
+
+      /* ===========================
+         TAB 3 — ISC COURSE DETAILS
+      ============================ */
+      {
+        label: "ISC Course",
+        title: "What the ISC Training Includes",
+        desc:
+          "The ISC course blends practical exercises, peer feedback, and expert-led demonstrations. Participants practice delivering lessons, structuring content, and managing both technical and non-technical audiences with confidence.",
+        points: [
+          "Practical delivery exercises with instructor feedback",
+          "Individual and group presentations",
+          "Frameworks for designing structured training content",
+          "Confidence-building for technical & non-technical delivery"
+        ],
+        cta: "Explore ISC Training"
+      },
+
+      /* ===========================
+         TAB 4 — COURSE OBJECTIVES
+      ============================ */
+      {
+        label: "Course Objectives",
+        title: "Key Learning Outcomes",
+        desc:
+          "By completing this course, participants gain the instructional and facilitation skills required to deliver Microsoft content effectively and maximise organisational training value.",
+        points: [
+          "Design complete training programs end-to-end",
+          "Enhance technical and instructional delivery skills",
+          "Develop a personalised and effective teaching style",
+          "Improve learner engagement and knowledge retention",
+          "Maximise training ROI for your organisation"
+        ],
+        cta: "View Full Objectives"
+      }
+    ]}
+  />
+</div>
+
+<div id="duration">
+  <CourseDurationBox
+  />
+</div>
+
+<div id="course-outline">
+  <ServiceSplitPanel
+    title="Course Outline (Modules 1–6)"
+    primaryColor="#0d2b75"
+    items={[
+
+      /* -------------------- MODULE 1 -------------------- */
+      {
+        label: "Module 1: Introduction to MCT Instructional Skills Certification",
+        paragraphs: [
+          "This module introduces participants to the Microsoft Certified Trainer ecosystem and explains the role and responsibilities of an MCT.",
+          "Learners understand why instructional skills certification is essential for delivering Microsoft technical training effectively."
+        ],
+        listItems: [
+          "Overview of the MCT program",
+          "Role and responsibilities of an MCT",
+          "Importance of instructional skills certification"
+        ]
+      },
+
+      /* -------------------- MODULE 2 -------------------- */
+      {
+        label: "Module 2: Designing Training Programs",
+        paragraphs: [
+          "Participants learn the foundations of training program design, including how to analyse needs, define learning objectives, and structure a complete training curriculum.",
+          "This module builds strong instructional planning capabilities required for high quality Microsoft course delivery."
+        ],
+        listItems: [
+          "Stages of training design",
+          "Needs analysis and learning objectives",
+          "Curriculum creation & planning",
+          "Assessment strategies"
+        ]
+      },
+
+      /* -------------------- MODULE 3 -------------------- */
+      {
+        label: "Module 3: Facilitating Knowledge Transfer",
+        paragraphs: [
+          "This module focuses on communication and learning facilitation techniques required for successful technical training.",
+          "Participants learn how to deliver content clearly, maintain engagement, and adapt to different learner styles."
+        ],
+        listItems: [
+          "Effective communication techniques",
+          "Enhancing technical learning",
+          "Active learning facilitation",
+          "Understanding learner styles"
+        ]
+      },
+
+      /* -------------------- MODULE 4 -------------------- */
+      {
+        label: "Module 4: Developing Personal Teaching Style",
+        paragraphs: [
+          "Participants explore their strengths as trainers and learn how to develop a unique, effective teaching style.",
+          "Tools and frameworks are introduced to help trainers structure content and incorporate feedback for continuous improvement."
+        ],
+        listItems: [
+          "Identifying trainer strengths",
+          "Instructional design tools",
+          "Building a unique teaching approach",
+          "Incorporating feedback"
+        ]
+      },
+
+      /* -------------------- MODULE 5 -------------------- */
+      {
+        label: "Module 5: Enhancing Instructional Techniques",
+        paragraphs: [
+          "This module covers advanced instructional techniques that make training more engaging, interactive, and impactful.",
+          "Participants learn how to troubleshoot sessions, manage diverse learner needs, and integrate multimedia effectively."
+        ],
+        listItems: [
+          "Delivering engaging presentations",
+          "Interactive teaching methods",
+          "Using multimedia & technology in training",
+          "Troubleshooting technical sessions"
+        ]
+      },
+
+      /* -------------------- MODULE 6 -------------------- */
+      {
+        label: "Module 6: Maximising Training Effectiveness",
+        paragraphs: [
+          "This module focuses on measuring and improving the long-term effectiveness of training programs.",
+          "Participants learn how to align training outcomes with organisational goals and demonstrate real ROI."
+        ],
+        listItems: [
+          "Measuring learning outcomes",
+          "Improving training quality",
+          "Aligning training to organisational ROI"
+        ]
+      }
+    ]}
+  />
+</div>
+
+<div id="cta-training">
+  <CTAPage
+    title="Take the Next Step in Your Training Career"
+    description="Gain the skills, structure, and confidence to deliver Microsoft courses at a professional level."
+    buttonLabel="Join the Programme"
+    buttonLink="/contact"
+    backgroundType="image"
+    backgroundImage="/assets/img/corporate-training/cooperate-1.webp"
+    textColor="#ffffff"
+    sectionClass="py-7"
+    overlayOpacity={0.65}
+  />
+</div>
+
+<div id="faq-isc">
+  <MicrosoftNumberedFAQ
+    sectionId="isc-faq"
+    headline="Frequently Asked Questions"
+    backgroundType="gradient"
+    backgroundValue="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+    items={[
+      {
+        question: "Where can I find official details about the MCT Program?",
+        answer:
+          "You can view the official Microsoft MCT certification requirements on the Microsoft Learn website by searching for MCT Certification."
+      },
+      {
+        question: "How can I get more details about the Train-The-Trainer (TTT) Program?",
+        answer:
+          "For complete details, schedules, and consultation about the TTT program, please email our team at ilgar.zarbaliyev@novum.tech."
+      },
+      {
+        question: "Why choose Novum Tech for instructor training?",
+        answer:
+          "Novum provides Microsoft aligned training content, a full day dedicated to troubleshooting and technical mastery, and access to instructors who include an MCT Regional Lead and Microsoft MVP."
+      },
+      {
+        question: "Who can participate in the ISC or TTT programs?",
+        answer:
+          "There are no prerequisites for the corporate Train-The-Trainer program. For the MCT focused ISC program, participants must have completed a Microsoft technical certification."
+      },
+      {
+        question: "Is online training available?",
+        answer:
+          "Yes, the training is available in both online and in person formats."
+      },
+      {
+        question: "What languages are supported?",
+        answer:
+          "Training is offered in English, Azerbaijani, and Turkish."
+      },
+      {
+        question: "What technical topics are covered in the programme?",
+        answer:
+          "Topics include Microsoft certifications and exams, the Microsoft Learn platform, MCT program benefits, teaching resources, digital materials, lab setup, the MTM portal process, and troubleshooting techniques."
+      }
+    ]}
+  />
+</div>
+
+
     <MainServices
   id="services"
   subtitle="Corporate Training Services"
