@@ -323,7 +323,7 @@ const Licensing = () => {
   <AIUseCaseGrid
     title="Take the next step"
     backgroundType="gradient"
-    backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+    backgroundGradient="linear-gradient(to left top, #e5f1ff, #e5f1ff)"
     columns={3}
     items={[
       {
