@@ -34,10 +34,22 @@ export default function AIUseCaseGrid({
   };
 
   useEffect(() => {
-    syncHeights();
-    window.addEventListener("resize", syncHeights);
-    return () => window.removeEventListener("resize", syncHeights);
-  }, [items]);
+  // First pass
+  syncHeights();
+
+  // Second pass after layout stabilises
+  const t1 = setTimeout(syncHeights, 150);
+  const t2 = setTimeout(syncHeights, 350);
+
+  // Recalculate on resize
+  window.addEventListener("resize", syncHeights);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    window.removeEventListener("resize", syncHeights);
+  };
+}, [items]);
 
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
@@ -122,7 +134,7 @@ export default function AIUseCaseGrid({
                       <a
                         href={buttonLink}
                         className="dtc-cta d-inline-flex align-items-center gap-2 fw-semibold"
-                      >
+                      target="blank">
                         <div className="dtc-cta-arrow">
                           <i className="bi bi-arrow-right"></i>
                         </div>

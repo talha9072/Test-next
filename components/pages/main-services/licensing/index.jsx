@@ -1,10 +1,11 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import BulletPoints from "@/components/data/services/bulletpoints";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import UseCasesSection from "@/components/data/services/UseCasesSection";
+import WhyChooseSection from "@/components/data/services/whychooseus";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -22,12 +23,11 @@ const Licensing = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Product Licensing & Access Requests"
-  title="Request and Activate Your Product Licenses"
+  serviceName="Microsoft Licensing"
+  title="Smarter Microsoft licensing for your organisation"
   highlightText="Licensing"
-  subtitle="Power your business with simplified, enterprise grade Microsoft licensing."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/licensing/license-hero.webp"
+  subtitle="We remove complexity by guiding you through licensing choices, cost optimisation, compliance, and long term management"
+  bgImage="/assets/img/licensing/licensing-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -41,126 +41,311 @@ const Licensing = () => {
   ]}
 />
  
+<div id="about">
+  <OverviewComponent
+    title="What We Do"
+    primaryColor="#0d2b75"
+    backgroundType="color"
+    backgroundColor="#e5f1ff"
+    
+    paragraphs={[
+      "Organisations often find Microsoft licensing confusing due to multiple product families, contract types, and usage scenarios. Novum provides end-to-end licensing advisory services to help you evaluate options, forecast usage, standardise procurement, and manage renewals with complete transparency.",
+      "Our licensing experts support enterprises, SMBs, government institutions, and educational organisations through every step of the licensing journey—ensuring clarity, optimisation, and cost efficiency."
+    ]}
+    
+    listItems={[
+      "Full clarity across Microsoft product families and licensing models",
+      "Guidance on selecting the most cost-effective contract structure",
+      "Forecasting and optimisation to prevent over-licensing",
+      "Standardised procurement processes for predictable budgeting",
+      "Renewal management with complete visibility and control"
+    ]}
+  />
+</div>
+
+<div id="licensing-importance">
+  <BulletPoints
+    sectionId="licensing-importance"
+    title={<>Why Microsoft Licensing Matters</>}
+    paragraphs={[
+      "Microsoft licensing directly impacts cost, security, scalability, and compliance across your entire organisation. Choosing the right agreement ensures predictable budgeting, secure operations, and efficient allocation of tools to your workforce.",
+      "Novum brings deep licensing expertise to help organisations make informed, strategic decisions that align technology usage with business goals."
+    ]}
+    bulletPoints={[
+      "Optimise technology spend and eliminate unnecessary costs",
+      "Maintain compliance with Microsoft contractual requirements",
+      "Equip employees with the right tools and access levels",
+      "Scale cloud and on-premises environments more efficiently",
+      "Improve visibility and management of your digital estate"
+    ]}
+    imageSrc="/assets/img/licensing/microsoft-1.webp"
+    altText="Microsoft Licensing Advisory and Optimization"
+    sectionClass="position-relative overflow-hidden py-7 pb-0"
+  />
+</div>
+
+<div id="services">
+    <AIUseCaseGrid
+      title="Our Microsoft Licensing Services"
+      backgroundType="gradient"
+      backgroundGradient="linear-gradient(to left top, #e5f1ff, #e5f1ff)"
+      columns={3}
+      items={[
+        {
+          iconType: "bootstrap",
+          icon: "bi-journal-check",
+          title: "Microsoft Licensing Advisory",
+          desc: "We assess your current licensing footprint, identify gaps, and recommend the most efficient, cost effective strategy based on your business and technical needs.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-cash-coin",
+          title: "License Optimisation & Cost Reduction",
+          desc: "Novum analyses real usage patterns to eliminate overspend, retire unused licenses, and right size entitlements for measurable cost savings.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-file-earmark-text",
+          title: "Agreement Selection Support",
+          desc: "Whether CSP, Open Value, MCA, or Enterprise Agreement, we guide you in selecting the contract that best aligns with your organisation’s size, budget, and roadmap.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-cloud-arrow-up",
+          title: "Cloud Licensing Guidance",
+          desc: "Expert support covering Azure, Microsoft 365, Dynamics 365, Power Platform, and hybrid cloud licensing ensuring correct assignments and scalable architecture.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-shield-lock",
+          title: "Compliance & Risk Management",
+          desc: "We help you stay compliant with Microsoft licensing requirements, reducing audit risks and ensuring governance across your entire digital estate.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        },
+        {
+          iconType: "bootstrap",
+          icon: "bi-bag-check",
+          title: "License Procurement & Renewals",
+          desc: "Novum streamlines purchasing, renewals, and multi-department consolidation ensuring transparent, predictable licensing management year-round.",
+          button: {
+            label: "Start Trial",
+            link: "https://www.microsoft.com/en-us/licensing"
+          }
+        }
+      ]}
+    />
+
+</div>
 
 
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Secure Product Licensing Is
-      Essential for Modern Enterprises
-    </>
-  }
-  paragraphs={[
-    "Managing software access efficiently is critical to maintaining compliance, security, and scalability. NOVUM’s product licensing process ensures that every request is verified, transparent, and aligned with enterprise-grade standards for deployment and governance.",
-    "Whether you need access to Microsoft solutions, AI-driven platforms, or specialized business tools, our licensing framework simplifies the journey from request to activation. With fast turnaround times, verified approvals, and ongoing support, organizations can operate confidently and securely with licensed technology built for growth.",
-  ]}
-  imageSrc="/assets/img/licensing/license-1.webp"
-  altText="Product Licensing Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
-/>
-        
-     <MainServices
-  id="services"
-  subtitle="Product Licensing Services"
-  title="Simplifying Access, Compliance, and License Management"
-  description="NOVUM streamlines the process of requesting, managing, and activating software licenses for Microsoft and NOVUM solutions. From eligibility assessment to pricing, provisioning, and compliance verification, our licensing team ensures a fast, secure, and transparent experience. With enterprise-grade support and a focus on governance, we make sure every license aligns with your organization’s operational, technical, and legal requirements."
-  image={{
-    src: "/assets/img/licensing/license-2.webp",
-    alt: "Enterprise Product Licensing Process",
-  }}
-  services={[
-    {
-      title: "License Consultation & Assessment",
-      desc: "Evaluating your business needs and recommending the most suitable licensing models and entitlements.",
-    },
-    {
-      title: "Pricing & Procurement",
-      desc: "Providing tailored quotes and flexible licensing options to ensure cost-effective, scalable access for your teams.",
-    },
-    {
-      title: "Activation & Provisioning",
-      desc: "Handling setup, activation, and user access management across NOVUM and Microsoft platforms.",
-    },
-    {
-      title: "Compliance & Audit Support",
-      desc: "Maintaining adherence to software licensing agreements, renewals, and enterprise compliance requirements.",
-    },
-    {
-      title: "License Renewals & Upgrades",
-      desc: "Managing renewals, version upgrades, and additional entitlements to keep your organization up to date.",
-    },
-    {
-      title: "Dedicated Licensing Support",
-      desc: "Offering continuous guidance, verification, and escalation handling for all license-related requests and issues.",
-    },
-  ]}
-/>
+<div id="licensing-tabs">
+  <UseCasesSection
+    sectionId="licensing-tabs"
+    backgroundStyle="#fff"
+    primaryColor="#0d2b75"
+    subtitle="MICROSOFT LICENSING"
+    title="Cloud, Windows, and Licensing Information"
+    intro="Explore Microsoft cloud applications, Windows solutions, and essential licensing resources all in one place."
+    tabs={[
+      // ----------------------------------
+      // TAB 1 — CLOUD APPLICATIONS
+      // ----------------------------------
+      {
+        label: "Cloud Applications",
+        items: [
+          {
+            label: "Cloud Product",
+            title: "Azure",
+            desc: "Comprehensive cloud platform for compute, data, AI, security, and scalable hybrid workloads.",
+            image: "/assets/img/licensing/azure-tab.png",
+          },
+          {
+            label: "Cloud Product",
+            title: "Dynamics 365",
+            desc: "Unified CRM and ERP suite connecting operations, service, finance, and sales for intelligent business processes.",
+            image: "/assets/img/licensing/dynamic365-tab.png",
+          },
+          {
+            label: "Cloud Product",
+            title: "Microsoft 365",
+            desc: "Modern workplace productivity tools with Office apps, device management, collaboration, and advanced security.",
+            image: "/assets/img/licensing/365-tab.png",
+          },
+          {
+            label: "Cloud Product",
+            title: "Office & Office 365",
+            desc: "Desktop and cloud productivity apps enabling consistent collaboration and business continuity.",
+            image: "/assets/img/licensing/365-tab.png",
+          },
+          {
+            label: "Cloud Product",
+            title: "Power Platform",
+            desc: "Low-code platform for automation, app development, reporting, and AI-driven workflows.",
+            image: "/assets/img/licensing/power-platform-tab.png",
+          },
+          {
+            label: "Cloud Product",
+            title: "SQL Server",
+            desc: "Enterprise-grade hybrid database engine for mission-critical applications and real-time analytics.",
+            image: "/assets/img/licensing/sql-tab.png",
+          },
+        ],
+      },
 
+      // ----------------------------------
+      // TAB 2 — WINDOWS SOLUTIONS
+      // ----------------------------------
+      {
+        label: "Windows Solutions",
+        items: [
+          {
+            label: "Windows Product",
+            title: "Windows 11",
+            desc: "Microsoft’s most secure and advanced operating system designed for productivity and protection.",
+            image: "/assets/img/licensing/window11-tab.png",
+          },
+          {
+            label: "Windows Product",
+            title: "Windows 365",
+            desc: "A cloud PC experience that streams personalised Windows desktops to any device securely.",
+            image: "/assets/img/licensing/365-tab.png",
+          },
+          {
+            label: "Windows Product",
+            title: "Windows Server",
+            desc: "Modern server platform for hybrid workloads with built-in Azure integrations and advanced security.",
+            image: "/assets/img/licensing/windowserver-tab.png",
+          },
+          {
+            label: "Windows Product",
+            title: "System Center",
+            desc: "A complete datacenter management suite for hybrid infrastructure, workloads, and applications.",
+            image: "/assets/img/licensing/systemcenter-tab.png",
+          },
+        ],
+      },
 
-<ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How NOVUM’s Licensing Process Simplifies Software Management"
-  description="Implementing a structured licensing framework with NOVUM helps organizations manage software access efficiently, maintain compliance, and reduce administrative overhead. Our transparent process ensures quick approvals, accurate entitlements, and secure provisioning for every user and department."
+      // ----------------------------------
+      // TAB 3 — LICENSING INFORMATION
+      // ----------------------------------
+      {
+        label: "Licensing Information",
+        items: [
+          {
+            label: "Resource",
+            title: "Licensing Briefs",
+            desc: "Clear, simplified explanations of Microsoft licensing scenarios, product entitlements, and new technologies.",
+            image: "/assets/img/licensing/brief-tab.png",
+          },
+          {
+            label: "Resource",
+            title: "Licensing Terms",
+            desc: "Official terms and conditions governing Microsoft product rights and Online Services programs.",
+            image: "/assets/img/licensing/terms-tab.png",
+          },
+          
+        ],
+      },
+    ]}
+  />
+</div>
+
+<WhyChooseSection
+  sectionId="whyus-licensing"
+  title="Why Organisations Choose Novum for Microsoft Licensing"
   items={[
     {
-      img: "/assets/img/licensing/tab-1.webp",
-      title: "Streamlined License Requests",
-      desc: "Submit and process license applications quickly with guided forms and fast verification from NOVUM’s licensing specialists.",
+      icon: "bi-patch-check",
+      title: "Certified Microsoft Licensing Experts",
+      desc: "Our specialists bring extensive real-world experience across Microsoft licensing programs, contracts, and entitlement structures."
     },
     {
-      img: "/assets/img/licensing/tab-2.webp",
-      title: "Transparent Pricing & Entitlements",
-      desc: "Receive clear visibility into product SKUs, pricing tiers, and entitlements for accurate budgeting and allocation.",
+      icon: "bi-layers",
+      title: "Deep Knowledge Across All Licensing Models",
+      desc: "We understand Microsoft 365, Azure, Dynamics 365, Power Platform, and hybrid licensing scenarios for accurate, strategic guidance."
     },
     {
-      img: "/assets/img/licensing/tab-3.webp",
-      title: "Centralized License Management",
-      desc: "Manage all licenses, renewals, and activations from a unified system built for scalability and administrative control.",
+      icon: "bi-cash-coin",
+      title: "Cost Optimisation Strategies",
+      desc: "We help organisations eliminate overspend, reduce unused licenses, and standardise purchasing for long-term savings."
     },
     {
-      img: "/assets/img/licensing/tab-4.webp",
+      icon: "bi-shield-lock",
       title: "Compliance & Audit Assurance",
-      desc: "Ensure all products meet vendor, regional, and enterprise compliance standards with complete audit documentation.",
+      desc: "Our structured documentation and entitlement mapping reduce compliance risks and prepare you for Microsoft audits with confidence."
     },
     {
-      img: "/assets/img/licensing/tab-5.webp",
-      title: "Dedicated Support & Renewal Tracking",
-      desc: "Stay compliant and up to date with proactive renewal reminders and licensing support from NOVUM’s experts.",
+      icon: "bi-diagram-3",
+      title: "End-to-End Licensing Support",
+      desc: "From assessment and agreement selection to procurement, renewals, and optimisation — Novum manages your entire licensing lifecycle."
     },
+    {
+      icon: "bi-people",
+      title: "Tailored for All Organisation Types",
+      desc: "We support enterprises, SMBs, government, and educational institutions with licensing strategies customised to their needs."
+    }
   ]}
 />
 
-   
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Licensing Solutions"
-  description="NOVUM simplifies enterprise software licensing through a transparent, secure, and efficient process. Our experienced team ensures every organization receives the right licenses, full compliance support, and responsive service — enabling businesses to focus on innovation, not administration."
-  counters={[
-    { value: 45, suffix: "+", label: "Licenses Processed" },
-    { value: 12, suffix: "+", label: "Regions Supported" },
-    { value: 100, suffix: "%", label: "Compliance Accuracy" },
-    { value: 9, suffix: "+", label: "Years of Experience" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-file-contract",
-      title: "Transparent Licensing Process",
-      desc: "From quote to activation, our step-by-step process ensures clarity, compliance, and smooth execution.",
-    },
-    {
-      icon: "fa-solid fa-shield-halved",
-      title: "Enterprise-Grade Security",
-      desc: "All license requests and data are handled under strict confidentiality and security protocols.",
-    },
-    {
-      icon: "fa-solid fa-headset",
-      title: "Dedicated Support Team",
-      desc: "Our specialists provide personalized assistance for renewals, audits, and ongoing license management.",
-    },
-  ]}
-/>
+<div id="getstarted">
+  <AIUseCaseGrid
+    title="Take the next step"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+    columns={3}
+    items={[
+      {
+        iconType: "bootstrap",
+        icon: "bi-people",
+        title: "Buy from a partner",
+        desc: "The Cloud Solution Provider (CSP) program is ideal if you're looking for a fully partner-managed licensing solution tailored to your organisational needs.",
+        button: {
+          label: "Find a partner",
+          link: "https://www.microsoft.com/solution-providers/home"
+        }
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-briefcase",
+        title: "Buy from a Microsoft seller",
+        desc: "The Microsoft Customer Agreement (MCA-E) is designed to support unique enterprise licensing requirements requiring high-level engagement.",
+        button: {
+          label: "Learn more",
+          link: "https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement"
+        }
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-cart-check",
+        title: "Buy from Microsoft online",
+        desc: "Ideal if you want to choose and purchase what you need directly. A fast and convenient way to manage cloud services online.",
+        button: {
+          label: "Open portals",
+          link: "https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew"
+        }
+      }
+    ]}
+  />
+</div>
 
 
 <Testimonials
