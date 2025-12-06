@@ -33,9 +33,10 @@ const Licensing = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
+    { label: "Importance", href: "#licensing-importance" },
     { label: "Services", href: "#services" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Microsoft Products", href: "#licensing-tabs" },
+    { label: "Why Us?", href: "#whyus-licensing" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -177,36 +178,42 @@ const Licensing = () => {
             title: "Azure",
             desc: "Comprehensive cloud platform for compute, data, AI, security, and scalable hybrid workloads.",
             image: "/assets/img/licensing/azure-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/azure"
           },
           {
             label: "Cloud Product",
             title: "Dynamics 365",
             desc: "Unified CRM and ERP suite connecting operations, service, finance, and sales for intelligent business processes.",
             image: "/assets/img/licensing/dynamic365-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365"
           },
           {
             label: "Cloud Product",
             title: "Microsoft 365",
             desc: "Modern workplace productivity tools with Office apps, device management, collaboration, and advanced security.",
             image: "/assets/img/licensing/365-tab.png",
+            link: "https://www.microsoft.com/Licensing/product-licensing/microsoft-365"
           },
           {
             label: "Cloud Product",
             title: "Office & Office 365",
             desc: "Desktop and cloud productivity apps enabling consistent collaboration and business continuity.",
             image: "/assets/img/licensing/365-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/office"
           },
           {
             label: "Cloud Product",
             title: "Power Platform",
             desc: "Low-code platform for automation, app development, reporting, and AI-driven workflows.",
             image: "/assets/img/licensing/power-platform-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/power-platform"
           },
           {
             label: "Cloud Product",
             title: "SQL Server",
             desc: "Enterprise-grade hybrid database engine for mission-critical applications and real-time analytics.",
             image: "/assets/img/licensing/sql-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/sql-server"
           },
         ],
       },
@@ -222,24 +229,28 @@ const Licensing = () => {
             title: "Windows 11",
             desc: "Microsoft’s most secure and advanced operating system designed for productivity and protection.",
             image: "/assets/img/licensing/window11-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/windows"
           },
           {
             label: "Windows Product",
             title: "Windows 365",
             desc: "A cloud PC experience that streams personalised Windows desktops to any device securely.",
             image: "/assets/img/licensing/365-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/windows-365"
           },
           {
             label: "Windows Product",
             title: "Windows Server",
             desc: "Modern server platform for hybrid workloads with built-in Azure integrations and advanced security.",
             image: "/assets/img/licensing/windowserver-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/windows-server"
           },
           {
             label: "Windows Product",
             title: "System Center",
             desc: "A complete datacenter management suite for hybrid infrastructure, workloads, and applications.",
             image: "/assets/img/licensing/systemcenter-tab.png",
+            link: "https://www.microsoft.com/en-us/licensing/product-licensing/system-center"
           },
         ],
       },
@@ -255,12 +266,14 @@ const Licensing = () => {
             title: "Licensing Briefs",
             desc: "Clear, simplified explanations of Microsoft licensing scenarios, product entitlements, and new technologies.",
             image: "/assets/img/licensing/brief-tab.png",
+            link: "https://www.microsoft.com/licensing/docs/view/Licensing-Use-Rights"
           },
           {
             label: "Resource",
             title: "Licensing Terms",
             desc: "Official terms and conditions governing Microsoft product rights and Online Services programs.",
             image: "/assets/img/licensing/terms-tab.png",
+            link: "https://www.microsoft.com/licensing/docs/view/Licensing-Briefs"
           },
           
         ],
@@ -348,24 +361,39 @@ const Licensing = () => {
 </div>
 
 
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  
+</div>
 
 
 
