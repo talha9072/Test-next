@@ -337,7 +337,7 @@ const Training = () => {
     buttonLabel="Join the Programme"
     buttonLink="/contact"
     backgroundType="image"
-    backgroundImage="/assets/img/corporate-training/cooperate-1.webp"
+    backgroundImage="/assets/img/corporate-training/corporate-cta.webp"
     textColor="#ffffff"
     sectionClass="py-7"
     overlayOpacity={0.65}
