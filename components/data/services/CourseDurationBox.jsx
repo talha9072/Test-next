@@ -34,9 +34,9 @@ export default function CourseDurationAssessmentSection({
                   <i className="bi bi-hourglass-split"></i>
                 </div>
 
-                <h4 className="fw-bold mb-3" style={{ color: primaryColor }}>
+                <h3 className="fw-bold mb-3" style={{ color: primaryColor }}>
                   Course Duration
-                </h4>
+                </h3>
 
                 <div className="duration-box mb-4">
                   <div>
@@ -65,9 +65,9 @@ export default function CourseDurationAssessmentSection({
                   <i className="bi bi-patch-check"></i>
                 </div>
 
-                <h4 className="fw-bold mb-3" style={{ color: primaryColor }}>
+                <h3 className="fw-bold mb-3" style={{ color: primaryColor }}>
                   Assessment Overview
-                </h4>
+                </h3>
 
                 <ul className="assessment-list">
                   <li><i className="bi bi-check2-circle"></i> Quizzes</li>

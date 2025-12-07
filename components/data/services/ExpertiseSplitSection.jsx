@@ -172,7 +172,13 @@ export default function ExpertiseSplitSection({
             ))}
 
             {tabs[active]?.cta && (
-              <a href="#" className="ex-btn">{tabs[active].cta}</a>
+              <a
+                href={tabs[active]?.link || "#"}
+                className="ex-btn"
+                target={tabs[active]?.link ? "_blank" : "_self"}
+              >
+                {tabs[active].cta}
+              </a>
             )}
           </div>
 

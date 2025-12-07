@@ -36,9 +36,10 @@ const Training = () => {
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Programs", href: "#services" },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Expertise", href: "#training-expertise" },
+    { label: "Programs", href: "#isc-program-overview" },
+    { label: "Course Outline", href: "#course-outline" },
+    { label: "FAQ", href: "#faq-isc" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -164,7 +165,8 @@ const Training = () => {
           "Hands-on practice with personalised expert feedback",
           "Ideal for aspiring MCTs and corporate trainers"
         ],
-        cta: "Learn About ISC"
+        cta: "Learn About ISC",
+        link: "https://learn.microsoft.com/en-us/credentials/certifications/instructional-skills-provider-requirements"
       },
 
       /* ===========================
@@ -181,7 +183,9 @@ const Training = () => {
           "Understand Microsoft’s authorised trainer expectations",
           "Foundational step toward Microsoft Certified Trainer (MCT)"
         ],
-        cta: "Learn About TTT"
+        cta: "Learn About TTT",
+        link:"https://marketplace.microsoft.com/en-us/marketplace/consulting-services/unifiedcommunicationscom1587146169440.train_the_trainer"
+
       },
 
       /* ===========================
@@ -198,7 +202,8 @@ const Training = () => {
           "Frameworks for designing structured training content",
           "Confidence-building for technical & non-technical delivery"
         ],
-        cta: "Explore ISC Training"
+        cta: "Explore ISC Training",
+        link: "https://learn.microsoft.com/en-us/credentials/certifications/instructional-skills-provider-requirements"
       },
 
       /* ===========================
@@ -216,7 +221,8 @@ const Training = () => {
           "Improve learner engagement and knowledge retention",
           "Maximise training ROI for your organisation"
         ],
-        cta: "View Full Objectives"
+        cta: "View Full Objectives",
+        link:"https://learn.microsoft.com/en-us/training/"
       }
     ]}
   />
@@ -388,24 +394,39 @@ const Training = () => {
 
 
 
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
+<div id="testimonials">
+    <Testimonials
+      subtitle="Client Stories"
+      title="What Clients Say About Working With Novum"
+      items={[
     {
       img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
+      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+      author: "Majid Ismailov",
+      position: "Head of Data Management, Avromed",
     },
     {
       img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
+      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+      author: "Zaur Dibirov",
+      position: "Director of Finance & Accounting, Azerbaijan Airlines",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+      author: "Daniel V",
+      position: "IT & Security Director, Kitopi",
+    },
+    {
+      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
+      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+      author: "Ashish Panday",
+      position: "IT Director, Aster Pharmacy",
     },
   ]}
-/>
+    />
+  
+</div>
 
 
 
