@@ -19,7 +19,7 @@ import Reveal from "@/components/Reveal";
 
 
 
-const Azure = () => {
+const Ai = () => {
   return (
     <div>
         <HeaderFour />
@@ -556,4 +556,4 @@ sectionId="whyus"
   );
 };
 
-export default Azure;
+export default Ai;
