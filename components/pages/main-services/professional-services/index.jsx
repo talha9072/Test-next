@@ -135,7 +135,7 @@ const Professional = () => {
       "Ongoing Improvement Recommendations for optimisation and next-phase enhancements"
     ]}
     extraParagraph="This structured approach reduces project risk and accelerates transformation."
-    imageSrc="/assets/img/professional-services/professional-1.webp"
+    imageSrc="/assets/img/professional-services/professional-4.webp"
     altText="Novum Engagement Approach"
     sectionClass="position-relative overflow-hidden py-7"
   />
