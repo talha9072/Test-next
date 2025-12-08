@@ -40,7 +40,11 @@ export default function PricingCardsSection({
           padding: 32px;
           transition: all .3s ease;
           height: 100%;
+
+          display: flex;              /* NEW */
+          flex-direction: column;     /* NEW */
         }
+
         .pricing-card:hover {
           transform: translateY(-6px);
           box-shadow: 0 20px 45px rgba(0,0,0,0.1);
@@ -129,11 +133,13 @@ export default function PricingCardsSection({
                   </ul>
                 )}
 
-                {/* CTA */}
+                {/* CTA — always bottom aligned */}
                 {card.cta && (
-                  <a className="pc-cta mt-3" href={card.link || "#"}>
-                    {card.cta}
-                  </a>
+                  <div className="mt-auto pt-4">
+                    <a className="pc-cta" href={card.link || "#"}>
+                      {card.cta}
+                    </a>
+                  </div>
                 )}
 
               </div>
