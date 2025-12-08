@@ -32,7 +32,7 @@ const tabsData = [
     bottomLogo: "/assets/img/copilot/teams-logo.svg",
 
     images: [
-      "/assets/img/copilot/mteams.jpg",
+      "/assets/img/copilot/teams.png",
       
     ]
   },
@@ -41,7 +41,7 @@ const tabsData = [
     label: "Word",
     title: "Transform ideas into polished documents with Copilot in Word",
     description:
-      "Copilot in Word helps you draft, rewrite, summarise, and edit content in minutes—turning raw ideas into professional documents effortlessly.",
+      "Copilot in Word helps you draft, rewrite, summarise, and edit content in minutes turning raw ideas into professional documents effortlessly.",
 
     bullets: [
       "Generate high-quality first drafts instantly",
@@ -54,7 +54,7 @@ const tabsData = [
     bottomLogo: "/assets/img/copilot/word-logo.svg",
 
     images: [
-      "/assets/img/copilot/msword.webp",
+      "/assets/img/copilot/word.webp",
       
     ]
   },
@@ -63,7 +63,7 @@ const tabsData = [
     label: "Excel",
     title: "Analyse data in seconds with Copilot in Excel",
     description:
-      "Copilot in Excel helps you explore datasets, uncover insights, and build models without writing complex formulas—making analytics accessible to everyone.",
+      "Copilot in Excel helps you explore datasets, uncover insights, and build models without writing complex formulas making analytics accessible to everyone.",
 
     bullets: [
       "Identify trends, anomalies, and patterns instantly",
@@ -76,7 +76,7 @@ const tabsData = [
     bottomLogo: "/assets/img/copilot/excel-logo.svg",
 
     images: [
-      "/assets/img/copilot/msexcel.avif",
+      "/assets/img/copilot/excel.webp",
     ]
   },
 
@@ -84,7 +84,7 @@ const tabsData = [
     label: "PowerPoint",
     title: "Create stunning presentations effortlessly",
     description:
-      "Copilot in PowerPoint converts documents, outlines, and ideas into beautiful, ready-to-present slide decks—complete with layouts, visuals, and speaker notes.",
+      "Copilot in PowerPoint converts documents, outlines, and ideas into beautiful, ready-to-present slide decks complete with layouts, visuals, and speaker notes.",
 
     bullets: [
       "Generate full slide decks from Word documents or prompts",
@@ -97,7 +97,7 @@ const tabsData = [
     bottomLogo: "/assets/img/copilot/powerpoint-logo.svg",
 
     images: [
-      "/assets/img/copilot/power-point.jpg",
+      "/assets/img/copilot/powerpoint.webp",
 
     ]
   }
@@ -116,17 +116,15 @@ const Copilot = () => {
   title="Work smarter and faster with AI in Microsoft 365"
   highlightText="Copilot 365"
   subtitle="Novum helps organisations unlock Copilot to boost productivity, automate tasks, and improve outcomes across Teams, Word, Excel, PowerPoint, and Outlook."
-  bgImage="/assets/img/dynamics365/bg-dynamic365.png"
+  bgImage="/assets/img/copilot/copilot-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
     { label: "Overview", href: "#about" },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Product Demos", href: "#product" },
-    { label: "Get Started", href: "#getstarted" },
-    { label: "Advantage", href: "#advantage" },
-    { label: "ERP", href: "#erp" },
+    { label: "Products", href: "#product" },
+    { label: "Transformation", href: "#advantage" },
+    { label: "Copilot Role", href: "#roles" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -141,7 +139,7 @@ const Copilot = () => {
 
     paragraphs={[
       "Microsoft Copilot brings the power of generative AI directly into Microsoft 365, enabling your teams to work smarter, faster, and with greater precision across every task.",
-      "By integrating AI into tools your organisation already uses — Word, Excel, PowerPoint, Teams, and Outlook — Copilot helps automate routine work, generate insights, and support better decision-making at every level.",
+      "By integrating AI into tools your organisation already uses Word, Excel, PowerPoint, Teams, and Outlook Copilot helps automate routine work, generate insights, and support better decision-making at every level.",
       "With enterprise-grade security, privacy, and compliance built in, Copilot empowers your workforce to focus on high-value outcomes while reducing manual effort and operational overhead."
     ]}
 
@@ -201,7 +199,7 @@ const Copilot = () => {
 <div id="roles">
   <PricingCardsSection
     sectionId="roles"
-    backgroundImage="/assets/img/copilot/copilot-roles-bg.png"
+    backgroundImage="/assets/img/azure/bg-azure-2.png"
     title="Enhance Every Role with AI"
     intro="Microsoft Copilot elevates productivity across all business functions by automating routine tasks, generating insights, and enabling teams to focus on high-value work."
     primaryColor="#0d2b75"
@@ -217,7 +215,7 @@ const Copilot = () => {
           "AI-generated insights & recommendations"
         ],
         cta: "Explore Copilot for Sales",
-        link: "#"
+        link: "https://www.microsoft.com/en-us/microsoft-365-copilot"
       },
       {
         title: "Service",
@@ -229,7 +227,7 @@ const Copilot = () => {
           "Shorter resolution cycles"
         ],
         cta: "Explore Copilot for Service",
-        link: "#"
+        link: "https://www.microsoft.com/en-us/microsoft-365-copilot"
       },
       {
         title: "Security",
@@ -241,7 +239,7 @@ const Copilot = () => {
           "Cross-tool attack correlation"
         ],
         cta: "Explore Copilot for Security",
-        link: "#"
+        link: "https://www.microsoft.com/en-us/microsoft-365-copilot"
       },
       {
         title: "Development",
@@ -253,7 +251,7 @@ const Copilot = () => {
           "Reduced repetitive coding tasks"
         ],
         cta: "Explore GitHub Copilot",
-        link: "#"
+        link: "https://m365.cloud.microsoft/chat"
       }
     ]}
   />
@@ -262,14 +260,14 @@ const Copilot = () => {
 
 <CTAPage
   title="Need Support Implementing Copilot?"
-  description="Novum helps organisations deploy, integrate, secure, and adopt Microsoft Copilot across every department—ensuring real business value from day one. From licensing to configuration to employee training, we guide you through the full journey."
+  description="Novum helps organisations deploy, integrate, secure, and adopt Microsoft Copilot across every department ensuring real business value from day one. From licensing to configuration to employee training, we guide you through the full journey."
   buttonLabel="Get in touch"
   buttonLink="/contact"
   backgroundType="image"
-  backgroundImage="/assets/img/copilot/copilot-cta-bg.png"
+  backgroundImage="/assets/img/copilot/copilot-cta.webp"
   textColor="#ffffff"
   sectionClass="py-7"
-  overlayOpacity={0.65}
+  overlayOpacity={0.80}
 />
 
 
