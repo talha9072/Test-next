@@ -109,12 +109,9 @@ const Azure = () => {
   ]}
   links={[
     { label: "Overview", href: "#overview" },
-    { label: "Capabilities", href: "#core-capabilities" },
-    { label: "Innovation", href: "#future-roadmap" },
+    { label: "Applications", href: "#product" },
+    { label: "Cloud Transformation", href: "#cloud" },
     { label: "Use Case", href: "#use-cases" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Announcements", href: "#latest-announcements" },
-    { label: "Why Us?", href: "#whyus" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
@@ -144,15 +141,17 @@ const Azure = () => {
 
 <section className="dynamics-section py-5" id="product">
   <div className="container">
-    <h2 className="section-title text-center mb-4">Copilot Across Microsoft 365</h2>
+    <h2 className="section-title text-center mb-4">Transform the way you work</h2>
     <p className="section-desc text-center">
-      See how Copilot transforms productivity inside Teams, Word, Excel, and PowerPoint helping your organisation communicate better, analyse faster, and create more impactful work.
+      See how AI works with Dynamics 365 applications to give every team an edge.
     </p>
 
     <DynamicsTabs tabs={tabsData} />
   </div>
 </section>
 
+
+<div id="cloud">
 <HighlightsSection
   sectionId="latest-announcements"
   backgroundGradient="linear-gradient(to bottom right, #e5f1ff, #fff)"
@@ -192,7 +191,10 @@ const Azure = () => {
     }
   ]}
 />
+</div>
 
+
+<div id="use-cases">
 <UseCasesSection
   sectionId="get-to-know-azure"
   backgroundStyle="#e5f1ff"
@@ -301,6 +303,7 @@ const Azure = () => {
     }
   ]}
 />
+</div>
  
 
 <CTAPage
