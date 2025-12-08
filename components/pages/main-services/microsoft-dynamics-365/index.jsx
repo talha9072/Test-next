@@ -212,19 +212,19 @@ const Dynamic365 = () => {
         {
           title: "Modular, Prebuilt Applications",
           desc: "Easily extend Dynamics 365 with scalable components designed to integrate, evolve, and grow with your organisation.",
-          image: "/assets/img/dynamics365/dynamics-1.webp",
+          image: "/assets/img/dynamics365/dynamic-tab1.webp",
           cta: "Explore",
         },
         {
           title: "Connected End-to-End Workflows",
           desc: "Unify sales, marketing, operations, finance, and supply chain through seamless cross-system workflows that eliminate silos and boost performance.",
-          image: "/assets/img/dynamics365/dynamics-1.webp",
+          image: "/assets/img/dynamics365/dynamic-tab2.webp",
           cta: "Explore",
         },
         {
           title: "Rapid Deployment & Onboarding",
           desc: "Leverage low-code and no-code tools to deploy new applications quickly, streamline onboarding, and accelerate value across teams.",
-          image: "/assets/img/dynamics365/dynamics-1.webp",
+          image: "/assets/img/dynamics365/dynamic-tab3.webp",
           cta: "Explore",
         },
       ],
