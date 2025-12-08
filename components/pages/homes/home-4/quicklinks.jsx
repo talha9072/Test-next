@@ -27,7 +27,7 @@ export default function QuickLinks() {
               <div className="position-relative overflow-hidden rounded shadow-sm flex-fill">
                 {/* Background Image */}
                 <img
-                  src="/assets/img/home/cta-1.png"
+                  src="/assets/img/home/cta-1.webp"
                   alt="Novum for Business"
                   className="w-100 h-100 object-fit-cover rounded"
                   style={{ minHeight: "300px" }}
