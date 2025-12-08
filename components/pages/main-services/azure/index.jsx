@@ -1,12 +1,10 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import BulletPoints from "@/components/data/services/bulletpoints";
-import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
-import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import OverviewComponent from "@/components/data/services/OverviewComponent";
+import DynamicsTabs from "@/components/data/services/DynamicsTabs";
+import CTAPage from '@/components/data/services/CTAPage';
 import UseCasesSection from "@/components/data/services/UseCasesSection";
-import PricingCardsSection from "@/components/data/services/PricingCardsSection";
-import WhyChooseSection from "@/components/data/services/whychooseus";
 import HighlightsSection from "@/components/data/services/HighlightsSection";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
@@ -16,6 +14,81 @@ import Footer from "@/components/layout/footers/footer";
 import Reveal from "@/components/Reveal";
 
 
+const tabsData = [
+  {
+    label: "IT Professionals",
+    title: "Modernise and optimise IT operations with Azure",
+    description:
+      "Azure gives IT teams secure, scalable tools to manage infrastructure, optimise workloads, strengthen governance, and modernise hybrid environments with confidence.",
+
+    bullets: [
+      "Infrastructure and cloud environment management",
+      "Governance, compliance, and identity controls",
+      "Security, monitoring, and threat protection",
+      "Hybrid and multi-cloud readiness and operations"
+    ],
+
+    
+
+    images: [
+      "/assets/img/azure-service/it-prof.avif",
+    ]
+  },
+
+  {
+    label: "Developers",
+    title: "Build, deploy, and scale intelligent applications faster",
+    description:
+      "Azure empowers developers with cloud native tools, DevOps automation, and AI services to accelerate development cycles and create modern, scalable applications.",
+
+    bullets: [
+      "App modernisation and cloud-native development",
+      "GitHub integration with CI/CD and DevOps automation",
+      "APIs, containers, microservices, and serverless",
+      "AI-powered services for intelligent applications"
+    ],
+
+    images: [
+      "/assets/img/azure-service/developers.avif",
+    ]
+  },
+
+  {
+    label: "Data Analysts",
+    title: "Unlock real-time insights with unified Azure data solutions",
+    description:
+      "Azure helps analysts extract insights, run analytics at scale, and support strategic decision making through unified data services and advanced analytics capabilities.",
+
+    bullets: [
+      "Modern data warehousing and storage solutions",
+      "Real-time analytics pipelines and processing",
+      "Advanced dashboards, reporting, and visualisation",
+      "Enterprise-grade data governance and quality controls"
+    ],
+
+    images: [
+      "/assets/img/azure-service/data-analyst.avif",
+    ]
+  },
+
+  {
+    label: "Business Leaders",
+    title: "Drive innovation and value creation with Azure and AI",
+    description:
+      "Azure enables organisations to reduce risk, optimise costs, and accelerate AI-led transformation helping leaders unlock competitive advantage across the business.",
+
+    bullets: [
+      "AI adoption and business value acceleration",
+      "Cost optimisation and measurable cloud ROI",
+      "Strategic cloud and digital transformation planning",
+      "Enterprise continuity, resilience, and security"
+    ],
+
+    images: [
+      "/assets/img/azure-service/leaders.avif",
+    ]
+  },
+];
 
 
 
@@ -26,11 +99,11 @@ const Azure = () => {
         {/* Hero Section */}
 
       <HeroWithRibbon
-  serviceName="Azure Data Foundry"
-  title="Build, Scale, and Govern Enterprise AI with Confidence"
+  serviceName="Azure Services"
+  title="Your Azure journey begins with one step"
   highlightText="Azure"
-  subtitle="A unified Azure platform for creating, customising, deploying, and managing advanced AI applications, agents, and multimodal solutions at scale."
-  bgImage="/assets/img/azure/bg-azure-2.png"
+  subtitle="Prepare your platform for AI with a seamless migration to Azure, gaining the scalability, security, productivity, and AI capabilities your organisation needs. Pay as you go or try Azure Free for up to 30 days."
+  bgImage="/assets/img/azure-service/azure-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -47,374 +120,206 @@ const Azure = () => {
   ]}
 />
 
- <Reveal direction="left">
-<BulletPoints
-  sectionId="overview"
-  title={<>What Is Azure Data Foundry?</>}
-  paragraphs={[
-    "Azure Data Foundry is a powerful unified platform as a-service that allows businesses to design, build, customise, deploy, and scale AI applications inside a single, highly governed Azure workspace.",
-    "It brings together foundation models, agent runtimes, orchestration tools, data connectors, and enterprise grade governance controls all operating under a central namespace."
-  ]}
-  bulletPoints={[
-    "Unified workspace for AI development and deployment",
-    "Consistent RBAC, network governance, and policy controls",
-    "End-to-end lifecycle management from prototyping to production",
-    "Seamless integration with Azure services, GitHub, and enterprise identity systems"
-  ]}
-  imageSrc="/assets/img/azure/azure-1.webp"
-  altText="Azure Data Foundry Unified AI Platform"
-  sectionClass="position-relative overflow-hidden py-7 pb-0"
-/>
-</Reveal>
+<div id="about">
+  <OverviewComponent
+    title="What Is Azure?"
+    primaryColor="#0d2b75"
+    backgroundType="color"
+    backgroundColor="#e5f1ff"
 
+    paragraphs={[
+      "Azure is a comprehensive cloud platform that enables organisations to run infrastructure, applications, data, analytics, and AI in a secure and scalable environment.",
+      "It empowers businesses to modernise operations, accelerate innovation, and build intelligent solutions across cloud, hybrid, and edge environments."
+    ]}
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-<CapabilitiesTabsCards
-  title="Core Capabilities Of Azure Data Foundry"
-  primaryColor="#0d2b75"
-  sectionId="core-capabilities"
-  backgroundImage="/assets/img/azure/azure-1-bg.png"
-  backgroundOverlay={true}
-  tabs={[
-    {
-      label: "Model Access & Customisation",
-      cards: [
-        {
-          image: "/assets/img/azure/azure-1.webp",
-          label: "Access",
-          title: "Model Access",
-          desc: "1,900+ foundation & open-source models via unified Azure API.",
-          link: "#"
-        },
-        {
-          image: "/assets/img/azure/azure-2.webp",
-          label: "Customisation",
-          title: "Model Customisation",
-          desc: "Fine-tuning, distillation, multimodal, serverless inference.",
-          link: "#"
-        }
-      ]
-    },
+    listItems={[
+      "Run applications securely across cloud, hybrid, and edge environments",
+      "Leverage advanced AI, analytics, and data services",
+      "Scale infrastructure on demand with global reliability",
+      "Enhance security with built-in identity, compliance, and governance",
+      "Integrate seamlessly with Microsoft 365, Dynamics 365, and Power Platform"
+    ]}
+  />
+</div>
 
-    {
-      label: "Advanced Agent Toolchain",
-      cards: [
-        {
-          image: "/assets/img/azure/azure-2.webp",
-          label: "Agents",
-          title: "Enterprise Agents",
-          desc: "RAG-ready pipelines & long-running workflows.",
-          link: "#"
-        },
-        {
-          image: "/assets/img/azure/azure-1.webp",
-          label: "Multi-Agent",
-          title: "Multi-Agent Systems",
-          desc: "A2A & MCP orchestration, secure RBAC agent flows.",
-          link: "#"
-        }
-      ]
-    },
+<section className="dynamics-section py-5" id="product">
+  <div className="container">
+    <h2 className="section-title text-center mb-4">Copilot Across Microsoft 365</h2>
+    <p className="section-desc text-center">
+      See how Copilot transforms productivity inside Teams, Word, Excel, and PowerPoint helping your organisation communicate better, analyse faster, and create more impactful work.
+    </p>
 
-    {
-      label: "Tooling & Integration",
-      cards: [
-        {
-          image: "/assets/img/azure/azure-1.webp",
-          label: "SDKs",
-          title: "SDK Support",
-          desc: "Python, C#, JS/TS, Java, GitHub Copilot, VS Code templates.",
-          link: "#"
-        },
-        {
-          image: "/assets/img/azure/azure-2.webp",
-          label: "Connectors",
-          title: "Enterprise Connectors",
-          desc: "1,400+ integrations across ERP, CRM, HRM, and more.",
-          link: "#"
-        }
-      ]
-    },
+    <DynamicsTabs tabs={tabsData} />
+  </div>
+</section>
 
-    {
-      label: "Governance & Observability",
-      cards: [
-        {
-          image: "/assets/img/azure/azure-1.webp",
-          label: "Monitoring",
-          title: "Observability",
-          desc: "Telemetry dashboards, monitoring, usage tracking.",
-          link: "#"
-        },
-        {
-          image: "/assets/img/azure/azure-2.webp",
-          label: "Governance",
-          title: "Responsible AI & Policy",
-          desc: "Policy enforcement, audits, responsible AI tools.",
-          link: "#"
-        }
-      ]
-    },
-
-    {
-      label: "Local & Edge Deployment",
-      cards: [
-        {
-          image: "/assets/img/data-foundry/edge.png",
-          label: "Local",
-          title: "Foundry Local",
-          desc: "Run on Mac/Windows with offline inference support.",
-          link: "#"
-        },
-        {
-          image: "/assets/img/data-foundry/edge.png",
-          label: "Hybrid",
-          title: "Hybrid Cloud",
-          desc: "Azure Arc support for on-prem and hybrid deployments.",
-          link: "#"
-        }
-      ]
-    }
-  ]}
-/>
-</Reveal>      
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
-<InnovationsRoadmapSection
-  sectionId="future-roadmap"
-  backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
-  subtitle="INNOVATIONS"
-  title="Innovations & Future Roadmap"
-  intro="Azure Data Foundry continues to evolve with next-generation models, intelligent routing, deep enterprise integrations, and breakthrough research from Foundry Labs."
-  primaryColor="#0d2b75"
-  items={[
-    {
-      icon: "bi-lightning-charge",
-      title: "Next-Gen Model Support",
-      desc: "Support for Grok 3, Flux Pro 1.1, Sora, and hundreds of Hugging Face models."
-    },
-    {
-      icon: "bi-diagram-3",
-      title: "Smart Model Router",
-      desc: "Automatically optimises cost and performance using Azure’s routing engine."
-    },
-    {
-      icon: "bi-cpu",
-      title: "Foundry Agent Service",
-      desc: "Enterprise-ready agent deployment templates now publicly available."
-    },
-    {
-      icon: "bi-link-45deg",
-      title: "Expanded Integrations",
-      desc: "Teams, Office, Slack, Twilio, and growing third-party connectors."
-    },
-    {
-      icon: "bi-flask",
-      title: "Foundry Labs Experiments",
-      desc: "Includes Project Amelie, TypeAgent, EvoDiff, BioEmu, and more."
-    },
-    {
-      icon: "bi-stars",
-      title: "Magnetic UI",
-      desc: "A new adaptive interface concept emerging from Foundry Labs."
-    }
-  ]}
-/>
-</Reveal>
-
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-<UseCasesSection
-  sectionId="use-cases"
-  backgroundStyle="#e5f1ff"
-  primaryColor="#0d2b75"
-  subtitle="USE CASES"
-  title="Use Cases & Industry Applications"
-  intro="Azure Data Foundry enables intelligent automation across industries with multimodal AI, intelligent agents, and enterprise-grade orchestration."
-  tabs={[
-    {
-      label: "Popular Use Cases",
-      items: [
-        {
-          label: "Use Case",
-          title: "AI Chatbots & Virtual Assistants",
-          desc: "Build conversational assistants with secure enterprise agent pipelines.",
-          image: "/assets/img/azure/azure-2.webp",
-          cta: "Explore",
-        },
-        {
-          label: "Use Case",
-          title: "Document Automation",
-          desc: "Generate summaries and extract insights from high-volume documents.",
-          image: "/assets/img/azure/azure-1.webp",
-          cta: "Read more",
-        },
-        {
-          label: "Use Case",
-          title: "Multimodal Intelligence",
-          desc: "Analyze images, audio, and video using multimodal foundation models.",
-          image: "/assets/img/usecases/multimodal.webp",
-          cta: "Learn more",
-        },
-      ],
-    },
-    {
-      label: "Customer Success",
-      items: [
-        {
-          label: "Success",
-          title: "Accenture",
-          desc: "Enterprise-scale assistant creation with Azure Data Foundry.",
-          image: "/assets/img/logos/accenture.webp",
-          cta: "Read story",
-        },
-        {
-          label: "Success",
-          title: "Nasdaq",
-          desc: "Advanced analytics for financial markets using Foundry.",
-          image: "/assets/img/logos/nasdaq.webp",
-          cta: "View insights",
-        },
-        {
-          label: "Success",
-          title: "Carvana",
-          desc: "AI systems powering retail and customer engagement.",
-          image: "/assets/img/logos/carvana.webp",
-          cta: "Explore case",
-        },
-      ],
-    },
-  ]}
-/>
-</Reveal>
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-<PricingCardsSection
-  sectionId="pricing"
-  backgroundImage="/assets/img/azure/pricing-bg.avif"
-  title="Pricing, Licensing & Cost Considerations"
-  intro="Azure Data Foundry is free to explore, and you only pay for the AI services you consume. We help organisations estimate and optimise their spending with the right model and deployment choices."
-  primaryColor="#0d2b75"
-  cards={[
-    {
-      title: "Pay-As-You-Go",
-      desc: "Flexible usage-based billing across models, compute, and storage.",
-      list: [
-        "Over 1,900+ AI models billed per token",
-        "Only pay for what you use",
-        "Full cost visibility"
-      ]
-    },
-    {
-      title: "Model Inference",
-      desc: "Consumption pricing for LLMs, embedding models, multimodal transformers, and more.",
-      list: [
-        "LLM token-based billing",
-        "Multimodal image/video inference",
-        "Optimised routing for cost reduction"
-      ]
-    },
-    {
-      title: "Fine-Tuning & Hosting",
-      desc: "Scaled hosted fine-tuning and custom model deployment on Azure GPU compute.",
-      list: [
-        "Training compute billed per-hour",
-        "Model hosting priced by GPU/CPU",
-        "Auto-scaling for lower cost"
-      ]
-    },
-    {
-      title: "Cost Optimisation Support",
-      desc: "We help clients reduce spend across model selection, caching, routing, and architecture.",
-      list: [
-        "Large model optimisation",
-        "Token efficiency tuning",
-        "Right-size infrastructure planning"
-      ],
-      cta: "Talk to us",
-      link: "#"
-    }
-  ]}
-/>
-</Reveal>
-
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <HighlightsSection
   sectionId="latest-announcements"
-  leftImage="/assets/img/azure/ppl.avif"
-  backgroundGradient="linear-gradient(to bottom right, #ffffff, #eef3ff)"
+  backgroundGradient="linear-gradient(to bottom right, #e5f1ff, #fff)"
+  leftImage="/assets/img/azure-service/left-img.webp"
+  leftTitle="Insights for Cloud & AI Success"
+  leftDesc="Explore practical guidance to help you modernise cloud environments, enhance data value, optimise costs, and adopt responsible AI."
+  title="Guidance for AI, Data, and Cloud Transformation"
+  subtitle="Short, actionable insights for smarter cloud adoption"
   cards={[
     {
-      icon: "bi-lightning-charge-fill",
-      title: "Grok 3 Now on Azure",
-      desc: "Microsoft now hosts xAI’s Grok 3 model with full performance parity for enterprise workloads.",
-      link: "#",
-      cta: "Learn more"
-    },
-    {
-      icon: "bi-diagram-3",
-      title: "Hugging Face Catalog Expansion",
-      desc: "Expanded support for open-source model catalogs, offering hundreds of new models.",
-      link: "#",
-      cta: "Learn more"
-    },
-    {
-      icon: "bi-arrows-move",
-      title: "Model Context Protocol",
-      desc: "Broader interoperability for agents and custom workflows via MCP.",
-      link: "#",
-      cta: "Learn more"
-    },
-    {
-      icon: "bi-robot",
-      title: "Agent Deployment Enhancements",
-      desc: "Improved agent orchestration, workflow automation, and enterprise reliability.",
-      link: "#",
-      cta: "Learn more"
-    }
-  ]}
-/>
-</Reveal>
-
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-<WhyChooseSection
-sectionId="whyus"
-  items={[
-    {
-      icon: "bi-lightbulb",
-      title: "AI Strategy & Discovery",
-      desc: "We guide organisations to define objectives and identify AI opportunities using Azure Data Foundry."
-    },
-    {
       icon: "bi-shield-lock",
-      title: "Secure Platform Setup",
-      desc: "Governance, RBAC, networking, identity, and compliance configured for enterprise deployment."
+      title: "Trust your cloud",
+      desc: "Security built into every layer with expert-led protection and proactive compliance.",
+      link: "https://azure.microsoft.com/",
+      cta: "Explore insights"
     },
     {
-      icon: "bi-cpu",
-      title: "Model Selection & Tuning",
-      desc: "Fine-tuning, prompt optimisation, and performance calibration across 1,900+ Azure-hosted models."
+      icon: "bi-cloud-upload",
+      title: "Operate hybrid seamlessly",
+      desc: "Manage on-prem, multi-cloud, and edge environments with integrated hybrid tools.",
+      link: "https://azure.microsoft.com/",
+      cta: "Learn more"
     },
     {
-      icon: "bi-diagram-3",
-      title: "Multi-Agent Architecture",
-      desc: "We design scalable multi-agent systems with A2A and MCP standards for enterprise operations."
+      icon: "bi-people-fill",
+      title: "Build on your teams",
+      desc: "Develop using any language or framework with full open-source support and flexibility.",
+      link: "https://azure.microsoft.com/",
+      cta: "View guidance"
     },
     {
-      icon: "bi-cloud-arrow-down",
-      title: "System Integration",
-      desc: "Deep integrations with Azure, Power Platform, Microsoft 365, ERP, CRM, and your business systems."
-    },
-    {
-      icon: "bi-graph-up-arrow",
-      title: "Cost Optimisation",
-      desc: "We optimise token usage, compute costs, hosting, and performance — saving up to 40% monthly."
+      icon: "bi-rocket-takeoff",
+      title: "Be future-ready",
+      desc: "Stay ahead with Microsoft's continuous innovation powering tomorrow’s solutions.",
+      link: "https://azure.microsoft.com/",
+      cta: "Read strategy"
     }
   ]}
 />
-</Reveal>
+
+<UseCasesSection
+  sectionId="get-to-know-azure"
+  backgroundStyle="#e5f1ff"
+  primaryColor="#0d2b75"
+  subtitle="GET TO KNOW AZURE"
+  title="Explore Azure for Every Role"
+  intro="Azure helps teams build intelligent apps, modernise infrastructure, and drive secure innovation across IT, development, and analytics."
+  tabs={[
+    /* -------------------------
+       IT PROFESSIONALS
+    -------------------------- */
+    {
+      label: "IT Professionals",
+      items: [
+        {
+          label: "IT",
+          title: "Infrastructure & Hybrid Management",
+          desc: "Manage cloud, on-prem, and edge workloads seamlessly with Azure’s unified tools.",
+          image: "/assets/img/azure-service/it-professionals.png",
+          cta: "Learn more",
+          link:"https://azure.microsoft.com/en-us/explore/global-infrastructure"
+        },
+        {
+          label: "IT",
+          title: "Security & Compliance",
+          desc: "Strengthen protection with built-in security, identity governance, and monitoring.",
+          image: "/assets/img/azure-service/it-security.png",
+          cta: "View details",
+          link:"https://azure.microsoft.com/en-us/blog/microsoft-is-a-leader-in-the-2024-gartner-magic-quadrant-for-cloud-ai-developer-services/"
+        },
+        {
+          label: "IT",
+          title: "Operational Efficiency",
+          desc: "Optimise workloads, automate tasks, and improve system reliability at scale.",
+          image: "/assets/img/azure-service/operation.png",
+          cta: "Explore",
+          link:"https://azure.microsoft.com/en-us/solutions/adaptive-cloud/"
+        }
+      ]
+    },
+
+    /* -------------------------
+       DEVELOPERS
+    -------------------------- */
+    {
+      label: "Developers",
+      items: [
+        {
+          label: "Developers",
+          title: "Build Modern Applications",
+          desc: "Use cloud-native tools, containers, and serverless services to ship faster.",
+          image: "/assets/img/azure-service/developer-1.png",
+          cta: "Learn more",
+          link:"https://azure.microsoft.com/en-us/products/ai-foundry/tools"
+        },
+        {
+          label: "Developers",
+          title: "CI/CD & DevOps Automation",
+          desc: "Streamline development with GitHub, pipelines, and AI-powered automations.",
+          image: "/assets/img/azure-service/developer-2.png",
+          cta: "View details",
+          link:"https://azure.microsoft.com/en-us/products/ai-foundry/tools"
+        },
+        {
+          label: "Developers",
+          title: "Intelligent Apps with AI",
+          desc: "Integrate Azure AI for smarter features, automation, and enhanced UX.",
+          image: "/assets/img/azure-service/developer-3.png",
+          cta: "Explore",
+          link:"https://azure.microsoft.com/en-us/resources/developers/"
+        }
+      ]
+    },
+
+    /* -------------------------
+       DATA ANALYSTS
+    -------------------------- */
+    {
+      label: "Data Analysts",
+      items: [
+        {
+          label: "Analytics",
+          title: "Unified Data & Storage",
+          desc: "Bring data together across systems for cleaner, faster analytics.",
+          image: "/assets/img/azure-service/analyst-1.png",
+          cta: "Learn more",
+          link:"https://azure.microsoft.com/en-us/solutions/ai"
+        },
+        {
+          label: "Analytics",
+          title: "Real-Time Insights",
+          desc: "Use Azure Synapse, Fabric, and AI to analyse massive data volumes instantly.",
+          image: "/assets/img/azure-service/analyst-2.png",
+          cta: "View insights",
+          link:"https://azure.microsoft.com/en-us/explore/innovation-insights/"
+        },
+        {
+          label: "Analytics",
+          title: "Reporting & Visualisation",
+          desc: "Create dashboards and intelligence models that support confident decisions.",
+          image: "/assets/img/azure-service/analyst-3.png",
+          cta: "Explore",
+          link:"https://azure.microsoft.com/en-us/solutions/ai/responsible-ai-with-azure/"
+        }
+      ]
+    }
+  ]}
+/>
+ 
+
+<CTAPage
+  title="Accelerate your cloud and AI transformation"
+  description="Unlock the full potential of Azure with secure infrastructure, intelligent data capabilities, and enterprise-grade AI. Modernise faster, reduce complexity, and build a future-ready technology foundation with Novum."
+  buttonLabel="Start Your Azure Journey"
+  buttonLink="/contact"
+  backgroundType="image"
+  backgroundImage="/assets/img/azure-service/azure-cta.webp"
+  textColor="#ffffff"
+  sectionClass="py-7"
+  overlayOpacity={0.65}
+/>
+
+
+
+
+
+
         
     
 <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
