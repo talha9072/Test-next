@@ -46,7 +46,7 @@ const ResponsiveMenu = () => {
                         <li><Link href="/services/power-bi">Power BI / Reporting Consulting</Link></li>
                         <li><Link href="/services/data-warehouse">Data Warehouse</Link></li>
                         <li><Link href="/services/artificial-intelligence-iot">Artificial Intelligence & IoT</Link></li>
-                        <li><Link href="/services/azure">Azure Data Foundry</Link></li>
+                        <li><Link href="/services/azure-data-foundry">Azure Data Foundry</Link></li>
 
                         {/* Business Applications */}
                         <li className="menu-group-heading">
@@ -64,6 +64,8 @@ const ResponsiveMenu = () => {
                         <li><Link href="/services/custom-application-development">Application Development</Link></li>
                         <li><Link href="/services/system-integration">System Integration</Link></li>
                         <li><Link href="/services/automation">Automation</Link></li>
+                        <li><Link href="/services/copilot">Copilot Studio / Agents</Link></li>
+                        <li><Link href="/services/azure">Azure(Cloud Adoption and Integration)</Link></li>
 
                         {/* Engagements */}
                         <li className="menu-group-heading">

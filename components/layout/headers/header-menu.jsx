@@ -27,7 +27,7 @@ const megaItems = [
       { label: 'Power BI / Reporting Consulting', href: '/services/power-bi' },
       { label: 'Data Warehouse', href: '/services/data-warehouse' },
       { label: 'Artificial Intelligence and IoT', href: '/services/artificial-intelligence-iot' },
-      { label: 'Azure Data Foundry', href: '/services/azure' },
+      { label: 'Azure Data Foundry', href: '/services/azure-data-foundry' },
     ],
   },
   {
@@ -47,6 +47,8 @@ const megaItems = [
       { label: 'Application Development', href: '/services/custom-application-development' },
       { label: 'System integration', href: '/services/system-integration' },
       { label: 'Automation', href: '/services/automation' },
+      { label: 'Copilot Studio / Agents', href: '/services/copilot' },
+      { label: 'Azure(Cloud Adoption and Integration)', href: '/services/azure' },
       
     ],
   },
