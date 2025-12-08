@@ -149,7 +149,7 @@ sectionId="services"
   tabs={[
     {
       label: "System Integration (SI)",
-      leftImage: "/assets/img/azure/ppl.avif",
+      leftImage: "/assets/img/system-integration/si-left.webp",
       leftTitle: "Cloud-Native System Integration",
       leftDesc: "APC builds complete Azure architectures across containers, serverless, IaC, DevOps, networking, and modernization.",
       cards: [
