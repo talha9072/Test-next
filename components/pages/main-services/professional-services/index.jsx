@@ -69,7 +69,7 @@ const Professional = () => {
   primaryColor="#0d2b75"
   items={[
     {
-      image: "/assets/img/professional-services/tab-1.jpg",
+      image: "/assets/img/professional-services/tab-1.webp",
       title: "Cloud Strategy & Adoption",
       list: [
         "Align cloud strategy with business goals",
@@ -78,7 +78,7 @@ const Professional = () => {
       ],
     },
     {
-      image: "/assets/img/professional-services/tab-2.jpg",
+      image: "/assets/img/professional-services/tab-2.webp",
       title: "Migration Services",
       list: [
         "App, DB, infrastructure migrations",
@@ -87,7 +87,7 @@ const Professional = () => {
       ],
     },
     {
-      image: "/assets/img/professional-services/tab-3.jpg",
+      image: "/assets/img/professional-services/tab-3.webp",
       title: "Application & Data Modernisation",
       list: [
         "Re-architect monoliths",
@@ -96,7 +96,7 @@ const Professional = () => {
       ],
     },
     {
-      image: "/assets/img/professional-services/tab-5.jpg",
+      image: "/assets/img/professional-services/tab-4.webp",
       title: "Security & Compliance",
       list: [
         "Zero Trust",
@@ -105,7 +105,7 @@ const Professional = () => {
       ],
     },
     {
-      image: "/assets/img/professional-services/tab-4.jpg",
+      image: "/assets/img/professional-services/tab-5.webp",
       title: "DevOps & Automation",
       list: [
         "CI/CD pipelines",
@@ -158,7 +158,7 @@ const Professional = () => {
   ]}
   buttonLabel="Explore our capabilities"
   buttonLink="/contact"
-  imageSrc="/assets/img/professional-services/professional-2.webp"
+  imageSrc="/assets/img/professional-services/professional-3.webp"
   imageAlt="Novum Industry Expertise and Certifications"
 />
 </Reveal>
