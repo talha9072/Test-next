@@ -3,7 +3,6 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
-import Reveal from "@/components/Reveal";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
@@ -69,7 +68,6 @@ const Automation = () => {
 </div>
 
 <div id="service-offerings">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <ServiceFeatureSlider
       sectionId="service-offerings"
       title="Core Automation Capabilities"
@@ -78,7 +76,7 @@ const Automation = () => {
       primaryColor="#0d2b75"
       items={[
         {
-          image: "/assets/img/automation/tab-1.jpg",
+          image: "/assets/img/automation/tab-1.webp",
           title: "Infrastructure Automation",
           list: [
             "Automated provisioning and configuration",
@@ -87,7 +85,7 @@ const Automation = () => {
           ],
         },
         {
-          image: "/assets/img/automation/tab-2.jpg",
+          image: "/assets/img/automation/tab-2.webp",
           title: "Network Automation",
           list: [
             "Zero-touch network provisioning",
@@ -96,7 +94,7 @@ const Automation = () => {
           ],
         },
         {
-          image: "/assets/img/automation/tab-3.jpg",
+          image: "/assets/img/automation/tab-3.webp",
           title: "Security Automation",
           list: [
             "Automated threat detection & response (SIEM/SOAR)",
@@ -105,7 +103,7 @@ const Automation = () => {
           ],
         },
         {
-          image: "/assets/img/automation/tab-4.jpg",
+          image: "/assets/img/automation/tab-4.webp",
           title: "Application Automation & CI/CD",
           list: [
             "Automated builds, testing, and deployments",
@@ -114,7 +112,7 @@ const Automation = () => {
           ],
         },
         {
-          image: "/assets/img/automation/tab-5.jpg",
+          image: "/assets/img/automation/tab-5.webp",
           title: "Cloud Automation & Optimisation",
           list: [
             "Resource provisioning & autoscaling",
@@ -124,12 +122,10 @@ const Automation = () => {
         }
       ]}
     />
-  </Reveal>
 </div>
 
 
 <div id="services">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <AIUseCaseGrid
       title="Accelerate Transformation with Our Automation Services"
       backgroundType="gradient"
@@ -180,11 +176,9 @@ const Automation = () => {
         },
       ]}
     />
-  </Reveal>
 </div>
 
 <div id="approach">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
     sectionId="automation-approach"
     subtitle="END-TO-END AUTOMATION APPROACH"
@@ -235,11 +229,9 @@ const Automation = () => {
       }
     ]}
   />
-</Reveal>
 </div>
 
-<div id="usecase">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
+<div id="usecase">  
   <InnovationsRoadmapSection
     sectionId="automation-roadmap"
     backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
@@ -275,7 +267,6 @@ const Automation = () => {
       }
     ]}
   />
-</Reveal>
 </div>
 
      
@@ -373,7 +364,6 @@ const Automation = () => {
 
 
 <div id="testimonials">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -404,7 +394,6 @@ const Automation = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 
