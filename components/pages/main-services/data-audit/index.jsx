@@ -1,6 +1,6 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import BulletPointsFlip from "@/components/data/services/bulletpoints-flip";
 import FunnelSection from "@/components/data/services/funnel";  
@@ -12,7 +12,6 @@ import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
-import Reveal from "@/components/Reveal.jsx";
 
 
 
@@ -30,7 +29,6 @@ const Dataaudit = () => {
   highlightText="Data Audit"
   subtitle="Track Data Changes and User Activity Across Your Dataverse Environment"
   bgImage="/assets/img/data-audit/Data-banner.png"
-  heroImage="/assets/img/data-audit/Data-banner-detail.jpg"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -46,7 +44,6 @@ const Dataaudit = () => {
 />
 
 <div id="overview">
- <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPoints
 sectionId="overview"
   title={<>Why Data Auditing Is Critical</>}
@@ -64,12 +61,10 @@ sectionId="overview"
   altText="Dataverse Audit and Compliance Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
-</Reveal>
 </div>
 
 
 <div id="audit-config">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPointsFlip
 sectionId="audit-config"
   title={<>What We Audit in Microsoft Dataverse</>}
@@ -87,11 +82,9 @@ sectionId="audit-config"
   altText="Dataverse Audit and Compliance Solutions"
   sectionClass="position-relative overflow-hidden py-7 pt-0"
 />
-</Reveal>
 </div>
 
 <div id="structure">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <FunnelSection
       sectionId="structure"
       backgroundStyle="#e5f1ff"
@@ -119,12 +112,11 @@ sectionId="audit-config"
     "COLUMN LEVEL"
   ]}
 />
-</Reveal> 
 </div>      
 
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
 <PremiumFeatureSection
 sectionId="audit-retention"
   headline="Audit Log Retention & Data Management"
@@ -136,16 +128,16 @@ sectionId="audit-retention"
     "Deletion by table, access logs, or date range",
     "Aligned with GDPR, ISO, and internal governance policies"
   ]}
-  imageSrc="/assets/img/data-audit/Data-img-1.png"
+  imageSrc="/assets/img/data-audit/audit-main3.webp"
   altText="Audit Log Retention"
   priority={true}
 />
-</Reveal>
 
 
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
 <PremiumFeatureSection1
 sectionId="api"
   headline="API Access & Compliance Integrations"
@@ -157,17 +149,15 @@ sectionId="api"
     "Microsoft Purview",
     "External reporting or SIEM tools"
   ]}
-  imageSrc="/assets/img/data-audit/Data-img-2.png"
+  imageSrc="/assets/img/data-audit/audit-main1.webp"
   altText="API Integrations"
   priority={true}
 />
 
-</Reveal>
 
 
 
 <div id="approach">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <BulletPoints
   title={<>Our Proven Data Audit Approach</>}
   paragraphs={[
@@ -180,18 +170,16 @@ sectionId="api"
     "Retention policy configuration",
     "Role-based access governance"
   ]}
-  imageSrc="/assets/img/data-audit/Data-img-1.png"
+  imageSrc="/assets/img/data-audit/audit-main2.webp"
   altText="Dataverse Audit and Compliance Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
-</Reveal>
 </div>
 
 
 
 
 <div id="serviceAudience">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <MainServices
   subtitle="Who This Service Is For"
   title="Designed for Teams That Need Strong Data Governance"
@@ -216,7 +204,6 @@ sectionId="api"
   ]}
 />
 
-</Reveal>
 </div>
 
 
@@ -225,7 +212,6 @@ sectionId="api"
       
 
 <div id="testimonials">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -256,13 +242,11 @@ sectionId="api"
     },
   ]}
 />
-</Reveal>
 </div>
 
 
 
 <div id="otherservices">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -340,7 +324,6 @@ sectionId="api"
     },
   ]}
 />
-</Reveal>
 </div>
 
 <Widget />
