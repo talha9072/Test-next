@@ -79,7 +79,7 @@ const Licensing = () => {
       "Scale cloud and on-premises environments more efficiently",
       "Improve visibility and management of your digital estate"
     ]}
-    imageSrc="/assets/img/licensing/microsoft-1.webp"
+    imageSrc="/assets/img/licensing/licensing-main1.webp"
     altText="Microsoft Licensing Advisory and Optimization"
     sectionClass="position-relative overflow-hidden py-7 pb-0"
   />
