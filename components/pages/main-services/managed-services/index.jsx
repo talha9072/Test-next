@@ -9,7 +9,6 @@ import OverviewComponent from "@/components/data/services/OverviewComponent";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
-import Reveal from "@/components/Reveal";
 import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
 
@@ -17,7 +16,7 @@ import Footer from "@/components/layout/footers/footer";
 
 
 
-const PowerBI = () => {
+const ManagedServices = () => {
   return (
     <div>
         <HeaderFour />
@@ -188,7 +187,6 @@ const PowerBI = () => {
 
 
 <div id="approach">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <BulletPoints
       sectionId="approach"
       title={<>Our Approach to Managed Services</>}
@@ -204,16 +202,14 @@ const PowerBI = () => {
         "Industry-recognised frameworks and cloud engineering best practices"
       ]}
       extraParagraph="This approach ensures stability, continuous improvement, and long-term operational excellence."
-      imageSrc="/assets/img/professional-services/professional-1.webp"
+      imageSrc="/assets/img/managed-services/managed-main1.webp"
       altText="Novum Managed Services Approach"
       sectionClass="position-relative overflow-hidden py-7"
     />
-  </Reveal>
 </div>
 
 
 <div id="expertise">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
   <PricingCardsSection
     sectionId="expertise"
     subtitle="ENGINEERING EXPERTISE"
@@ -264,7 +260,6 @@ const PowerBI = () => {
       }
     ]}
   />
-</Reveal>
 </div>
 
 <div id="whyus">
@@ -358,7 +353,6 @@ const PowerBI = () => {
 
 
 <div id="testimonials">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -389,7 +383,6 @@ const PowerBI = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 
@@ -490,4 +483,4 @@ const PowerBI = () => {
   );
 };
 
-export default PowerBI;
+export default ManagedServices;
