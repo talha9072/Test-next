@@ -53,7 +53,7 @@ const Professional = () => {
         "Our experts guide you through assessment, planning, architecture design, and implementation ensuring every cloud or digital initiative aligns with your business goals.",
         "We specialise in crafting cloud strategies that deliver innovation, efficiency, and scalability, empowering your organisation to modernise operations and accelerate growth."
       ]}
-      imageSrc="/assets/img/professional-services/professional-1.webp"
+      imageSrc="/assets/img/consulting-advisory/consulting-main1.webp"
       altText="Professional Services by Novum"
       sectionClass="position-relative overflow-hidden py-7"
     />
@@ -71,7 +71,7 @@ const Professional = () => {
       primaryColor="#0d2b75"
       items={[
         {
-          image: "/assets/img/professional-services/tab-1.jpg",
+          image: "/assets/img/consulting-advisory/tab-1.webp",
           title: "Cloud Migration & Adoption",
           list: [
             "Assess current-state architecture & readiness",
@@ -83,7 +83,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-3.jpg",
+          image: "/assets/img/consulting-advisory/tab-2.webp",
           title: "Application Modernisation",
           list: [
             "Define modernisation KPIs & objectives",
@@ -95,7 +95,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-5.jpg",
+          image: "/assets/img/consulting-advisory/tab-3.webp",
           title: "Cost Optimisation & FinOps Advisory",
           list: [
             "Cloud spend assessments & benchmarking",
@@ -107,7 +107,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-2.jpg",
+          image: "/assets/img/consulting-advisory/tab-4.webp",
           title: "Innovation & Growth Enablement",
           list: [
             "Identify new cloud-driven revenue opportunities",
@@ -119,7 +119,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-4.jpg",
+          image: "/assets/img/consulting-advisory/tab-5.webp",
           title: "Mergers & Acquisitions Integration",
           list: [
             "Harmonise tools, processes & cloud platforms",
@@ -131,7 +131,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-6.jpg",
+          image: "/assets/img/consulting-advisory/tab-6.webp",
           title: "Cloud Security Advisory",
           list: [
             "Security posture assessments",
@@ -143,7 +143,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-7.jpg",
+          image: "/assets/img/consulting-advisory/tab-7.webp",
           title: "Governance Frameworks & Operating Models",
           list: [
             "Define cloud governance structures",
@@ -155,7 +155,7 @@ const Professional = () => {
         },
 
         {
-          image: "/assets/img/professional-services/tab-8.jpg",
+          image: "/assets/img/consulting-advisory/tab-8.webp",
           title: "Data Modernisation Roadmaps",
           list: [
             "Define data & analytics business goals",
@@ -186,7 +186,7 @@ const Professional = () => {
         "Managed Services – Ongoing operations, optimisation, and security management"
       ]}
       extraParagraph="This unified end-to-end model enables organisations to partner with a single expert provider — from vision to execution and continuous improvement."
-      imageSrc="/assets/img/professional-services/professional-1.webp"
+      imageSrc="/assets/img/consulting-advisory/consulting-main2.webp"
       altText="Novum Engagement Approach"
       sectionClass="position-relative overflow-hidden py-7"
     />
@@ -210,7 +210,7 @@ const Professional = () => {
       ]}
       buttonLabel="Explore our certifications"
       buttonLink="/contact"
-      imageSrc="/assets/img/professional-services/professional-2.webp"
+      imageSrc="/assets/img/consulting-advisory/consulting-main3.webp"
       imageAlt="Novum Industry Credentials and Recognition"
     />
   </Reveal>
