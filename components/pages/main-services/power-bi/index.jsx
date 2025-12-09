@@ -84,7 +84,7 @@ const PowerBI = () => {
       "Development of robust dashboards, scalable data models, and enterprise-grade analytics"
     ]}
 
-    imageSrc="/assets/img/power-bi/power-bi-hero.png"
+    imageSrc="/assets/img/power-bi/powerbi-main.webp"
     altText="Power BI Consulting and Analytics Expertise"
     sectionClass="position-relative overflow-hidden py-7"
   />
