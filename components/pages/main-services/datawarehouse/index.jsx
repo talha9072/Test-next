@@ -185,22 +185,22 @@ const Datawarehouse = () => {
     backgroundStyle="linear-gradient(to bottom right, #ffffff, #f4f7ff);"
     cards={[
       {
-        image: "/assets/img/datawarehouse/warehouse-1.webp",
+        image: "/assets/img/datawarehouse/tab-1.webp",
         title: "Unified Analytics Environment",
         desc: "An EDW consolidates data from multiple, fragmented systems into one central environment, enabling enterprise-wide analysis."
       },
       {
-        image: "/assets/img/datawarehouse/warehouse-2.webp",
+        image: "/assets/img/datawarehouse/tab-2.webp",
         title: "Centralised Reporting",
         desc: "All departments access the same trusted, governed data—ensuring consistent dashboards, KPIs, and performance reports."
       },
       {
-        image: "/assets/img/datawarehouse/warehouse-1.webp",
+        image: "/assets/img/datawarehouse/tab-3.webp",
         title: "Cross-Departmental Insights",
         desc: "Finance, Supply Chain, Sales, Manufacturing, HR, and Leadership all gain shared visibility for better planning and decisions."
       },
       {
-        image: "/assets/img/datawarehouse/warehouse-2.webp",
+        image: "/assets/img/datawarehouse/tab-4.webp",
         title: "Standardised Performance Metrics",
         desc: "A single source of truth ensures metrics stay consistent across regions, teams, and business units, reducing errors and duplication."
       }
