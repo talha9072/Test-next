@@ -183,7 +183,7 @@ const Ai = () => {
     "IoT gives organisations greater visibility into their operations by enabling remote monitoring, automated processes, and intelligent device-to-device communication.",
     "With a connected infrastructure, businesses can optimise performance, reduce downtime, improve resource utilisation, and integrate physical assets directly into digital ecosystems."
   ]}
-  imageSrc="/assets/img/ai/ai-main.png"
+  imageSrc="/assets/img/ai/ai-main1.webp"
   altText="AI and IoT Solutions"
   sectionClass="position-relative overflow-hidden py-7"
 />
