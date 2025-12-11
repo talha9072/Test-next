@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Reveal from "@/components/Reveal";
 
 export default function MicrosoftBannerStats({
   sectionId = "banner-stats",
@@ -21,7 +20,7 @@ export default function MicrosoftBannerStats({
   // NOW SUPPORTS: { icon, title, desc }
   items = [],
 
-  sectionClass = "py-7",
+  sectionClass = "py-5",
   primaryColor = "#0D2B75",
 }) {
   const getBackgroundStyle = () => {
@@ -45,7 +44,7 @@ export default function MicrosoftBannerStats({
       <div className="container text-center">
 
         {/* Heading */}
-        <Reveal direction="up" delay={0.1}>
+        
           {title && (
             <h2 className="mb-3">
               {title}
@@ -61,12 +60,12 @@ export default function MicrosoftBannerStats({
               {buttonLabel}
             </a>
           )}
-        </Reveal>
+        
 
         {/* Feature Card (gradient container) */}
-        <Reveal direction="fade" delay={0.2}>
+        
           <div
-            className="rounded-5 p-4 p-lg-5 d-flex flex-column flex-lg-row justify-content-between align-items-start gap-5"
+            className="rounded-2 p-4 p-lg-5 d-flex flex-column flex-lg-row justify-content-between align-items-start gap-5"
             style={{
               background: boxGradient,
             }}
@@ -102,7 +101,7 @@ export default function MicrosoftBannerStats({
 
                 {/* Title + Desc */}
                 <div>
-                  <h3 className="mb-2">
+                  <h3 className="mb-2"style={{fontSize: "1rem" }}>
                     {item.title}
                   </h3>
                   <p className="text-muted m-0" style={{ maxWidth: "320px" }}>
@@ -112,7 +111,7 @@ export default function MicrosoftBannerStats({
               </div>
             ))}
           </div>
-        </Reveal>
+        
       </div>
 
       <style jsx>{`

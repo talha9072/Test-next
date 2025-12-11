@@ -1,13 +1,12 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import VideoHero from "@/components/data/services/VideoHero";
 import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
-import BulletPoints from "@/components/data/services/bulletpoints";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -164,28 +163,24 @@ const Dynamic365 = () => {
   ]}
 />
  
-<div id="about">
-  <OverviewComponent
-    title="What Is Dynamics 365?"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
+<ImageWithContentSection
+  title="What Is Dynamics 365?"
+  orderControl={2}
+  imageSrc="/assets/img/dynamics365/dynamic365-main.png"
 
-    paragraphs={[
-      "Dynamics 365 is a unified suite of intelligent business applications that helps organisations streamline operations, improve customer experiences, and make smarter decisions through real-time visibility.",
-      "Bringing together ERP, CRM, and AI-powered insights, Dynamics 365 enables teams to adapt quickly, enhance agility, and reduce operational complexity without increasing costs.",
-      "With powerful automation and connected workflows, businesses can deliver more value in less time empowering every team to create impact faster and delight customers every day."
-    ]}
+  paragraphs={[
+    "Dynamics 365 is a unified suite of intelligent business applications that streamlines operations, enhances customer experiences, and connects your entire organisation.",
+    "By combining ERP, CRM, and AI-driven insights, it enables teams to work smarter, adapt faster, and reduce operational complexity."
+  ]}
 
-    listItems={[
-      "Unified ERP and CRM platform powered by Microsoft AI",
-      "Real-time insights that improve decision-making across the organisation",
-      "Flexible workflows that reduce complexity and support faster innovation",
-      "Tools that enhance customer experiences at scale",
-      "A connected ecosystem that helps teams create impact faster"
-    ]}
-  />
-</div>
+  bulletPoints={[
+    "Unified ERP and CRM platform powered by Microsoft AI.",
+    "Real-time insights that support better decision-making.",
+    "Flexible workflows that simplify operations.",
+    "Tools that enhance customer engagement at scale.",
+    "A connected ecosystem that helps teams move faster."
+  ]}
+/>
 
 
 <VideoHero
@@ -318,23 +313,24 @@ const Dynamic365 = () => {
     
 
 <div id="erp" style={{ backgroundColor: "#e5f1ff" }}>
-    <BulletPoints
-      sectionId="overview"
-      title={<>How we help modernise your ERP system</>}
-      paragraphs={[
-        "Organisations are under pressure to modernise legacy ERP systems to improve scalability, flexibility, and resilience. Our modernisation approach enables seamless migration and transformation while aligning technology with business growth."
-      ]}
-      extraParagraph="We help enterprises transition from rigid legacy systems to intelligent, cloud-powered ERP platforms that support real-time insight, operational efficiency, and connected experiences."
-      bulletPoints={[
-        "Migrate to the cloud with confidence",
-        "Enhance business model transformation",
-        "Improve operational speed and data accuracy",
-        "Connect people, processes, and systems under one intelligent platform"
-      ]}
-      imageSrc="/assets/img/dynamics365/erpimage.png"
-      altText="ERP Modernisation Services"
-      sectionClass="position-relative overflow-hidden py-7"
-    />
+    <ImageWithContentSection
+  title="How We Help Modernise Your ERP System"
+  orderControl={2} 
+  imageSrc="/assets/img/dynamics365/erpimage.png"
+  imageAlt="ERP Modernisation Services"
+
+  paragraphs={[
+    "Organisations face increasing pressure to modernise legacy ERP systems and improve scalability, flexibility, and resilience.",
+    "We help enterprises transition from rigid legacy systems to cloud-powered ERP platforms that deliver real-time insight, improved efficiency, and connected experiences."
+  ]}
+
+  bulletPoints={[
+    "Migrate to the cloud with confidence.",
+    "Enhance business model transformation.",
+    "Improve operational speed and data accuracy.",
+    "Connect people, processes, and systems under one intelligent platform."
+  ]}
+/>
 </div>
 
 <div id="testimonials">

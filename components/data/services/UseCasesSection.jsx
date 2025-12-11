@@ -21,7 +21,7 @@ export default function UseCasesTabsSection({
   return (
     <section
       id={sectionId}
-      className="py-7 position-relative"
+      className="py-5 position-relative"
       style={{ background: backgroundStyle }}
     >
       <style>{`
@@ -63,7 +63,7 @@ export default function UseCasesTabsSection({
           position: relative;
           z-index: 3;
           background: #ffffff;
-          border-radius: 24px;
+          border-radius: 6px;
           border: 1px solid #e5e5e5;
           overflow: hidden;
           transition: all .3s ease;
@@ -79,7 +79,7 @@ export default function UseCasesTabsSection({
         .uc-body { padding: 20px; }
 
         .uc-image {
-          border-radius: 16px;
+          border-radius: 6px;
           border: 1px solid #e6e6e6;
         }
 
