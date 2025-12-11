@@ -61,7 +61,7 @@ export default function ImageWithContentSection({
               </div>
 
               {/* TEXT SECOND */}
-              <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 text-right-desktop">
+              <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 pt-0 pb-0 text-right-desktop">
                 <h2 className="mb-4" style={{ fontSize: "26px", fontWeight: 600, color: textColor }}>
                   {title}
                 </h2>
@@ -94,7 +94,7 @@ export default function ImageWithContentSection({
           {orderControl === 2 && (
             <>
               {/* TEXT FIRST */}
-              <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 text-left-desktop">
+              <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 pt-0 pb-0 text-left-desktop">
                 <h2 className="mb-4" style={{ fontSize: "26px", fontWeight: 600, color: textColor }}>
                   {title}
                 </h2>
