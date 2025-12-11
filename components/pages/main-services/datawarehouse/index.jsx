@@ -2,6 +2,7 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
@@ -43,48 +44,45 @@ const Datawarehouse = () => {
   ]}
 />
  
+ <div id="overview">
+<ImageWithContentSection
+  title="Build a Strong Data Foundation"
+  orderControl={2}
+  imageSrc="/assets/img/datawarehouse/dw-1.png"
 
-<div id="overview">
-  <OverviewComponent
-    title="Establish a Strong Data Foundation for Enterprise Analytics"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
+  paragraphs={[
+    "A strong data foundation enables consistent, accurate and reliable insights across the organisation.Novum helps unify information from ERP, CRM, cloud apps and operational systems into a single trusted environment.",
+  ]}
 
-    paragraphs={[
-      "In the modern business landscape, effective data management is essential for building a successful analytics environment and a data-driven culture. Global enterprises rely on data warehousing to unify information from multiple locations, divisions, and systems while SMEs use it to centralise raw data from every business unit.",
-      "Novum helps organisations consolidate all business intelligence data from ERP, CRM, databases, flat files, cloud applications, and manufacturing equipment into a single advanced data warehouse. This unified environment powers deeper analytics, structured reporting, automated data processing, and enterprise grade BI capabilities.",
-      "A robust data warehouse enables organisations to standardise information, reduce errors, improve accuracy, automate data allocation, and build a reliable foundation for dashboards, KPIs, and advanced analytics."
-    ]}
-
-    listItems={[
-      "Centralise data from ERP, CRM, cloud apps, IoT devices, and legacy systems into one unified platform.",
-      "Improve data quality through standardisation, deduplication, and automated validation rules.",
-      "Enable faster reporting with scheduled data refreshes, automated ETL pipelines, and governed datasets.",
-      "Support advanced analytics, forecasting, and AI-driven insights using reliable, structured data models.",
-      "Reduce manual reporting effort and eliminate inconsistent spreadsheets across departments.",
-      "Provide a scalable foundation for enterprise dashboards, KPIs, and cross-functional BI solutions."
-    ]}
-  />
+  bulletPoints={[
+    "Centralise data from all business systems.",
+    "Improve data quality with standardised rules.",
+    "Accelerate reporting with automated pipelines.",
+    "Enable forecasting and AI-driven analytics.",
+    "Reduce manual processes and spreadsheets.",
+    "Support enterprise dashboards and KPIs."
+  ]}
+/>
 </div>
 
-<div id="about">
-      <SoftwareSolutionsSection
-  title={
-    <>
-      What Is a Data Warehouse?
-    </>
-  }
+ <div id="about">
+<ImageWithContentSection
+  title="What Is a Data Warehouse?"
+  orderControl={1}
+   bgColor = "#fff"
+  imageSrc="/assets/img/datawarehouse/warehouse-main.png"
+
   paragraphs={[
     "A data warehouse (DW or DWH) is a central repository designed to store integrated data from multiple, diverse systems across the organisation. It consolidates both historical and real-time information to support business intelligence, reporting, and advanced analytics.",
     "By standardising data formats and structures, a data warehouse ensures that teams across Finance, Sales, Operations, Supply Chain, and Management all work with consistent, trusted information.",
     "With a unified and well-governed data foundation, organisations can analyse trends, share insights, and make strategic decisions with far greater accuracy and speed."
   ]}
-  imageSrc="/assets/img/datawarehouse/warehouse-1.webp"
-  altText="Data Warehouse Architecture and Business Intelligence"
-  sectionClass="position-relative overflow-hidden py-7"
+
 />
 </div>
+
+
+
 
 <div id="foundation">
   <ServiceSplitPanel
