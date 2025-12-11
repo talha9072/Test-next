@@ -13,7 +13,7 @@ export default function PricingCardsSection({
   return (
     <section
       id={sectionId}
-      className="py-7 position-relative"
+      className="py-5 position-relative"
       style={{
         backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
         backgroundSize: "cover",
@@ -35,7 +35,7 @@ export default function PricingCardsSection({
           position: relative;
           z-index: 5;
           background: #ffffff;
-          border-radius: 24px;
+          border-radius: 6px;
           border: 1px solid #e3e3e3;
           padding: 32px;
           transition: all .3s ease;
