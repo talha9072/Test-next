@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import BulletPointsFlip from "@/components/data/services/bulletpoints-flip";
 import FunnelSection from "@/components/data/services/funnel";  
@@ -25,7 +26,7 @@ const Dataaudit = () => {
 
       <HeroWithRibbon
   serviceName="Data Audit & Dataverse Auditing Services"
-  title="Dataverse Auditing Services for Compliance, Security, and Data Governance"
+  title="Dataverse Auditing for Compliance and Governance"
   highlightText="Data Audit"
   subtitle="Track Data Changes and User Activity Across Your Dataverse Environment"
   bgImage="/assets/img/data-audit/Data-banner.png"
@@ -44,43 +45,52 @@ const Dataaudit = () => {
 />
 
 <div id="overview">
-<BulletPoints
-sectionId="overview"
-  title={<>Why Data Auditing Is Critical</>}
-  paragraphs={[
-    "Without proper auditing, organizations risk compliance failures, security gaps, and unreliable data. Dataverse auditing ensures every change is traceable, accountable, and aligned with governance standards."
-  ]}
-  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
-  bulletPoints={[
-    "Meet compliance and regulatory requirements",
-    "Track who accessed or modified data",
-    "Improve security and accountability",
-    "Strengthen trust in reporting and decision-making"
-  ]}
+<ImageWithContentSection
+  title="Why Data Auditing Is Critical"
+  orderControl={2}
   imageSrc="/assets/img/data-audit/Data-img-1.png"
-  altText="Dataverse Audit and Compliance Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+  imageAlt="Dataverse Audit and Compliance Solutions"
+
+  paragraphs={[
+    "Without proper auditing, organisations risk compliance failures, security gaps, and unreliable data. Dataverse auditing ensures every change is traceable, accountable, and aligned with governance standards.",
+    "Auditing provides full transparency across your Microsoft Power Platform environment by recording every data interaction."
+  ]}
+
+  bulletPoints={[
+    "Meet compliance and regulatory requirements.",
+    "Track who accessed or modified data.",
+    "Improve security and accountability.",
+    "Strengthen trust in reporting and decision-making."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
+
 </div>
 
 
 <div id="audit-config">
-<BulletPointsFlip
-sectionId="audit-config"
-  title={<>What We Audit in Microsoft Dataverse</>}
-  paragraphs={[
-    "We configure Dataverse auditing to capture changes and access activity across your Power Platform environment."
-  ]}
-  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
-  bulletPoints={[
-    "Custom and customizable system tables",
-    "Business-critical and sensitive columns",
-    "User access via apps, integrations, and SDKs",
-    "Data creation, updates, and deletions"
-  ]}
+<ImageWithContentSection
+  title="What We Audit in Microsoft Dataverse"
+  orderControl={1}
   imageSrc="/assets/img/data-audit/Data-img-2.png"
-  altText="Dataverse Audit and Compliance Solutions"
-  sectionClass="position-relative overflow-hidden py-7 pt-0"
+  imageAlt="Dataverse Audit and Compliance Solutions"
+
+  paragraphs={[
+    "We configure Dataverse auditing to capture changes and access activity across your Power Platform environment.",
+    "Auditing provides full transparency by maintaining a verifiable record for every key data interaction."
+  ]}
+
+  bulletPoints={[
+    "Custom and system tables.",
+    "Business-critical and sensitive fields.",
+    "User access through apps and integrations.",
+    "Data creation, updates, and deletions."
+  ]}
+
+  bgColor="#fff"
+  textColor="#000000"
 />
 </div>
 
@@ -158,21 +168,26 @@ sectionId="api"
 
 
 <div id="approach">
-<BulletPoints
-  title={<>Our Proven Data Audit Approach</>}
-  paragraphs={[
-    "We don’t just switch auditing on we design it around your business and compliance goals."
-  ]}
-  extraParagraph="Auditing enables full transparency across your entire Microsoft Power Platform environment by providing a verifiable record for every data interaction."
-  bulletPoints={[
-    "Audit readiness & environment review",
-    "Table and column-level audit design",
-    "Retention policy configuration",
-    "Role-based access governance"
-  ]}
+<ImageWithContentSection
+  title="Our Proven Data Audit Approach"
+  orderControl={2}
   imageSrc="/assets/img/data-audit/audit-main2.webp"
-  altText="Dataverse Audit and Compliance Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+  imageAlt="Dataverse Audit and Compliance Solutions"
+
+  paragraphs={[
+    "We don’t just enable auditing we design it around your business, compliance needs, and data governance goals.",
+    "Our structured approach ensures your environment is secure, transparent, and aligned with best practices."
+  ]}
+
+  bulletPoints={[
+    "Audit readiness and environment review.",
+    "Table and column-level audit design.",
+    "Retention policy configuration.",
+    "Role-based access governance."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
 </div>
 

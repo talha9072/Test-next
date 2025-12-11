@@ -108,14 +108,14 @@ export default function AuditTwoColSection({
         /* ========== LEFT COLUMN BOX ========== */
         .left-box {
           background: rgba(255, 255, 255, 0.65);
-          border-radius: 18px;
+          border-radius: 6px;
           backdrop-filter: blur(6px);
           box-shadow: 0 0 0 1px rgba(255,255,255,0.45);
         }
 
         .left-card {
           background: #f8f9ff;
-          border-radius: 14px;
+          border-radius: 6px;
           border: 1px solid #e2e6ff;
           transition: 0.25s ease;
         }

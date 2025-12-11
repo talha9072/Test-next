@@ -44,7 +44,7 @@ export default function PremiumFeatureSection({
                 alt={altText}
                 width={imageWidth}
                 height={imageHeight}
-                className="img-fluid rounded object-cover"
+                className="img-fluid rounded-2 object-cover"
                 priority={priority}
               />
             ) : (
@@ -60,7 +60,7 @@ export default function PremiumFeatureSection({
           background: #f4f7ff;
           border: 1px solid #e3e9ff;
           padding: 14px 18px;
-          border-radius: 14px;
+          border-radius: 6px;
           font-weight: 500;
           transition: 0.25s ease;
         }
