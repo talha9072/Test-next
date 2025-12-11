@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import CTAPage from '@/components/data/services/CTAPage';
@@ -25,9 +26,9 @@ const Sustainability = () => {
 
       <HeroWithRibbon
   serviceName="Microsoft Sustainability Solutions"
-  title="Modernise ESG Reporting and Advance Your Net-Zero Strategy"
+  title="Build a Smarter Sustainability Strategy"
   highlightText="Sustainability"
-  subtitle="Harness cloud-powered sustainability tools to unify environmental data, improve performance, and drive measurable impact. From emissions tracking to operational optimisation, empower your organisation to move faster and more responsibly."
+  subtitle="Leverage cloud-powered sustainability tools to unify environmental data, improve performance, and drive measurable impact across your organisation"
   bgImage="/assets/img/sustainability/sustain-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
@@ -44,47 +45,53 @@ const Sustainability = () => {
 
  
 <div id="about">
-<OverviewComponent
+<ImageWithContentSection
   title="Accelerate Your Sustainability Journey"
-  primaryColor="#0d2b75"
-  backgroundType="color"
-  backgroundColor="#e5f1ff"
+  orderControl={2}
+  imageSrc="/assets/img/sustainability/sustain-main1.png"
+  imageAlt="Sustainability Overview"
 
   paragraphs={[
-    "Sustainability is now a strategic priority for every modern organisation. With powerful ESG tools and cloud-driven insights, businesses can accelerate progress toward environmental and operational goals.",
-    "Novum helps organisations use Microsoft’s sustainability technologies to measure impact, reduce emissions, improve transparency, and scale environmental initiatives with confidence."
+    "Sustainability is now a key priority for modern organisations. With ESG tools and cloud insights, businesses can improve environmental performance and meet compliance goals.",
+    "Novum helps teams measure impact, reduce emissions, and strengthen sustainability reporting using Microsoft technologies."
   ]}
 
-  listItems={[
-    "Gain real-time visibility across carbon, water, waste, and operational sustainability metrics.",
-    "Automate ESG data collection to improve reporting accuracy and reduce manual workloads.",
-    "Use AI-powered insights to identify reduction opportunities and optimise resource usage.",
-    "Scale environmental initiatives across teams, supply chains, and multi-site operations.",
-    
+  bulletPoints={[
+    "Track carbon, water, waste, and key sustainability metrics.",
+    "Automate ESG data collection and reporting.",
+    "Use AI insights to identify reduction opportunities.",
+    "Scale sustainability efforts across the organisation."
   ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
 </div>
 
 
 <div id="perfermance">
   
-    <BulletPoints
-      sectionId="overview"
-      title={<>Monitor and Manage Your Environmental Sustainability Performance</>}
-      paragraphs={[
-        "Record, analyse, and optimise your environmental footprint using automated data collection and intelligent insights across your organisation."
-      ]}
-      extraParagraph="Microsoft Sustainability Manager, available in Essentials and Premium editions, enables organisations to monitor emissions, streamline ESG reporting, and stay compliant with global sustainability standards."
-      bulletPoints={[
-        "Automated data ingestion across systems and business units",
-        "Unified dashboards for carbon, water, and waste tracking",
-        "AI-powered insights to identify and reduce emissions",
-        "Support for global ESG frameworks and reporting standards"
-      ]}
-      imageSrc="/assets/img/sustainability/sustain-1.webp"
-      altText="Microsoft Sustainability Manager – ESG Tracking and Insights"
-      sectionClass="position-relative overflow-hidden py-7"
-    />
+    <ImageWithContentSection
+  title="Monitor and Manage Sustainability Performance"
+  orderControl={1}
+  imageSrc="/assets/img/sustainability/sustain-1.png"
+  imageAlt="Microsoft Sustainability Manager – ESG Tracking and Insights"
+
+  paragraphs={[
+    "Record, analyse, and optimise your environmental footprint using automated data collection and intelligent insights.",
+    "Microsoft Sustainability Manager helps organisations track emissions, streamline ESG reporting, and stay compliant with global standards."
+  ]}
+
+  bulletPoints={[
+    "Automated data ingestion across systems.",
+    "Unified dashboards for carbon, water, and waste.",
+    "AI insights to identify and reduce emissions.",
+    "Support for global ESG reporting frameworks."
+  ]}
+
+  bgColor="#fff"
+  textColor="#000000"
+/>
 </div>
 
 <CTAPage
