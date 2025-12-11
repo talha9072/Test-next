@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import Reveal from "@/components/Reveal";
@@ -45,22 +46,29 @@ const Professional = () => {
 
 
 <div id="about">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-      <SoftwareSolutionsSection
-  title={`Expert-Led Professional Services for Modern Enterprises`}
+
+      <ImageWithContentSection
+  orderControl={2}
+  title="Professional Services Designed for Modern Enterprises"
+  imageSrc="/assets/img/professional-services/professional-1.png"
+  imageAlt="Professional Services by Novum"
+
   paragraphs={[
-    "Novum’s Professional Services team provides strategic guidance and hands-on implementation support to help organisations transform their technology landscape.",
-    "We partner with your teams to accelerate cloud adoption, modernise legacy environments, and maximise return on investment through secure, scalable, and efficient solutions. Our approach blends deep technical expertise with a proven delivery framework to ensure every engagement achieves real business impact."
+    "Novum’s Professional Services team helps organisations modernise technology landscapes and accelerate cloud adoption with confidence.",
+    "We combine deep technical expertise with a structured delivery approach to ensure every engagement creates measurable value and long-term operational impact."
   ]}
-  imageSrc="/assets/img/professional-services/professional-1.webp"
-  altText="Professional Services by Novum"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  bulletPoints={[
+    "Modernise legacy systems with scalable cloud solutions",
+    "Accelerate secure cloud adoption backed by expert guidance",
+    "Enhance performance, security, and operational reliability",
+    "Implement architectures designed for long-term business growth"
+  ]}
 />
-</Reveal>
+
 </div>
 
 <div id="service-offerings">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ServiceFeatureSlider
   sectionId="service-offerings"
   title="Core Service Offerings"
@@ -115,35 +123,32 @@ const Professional = () => {
     }
   ]}
 />
-</Reveal>
 </div>
 
 <div id="approach">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-  <BulletPoints
-    sectionId="approach"
-    title={<>Our Engagement Approach</>}
-    paragraphs={[
-      "Novum follows a collaborative, outcome-driven delivery method that ensures clarity, speed, and measurable success.",
-      "Our process includes:"
-    ]}
-    bulletPoints={[
-      "Discovery Workshops Understand current state, challenges, and goals",
-      "Solution Design Sessions Architect cloud-native, secure, scalable solutions",
-      "Implementation & Deployment Hands-on execution by certified experts",
-      "Knowledge Transfer & Enablement Empower your teams with documentation and training",
-      "Ongoing Improvement Recommendations for optimisation and next-phase enhancements"
-    ]}
-    extraParagraph="This structured approach reduces project risk and accelerates transformation."
-    imageSrc="/assets/img/professional-services/professional-4.webp"
-    altText="Novum Engagement Approach"
-    sectionClass="position-relative overflow-hidden py-7"
-  />
-</Reveal>
+  <ImageWithContentSection
+  orderControl={1}
+  bgColor="#fff"   // now visible
+  title="Our Engagement Approach"
+  imageSrc="/assets/img/professional-services/professional-4.png"
+  imageAlt="Novum Engagement Approach"
+
+  paragraphs={[
+    "Novum follows a collaborative, outcome-focused delivery approach designed to ensure clarity, speed, and measurable impact.",
+    "Our engagement method includes the following key stages:"
+  ]}
+
+  bulletPoints={[
+    "Discovery workshops to understand goals and challenges",
+    "Solution design sessions for secure, scalable architectures",
+    "Implementation and deployment led by certified experts",
+    "Knowledge transfer supported by documentation and training",
+    "Continuous improvement recommendations for future growth"
+  ]}
+/>
 </div>
 
 <div id="expertise">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <InsightShowcaseSection
   eyebrow="Industry recognition"
   title="Expertise & Industry Recognition"
@@ -158,15 +163,13 @@ const Professional = () => {
   ]}
   buttonLabel="Explore our capabilities"
   buttonLink="/contact"
-  imageSrc="/assets/img/professional-services/professional-3.webp"
+  imageSrc="/assets/img/professional-services/professional-3.png"
   imageAlt="Novum Industry Expertise and Certifications"
 />
-</Reveal>
 </div>
 
 
 <div id="whyus">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <AIUseCaseGrid
   title="Why Organisations Choose Novum"
   backgroundType="gradient"
@@ -210,7 +213,6 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
     },
   ]}
 />
-</Reveal>
 </div>
 
      <div id="testimonials">

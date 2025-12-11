@@ -15,7 +15,7 @@ export default function InsightShowcaseSection({
   imageAlt = "",
 
   // SECTION LAYOUT
-  sectionClass = "py-7",
+  sectionClass = "py-5",
 
   // BACKGROUND PROPS
   backgroundType = "none",
