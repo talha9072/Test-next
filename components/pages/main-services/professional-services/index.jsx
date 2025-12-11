@@ -2,10 +2,8 @@
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import Reveal from "@/components/Reveal";
-import BulletPoints from "@/components/data/services/bulletpoints";
 import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
@@ -216,7 +214,6 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
 </div>
 
      <div id="testimonials">
-  <Reveal direction="fade">
     <Testimonials
       subtitle="Client Stories"
       title="What Clients Say About Working With Novum"
@@ -247,11 +244,9 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
     },
   ]}
     />
-  </Reveal>
 </div>
 
 <div id="otherservices">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -329,7 +324,6 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
     },
   ]}
 />
-</Reveal>
 </div>
 
 
