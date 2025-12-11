@@ -8,27 +8,27 @@ export default function CourseDurationAssessmentSection({
   return (
     <section
       id={sectionId}
-      className="py-7"
+      className="py-5"
       style={{ background: "#e5f1ff" }}
     >
       <div className="container">
 
         {/* Heading */}
-        <Reveal direction="fade" blur={true} delay={0.2} duration={1.1}>
+        
           <h2
             className="text-center fw-bold mb-4"
         
           >
             Course Duration & Assessment
           </h2>
-        </Reveal>
+        
 
         <div className="row g-4">
 
           {/* LEFT — GLASS DURATION CARD */}
           <div className="col-lg-6">
-            <Reveal direction="fade" blur={true} delay={0.3} duration={1.1}>
-              <div className="glass-card p-4 p-md-5 h-100 rounded-4">
+           
+              <div className="glass-card p-4 p-md-5 h-100 rounded-2">
 
                 <div className="icon-wrap mb-3">
                   <i className="bi bi-hourglass-split"></i>
@@ -53,13 +53,13 @@ export default function CourseDurationAssessmentSection({
                 </p>
 
               </div>
-            </Reveal>
+            
           </div>
 
           {/* RIGHT — GLASS ASSESSMENT CARD */}
           <div className="col-lg-6">
-            <Reveal direction="fade" blur={true} delay={0.4} duration={1.1}>
-              <div className="glass-card p-4 p-md-5 h-100 rounded-4">
+            
+              <div className="glass-card p-4 p-md-5 h-100 rounded-2">
 
                 <div className="icon-wrap mb-3">
                   <i className="bi bi-patch-check"></i>
@@ -82,7 +82,7 @@ export default function CourseDurationAssessmentSection({
                 </p>
 
               </div>
-            </Reveal>
+            
           </div>
 
         </div>
@@ -125,7 +125,7 @@ export default function CourseDurationAssessmentSection({
         /* DURATION BOX */
         .duration-box {
           padding: 16px 20px;
-          border-radius: 14px;
+          border-radius: 3px;
           background: rgba(13, 43, 117, 0.08);
           border: 1px solid rgba(13, 43, 117, 0.18);
         }

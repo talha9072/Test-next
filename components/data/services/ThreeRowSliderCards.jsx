@@ -7,7 +7,7 @@ export default function ServiceFeatureSlider({
   sectionId = "service-feature-slider",
   title = "",
   primaryColor = "#0d2b75",
-  sectionClass = "py-7 position-relative",
+  sectionClass = "py-5 position-relative",
 
   backgroundType = "none",
   backgroundColor = "#ffffff",

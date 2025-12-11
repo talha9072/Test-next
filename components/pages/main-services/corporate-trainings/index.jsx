@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
@@ -47,42 +48,51 @@ const Training = () => {
 
  
 <div id="about">
-  <OverviewComponent
-    title="Why Education Matters for Organisations"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
+  <ImageWithContentSection
+  title="Why Education Matters for Organisations"
+  orderControl={2}
+  imageSrc="/assets/img/corporate-training/corporate-main1.png"   // replace with your real image
+  imageAlt="Corporate Training and Education"
 
-    paragraphs={[
-      "Technology evolves rapidly, and organisations must continuously strengthen internal capabilities to remain competitive. Building technological literacy enables teams to innovate, improve efficiency, and make better data-driven decisions.",
-      "Corporate training equips employees at every level with the knowledge and practical skills needed to leverage modern tools, streamline workflows, and support long-term organisational transformation."
-    ]}
+  paragraphs={[
+    "Technology evolves quickly, and organisations must strengthen internal skills to stay competitive. Building digital and technical literacy enables teams to innovate and make informed decisions.",
+    "Corporate training equips employees with practical skills to use modern tools, streamline workflows, and support long-term organisational growth."
+  ]}
 
-    listItems={[
-      "Strengthens the organisation’s ability to innovate",
-      "Improves technical proficiency and productivity",
-      "Enhances data literacy and analytical decision-making",
-      "Enables faster, more efficient workflows",
-      "Supports organisational transformation and growth"
-    ]}
-  />
+  bulletPoints={[
+    "Boosts innovation and adaptability.",
+    "Improves technical skills and productivity.",
+    "Enhances data literacy and decision-making.",
+    "Enables faster, more efficient workflows.",
+    "Supports organisation-wide transformation."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
+/>
 </div>
 
 
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Training designed to elevate skills
-      across every level of your organisation
-    </>
-  }
+      <ImageWithContentSection
+  title="Training Designed to Elevate Skills"
+  orderControl={1}
+  imageSrc="/assets/img/corporate-training/corporate-main2.png"
+  imageAlt="Corporate Training and Professional Development"
+
   paragraphs={[
-    "We deliver corporate trainings as part of our consulting services, focusing on practical, real-world skills that employees can apply immediately in their daily work. Our instructors specialise in Microsoft technologies and provide structured, outcome-focused training for senior executives, department managers, technical teams, and analysts.",
-    "Each program is fully customisable to align with your industry, role requirements, and organisational goals—ensuring meaningful skill development, improved performance, and measurable business impact."
+    "We deliver corporate training as part of our consulting services, focusing on practical, real-world skills employees can apply immediately. Our instructors specialise in Microsoft technologies and provide structured, outcome-focused training for all organisational levels.",
+    "Each program is customisable to your industry and role requirements, ensuring meaningful skill development, improved performance, and measurable business impact."
   ]}
-  imageSrc="/assets/img/corporate-training/cooperate-1.webp"
-  altText="Corporate Training and Professional Development Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  bulletPoints={[
+    "Practical, real-world training employees can apply instantly.",
+    "Specialised instructors across Microsoft technologies.",
+    "Custom programs tailored to roles and industries.",
+    "Training for executives, managers, technical teams, and analysts."
+  ]}
+
+  bgColor="#fff"
+  textColor="#000000"
 />
 
 

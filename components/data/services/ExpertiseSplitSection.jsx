@@ -10,7 +10,7 @@ export default function ExpertiseSplitSection({
   const [active, setActive] = useState(0);
 
   return (
-    <section id={sectionId} className="py-7 bg-lightblue">
+    <section id={sectionId} className="py-5 bg-lightblue">
       <style>{`
         /* =============================
            GLOBAL
@@ -58,7 +58,7 @@ export default function ExpertiseSplitSection({
           flex: 1;
           background: #0D2B75;
           padding: 50px;
-          border-radius: 8px;
+          border-radius: 6px;
           color: #fff;
           box-shadow: 0 12px 40px rgba(0,0,0,0.32);
           border: 1px solid rgba(255,255,255,0.08);
