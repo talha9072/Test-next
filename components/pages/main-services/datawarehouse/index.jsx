@@ -28,7 +28,7 @@ const Datawarehouse = () => {
   title="Unify Your Data to Unlock Deeper Intelligence"
   highlightText="Data Warehouse"
   subtitle="Novum helps organisations centralise data from ERP, CRM, databases, and applications into a unified warehouse that enables accurate reporting and smarter decision-making."
-  bgImage="/assets/img/datawarehouse/bg-datawarehouse.png"
+  bgImage="/assets/img/banner-imgs/8.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
