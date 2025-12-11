@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
@@ -44,25 +45,27 @@ const Ai = () => {
 />
 
 <div id="about">
-<OverviewComponent
-  title="AI & IoT Solutions Built for Real-World Impact"
-  primaryColor="#0d2b75"
-  backgroundType="color"
-  backgroundColor="#e5f1ff"
+<ImageWithContentSection
+  title="AI and IoT Solutions for Real-World Results"
+  orderControl={2}
+  imageSrc="/assets/img/ai/ai-main-1.png"
+  imageAlt="AI and IoT Solutions"
 
   paragraphs={[
-    "Novum delivers AI and IoT solutions powered by Microsoft Cognitive Services and industry technologies such as TensorFlow, Python, and OpenCV. We develop production-ready machine learning models, computer vision systems, and intelligent automation workflows that improve operational performance.",
-    "Our IoT capabilities enable organisations to connect devices, monitor assets, enhance visibility, and support predictive maintenance across critical operations."
+    "Novum delivers practical AI and IoT solutions powered by Microsoft Cognitive Services, TensorFlow, Python, and OpenCV. We build production-ready machine learning models, computer vision systems, and intelligent automation that enhance operational performance.",
+    "Our IoT capabilities connect devices, monitor assets, and provide real-time insights to support predictive maintenance and improve visibility across critical operations."
   ]}
 
-  listItems={[
-    "Analyse large and complex datasets to uncover actionable insights",
-    "Automate repetitive or high-risk workflows for greater efficiency",
-    "Recognise patterns using ML and computer vision models",
+  bulletPoints={[
+    "Extract insights from large and complex datasets",
+    "Automate repetitive and high-risk workflows",
+    "Identify patterns with ML and computer vision",
     "Improve forecasting accuracy across operations",
-    "Support predictive maintenance through connected IoT data",
-    
+    "Enable predictive maintenance with connected IoT data"
   ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
 </div> 
 
@@ -176,16 +179,27 @@ const Ai = () => {
     </div>
 
 <div id="iot">
-      <SoftwareSolutionsSection
-  title={<>What Is IoT (Internet of Things)?</>}
+<ImageWithContentSection
+  title="What Is IoT?"
+  orderControl={1}
+  imageSrc="/assets/img/ai/ai-main1.png"
+  imageAlt="AI and IoT Solutions"
+
   paragraphs={[
-    "The Internet of Things (IoT) connects physical devices such as sensors, vehicles, machinery, and equipment to the internet so they can collect, exchange, and analyse data in real time.",
-    "IoT gives organisations greater visibility into their operations by enabling remote monitoring, automated processes, and intelligent device-to-device communication.",
-    "With a connected infrastructure, businesses can optimise performance, reduce downtime, improve resource utilisation, and integrate physical assets directly into digital ecosystems."
+    "The Internet of Things (IoT) connects physical devices—such as sensors, vehicles, machinery, and equipment—to the internet so they can collect, exchange, and analyse data in real time. This continuous flow of structured data transforms how organisations monitor, manage, and optimise their operations.",
   ]}
-  imageSrc="/assets/img/ai/ai-main1.webp"
-  altText="AI and IoT Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  bulletPoints={[
+    "Monitor equipment, assets, and field operations in real time",
+    "Enable predictive maintenance to prevent unplanned downtime",
+    "Automate on-site or remote processes through connected devices",
+    "Improve safety and compliance with smart sensors and alerts",
+    "Optimise resource usage through intelligent data insights",
+    "Support analytics, forecasting, and digital transformation initiatives"
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
 </div>
 
