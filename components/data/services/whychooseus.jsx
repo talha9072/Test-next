@@ -12,7 +12,7 @@ export default function WhyChooseSection({
   return (
     <section
       id={sectionId}
-      className="py-7"
+      className="py-5"
       style={{ background }}
     >
       <style>{`

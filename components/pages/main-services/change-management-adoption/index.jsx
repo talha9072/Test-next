@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ConceptTwoCol from "@/components/data/services/ConceptTwoCol";
 import WhyChooseSection from "@/components/data/services/whychooseus";
@@ -42,24 +43,29 @@ const Change = () => {
 />
 
  <div id="about">
-<BulletPoints
-  sectionId="change-overview"
-  title={<>Why Change Management Matters?</>}
-  paragraphs={[
-    "Successful technology implementation is not only about deploying new tools it’s about preparing people, aligning leadership, and enabling teams to adopt new ways of working.",
-    "Our Change Management & Adoption framework ensures your investment delivers real business value by guiding users, reducing resistance, and accelerating organisation-wide adoption."
-  ]}
-  bulletPoints={[
-    "Improves user adoption and reduces change resistance",
-    "Aligns leadership and teams on shared expectations and goals",
-    "Provides clear communication and structured onboarding",
-    "Ensures sustainable use of new systems and processes",
-    "Accelerates time-to-value for your technology investment"
-  ]}
+<ImageWithContentSection
+  title="Why Change Management Matters"
+  orderControl={2}
   imageSrc="/assets/img/change-management-adoption/management-1.webp"
-  altText="Change Management and User Adoption"
-  sectionClass="position-relative overflow-hidden py-7"
+  imageAlt="Change Management and User Adoption"
+
+  paragraphs={[
+    "Technology success depends on more than deploying new tools—it requires preparing people, aligning leadership, and enabling teams to adopt new ways of working.",
+    "Our Change Management & Adoption framework helps organisations reduce resistance, guide users effectively, and accelerate adoption to maximise the value of new systems."
+  ]}
+
+  bulletPoints={[
+    "Improves user adoption and reduces resistance.",
+    "Aligns leadership and teams on shared goals.",
+    "Provides clear communication and structured onboarding.",
+    "Ensures sustainable use of new systems and processes.",
+    "Accelerates time-to-value for technology investments."
+  ]}
+
+  bgColor="#fff"
+  textColor="#000000"
 />
+
 </div>
 
 <div id="Benefits">
@@ -114,24 +120,28 @@ backgroundStyle="#e5f1ff"
 
 
 <div id="services">
-<BulletPoints
-  sectionId="service-includes"
-  title={<>What Our Change Management & Adoption Service Includes</>}
-  paragraphs={[
-    "Our Change Management & Adoption service provides a structured, people-centred approach that ensures your technology investment delivers meaningful and sustained business value.",
-  ]}
-  bulletPoints={[
-    "Change impact assessment across teams and processes",
-    "Stakeholder mapping, engagement planning, and readiness checks",
-    "Communication strategy and clear messaging frameworks",
-    "Training material creation — guides, workshops, and enablement plans",
-    "Adoption dashboards and performance measurement tracking",
-    "Structured feedback loops and iterative improvement cycles",
-    "Post-go-live reinforcement to sustain long-term adoption"
-  ]}
+<ImageWithContentSection
+  title="What Our Change Management Service Includes"
+  orderControl={1}
   imageSrc="/assets/img/change-management-adoption/management-2.webp"
-  altText="Change Management & Adoption Services"
-  sectionClass="position-relative overflow-hidden py-7"
+  imageAlt="Change Management & Adoption Services"
+
+  paragraphs={[
+    "Our Change Management & Adoption service follows a structured, people-focused approach to ensure your technology investment delivers meaningful and sustained business value."
+  ]}
+
+  bulletPoints={[
+    "Impact assessment across teams and processes.",
+    "Stakeholder mapping and readiness planning.",
+    "Communication strategy and clear messaging.",
+    "Training materials, workshops, and enablement plans.",
+    "Adoption dashboards and performance tracking.",
+    "Feedback loops for continuous improvement.",
+    "Post-go-live support to sustain long-term adoption."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
 />
 </div>
 
