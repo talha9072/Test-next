@@ -37,7 +37,7 @@ export default function ImageWithContentSection({
                     alt={imageAlt}
                     width={1600}
                     height={900}
-                    className="img-fluid w-100"
+                    className="img-fluid rounded-2 w-100"
                     style={{
                       objectFit: "cover",
                       objectPosition: "50% 50%",
@@ -50,7 +50,7 @@ export default function ImageWithContentSection({
                       alt={imageAlt}
                       fill
                       priority
-                      className="desktop-img"
+                      className="desktop-img rounded-2"
                       style={{
                         objectFit: "cover",
                         objectPosition: "50% 50%",
@@ -129,7 +129,7 @@ export default function ImageWithContentSection({
                     alt={imageAlt}
                     width={1600}
                     height={900}
-                    className="img-fluid w-100"
+                    className="img-fluid w-100 rounded-2"
                     style={{
                       objectFit: "cover",
                       objectPosition: "50% 50%",
@@ -142,7 +142,7 @@ export default function ImageWithContentSection({
                       alt={imageAlt}
                       fill
                       priority
-                      className="desktop-img"
+                      className="desktop-img rounded-2"
                       style={{
                         objectFit: "cover",
                         objectPosition: "50% 50%",

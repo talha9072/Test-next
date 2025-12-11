@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
@@ -43,46 +44,54 @@ const Licensing = () => {
 />
  
 <div id="about">
-  <OverviewComponent
-    title="What We Do"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
-    
-    paragraphs={[
-      "Organisations often find Microsoft licensing confusing due to multiple product families, contract types, and usage scenarios. Novum provides end-to-end licensing advisory services to help you evaluate options, forecast usage, standardise procurement, and manage renewals with complete transparency.",
-      "Our licensing experts support enterprises, SMBs, government institutions, and educational organisations through every step of the licensing journey—ensuring clarity, optimisation, and cost efficiency."
-    ]}
-    
-    listItems={[
-      "Full clarity across Microsoft product families and licensing models",
-      "Guidance on selecting the most cost-effective contract structure",
-      "Forecasting and optimisation to prevent over-licensing",
-      "Standardised procurement processes for predictable budgeting",
-      "Renewal management with complete visibility and control"
-    ]}
-  />
+  <ImageWithContentSection
+  title="What We Do"
+  orderControl={2}
+  imageSrc="/assets/img/licensing/licensing-main.png"   // replace with your actual image
+  imageAlt="Microsoft Licensing Overview"
+
+  paragraphs={[
+    "Microsoft licensing can be complex across products, contract types, and usage needs. Novum provides clear, end-to-end advisory to help you evaluate options, forecast usage, and manage licensing with confidence.",
+    "We support enterprises, SMBs, government, and education organisations, ensuring clarity, optimisation, and cost efficiency throughout the licensing journey."
+  ]}
+
+  bulletPoints={[
+    "Clear guidance across Microsoft products and licensing models.",
+    "Support selecting cost-effective contract structures.",
+    "Forecasting to prevent over-licensing.",
+    "Standardised procurement for predictable budgeting.",
+    "Renewal management with full visibility and control."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
+/>
+
 </div>
 
 <div id="licensing-importance">
-  <BulletPoints
-    sectionId="licensing-importance"
-    title={<>Why Microsoft Licensing Matters</>}
-    paragraphs={[
-      "Microsoft licensing directly impacts cost, security, scalability, and compliance across your entire organisation. Choosing the right agreement ensures predictable budgeting, secure operations, and efficient allocation of tools to your workforce.",
-      "Novum brings deep licensing expertise to help organisations make informed, strategic decisions that align technology usage with business goals."
-    ]}
-    bulletPoints={[
-      "Optimise technology spend and eliminate unnecessary costs",
-      "Maintain compliance with Microsoft contractual requirements",
-      "Equip employees with the right tools and access levels",
-      "Scale cloud and on-premises environments more efficiently",
-      "Improve visibility and management of your digital estate"
-    ]}
-    imageSrc="/assets/img/licensing/licensing-main1.webp"
-    altText="Microsoft Licensing Advisory and Optimization"
-    sectionClass="position-relative overflow-hidden py-7 pb-0"
-  />
+  <ImageWithContentSection
+  title="Why Microsoft Licensing Matters"
+  orderControl={1}
+  imageSrc="/assets/img/licensing/licensing-main1.png"
+  imageAlt="Microsoft Licensing Advisory and Optimization"
+
+  paragraphs={[
+    "Microsoft licensing affects cost, security, scalability, and compliance across your organisation. The right agreement ensures predictable budgeting and efficient access to essential tools.",
+    "Novum helps organisations make strategic licensing decisions that align technology usage with business goals."
+  ]}
+
+  bulletPoints={[
+    "Optimise spend and remove unnecessary costs.",
+    "Maintain compliance with Microsoft requirements.",
+    "Provide employees with the right tools and access.",
+    "Scale cloud and on-prem environments efficiently.",
+    "Improve visibility and management of your digital estate."
+  ]}
+
+  bgColor="#fff"
+  textColor="#000000"
+/>
 </div>
 
 <div id="services">
