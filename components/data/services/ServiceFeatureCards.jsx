@@ -6,7 +6,7 @@ export default function ServiceManagedGrid({
   subtitle = "",
   items = [],
   columns = 3,
-  sectionClass = "py-7",
+  sectionClass = "py-5",
 
   backgroundType = "none",
   backgroundColor = "#ffffff",
@@ -45,7 +45,7 @@ export default function ServiceManagedGrid({
 
               {/* ⭐ CARD WITHOUT REVEAL ⭐ */}
               <div
-                className="premium-card d-flex flex-column h-100 w-100 bg-white p-4 rounded-4"
+                className="premium-card d-flex flex-column h-100 w-100 bg-white p-4 rounded-2"
                 style={{
                   border: "1px solid #ececec",
                   transition: "0.35s ease",

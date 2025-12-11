@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -24,11 +25,10 @@ const ManagedServices = () => {
 
       <HeroWithRibbon
   serviceName="Novum Managed Services"
-  title="Multi-Cloud Operations, Security, Cost Optimisation & 24/7 Support"
+  title="Multi-Cloud Operations & Always-On Support"
   highlightText="Managed Services"
-  subtitle="Novum delivers proactive managed services across Azure, AWS, and Google Cloud including DevOps, security operations, cost optimisation, infrastructure management, database services, and modern application support."
+  subtitle="Proactive cloud management, security, DevOps, and cost optimisation across Azure, AWS, and Google Cloud."
   bgImage="/assets/img/professional-services/bg-managed.png"
-  // heroImage="/assets/img/managed-services/managed-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
@@ -45,22 +45,23 @@ const ManagedServices = () => {
 
 
 <div id="about">
-<OverviewComponent
+<ImageWithContentSection
+  orderControl={2}
+  bgColor="#e5f1ff"
   title="Modern Managed Services for Cloud-Driven Organisations"
-  primaryColor="#0d2b75"
-  backgroundType="color"
-  backgroundColor="#e5f1ff"
+  imageSrc="/assets/img/managed-services/managed-main.png"
+  imageAlt="Managed Services Overview"
 
   paragraphs={[
-    "Novum’s Managed Services empower businesses to focus on innovation while we take care of the day-to-day management of cloud operations.",
-    "With flexible service models, certified cloud experts, and proactive 24/7 support, we help organisations optimise performance, improve security maturity, and maximise cloud ROI across Azure, AWS, and Google Cloud.",
-    "Our approach ensures your cloud environments remain stable, cost-efficient, and future-ready."
+    "Novum’s Managed Services help organisations focus on innovation while we manage day-to-day cloud operations across Azure, AWS, and Google Cloud.",
+    "With flexible service models and certified experts, we optimise performance, improve security maturity, and deliver proactive 24/7 support.",
+    "Our approach keeps your cloud environments stable, cost-efficient, and ready for future scale."
   ]}
 
-  listItems={[
+  bulletPoints={[
     "Proactive 24/7 cloud monitoring and incident response",
-    "FinOps-led cost optimisation for measurable savings",
-    "Security-first governance aligned with ISO, CIS, and NIST standards",
+    "FinOps-driven cost optimisation for measurable savings",
+    "Security-first governance aligned with ISO, CIS, and NIST"
   ]}
 />
 </div>
@@ -187,25 +188,25 @@ const ManagedServices = () => {
 
 
 <div id="approach">
-    <BulletPoints
-      sectionId="approach"
-      title={<>Our Approach to Managed Services</>}
-      paragraphs={[
-        "Novum combines proactive cloud operations with a collaborative engagement model tailored to your organisation’s needs.",
-        "Our delivery approach includes:"
-      ]}
-      bulletPoints={[
-        "Proactive monitoring and automated issue resolution",
-        "Regular optimisation reviews and advisory sessions",
-        "Flexible service tiers to support different maturity levels",
-        "Knowledge transfer and co-ownership with your internal teams",
-        "Industry-recognised frameworks and cloud engineering best practices"
-      ]}
-      extraParagraph="This approach ensures stability, continuous improvement, and long-term operational excellence."
-      imageSrc="/assets/img/managed-services/managed-main1.webp"
-      altText="Novum Managed Services Approach"
-      sectionClass="position-relative overflow-hidden py-7"
-    />
+    <ImageWithContentSection
+  orderControl={1}
+  title="Our Approach to Managed Services"
+  imageSrc="/assets/img/managed-services/managed-main1.png"
+  imageAlt="Novum Managed Services Approach"
+
+  paragraphs={[
+    "Novum combines proactive cloud operations with a collaborative engagement model shaped around your organisation’s needs.",
+    "Our managed services approach focuses on stability, continuous optimisation, and shared ownership."
+  ]}
+
+  bulletPoints={[
+    "Proactive monitoring and automated issue resolution",
+    "Regular optimisation reviews and advisory sessions",
+    "Flexible service tiers for different maturity levels",
+    "Knowledge transfer and co-ownership with internal teams",
+    "Industry-aligned frameworks and engineering best practices"
+  ]}
+/>
 </div>
 
 
