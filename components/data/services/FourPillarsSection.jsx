@@ -25,7 +25,7 @@ export default function FourPillarsSection({
           position: relative;
           z-index: 3;
           background: #ffffff;
-          border-radius: 24px;
+          border-radius: 6px;
           border: 1px solid #e5e5e5;
           overflow: hidden;
           transition: all .3s ease;
@@ -39,12 +39,12 @@ export default function FourPillarsSection({
 
         /* Image wrapper – 8px padding */
         .fp-img-container {
-          padding: 8px;
+          padding: 6px;
           padding-bottom: 0;
         }
 
         .fp-img-container img {
-          border-radius: 16px;
+          border-radius: 6px;
           border: 1px solid #e6e6e6;
         }
 

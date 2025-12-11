@@ -49,7 +49,7 @@ export default function ServiceSplitPanel({
 
           {/* RIGHT SIDE */}
           <div className="col-12 col-lg-6 offset-lg-1 d-flex">
-            <div className="panel-box p-5 rounded-4 d-flex flex-column flex-grow-1">
+            <div className="panel-box p-5 rounded-2 d-flex flex-column flex-grow-1">
 
               <h3 className="fw-bold mb-3">
                 {active.label}

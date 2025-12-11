@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef } from "react";
-import Reveal from "@/components/Reveal";
 import Image from "next/image";
 
 export default function AIUseCaseGrid({
@@ -85,11 +84,11 @@ export default function AIUseCaseGrid({
 
             return (
               <div key={idx} className={columnClass}>
-                <Reveal direction="fade" blur={true} delay={idx * 0.2} duration={1.3}>
+                
                   
                   {/* FLEX COLUMN CARD */}
                   <div
-                    className="premium-card equal-card p-4 rounded-4 bg-white d-flex flex-column"
+                    className="premium-card equal-card p-4 rounded-2 bg-white d-flex flex-column"
                     ref={(el) => (cardRefs.current[idx] = el)}
                   >
                     {/* TOP CONTENT */}
@@ -143,7 +142,7 @@ export default function AIUseCaseGrid({
                       </a>
                     </div>
                   </div>
-                </Reveal>
+                
               </div>
             );
           })}

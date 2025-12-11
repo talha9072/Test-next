@@ -25,9 +25,9 @@ const Datawarehouse = () => {
 
       <HeroWithRibbon
   serviceName="Data Warehouse Services"
-  title="Unify Your Data to Unlock Deeper Intelligence Across the Organisation"
+  title="Unify Your Data to Unlock Deeper Intelligence"
   highlightText="Data Warehouse"
-  subtitle="Novum helps organisations consolidate data from ERP, CRM, databases, applications, and operational systems into a centralised data warehouse that enables reliable reporting, advanced analytics, and confident decision-making at scale."
+  subtitle="Novum helps organisations centralise data from ERP, CRM, databases, and applications into a unified warehouse that enables accurate reporting and smarter decision-making."
   bgImage="/assets/img/datawarehouse/bg-datawarehouse.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
@@ -91,32 +91,100 @@ const Datawarehouse = () => {
     title="The Foundation for Modern, Insight-Driven Organisations"
     primaryColor="#0d2b75"
     items={[
+     
+      // ------------------------------------------
+      // 1️⃣ Finance
+      // ------------------------------------------
       {
-        label: "Why a Strong Data Foundation Matters",
+        label: "Finance",
         paragraphs: [
-          "As businesses undergo digital transformation, nearly every process becomes dependent on systems and the data they produce. To operate effectively, employees across every level from executives to analysts need fast, accurate access to insights that reflect performance, risks, and opportunities.",
-          "A modern data warehouse provides the stable, governed, and consolidated environment required to support analytics at enterprise scale."
+          "A centralised data warehouse enables accurate, consistent, and real-time financial intelligence across the organisation. By unifying data from accounting systems, ERPs, and operational sources, finance leaders gain a comprehensive and trusted view of organisational performance. This foundation strengthens planning, enhances financial controls, and supports faster, evidence-based strategic decision-making."
         ],
         listItems: [
-          "Eliminate fragmented data spread across multiple systems",
-          "Enable consistent, organisation-wide reporting structures",
-          "Build real-time visibility into performance and operations"
+          "Reliable and standardised financial reporting across business units",
+          "Budgeting insights using consolidated revenue and expenditure data",
+          "Improved forecasting accuracy through trend modelling and historical analysis",
+          "Automated performance dashboards for CFOs and finance teams"
         ]
       },
 
+      // ------------------------------------------
+      // 2️⃣ Supply Chain
+      // ------------------------------------------
       {
-        label: "Key Reasons Organisations Invest in a Data Warehouse",
+        label: "Supply Chain",
         paragraphs: [
-          "A data warehouse enables teams to move beyond intuition-based decisions and establish a strong analytics foundation that improves accuracy, consistency, and speed. It also supports the growing need for advanced analytics, predictive models, and AI-driven insights."
+          "Supply chain operations rely on timely, accurate data from multiple systems including inventory, logistics, procurement, and fulfilment. A modern data warehouse consolidates these sources to deliver real-time visibility, helping organisations optimise flows, reduce disruptions, and respond to market conditions with greater speed and accuracy."
         ],
         listItems: [
-          "Data-driven decision making with trusted, consolidated information",
-          "Improved data quality & consistency across all business units",
-          "Fast and easy access to analytics for competitive advantage",
-          "Interactive visualisation support for dashboards, KPIs, and reporting",
-          "Stronger reporting structure for management and C-level executives",
-          "AI & advanced analytics readiness through structured data models",
-          "Enterprise-wide analytics deployment across every department"
+          "End-to-end visibility across inventory, logistics, vendor performance, and procurement",
+          "Real-time cost, demand, and fulfilment tracking",
+          "Improved demand and supply planning with predictive insights",
+          "Operational intelligence that reduces delays, stock-outs, and inefficiencies"
+        ]
+      },
+
+      // ------------------------------------------
+      // 3️⃣ Sales & Marketing
+      // ------------------------------------------
+      {
+        label: "Sales & Marketing",
+        paragraphs: [
+          "Sales and marketing teams thrive when customer, pipeline, and campaign data is connected. A data warehouse enables unified customer journeys, deeper behaviour insights, and accurate forecasting. This helps organisations maximise revenue performance and make smarter decisions across the entire sales and marketing lifecycle."
+        ],
+        listItems: [
+          "Customer behaviour analytics and segmentation intelligence",
+          "Sales forecasting based on historical, seasonal, and predictive trends",
+          "Campaign ROI tracking across channels and customer touchpoints",
+          "Unified revenue reporting to support growth and performance optimisation"
+        ]
+      },
+
+      // ------------------------------------------
+      // 4️⃣ Manufacturing
+      // ------------------------------------------
+      {
+        label: "Manufacturing",
+        paragraphs: [
+          "Manufacturing teams depend on consistent production, quality, and machine data to optimise throughput and minimise risk. A data warehouse consolidates operational and IoT sources to reveal performance trends, quality variations, and early warning signals, enabling more efficient processes and greater production reliability."
+        ],
+        listItems: [
+          "Production performance monitoring with real-time visibility",
+          "Quality metrics tracking supported by standardised reporting models",
+          "Downtime analysis that identifies root causes and prevention strategies",
+          "IoT machine data integration enabling predictive maintenance and efficiency gains"
+        ]
+      },
+
+      // ------------------------------------------
+      // 5️⃣ Operations & Quality
+      // ------------------------------------------
+      {
+        label: "Operations & Quality",
+        paragraphs: [
+          "Operational excellence requires clear visibility into processes, performance, and compliance. A data warehouse consolidates and standardises these datasets, allowing organisations to uncover inefficiencies, improve quality outcomes, and maintain strong governance frameworks supported by trustworthy analytics."
+        ],
+        listItems: [
+          "Standardised operational reporting across all departments",
+          "Root-cause analysis for recurring issues and process bottlenecks",
+          "Optimisation insights to enhance productivity and reduce variability",
+          "Compliance, safety, and quality monitoring through unified data structures"
+        ]
+      },
+
+      // ------------------------------------------
+      // 6️⃣ HR & Workforce Management
+      // ------------------------------------------
+      {
+        label: "HR & Workforce Management",
+        paragraphs: [
+          "HR leaders rely on accurate workforce information to strengthen culture, improve retention, and plan strategically. A data warehouse centralises employee, recruitment, performance, and engagement data, giving HR teams the insight needed to build a resilient and high-performing organisation."
+        ],
+        listItems: [
+          "Employee performance intelligence and workforce metrics",
+          "Recruitment funnel visibility and candidate pipeline analytics",
+          "Retention analysis that highlights workforce risks and engagement patterns",
+          "Workforce planning dashboards to support strategic resourcing and growth"
         ]
       }
     ]}
@@ -124,59 +192,86 @@ const Datawarehouse = () => {
 </div>
 
 
+
 <div id="usecase">
-    <AIUseCaseGrid
-      title="How Data Warehousing Supports the Entire Organisation"
-      backgroundType="gradient"
-      backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
-      columns={3}
-      items={[
-        {
-          iconType: "bootstrap",
-          icon: "bi-cash-stack",
-          title: "Finance",
-          desc: "Reliable financial reporting, budgeting insights, forecasting accuracy, and consolidated financial performance dashboards.",
-          link: "/contact",
-        },
-        {
-          iconType: "bootstrap",
-          icon: "bi-truck",
-          title: "Supply Chain",
-          desc: "End-to-end visibility across inventory, logistics, vendors, and procurement with real-time operational insights.",
-          link: "/contact",
-        },
-        {
-          iconType: "bootstrap",
-          icon: "bi-graph-up-arrow",
-          title: "Sales & Marketing",
-          desc: "Customer behaviour analytics, sales forecasting, campaign ROI tracking, and unified revenue intelligence.",
-          link: "/contact",
-        },
-        {
-          iconType: "bootstrap",
-          icon: "bi-building-gear",
-          title: "Manufacturing",
-          desc: "Production performance monitoring, quality insights, downtime analysis, and IoT machine data integration.",
-          link: "/contact",
-        },
-        {
-          iconType: "bootstrap",
-          icon: "bi-clipboard-check",
-          title: "Operations & Quality",
-          desc: "Standardised operational reporting, root-cause analysis, process optimisation, and compliance monitoring.",
-          link: "/contact",
-        },
-        {
-          iconType: "bootstrap",
-          icon: "bi-person-badge",
-          title: "HR & Workforce Management",
-          desc: "Employee performance analytics, hiring trends, retention insights, and workforce planning dashboards.",
-          link: "/contact",
-        }
-      ]}
-    />
-  
+  <AIUseCaseGrid
+    title="How Data Warehousing Supports the Entire Organisation"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+    columns={3}
+    items={[
+      
+      // -------------------------------
+      // NEW 9 Azure-Fabric Inspired Cards
+      // -------------------------------
+
+      {
+        iconType: "bootstrap",
+        icon: "bi-diagram-3",
+        title: "Data Integration",
+        desc: "Unify your data estate with robust integration tools that simplify complex ETL scenarios and ensure consistent, governed data flows.",
+        link: "https://learn.microsoft.com/en-us/fabric/data-factory/data-factory-overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-cpu",
+        title: "Data Engineering",
+        desc: "Build scalable data pipelines and structured systems to organise, transform, and optimise large volumes of enterprise data.",
+        link: "https://learn.microsoft.com/en-us/fabric/data-engineering/data-engineering-overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-robot",
+        title: "Data Science",
+        desc: "Use AI-powered tooling to enrich datasets, automate workflows, and generate deeper predictive and machine learning insights.",
+        link: "https://learn.microsoft.com/en-us/fabric/data-science/data-science-overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-server",
+        title: "Data Warehouse",
+        desc: "Scale compute and storage independently while delivering industry-leading SQL performance for analytics and reporting workloads.",
+        link: "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-lightning-charge",
+        title: "Real-time Intelligence",
+        desc: "Analyze, explore, and act on streaming data with near real-time insights, enabling faster decisions with low-latency processing.",
+        link: "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-bar-chart",
+        title: "Business Intelligence",
+        desc: "Transform your data into interactive dashboards and insights, and integrate visual analytics seamlessly across Microsoft 365.",
+        link: "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-stars",
+        title: "Copilot in Fabric",
+        desc: "Accelerate productivity with natural language prompts that automate tasks in notebooks, data pipelines, and Power BI reports.",
+        link: "https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-fabric-overview",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-collection",
+        title: "Databases",
+        desc: "Build powerful, insight-driven applications with a unified database platform that scales across cloud environments.",
+        link: "https://learn.microsoft.com/en-us/fabric/database/sql/overview?culture=en-us&country=us",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-cloud-arrow-down",
+        title: "Data Lake",
+        desc: "Access and manage your entire multi-cloud data estate from a unified, organisation-wide data lake for advanced analytics.",
+        link: "https://learn.microsoft.com/en-us/fabric/onelake/",
+      }
+    ]}
+  />
 </div>
+
 
 <div id="enterprise">
   <FourCardSection
