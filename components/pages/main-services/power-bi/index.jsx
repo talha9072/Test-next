@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import OverviewComponent from "@/components/data/services/OverviewComponent";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
@@ -24,9 +25,9 @@ const PowerBI = () => {
 
       <HeroWithRibbon
   serviceName="Power BI Consulting"
-  title="Transform Data into Insights that Power Better Decision Making"
+  title="Turn Data into Actionable Insights with Power BI"
   highlightText="Power BI"
-  subtitle="Novum helps organisations model, prepare, and visualise data using Power BI to build a truly data-driven culture. Unlock meaningful insights, streamline reporting, and enable smarter strategic decisions across every department."
+  subtitle="Novum helps organisations model, prepare, and visualise data using Power BI to unlock insights, streamline reporting, and support smarter decision-making."
   bgImage="/assets/img/power-bi/power-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
@@ -34,7 +35,7 @@ const PowerBI = () => {
   links={[
     { label: "Overview", href: "#about" },
     { label: "Expertise", href: "#expertise" },
-    { label: "Benifits", href: "#benefits" },
+    { label: "Benefits", href: "#benefits" },
     { label: "Data Sources", href: "#datasources" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
@@ -43,51 +44,49 @@ const PowerBI = () => {
 
 
 <div id="about">
-<OverviewComponent
-  title="Accelerate Your Sustainability Journey"
-  primaryColor="#0d2b75"
-  backgroundType="color"
-  backgroundColor="#e5f1ff"
+<ImageWithContentSection
+  title="Unlock Insights with Modern Power BI Analytics"
+  orderControl={2}
+  imageSrc="/assets/img/power-bi/powerbi-main1.png"
+  imageAlt="Power BI Overview"
 
   paragraphs={[
-    "In today’s data-driven environment, data modelling and visual reporting have become essential capabilities for every modern organisation. Power BI, a leading Microsoft analytics tool, enables teams to build interactive dashboards, generate insights, and develop data-centric solutions integrated with Azure Analytics.",
-    "With the right Power BI strategy, organisations can uncover business opportunities, reduce costs, improve margins, track operational performance, and support strategic planning across Finance, Supply Chain, Manufacturing, Sales & Marketing, Operations, Management, and HR.",
-    "Novum provides a full suite of Power BI services designed to help organisations maximise the value of their data assets.",
+    "Power BI enables organisations to create interactive dashboards, uncover insights, and integrate analytics across Azure and enterprise systems.",
+    "A strong data strategy helps teams reduce costs, improve performance, and make faster, insight-driven decisions across finance, operations, manufacturing, sales, and HR.",
+    "Novum delivers end-to-end Power BI services that maximise the value of your data assets."
   ]}
 
-  listItems={[
-  "Build real-time dashboards that give instant visibility across finance, operations, sales, and supply chain performance.",
-  "Automate data preparation and reporting workflows to eliminate manual effort and improve reporting accuracy.",
-  "Use AI-enhanced analytics to uncover trends, identify risks, and highlight improvement opportunities across the business.",
-  "Connect data from multiple systems to create a unified, organisation-wide view for faster, insight-driven decision-making.",
-]}
+  bulletPoints={[
+    "Build real-time dashboards with organisation-wide visibility.",
+    "Automate data preparation to reduce manual reporting.",
+    "Use AI-driven analytics to identify patterns and risks.",
+    "Unify data from multiple systems for faster decisions."
+  ]}
 />
 </div>
 
 
 <div id="expertise">
-  <BulletPoints
-    sectionId="overview"
-    title={<>Power BI Consulting On-Demand Expertise for Your Organisation</>}
-    
-    paragraphs={[
-      "If your organisation already has a Power BI environment in place and requires updates, enhancements, or advanced analytical capabilities, Novum's specialists are ready to support you. Our consultants bring deep expertise across Microsoft technologies and deliver end-to-end Power BI solutions tailored to evolving business needs."
-    ]}
+ <ImageWithContentSection
+  title="On-Demand Power BI Expertise for Your Organisation"
+  orderControl={1}
+  bgColor = "#fff"
+  imageSrc="/assets/img/power-bi/powerbi-main.png"
+  imageAlt="Power BI Consulting and Analytics Expertise"
 
-    extraParagraph="From complex data models and automated dashboards to custom integrations and performance optimisation, our On-Demand Power BI Consulting service ensures your analytics ecosystem is scalable, efficient, and enterprise-ready."
+  paragraphs={[
+    "If your organisation already uses Power BI and requires enhancements, upgrades, or advanced analytical capabilities, Novum’s specialists are ready to support you. Our consultants bring deep Microsoft expertise and deliver end-to-end Power BI solutions tailored to evolving business needs.",
+    "From complex data models and automated dashboards to integrations and performance optimisation, our on-demand consulting ensures your analytics ecosystem is scalable, efficient, and enterprise-ready."
+  ]}
 
-    bulletPoints={[
-      "Expert Power BI support tailored to your BI team’s ideas and requirements",
-      "Consulting aligned with real business use cases and measurable outcomes",
-      "A dedicated consultant assigned exclusively to your organisation",
-      "Immediate online or on-site assistance for urgent needs and rapid issue resolution",
-      "Development of robust dashboards, scalable data models, and enterprise-grade analytics"
-    ]}
-
-    imageSrc="/assets/img/power-bi/powerbi-main.webp"
-    altText="Power BI Consulting and Analytics Expertise"
-    sectionClass="position-relative overflow-hidden py-7"
-  />
+  bulletPoints={[
+    "Expert Power BI support aligned with your BI team’s requirements.",
+    "Consulting focused on real business use cases and measurable results.",
+    "A dedicated consultant assigned exclusively to your organisation.",
+    "Immediate online or on-site assistance for urgent issues.",
+    "Development of robust dashboards, scalable models, and enterprise-grade analytics."
+  ]}
+/>
 </div>
 
 <div id="benefits">
