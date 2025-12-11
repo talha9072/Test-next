@@ -1,12 +1,12 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import BulletPoints from "@/components/data/services/bulletpoints";
 import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
-import Reveal from "@/components/Reveal";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -45,24 +45,32 @@ const Professional = () => {
 
 
 <div id="about">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-    <SoftwareSolutionsSection
-      title={`Strategic Guidance for Your Cloud & Digital Transformation`}
-      paragraphs={[
-        "Novum provides comprehensive Consulting & Advisory Services designed to help organisations move from strategy to execution with confidence.",
-        "Our experts guide you through assessment, planning, architecture design, and implementation ensuring every cloud or digital initiative aligns with your business goals.",
-        "We specialise in crafting cloud strategies that deliver innovation, efficiency, and scalability, empowering your organisation to modernise operations and accelerate growth."
-      ]}
-      imageSrc="/assets/img/consulting-advisory/consulting-main1.webp"
-      altText="Professional Services by Novum"
-      sectionClass="position-relative overflow-hidden py-7"
-    />
-  </Reveal>
+    <ImageWithContentSection
+  title="Strategic Guidance for Cloud & Digital Transformation"
+  orderControl={2}
+  imageSrc="/assets/img/consulting-advisory/consulting-main1.webp"
+  imageAlt="Professional Services by Novum"
+
+  paragraphs={[
+    "Novum provides consulting and advisory services that help organisations move from strategy to execution with clarity and confidence.",
+    "Our experts guide you through assessment, planning, architecture design, and implementation to ensure every initiative aligns with business goals.",
+    "We craft cloud strategies that drive innovation, efficiency, and scalability empowering your organisation to modernise and grow."
+  ]}
+
+  bulletPoints={[
+    "End-to-end strategy and advisory support.",
+    "Cloud and digital planning aligned to business goals.",
+    "Architecture design for scalable, secure solutions.",
+    "Implementation guidance from certified experts."
+  ]}
+
+  bgColor="#e5f1ff"
+  textColor="#000000"
+/>
 </div>
 
      
 <div id="service-offerings">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <ServiceFeatureSlider
       sectionId="service-offerings"
       title="Core Areas of Engagement"
@@ -167,35 +175,38 @@ const Professional = () => {
         }
       ]}
     />
-  </Reveal>
 </div>
 
 
 <div id="approach">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-    <BulletPoints
-      sectionId="approach"
-      title={<>Engagement Approach</>}
-      paragraphs={[
-        "Novum offers a complete continuum of services that support organisations throughout their entire cloud journey.",
-        "Our approach includes:"
-      ]}
-      bulletPoints={[
-        "Consulting & Advisory – Strategy, assessment, and architecture direction",
-        "Professional Services – Implementation, modernisation, and integration",
-        "Managed Services – Ongoing operations, optimisation, and security management"
-      ]}
-      extraParagraph="This unified end-to-end model enables organisations to partner with a single expert provider — from vision to execution and continuous improvement."
-      imageSrc="/assets/img/consulting-advisory/consulting-main2.webp"
-      altText="Novum Engagement Approach"
-      sectionClass="position-relative overflow-hidden py-7"
-    />
-  </Reveal>
+    <ImageWithContentSection
+  title="Our Engagement Approach"
+  orderControl={1}
+  imageSrc="/assets/img/consulting-advisory/consulting-main2.webp"
+  imageAlt="Novum Engagement Approach"
+
+  paragraphs={[
+    "Novum delivers a complete service continuum that supports organisations at every stage of their cloud and digital transformation journey. Our goal is to provide clarity, reduce complexity, and ensure that each initiative creates measurable business value.",
+    "We combine strategic planning, hands-on implementation, and long-term operational support to help organisations modernise confidently and sustainably."
+  ]}
+
+  bulletPoints={[
+    "Consulting & Advisory Strategic assessments, roadmap development, and architecture guidance.",
+    "Professional Services Implementation, modernisation, integration, and solution delivery.",
+    "Managed Services Continuous optimisation, monitoring, operations support, and security management."
+  ]}
+
+  paragraphsExtra={[
+    "By offering a unified end-to-end model, Novum enables organisations to work with a single trusted partner—from vision and strategy to execution, adoption, and ongoing improvement."
+  ]}
+
+  bgColor="#ffffff"
+  textColor="#000000"
+/>
 </div>
 
 
 <div id="expertise">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
     <InsightShowcaseSection
       eyebrow="Credentials & Recognition"
       title="Our Expertise & Industry Recognition"
@@ -206,18 +217,16 @@ const Professional = () => {
         "Certified experts across Azure, AWS, and Google Cloud",
         "Deep specialisation in data, security, DevOps, and cloud architecture",
         "Recognised by enterprise clients for high-quality delivery and innovation",
-        "Extensive experience designing and operationalising modern cloud operating models"
       ]}
       buttonLabel="Explore our certifications"
       buttonLink="/contact"
       imageSrc="/assets/img/consulting-advisory/consulting-main3.webp"
       imageAlt="Novum Industry Credentials and Recognition"
     />
-  </Reveal>
 </div>
         
 <div id="whyus">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+  
     <AIUseCaseGrid
       title="Why Organisations Choose Novum"
       backgroundType="gradient"
@@ -268,13 +277,11 @@ const Professional = () => {
         }
       ]}
     />
-  </Reveal>
 </div>
 
 
     
 <div id="testimonials">
-  <Reveal direction="fade">
     <Testimonials
       subtitle="Client Stories"
       title="What Clients Say About Working With Novum"
@@ -305,11 +312,9 @@ const Professional = () => {
     },
   ]}
     />
-  </Reveal>
 </div>
 
 <div id="otherservices">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -387,7 +392,6 @@ const Professional = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 
