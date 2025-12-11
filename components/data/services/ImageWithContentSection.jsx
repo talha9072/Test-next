@@ -26,38 +26,54 @@ export default function ImageWithContentSection({
       <div className="container">
         <div className="row g-0 align-items-stretch">
 
-          {/* =====================================
-              IMAGE LEFT / TEXT RIGHT (orderControl = 1)
-          ====================================== */}
+          {/* ---------------- IMAGE LEFT ---------------- */}
           {orderControl === 1 && (
             <>
               {/* IMAGE FIRST */}
               <div className="col-lg-6 p-0 position-relative">
                 {isMobile ? (
-                  <Image src={imageSrc} alt={imageAlt} width={1600} height={900} className="img-fluid w-100" />
+                  <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    width={1600}
+                    height={900}
+                    className="img-fluid w-100"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "50% 50%",
+                    }}
+                  />
                 ) : (
                   <div className="desktop-img-wrapper w-100 h-100 position-relative">
-                    <Image src={imageSrc} alt={imageAlt} fill priority className="desktop-img" />
+                    <Image
+                      src={imageSrc}
+                      alt={imageAlt}
+                      fill
+                      priority
+                      className="desktop-img"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "50% 50%",
+                      }}
+                    />
                   </div>
                 )}
               </div>
 
               {/* TEXT SECOND */}
               <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 text-right-desktop">
-                <h2 style={{ fontSize: "26px", fontWeight: "600", color: textColor }} className="mb-4">
+                <h2 className="mb-4" style={{ fontSize: "26px", fontWeight: 600, color: textColor }}>
                   {title}
                 </h2>
 
-                {paragraphs.map((para, idx) => (
-                  <p key={idx} style={{ fontSize: "16px", lineHeight: 1.6, color: textColor }}>
-                    {para}
-                  </p>
+                {paragraphs.map((p, i) => (
+                  <p key={i} style={{ fontSize: "16px", lineHeight: 1.6, color: textColor }}>{p}</p>
                 ))}
 
                 <ul className="mt-3 p-0">
-                  {bulletPoints.map((item, idx) => (
+                  {bulletPoints.map((bp, i) => (
                     <li
-                      key={idx}
+                      key={i}
                       style={{
                         listStyle: "none",
                         marginBottom: "10px",
@@ -66,7 +82,7 @@ export default function ImageWithContentSection({
                       }}
                     >
                       <i className="bi bi-check2-circle me-2" style={{ color: "#0d2b75" }} />
-                      {item}
+                      {bp}
                     </li>
                   ))}
                 </ul>
@@ -74,27 +90,23 @@ export default function ImageWithContentSection({
             </>
           )}
 
-          {/* =====================================
-              TEXT LEFT / IMAGE RIGHT (orderControl = 2)
-          ====================================== */}
+          {/* ---------------- TEXT LEFT / IMAGE RIGHT ---------------- */}
           {orderControl === 2 && (
             <>
               {/* TEXT FIRST */}
               <div className="col-lg-6 d-flex flex-column justify-content-center text-col py-4 text-left-desktop">
-                <h2 style={{ fontSize: "26px", fontWeight: "600", color: textColor }} className="mb-4">
+                <h2 className="mb-4" style={{ fontSize: "26px", fontWeight: 600, color: textColor }}>
                   {title}
                 </h2>
 
-                {paragraphs.map((para, idx) => (
-                  <p key={idx} style={{ fontSize: "16px", lineHeight: 1.6, color: textColor }}>
-                    {para}
-                  </p>
+                {paragraphs.map((p, i) => (
+                  <p key={i} style={{ fontSize: "16px", lineHeight: 1.6, color: textColor }}>{p}</p>
                 ))}
 
                 <ul className="mt-3 p-0">
-                  {bulletPoints.map((item, idx) => (
+                  {bulletPoints.map((bp, i) => (
                     <li
-                      key={idx}
+                      key={i}
                       style={{
                         listStyle: "none",
                         marginBottom: "10px",
@@ -103,7 +115,7 @@ export default function ImageWithContentSection({
                       }}
                     >
                       <i className="bi bi-check2-circle me-2" style={{ color: "#0d2b75" }} />
-                      {item}
+                      {bp}
                     </li>
                   ))}
                 </ul>
@@ -112,10 +124,30 @@ export default function ImageWithContentSection({
               {/* IMAGE SECOND */}
               <div className="col-lg-6 p-0 position-relative">
                 {isMobile ? (
-                  <Image src={imageSrc} alt={imageAlt} width={1600} height={900} className="img-fluid w-100" />
+                  <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    width={1600}
+                    height={900}
+                    className="img-fluid w-100"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "50% 50%",
+                    }}
+                  />
                 ) : (
                   <div className="desktop-img-wrapper w-100 h-100 position-relative">
-                    <Image src={imageSrc} alt={imageAlt} fill priority className="desktop-img" />
+                    <Image
+                      src={imageSrc}
+                      alt={imageAlt}
+                      fill
+                      priority
+                      className="desktop-img"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "50% 50%",
+                      }}
+                    />
                   </div>
                 )}
               </div>
@@ -129,29 +161,20 @@ export default function ImageWithContentSection({
         .desktop-img-wrapper {
           height: 100%;
         }
-        .desktop-img {
-          object-fit: cover;
-          object-position: center;
-        }
 
-        /* MOBILE/TABLET — only top/bottom padding */
+        /* MOBILE/TABLET -- tighter padding */
         @media (max-width: 991px) {
           .text-col {
             padding: 25px 0 !important;
           }
         }
 
-        /* DESKTOP — conditional side padding */
+        /* DESKTOP SIDE PADDING BASED ON ORDER */
         @media (min-width: 992px) {
-          /* orderControl=1 → TEXT RIGHT → padding-right */
           .text-right-desktop {
-            padding-right: 0px !important;
             padding-left: 60px !important;
           }
-
-          /* orderControl=2 → TEXT LEFT → padding-left */
           .text-left-desktop {
-            padding-left: 0px !important;
             padding-right: 60px !important;
           }
         }
