@@ -14,7 +14,7 @@ export default function FourPillarsSection({
   return (
     <section
       id={sectionId}
-      className="py-7 position-relative"
+      className="py-5 position-relative"
       style={{ background: backgroundStyle }}
     >
       <style>{`

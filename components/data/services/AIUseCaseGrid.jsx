@@ -8,7 +8,7 @@ export default function AIUseCaseGrid({
   subtitle = "",
   items = [],
   columns = 3,
-  sectionClass = "py-7",
+  sectionClass = "py-5",
 
   backgroundType = "none",
   backgroundColor = "#ffffff",

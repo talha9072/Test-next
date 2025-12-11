@@ -6,7 +6,7 @@ export default function ServiceSplitPanel({
   title = "What can we help you with?",
   items = [],
   primaryColor = "#0d2b75",
-  sectionClass = "py-7",
+  sectionClass = "py-5",
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
