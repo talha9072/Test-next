@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -45,26 +45,27 @@ const Automation = () => {
 />
 
 <div id="about">
-<OverviewComponent
-  title="Modern Managed Services for Cloud-Driven Organisations"
-  primaryColor="#0d2b75"
-  backgroundType="color"
-  backgroundColor="#e5f1ff"
+  <ImageWithContentSection
+    orderControl={2}
+    bgColor="#e5f1ff"
+    title="Accelerate Operations with Intelligent Automation"
+    imageSrc="/assets/img/automation/automation-main.png"
+    imageAlt="Automation Services Overview"
 
-  paragraphs={[
-    "Novum’s Managed Services enable organisations to focus on innovation while we manage and optimise the daily operations of your cloud environment.",
-    "Our certified cloud specialists provide continuous monitoring, security oversight, and performance optimisation to ensure your platforms remain resilient and future-ready.",
-    "Through flexible engagement models and proactive 24/7 operations, we help enterprises increase reliability, enhance security posture, and maximise ROI across Azure, AWS, and Google Cloud."
-  ]}
+    paragraphs={[
+      "Novum’s Automation Services help organisations eliminate manual effort, improve accuracy, and scale operations using modern cloud, application, and security automation.",
+      "We design and implement automated workflows that reduce operational overhead, strengthen governance, and accelerate time-to-value across business and IT functions.",
+      "Our automation frameworks support everything from infrastructure provisioning and CI/CD pipelines to business process optimisation and security enforcement."
+    ]}
 
-  listItems={[
-    "Proactive 24/7 cloud monitoring, incident management, and platform health checks",
-    "FinOps-aligned cost optimisation ensuring measurable and sustained savings",
-    "Security-first governance aligned to ISO, CIS, NIST, and cloud best-practice frameworks",
-    "Performance tuning and workload optimisation for enhanced reliability",
-    "Continuous improvement with roadmap recommendations and operational insights"
-  ]}
-/>
+    bulletPoints={[
+      "Automate cloud operations, provisioning, scaling, and monitoring",
+      "Streamline business workflows to remove manual steps and reduce errors",
+      "Improve deployment speed and consistency with CI/CD and DevOps automation",
+      "Enhance security posture through automated policies and compliance checks",
+      "Increase operational efficiency with event-driven and rule-based automation"
+    ]}
+  />
 </div>
 
 <div id="service-offerings">
@@ -234,6 +235,7 @@ const Automation = () => {
 <div id="usecase">  
   <InnovationsRoadmapSection
     sectionId="automation-roadmap"
+    sectionClass="py-5"
     backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
     subtitle="USE CASES"
     title="Real-World Automation Use Cases"
