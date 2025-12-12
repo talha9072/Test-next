@@ -1,9 +1,8 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import MicrosoftNumberedFAQ from "@/components/data/services/MicrosoftNumberedFAQ";
-import Reveal from "@/components/Reveal";
 import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
 import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
 import ImplementSection from "@/components/data/services/implement";
@@ -46,26 +45,28 @@ const Training = () => {
 
  
 <div id="about">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Build Custom Business Apps Faster with Power Apps
-    </>
-  }
+     <ImageWithContentSection
+  orderControl={2}
+  bgColor="#e5f1ff"
+  title="Build Custom Business Apps Faster with Power Apps"
+  imageSrc="/assets/img/app-dev/app-main.png"
+  imageAlt="Custom Application Development with Power Apps"
+
   paragraphs={[
-    "Microsoft Power Apps, part of the Microsoft Power Platform, is a leading low-code application development environment. It enables organisations to build secure, high-performing apps that solve real business challenges without lengthy development cycles.",
-    "Our Custom Application Development service helps companies design, create, and deploy applications that streamline workflows, automate processes, and connect seamlessly with both Microsoft and third-party platforms."
+    "Microsoft Power Apps enables organisations to build secure, high-performance applications with minimal coding effort.",
+    "Novum helps companies design and deploy custom applications that streamline workflows, automate processes, and integrate seamlessly with Microsoft and third-party systems."
   ]}
-  imageSrc="/assets/img/app-dev/app-1.webp"
-  altText="Custom Application Development with Power Apps"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  bulletPoints={[
+    "Rapid development with low-code tools",
+    "Apps tailored to real business challenges",
+    "Integration with Microsoft and external platforms",
+    "Automation of manual and repetitive workflows"
+  ]}
 />
-</Reveal>
 </div>
 
 <div id="capabilities">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
  <DynamicTabsCards
   title="Core Capabilities of Power Apps"
   primaryColor="#0d2b75"
@@ -305,13 +306,11 @@ const Training = () => {
     }
   ]}
 /> 
-</Reveal>
 </div>
 
 
 
 <div id="powerapps">
-  <Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <MicrosoftBannerStats
   title="Types of Applications You Can Build"
   subtitle="Power Apps supports multiple application types to suit different scenarios and user experiences."
@@ -338,12 +337,10 @@ const Training = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 
 <div id="workflow">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <MicrosoftNumberedFAQ
   sectionId="dev-workflow-faq"
   headline="Our Development Workflow"
@@ -382,7 +379,6 @@ const Training = () => {
     }
   ]}
 />
-</Reveal>
 </div>
 
 
@@ -393,7 +389,6 @@ const Training = () => {
 
 
 <div id="whyus">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <ImplementSection
   id="benefits-impact"
   subtitle="Benefits & Business Impact"
@@ -427,7 +422,6 @@ const Training = () => {
     }
   ]}
 />
-</Reveal>
 </div>
 
    
@@ -436,7 +430,6 @@ const Training = () => {
 
 
 <div id="testimonials">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -467,13 +460,11 @@ const Training = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 
 
 <div id="otherservices">
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -551,7 +542,6 @@ const Training = () => {
     },
   ]}
 />
-</Reveal>
 </div>
 
 <Widget />

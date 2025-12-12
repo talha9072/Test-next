@@ -3,7 +3,6 @@ import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
-import Reveal from "@/components/Reveal";
 import InsightShowcaseSection from "@/components/data/services/InsightShowcaseSection";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import OtherServices from "@/components/data/services/otherservices";
