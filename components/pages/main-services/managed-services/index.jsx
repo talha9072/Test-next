@@ -72,6 +72,7 @@ const ManagedServices = () => {
       backgroundType="gradient"
       backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
       primaryColor="#0d2b75"
+      noButton
   items={[
     {
       iconType: "bootstrap",

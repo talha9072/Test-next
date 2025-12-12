@@ -230,6 +230,7 @@ const Professional = () => {
       backgroundType="gradient"
       backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
       columns={3}
+      noButton
       items={[
         {
           iconType: "bootstrap",

@@ -132,6 +132,7 @@ const Automation = () => {
       backgroundType="gradient"
       backgroundGradient="linear-gradient(to left top, #e5f1ff, #e5f1ff)"
       columns={3}
+      noButton
       items={[
         {
           iconType: "bootstrap",

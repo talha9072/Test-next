@@ -13,6 +13,9 @@ export default function ServiceManagedGrid({
   backgroundGradient = "linear-gradient(to bottom right, #ffffff, #f4f4f4)",
   backgroundImage = "",
   primaryColor = "#0D2B75",
+
+  /* ✅ GLOBAL CTA CONTROL */
+  noButton = false,
 }) {
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
@@ -43,7 +46,7 @@ export default function ServiceManagedGrid({
           {items.map((card, idx) => (
             <div key={idx} className={`${columnClass} d-flex`}>
 
-              {/* ⭐ CARD WITHOUT REVEAL ⭐ */}
+              {/* ⭐ CARD ⭐ */}
               <div
                 className="premium-card d-flex flex-column h-100 w-100 bg-white p-4 rounded-2"
                 style={{
@@ -89,13 +92,18 @@ export default function ServiceManagedGrid({
                   ))}
                 </ul>
 
-                {/* CTA */}
-                <a href="#" className="dtc-cta mt-4">
-                  <div className="dtc-cta-arrow">
-                    <i className="bi bi-arrow-right"></i>
-                  </div>
-                  Explore
-                </a>
+                {/* ✅ CTA (GLOBAL TOGGLE) */}
+                {!noButton && (
+                  <a
+                    href={card.link || "#"}
+                    className="dtc-cta mt-4"
+                  >
+                    <div className="dtc-cta-arrow">
+                      <i className="bi bi-arrow-right"></i>
+                    </div>
+                    {card.cta || "Explore"}
+                  </a>
+                )}
 
               </div>
 
@@ -135,7 +143,7 @@ export default function ServiceManagedGrid({
           background: rgba(13, 43, 117, 0.12);
           display: flex;
           align-items: center;
-          justify-content: center;
+          justifyContent: center;
           transition: 0.25s ease;
         }
 
