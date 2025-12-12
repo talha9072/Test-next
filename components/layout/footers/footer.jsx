@@ -112,6 +112,21 @@ const Footer = () => (
             <span style={{ fontSize: "10px" }}>Hewlett Packard Enterprise</span>
           </a>
 
+          {/* Partner 4 */}
+          <a
+            href="#"
+            className="d-flex align-items-center text-decoration-none text-muted gap-2"
+          >
+            <img
+              src="/assets/img/crayon.png"
+              alt="Partner 2"
+              width="40"
+              height="40"
+              className="me-2"
+            />
+            <span style={{ fontSize: "10px" }}>Crayon</span>
+          </a>
+
           
         </div>
       </div>
