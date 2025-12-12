@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -131,24 +131,25 @@ const Copilot = () => {
 />
  
 <div id="about">
-  <OverviewComponent
+  <ImageWithContentSection
+    orderControl={2}
+    bgColor="#e5f1ff"
     title="Shape the Future of Work with Microsoft Copilot"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
+    imageSrc="/assets/img/copilot/copilot-main.png"
+    imageAlt="Microsoft Copilot Overview"
 
     paragraphs={[
-      "Microsoft Copilot brings the power of generative AI directly into Microsoft 365, enabling your teams to work smarter, faster, and with greater precision across every task.",
-      "By integrating AI into tools your organisation already uses Word, Excel, PowerPoint, Teams, and Outlook Copilot helps automate routine work, generate insights, and support better decision-making at every level.",
-      "With enterprise-grade security, privacy, and compliance built in, Copilot empowers your workforce to focus on high-value outcomes while reducing manual effort and operational overhead."
+      "Microsoft Copilot brings generative AI into Microsoft 365, helping teams work faster and with greater clarity.",
+      "Integrated into Word, Excel, PowerPoint, Teams, and Outlook, Copilot automates routine tasks and supports smarter decision-making.",
+      "With enterprise-grade security and compliance, Copilot enables employees to focus on high-value work while reducing manual effort."
     ]}
 
-    listItems={[
-      "Automates repetitive tasks and streamlines daily workflows",
-      "Delivers AI-powered insights that improve organisational decision-making",
-      "Enhances collaboration and communication across teams",
-      "Helps employees create high-quality content in less time",
-      "Strengthens productivity while maintaining enterprise security and compliance"
+    bulletPoints={[
+      "Automates repetitive tasks to speed up daily work",
+      "Provides AI-driven insights for better decisions",
+      "Improves collaboration across teams",
+      "Helps create quality content quickly",
+      "Boosts productivity while staying secure"
     ]}
   />
 </div>
