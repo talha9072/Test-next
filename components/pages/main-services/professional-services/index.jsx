@@ -213,37 +213,38 @@ backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
 </div>
 
      <div id="testimonials">
-    <Testimonials
-      subtitle="Client Stories"
-      title="What Clients Say About Working With Novum"
-      items={[
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
-      author: "Majid Ismailov",
-      position: "Head of Data Management, Avromed",
-    },
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
-      author: "Zaur Dibirov",
-      position: "Director of Finance & Accounting, Azerbaijan Airlines",
-    },
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
-      text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
-      author: "Daniel V",
-      position: "IT & Security Director, Kitopi",
-    },
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Nizami_Mansirov.jpg",
-      text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
-      author: "Ashish Panday",
-      position: "IT Director, Aster Pharmacy",
-    },
-  ]}
-    />
-</div>
+         <Testimonials
+           subtitle="Client Stories"
+           title="What Clients Say About Working With Novum"
+           items={[
+         {
+           img: "/assets/img/clients/majid Ismayilov-Avromed.jpeg",
+           text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+           author: "Majid Ismailov",
+           position: "Head of Data Management, Avromed",
+         },
+         {
+           img: "/assets/img/clients/Zaur Dibirov - Azal.jpeg",
+           text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+           author: "Zaur Dibirov",
+           position: "Director of Finance & Accounting, Azerbaijan Airlines",
+         },
+         {
+           img: "/assets/img/clients/Daniel Viranyi- Kitopi.png",
+           text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+           author: "Daniel V",
+           position: "IT & Security Director, Kitopi",
+         },
+         {
+           img: "/assets/img/clients/Ashish Pandey-Aster.jpeg",
+           text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+           author: "Ashish Panday",
+           position: "IT Director, Aster Pharmacy",
+         },
+       ]}
+         />
+       
+     </div>
 
 <div id="otherservices">
       <OtherServices
