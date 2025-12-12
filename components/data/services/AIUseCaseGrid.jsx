@@ -15,50 +15,46 @@ export default function AIUseCaseGrid({
   backgroundGradient = "linear-gradient(to bottom right, #ffffff, #f4f4f4)",
   backgroundImage = "",
   primaryColor = "#0D2B75",
+
+  /* GLOBAL CTA CONTROL */
+  noButton = false,
 }) {
   const cardRefs = useRef([]);
 
-  /** FORCE EQUAL HEIGHTS **/
+  /* FORCE EQUAL HEIGHTS */
   const syncHeights = () => {
     let max = 0;
 
-    // Reset
     cardRefs.current.forEach((el) => el && (el.style.height = "auto"));
-
-    // Find tallest height
     cardRefs.current.forEach((el) => el && (max = Math.max(max, el.offsetHeight)));
-
-    // Apply equal height
     cardRefs.current.forEach((el) => el && (el.style.height = max + "px"));
   };
 
   useEffect(() => {
-  // First pass
-  syncHeights();
+    syncHeights();
 
-  // Second pass after layout stabilises
-  const t1 = setTimeout(syncHeights, 150);
-  const t2 = setTimeout(syncHeights, 350);
+    const t1 = setTimeout(syncHeights, 150);
+    const t2 = setTimeout(syncHeights, 350);
 
-  // Recalculate on resize
-  window.addEventListener("resize", syncHeights);
+    window.addEventListener("resize", syncHeights);
 
-  return () => {
-    clearTimeout(t1);
-    clearTimeout(t2);
-    window.removeEventListener("resize", syncHeights);
-  };
-}, [items]);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+      window.removeEventListener("resize", syncHeights);
+    };
+  }, [items]);
 
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
     if (backgroundType === "gradient") return { background: backgroundGradient };
-    if (backgroundType === "image")
+    if (backgroundType === "image") {
       return {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       };
+    }
     return {};
   };
 
@@ -71,78 +67,95 @@ export default function AIUseCaseGrid({
   return (
     <section id={sectionId} className={sectionClass} style={getBackgroundStyle()}>
       <div className="container" style={{ "--primary": primaryColor }}>
-
         {title && <h2 className="text-center mb-4">{title}</h2>}
         {subtitle && <p className="text-center text-muted mb-5">{subtitle}</p>}
 
         <div className="row g-4">
           {items.map((card, idx) => {
-            
-            // ✔ FALLBACKS
-            const buttonLabel = card.button?.label || "Explore";
-            const buttonLink = card.button?.link || "/contact";
+            /* =========================
+               CTA LOGIC (FIXED)
+            ========================== */
+
+            const resolvedLink =
+              card.button?.link ||
+              card.link ||
+              "";
+
+            const buttonEnabled =
+              !noButton &&
+              resolvedLink &&
+              card.button !== false &&
+              card.button?.enabled !== false;
+
+            const buttonLabel =
+              card.button?.label || "Explore";
+
+            const buttonTarget =
+              card.button?.target ||
+              (resolvedLink?.startsWith("http") ? "_blank" : "_self");
 
             return (
               <div key={idx} className={columnClass}>
-                
-                  
-                  {/* FLEX COLUMN CARD */}
-                  <div
-                    className="premium-card equal-card p-4 rounded-2 bg-white d-flex flex-column"
-                    ref={(el) => (cardRefs.current[idx] = el)}
-                  >
-                    {/* TOP CONTENT */}
-                    <div className="flex-grow-1">
-                      
-                      {/* ICON */}
-                      <div
-                        className="icon-wrapper mb-3"
-                        style={{
-                          width: "56px",
-                          height: "56px",
-                          borderRadius: "14px",
-                          background: "rgba(13,43,117,0.08)",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        {card.iconType === "bootstrap" && (
-                          <i
-                            className={card.icon}
-                            style={{ fontSize: "1.3rem", color: primaryColor }}
-                          ></i>
-                        )}
+                <div
+                  className="premium-card equal-card p-4 rounded-2 bg-white d-flex flex-column"
+                  ref={(el) => (cardRefs.current[idx] = el)}
+                >
+                  {/* TOP CONTENT */}
+                  <div className="flex-grow-1">
+                    {/* ICON */}
+                    <div
+                      className="icon-wrapper mb-3"
+                      style={{
+                        width: "56px",
+                        height: "56px",
+                        borderRadius: "14px",
+                        background: "rgba(13,43,117,0.08)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {card.iconType === "bootstrap" && (
+                        <i
+                          className={card.icon}
+                          style={{ fontSize: "1.3rem", color: primaryColor }}
+                        />
+                      )}
 
-                        {card.iconType === "image" && (
-                          <Image src={card.icon} alt={card.title} width={32} height={32} />
-                        )}
-                      </div>
-
-                      {/* TITLE */}
-                      <h5 className="fw-bold mb-2" style={{ color: primaryColor }}>
-                        {card.title}
-                      </h5>
-
-                      {/* DESCRIPTION */}
-                      <p className="text-muted">{card.desc}</p>
+                      {card.iconType === "image" && (
+                        <Image
+                          src={card.icon}
+                          alt={card.title}
+                          width={32}
+                          height={32}
+                        />
+                      )}
                     </div>
 
-                    {/* CTA BUTTON ALWAYS AT BOTTOM */}
+                    <h5 className="fw-bold mb-2" style={{ color: primaryColor }}>
+                      {card.title}
+                    </h5>
+
+                    <p className="text-muted">{card.desc}</p>
+                  </div>
+
+                  {/* CTA */}
+                  {buttonEnabled && (
                     <div className="mt-3">
                       <a
-                        href={buttonLink}
+                        href={resolvedLink}
+                        target={buttonTarget}
+                        rel={buttonTarget === "_blank" ? "noopener noreferrer" : undefined}
                         className="dtc-cta d-inline-flex align-items-center gap-2 fw-semibold"
-                      target="blank">
+                      >
                         <div className="dtc-cta-arrow">
                           <i className="bi bi-arrow-right"></i>
                         </div>
-
                         {buttonLabel}
                       </a>
                     </div>
-                  </div>
-                
+                  )}
+                </div>
               </div>
             );
           })}

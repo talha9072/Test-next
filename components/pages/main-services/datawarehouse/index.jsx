@@ -1,9 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import OverviewComponent from "@/components/data/services/OverviewComponent";
 import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import FourCardSection from "@/components/data/services/FourPillarsSection";
@@ -193,10 +191,11 @@ const Datawarehouse = () => {
 
 <div id="usecase">
   <AIUseCaseGrid
-    title="How Data Warehousing Supports the Entire Organisation"
+    title="From Data Integration to Intelligence Across the Enterprise"
     backgroundType="gradient"
     backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
     columns={3}
+    noButton
     items={[
       
       // -------------------------------
