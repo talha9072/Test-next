@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import BulletPoints from "@/components/data/services/bulletpoints";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import CapabilitiesTabsCards from "@/components/data/services/capabilities1";
 import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
@@ -13,7 +13,6 @@ import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import Widget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
-import Reveal from "@/components/Reveal";
 
 
 
@@ -47,28 +46,29 @@ const Ai = () => {
   ]}
 />
 
- <Reveal direction="left">
-<BulletPoints
-  sectionId="overview"
-  title={<>What Is Azure Data Foundry?</>}
+<div id="overview">
+<ImageWithContentSection
+  orderControl={2}
+  bgColor="#e5f1ff"
+  
+  title="A Unified Platform for Building and Scaling AI Solutions"
+  imageSrc="/assets/img/azure/azure-main.png"
+  imageAlt="Azure Data Foundry – Unified AI Platform"
+
   paragraphs={[
-    "Azure Data Foundry is a powerful unified platform as a-service that allows businesses to design, build, customise, deploy, and scale AI applications inside a single, highly governed Azure workspace.",
-    "It brings together foundation models, agent runtimes, orchestration tools, data connectors, and enterprise grade governance controls all operating under a central namespace."
+    "Azure Data Foundry provides a secure, unified environment for building, customising, and deploying AI applications across your organisation.",
+    "It centralises models, agents, orchestration tools, and governance controls inside a single Azure workspace."
   ]}
+
   bulletPoints={[
-    "Unified workspace for AI development and deployment",
-    "Consistent RBAC, network governance, and policy controls",
-    "End-to-end lifecycle management from prototyping to production",
-    "Seamless integration with Azure services, GitHub, and enterprise identity systems"
+    "Unified workspace for AI development and operations",
+    "Enterprise RBAC, governance, and network controls",
+    "Full lifecycle support from experimentation to production",
+    "Seamless integration with Azure, GitHub, and identity systems"
   ]}
-  imageSrc="/assets/img/azure/azure-1.webp"
-  altText="Azure Data Foundry Unified AI Platform"
-  sectionClass="position-relative overflow-hidden py-7 pb-0"
 />
-</Reveal>
+</div>
 
-
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
 <CapabilitiesTabsCards
   title="Core Capabilities Of Azure Data Foundry"
   primaryColor="#0d2b75"
@@ -176,12 +176,12 @@ const Ai = () => {
       ]
     }
   ]}
-/>
-</Reveal>      
+/> 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>    
+
 <InnovationsRoadmapSection
   sectionId="future-roadmap"
+  sectionClass="py-5"
   backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
   subtitle="INNOVATIONS"
   title="Innovations & Future Roadmap"
@@ -220,10 +220,10 @@ const Ai = () => {
     }
   ]}
 />
-</Reveal>
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
 <UseCasesSection
   sectionId="use-cases"
   backgroundStyle="#e5f1ff"
@@ -286,9 +286,9 @@ const Ai = () => {
     },
   ]}
 />
-</Reveal>
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
 <PricingCardsSection
   sectionId="pricing"
   backgroundImage="/assets/img/azure/pricing-bg.avif"
@@ -336,10 +336,10 @@ const Ai = () => {
     }
   ]}
 />
-</Reveal>
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
 <HighlightsSection
   sectionId="latest-announcements"
   leftImage="/assets/img/azure/ppl.avif"
@@ -375,10 +375,10 @@ const Ai = () => {
     }
   ]}
 />
-</Reveal>
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
 <WhyChooseSection
 sectionId="whyus"
   items={[
@@ -414,10 +414,10 @@ sectionId="whyus"
     }
   ]}
 />
-</Reveal>
+
         
     
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
 <Testimonials
   subtitle="Client Stories"
   title="What Clients Say About Working With Novum"
@@ -448,10 +448,10 @@ sectionId="whyus"
     },
   ]}
 />
-</Reveal>
 
 
-<Reveal direction="fade" blur={true} delay={0.4} duration={1}>
+
+
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -536,7 +536,7 @@ sectionId="whyus"
     },
   ]}
 />
-</Reveal>
+
 
 <Widget />
 

@@ -6,7 +6,7 @@ export default function CapabilitiesTabsCards({
   sectionId = "capabilities",
   title = "Core Capabilities",
   primaryColor = "#0d2b75",
-  sectionClass = "py-7 position-relative",
+  sectionClass = "py-5 position-relative",
   tabs = [],
   backgroundImage = "",
   backgroundSize = "cover",
@@ -84,7 +84,7 @@ export default function CapabilitiesTabsCards({
         /* ================= PREMIUM CARD ================= */
         .cap-card {
           background: #fff;
-          border-radius: 24px;
+          border-radius: 6px;
           border: 1px solid #e5e7eb;
           height: 100%;
           transition: all .3s ease;
@@ -101,7 +101,7 @@ export default function CapabilitiesTabsCards({
           padding-bottom: 0;
         }
         .cap-image-wrapper img {
-          border-radius: 18px;
+          border-radius: 6px !important;
         }
 
         /* 20px CONTENT */
