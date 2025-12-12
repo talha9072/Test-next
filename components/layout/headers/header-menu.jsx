@@ -189,7 +189,6 @@ const MainMenu = () => {
             post.title.split(" ").slice(0, 12).join(" ") +
             (post.title.split(" ").length > 12 ? "…" : "");
 
-          // simple formatted date
           const formattedDate = new Date(post.date).toLocaleDateString(
             "en-US",
             { month: "short", day: "numeric", year: "numeric" }
@@ -198,20 +197,26 @@ const MainMenu = () => {
           return (
             <li key={post.id} className="featured-blog-item">
               <Link href={post.link} className="featured-blog-link">
-                <img
-                  src={post.img}
-                  alt={post.title}
-                  className="featured-blog-img"
-                />
+                
+                {/* Image Wrapper */}
+                <div className="featured-blog-img-wrap">
+                  <img
+                    src={post.img}
+                    alt={post.title}
+                    className="featured-blog-img"
+                  />
+                </div>
 
-                {/* 👇 ONLY CHANGE IS HERE */}
-                <span className="featured-blog-title">
-                  {shortTitle}
-                  <br />
-                  <small style={{ fontSize: "12px", color: "#6b7280" }}>
+                {/* Text Wrapper */}
+                <div className="featured-blog-text">
+                  <div className="featured-blog-title">
+                    {shortTitle}
+                  </div>
+                  <div className="featured-blog-date">
                     {formattedDate}
-                  </small>
-                </span>
+                  </div>
+                </div>
+
               </Link>
             </li>
           );
@@ -220,6 +225,7 @@ const MainMenu = () => {
     </div>
   );
 }
+
 
 
               return (
@@ -275,7 +281,7 @@ const MainMenu = () => {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 14px;
 }
 
@@ -283,6 +289,10 @@ const MainMenu = () => {
 .featured-blog-item {
   padding-bottom: 14px;
   border-bottom: 1px solid var(--border-color-2);
+}
+  .featured-blog-link{
+  display:flex !important;
+  gap:15px;
 }
 
 .featured-blog-item:last-child {
@@ -293,10 +303,15 @@ const MainMenu = () => {
 /* Row */
 .featured-blog-link {
   display: flex;
-  align-items: center; /* 🔑 same line */
-  gap: 14px; /* 🔑 space between image & title */
+  align-items: center;
+  gap: 15px;
   text-decoration: none;
   transition: transform 0.2s ease;
+}
+
+/* Image wrapper */
+.featured-blog-img-wrap {
+  flex-shrink: 0;
 }
 
 /* Image */
@@ -305,8 +320,13 @@ const MainMenu = () => {
   height: 48px;
   object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0;
-  margin-right:15px;
+}
+
+/* Text wrapper */
+.featured-blog-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* Title */
@@ -316,6 +336,12 @@ const MainMenu = () => {
   font-weight: 500;
   color: #7c898d;
   transition: color 0.2s ease;
+}
+
+/* Date */
+.featured-blog-date {
+  font-size: 12.5px;
+  color: #9aa1a9;
 }
 
 /* Hover */

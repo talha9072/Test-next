@@ -10062,7 +10062,7 @@ footer a:hover{
           box-shadow: 0 4px 12px rgba(0,0,0,0.1);
           visibility: hidden;
           opacity: 0;
-          transition: opacity 0.2s ease;
+          transition: opacity 0s ease;
           z-index: 999;
         }
         .mega-menu .mega-dropdown.open {
