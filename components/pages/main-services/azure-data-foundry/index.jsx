@@ -80,14 +80,14 @@ const Ai = () => {
       label: "Model Access & Customisation",
       cards: [
         {
-          image: "/assets/img/azure/azure-1.webp",
+          image: "/assets/img/azure/modelaccess.png",
           label: "Access",
           title: "Model Access",
           desc: "1,900+ foundation & open-source models via unified Azure API.",
           link: "#"
         },
         {
-          image: "/assets/img/azure/azure-2.webp",
+          image: "/assets/img/azure/modelaccess-1.png",
           label: "Customisation",
           title: "Model Customisation",
           desc: "Fine-tuning, distillation, multimodal, serverless inference.",
@@ -100,14 +100,14 @@ const Ai = () => {
       label: "Advanced Agent Toolchain",
       cards: [
         {
-          image: "/assets/img/azure/azure-2.webp",
+          image: "/assets/img/azure/agent1.png",
           label: "Agents",
           title: "Enterprise Agents",
           desc: "RAG-ready pipelines & long-running workflows.",
           link: "#"
         },
         {
-          image: "/assets/img/azure/azure-1.webp",
+          image: "/assets/img/azure/agent2.png",
           label: "Multi-Agent",
           title: "Multi-Agent Systems",
           desc: "A2A & MCP orchestration, secure RBAC agent flows.",
@@ -120,14 +120,14 @@ const Ai = () => {
       label: "Tooling & Integration",
       cards: [
         {
-          image: "/assets/img/azure/azure-1.webp",
+          image: "/assets/img/azure/tool1.png",
           label: "SDKs",
           title: "SDK Support",
           desc: "Python, C#, JS/TS, Java, GitHub Copilot, VS Code templates.",
           link: "#"
         },
         {
-          image: "/assets/img/azure/azure-2.webp",
+          image: "/assets/img/azure/tool2.png",
           label: "Connectors",
           title: "Enterprise Connectors",
           desc: "1,400+ integrations across ERP, CRM, HRM, and more.",
@@ -140,14 +140,14 @@ const Ai = () => {
       label: "Governance & Observability",
       cards: [
         {
-          image: "/assets/img/azure/azure-1.webp",
+          image: "/assets/img/azure/g-1.png",
           label: "Monitoring",
           title: "Observability",
           desc: "Telemetry dashboards, monitoring, usage tracking.",
           link: "#"
         },
         {
-          image: "/assets/img/azure/azure-2.webp",
+          image: "/assets/img/azure/g-2.png",
           label: "Governance",
           title: "Responsible AI & Policy",
           desc: "Policy enforcement, audits, responsible AI tools.",
@@ -160,14 +160,14 @@ const Ai = () => {
       label: "Local & Edge Deployment",
       cards: [
         {
-          image: "/assets/img/data-foundry/edge.png",
+          image: "/assets/img/azure/dev1.png",
           label: "Local",
           title: "Foundry Local",
           desc: "Run on Mac/Windows with offline inference support.",
           link: "#"
         },
         {
-          image: "/assets/img/data-foundry/edge.png",
+          image: "/assets/img/azure/dev2.png",
           label: "Hybrid",
           title: "Hybrid Cloud",
           desc: "Azure Arc support for on-prem and hybrid deployments.",
@@ -239,21 +239,21 @@ const Ai = () => {
           label: "Use Case",
           title: "AI Chatbots & Virtual Assistants",
           desc: "Build conversational assistants with secure enterprise agent pipelines.",
-          image: "/assets/img/azure/azure-2.webp",
+          image: "/assets/img/azure/chatbot.png",
           cta: "Explore",
         },
         {
           label: "Use Case",
           title: "Document Automation",
           desc: "Generate summaries and extract insights from high-volume documents.",
-          image: "/assets/img/azure/azure-1.webp",
+          image: "/assets/img/azure/automation.png",
           cta: "Read more",
         },
         {
           label: "Use Case",
           title: "Multimodal Intelligence",
           desc: "Analyze images, audio, and video using multimodal foundation models.",
-          image: "/assets/img/usecases/multimodal.webp",
+          image: "/assets/img/azure/ml.png",
           cta: "Learn more",
         },
       ],
@@ -265,21 +265,21 @@ const Ai = () => {
           label: "Success",
           title: "Accenture",
           desc: "Enterprise-scale assistant creation with Azure Data Foundry.",
-          image: "/assets/img/logos/accenture.webp",
+          image: "/assets/img/azure/accenture.png",
           cta: "Read story",
         },
         {
           label: "Success",
           title: "Nasdaq",
           desc: "Advanced analytics for financial markets using Foundry.",
-          image: "/assets/img/logos/nasdaq.webp",
+          image: "/assets/img/azure/nasdaq.png",
           cta: "View insights",
         },
         {
           label: "Success",
           title: "Carvana",
           desc: "AI systems powering retail and customer engagement.",
-          image: "/assets/img/logos/carvana.webp",
+          image: "/assets/img/azure/carvana.png",
           cta: "Explore case",
         },
       ],
