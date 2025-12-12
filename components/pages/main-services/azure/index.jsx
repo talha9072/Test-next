@@ -1,7 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
-import OverviewComponent from "@/components/data/services/OverviewComponent";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
 import CTAPage from '@/components/data/services/CTAPage';
 import UseCasesSection from "@/components/data/services/UseCasesSection";
@@ -102,7 +102,7 @@ const Azure = () => {
   serviceName="Azure Services"
   title="Your Azure journey begins with one step"
   highlightText="Azure"
-  subtitle="Prepare your platform for AI with a seamless migration to Azure, gaining the scalability, security, productivity, and AI capabilities your organisation needs. Pay as you go or try Azure Free for up to 30 days."
+  subtitle="Move to Azure with confidence and gain a secure, scalable, and AI-ready cloud environment"
   bgImage="/assets/img/azure-service/azure-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
@@ -118,22 +118,23 @@ const Azure = () => {
 />
 
 <div id="about">
-  <OverviewComponent
-    title="What Is Azure?"
-    primaryColor="#0d2b75"
-    backgroundType="color"
-    backgroundColor="#e5f1ff"
+  <ImageWithContentSection
+    orderControl={2}
+    bgColor="#e5f1ff"
+    title="What Is Microsoft Azure?"
+    imageSrc="/assets/img/azure-service/azure-main.png"
+    imageAlt="Microsoft Azure Overview"
 
     paragraphs={[
-      "Azure is a comprehensive cloud platform that enables organisations to run infrastructure, applications, data, analytics, and AI in a secure and scalable environment.",
-      "It empowers businesses to modernise operations, accelerate innovation, and build intelligent solutions across cloud, hybrid, and edge environments."
+      "Microsoft Azure is a secure, scalable cloud platform that helps organisations run applications, manage data, and build intelligent solutions across cloud, hybrid, and edge environments.",
+      "Azure enables businesses to modernise operations, accelerate innovation, and adopt advanced capabilities such as AI, analytics, and automation."
     ]}
 
-    listItems={[
-      "Run applications securely across cloud, hybrid, and edge environments",
-      "Leverage advanced AI, analytics, and data services",
-      "Scale infrastructure on demand with global reliability",
-      "Enhance security with built-in identity, compliance, and governance",
+    bulletPoints={[
+      "Run workloads securely across cloud, hybrid, and edge",
+      "Use powerful AI, analytics, and data services",
+      "Scale infrastructure globally on demand",
+      "Strengthen security with built-in identity and compliance",
       "Integrate seamlessly with Microsoft 365, Dynamics 365, and Power Platform"
     ]}
   />

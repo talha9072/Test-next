@@ -24,7 +24,7 @@ export default function HighlightsSection({
         
         /* MAIN LEFT CARD */
         .hl-left-card {
-          border-radius: 28px;
+          border-radius: 6px;
           overflow: hidden;
           border: 1px solid #e3e6eb;
           background: #fff;
@@ -70,7 +70,7 @@ export default function HighlightsSection({
 
         /* RIGHT MINI CARDS */
         .hl-card {
-          border-radius: 24px;
+          border-radius: 6px;
           border: 1px solid #e3e6eb;
           padding: 30px;
           background: #ffffff;
