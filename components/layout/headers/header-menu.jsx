@@ -1,6 +1,7 @@
 // components/layout/MainMenu.jsx
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
+import { posts } from "@/components/data/blogs";
 
 // Mega menu items for Services
 const megaItems = [
@@ -177,35 +178,36 @@ const MainMenu = () => {
           >
             {productItems.map((col, i) => {
               if (i === 2) {
-                return (
-                  <div key={i} className="mega-col">
-                    <div className="cta-card-img position-relative overflow-hidden rounded-4 h-100 text-white">
-                      <img
-                        src="/assets/img/banner/banner-three-2.png"
-                        alt="CTA Background"
-                        className="w-100 h-100 object-fit-cover"
-                        data-no-retina=""
-                      />
-                      <div className="cta-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-8">
-                        <div>
-                          <p className="fw-semibold mb-2 cta-p">Need help choosing?</p>
-                          <p className="small mb-4 mt-4">
-                            Our team can guide you to the right service based on your
-                            business needs. Let’s talk today.
-                          </p>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn btn-yellow btn-sm rounded-pill mt-auto w-100"
-                          onClick={() => (window.location.href = "/contact")}
-                        >
-                          Talk to an Expert
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
+  return (
+    <div key={i} className="mega-col featured-blogs-col">
+      <p className="menuheading">Featured Blogs</p>
+
+      <ul className="featured-blogs-list">
+        {posts.slice(0, 3).map((post) => {
+          // limit title to max 12 words
+          const shortTitle =
+            post.title.split(" ").slice(0, 12).join(" ") +
+            (post.title.split(" ").length > 12 ? "…" : "");
+
+          return (
+            <li key={post.id} className="featured-blog-item">
+              <Link href={post.link} className="featured-blog-link">
+                <img
+                  src={post.img}
+                  alt={post.title}
+                  className="featured-blog-img"
+                />
+                <span className="featured-blog-title">
+                  {shortTitle}
+                </span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
 
               return (
                 <div key={i} className="mega-col">
@@ -242,6 +244,76 @@ const MainMenu = () => {
   }
     .mega-col .cta-p{
     font-size: 1.1rem !important;}
+
+   /* ===============================
+   Featured Blogs – Clean Row Style
+   =============================== */
+
+.featured-blogs-col .menuheading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-heading-color);
+}
+
+/* List */
+.featured-blogs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Item */
+.featured-blog-item {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.featured-blog-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Row */
+.featured-blog-link {
+  display: flex;
+  align-items: center; /* 🔑 same line */
+  gap: 14px; /* 🔑 space between image & title */
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+/* Image */
+.featured-blog-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-right:8px;
+}
+
+/* Title */
+.featured-blog-title {
+  font-size: 14.5px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--text-heading-color);
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.featured-blog-link:hover {
+  transform: translateX(3px);
+}
+
+.featured-blog-link:hover .featured-blog-title {
+  color: var(--primary-color-1);
+}
+
 `}</style>
       </li>
 
