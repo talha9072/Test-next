@@ -210,18 +210,21 @@ const Dynamic365 = () => {
           desc: "Easily extend Dynamics 365 with scalable components designed to integrate, evolve, and grow with your organisation.",
           image: "/assets/img/dynamics365/dynamic-tab1.webp",
           cta: "Explore",
+          link: "/contact",
         },
         {
           title: "Connected End-to-End Workflows",
           desc: "Unify sales, marketing, operations, finance, and supply chain through seamless cross-system workflows that eliminate silos and boost performance.",
           image: "/assets/img/dynamics365/dynamic-tab2.webp",
           cta: "Explore",
+          link: "/contact",
         },
         {
           title: "Rapid Deployment & Onboarding",
           desc: "Leverage low-code and no-code tools to deploy new applications quickly, streamline onboarding, and accelerate value across teams.",
           image: "/assets/img/dynamics365/dynamic-tab3.webp",
           cta: "Explore",
+          link: "/contact",
         },
       ],
     }
@@ -250,7 +253,7 @@ const Dynamic365 = () => {
               "Full visibility into operational performance",
               "Actionable insights delivered through Copilot"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap-1.2.avif",
@@ -261,7 +264,7 @@ const Dynamic365 = () => {
               "Integrated financial and operational planning",
               "Copilot-assisted forecasting"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap-1.3.avif",
@@ -272,7 +275,7 @@ const Dynamic365 = () => {
               "External and internal signal analysis",
               "Adapt to evolving customer needs"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap-1.4.avif",
@@ -283,7 +286,7 @@ const Dynamic365 = () => {
               "Reduced stockouts and excess inventory",
               "Right inventory at the right time"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           }
         ]
       },
@@ -300,7 +303,7 @@ const Dynamic365 = () => {
               "Reduced reporting cycles",
               "Improved financial accuracy"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap2.2.avif",
@@ -311,7 +314,7 @@ const Dynamic365 = () => {
               "Proactive delay management",
               "On-time service delivery"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap2.3.avif",
@@ -322,7 +325,7 @@ const Dynamic365 = () => {
               "Efficient resource management",
               "Automated invoicing"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap2.4.avif",
@@ -333,7 +336,7 @@ const Dynamic365 = () => {
               "Maximized throughput and quality",
               "Improved equipment uptime"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           }
         ]
       },
@@ -350,7 +353,7 @@ const Dynamic365 = () => {
               "Faster entity onboarding",
               "Reduced disruption"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap3.2.avif",
@@ -361,7 +364,7 @@ const Dynamic365 = () => {
               "Flexible revenue recognition",
               "ERP that evolves with your business"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap3.3.avif",
@@ -372,7 +375,7 @@ const Dynamic365 = () => {
               "Build AI agents with Copilot Studio",
               "Low-code and pro-code flexibility"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap3.4.avif",
@@ -383,7 +386,7 @@ const Dynamic365 = () => {
               "Built-in compliance",
               "Centralized operations"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           }
         ]
       },
@@ -400,7 +403,7 @@ const Dynamic365 = () => {
               "Real-time collaboration",
               "Copilot-powered orchestration"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap4.2.gif",
@@ -411,7 +414,7 @@ const Dynamic365 = () => {
               "Seamless integration",
               "Future-ready architecture"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap4.3.avif",
@@ -422,7 +425,7 @@ const Dynamic365 = () => {
               "Identity and data security",
               "Compliance controls"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap4.4.avif",
@@ -433,7 +436,7 @@ const Dynamic365 = () => {
               "Resilient infrastructure",
               "Business continuity"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           },
           {
             image: "/assets/img/dynamics365/cap4.5.avif",
@@ -444,7 +447,7 @@ const Dynamic365 = () => {
               "Automated ESG reporting",
               "Copilot-assisted compliance"
             ],
-            link: "#"
+            link: "https://www.microsoft.com/en-us/dynamics-365/solutions/erp#tabs-pill-bar-occd67_tab3"
           }
         ]
       }
