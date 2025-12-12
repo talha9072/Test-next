@@ -102,15 +102,21 @@ const MainMenu = () => {
 
   const serviceCols = megaItems.length;
   const productCols = productItems.length;
+  const resourcesRef = useRef(null);
+
 
   useEffect(() => {
     function handleClickOutside(e) {
       if (
-        servicesRef.current && !servicesRef.current.contains(e.target) &&
-        productsRef.current && !productsRef.current.contains(e.target)
-      ) {
-        setOpenMenu(null);
-      }
+  servicesRef.current &&
+  productsRef.current &&
+  resourcesRef.current &&
+  !servicesRef.current.contains(e.target) &&
+  !productsRef.current.contains(e.target) &&
+  !resourcesRef.current.contains(e.target)
+) {
+  setOpenMenu(null);
+}
     }
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
@@ -240,10 +246,22 @@ const MainMenu = () => {
       </li>
 
       {/* Resources */}
-      <li className="menu-item-has-children">
-        <Link href="#">
-          Resources <i className="bi bi-chevron-down"></i>
-        </Link>
+      <li
+  ref={resourcesRef}
+  className={`menu-item-has-children resources-menu ${
+    openMenu === 'resources' ? 'open' : ''
+  }`}
+>
+
+        <a
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    setOpenMenu(openMenu === 'resources' ? null : 'resources');
+  }}
+>
+  Resources <i className="bi bi-chevron-down"></i>
+</a>
         <ul className="sub-menu">
           <li><Link href="/industries">Industries</Link></li>
           <li><Link href="/case-studies">Case Studies</Link></li>

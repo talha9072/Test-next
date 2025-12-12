@@ -3574,6 +3574,20 @@ p {
   margin-bottom: 2px;
   transition: 0.3s;
 }
+/* Disable hover opening ONLY for Resources */
+.header__area-menubar-center-menu
+ul li.resources-menu:hover > .sub-menu {
+  transform: scale(1, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+/* Open submenu on click */
+.header__area-menubar-center-menu
+ul li.resources-menu.open > .sub-menu {
+  transform: scale(1, 1);
+  opacity: 1;
+  visibility: visible;
+}
 .header__area-menubar-right {
   display: flex;
   align-items: center;
