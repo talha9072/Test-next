@@ -4,6 +4,7 @@ import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
 import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import UseCasesSection from "@/components/data/services/UseCasesSection";
 import DynamicsTabs from "@/components/data/services/DynamicsTabs";
+import DynamicTabsCards from "@/components/data/services/DynamicTabsCards";
 import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
 import VideoHero from "@/components/data/services/VideoHero";
 import MicrosoftBannerStats from "@/components/data/services/MicrosoftBannerStats";
@@ -227,6 +228,230 @@ const Dynamic365 = () => {
   ]}
 />
 </div>
+
+
+
+<div id="capabilities">
+  <DynamicTabsCards
+    title="Achieve more with an ERP solution from Dynamics 365"
+    primaryColor="#0d2b75"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+    tabs={[
+      {
+        label: "Plan with speed and agility",
+        cards: [
+          {
+            image: "/assets/img/dynamics365/cap-1.1.avif",
+            label: "Insights",
+            title: "Generate actionable insights",
+            list: [
+              "Unified data across core business processes",
+              "Full visibility into operational performance",
+              "Actionable insights delivered through Copilot"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap-1.2.avif",
+            label: "Planning",
+            title: "Improve budgeting and long-range planning",
+            list: [
+              "Advanced scenario modeling",
+              "Integrated financial and operational planning",
+              "Copilot-assisted forecasting"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap-1.3.avif",
+            label: "Demand",
+            title: "Predict demand shifts",
+            list: [
+              "AI-generated demand forecasting",
+              "External and internal signal analysis",
+              "Adapt to evolving customer needs"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap-1.4.avif",
+            label: "Supply",
+            title: "Enhance supply planning",
+            list: [
+              "Material requirements planning in minutes",
+              "Reduced stockouts and excess inventory",
+              "Right inventory at the right time"
+            ],
+            link: "#"
+          }
+        ]
+      },
+
+      {
+        label: "Operate profitably",
+        cards: [
+          {
+            image: "/assets/img/dynamics365/cap2.1.avif",
+            label: "Finance",
+            title: "Optimize financial close",
+            list: [
+              "Accelerated reconciliation processes",
+              "Reduced reporting cycles",
+              "Improved financial accuracy"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap2.2.avif",
+            label: "Supply Chain",
+            title: "Mitigate supply chain disruptions",
+            list: [
+              "Improved supplier visibility",
+              "Proactive delay management",
+              "On-time service delivery"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap2.3.avif",
+            label: "Services",
+            title: "Provide services profitably",
+            list: [
+              "Accurate project costing",
+              "Efficient resource management",
+              "Automated invoicing"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap2.4.avif",
+            label: "Manufacturing",
+            title: "Build agile manufacturing processes",
+            list: [
+              "Support discrete and process manufacturing",
+              "Maximized throughput and quality",
+              "Improved equipment uptime"
+            ],
+            link: "#"
+          }
+        ]
+      },
+
+      {
+        label: "Grow by adapting to change",
+        cards: [
+          {
+            image: "/assets/img/dynamics365/cap3.1.avif",
+            label: "M&A",
+            title: "Streamline mergers and acquisitions",
+            list: [
+              "Reusable integration blueprints",
+              "Faster entity onboarding",
+              "Reduced disruption"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap3.2.avif",
+            label: "Business Models",
+            title: "Adopt new business models",
+            list: [
+              "Subscription and usage-based pricing",
+              "Flexible revenue recognition",
+              "ERP that evolves with your business"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap3.3.avif",
+            label: "Customization",
+            title: "Customize process to meet unique business needs",
+            list: [
+              "Tailored workflows",
+              "Build AI agents with Copilot Studio",
+              "Low-code and pro-code flexibility"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap3.4.avif",
+            label: "Global",
+            title: "Operate globally with ease",
+            list: [
+              "Localization in more than 180 countries",
+              "Built-in compliance",
+              "Centralized operations"
+            ],
+            link: "#"
+          }
+        ]
+      },
+
+      {
+        label: "Stay connected and safe",
+        cards: [
+          {
+            image: "/assets/img/dynamics365/cap4.1.avif",
+            label: "Integration",
+            title: "Connect every aspect of your business",
+            list: [
+              "Unified finance, HR, and operations",
+              "Real-time collaboration",
+              "Copilot-powered orchestration"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap4.2.gif",
+            label: "Infrastructure",
+            title: "Create a modern, composable infrastructure",
+            list: [
+              "Standardized connectors",
+              "Seamless integration",
+              "Future-ready architecture"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap4.3.avif",
+            label: "Security",
+            title: "Operate more securely",
+            list: [
+              "Enterprise-grade protection",
+              "Identity and data security",
+              "Compliance controls"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap4.4.avif",
+            label: "Reliability",
+            title: "Help ensure availability and reliability",
+            list: [
+              "99.9 percent uptime",
+              "Resilient infrastructure",
+              "Business continuity"
+            ],
+            link: "#"
+          },
+          {
+            image: "/assets/img/dynamics365/cap4.5.avif",
+            label: "Sustainability",
+            title: "Achieve sustainability goals",
+            list: [
+              "Emissions tracking",
+              "Automated ESG reporting",
+              "Copilot-assisted compliance"
+            ],
+            link: "#"
+          }
+        ]
+      }
+    ]}
+  />
+</div>
+
 
 
 <section className="dynamics-section py-5" id="product">
