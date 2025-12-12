@@ -189,6 +189,12 @@ const MainMenu = () => {
             post.title.split(" ").slice(0, 12).join(" ") +
             (post.title.split(" ").length > 12 ? "…" : "");
 
+          // simple formatted date
+          const formattedDate = new Date(post.date).toLocaleDateString(
+            "en-US",
+            { month: "short", day: "numeric", year: "numeric" }
+          );
+
           return (
             <li key={post.id} className="featured-blog-item">
               <Link href={post.link} className="featured-blog-link">
@@ -197,8 +203,14 @@ const MainMenu = () => {
                   alt={post.title}
                   className="featured-blog-img"
                 />
+
+                {/* 👇 ONLY CHANGE IS HERE */}
                 <span className="featured-blog-title">
                   {shortTitle}
+                  <br />
+                  <small style={{ fontSize: "12px", color: "#6b7280" }}>
+                    {formattedDate}
+                  </small>
                 </span>
               </Link>
             </li>
@@ -208,6 +220,7 @@ const MainMenu = () => {
     </div>
   );
 }
+
 
               return (
                 <div key={i} className="mega-col">
@@ -293,7 +306,7 @@ const MainMenu = () => {
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
-  margin-right:8px;
+  margin-right:15px;
 }
 
 /* Title */
@@ -301,7 +314,7 @@ const MainMenu = () => {
   font-size: 14.5px;
   line-height: 1.4;
   font-weight: 500;
-  color: var(--text-heading-color);
+  color: #7c898d;
   transition: color 0.2s ease;
 }
 
