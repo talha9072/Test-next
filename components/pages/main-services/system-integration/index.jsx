@@ -1,6 +1,7 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
 import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
 import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
 import ExpertiseSplitSection from "@/components/data/services/ExpertiseSplitSection";
 import PricingCardsSection from "@/components/data/services/PricingCardsSection";
@@ -45,16 +46,26 @@ const System = () => {
 
 
 
-      <SoftwareSolutionsSection
-  title={`Cloud Native System Integration Powered by APC & Azure`}
+      <ImageWithContentSection
+  orderControl={2}
+  bgColor="#fff"
+  title="Cloud-Native System Integration with APC & Azure"
+  imageSrc="/assets/img/system-integration/si-main.png"
+  imageAlt="System Integration Services by Novum"
+
   paragraphs={[
-    "AP Communications (APC) is a specialist Azure System Integration provider with deep expertise in designing, deploying, and operating cloud-native environments.",
-    "As a long-standing Azure partner, APC supports organisations through every phase of their cloud journey from assessment and PoC to full production rollout and ongoing managed operations."
+    "AP Communications (APC) is a cloud-native system integration specialist with deep expertise in designing and operating modern Azure environments.",
+    "As a long-standing Azure partner, APC helps organisations across the full cloud lifecycle from assessments and proof of concepts to production deployments and ongoing managed operations."
   ]}
-  imageSrc="/assets/img/system-integration/system-integration-1.webp"
-  altText="System Integration Services by Novum"
-  sectionClass="position-relative overflow-hidden py-7"
+
+  bulletPoints={[
+    "Cloud-native architecture and system design",
+    "Assessment, PoC, and production readiness support",
+    "End-to-end deployment and integration services",
+    "Managed operations for secure, scalable environments"
+  ]}
 />
+
 
 <ExpertiseSplitSection
 sectionId="Expertise"

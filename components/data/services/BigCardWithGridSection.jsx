@@ -54,7 +54,7 @@ export default function BigCardTabsSection({
         .bc-left-card {
           position: relative;
           width: 100%;
-          border-radius: 24px;
+          border-radius: 6px;
           overflow: hidden;
           border: 1px solid #e1e6f0;
           box-shadow: 0 12px 28px rgba(0,0,0,0.08);
@@ -110,7 +110,7 @@ export default function BigCardTabsSection({
            RIGHT GRID (3 PER ROW)
         ------------------------------------------------ */
         .bc-grid-card {
-          border-radius: 22px;
+          border-radius: 6px;
           background: #fff;
           border: 1px solid #e3e6ef;
           padding: 28px;
