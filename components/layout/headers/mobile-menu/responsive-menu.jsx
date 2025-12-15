@@ -90,7 +90,6 @@ const ResponsiveMenu = () => {
                     <li className="menu-group-heading">
                      Products ISV
                     </li>
-                    <li><Link href="/products/airports-turnaround-solution">Airport Turnaround Solution</Link></li>
                     <li><Link href="/products/nes-novum-entrance-system">NES (Novum Entrance System)</Link></li>
                     <li><Link href="/products/ocr-certification-directory">OCR Certification Directory</Link></li>
                     <li><Link href="/products/face-recognition-detection">Face Recognition & Detection</Link></li>

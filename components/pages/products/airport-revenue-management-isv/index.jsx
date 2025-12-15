@@ -1,11 +1,12 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroOnly from "@/components/data/industries/banner";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import Iconlist from "@/components/data/industries/icon-list";
-import AirportStakeholdersSection from "@/components/data/industries/tabs";
-import SmartTurnaroundCards from "@/components/data/industries/cards";
-import WhySection from "@/components/data/services/WhySection";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import ServiceSplitPanel from "@/components/data/services/ServiceSplitPanel";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import ContactWidget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
@@ -16,192 +17,323 @@ const AirportRevenue = () => {
   return (
     <div>
         <HeaderFour />
-        
-        <HeroOnly
-  serviceName="Airport Revenue Management ISV Solutions"
-  title="Optimize Airport Revenue with Smart Automation"
-  highlightText="Intelligent Airport Finance"
-  subtitle="Automate billing and enhance financial control with Novum’s Airport Revenue Management platform."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/main-product/airport-revenue-hero.webp"
+
+        <HeroWithRibbon
+  serviceName="Airport Revenue Management"
+  title="Automate and optimize airport revenue processes"
+  highlightText="Azure"
+  subtitle="Automate airport revenue with real-time data, aviation rules, and integrated billing"
+  bgImage="/assets/img/main-product/airport-revenue-bg.png"
   heroButtons={[
-    { label: "Request Demo", href: "/contact" },
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#overview" },
+    { label: "Features", href: "#services" },
+    { label: "Benefits", href: "#benefits" },
+    { label: "Technical Highlights", href: "#technical-highlights" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
   ]}
 />
         
-        
-        
-      <SoftwareSolutionsSection
-  title={`Maximize Airport Revenue with Smart Financial Management`}
+    <div id="overview"> 
+       <ImageWithContentSection
+  orderControl={2}
+  bgColor="#fff"
+  title="A Unified Platform for Airport Revenue Management"
+  imageSrc="/assets/img/main-product/airport-revenue-1.webp" // ← update with actual image
+  imageAlt="Airport Revenue Management Overview"
+
   paragraphs={[
-    "Modern airports manage complex revenue streams spanning aeronautical fees, retail concessions, and lease contracts. Novum’s Airport Revenue Management ISV solutions centralize and automate these processes to ensure accuracy, transparency, and control.",
-    "Built for airports of all sizes, the platform simplifies aeronautical billing, concession tracking, and financial reporting helping you eliminate revenue leakage, enhance compliance, and make faster, data-driven decisions."
+    "Airports depend on real-time financial and operational visibility to manage complex revenue streams. Novum’s Airport Revenue Management Solution centralises these processes and aligns operational data with financial outcomes.",
+    "Built for airports and aviation service providers, the solution extends Microsoft Dynamics 365 Finance & Operations with aviation-ready mappings, automation, and compliance features."
   ]}
-  imageSrc="/assets/img/main-product/airport-revenue-1.webp"
-  altText="Airport Revenue Management Platform by Novum"
-/>
+
+  bulletPoints={[
+    "Centralised aeronautical and non-aeronautical revenue workflows",
+    "Automated billing driven by operational and flight data",
+    "Accurate invoicing aligned with airport regulatory requirements",
+    "Real-time visibility from service execution to financial reporting"
+  ]}
+/> 
+</div>   
+
+      <div id="services">
+  <AIUseCaseGrid
+    title="Key Features of Airport Revenue Management"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to left top, #e5f1ff, #e5f1ff)"
+    columns={3}
+    noButton
+    items={[
+      {
+        iconType: "bootstrap",
+        icon: "bi-diagram-3",
+        title: "Industry-Specific Parameters",
+        desc: "Preconfigured ICAO/IATA mappings, airport service codes, and regulatory templates ensure aviation-ready setup from day one.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-airplane",
+        title: "Flight Schedule Integration",
+        desc: "Real-time AODB integration automates flight schedule updates, service events, and revenue capture with complete accuracy.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-truck",
+        title: "Ground Handling Revenue",
+        desc: "Automated billing for cargo, passenger, and turnaround operations with configurable tariffs, contracts, and service-level rules.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-currency-exchange",
+        title: "Dynamic Tariff Management",
+        desc: "Flexible rules engine for aeronautical charges including landing, parking, navigation, concession fees, and commercial services.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-bar-chart",
+        title: "Dashboards & Analytics",
+        desc: "Embedded Power BI dashboards provide real-time insights into flight operations, utilisation, revenue performance, and profitability.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-link-45deg",
+        title: "End-to-End Finance Alignment",
+        desc: "Native D365 Finance & Operations integration streamlines revenue recognition, invoicing, compliance, and audit controls.",
+        link: "#",
+      },
+    ]}
+  />
+</div>  
+
+<div id="benefits">
+  <InnovationsRoadmapSection
+    sectionId="benefits-section"
+    sectionClass="py-5"
+    backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
+    subtitle="BENEFITS"
+    title="Key Benefits of Airport Revenue Management"
+    intro="Novum’s Airport Revenue Management Solution provides airports with enhanced accuracy, transparency, and operational efficiency across all revenue processes."
+    primaryColor="#0d2b75"
+    items={[
+      {
+        icon: "bi-collection",
+        title: "Single Source of Truth",
+        desc: "Centralized management of flight schedules, services, revenue streams, and billing under one unified platform."
+      },
+      {
+        icon: "bi-lightning-charge-fill",
+        title: "Automation",
+        desc: "Minimises manual work, reduces billing errors, and accelerates revenue processing through rule-based automation."
+      },
+      {
+        icon: "bi-shield-check",
+        title: "Regulatory Compliance",
+        desc: "Aligned with ICAO, IATA, and global aviation reporting standards for accurate, audit-ready financial operations."
+      },
+      {
+        icon: "bi-bar-chart-line",
+        title: "Revenue Visibility",
+        desc: "Predictive analytics and embedded Power BI dashboards deliver insights into revenue performance and profitability."
+      },
+      {
+        icon: "bi-arrows-expand",
+        title: "Scalability",
+        desc: "Flexible design suited for airports of all sizes with capacity to grow and support future operational expansion."
+      }
+    ]}
+  />
+</div>
 
 
-<Iconlist
-  id="airport-revenue-management"
-  title="Key Features of Airport Revenue Management"
-  imageSrc="/assets/img/main-product/airport-revenue-2.webp"
-  altText="Airport Revenue Management System Features"
-  features={[
-    {
-      icon: "bi bi-receipt-cutoff",
-      title: "Automated Billing",
-      description:
-        "Generate invoices for landing, parking, and passenger fees instantly using live flight data.",
-    },
-    {
-      icon: "bi bi-shop-window",
-      title: "Concession Tracking",
-      description:
-        "Track and reconcile retail and F&B revenues with automated billing and smart analytics.",
-    },
-    {
-      icon: "bi bi-file-earmark-text-fill",
-      title: "Contract Management",
-      description:
-        "Manage leases, renewals, and rental terms digitally with full visibility and control.",
-    },
-  ]}
-/>
+<div id="technical-highlights">
+  <ServiceSplitPanel
+    title="Technical Highlights"
+    primaryColor="#0d2b75"
+    items={[
+      {
+        label: "Platform Foundation",
+        paragraphs: [
+          "Built on Microsoft Dynamics 365 Finance & Operations, the solution provides a secure, cloud-native platform designed for aviation-grade financial and operational workloads.",
+        ],
+        listItems: [
+          "Cloud-hosted SaaS deployment",
+          "Native Dynamics 365 extensibility",
+          "Enterprise-grade reliability & security"
+        ]
+      },
+
+      {
+        label: "Certified ISV Solution",
+        paragraphs: [
+          "The Airport Revenue Management solution is a certified Microsoft ISV add-on available on AppSource, ensuring compliance with Microsoft’s technical and operational standards."
+        ],
+        listItems: [
+          "Microsoft AppSource certified",
+          "Aviation-ready configuration",
+          "Fully aligned with Microsoft ecosystem standards"
+        ]
+      },
+
+      {
+        label: "Prebuilt Integrations",
+        paragraphs: [
+          "Designed for seamless interoperability with aviation systems, the solution includes ready-made API connectors for AODB, ground handling platforms, and airport service systems."
+        ],
+        listItems: [
+          "Integration with AODB & operational databases",
+          "Prebuilt APIs for ground handling systems",
+          "Supports real-time operational updates"
+        ]
+      },
+
+      {
+        label: "Enterprise Multi-Model Support",
+        paragraphs: [
+          "Built to support multi-entity, multi-currency, and multi-language environments, ensuring complete flexibility for regional and international airport operations."
+        ],
+        listItems: [
+          "Multi-currency billing",
+          "Multi-entity financial structures",
+          "Multi-language user experience"
+        ]
+      },
+
+      {
+        label: "Power Platform Extensibility",
+        paragraphs: [
+          "The solution integrates seamlessly with Microsoft Power Platform for advanced reporting, automation, and AI-driven insights."
+        ],
+        listItems: [
+          "Embedded Power BI dashboards",
+          "Process automation with Power Automate",
+          "AI-powered capabilities via Copilot Studio"
+        ]
+      }
+    ]}
+  />
+</div>
+
         
-
-
-
-   <AirportStakeholdersSection
-  heading="Our Approach to Airport Revenue Management Deployment"
-  subheading="Novum ensures smooth implementation of Airport Revenue Management ISV solutions through a structured process focused on accuracy, compliance, and long-term performance."
-  tabs={[
-    {
-      label: "Discovery & Analysis",
-      imageSrc: "/assets/img/main-product/airport-revenue-3.webp",
-      altText: "Discovery and Gap Analysis",
-      title: "Assessing Revenue Processes and Gaps",
-      description: `
-        We start by evaluating your current revenue workflows, aeronautical billing structures, and concession models to uncover inefficiencies and improvement areas. 
-        This stage involves stakeholder workshops, data audits, and integration mapping to ensure a comprehensive understanding of your financial ecosystem. 
-        The outcome is a strategic automation roadmap that aligns with your airport’s business goals, revenue streams, and compliance requirements.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-    {
-      label: "Configuration & Integration",
-      imageSrc: "/assets/img/main-product/airport-revenue-4.webp",
-      altText: "System Configuration and Integration",
-      title: "Building a Unified Revenue Platform",
-      description: `
-        We configure modules to automate billing, lease management, and concession revenue tracking while ensuring compliance with aviation financial standards. 
-        The system integrates seamlessly with ERP, AODB, and airline APIs to synchronize operational and financial data in real time. 
-        Our approach ensures scalable architecture, centralized dashboards, and secure user access for end-to-end visibility across departments.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-    {
-      label: "Testing & Go-Live",
-      imageSrc: "/assets/img/main-product/airport-revenue-5.webp",
-      altText: "Testing and Go-Live Support",
-      title: "Validating Accuracy and Driving Adoption",
-      description: `
-        Before deployment, every process undergoes comprehensive testing to verify accuracy, reporting reliability, and system performance. 
-        Finance, commercial, and operations teams participate in validation cycles to ensure business continuity and smooth transition. 
-        Once live, Novum provides structured user training, documentation, and continuous support helping your airport achieve revenue optimization and ongoing platform success.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-  ]}
-/>
-
-
-
-
-
-<SmartTurnaroundCards
-  heading="An Intelligent Revenue Platform for Modern Airports"
-  subheading="Automation, analytics, and integration working together to optimize billing, concessions, and lease revenue for airports of all sizes."
-  accentColor="#0D2B75"
-  cards={[
-    {
-      imageSrc: "/assets/img/main-product/airport-revenue-6.webp",
-      title: "Centralized Revenue Dashboard",
-      description:
-        "Gain a unified view of all income streams aeronautical, non-aeronautical, and concession through interactive dashboards and analytics.",
-    },
-    {
-      imageSrc: "/assets/img/main-product/airport-revenue-7.webp",
-      title: "Automated Billing & Invoicing",
-      description:
-        "Eliminate manual errors with automated generation of invoices for landing fees, rentals, and vendor payments linked to live flight and sales data.",
-    },
-    {
-      imageSrc: "/assets/img/main-product/airport-revenue-8.webp",
-      title: "Contract & Lease Management",
-      description:
-        "Digitally manage agreements, renewals, and rate revisions for airlines, cargo, and retail tenants with smart alerts and full traceability.",
-    },
-    {
-      imageSrc: "/assets/img/main-product/airport-revenue-9.webp",
-      title: "Performance Analytics & Insights",
-      description:
-        "Analyze revenue trends, track concession performance, and forecast growth with AI-powered reporting for finance and operations teams.",
-    },
-  ]}
-/>
-
-
-
-
-
-  
+      <div id="testimonials">
+          <Testimonials
+            subtitle="Client Stories"
+            title="What Clients Say About Working With Novum"
+            items={[
+          {
+            img: "/assets/img/clients/majid Ismayilov-Avromed.jpeg",
+            text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+            author: "Majid Ismailov",
+            position: "Head of Data Management, Avromed",
+          },
+          {
+            img: "/assets/img/clients/Zaur Dibirov - Azal.jpeg",
+            text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+            author: "Zaur Dibirov",
+            position: "Director of Finance & Accounting, Azerbaijan Airlines",
+          },
+          {
+            img: "/assets/img/clients/Daniel Viranyi- Kitopi.png",
+            text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+            author: "Daniel V",
+            position: "IT & Security Director, Kitopi",
+          },
+          {
+            img: "/assets/img/clients/Ashish Pandey-Aster.jpeg",
+            text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+            author: "Ashish Panday",
+            position: "IT Director, Aster Pharmacy",
+          },
+        ]}
+          />
         
+      </div>
       
-<WhySection
-  heading="Key Features of Our Airport Revenue Management ISV"
-  subheadingLines={[
-    "Gain total control over aeronautical and non-aeronautical income streams with automation, transparency, and real-time financial intelligence.",
-    "Novum’s Airport Revenue Management ISV unifies billing, concessions, and contract management to help airports optimize revenue and enhance compliance.",
-  ]}
-  imgSrc="/assets/img/main-product/airport-revenue-10.webp"
-  imgAlt="Airport Revenue Management Dashboard"
-  cards={[
-    {
-      iconClass: "bi bi-receipt-cutoff text-novum-blue",
-      title: "Automated Aeronautical Billing",
-      text: "Calculate and generate invoices automatically for landing, parking, and passenger fees based on live flight and operations data.",
-    },
-    {
-      iconClass: "bi bi-shop-window text-novum-blue",
-      title: "Concession Revenue Management",
-      text: "Track and reconcile revenue from retail, duty-free, and F&B tenants through sales-based billing and real-time reporting.",
-    },
-    {
-      iconClass: "bi bi-file-earmark-text text-novum-blue",
-      title: "Lease & Contract Management",
-      text: "Digitally manage contracts, renewals, and rate structures for airlines, vendors, and cargo operators in a centralized repository.",
-    },
-    {
-      iconClass: "bi bi-graph-up-arrow text-novum-blue",
-      title: "Revenue Analytics & Dashboards",
-      text: "Visualize key metrics, forecast trends, and compare performance across revenue streams to drive data-backed decisions.",
-    },
-    {
-      iconClass: "bi bi-hdd-network text-novum-blue",
-      title: "AODB & ERP Integration",
-      text: "Integrate seamlessly with Airport Operational Databases, ERP systems, and BI tools for synchronized financial control.",
-    },
-    {
-      iconClass: "bi bi-shield-check text-novum-blue",
-      title: "Compliance & Data Security",
-      text: "Ensure adherence to ICAO/IATA standards with full audit trails, access controls, and secure financial data management.",
-    },
-  ]}
-/>
+      
+            <OtherServices
+        subtitle="Our Expertise"
+        title="Other Services We Provide"
+        description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+        services={[
+          {
+            title: "Software Development",
+            imgSrc: "/assets/img/service-cards/softwaredev.svg",
+            description:
+              "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+            link: "/services/software-development",
+            gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+          },
+          
+          {
+            title: "Digital Services",
+            imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+            description: "We bring transformative digital outcomes to organizations.",
+            link: "#",
+            gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+          },
+          {
+            title: "Data Warehouse",
+            imgSrc: "/assets/img/service-cards/datawarehouse.svg",
+            description:
+              "We consolidate intelligence data from multiple sources to unlock deeper insights.",
+            link: "/services/data-warehouse",
+            gradient: "linear-gradient(90deg, #157569, #71E9B6)",
+          },
+          {
+            title: "Artificial Intelligence & IoT",
+            imgSrc: "/assets/img/service-cards/ai.svg",
+            description:
+              "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+            link: "/services/artificial-intelligence-iot",
+            gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+          },
+          {
+            title: "Microsoft Azure",
+            imgSrc: "/assets/img/service-cards/azure.svg",
+            description: "Swiftly shift your business resources to cloud infrastructure.",
+            link: "/services/azure",
+            gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+          },
+          {
+            title: "Microsoft 365",
+            imgSrc: "/assets/img/service-cards/microsoft365.svg",
+            description: "A suite of apps to help you stay connected and get things done.",
+            link: "/services/microsoft-365-deployment",
+            gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+          },
+          {
+            title: "Dynamics 365",
+            imgSrc: "/assets/img/service-cards/dynamic365.svg",
+            description:
+              "Boost efficiency and customer experiences with an agile business platform.",
+            link: "/services/microsoft-dynamics-365",
+            gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+          },
+          {
+            title: "Sustainability",
+            imgSrc: "/assets/img/service-cards/sustainability.svg",
+            description:
+              "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+            link: "/services/microsoft-sustainability",
+            gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+          },
+          {
+            title: "Copilot",
+            imgSrc: "/assets/img/service-cards/copilot.png",
+            description:
+              "An AI assistant that automates tasks and provides real-time insights.",
+            link: "#",
+            gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+          },
+        ]}
+      />
 
 
        
