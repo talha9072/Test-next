@@ -1,11 +1,14 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroOnly from "@/components/data/industries/banner";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import Iconlist from "@/components/data/industries/icon-list";
-import AirportStakeholdersSection from "@/components/data/industries/tabs";
-import SmartTurnaroundCards from "@/components/data/industries/cards";
-import WhySection from "@/components/data/services/WhySection";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
+import InnovationsRoadmapSection from "@/components/data/services/InnovationsSection";
+import PricingCardsSection from "@/components/data/services/PricingCardsSection";
+import WhyChooseSection from "@/components/data/services/whychooseus";
+import ServiceFeatureCards from "@/components/data/services/ServiceFeatureCards";
+import UseCasesSection from "@/components/data/services/UseCasesSection";
+import OtherServices from "@/components/data/services/otherservices";
+import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
 import ContactWidget from "@/components/widget/widget";
 import Footer from "@/components/layout/footers/footer";
@@ -16,186 +19,450 @@ const Bidding = () => {
   return (
     <div>
         <HeaderFour />
-        <HeroOnly
+        
+        
+         <HeroWithRibbon
   serviceName="Commodity Bidding Platform"
-  title="Power Smarter Commodity Trading"
-  highlightText="Intelligent Bidding"
-  subtitle="Enable transparent, real-time auctions across global commodity markets."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/main-product/bid-1.webp"
+  title="A secure platform for automated commodity bidding"
+  highlightText="Azure"
+  subtitle="Novum’s Commodity Bidding Platform streamlines end-to-end bidding cycles with centralized specifications, automated workflows, and real-time analytics"
+  bgImage="/assets/img/main-product/d365-bg.png"
   heroButtons={[
-    { label: "Request Demo", href: "/contact" },
+    { label: "Contact Us", href: "/contact" },
+  ]}
+  links={[
+    { label: "Overview", href: "#overview" },
+    { label: "Product", href: "#usecase" },
+    { label: "Workflows", href: "#approval-workflows" },
+    { label: "Analytics", href: "#analytics-reporting" },
+    { label: "Features", href: "#features" },
+    { label: "Security", href: "#security-compliance" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Other Services", href: "#otherservices" },
   ]}
 />
         
-        
-        
-        <SoftwareSolutionsSection
-  title={`Revolutionize Commodity Trading with Smart Bidding`}
-  paragraphs={[
-    "Novum’s Commodity Bidding Platform empowers enterprises, traders, and suppliers to conduct transparent, real-time auctions across multiple commodities. Designed for speed, fairness, and security, it simplifies procurement and sales through intelligent automation and live price visibility.",
-    "With integrated analytics and automated validation, the platform enhances decision-making, reduces manual oversight, and ensures compliance helping businesses achieve faster trade cycles and improved market competitiveness."
-  ]}
-  imageSrc="/assets/img/main-product/bid-2.png"
-  altText="Digital Commodity Bidding Platform"
- />
+        <div id="overview">
+  <ImageWithContentSection
+    orderControl={2}
+    bgColor="#e5f1ff"
+    title="Commodity Bidding Platform Overview"
+    imageSrc="/assets/img/main-product/commodity-main.webp" // update image path
+    imageAlt="Commodity Bidding Platform Overview"
 
-<Iconlist
-  id="bidding-platform"
-  title="Transform Commodity Auctions with Intelligent Bidding"
-  imageSrc="/assets/img/main-product/bid-3.webp"
-  altText="Commodity Bidding Platform Features"
-  features={[
-    {
-      icon: "bi bi-lightning-charge-fill",
-      title: "Real-Time Bidding Engine",
-      description: "Host transparent, live auctions with instant bid validation and dynamic pricing updates.",
-    },
-    {
-      icon: "bi bi-graph-up-arrow",
-      title: "AI-Driven Insights",
-      description: "Analyze bid trends, pricing behavior, and participation to optimize trading strategies.",
-    },
-    {
-      icon: "bi bi-shield-check",
-      title: "Secure & Compliant Transactions",
-      description: "Ensure fairness and full traceability through verified users and audit-ready reporting.",
-    },
-  ]}
-/>
-        
+    paragraphs={[
+      "Novum’s Commodity Bidding Platform is a customisable, SaaS-based system designed for trading firms, procurement teams, and enterprise finance departments seeking to modernise and automate their bidding cycles.",
+      "The platform streamlines the full commodity lifecycle from specification creation to supplier bidding, approvals, analytics, and final decision-making within a secure, real-time digital workflow.",
+    ]}
+
+    bulletPoints={[
+      "End-to-end digital bidding workflows for commodities and procurement",
+      "Configurable specifications, approval routes, and pricing structures",
+      "Real-time analytics for supplier performance and bid evaluation",
+      "Secure multi-user environment with full audit trails and compliance controls"
+    ]}
+  />
+</div>
 
 
-
-   <AirportStakeholdersSection
-  heading="Designed for Every Participant in Commodity Bidding"
-  subheading="See how our platform empowers enterprises, logistics providers, and manufacturers to drive transparency, efficiency, and profitability through intelligent, data-driven bidding automation."
-  tabs={[
-    {
-      label: "Enterprises & Corporates",
-      imageSrc: "/assets/img/main-product/bid-4.webp",
-      altText: "Enterprises & Corporates",
-      title: "Smarter Sourcing for Large Enterprises",
-      description: `
-        Streamline high-value procurement processes with rule-based bidding, supplier insights, and full audit trails. 
-        Our intelligent platform centralizes sourcing workflows, enabling verified vendors to participate securely while ensuring transparent price discovery across every auction.
-        Procurement teams gain complete visibility across ongoing and historical bids, monitor vendor performance in real time, and automate contract approvals and documentation.
-        Built-in compliance checks, budget alerts, and detailed analytics simplify governance while boosting decision accuracy.
-        The result: faster approvals, lower costs, and stronger, data-backed supplier relationships that drive long-term business resilience.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-    {
-      label: "Transport & Logistics",
-      imageSrc: "/assets/img/main-product/bid-5.webp",
-      altText: "Transport & Logistics",
-      title: "Competitive Freight & Route Bidding",
-      description: `
-        Optimize freight procurement and contract bidding through real-time, competitive auctions tailored for logistics networks. 
-        Shippers and carriers can transparently bid on lanes, routes, or capacity blocks, ensuring cost optimization and fair competition. 
-        Integrated dashboards provide complete visibility into freight rates, carrier reliability, and performance metrics helping procurement teams make faster, data-driven decisions.
-        Automated comparisons, AI-based ranking, and smart contract management streamline vendor selection and negotiation cycles. 
-        The result: reduced logistics overheads, improved route efficiency, and scalable freight operations with measurable ROI.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-    {
-      label: "Manufacturing & Processing",
-      imageSrc: "/assets/img/main-product/bid-6.webp",
-      altText: "Manufacturing & Processing",
-      title: "Streamlined Raw Material Procurement",
-      description: `
-        Simplify the sourcing of commodities such as metals, grains, and chemicals through centralized, intelligent bidding automation. 
-        Manufacturers gain end-to-end visibility in supplier selection, price comparison, and delivery commitments all validated through secure, system-driven workflows.
-        The platform tracks every auction, from listing to delivery confirmation, providing full accountability and traceability at every stage.
-        AI-powered analytics uncover supplier performance patterns, cost trends, and demand forecasts, enabling more accurate and proactive procurement strategies.
-        The result: reduced sourcing risks, faster turnaround, and smarter purchasing decisions for mission-critical materials that impact production continuity.
-      `,
-      buttonText: "Explore More",
-      buttonHref: "/contact",
-    },
-  ]}
-/>
+<div id="usecase">
+  <InnovationsRoadmapSection
+    sectionId="product-specifications"
+    sectionClass="py-5"
+    backgroundGradient="linear-gradient(to right bottom, #ffffff, #eef3ff)"
+    subtitle="PRODUCT MANAGEMENT"
+    title="Flexible Product and Specification Management"
+    intro="Novum’s Commodity Bidding Platform includes an advanced specification and product management engine that standardises commodities, controls bidding parameters, and ensures structured, compliant procurement processes."
+    primaryColor="#0d2b75"
+    items={[
+      {
+        icon: "bi-collection",
+        title: "Product Grouping",
+        desc: "Organise commodities into structured categories including raw materials, chemicals, industrial components, agricultural goods, and energy to simplify classification and bulk bidding."
+      },
+      {
+        icon: "bi-list-check",
+        title: "Custom Specifications",
+        desc: "Define detailed attributes such as quantity, grade, purity, packaging, delivery timelines, and shipment conditions to ensure clarity, comparability, and measurable bid responses."
+      },
+      {
+        icon: "bi-cash-coin",
+        title: "Pricing Logic",
+        desc: "Configure minimum and maximum bid thresholds, reserve prices, ceiling pricing, and tiered models aligned with internal procurement rules or market expectations."
+      },
+      {
+        icon: "bi-sliders",
+        title: "Dynamic Attributes",
+        desc: "Adjust key parameters based on market conditions, seasonal demand, supplier performance, historic price trends, or regulatory requirements."
+      },
+      {
+        icon: "bi-server",
+        title: "ERP & Finance Integration",
+        desc: "Synchronise product and procurement data with ERP systems such as Dynamics 365, SAP, and Oracle to eliminate duplication, maintain accuracy, and strengthen financial governance."
+      }
+    ]}
+  />
+</div>
 
 
-
-<SmartTurnaroundCards
-  heading="An Intelligent Bidding System Built for Modern Enterprises"
-  subheading="Real-time auctions, automation, and AI working together to simplify and optimize commodity trading."
-  accentColor="#0D2B75"
+<PricingCardsSection
+  sectionId="approval-workflows"
+  subtitle="Workflows"
+  title="Dynamic Approval Workflows"
+  intro="Novum’s Commodity Bidding Platform provides fully configurable, multi-level approval workflows that enforce organisational governance, transparency, and risk control throughout the bidding lifecycle."
+  primaryColor="#0d2b75"
   cards={[
     {
-      imageSrc: "/assets/img/main-product/bid-10.png",
-      title: "AI-Based Commodity Listing Engine",
-      description: "Sellers can create verified listings with specifications, reserve pricing, and eligibility conditions for smarter bidding.",
+      title: "Department-Based Authorisation",
+      desc: "Approval routing automatically adapts according to the originating department, cost centre, and budget ownership.",
+      list: [
+        "Role-based routing",
+        "Cost-centre aligned workflows",
+        "Policy-driven approval paths"
+      ]
     },
     {
-      imageSrc: "/assets/img/main-product/bid-11.webp",
-      title: "Live Bidding & Auto Validation",
-      description: "Run real-time auctions with instant bid validation, duplicate prevention, and transparent participant visibility.",
+      title: "Product Type & Trade Volume Rules",
+      desc: "Thresholds adjust dynamically based on commodity category, trade value, and bidding frequency.",
+      list: [
+        "High-value bid escalation",
+        "Category-specific workflows",
+        "Volume-based approval layers"
+      ]
     },
     {
-      imageSrc: "/assets/img/main-product/bid-8.png",
-      title: "Auction Insights & Market Analytics",
-      description: "Access interactive dashboards that reveal bid behavior, market trends, and supplier performance insights in real time.",
+      title: "Risk-Based Automation",
+      desc: "Automated risk scoring ensures higher-risk bids trigger enhanced oversight before approval.",
+      list: [
+        "Supplier risk scoring",
+        "Pricing deviation triggers",
+        "Compliance-driven escalation"
+      ]
     },
     {
-      imageSrc: "/assets/img/main-product/bid-9.png",
-      title: "Auto-Finalization & Audit Reports",
-      description: "Automatically close auctions, declare winners, and generate tamper-proof reports for compliance and recordkeeping.",
-    },
+      title: "Full Auditability",
+      desc: "Complete visibility across every approval step, enhancing transparency and regulatory alignment.",
+      list: [
+        "Timestamped logs",
+        "Approver comments & history",
+        "End-to-end traceability"
+      ]
+    }
   ]}
 />
 
 
-
-
-  
-        
-      
-<WhySection
-  heading="Key Features of Our Intelligent Commodity Bidding Platform"
-  subheadingLines={[
-    "Digitize, manage, and optimize every stage of your commodity procurement and trading process with real-time intelligence, automation, and analytics. Gain complete visibility into live auctions, bids, and participant activity for faster, smarter decision-making.",
-    "From listing creation to result finalization, coordinate seamlessly across buyers, sellers, and procurement teams. Drive transparency, compliance, and performance through one unified digital platform powered by AI and automation."
+<WhyChooseSection
+  sectionId="analytics-reporting"
+  title="Built-In Analytics and Reporting"
+  intro="Novum’s analytics engine provides real-time intelligence that strengthens decision-making, enhances pricing strategy, and improves procurement outcomes across all commodity categories."
+  items={[
+    {
+      icon: "bi-clock-history",
+      title: "Real-Time Bid History",
+      desc: "Monitor active and historical bids with full transparency, enabling audit accuracy and rapid review."
+    },
+    {
+      icon: "bi-currency-exchange",
+      title: "Price Comparison & Benchmarking",
+      desc: "Compare bids against historical prices, market averages, and supplier trends to validate competitive pricing."
+    },
+    {
+      icon: "bi-people",
+      title: "Supplier Performance Analysis",
+      desc: "Evaluate supplier reliability based on responsiveness, delivery performance, quality scores, and contract history."
+    },
+    {
+      icon: "bi-graph-up",
+      title: "Market Trend Insights",
+      desc: "Identify patterns in demand, price fluctuations, seasonality, and emerging risks to support informed strategy."
+    },
+    {
+      icon: "bi-speedometer2",
+      title: "Customisable Dashboards",
+      desc: "Track KPIs such as cost savings, winning bid averages, supplier participation, negotiation cycles, and time-to-award."
+    }
   ]}
-  imgSrc="/assets/img/main-product/bid-12.webp"
-  imgAlt="Commodity Bidding Dashboard"
+/>
+
+<div id="features">
+<PricingCardsSection
+  sectionId="collaboration-features"
+  title="Collaboration Features"
+  intro="Novum’s Commodity Bidding Platform enhances communication and transparency across teams, suppliers, and auditors through integrated collaboration tools."
+  primaryColor="#0d2b75"
   cards={[
     {
-      iconClass: "bi bi-card-list text-novum-blue",
-      title: "Dynamic Listing Management",
-      text: "Easily upload commodity specifications, reserve prices, and eligibility criteria with full verification and approval controls.",
+      title: "Document Attachments",
+      desc: "Upload and manage all supporting documents directly within the bid record.",
+      list: [
+        "Contracts & specifications",
+        "Compliance documents",
+        "Technical drawings & certifications"
+      ]
     },
     {
-      iconClass: "bi bi-graph-up-arrow text-novum-blue",
-      title: "Real-Time Bidding & Price Discovery",
-      text: "Empower participants to place live bids, view instant updates, and experience transparent, data-driven pricing.",
+      title: "Internal Comments & Notes",
+      desc: "Capture discussions and clarify decisions within the bidding workflow.",
+      list: [
+        "Negotiation notes",
+        "Clarification messages",
+        "Approval rationale"
+      ]
     },
     {
-      iconClass: "bi bi-lightbulb-fill text-novum-blue",
-      title: "AI-Powered Market Insights",
-      text: "Leverage real-time analytics to uncover price trends, bidding behaviors, and supplier performance metrics.",
+      title: "Activity Logs",
+      desc: "Maintain complete traceability for operational oversight and audit requirements.",
+      list: [
+        "Full action history",
+        "Timestamped records",
+        "User participation tracking"
+      ]
     },
     {
-      iconClass: "bi bi-lock-fill text-novum-blue",
-      title: "Secure & Compliant Transactions",
-      text: "Ensure integrity with encrypted sessions, digital audit trails, and role-based user access for full accountability.",
-    },
-    {
-      iconClass: "bi bi-journal-check text-novum-blue",
-      title: "Automated Result Finalization",
-      text: "The system automatically closes auctions, declares winners, and generates reports for transparent documentation.",
-    },
-    {
-      iconClass: "bi bi-laptop text-novum-blue",
-      title: "Cross-Platform Accessibility",
-      text: "Access your dashboards, reports, and auctions securely across desktop and mobile devices anytime, anywhere.",
-    },
+      title: "Notifications & Reminders",
+      desc: "Automated alerts ensure timely actions and prevent missed steps.",
+      list: [
+        "Bid opening alerts",
+        "Deadline reminders",
+        "Approval & escalation notifications"
+      ]
+    }
   ]}
 />
+</div>
+
+<div id="security-compliance">
+  <ServiceFeatureCards
+    title="Advanced Security and Compliance"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to bottom right, #f7faff, #eef3ff)"
+    primaryColor="#0d2b75"
+    noButton
+    columns={4}
+    items={[
+      {
+        iconType: "bootstrap",
+        icon: "bi-person-lock",
+        title: "Role-Based Access Control",
+        list: [
+          "Granular access policies based on roles and departments",
+          "Permission control for sensitive bid and supplier data",
+          "Approval-rights governance aligned with internal policies"
+        ]
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-shield-lock",
+        title: "Encrypted Data Storage",
+        list: [
+          "End-to-end encryption for all bid records and documents",
+          "Encrypted data at rest and in transit",
+          "Secure storage aligned with enterprise security standards"
+        ]
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-file-earmark-check",
+        title: "Regulatory Compliance",
+        list: [
+          "Supports SOX, ISO, procurement governance, and audit frameworks",
+          "Aligns with financial reporting and internal controls",
+          "Configurable rules for industry-specific compliance requirements"
+        ]
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-journal-text",
+        title: "Audit Trails",
+        list: [
+          "Immutable log of all user actions and workflow steps",
+          "Complete traceability for internal and external audits",
+          "Timestamped, tamper-proof activity histories"
+        ]
+      }
+    ]}
+  />
+</div>
+
+
+<div id="business-benefits">
+  <ImageWithContentSection
+    orderControl={2}
+    bgColor="#fff"
+    title="Business Benefits"
+    imageSrc="/assets/img/main-product/comodity-main2.webp" // update if needed
+    imageAlt="Commodity Bidding Platform Business Benefits"
+    
+    paragraphs={[
+      "Organisations using Novum’s Commodity Bidding Platform gain measurable improvements across procurement, trading, and finance through structured workflows, automation, and real-time intelligence.",
+      "The platform strengthens governance, boosts operational speed, and supports strategic decision-making across all commodity-related activities."
+    ]}
+
+    bulletPoints={[
+      "Transparent, structured bidding processes that reduce ambiguity",
+      "Accelerated procurement cycles with automated validations and approvals",
+      "Data-driven decisions through real-time analytics and benchmarking",
+      "Higher operational efficiency with reduced manual workload",
+    ]}
+  />
+</div>
+
+
+<div id="pillars">
+  <UseCasesSection
+    sectionId="novum-ecosystem"
+    backgroundStyle="#e5f1ff"
+    primaryColor="#0d2b75"
+    subtitle="NOVUM ECOSYSTEM"
+    title="Unified Integration Across Novum’s Technology Suite"
+    intro="As part of Novum’s Trade and Financial Technology ecosystem, the Commodity Bidding Platform integrates seamlessly with automation, compliance, and analytics systems—creating a fully connected procurement and trading environment."
+    tabs={[
+      {
+        items: [
+          {
+            label: "Integration",
+            title: "D365 Automations",
+            desc: "Automates downstream workflows including post-bid approvals, invoice matching, supplier notifications, and contract lifecycle management.",
+            image: "/assets/img/main-product/comodity-automation.png",
+            cta: "Learn More",
+            link: "/services/microsoft-dynamics-365"
+          },
+          {
+            label: "Integration",
+            title: "OCR – Certification Directory",
+            desc: "Validates supplier certificates, compliance documents, contracts, and regulatory files to ensure that only verified suppliers participate in bidding.",
+            image: "/assets/img/main-product/ocr.png",
+            cta: "Explore",
+            link: "/contact"
+          },
+          {
+            label: "Integration",
+            title: "Analytics & Reporting Modules",
+            desc: "Bidding insights flow directly into enterprise dashboards for CFOs, procurement leaders, and executives, enabling real-time financial and strategic oversight.",
+            image: "/assets/img/main-product/integration.png",
+            cta: "View Analytics",
+            link: "/services/system-integration"
+          }
+        ]
+      }
+    ]}
+  />
+</div>
+
+
+  <div id="testimonials">
+            <Testimonials
+              subtitle="Client Stories"
+              title="What Clients Say About Working With Novum"
+              items={[
+            {
+              img: "/assets/img/clients/majid Ismayilov-Avromed.jpeg",
+              text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+              author: "Majid Ismailov",
+              position: "Head of Data Management, Avromed",
+            },
+            {
+              img: "/assets/img/clients/Zaur Dibirov - Azal.jpeg",
+              text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+              author: "Zaur Dibirov",
+              position: "Director of Finance & Accounting, Azerbaijan Airlines",
+            },
+            {
+              img: "/assets/img/clients/Daniel Viranyi- Kitopi.png",
+              text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+              author: "Daniel V",
+              position: "IT & Security Director, Kitopi",
+            },
+            {
+              img: "/assets/img/clients/Ashish Pandey-Aster.jpeg",
+              text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+              author: "Ashish Panday",
+              position: "IT Director, Aster Pharmacy",
+            },
+          ]}
+            />
+          
+        </div>
+        
+        
+              <OtherServices
+          subtitle="Our Expertise"
+          title="Other Services We Provide"
+          description="We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes."
+          services={[
+            {
+              title: "Software Development",
+              imgSrc: "/assets/img/service-cards/softwaredev.svg",
+              description:
+                "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+              link: "/services/software-development",
+              gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
+            },
+            
+            {
+              title: "Digital Services",
+              imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+              description: "We bring transformative digital outcomes to organizations.",
+              link: "#",
+              gradient: "linear-gradient(90deg, #216868, #14B8BF)",
+            },
+            {
+              title: "Data Warehouse",
+              imgSrc: "/assets/img/service-cards/datawarehouse.svg",
+              description:
+                "We consolidate intelligence data from multiple sources to unlock deeper insights.",
+              link: "/services/data-warehouse",
+              gradient: "linear-gradient(90deg, #157569, #71E9B6)",
+            },
+            {
+              title: "Artificial Intelligence & IoT",
+              imgSrc: "/assets/img/service-cards/ai.svg",
+              description:
+                "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+              link: "/services/artificial-intelligence-iot",
+              gradient: "linear-gradient(90deg, #1B71EB, #A555C0)",
+            },
+            {
+              title: "Microsoft Azure",
+              imgSrc: "/assets/img/service-cards/azure.svg",
+              description: "Swiftly shift your business resources to cloud infrastructure.",
+              link: "/services/azure",
+              gradient: "linear-gradient(90deg, #32ADE9, #095EAA)",
+            },
+            {
+              title: "Microsoft 365",
+              imgSrc: "/assets/img/service-cards/microsoft365.svg",
+              description: "A suite of apps to help you stay connected and get things done.",
+              link: "/services/microsoft-365-deployment",
+              gradient: "linear-gradient(90deg, #2353C4, #848FF0)",
+            },
+            {
+              title: "Dynamics 365",
+              imgSrc: "/assets/img/service-cards/dynamic365.svg",
+              description:
+                "Boost efficiency and customer experiences with an agile business platform.",
+              link: "/services/microsoft-dynamics-365",
+              gradient: "linear-gradient(90deg, #3352C0, #5875E5)",
+            },
+            {
+              title: "Sustainability",
+              imgSrc: "/assets/img/service-cards/sustainability.svg",
+              description:
+                "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+              link: "/services/microsoft-sustainability",
+              gradient: "linear-gradient(90deg, #4CD1DA, #1085A4)",
+            },
+            {
+              title: "Copilot",
+              imgSrc: "/assets/img/service-cards/copilot.png",
+              description:
+                "An AI assistant that automates tasks and provides real-time insights.",
+              link: "#",
+              gradient: "linear-gradient(90deg, #6EB75B, #F36E7B, #1D56D2)",
+            },
+          ]}
+        />      
        
 
        <ContactWidget />
