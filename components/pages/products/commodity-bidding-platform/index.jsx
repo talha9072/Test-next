@@ -26,7 +26,7 @@ const Bidding = () => {
   title="A secure platform for automated commodity bidding"
   highlightText="Azure"
   subtitle="Novum’s Commodity Bidding Platform streamlines end-to-end bidding cycles with centralized specifications, automated workflows, and real-time analytics"
-  bgImage="/assets/img/main-product/d365-bg.png"
+  bgImage="/assets/img/main-product/bidding-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
