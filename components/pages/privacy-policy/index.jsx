@@ -20,28 +20,29 @@ const Health = () => {
       />
         
 
-<section className="privacy-policy" style={{ padding: '4rem 0' }}>
+<section className="privacy-policy" style={{ padding: '5rem 0' }}>
   <div className="container">
     <div className="row">
       <div className="col-lg-10">
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Owner and Data Controller</h2>
-          <p className="">Novum LLC - Bayıl Plaza, Neftchi Gurban str.29</p>
-          <p className="">
+
+        <div className="mb-5">
+          <h2 className="h2">Owner and Data Controller</h2>
+          <p>Novum LLC - Bayıl Plaza, Neftchi Gurban str.29</p>
+          <p>
             <strong>Owner contact email:</strong>{' '}
-            <a href="mailto:info@novum.tech" className="text-novum-blue text-decoration-underline">
+            <a href="mailto:info@novum.tech" className="link">
               info@novum.tech
             </a>
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Types of Data collected</h2>
-          <p className="">
+        <div className="mb-5">
+          <h2 className="h2">Types of Data collected</h2>
+          <p>
             Among the types of Personal Data that this Application collects, by itself or through third parties,
             there are: Usage Data; Tracker.
           </p>
-          <p className=" mt-4">
+          <p>
             Complete details on each type of Personal Data collected are provided in the dedicated sections of this
             privacy policy or by specific explanation texts displayed prior to the Data collection.<br />
             Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when
@@ -55,17 +56,17 @@ const Health = () => {
             services used by this Application serves the purpose of providing the Service required by the User, in
             addition to any other purposes described in the present document and in the Cookie Policy, if available.
           </p>
-          <p className=" mt-4">
+          <p>
             Users are responsible for any third-party Personal Data obtained, published or shared through this
             Application and confirm that they have the third party's consent to provide the Data to the Owner.
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Mode and place of processing the Data</h2>
+        <div className="mb-5">
+          <h2 className="h2">Mode and place of processing the Data</h2>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Methods of processing</h3>
-          <p className="">
+          <h3 className="h3">Methods of processing</h3>
+          <p>
             The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification,
             or unauthorized destruction of the Data.<br />
             The Data processing is carried out using computers and/or IT enabled tools, following organizational
@@ -77,46 +78,44 @@ const Health = () => {
             be requested from the Owner at any time.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Legal basis of processing</h3>
-          <p className="">The Owner may process Personal Data relating to Users if one of the following applies:</p>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item border-0 px-0 py-2 ">
+          <h3 className="h3">Legal basis of processing</h3>
+          <p>The Owner may process Personal Data relating to Users if one of the following applies:</p>
+          <ul className="privacy-list">
+            <li>
               Users have given their consent for one or more specific purposes. Note: Under some legislations the
               Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”),
               without having to rely on consent or any other of the following legal bases. This, however, does not
               apply, whenever the processing of Personal Data is subject to European data protection law;
             </li>
-            <li className="list-group-item border-0 px-0 py-2 ">
+            <li>
               provision of Data is necessary for the performance of an agreement with the User and/or for any
               pre-contractual obligations thereof;
             </li>
-            <li className="list-group-item border-0 px-0 py-2 ">
-              processing is necessary for compliance with a legal obligation to which the Owner is subject;
-            </li>
-            <li className="list-group-item border-0 px-0 py-2 ">
+            <li>processing is necessary for compliance with a legal obligation to which the Owner is subject;</li>
+            <li>
               processing is related to a task that is carried out in the public interest or in the exercise of
               official authority vested in the Owner;
             </li>
-            <li className="list-group-item border-0 px-0 py-2 ">
+            <li>
               processing is necessary for the purposes of the legitimate interests pursued by the Owner or by a third
               party.
             </li>
           </ul>
-          <p className=" mt-4">
+          <p>
             In any case, the Owner will gladly help to clarify the specific legal basis that applies to the
             processing, and in particular whether the provision of Personal Data is a statutory or contractual
             requirement, or a requirement necessary to enter into a contract.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Place</h3>
-          <p className="">
+          <h3 className="h3">Place</h3>
+          <p>
             The Data is processed at the Owner's operating offices and in any other places where the parties involved
             in the processing are located.<br /><br />
             Depending on the User's location, data transfers may involve transferring the User's Data to a country
             other than their own. To find out more about the place of processing of such transferred Data, Users can
             check the section containing details about the processing of Personal Data.
           </p>
-          <p className=" mt-4">
+          <p>
             Users are also entitled to learn about the legal basis of Data transfers to a country outside the
             European Union or to any international organization governed by public international law or set up by two
             or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their
@@ -125,24 +124,24 @@ const Health = () => {
             document or inquire with the Owner using the information provided in the contact section.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Retention time</h3>
-          <p className="">
+          <h3 className="h3">Retention time</h3>
+          <p>
             Personal Data shall be processed and stored for as long as required by the purpose they have been
             collected for.
           </p>
-          <p className=" mt-4">Therefore:</p>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item border-0 px-0 py-2 ">
+          <p>Therefore:</p>
+          <ul className="privacy-list">
+            <li>
               Personal Data collected for purposes related to the performance of a contract between the Owner and the
               User shall be retained until such contract has been fully performed.
             </li>
-            <li className="list-group-item border-0 px-0 py-2 ">
+            <li>
               Personal Data collected for the purposes of the Owner’s legitimate interests shall be retained as long
               as needed to fulfill such purposes. Users may find specific information regarding the legitimate
               interests pursued by the Owner within the relevant sections of this document or by contacting the Owner.
             </li>
           </ul>
-          <p className=" mt-4">
+          <p>
             The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent
             to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to
             retain Personal Data for a longer period whenever required to do so for the performance of a legal
@@ -153,169 +152,169 @@ const Health = () => {
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">The purposes of processing</h2>
-          <p className="">
+        <div className="mb-5">
+          <h2 className="h2">The purposes of processing</h2>
+          <p>
             The Data concerning the User is collected to allow the Owner to provide its Service, comply with its legal
             obligations, respond to enforcement requests, protect its rights and interests (or those of its Users or
             third parties), detect any malicious or fraudulent activity, as well as the following: Displaying content
             from external platforms, Analytics and Tag Management.
           </p>
-          <p className=" mt-4">
+          <p>
             For specific information about the Personal Data used for each purpose, the User may refer to the section
             “Detailed information on the processing of Personal Data”.
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Detailed information on the processing of Personal Data</h2>
-          <p className="">Personal Data is collected for the following purposes and using the following services:</p>
+        <div className="mb-5">
+          <h2 className="h2">Detailed information on the processing of Personal Data</h2>
+          <p>Personal Data is collected for the following purposes and using the following services:</p>
 
-          <div className="mt-3">
-            <h3 className="h4 fw-bold mb-3">Analytics</h3>
-            <p className="">
+          <div className="service-block">
+            <h3 className="h3">Analytics</h3>
+            <p>
               The services contained in this section enable the Owner to monitor and analyze web traffic and can
               be used to keep track of User behavior.
             </p>
-            <h4 className="h5 fw-bold mt-4 mb-3">Google Analytics (Google LLC)</h4>
-            <p className="">
+            <h4 className="h4">Google Analytics (Google LLC)</h4>
+            <p>
               Google Analytics is a web analysis service provided by Google LLC (“Google”). Google utilizes the
               Data collected to track and examine the use of this Application, to prepare reports on its
               activities and share them with other Google services.<br />
               Google may use the Data collected to contextualize and personalize the ads of its own advertising
               network.
             </p>
-            <p className=" mt-3">Personal Data processed: Tracker; Usage Data.</p>
-            <p className="">
+            <p>Personal Data processed: Tracker; Usage Data.</p>
+            <p>
               Place of processing: United States –{' '}
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-novum-blue text-decoration-underline">
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="link">
                 Privacy Policy
               </a>{' '}
               –{' '}
-              <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="noopener noreferrer" className="text-novum-blue text-decoration-underline">
+              <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="noopener noreferrer" className="link">
                 Opt Out
               </a>.
             </p>
           </div>
 
-          <div className="mt-3">
-            <h3 className="h4 fw-bold mb-3">Displaying content from external platforms</h3>
-            <p className="">
+          <div className="service-block">
+            <h3 className="h3">Displaying content from external platforms</h3>
+            <p>
               This type of service allows you to view content hosted on external platforms directly from the
               pages of this Application and interact with them.<br />
               This type of service might still collect web traffic data for the pages where the service is
               installed, even when Users do not use it.
             </p>
-            <h4 className="h5 fw-bold mt-4 mb-3">Font Awesome (Fonticons, Inc.)</h4>
-            <p className="">
+            <h4 className="h4">Font Awesome (Fonticons, Inc.)</h4>
+            <p>
               Font Awesome is a typeface visualization service provided by Fonticons, Inc. that allows this
               Application to incorporate content of this kind on its pages.
             </p>
-            <p className=" mt-3">Personal Data processed: Tracker; Usage Data.</p>
-            <p className="">
+            <p>Personal Data processed: Tracker; Usage Data.</p>
+            <p>
               Place of processing: United States –{' '}
-              <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer" className="text-novum-blue text-decoration-underline">
+              <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer" className="link">
                 Privacy Policy
               </a>.
             </p>
           </div>
 
-          <div className="mt-3">
-            <h3 className="h4 fw-bold mb-3">Tag Management</h3>
-            <p className="">
+          <div className="service-block">
+            <h3 className="h3">Tag Management</h3>
+            <p>
               This type of service helps the Owner to manage the tags or scripts needed on this Application in a
               centralized fashion.<br />
               This results in the Users' Data flowing through these services, potentially resulting in the
               retention of this Data.
             </p>
-            <h4 className="h5 fw-bold mt-4 mb-3">Google Tag Manager (Google LLC)</h4>
-            <p className="">Google Tag Manager is a tag management service provided by Google LLC.</p>
-            <p className=" mt-3">Personal Data processed: Tracker; Usage Data.</p>
-            <p className="">
+            <h4 className="h4">Google Tag Manager (Google LLC)</h4>
+            <p>Google Tag Manager is a tag management service provided by Google LLC.</p>
+            <p>Personal Data processed: Tracker; Usage Data.</p>
+            <p>
               Place of processing: United States –{' '}
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-novum-blue text-decoration-underline">
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="link">
                 Privacy Policy
               </a>.
             </p>
           </div>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">The rights of Users</h2>
-          <p className="">Users may exercise certain rights regarding their Data processed by the Owner.</p>
-          <p className=" mt-4">In particular, Users have the right to do the following:</p>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Withdraw their consent at any time.</strong> Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Object to processing of their Data.</strong> Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Access their Data.</strong> Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Verify and seek rectification.</strong> Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Restrict the processing of their Data.</strong> Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Have their Personal Data deleted or otherwise removed.</strong> Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Receive their Data and have it transferred to another controller.</strong> Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.</li>
-            <li className="list-group-item border-0 px-0 py-2 "><strong>Lodge a complaint.</strong> Users have the right to bring a claim before their competent data protection authority.</li>
+        <div className="mb-5">
+          <h2 className="h2">The rights of Users</h2>
+          <p>Users may exercise certain rights regarding their Data processed by the Owner.</p>
+          <p>In particular, Users have the right to do the following:</p>
+          <ul className="privacy-list">
+            <li><strong>Withdraw their consent at any time.</strong> Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.</li>
+            <li><strong>Object to processing of their Data.</strong> Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.</li>
+            <li><strong>Access their Data.</strong> Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.</li>
+            <li><strong>Verify and seek rectification.</strong> Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.</li>
+            <li><strong>Restrict the processing of their Data.</strong> Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.</li>
+            <li><strong>Have their Personal Data deleted or otherwise removed.</strong> Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.</li>
+            <li><strong>Receive their Data and have it transferred to another controller.</strong> Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.</li>
+            <li><strong>Lodge a complaint.</strong> Users have the right to bring a claim before their competent data protection authority.</li>
           </ul>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Details about the right to object to processing</h3>
-          <p className="">
+          <h3 className="h3">Details about the right to object to processing</h3>
+          <p>
             Where Personal Data is processed for a public interest, in the exercise of an official authority vested
             in the Owner or for the purposes of the legitimate interests pursued by the Owner, Users may object to
             such processing by providing a ground related to their particular situation to justify the objection.
           </p>
-          <p className=" mt-4">
+          <p>
             Users must know that, however, should their Personal Data be processed for direct marketing purposes, they
             can object to that processing at any time without providing any justification. To learn whether the Owner
             is processing Personal Data for direct marketing purposes, Users may refer to the relevant sections of
             this document.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">How to exercise these rights</h3>
-          <p className="">
+          <h3 className="h3">How to exercise these rights</h3>
+          <p>
             Any requests to exercise User rights can be directed to the Owner through the contact details provided in
             this document. These requests can be exercised free of charge and will be addressed by the Owner as early
             as possible and always within one month.
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Additional information about Data collection and processing</h2>
+        <div className="mb-5">
+          <h2 className="h2">Additional information about Data collection and processing</h2>
 
-          <h3 className="h4 fw-bold mb-3">Legal action</h3>
-          <p className="">
-            The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages ing to
+          <h3 className="h3">Legal action</h3>
+          <p>
+            The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to
             possible legal action arising from improper use of this Application or the related Services.<br />
             The User declares to be aware that the Owner may be required to reveal personal data upon request of
             public authorities.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Additional information about User's Personal Data</h3>
-          <p className="">
+          <h3 className="h3">Additional information about User's Personal Data</h3>
+          <p>
             In addition to the information contained in this privacy policy, this Application may provide the User
             with additional and contextual information concerning particular Services or the collection and
             processing of Personal Data upon request.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">System logs and maintenance</h3>
-          <p className="">
+          <h3 className="h3">System logs and maintenance</h3>
+          <p>
             For operation and maintenance purposes, this Application and any third-party services may collect files
             that record interaction with this Application (System logs) use other Personal Data (such as the IP
             Address) for this purpose.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Information not contained in this policy</h3>
-          <p className="">
+          <h3 className="h3">Information not contained in this policy</h3>
+          <p>
             More details concerning the collection or processing of Personal Data may be requested from the Owner at
             any time. Please see the contact information at the beginning of this document.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">How “Do Not Track” requests are handled</h3>
-          <p className="">
+          <h3 className="h3">How “Do Not Track” requests are handled</h3>
+          <p>
             This Application does not support “Do Not Track” requests.<br />
             To determine whether any of the third-party services it uses honor the “Do Not Track” requests, please
             read their privacy policies.
           </p>
 
-          <h3 className="h4 fw-bold mt-3 mb-3">Changes to this privacy policy</h3>
-          <p className="">
+          <h3 className="h3">Changes to this privacy policy</h3>
+          <p>
             The Owner reserves the right to make changes to this privacy policy at any time by notifying its Users on
             this page and possibly within this Application and/or - as far as technically and legally feasible -
             sending a notice to Users via any contact information available to the Owner. It is strongly recommended
@@ -325,17 +324,17 @@ const Health = () => {
           </p>
         </div>
 
-        <div className="mb-4">
-          <h2 className=" text-novum-blue mb-4">Definitions and legal references</h2>
+        <div className="mb-5">
+          <h2 className="h2">Definitions and legal references</h2>
 
-          <h4 className="h5 fw-bold">Personal Data (or Data)</h4>
-          <p className="">
+          <h4 className="h4">Personal Data (or Data)</h4>
+          <p>
             Any information that directly, indirectly, or in connection with other information — including a
             personal identification number — allows for the identification or identifiability of a natural person.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">Usage Data</h4>
-          <p className="">
+          <h4 className="h4">Usage Data</h4>
+          <p>
             Information collected automatically through this Application (or third-party services employed in this
             Application), which can include: the IP addresses or domain names of the computers utilized by the
             Users who use this Application, the URI addresses (Uniform Resource Identifier), the time of the
@@ -347,64 +346,65 @@ const Health = () => {
             pages visited, and other parameters about the device operating system and/or the User's IT environment.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">User</h4>
-          <p className="">
+          <h4 className="h4">User</h4>
+          <p>
             The individual using this Application who, unless otherwise specified, coincides with the Data Subject.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">Data Subject</h4>
-          <p className="">The natural person to whom the Personal Data refers.</p>
+          <h4 className="h4">Data Subject</h4>
+          <p>The natural person to whom the Personal Data refers.</p>
 
-          <h4 className="h5 fw-bold mt-4">Data Processor (or Data Supervisor)</h4>
-          <p className="">
+          <h4 className="h4">Data Processor (or Data Supervisor)</h4>
+          <p>
             The natural or legal person, public authority, agency or other body which processes Personal Data on
             behalf of the Controller, as described in this privacy policy.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">Data Controller (or Owner)</h4>
-          <p className="">
+          <h4 className="h4">Data Controller (or Owner)</h4>
+          <p>
             The natural or legal person, public authority, agency or other body which, alone or jointly with others,
             determines the purposes and means of the processing of Personal Data, including the security measures
             concerning the operation and use of this Application. The Data Controller, unless otherwise specified,
             is the Owner of this Application.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">This Application</h4>
-          <p className="">The means by which the Personal Data of the User is collected and processed.</p>
+          <h4 className="h4">This Application</h4>
+          <p>The means by which the Personal Data of the User is collected and processed.</p>
 
-          <h4 className="h5 fw-bold mt-4">Service</h4>
-          <p className="">
+          <h4 className="h4">Service</h4>
+          <p>
             The service provided by this Application as described in the relative terms (if available) and on this
             site/application.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">European Union (or EU)</h4>
-          <p className="">
+          <h4 className="h4">European Union (or EU)</h4>
+          <p>
             Unless otherwise specified, all references made within this document to the European Union include all
             current member states to the European Union and the European Economic Area.
           </p>
 
-          <h4 className="h5 fw-bold mt-4">Cookie</h4>
-          <p className="">Cookies are Trackers consisting of small sets of data stored in the User's browser.</p>
+          <h4 className="h4">Cookie</h4>
+          <p>Cookies are Trackers consisting of small sets of data stored in the User's browser.</p>
 
-          <h4 className="h5 fw-bold mt-4">Tracker</h4>
-          <p className="">
+          <h4 className="h4">Tracker</h4>
+          <p>
             Tracker indicates any technology - e.g Cookies, unique identifiers, web beacons, embedded scripts,
             e-tags and fingerprinting - that enables the tracking of Users, for example by accessing or storing
             information on the User’s device.
           </p>
 
-          <hr className="my-5" />
+          <hr className="divider" />
 
-          <h4 className="h5 fw-bold">Legal information</h4>
-          <p className="">
+          <h4 className="h4">Legal information</h4>
+          <p>
             This privacy statement has been prepared based on provisions of multiple legislations, including Art.
             13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).
           </p>
-          <p className=" mt-4">
+          <p>
             This privacy policy relates solely to this Application, if not stated otherwise within this document.
           </p>
         </div>
+
       </div>
     </div>
   </div>

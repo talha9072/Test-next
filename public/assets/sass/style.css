@@ -11077,3 +11077,74 @@ footer a:hover{
   opacity: 0.9;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
 }
+
+
+/* Privacy Policy */
+
+.privacy-policy {
+  background-color: #ffffff;
+}
+
+.privacy-policy .h2 {
+  font-size: 1.8rem; /* ~38px */
+  font-weight: 700;
+  color: #0d2b75; /* novum-blue assume kar raha, change kar lena */
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #0d2b75;
+}
+
+.privacy-policy .h3 {
+  font-size: 1.3rem; /* ~30px */
+  font-weight: 600;
+  color: #051634;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-policy .h4 {
+  font-size: 1.1rem; /* ~24px */
+  font-weight: 600;
+  color: #051634;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-policy p {
+  font-size: 1rem; /* 18px */
+  line-height: 1.8;
+  color: #343434;
+  margin-bottom: 1.25rem;
+}
+
+.privacy-list {
+  list-style: disc;
+  padding-left: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.privacy-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.link {
+  color: #0d2b75;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #0d2b75;
+}
+
+.service-block {
+  margin-top: 2.5rem;
+}
+
+.divider {
+  border-top: 1px solid #0d2b75;
+  margin: 4rem 0;
+}
