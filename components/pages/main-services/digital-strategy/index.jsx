@@ -43,7 +43,7 @@ const Digitalstrategy = () => {
 <div id="overview">
    <ImageWithContentSection
   orderControl={2}
-  bgColor="#f7faff"
+  bgColor="#e5f1ff"
   title="Why Digital Strategy Is Critical for Modern Enterprises"
   imageSrc="/assets/img/digital-strategy/strategy-1.webp"
   imageAlt="Digital Strategy Solutions"

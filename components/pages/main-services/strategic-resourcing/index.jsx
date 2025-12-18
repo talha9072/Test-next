@@ -1,10 +1,9 @@
 "use client";
 import HeaderFour from "@/components/layout/headers/header/header-four";
-import HeroWithRibbon from "@/components/data/services/StickyRibbon";
-import SoftwareSolutionsSection from "@/components/data/services/SoftwareSolutionsSection";
-import MainServices from "@/components/data/services/main-services";
-import ImplementSection from "@/components/data/services/implement";
-import Whyus from "@/components/data/services/whyus";
+import HeroWithRibbon from "@/components/data/services/StickyRibbon1";
+import ImageWithContentSection from "@/components/data/services/ImageWithContentSection";
+import AIUseCaseGrid from "@/components/data/services/AIUseCaseGrid";
+import ServiceFeatureSlider from "@/components/data/services/ThreeRowSliderCards";
 import OtherServices from "@/components/data/services/otherservices";
 import Testimonials from "@/components/data/services/testimonials";
 import CTA from '@/components/data/cta';
@@ -27,164 +26,213 @@ const Strategicresourcing = () => {
   highlightText="Strategic Resourcing"
   subtitle="Seamlessly scale your team with certified NOVUM professionals."
   bgImage="/assets/img/power-bi/352294-hero-bg.avif"
-  heroImage="/assets/img/strategic-resourcing/Strategic-resourcing-hero.webp"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
   links={[
-    { label: "Overview", href: "#about" },
+    { label: "Overview", href: "#overview" },
+    { label: "Flexible Talent", href: "#flexible" },
     { label: "Services", href: "#services" },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Implementation", href: "#implement" },
-    { label: "Why Choose?", href: "#whyus" },
+    { label: "Benefits", href: "#service-benefits" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Other Services", href: "#otherservices" },
   ]}
 />
  
 
-
-      <SoftwareSolutionsSection
-  title={
-    <>
-      Why Strategic IT Resourcing Is <br />
-      Essential for Modern Enterprises
-    </>
-  }
-  paragraphs={[
-    "In today’s fast-paced technology environment, organizations need access to specialized skills that can scale with evolving business demands. NOVUM’s Strategic IT Resourcing empowers enterprises to extend their teams with certified professionals, ensuring agility, expertise, and cost efficiency without long-term overhead.",
-    "Our model goes beyond traditional staffing delivering technically aligned resources who integrate seamlessly with your operations. Whether supporting digital transformation, managing ongoing IT workloads, or filling critical skill gaps, NOVUM ensures every resource contributes measurable value and lasting impact.",
-  ]}
+<div id="overview">
+      <ImageWithContentSection
+  orderControl={2}
+  bgColor="#e5f1ff"
+  title="Why Strategic IT Resourcing Is Essential for Modern Enterprises"
   imageSrc="/assets/img/strategic-resourcing/strategy-1.webp"
-  altText="Strategic IT Resourcing Solutions"
-  sectionClass="position-relative overflow-hidden py-7"
+  imageAlt="Strategic IT Resourcing Solutions"
+
+  paragraphs={[
+    "In today’s fast-paced technology environment, organizations need access to specialized skills that can scale with evolving business demands. NOVUM’s Strategic IT Resourcing enables enterprises to extend their teams with certified professionals while maintaining agility and cost efficiency.",
+    "Our approach goes beyond traditional staffing by delivering technically aligned resources that integrate seamlessly with your operations, ensuring measurable value across digital transformation initiatives, ongoing IT workloads, and critical skill gaps."
+  ]}
+
+  bulletPoints={[
+    "On-demand access to certified IT professionals",
+    "Scalable resourcing aligned with business needs",
+    "Reduced long-term hiring and overhead costs",
+    "Seamless integration with enterprise teams",
+    "Immediate impact with measurable outcomes"
+  ]}
 />
-        
-     <MainServices
-  id="services"
-  subtitle="Strategic IT Resourcing Services"
+</div>
+
+<div id="flexible">
+<ImageWithContentSection
+  orderControl={1}
+  bgColor="#fff"
   title="Empowering Businesses with Scalable, Skilled, and Flexible Talent"
-  description="NOVUM delivers specialized IT resourcing solutions that provide immediate access to expert talent without the long-term overhead. From short-term project support to embedded technical roles, our resourcing model ensures your teams have the right skills, at the right time, to drive operational success. With a focus on quality, governance, and adaptability, we help organizations scale efficiently while maintaining performance and compliance."
-  image={{
-    src: "/assets/img/strategic-resourcing/strategic-2.webp",
-    alt: "Strategic IT Resourcing Process",
-  }}
-  services={[
-    {
-      title: "Dedicated Resourcing",
-      desc: "Deploying full-time technical experts who integrate seamlessly into your team for consistent, long-term project delivery.",
-    },
-    {
-      title: "Designated Resourcing",
-      desc: "Providing part-time or on-demand professionals supported by NOVUM’s wider delivery network for continuous reliability.",
-    },
-    {
-      title: "Hybrid & Remote Support",
-      desc: "Offering flexible working models that align with your organization’s operational, security, and compliance requirements.",
-    },
-    {
-      title: "Technical Specialization",
-      desc: "Sourcing certified professionals across cloud, data, cybersecurity, and infrastructure domains to fill critical skill gaps.",
-    },
-    {
-      title: "Agile Team Extension",
-      desc: "Scaling your development and IT teams with agile-ready experts who accelerate delivery and improve collaboration.",
-    },
-    {
-      title: "Ongoing Management & Support",
-      desc: "Ensuring smooth operations through structured oversight, performance tracking, and proactive engagement management.",
-    },
+  imageSrc="/assets/img/strategic-resourcing/strategic-2.webp"
+  imageAlt="Strategic IT Resourcing Process"
+
+  paragraphs={[
+    "NOVUM delivers strategic IT resourcing solutions that provide immediate access to expert talent without the long-term overhead of traditional hiring models.",
+    "From short-term project support to embedded technical roles, our resourcing approach ensures organizations have the right skills at the right time while maintaining performance, governance, and compliance."
+  ]}
+
+  bulletPoints={[
+    "Immediate access to certified IT professionals",
+    "Flexible resourcing models for changing demands",
+    "Reduced hiring risk and operational overhead",
+    "Governed delivery with measurable outcomes"
   ]}
 />
+</div>
 
+<div id="services">
+  <AIUseCaseGrid
+    title="Strategic IT Resourcing Services"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to left top, #ffffff, #eef3ff)"
+    columns={3}
+    noButton
+    items={[
+      {
+        iconType: "bootstrap",
+        icon: "bi-person-badge",
+        title: "Dedicated Resourcing",
+        desc: "Full-time certified professionals embedded into your teams for consistent, long-term delivery.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-clock-history",
+        title: "Designated Resourcing",
+        desc: "Part-time or on-demand specialists backed by NOVUM’s broader delivery ecosystem.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-globe",
+        title: "Hybrid & Remote Support",
+        desc: "Flexible delivery models aligned with operational, security, and compliance requirements.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-cpu",
+        title: "Technical Specialization",
+        desc: "Access to certified experts across cloud, data, cybersecurity, and infrastructure domains.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-diagram-3",
+        title: "Agile Team Extension",
+        desc: "Rapidly scale development and IT teams with agile-ready professionals.",
+        link: "#",
+      },
+      {
+        iconType: "bootstrap",
+        icon: "bi-clipboard-check",
+        title: "Ongoing Management & Support",
+        desc: "Structured oversight, performance tracking, and proactive engagement management.",
+        link: "#",
+      }
+    ]}
+  />
+</div>
+        
 
-<ImplementSection
-  id="implement"
-  subtitle="Benefits"
-  title="How NOVUM’s Strategic Resourcing Strengthens IT Operations"
-  description="Partnering with NOVUM for strategic resourcing gives organizations the flexibility to scale, innovate, and deliver projects with confidence. Our model provides skilled professionals, operational continuity, and measurable efficiency helping businesses maintain momentum while optimizing internal resources."
-  items={[
-    {
-      img: "/assets/img/strategic-resourcing/tab-1.webp",
-      title: "On-Demand Expertise",
-      desc: "Access certified specialists across cloud, data, cybersecurity, and development whenever your projects require additional support.",
-    },
-    {
-      img: "/assets/img/strategic-resourcing/tab-2.webp",
-      title: "Reduced Operational Overhead",
-      desc: "Eliminate long hiring cycles and fixed costs with flexible resourcing models that adapt to your evolving business needs.",
-    },
-    {
-      img: "/assets/img/strategic-resourcing/tab-3.webp",
-      title: "Faster Project Delivery",
-      desc: "Accelerate implementation timelines with experienced professionals who integrate seamlessly into your workflows.",
-    },
-    {
-      img: "/assets/img/strategic-resourcing/tab-4.png",
-      title: "Seamless Team Integration",
-      desc: "Our resources work as part of your team, aligning with your tools, culture, and delivery frameworks for collaboration.",
-    },
-    {
-      img: "/assets/img/strategic-resourcing/tab-5.webp",
-      title: "Scalable Workforce Model",
-      desc: "Easily ramp up or scale down resources based on demand, ensuring agility and cost efficiency across projects.",
-    },
-  ]}
-/>
+<div id="service-benefits">
+  <ServiceFeatureSlider
+    sectionId="service-benefits"
+    title="How Strategic IT Resourcing Strengthens IT Operations"
+    backgroundType="gradient"
+    backgroundGradient="linear-gradient(to bottom right, #e5f1ff, #e5f1ff)"
+    primaryColor="#0d2b75"
+    items={[
+      {
+        image: "/assets/img/strategic-resourcing/tab-1.webp",
+        title: "On-Demand Expertise",
+        list: [
+          "Access certified specialists across cloud, data, cybersecurity, and development",
+          "Scale expertise instantly as project needs change",
+          "Eliminate skill gaps without long hiring cycles"
+        ],
+      },
+      {
+        image: "/assets/img/strategic-resourcing/tab-2.webp",
+        title: "Reduced Operational Overhead",
+        list: [
+          "Avoid long-term hiring and fixed employment costs",
+          "Flexible resourcing aligned to business demand",
+          "Optimized cost control across IT initiatives"
+        ],
+      },
+      {
+        image: "/assets/img/strategic-resourcing/tab-3.webp",
+        title: "Faster Project Delivery",
+        list: [
+          "Experienced professionals ready to contribute immediately",
+          "Seamless integration into existing workflows",
+          "Accelerated timelines with reduced onboarding effort"
+        ],
+      },
+      {
+        image: "/assets/img/strategic-resourcing/tab-4.png",
+        title: "Seamless Team Integration",
+        list: [
+          "Resources align with your tools and delivery frameworks",
+          "Collaborative, team-first engagement model",
+          "Consistent productivity and delivery standards"
+        ],
+      },
+      {
+        image: "/assets/img/strategic-resourcing/tab-5.webp",
+        title: "Scalable Workforce Model",
+        list: [
+          "Rapidly scale resources up or down as required",
+          "Supports short-term projects and long-term programmes",
+          "Maintains agility without sacrificing quality"
+        ],
+      }
+    ]}
+  />
+</div>
 
    
-      <Whyus
-  id="whyus"
-  subtitle="Why Choose Us"
-  title="Why Partner with NOVUM for Strategic IT Resourcing"
-  description="NOVUM delivers more than just technical staffing we provide a strategic partnership that strengthens your IT capabilities and accelerates delivery. Our resourcing framework combines proven expertise, flexibility, and governance to ensure every engagement delivers measurable value, operational efficiency, and long-term collaboration."
-  counters={[
-    { value: 60, suffix: "+", label: "Technical Experts Deployed" },
-    { value: 10, suffix: "+", label: "Industries Supported" },
-    { value: 95, suffix: "%", label: "Client Retention Rate" },
-    { value: 9, suffix: "+", label: "Years of Resourcing Experience" },
-  ]}
-  features={[
-    {
-      icon: "fa-solid fa-users-gear",
-      title: "Skilled & Certified Talent",
-      desc: "Access a curated pool of specialists across cloud, infrastructure, cybersecurity, and software development domains.",
-    },
-    {
-      icon: "fa-solid fa-diagram-project",
-      title: "Flexible Engagement Models",
-      desc: "Choose from dedicated, designated, or hybrid resourcing structures designed to match your operational goals.",
-    },
-    {
-      icon: "fa-solid fa-handshake",
-      title: "Enduring Partnerships",
-      desc: "We build lasting relationships by aligning resources with your culture, delivery frameworks, and strategic priorities.",
-    },
-  ]}
-/>
+<div id="testimonials">
+         <Testimonials
+           subtitle="Client Stories"
+           title="What Clients Say About Working With Novum"
+           items={[
+         {
+           img: "/assets/img/clients/majid Ismayilov-Avromed.jpeg",
+           text: "With a cloud solution custom-designed for the pharmaceutical industry by Novum Information Technology, we consolidated data from multiple systems into one unified platform. Now department heads access real-time reports instantly, manual consolidation is gone, and decision-making is faster and more secure.",
+           author: "Majid Ismailov",
+           position: "Head of Data Management, Avromed",
+         },
+         {
+           img: "/assets/img/clients/Zaur Dibirov - Azal.jpeg",
+           text: "With Microsoft Dynamics 365 implemented and tailored for the aviation industry by Novum Information Technology, we transformed our finance operations from manual, time-consuming processes into a unified, intelligent system. Real-time insights now guide our decisions, and our teams are more agile and empowered than ever.",
+           author: "Zaur Dibirov",
+           position: "Director of Finance & Accounting, Azerbaijan Airlines",
+         },
+         {
+           img: "/assets/img/clients/Daniel Viranyi- Kitopi.png",
+           text: "Partnering with Novum Information Technology, we migrated our entire infrastructure to the Microsoft Cloud — adopting Microsoft 365 and leveraging Data & AI services tailored to our business model. Through seamless integrations and custom development, Novum helped us unify data, automate workflows, and empower every department with intelligent insights that drive faster, smarter decisions.",
+           author: "Daniel V",
+           position: "IT & Security Director, Kitopi",
+         },
+         {
+           img: "/assets/img/clients/Ashish Pandey-Aster.jpeg",
+           text: "Working with Novum has transformed the way Aster Pharmacy manages its operations. Their tailored solutions and expert guidance have streamlined our processes, improved efficiency, and enabled better decision-making across all departments. The partnership with Novum has been truly valuable, and we look forward to continued success together.",
+           author: "Ashish Panday",
+           position: "IT Director, Aster Pharmacy",
+         },
+       ]}
+         />
+       
+     </div>
 
-
-
-<Testimonials
-  subtitle="Client Stories"
-  title="What Clients Say About Working With Novum"
-  items={[
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Huseyn_Zeynalli.jpg",
-      text: "In today’s world of big data, Novum helped us visualize complex information simply and effectively.",
-      author: "Huseyn Zeynalli",
-      position: "Head of Brand Management, Italdizain Group",
-    },
-    {
-      img: "/assets/img/clients/thumbnail_99x99_Elvin_Mammadov.jpg",
-      text: "Novum created a custom dashboard for our event catering logistics — over 65k meals planned perfectly.",
-      author: "Elvin Mammadov",
-      position: "Venue Operations Manager, Baku City Circuit",
-    },
-  ]}
-/>
-
-
-
+<div id="otherservices">
       <OtherServices
   subtitle="Our Expertise"
   title="Other Services We Provide"
@@ -198,14 +246,7 @@ const Strategicresourcing = () => {
       link: "/services/software-development",
       gradient: "linear-gradient(90deg, #8746CA, #8746CA)",
     },
-    {
-      title: "Power BI Consulting",
-      imgSrc: "/assets/img/service-cards/powerbi.svg",
-      description:
-        "We transform and model data into insights that drive data-driven decisions.",
-      link: "/services/power-bi",
-      gradient: "linear-gradient(90deg, #F7E078, #DA9B0E)",
-    },
+    
     {
       title: "Digital Services",
       imgSrc: "/assets/img/service-cards/digitalmarketing.png",
@@ -213,7 +254,14 @@ const Strategicresourcing = () => {
       link: "#",
       gradient: "linear-gradient(90deg, #216868, #14B8BF)",
     },
-    
+    {
+      title: "Data Warehouse",
+      imgSrc: "/assets/img/service-cards/datawarehouse.svg",
+      description:
+        "We consolidate intelligence data from multiple sources to unlock deeper insights.",
+      link: "/services/data-warehouse",
+      gradient: "linear-gradient(90deg, #157569, #71E9B6)",
+    },
     {
       title: "Artificial Intelligence & IoT",
       imgSrc: "/assets/img/service-cards/ai.svg",
@@ -262,6 +310,7 @@ const Strategicresourcing = () => {
     },
   ]}
 />
+</div>
 
 
 <Widget />
