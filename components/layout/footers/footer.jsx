@@ -141,17 +141,17 @@ const Footer = () => (
           <div className="mb-3">
             <ul className="list-inline mb-0 d-flex gap-3">
               <li className="list-inline-item m-0">
-                <a href="#" className="text-muted text-decoration-none">
+                <a href="/privacy-policy" className="text-muted text-decoration-none">
                   Privacy Policy
                 </a>
               </li>
               <li className="list-inline-item m-0">
-                <a href="#" className="text-muted text-decoration-none">
+                <a href="/codeofconduct" className="text-muted text-decoration-none">
                   Code of Conduct
                 </a>
               </li>
               <li className="list-inline-item m-0">
-                <a href="#" className="text-muted text-decoration-none">
+                <a href="/antibriberycorruption" className="text-muted text-decoration-none">
                   Anti-Bribery and Corruption Policy
                 </a>
               </li>

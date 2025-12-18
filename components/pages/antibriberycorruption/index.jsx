@@ -13,9 +13,9 @@ const Health = () => {
     <div>
         <HeaderFour />
         <Hero
-        title="Novum LLC Code of Conduct"
-        line1="At Novum LLC, we are committed to upholding the highest standards of integrity, professionalism, and ethical behavior."
-        line2="This Code of Conduct outlines the principles that guide our actions and decisions, ensuring we maintain trust with our clients, partners, and each other."
+        title="Anti-Bribery and Corruption Policy"
+        line1="This Anti-Bribery and Corruption (ABC) Policy is a formal annex to the Corporate Code of Conduct and demonstrates Novum LS LLC's unwavering commitment to integrity, transparency, and compliance with all applicable anti-bribery and anti-corruption laws worldwide."
+        line2=""
         bgColor="var(--primary-color-1)"
       />
         
