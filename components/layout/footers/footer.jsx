@@ -35,13 +35,13 @@ const Footer = () => (
               <a href="/about" className="text-decoration-none text-muted">About</a>
               <a href="/case-studies" className="text-decoration-none text-muted">Case Studies</a>
               <a href="/" className="text-decoration-none text-muted">Services</a>
-              <a href="/" className="text-decoration-none text-muted">Get a Quote</a>
+              <a href="/contact" className="text-decoration-none text-muted">Get a Quote</a>
               <a href="/services/microsoft-licensing" className="text-decoration-none text-muted">Microsoft licenses</a>
             </div>
 
             {/* Line 2 */}
             <div className="col-6 col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-end flex-wrap gap-3 mb-2">
-              <a href="https://novum.tech/files/novum/NOVUM%20Brochure.pdf" className="text-decoration-none text-muted">Our brochure</a>
+              <a href="/assets/img/home/NOVUM-Brochure.pdf" target='blank' className="text-decoration-none text-muted">Our brochure</a>
               <a href="/blog" className="text-decoration-none text-muted">News</a>
               <a href="/contact" className="text-decoration-none text-muted">Contact Us</a>
             </div>
@@ -69,7 +69,8 @@ const Footer = () => (
         <div className="col-12 d-flex align-items-center gap-2 gap-lg-5 flex-wrap">
           {/* Partner 3 */}
           <a
-            href="#"
+            href="https://www.microsoft.com/"
+            target='blank'
             className="d-flex align-items-center text-decoration-none text-muted gap-2"
           >
             <img
@@ -85,6 +86,7 @@ const Footer = () => (
           {/* Partner 1 */}
           <a
             href="/partner/dell-technologies/overview"
+            target='blank'
             className="d-flex align-items-center text-decoration-none text-muted gap-0"
           >
             <img
@@ -99,7 +101,8 @@ const Footer = () => (
 
           {/* Partner 2 */}
           <a
-            href="#"
+            href="https://www.hpe.com/emea_europe/en/home.html"
+            target='blank'
             className="d-flex align-items-center text-decoration-none text-muted gap-2"
           >
             <img
@@ -114,7 +117,8 @@ const Footer = () => (
 
           {/* Partner 4 */}
           <a
-            href="#"
+            href="https://www.crayon.com/"
+            target='blank'
             className="d-flex align-items-center text-decoration-none text-muted gap-2"
           >
             <img
