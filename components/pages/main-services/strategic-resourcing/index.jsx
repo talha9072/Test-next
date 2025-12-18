@@ -25,7 +25,7 @@ const Strategicresourcing = () => {
   title="Flexible and Outcome Driven Talent Solutions"
   highlightText="Strategic Resourcing"
   subtitle="Seamlessly scale your team with certified NOVUM professionals."
-  bgImage="/assets/img/power-bi/352294-hero-bg.avif"
+  bgImage="/assets/img/strategic-resourcing/strategic-bg.png"
   heroButtons={[
     { label: "Contact Us", href: "/contact" },
   ]}
