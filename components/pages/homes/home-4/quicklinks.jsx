@@ -6,9 +6,9 @@ export default function QuickLinks() {
     { text: "Case Study", href: "/case-studies" },
     { text: "Microsoft Licenses", href: "/services/microsoft-licensing" },
     { text: "What is Power BI?", href: "/services/power-bi" },
-    { text: "The Digital Apron", href: "#" },
+    { text: "The Digital Apron", href: "/services/digital-strategy" },
     { text: "Data Analytics Partner", href: "/services/data-warehouse" },
-    { text: "Novum Digital Academy", href: "#" },
+    { text: "Novum Digital Academy", href: "/services/corporate-trainings" },
     { text: "Data Audit", href: "/services/data-audit" },
     { text: "Power BI Reports", href: "/services/power-bi" },
   ];

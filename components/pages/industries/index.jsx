@@ -19,17 +19,15 @@ const Health = () => {
   bgColor="var(--primary-color-1)"
 />
         
-        <section className="services about__four py-5">
+         <section className="services about__four py-5">
   <div className="container">
     {/* Header */}
     <div className="row gy-4 pb-4">
       <div className="col-12">
         <h2 className="fw-700 text-dark-gray ls-minus-1px mb-3">
-          Industries We Serve
+          Industries We Serve &amp; Business Functions
         </h2>
-        <p className="mb-0">
-          Novum delivers data, AI, and cloud solutions for Healthcare &amp; Pharma, Retail &amp; Distribution, Manufacturing &amp; Agriculture, Government &amp; Public Sector, Oil &amp; Gas / Energy, and Transportation &amp; Aviation modernizing operations with Microsoft Azure, Power BI, and Dynamics 365 to drive measurable outcomes.
-        </p>
+        
       </div>
     </div>
 
@@ -49,9 +47,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               EMR integration, HL7/FHIR pipelines, and regulatory reporting.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/pharmaceutical-industry" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -70,9 +66,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               Demand forecasting, inventory visibility, omnichannel analytics.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/food-retail-distribution" className="btn btn-two btn-sm">Read More</a>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -91,9 +85,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               IoT telemetry, quality control, and supply planning.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/agriculture" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -112,9 +104,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               Citizen services, data governance, and secure cloud.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/government" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -133,9 +123,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               Asset monitoring, production dashboards, safety analytics.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/natural-resources" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -154,9 +142,7 @@ const Health = () => {
             <p className="card-text small text-muted">
               Fleet operations, MRO analytics, on-time performance.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/aerospace-transportation" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>

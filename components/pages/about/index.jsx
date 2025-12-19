@@ -325,9 +325,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               EMR integration, HL7/FHIR pipelines, and regulatory reporting.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/pharmaceutical-industry" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -346,9 +344,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               Demand forecasting, inventory visibility, omnichannel analytics.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/food-retail-distribution" className="btn btn-two btn-sm">Read More</a>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -367,9 +363,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               IoT telemetry, quality control, and supply planning.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/agriculture" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -388,9 +382,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               Citizen services, data governance, and secure cloud.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/government" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -409,9 +401,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               Asset monitoring, production dashboards, safety analytics.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/natural-resources" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -430,9 +420,7 @@ Backed by extensive domain expertise and industry experience in fields such as t
             <p className="card-text small text-muted">
               Fleet operations, MRO analytics, on-time performance.
             </p>
-            <div className="mt-auto pt-2">
-              <a href="/industries/aerospace-transportation" className="btn btn-two btn-sm">Read More</a>
-            </div>
+            
           </div>
         </div>
       </div>

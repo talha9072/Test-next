@@ -123,7 +123,7 @@ export default function Tab1() {
                         improved alignment, greater transparency, and measurable
                         performance across the enterprise.
                       </p>
-                      <a className="btn-two" href="/contact">
+                      <a className="btn-two" href="/services/power-bi">
                         Learn More
                       </a>
                     </div>
@@ -184,7 +184,7 @@ export default function Tab1() {
                         for organizations looking to work more efficiently with
                         the power of responsible AI.
                       </p>
-                      <a className="btn-two" href="/contact">
+                      <a className="btn-two" href="/services/microsoft-dynamics-365">
                         Learn More
                       </a>
                     </div>
@@ -226,7 +226,7 @@ export default function Tab1() {
                         visibility, and gain the insights needed to make
                         confident, strategic decisions.
                       </p>
-                      <a className="btn-two" href="/contact">
+                      <a className="btn-two" href="/services/data-warehouse">
                         Learn More
                       </a>
                     </div>

@@ -6,13 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const products = [
-  {
-    href: '/products/airports-turnaround-solution',
-    title: 'Airports Turnaround Solution',
-    description:
-      'AI-powered platform that tracks every step of aircraft turnaround. Improve efficiency, monitor vendor performance, and automate invoicing.',
-    img: '/assets/img/products/airport-turnaround.webp',
-  },
+  
   {
     href: '/products/nes-novum-entrance-system',
     title: 'Novum Entrance System (NES)',
