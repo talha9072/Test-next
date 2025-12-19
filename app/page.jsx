@@ -4,7 +4,7 @@ import HomeFour from "@/components/pages/homes/home-4";
 export const metadata = {
   title: "Novum | Digital Solutions Powered by Innovation and AI",
   description:
-    "Novum delivers AI powered digital solutions, Microsoft cloud services and custom software that simplify operations and support business growth.",
+    "Novum delivers AI powered digital solutions, Microsoft cloud services and custom software that streamline operations, enhance performance, and support scalable business growth.",
   keywords: [
     "Digital transformation UAE",
     "AI solutions",
