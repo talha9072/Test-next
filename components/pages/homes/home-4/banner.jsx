@@ -58,8 +58,6 @@ const Banner = () => {
                 alt={slide.heading}
                 fill
                 priority
-                placeholder="blur"
-                blurDataURL="/assets/img/home/blur-placeholder.jpg"
                 quality={100}
                 className="object-cover"
               />

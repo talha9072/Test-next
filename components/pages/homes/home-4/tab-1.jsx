@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Tab1() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -95,9 +96,11 @@ export default function Tab1() {
                 <div className="row align-items-stretch justify-content-center gy-4 gy-md-1">
                   <div className="col-lg-6 d-flex align-items-stretch">
                     <figure className="rounded mb-0 w-100">
-                      <img
+                      <Image
                         src="/assets/img/home/power-bi-main.png"
                         alt="Power BI"
+                        width={800}
+                        height={500}
                         className="rounded w-100 h-100 object-fit-cover"
                       />
                     </figure>
@@ -134,10 +137,8 @@ export default function Tab1() {
               {/* TAB 2 — Copilot with inline video */}
               <div className="tab-pane fade" id="tab_third2" role="tabpanel">
                 <div className="row align-items-stretch justify-content-center gy-4 gy-md-1">
-                  {/* Video container */}
                   <div className="col-lg-6 d-flex align-items-stretch">
                     <div className="video-container position-relative w-100 rounded overflow-hidden">
-                      {/* Play button overlay (Bootstrap Icon) */}
                       <div
                         id="copilotPlayBtn"
                         className="playbtn position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
@@ -145,7 +146,6 @@ export default function Tab1() {
                         <i className="bi bi-play-fill fs-1 text-white"></i>
                       </div>
 
-                      {/* Video (no controls, inline play/pause) */}
                       <video
                         id="copilotVideo"
                         loading="lazy"
@@ -163,7 +163,6 @@ export default function Tab1() {
                     </div>
                   </div>
 
-                  {/* Text */}
                   <div className="col-lg-6 d-flex align-items-center py-4">
                     <div>
                       <h3 className="fw-700 text-dark-gray mb-4">
@@ -184,7 +183,10 @@ export default function Tab1() {
                         for organizations looking to work more efficiently with
                         the power of responsible AI.
                       </p>
-                      <a className="btn-two" href="/services/microsoft-dynamics-365">
+                      <a
+                        className="btn-two"
+                        href="/services/microsoft-dynamics-365"
+                      >
                         Learn More
                       </a>
                     </div>
@@ -197,9 +199,11 @@ export default function Tab1() {
                 <div className="row align-items-stretch justify-content-center gy-4 gy-md-1">
                   <div className="col-lg-6 d-flex align-items-stretch">
                     <figure className="rounded mb-0 w-100">
-                      <img
+                      <Image
                         src="/assets/img/home/warehouse-main.png"
                         alt="Data Warehouse"
+                        width={800}
+                        height={500}
                         className="rounded w-100 h-100 object-fit-cover"
                       />
                     </figure>

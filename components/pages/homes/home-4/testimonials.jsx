@@ -3,6 +3,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import Image from "next/image";
+
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/autoplay";
@@ -81,18 +83,19 @@ export default function Testimonials() {
           {slides.map((item, idx) => (
             <SwiperSlide key={idx}>
               <div className="testimonial-card bg-white rounded-4 p-4 position-relative text-center">
-                <img
+                <Image
                   src={item.img}
                   alt={item.author}
+                  width={90}
+                  height={90}
                   className="slider-image rounded-circle border border-white shadow position-absolute"
                   style={{
-                    width: 90,
-                    height: 90,
                     top: -45,
                     left: "50%",
                     transform: "translateX(-50%)",
                   }}
                 />
+
                 <div className="content mt-4 pt-4 d-flex flex-column justify-content-between h-100">
                   <p className="mb-2">{item.text}</p>
                   <div className="mt-3">
@@ -141,7 +144,6 @@ export default function Testimonials() {
           height: 100%;
         }
 
-        /* ✅ Smaller font sizes only */
         .testimonial-card p {
           font-size: 0.9rem;
           line-height: 1.4;
@@ -156,7 +158,6 @@ export default function Testimonials() {
           font-size: 0.85rem !important;
         }
 
-        /* ✅ Pagination Dots */
         .testimonials-style-04 .swiper-pagination {
           position: relative;
           bottom: 0;

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const about1 = "/assets/img/home/about-3.png";
 
@@ -53,7 +52,7 @@ With a strong market presence and extensive technical expertise, we provide high
             <div className="col-xl-6 col-lg-6 col-12">
               <div className="about__four-image text-center">
                 <Image
-                  src={about1} alt="About Novum" width={800} height={500} quality={100} priority
+                  src={about1} alt="About Novum" width={800} height={500} quality={90}
                   className="image-1 img-fluid rounded object-cover"
                   unoptimized={false}   // still let Next.js optimize
                 />

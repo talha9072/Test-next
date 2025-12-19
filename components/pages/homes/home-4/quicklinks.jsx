@@ -1,5 +1,7 @@
 // components/QuickLinks.jsx
+"use client";
 import React from "react";
+import Image from "next/image";
 
 export default function QuickLinks() {
   const links = [
@@ -26,9 +28,11 @@ export default function QuickLinks() {
             >
               <div className="position-relative overflow-hidden rounded shadow-sm flex-fill">
                 {/* Background Image */}
-                <img
+                <Image
                   src="/assets/img/home/cta-1.webp"
                   alt="Novum for Business"
+                  width={1200}
+                  height={600}
                   className="w-100 h-100 object-fit-cover rounded"
                   style={{ minHeight: "300px" }}
                 />

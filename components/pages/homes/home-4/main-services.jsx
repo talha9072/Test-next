@@ -1,67 +1,75 @@
-// components/pages/homes/home-4/main-services.jsx
 "use client";
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 const services = [
   {
-    title: 'Software Development',
-    imgSrc: '/assets/img/service-cards/softwaredev.svg',
-    description: 'We develop tailored solutions on a variety of platforms using a broad range of technologies.',
-    link: '/services/software-development',
+    title: "Software Development",
+    imgSrc: "/assets/img/service-cards/softwaredev.svg",
+    description:
+      "We develop tailored solutions on a variety of platforms using a broad range of technologies.",
+    link: "/services/software-development",
   },
   {
-    title: 'Power BI Consulting',
-    imgSrc: '/assets/img/service-cards/powerbi.svg',
-    description: 'We transform and model data into insights that drive data-driven decisions.',
-    link: '/services/power-bi',
+    title: "Power BI Consulting",
+    imgSrc: "/assets/img/service-cards/powerbi.svg",
+    description:
+      "We transform and model data into insights that drive data-driven decisions.",
+    link: "/services/power-bi",
   },
   {
-    title: 'Digital Services',
-    imgSrc: '/assets/img/service-cards/digitalmarketing.png',
-    description: 'We bring transformative digital outcomes to organizations.',
-    link: '#',
+    title: "Digital Services",
+    imgSrc: "/assets/img/service-cards/digitalmarketing.png",
+    description: "We bring transformative digital outcomes to organizations.",
+    link: "#",
   },
   {
-    title: 'Data Warehouse',
-    imgSrc: '/assets/img/service-cards/datawarehouse.svg',
-    description: 'We consolidate intelligence data from multiple sources to unlock deeper insights.',
-    link: '/services/data-warehouse',
+    title: "Data Warehouse",
+    imgSrc: "/assets/img/service-cards/datawarehouse.svg",
+    description:
+      "We consolidate intelligence data from multiple sources to unlock deeper insights.",
+    link: "/services/data-warehouse",
   },
   {
-    title: 'Artificial Intelligence & IoT',
-    imgSrc: '/assets/img/service-cards/ai.svg',
-    description: 'We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.',
-    link: '/services/artificial-intelligence-iot',
+    title: "Artificial Intelligence & IoT",
+    imgSrc: "/assets/img/service-cards/ai.svg",
+    description:
+      "We build AI solutions with Microsoft Cognitive Services and integrate IoT hardware.",
+    link: "/services/artificial-intelligence-iot",
   },
   {
-    title: 'Microsoft Azure',
-    imgSrc: '/assets/img/service-cards/azure.svg',
-    description: 'Swiftly shift your business resources to cloud infrastructure.',
-    link: '/services/azure',
+    title: "Microsoft Azure",
+    imgSrc: "/assets/img/service-cards/azure.svg",
+    description: "Swiftly shift your business resources to cloud infrastructure.",
+    link: "/services/azure",
   },
   {
-    title: 'Microsoft 365',
-    imgSrc: '/assets/img/service-cards/microsoft365.svg',
-    description: 'A suite of apps to help you stay connected and get things done.',
-    link: '/services/microsoft-365-deployment',
+    title: "Microsoft 365",
+    imgSrc: "/assets/img/service-cards/microsoft365.svg",
+    description:
+      "A suite of apps to help you stay connected and get things done.",
+    link: "/services/microsoft-365-deployment",
   },
   {
-    title: 'Dynamics 365',
-    imgSrc: '/assets/img/service-cards/dynamic365.svg',
-    description: 'Boost efficiency and customer experiences with an agile business platform.',
-    link: '/services/microsoft-dynamics-365',
+    title: "Dynamics 365",
+    imgSrc: "/assets/img/service-cards/dynamic365.svg",
+    description:
+      "Boost efficiency and customer experiences with an agile business platform.",
+    link: "/services/microsoft-dynamics-365",
   },
   {
-    title: 'Sustainability',
-    imgSrc: '/assets/img/service-cards/sustainability.svg',
-    description: "Drive ESG goals with Microsoft's expanding sustainability solutions.",
-    link: '/services/microsoft-sustainability',
+    title: "Sustainability",
+    imgSrc: "/assets/img/service-cards/sustainability.svg",
+    description:
+      "Drive ESG goals with Microsoft's expanding sustainability solutions.",
+    link: "/services/microsoft-sustainability",
   },
   {
-    title: 'Copilot',
-    imgSrc: '/assets/img/service-cards/copilot.png',
-    description: 'An AI assistant that automates tasks and provides real-time insights.',
-    link: '#',
+    title: "Copilot",
+    imgSrc: "/assets/img/service-cards/copilot.png",
+    description:
+      "An AI assistant that automates tasks and provides real-time insights.",
+    link: "#",
   },
 ];
 
@@ -72,21 +80,24 @@ const MainServices = () => (
         <div className="col-12">
           <h2 className="fw-700 text-dark-gray mb-4">Explore Our Services</h2>
           <p className="mb-2">
-            We partner with organizations to deliver smart, scalable digital solutions. Our services combine deep technical expertise with a focus on real business outcomes.
+            We partner with organizations to deliver smart, scalable digital
+            solutions. Our services combine deep technical expertise with a focus
+            on real business outcomes.
           </p>
         </div>
       </div>
+
       <div className="row gy-4">
         {services.map((svc, i) => (
           <div className="col-lg-4 col-md-6" key={i}>
             <a className="card p-2" href={svc.link}>
               <div className="card-body text-left">
-                <img
+                <Image
                   src={svc.imgSrc}
                   alt={svc.title}
                   width={64}
                   height={64}
-                  loading="lazy"
+                  quality={85}
                 />
                 <h3 className="card-title mt-3">{svc.title}</h3>
                 <p className="card-text">{svc.description}</p>

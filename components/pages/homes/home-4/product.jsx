@@ -1,63 +1,63 @@
 "use client";
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard, Pagination } from "swiper/modules";
+import Image from "next/image";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const products = [
-  
   {
-    href: '/products/nes-novum-entrance-system',
-    title: 'Novum Entrance System (NES)',
+    href: "/products/nes-novum-entrance-system",
+    title: "Novum Entrance System (NES)",
     description:
-      'Cloud-based visitor management system for busy business centers. Supports guest pre-registration, access control, and secure check-ins.',
-    img: '/assets/img/products/entrance-system.webp',
+      "Cloud-based visitor management system for busy business centers. Supports guest pre-registration, access control, and secure check-ins.",
+    img: "/assets/img/products/entrance-system.webp",
   },
   {
-    href: '/products/ocr-certification-directory',
-    title: 'OCR Certification Directory',
+    href: "/products/ocr-certification-directory",
+    title: "OCR Certification Directory",
     description:
-      'Convert paper records into searchable digital documents. Ideal for storing certificates, contracts, reports, and regulatory files.',
-    img: '/assets/img/products/ocr.webp',
+      "Convert paper records into searchable digital documents. Ideal for storing certificates, contracts, reports, and regulatory files.",
+    img: "/assets/img/products/ocr.webp",
   },
   {
-    href: '/products/face-recognition-and-detection',
-    title: 'Face Recognition & Detection',
+    href: "/products/face-recognition-and-detection",
+    title: "Face Recognition & Detection",
     description:
-      'Identify and count people in real time using video analytics. Perfect for secure access, event tracking, and smart surveillance.',
-    img: '/assets/img/products/face-recognition.webp',
+      "Identify and count people in real time using video analytics. Perfect for secure access, event tracking, and smart surveillance.",
+    img: "/assets/img/products/face-recognition.webp",
   },
   {
-    href: '/products/commodity-bidding-platform',
-    title: 'Commodity Bidding Platform',
+    href: "/products/commodity-bidding-platform",
+    title: "Commodity Bidding Platform",
     description:
-      'Flexible SaaS platform for digital trading. Create product listings, set approval flows, monitor activity, and access real-time analytics.',
-    img: '/assets/img/products/bidding.webp',
+      "Flexible SaaS platform for digital trading. Create product listings, set approval flows, monitor activity, and access real-time analytics.",
+    img: "/assets/img/products/bidding.webp",
   },
   {
-    href: '/products/d365-automations',
-    title: 'D365 Automations',
+    href: "/products/d365-automations",
+    title: "D365 Automations",
     description:
-      'Enhance Microsoft Dynamics 365 workflows with intelligent automation. Simplify data entry, approvals, and reporting for faster results.',
-    img: '/assets/img/products/ds365.png',
+      "Enhance Microsoft Dynamics 365 workflows with intelligent automation. Simplify data entry, approvals, and reporting for faster results.",
+    img: "/assets/img/products/ds365.png",
   },
   {
-    href: '/products/ess-employee-self-service',
-    title: 'ESS - Employee Self Service',
+    href: "/products/ess-employee-self-service",
+    title: "ESS - Employee Self Service",
     description:
-      'A secure, user-friendly portal that empowers employees to manage their profiles, leave requests, and HR information anytime, anywhere.',
-    img: '/assets/img/products/ess.webp',
+      "A secure, user-friendly portal that empowers employees to manage their profiles, leave requests, and HR information anytime, anywhere.",
+    img: "/assets/img/products/ess.webp",
   },
   {
-    href: '/products/airport-revenue-management-isv',
-    title: 'Airport Revenue Management ISV',
+    href: "/products/airport-revenue-management-isv",
+    title: "Airport Revenue Management ISV",
     description:
-      'Comprehensive revenue management tool designed for airports to optimize billing, contracts, and income forecasting through automation.',
-    img: '/assets/img/products/airport-revenue.webp',
+      "Comprehensive revenue management tool designed for airports to optimize billing, contracts, and income forecasting through automation.",
+    img: "/assets/img/products/airport-revenue.webp",
   },
 ];
-
 
 const ProductsCarousel = () => (
   <section className="background-position-center-top overflow-hidden py-5">
@@ -68,8 +68,9 @@ const ProductsCarousel = () => (
             Smart Digital Products That Simplify Complex Operations
           </h2>
           <p className="mb-2">
-            Novum creates intelligent software tools that automate workflows, improve
-            visibility, and enhance operational performance across industries.
+            Novum creates intelligent software tools that automate workflows,
+            improve visibility, and enhance operational performance across
+            industries.
           </p>
         </div>
       </div>
@@ -81,7 +82,11 @@ const ProductsCarousel = () => (
             slidesPerView={1}
             spaceBetween={35}
             loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
             pagination={{ clickable: true }}
             keyboard={{ enabled: true }}
             breakpoints={{
@@ -96,12 +101,21 @@ const ProductsCarousel = () => (
               <SwiperSlide key={idx}>
                 <div className="interactive-banner-style-06">
                   <div className="interactive-banners-image rounded">
-                    <img src={p.img} alt={p.title} />
+                    <Image
+                      src={p.img}
+                      alt={p.title}
+                      width={800}
+                      height={500}
+                    />
                     <div className="overlay-bg bg-gradient-dark-transparent box-overlay" />
                   </div>
+
                   <div className="interactive-banners-content p-60px lg-p-30px">
                     <div className="h-100 w-100 last-paragraph-no-margin">
-                      <a href={p.href} className="fs-20 d-block text-white mb-10px fw-bold">
+                      <a
+                        href={p.href}
+                        className="fs-20 d-block text-white mb-10px fw-bold"
+                      >
                         {p.title}
                       </a>
                       <p className="interactive-banners-content-text w-95 lg-w-100 text-white">
@@ -113,7 +127,6 @@ const ProductsCarousel = () => (
               </SwiperSlide>
             ))}
 
-            {/* ✅ Built-in pagination now works automatically */}
             <div className="swiper-pagination"></div>
           </Swiper>
         </div>
