@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://www.novum.tech";
+  const baseUrl = "https://novum-nextjs.netlify.app/";
   const now = new Date();
 
   return [
