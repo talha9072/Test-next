@@ -10,7 +10,7 @@ export const posts = [
     excerpt:
       "Confused between Fabric and Power BI? Learn how they complement each other, when to choose lakehouse vs. semantic models, and the governance tips that keep analytics reliable at scale.",
     categories: ["Analytics", "Power BI", "Fabric"],
-    link: "/blogs",
+    link: "/blog",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ export const posts = [
     excerpt:
       "From pilot to production: adoption playbooks, prompt patterns, and guardrails that drive measurable productivity with Microsoft Copilot while keeping data secure and compliant.",
     categories: ["AI", "Copilot", "Adoption"],
-    link: "/blogs",
+    link: "/blog",
   },
   {
     id: "3",
@@ -34,7 +34,7 @@ export const posts = [
     excerpt:
       "Quick wins for FinOps: right-sizing, reserved instances, workloads on spot, and tagging discipline. A practical checklist to trim spend without slowing delivery.",
     categories: ["Azure", "FinOps", "Cost"],
-    link: "/blogs",
+    link: "/blog",
   },
   {
     id: "4",
