@@ -88,7 +88,9 @@ const Training = () => {
             "No manual HTML/CSS required",
             "Fast business app layout building"
           ],
-          link: "#"
+          noButton: true,
+          
+          
         },
         {
           image: "/assets/img/app-dev/tab-2.jpg",
@@ -99,7 +101,7 @@ const Training = () => {
             "Reusable components for consistency",
             "Reduces repetitive tasks"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-3.jpg",
@@ -110,7 +112,7 @@ const Training = () => {
             "Short testing cycles",
             "Move from concept to production faster"
           ],
-          link: "#"
+          noButton: true,
         }
       ]
     },
@@ -130,7 +132,7 @@ const Training = () => {
             "Security roles and data rules",
             "Scalable for large applications"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-3.jpg",
@@ -141,7 +143,7 @@ const Training = () => {
             "Native integration with business data",
             "Seamless enterprise workflows"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-4.jpg",
@@ -152,7 +154,7 @@ const Training = () => {
             "Logic Apps",
             "AI + Cloud-based APIs"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-5.jpg",
@@ -163,7 +165,7 @@ const Training = () => {
             "Enterprise application integrations",
             "Prebuilt connectors for fast setup"
           ],
-          link: "#"
+          noButton: true,
         }
       ]
     },
@@ -183,7 +185,7 @@ const Training = () => {
             "Object detection",
             "Classification and scoring"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-3.jpg",
@@ -194,7 +196,7 @@ const Training = () => {
             "Automated business processes",
             "Low-code logic creation"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-4.jpg",
@@ -205,7 +207,7 @@ const Training = () => {
             "OCR & AI-based text recognition",
             "Automated data capture"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-5.jpg",
@@ -216,7 +218,7 @@ const Training = () => {
             "Custom ML integrations",
             "AI-driven insights"
           ],
-          link: "#"
+          noButton: true,
         }
       ]
     },
@@ -236,7 +238,7 @@ const Training = () => {
             "Adaptive responsive layouts",
             "Optimised performance"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-3.jpg",
@@ -247,7 +249,7 @@ const Training = () => {
             "No installation required",
             "Instant access via web"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-4.jpg",
@@ -258,7 +260,7 @@ const Training = () => {
             "Optimised loading and caching",
             "Unified user experience"
           ],
-          link: "#"
+          noButton: true,
         }
       ]
     },
@@ -278,7 +280,7 @@ const Training = () => {
             "User-level data access",
             "Secure environment isolation"
           ],
-          link: "#"
+          noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-3.jpg",
@@ -289,7 +291,7 @@ const Training = () => {
             "Conditional access",
             "Identity governance"
           ],
-          link: "#"
+         noButton: true,
         },
         {
           image: "/assets/img/app-dev/tab-4.jpg",
@@ -300,7 +302,7 @@ const Training = () => {
             "Environment monitoring",
             "Compliance tools in Admin Center"
           ],
-          link: "#"
+          noButton: true,
         }
       ]
     }

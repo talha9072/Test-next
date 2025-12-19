@@ -81,7 +81,7 @@ sectionId="Expertise"
         "Data & AI (Azure)",
         "Recognised for secure, scalable cloud delivery"
       ],
-      cta: "View Certifications"
+      
     },
     {
       label: "Our Experts",
@@ -92,7 +92,7 @@ sectionId="Expertise"
         "Extensive enterprise deployment experience",
         "Advanced specialisations across cloud, AI, and data"
       ],
-      cta: "Meet the Team"
+      
     },
     {
       label: "Industry Presence",
@@ -104,7 +104,7 @@ sectionId="Expertise"
         "Interop Tokyo",
         "Thought leadership across cloud and AI ecosystems"
       ],
-      cta: "Upcoming Events"
+      
     }
   ]}
 />

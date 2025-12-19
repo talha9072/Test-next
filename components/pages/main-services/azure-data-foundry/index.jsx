@@ -84,14 +84,14 @@ const Ai = () => {
           label: "Access",
           title: "Model Access",
           desc: "1,900+ foundation & open-source models via unified Azure API.",
-          link: "#"
+          link: "https://azure.microsoft.com/en-us/products/ai-foundry/models"
         },
         {
           image: "/assets/img/azure/modelaccess-1.png",
           label: "Customisation",
           title: "Model Customisation",
           desc: "Fine-tuning, distillation, multimodal, serverless inference.",
-          link: "#"
+          link: "https://azure.microsoft.com/en-us/products/ai-foundry/models"
         }
       ]
     },
@@ -104,14 +104,14 @@ const Ai = () => {
           label: "Agents",
           title: "Enterprise Agents",
           desc: "RAG-ready pipelines & long-running workflows.",
-          link: "#"
+          link: "https://www.microsoft.com/en-us/microsoft-365-copilot/agents"
         },
         {
           image: "/assets/img/azure/agent2.png",
           label: "Multi-Agent",
           title: "Multi-Agent Systems",
           desc: "A2A & MCP orchestration, secure RBAC agent flows.",
-          link: "#"
+          link: "https://www.microsoft.com/en-us/microsoft-365-copilot/agents"
         }
       ]
     },
@@ -124,14 +124,14 @@ const Ai = () => {
           label: "SDKs",
           title: "SDK Support",
           desc: "Python, C#, JS/TS, Java, GitHub Copilot, VS Code templates.",
-          link: "#"
+          link: "https://azure.microsoft.com/en-us/products"
         },
         {
           image: "/assets/img/azure/tool2.png",
           label: "Connectors",
           title: "Enterprise Connectors",
           desc: "1,400+ integrations across ERP, CRM, HRM, and more.",
-          link: "#"
+          link: "https://azure.microsoft.com/en-us/products"
         }
       ]
     },
@@ -144,14 +144,14 @@ const Ai = () => {
           label: "Monitoring",
           title: "Observability",
           desc: "Telemetry dashboards, monitoring, usage tracking.",
-          link: "#"
+          link: "https://www.microsoft.com/en-us/investor/corporate-governance/overview"
         },
         {
           image: "/assets/img/azure/g-2.png",
           label: "Governance",
           title: "Responsible AI & Policy",
           desc: "Policy enforcement, audits, responsible AI tools.",
-          link: "#"
+          link: "https://www.microsoft.com/en-us/investor/corporate-governance/overview"
         }
       ]
     },
@@ -164,14 +164,14 @@ const Ai = () => {
           label: "Local",
           title: "Foundry Local",
           desc: "Run on Mac/Windows with offline inference support.",
-          link: "#"
+          link: "https://developer.microsoft.com/en-us/azure"
         },
         {
           image: "/assets/img/azure/dev2.png",
           label: "Hybrid",
           title: "Hybrid Cloud",
           desc: "Azure Arc support for on-prem and hybrid deployments.",
-          link: "#"
+          link: "https://developer.microsoft.com/en-us/azure"
         }
       ]
     }
@@ -241,6 +241,8 @@ const Ai = () => {
           desc: "Build conversational assistants with secure enterprise agent pipelines.",
           image: "/assets/img/azure/chatbot.png",
           cta: "Explore",
+          link:"https://copilot.microsoft.com/"
+          
         },
         {
           label: "Use Case",
@@ -248,6 +250,7 @@ const Ai = () => {
           desc: "Generate summaries and extract insights from high-volume documents.",
           image: "/assets/img/azure/automation.png",
           cta: "Read more",
+          link:"https://learn.microsoft.com/en-us/ai-builder/doc-automation"
         },
         {
           label: "Use Case",
@@ -255,6 +258,7 @@ const Ai = () => {
           desc: "Analyze images, audio, and video using multimodal foundation models.",
           image: "/assets/img/azure/ml.png",
           cta: "Learn more",
+          link:"https://azure.microsoft.com/en-us/products/ai-foundry/tools"
         },
       ],
     },
@@ -267,6 +271,7 @@ const Ai = () => {
           desc: "Enterprise-scale assistant creation with Azure Data Foundry.",
           image: "/assets/img/azure/accenture.png",
           cta: "Read story",
+          link:"https://www.accenture.com/us-en"
         },
         {
           label: "Success",
@@ -274,6 +279,7 @@ const Ai = () => {
           desc: "Advanced analytics for financial markets using Foundry.",
           image: "/assets/img/azure/nasdaq.png",
           cta: "View insights",
+          link:"https://www.nasdaq.com/"
         },
         {
           label: "Success",
@@ -281,6 +287,7 @@ const Ai = () => {
           desc: "AI systems powering retail and customer engagement.",
           image: "/assets/img/azure/carvana.png",
           cta: "Explore case",
+          link:"https://www.carvana.com/"
         },
       ],
     },
@@ -332,7 +339,7 @@ const Ai = () => {
         "Right-size infrastructure planning"
       ],
       cta: "Talk to us",
-      link: "#"
+      link: "/contact"
     }
   ]}
 />
@@ -349,28 +356,28 @@ const Ai = () => {
       icon: "bi-lightning-charge-fill",
       title: "Grok 3 Now on Azure",
       desc: "Microsoft now hosts xAI’s Grok 3 model with full performance parity for enterprise workloads.",
-      link: "#",
+      link: "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok/",
       cta: "Learn more"
     },
     {
       icon: "bi-diagram-3",
       title: "Hugging Face Catalog Expansion",
       desc: "Expanded support for open-source model catalogs, offering hundreds of new models.",
-      link: "#",
+      link: "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?view=foundry-classic&tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard&pivots=azure-openai",
       cta: "Learn more"
     },
     {
       icon: "bi-arrows-move",
       title: "Model Context Protocol",
       desc: "Broader interoperability for agents and custom workflows via MCP.",
-      link: "#",
+      link: "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents/",
       cta: "Learn more"
     },
     {
       icon: "bi-robot",
       title: "Agent Deployment Enhancements",
       desc: "Improved agent orchestration, workflow automation, and enterprise reliability.",
-      link: "#",
+      link: "https://www.microsoft.com/insidetrack/blog/deploying-microsoft-agent-365-how-were-extending-our-infrastructure-to-manage-agents-at-microsoft/",
       cta: "Learn more"
     }
   ]}

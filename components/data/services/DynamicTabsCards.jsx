@@ -23,7 +23,7 @@ export default function DynamicTabsCards({
 
   const sliderRef = useRef(null);
 
-  // -------- Detect Mobile Mode --------
+  /* ---------- Detect Mobile ---------- */
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 980);
     check();
@@ -31,7 +31,7 @@ export default function DynamicTabsCards({
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  // -------- Background --------
+  /* ---------- Background ---------- */
   const getBackgroundStyle = () => {
     if (backgroundType === "color") return { background: backgroundColor };
     if (backgroundType === "gradient") return { background: backgroundGradient };
@@ -44,47 +44,30 @@ export default function DynamicTabsCards({
     return {};
   };
 
-  // -------- Page Count Calculation --------
+  /* ---------- Page Count ---------- */
   useEffect(() => {
     const cards = tabs[activeTab]?.cards || [];
-
-    if (isMobile) {
-      setPageCount(cards.length); // 1 dot per card
-    } else {
-      setPageCount(Math.ceil(cards.length / 3)); // desktop → pages of 3
-    }
+    setPageCount(isMobile ? cards.length : Math.ceil(cards.length / 3));
   }, [activeTab, tabs, isMobile]);
 
-  // -------- Scroll Listener --------
+  /* ---------- Scroll Listener ---------- */
   const handleScroll = () => {
     const slider = sliderRef.current;
     if (!slider) return;
     const cardWidth = slider.children[0]?.offsetWidth || 1;
-
-    const page = Math.round(slider.scrollLeft / cardWidth);
-    setDotIndex(page);
+    setDotIndex(Math.round(slider.scrollLeft / cardWidth));
   };
 
-  // -------- Slide Left --------
   const scrollLeft = () => {
-    if (!sliderRef.current) return;
-    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
-
-    sliderRef.current.scrollBy({
-      left: -cardWidth,
-      behavior: "smooth",
-    });
+    const slider = sliderRef.current;
+    if (!slider) return;
+    slider.scrollBy({ left: -350, behavior: "smooth" });
   };
 
-  // -------- Slide Right --------
   const scrollRight = () => {
-    if (!sliderRef.current) return;
-    const cardWidth = sliderRef.current.children[0]?.offsetWidth || 350;
-
-    sliderRef.current.scrollBy({
-      left: cardWidth,
-      behavior: "smooth",
-    });
+    const slider = sliderRef.current;
+    if (!slider) return;
+    slider.scrollBy({ left: 350, behavior: "smooth" });
   };
 
   return (
@@ -102,53 +85,65 @@ export default function DynamicTabsCards({
           setActiveTab={setActiveTab}
         />
 
-        {/* SLIDER */}
+        {/* -------- SLIDER -------- */}
         <div className="dtc-grid" ref={sliderRef} onScroll={handleScroll}>
-          {tabs[activeTab]?.cards?.map((card, idx) => (
-            <div className="dtc-card" key={idx}>
-              <div className="dtc-image-wrap">
-                {card.image && (
-                  <Image
-                    src={card.image}
-                    alt={card.title}
-                    width={600}
-                    height={350}
-                  />
-                )}
-              </div>
+          {tabs[activeTab]?.cards?.map((card, idx) => {
+            const showCTA =
+              card?.noButton !== true && Boolean(card?.link);
 
-              <div className="dtc-body">
-                <div className="dtc-label fw-semibold text-secondary small">
-                  {card.label}
+            return (
+              <div className="dtc-card" key={idx}>
+                <div className="dtc-image-wrap">
+                  {card.image && (
+                    <Image
+                      src={card.image}
+                      alt={card.title}
+                      width={600}
+                      height={350}
+                    />
+                  )}
                 </div>
 
-                <div className="dtc-title fw-bold fs-5 mb-2">{card.title}</div>
+                <div className="dtc-body">
+                  {card.label && (
+                    <div className="dtc-label fw-semibold text-secondary small">
+                      {card.label}
+                    </div>
+                  )}
 
-                {card.list ? (
-                  <ul className="dtc-list">
-                    {card.list.map((item, i) => (
-                      <li key={i}>
-                        <i className="bi bi-check2-circle fs-5 me-2"></i>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="dtc-desc">{card.desc}</p>
-                )}
-
-                <a href={card.link || "#"} className="dtc-cta">
-                  <div className="dtc-cta-arrow">
-                    <i className="bi bi-arrow-right"></i>
+                  <div className="dtc-title fw-bold fs-5 mb-2">
+                    {card.title}
                   </div>
-                  Learn More
-                </a>
+
+                  {card.list ? (
+                    <ul className="dtc-list">
+                      {card.list.map((item, i) => (
+                        <li key={i}>
+                          <i className="bi bi-check2-circle fs-5 me-2"></i>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="dtc-desc">{card.desc}</p>
+                  )}
+
+                  {/* CTA → only if allowed */}
+                  {showCTA && (
+                    <a href={card.link} className="dtc-cta">
+                      <div className="dtc-cta-arrow">
+                        <i className="bi bi-arrow-right"></i>
+                      </div>
+                      {card.ctaText || "Learn More"}
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* ------- DYNAMIC LOGIC FOR ARROWS + DOTS ------- */}
+        {/* -------- ARROWS + DOTS -------- */}
         {(isMobile || tabs[activeTab]?.cards?.length > 3) && (
           <div className="dtc-arrows">
             <button className="dtc-arrow-btn" onClick={scrollLeft}>
@@ -160,7 +155,7 @@ export default function DynamicTabsCards({
                 <div
                   key={i}
                   className={`dtc-dot ${dotIndex === i ? "active" : ""}`}
-                ></div>
+                />
               ))}
             </div>
 
